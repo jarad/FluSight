@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+
+\title{Feedback on 2016--2017 suggested CDC FluSight guidelines}
+\author{Jarad Niemi}
+
+\begin{document}
+
+\maketitle
+
+\section{Summary}
+
+\begin{itemize}
+\item Add the forecasting target that is the sum of the ILI percentages above baseline across the season.
+\item Probabilistic forecasts are awesome!
+\item Do not sum the preceding and proceeding probabilities instead just use the probability from the correct bin.
+\item Simplify the csv by
+	\begin{itemize}
+	\item Eliminating intervals.
+	\item Eliminating point forecasts.
+	\item Change value to probability.
+	\item Eliminate the metadata rows in the file and have this in the filename instead.
+	\end{itemize}
+\end{itemize}
+
+\section{Forecasting targets}
+
+I still think an interesting forecasting target would be the sum the ILI percentages above baseline (SUM) over the season.
+Currently the only target that measures severity is the peak height.
+This target provides a instantaneous measure that identifies maximum stress on the public health and medical system.
+SUM provides a measure of the overall, rather than maximum, stress on the public health and medical systems.
+
+\section{Evaluation criteria}
+
+I applaud the CDC for having probabilistic forecasts as I think these are absolutely critical to decision making!
+
+\subsection{Summing the probabilities}
+
+Currently
+
+\begin{quote}
+the probability assigned to that correct bin plus the probability assigned to the preceding and proceeding bins will be summed to determine the probability assigned to the observed outcome
+\end{quote}
+
+Adding the preceding and proceeding bins has no theoretical underpinnings whereas the probability of the correct bin (only) has theoretical support from Bayesian model evaluation.
+Summing the bins means that a forecast that has 100\% on the true value is scored the same as another forecast that has 33$\frac{1}{3}$\% on the true value as well as the preceding and proceeding bins.
+
+It also inflates the efficacy of all of the models and puts them close together on the top edge of the range.
+Ideally we want to be able to distinguish amongst the best models and thus we should be seeking approaches that spread out the efficacy of these models.
+
+\subsection{Eliminate the intervals}
+
+I think the intervals are confusing due to having to deal with the inclusion/exclusion and I don't think the intervals add any value.
+Instead, I would suggest asking for probabilities for ILI \% in increments of 0.1\% as this is the precision of the data.
+
+Currently the intervals are really only two values, e.g. the interval [3.0\%,3.2\%) represents only the values 3.0\% and 3.1\% so it really isn't much of an interval at all.
+In addition, the interval is actually misleading as it is really the interval from [2.95\%,3.15\%) whereas asking for the probability at a point is really the interval around that point, e.g. 3.0\% is really the interval [2.95\%,3.05\%) if we have an increment of 0.1\%, which seems pretty straight-forward.
+
+Any team that can provide probabilistic forecasts will have no problem with added resolution of moving to increments of 0.1.
+
+\section{Simplify the reporting csv}
+
+One reason to eliminate bins is that it will simplify the csv.
+Rather than having two obtuse columns (Bin\_start\_incl and Bin\_end\_notincl) you can have just one column called `value'.
+
+With the probabilistic forecasts, there is really no reason to provide point forecasts as they can be derived from the probabilistic forecasts by either calculating the expectation, i.e. the weighted average of the forecasts, or the median, i.e. the point where half of the probability is above and below the forecast.
+If the point forecasts are eliminated, then you can eliminate the ``Type'' column.
+I know some teams are in favor of the point forecasts because they can do those alot easier than the probabilistic forecasts.
+A compromise is to ask each team to submit up to two csv files each week: one with point forecasts and one with probabilistic forecasts perhaps even computing point forecasts based on probabilistic forecasts if the team does not want to submit point forecasts separately.
+
+If the point forecasts are eliminated, then the ``Value'' column can properly be called ``probability''.
+
+There is really no reason to have the date created and team name as meta-data in the file.
+This information is better placed in the filename.
+For example, the filename could be TeamName_YYYYMMDD.csv and then all the information can be easily extracted.
+
+
+
+\end{document}
