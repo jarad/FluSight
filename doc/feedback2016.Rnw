@@ -1,6 +1,6 @@
 \documentclass{article}
 
-\usepackage{fullpage}
+\usepackage{fullpage,hyperref}
 
 \title{Feedback on 2016--2017 suggested CDC FluSight guidelines}
 \author{Jarad Niemi}
@@ -9,19 +9,22 @@
 
 \maketitle
 
-\section{Summary}
+\section*{Executive Summary}
+
+Here is my prioritized list of modifications to the current guideline.
 
 \begin{itemize}
-\item Add the forecasting target that is the sum of the ILI percentages above baseline across the season.
 \item Probabilistic forecasts are awesome!
 \item Do not sum the preceding and proceeding probabilities instead just use the probability from the correct bin.
 \item Simplify the csv by
 	\begin{itemize}
-	\item Eliminating intervals.
-	\item Eliminating point forecasts.
-	\item Change value to probability.
 	\item Eliminate the metadata rows in the file and have this in the filename instead.
+	\item Eliminating intervals.
+	\item Eliminating point forecasts (or allow a separate submission file).
+	\item Change value column to probability.
 	\end{itemize}
+\item Build an open-source R package with convenience functions.
+\item Add the forecasting target that is the sum of the ILI percentages above baseline across the season.
 \end{itemize}
 
 \section{Forecasting targets}
@@ -45,6 +48,11 @@ the probability assigned to that correct bin plus the probability assigned to th
 
 Adding the preceding and proceeding bins has no theoretical underpinnings whereas the probability of the correct bin (only) has theoretical support from Bayesian model evaluation.
 Summing the bins means that a forecast that has 100\% on the true value is scored the same as another forecast that has 33$\frac{1}{3}$\% on the true value as well as the preceding and proceeding bins.
+In addition, the 100\% guess gets complete credit for targets landing on the preceding or proceeding bin (even though the forecast was incorrect) whereas the second forecast only receives 66$\frac{2}{3}$\%.
+In this scenario, it seems like you would want to reward the second forecast rather than the first.
+
+There are also ways to provide a forecast that is not what you truly believe but that will perform better than your actual forecast, see \url{http://stats.stackexchange.com/questions/235251/maximize-expected-return}.
+
 
 It also inflates the efficacy of all of the models and puts them close together on the top edge of the range.
 Ideally we want to be able to distinguish amongst the best models and thus we should be seeking approaches that spread out the efficacy of these models.
@@ -73,7 +81,66 @@ If the point forecasts are eliminated, then the ``Value'' column can properly be
 
 There is really no reason to have the date created and team name as meta-data in the file.
 This information is better placed in the filename.
-For example, the filename could be TeamName_YYYYMMDD.csv and then all the information can be easily extracted.
+For example, the filename could be TeamName\_EW\#\#.csv and then all the information can be easily extracted. Also, date of submission is not something that should be included in the filename but rather a timestamp in your system.
+
+
+\section{Build an R package to provide convenience functions}
+
+I have started an R package (really nothing in it yet) that I will provide utility functions for this competition.
+I'm thinking functions like
+\begin{itemize}
+\item check\_entry: check whether the entry is valid and, if not, report why not
+\item write\_entry: write the csv in the proper format
+\item point\_forecast: calculate point forecast based on probabilistic forecasts
+\item score\_entry: given an entry and the truth provide the probabilistic score
+\end{itemize}
+These could be used by anybody to make sure their entry is in the proper format, but it can also be used by you in checking entries on your end.
+
+The skeleton of my package is \url{https://github.com/jarad/FluSight}.
+There is essentially nothing there, because I don't want to do a bunch of work before we settle on an entry format.
+
+You will get a lot more out of this community if you allow the basics of what you are doing to be an open-source project.
+
+
+
+\section{Ensemble forecasts}
+
+Suppose there is a set of models $m=1,\ldots,M$ and each model has a set of bin probabilities $p_{m}(b)$ for bins $b=1,\ldots,B$.
+Then an ensemble forecast for bin $b$ is
+\[
+e_b = \sum_{m=1}^M w_m p_{m}(b)
+\]
+where $\sum_{m=1}^M w_m = 1$.
+This provides a valid probabilistic forecast since
+\[
+\sum_{b=1}^B e_b = \sum_{b=1}^B \sum_{m=1}^M w_m p_{m}(b) = \sum_{m=1}^M w_m \sum_{b=1}^B  p_{m}(b) = \sum_{m=1}^M w_m = 1.
+\]
+The question then becomes how to determine $w_m$.
+
+\subsection{Model weights}
+
+If there is no information on how well the models are doing, i.e. they are trying to predict peak week and the peak week hasn't occurred yet, then using data from only this year there is nothing else you can do but use $w_m = 1/M$.
+If you want to include data from past years, then you might want to have $w_m$ depend on how well the team did at forecasting in previous years.
+But if methodology changes, then it is unclear how $w_m$ should be adjusted.
+
+For targets that are continually updated, e.g. 1-week ahead forecasts, we know the next week how each of the model's performed.
+So let $t$ indicate time, i.e. week, then model $m$ provides a $p_{tm}(b)$ for bin $b$ at time $t$.
+We can then use historical performance to improve $w_{tm}$ the weight for model $m$ at time $t$.
+
+If you think there is one best model across all time points, then you should use (using 1-week ahead forecasts as an example)
+\[
+w_{Tm} \propto \prod_{t=1}^{T-1} p_{t-1,m}(y_t)
+\qquad\mbox{equivalently}\qquad
+w_{Tm}\propto w_{T-1,m} p_{t-1,m}(y_t)
+\]
+where $y_t$ is the realized target value, e.g. the actual ILI \% for the current week and $p_m(b)$ indicates the probability for model $m$ assigned to bin $b$.
+
+Rather than assuming one model across all time points, it may make sense to decay the weights based on how far back in time that prediction was made, e.g.
+\[
+w_{Tm} \propto w_{T-1,m}^\delta p_{t-1,m}(y_t).
+\]
+where $0<\delta<1$ allows the effect of the previous weights to diminish.
+
 
 
 
