@@ -5,7 +5,7 @@ require(cdcfluview)
 
 ################################################
 # fluview - T/F indicator for whether to get ILINet data from FluView
-# week.flu - if fluview=F, then dataset of ILINet data from season to use to calculate targets
+# week_flu - if fluview = FALSE, then dataset of ILINet data from season to use to calculate targets
 #       Must contain following columns:
 #					location: character with 11 values: "US National" and "HHS Region 1"-"HHS Region 10"
 #					week: MMWR week
@@ -13,14 +13,23 @@ require(cdcfluview)
 #					observation: weighted ILI value for given location/week/season combination
 ################################################
 
+#' Create targets from historical flu data
+#'
+#' This function will
 
-create.targets <- function(fluview=T,week.flu=NULL){
+create_targets <- function(fluview = TRUE, week_flu = NULL){
 
-  if(fluview=F & is.null(week.flu)) stop("ILINet data required if not fetching data from FluView")
+  if(fluview = FALSE & is.null(week_flu)) stop("ILINet data required if not fetching data from FluView")
+
+	if (!is.null(week_flu)) {
+		stopifnot(c("location","week","season","observation") %in% names(week_flu))
+	}
 
 	##### Read in ILINet results #####
 
-  if(fluview=T){
+  if(fluview = TRUE){
+  	if (!is.null(week_flu))
+
     #Read in ILINet data and rename locations to match template
     usflu <- get_flu_data("national", "ilinet", years=2015:2016) %>%
       select(
@@ -40,22 +49,22 @@ create.targets <- function(fluview=T,week.flu=NULL){
     regionflu$location <- paste("HHS",regionflu$location)
 
     #Join national and HHs regional flu data
-    week.flu <- rbind(usflu,regionflu)
+    week_flu <- rbind(usflu,regionflu)
 
     #Rename seasons to be consistent
-    week.flu[week<40, season := paste(YEAR-1,YEAR,sep="/")]
-    week.flu[week>=40, season := paste(YEAR,YEAR+1,sep="/")]
-    week.flu[,YEAR:=NULL]
+    week_flu[week<40, season := paste(YEAR-1,YEAR,sep="/")]
+    week_flu[week>=40, season := paste(YEAR,YEAR+1,sep="/")]
+    week_flu[,YEAR:=NULL]
   }
 
   #Create baselines for each region - needs to be updated 10/11/2016 with new baselines
-  baselines <- data.table(location=unique(week.flu$location),
+  baselines <- data.table(location=unique(week_flu$location),
                           value=c(2.1,1.3,2.3,1.8,1.6,1.9,3.6,1.7,1.4,2.6,1.1))
 
 
   ##############################################################
 
-  #week.flu <- as.data.table(read.csv(file="15-16_ILINet_Flu.csv",na=""))
+  #week_flu <- as.data.table(read.csv(file="15-16_ILINet_Flu.csv",na=""))
 
   #Date first forecasts received
   start.date <- as.Date("2015-11-02")
@@ -63,10 +72,10 @@ create.targets <- function(fluview=T,week.flu=NULL){
   end.wk <- 18+52     #Last week of ILINet data used for forecasts
 
   #Add 52 to weeks in new year to keep weeks in order
-  week.flu[week<40, week := as.integer(week+52)]
+  week_flu[week<40, week := as.integer(week+52)]
 
   #Only keep weeks of interest for weekly forecasts received
-  week.flu <- week.flu[week.flu$week>=start.wk & week.flu$week<=(end.wk+4),]
+  week_flu <- week_flu[week_flu$week>=start.wk & week_flu$week<=(end.wk+4),]
 
 
   ##############################################################
@@ -87,18 +96,18 @@ create.targets <- function(fluview=T,week.flu=NULL){
                             observation=integer(),
                             season=character())
 
-  for(this.location in levels(as.factor(week.flu$location))){
+  for(this.location in levels(as.factor(week_flu$location))){
     for(this.target in targets){
       wk <- as.numeric(substr(this.target,1,1))
       for(this.week in start.wk:end.wk){
         #Set forecast date
         forecast.date=start.date + (this.week-start.wk)*7
         #Set forecast location
-        this.point <- filter(week.flu, location==this.location &
-                               week==this.week+wk) %>%
+        this.point <- filter(week_flu, location = this.location &
+                               week = this.week+wk) %>%
                       mutate(
-                             target=this.target,
-                             forecast.date=forecast.date) %>%
+                             target = TRUEhis.target,
+                             forecast.date = FALSEorecast.date) %>%
                       select(-week,observation=percent)
         week.target <- rbind(week.target,this.point)
       }
@@ -114,6 +123,6 @@ create.targets <- function(fluview=T,week.flu=NULL){
   setcolorder(week.target, c("target","location","season","forecast.date","observation"))
 
   ###Export to CSV
-  write.csv(week.target, file="weekly_flu_targets.csv", na="",row.names=F)
+  write.csv(week.target, file="weekly_flu_targets.csv", na="",row.names = FALSE)
 
 }

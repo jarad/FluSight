@@ -4,7 +4,7 @@ require(dplyr)
 ### Need some way to add forecast date to the submission - could add to verify_forecasts
 
 
-calculate.bin.scores <- function(this.sub, targets, mult.bins=T) {
+calculate_bin_scores <- function(this.sub, targets, mult.bins=T) {
 
 	names(this.sub) <- tolower(names(this.sub))
 
@@ -33,13 +33,13 @@ calculate.bin.scores <- function(this.sub, targets, mult.bins=T) {
             location == forecast.scores$location[i] &
             target == forecast.scores$target[i] &
             forecast.date == forecast.scores$forecast.date[i]) %>%
-        bin.score(
+        bin_score(
                   mult.bins)
     }
   return(forecast.scores)
 }
 
-bin.score <- function(these.probs, mult.bins=T) {
+bin_score <- function(these.probs, mult.bins=T) {
   #if (is.na(these.probs$observation[1])) return(NA)
 
   #Identify bin with correct prediction

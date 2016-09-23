@@ -2,7 +2,7 @@ require(dplyr)
 
 ##########################################################################
 # Input:
-# sub - data frame of team submission file read from csv
+# entry - data frame of team submission file read from csv
 # templ - data frame of template file read from csv
 #
 #	Returns:
@@ -17,10 +17,10 @@ require(dplyr)
 #  bad.test <- read.csv("Z:/Forecasting/Challenge_2016_17/flu_scores_2016-17/templates/bad_test.csv")
 #  sub$bin_start_incl <- "test"
 
-verify.sub <- function(this.sub, templ) {
+verify_entry <- function(this.sub, templ) {
 
 	names(this.sub) <- tolower(names(this.sub))
-	names(templ) <- tolower(names(templ))
+	names(templ)    <- tolower(names(templ))
 
 	if (is.null(templ)) stop("Template is null.")
 
