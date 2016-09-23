@@ -12,10 +12,9 @@ require(dplyr)
 
 
 # #Test files
-#  this.sub <- read.csv("Z:/Forecasting/Challenge_2016_17/Historical_Null_Model/model_submissions/EW1_CDCHist_2017-01-04.csv")
-#  templ <- read.csv("Z:/Forecasting/Challenge_2016_17/flu_scores_2016-17/templates/template.csv")
-#  bad.test <- read.csv("Z:/Forecasting/Challenge_2016_17/flu_scores_2016-17/templates/bad_test.csv")
-#  sub$bin_start_incl <- "test"
+#  valid.test <- read.csv("data-raw/valid-test.csv")
+#  template <- read.csv("data-raw/template.csv")
+#  bad.test <- read.csv("data-raw/bad-test.csv")
 
 verify_entry <- function(this.sub, templ) {
 
