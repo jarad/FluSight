@@ -1,14 +1,8 @@
 require(dplyr)
 
-##########################################################################
-# Input:
-# entry - data frame of team submission file read from csv
-# templ - data frame of template file read from csv
-#
-#	Returns:
-# sub - data frame of team submission verified and adjusted as needed
-#
-##########################################################################
+
+
+
 
 
 # #Test files
@@ -17,6 +11,15 @@ require(dplyr)
 #  bad.test <- read.csv("data-raw/bad-test.csv")
 
 verify_entry <- function(this.sub, templ) {
+	# Verifies that submissions to the CDC Flu Forecasting Challenge are formatted
+	# correctly and that submission values are valid
+	#
+	# Args:
+	# 	entry - data frame of team submission file read from csv
+	# 	templ - data frame of template file read from csv
+	#
+	#	Returns:
+	# 	sub - data frame of team submission verified and adjusted as needed
 
 	names(this.sub) <- tolower(names(this.sub))
 	names(templ)    <- tolower(names(templ))
