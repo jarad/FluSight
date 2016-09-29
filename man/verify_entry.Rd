@@ -2,23 +2,25 @@
 % Please edit documentation in R/verify_entry.R
 \name{verify_entry}
 \alias{verify_entry}
-\title{Verifies a csv submission file}
+\title{This verifies an entry stored as an R data.frame}
 \usage{
-verify_entry(file)
+verify_entry(entry)
 }
 \arguments{
-\item{file}{A csv file}
+\item{entry}{A data.frame}
 }
 \value{
-TRUE if the file is compatible and FALSE if it is not.
+TRUE or a character vector of errors
 }
 \description{
-This function will run through a variety of tests to check a submission file.
-It will return TRUE if the entry is valid and FALSE if not. In both cases, it might
-print warnings.
+This verifies an entry stored as an R data.frame
 }
 \examples{
-foo <- system.file("extdata", "valid-test.csv", package="FluSight")
-verify_entry(foo)
+file <- system.file("extdata", "valid-test.csv", package="FluSight")
+entry <- read.csv(file, stringsAsFactors = FALSE)
+verify_entry(entry) # TRUE
+}
+\seealso{
+verify_entry_file
 }
 

@@ -1,6 +1,6 @@
 Package: FluSight
 Title: Utility functions for the CDC FluSight competition
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: person("Jarad", "Niemi", email = "niemi@iastate.edu", role = c("aut", "cre"))
 Description: Provides utility functions for the CDC FluSight competition
     including verify_entry, ...

@@ -1,36 +1,19 @@
-#' A function to read in an Entry from a csv file
+#' A function to read in a csv entry file
+#'
+#' This function reads in the csv file and arranges it for consistency.
 #'
 #' @param file A csv file
-#' @return An Entry
+#' @return An arranged data.frame
 #' @import dplyr
 read_entry = function(file) {
-	# Expected format of the file is teamName-week.csv
+	read.csv(file, stringsAsFactors = FALSE) %>% arrange_entry
+}
 
-  # Need to extract teamName from filename
-	teamName = "defaultName"
-
-	# Need to extract week from filename
-	week = 1
-
-	tmp = read.csv(file, stringsAsFactors = FALSE)
-	names(tmp) = tolower(names(tmp))
-
-	# Organize the file
-	forecast = tmp %>%
-		arrange(type, location, target, bin_start_incl)
-
-	# Check for point forecasts
-  if (any(forecast$type == "Point")) {
-    point_forecast = forecast %>%
-    	filter(type == "Point") %>%
-    	dplyr::select(-type, -bin_start_incl, - bin_end_notincl)
-
-    forecast = forecast %>%
-    	filter(type == "Bin") %>%
-    	dplyr::select(-type)
-
-    new("Entry", teamName = teamName, week = week, forecast = forecast, point_forecast = point_forecast)
-  } else {
-  	new("Entry", teamName = teamName, week = week, forecast = forecast) # point forecasts are automatically generated
-  }
+#' A function to arrange an entry for consistency
+#'
+#' @param entry A data.frame
+#' @return An arranged data.frame
+#' @import dplyr
+arrange_entry = function(entry) {
+	entry %>%	arrange(type, location, target, bin_start_incl)
 }

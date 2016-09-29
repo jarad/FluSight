@@ -1,63 +1,98 @@
-#' Verifies a csv submission file
+#' A function to verify an entry file
 #'
-#' This function will run through a variety of tests to check a submission file.
-#' It will return TRUE if the entry is valid and FALSE if not. In both cases, it might
-#' print warnings.
+#' This function will check to make sure the structure is correct and that
+#' the forecast probabilities are non-negative and sum to a value between
+#' 0.9 and 1.1.
 #'
-#' @param file A csv file
-#' @return TRUE if the file is compatible
+#' @param file A csv entry file
+#' @return TRUE or a character vector of errors
 #' @export
+#' @seealso verify_entry
 #' @examples
-#' foo <- system.file("extdata", "valid-test.csv", package="FluSight")
-#' verify_entry(foo)
-verify_entry <- function(file) {
-	errors <- NULL
-
-	entry <- read.csv(file, stringsAsFactors = FALSE)
-
-	errors <- rbind(errors, verify_colnames(entry))
-
-	if (is.null(errors)) {
-		return(TRUE)
-	} else {
-		stop(errors)
-	}
-}
-
-####################################################################################
-# The functions below all take a data.frame as input and
-# return NULL or a character string of errors.
-####################################################################################
-
-verify_colnames <- function(entry) {
-	correct_colnames <- c("location",
-												"target",
-												"type",
-												"unit",
-												"bin_start_incl",
-												"bin_end_notincl",
-												"value")
-
-	entry_colnames <- colnames(entry)
-
-	# Check for extra column names
-	extra_colnames <- setdiff(entry_colnames, correct_colnames)
-	if (length(extra_colnames)>0)
-		warning("Extra column name(s) found: ",paste0(extra_colnames,sep=" "), call.=FALSE)
-
-	# Check to make sure all necessary column names are included
-	if (all(correct_colnames %in% entry_colnames)) {
-		return(NULL)
-	} else {
-		# If necessary columns are missing, then determine which ones are missing.
-		extra_colnames <- setdiff(correct_colnames, entry_colnames)
-		return(paste0("These column(s) are needed in the entry file: ", paste0(extra_colnames,collapse=" ")))
-	}
+#' file <- system.file("extdata", "valid-test.csv", package="FluSight")
+#' verify_entry_file(file) # TRUE
+verify_entry_file <- function(file) {
+	entry = read_entry(file)
+  verify_entry(entry)
 }
 
 
 
+#' This verifies an entry stored as an R data.frame
+#'
+#' @param entry A data.frame
+#' @return TRUE or a character vector of errors
+#' @import dplyr
+#' @export
+#' @seealso verify_entry_file
+#' @examples
+#' file <- system.file("extdata", "valid-test.csv", package="FluSight")
+#' entry <- read.csv(file, stringsAsFactors = FALSE)
+#' verify_entry(entry) # TRUE
+verify_entry = function(entry) {
+	entry = entry %>% arrange_entry
 
+	# Read known valid entry
+	valid_entry <- read_entry(system.file("extdata",
+																				"valid-test.csv",
+																				package="FluSight"))
+
+	errors <- character()
+	errors <- c(errors, verify_structure(    entry, valid_entry))
+	errors <- c(errors, verify_probabilities(entry))
+
+	if(length(errors) == 0) TRUE else errors
+}
+
+
+#' This will verify the structure of the entry
+#'
+#' @param entry An entry data.frame
+#' @param valid_entry A valid entry data.frame
+#' @import dplyr
+#' @return NULL or a character vector of error messages
+verify_structure <- function(entry, valid_entry) {
+	msg <- all.equal(entry       %>% select(-value),
+									 valid_entry %>% select(-value))
+	if (!isTRUE(msg))
+		errors <- c(errors, paste("ERROR:", msg),
+								"NOTE: Please take a look at the write_entry() function.")
+}
+
+
+#' This will verify the probabilities of an entry
+#'
+#' @param entry An entry data.frame
+#' @import dplyr
+#' @return NULL or a character vector of error messages
+verify_probabilities <- function(entry) {
+
+	msg    <- character()
+
+	probabilities = entry %>%
+		filter(type=="Bin") %>%
+		group_by(location,target) %>%
+		summarize(sum      = sum(value),
+							negative = any(value<0))
+
+	# Report message for negative probabilities
+	if (any(probabilities$negative)) {
+		tmp <- probabilities %>%
+			filter(negative)
+
+		msg <- c(msg, paste0("ERROR: Negative probabilities detected in ", paste(tmp$location, tmp$target), "."))
+	}
+
+	# Report message for sum of target probabilities outside of 0.9 and 1.1
+	if (any(probabilities$sum < 0.9 | probabilities$sum > 1.1)) {
+		tmp <- probabilities %>%
+			filter(sum<0.9 | sum>1.1)
+
+		msg <- c(msg, paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ", tmp$sum, "."))
+	}
+
+	return(msg)
+}
 
 
 
