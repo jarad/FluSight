@@ -14,6 +14,10 @@ generate_point_forecasts <- function(entry) {
   	generate_point_forecast(.)
 }
 
+
+
+
+
 #' Generate point forecasts from probabilistic forecasts
 #'
 #' The point forecast is taken to be the expected value of the
