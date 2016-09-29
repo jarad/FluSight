@@ -2,7 +2,7 @@
 % Please edit documentation in R/verify_entry.R
 \name{verify_entry}
 \alias{verify_entry}
-\title{This verifies an entry stored as an R data.frame}
+\title{Verify entry stored as an R data.frame}
 \usage{
 verify_entry(entry)
 }
@@ -13,7 +13,7 @@ verify_entry(entry)
 TRUE or a character vector of errors
 }
 \description{
-This verifies an entry stored as an R data.frame
+Verify entry stored as an R data.frame
 }
 \examples{
 file <- system.file("extdata", "valid-test.csv", package="FluSight")

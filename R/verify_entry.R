@@ -1,4 +1,4 @@
-#' A function to verify an entry file
+#' Verify an entry file
 #'
 #' This function will check to make sure the structure is correct and that
 #' the forecast probabilities are non-negative and sum to a value between
@@ -18,7 +18,7 @@ verify_entry_file <- function(file) {
 
 
 
-#' This verifies an entry stored as an R data.frame
+#' Verify entry stored as an R data.frame
 #'
 #' @param entry A data.frame
 #' @return TRUE or a character vector of errors
@@ -45,7 +45,7 @@ verify_entry = function(entry) {
 }
 
 
-#' This will verify the structure of the entry
+#' Verify the entry structure
 #'
 #' @param entry An entry data.frame
 #' @param valid_entry A valid entry data.frame
@@ -60,7 +60,7 @@ verify_structure <- function(entry, valid_entry) {
 }
 
 
-#' This will verify the probabilities of an entry
+#' Verify the entry probabilities
 #'
 #' @param entry An entry data.frame
 #' @import dplyr

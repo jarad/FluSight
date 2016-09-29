@@ -2,7 +2,7 @@
 % Please edit documentation in R/verify_entry.R
 \name{verify_entry_file}
 \alias{verify_entry_file}
-\title{A function to verify an entry file}
+\title{Verify an entry file}
 \usage{
 verify_entry_file(file)
 }

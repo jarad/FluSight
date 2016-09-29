@@ -2,7 +2,7 @@
 % Please edit documentation in R/verify_entry.R
 \name{verify_structure}
 \alias{verify_structure}
-\title{This will verify the structure of the entry}
+\title{Verify the entry structure}
 \usage{
 verify_structure(entry, valid_entry)
 }
@@ -15,6 +15,6 @@ verify_structure(entry, valid_entry)
 NULL or a character vector of error messages
 }
 \description{
-This will verify the structure of the entry
+Verify the entry structure
 }
 

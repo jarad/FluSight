@@ -2,7 +2,7 @@
 % Please edit documentation in R/verify_entry.R
 \name{verify_probabilities}
 \alias{verify_probabilities}
-\title{This will verify the probabilities of an entry}
+\title{Verify the entry probabilities}
 \usage{
 verify_probabilities(entry)
 }
@@ -13,6 +13,6 @@ verify_probabilities(entry)
 NULL or a character vector of error messages
 }
 \description{
-This will verify the probabilities of an entry
+Verify the entry probabilities
 }
 

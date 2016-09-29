@@ -1,4 +1,4 @@
-#' A function to read in a csv entry file
+#' Read in a csv entry file
 #'
 #' This function reads in the csv file and arranges it for consistency.
 #'
@@ -9,7 +9,7 @@ read_entry = function(file) {
 	read.csv(file, stringsAsFactors = FALSE) %>% arrange_entry
 }
 
-#' A function to arrange an entry for consistency
+#' Arrange an entry for consistency
 #'
 #' @param entry A data.frame
 #' @return An arranged data.frame

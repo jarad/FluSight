@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_entry.R
 \name{arrange_entry}
 \alias{arrange_entry}
-\title{A function to arrange an entry for consistency}
+\title{Arrange an entry for consistency}
 \usage{
 arrange_entry(entry)
 }
@@ -13,6 +13,6 @@ arrange_entry(entry)
 An arranged data.frame
 }
 \description{
-A function to arrange an entry for consistency
+Arrange an entry for consistency
 }
 

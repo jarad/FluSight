@@ -2,7 +2,7 @@
 % Please edit documentation in R/read_entry.R
 \name{read_entry}
 \alias{read_entry}
-\title{A function to read in a csv entry file}
+\title{Read in a csv entry file}
 \usage{
 read_entry(file)
 }
