@@ -12,7 +12,7 @@
 #' file <- system.file("extdata", "valid-test.csv", package="FluSight")
 #' verify_entry_file(file) # TRUE
 verify_entry_file <- function(file) {
-	entry = read_entry(file)
+	entry <- read_entry(file)
   verify_entry(entry)
 }
 
@@ -30,7 +30,7 @@ verify_entry_file <- function(file) {
 #' entry <- read.csv(file, stringsAsFactors = FALSE)
 #' verify_entry(entry) # TRUE
 verify_entry = function(entry) {
-	entry = entry %>% arrange_entry
+	entry <- entry %>% arrange_entry
 
 	# Read known valid entry
 	valid_entry <- read_entry(system.file("extdata",
