@@ -7,14 +7,19 @@ read_entry = function(file) {
 	# Expected format of the file is teamName-week.csv
 
   # Need to extract teamName from filename
-	teamName = "teamName"
+	teamName = "defaultName"
 
 	# Need to extract week from filename
 	week = 1
 
-	forecast = read.csv(file, stringsAsFactors = FALSE)
-	names(forecast) = tolower(names(forecast))
+	tmp = read.csv(file, stringsAsFactors = FALSE)
+	names(tmp) = tolower(names(tmp))
 
+	# Organize the file
+	forecast = tmp %>%
+		arrange(type, location, target, bin_start_incl)
+
+	# Check for point forecasts
   if (any(forecast$type == "Point")) {
     point_forecast = forecast %>%
     	filter(type == "Point") %>%
