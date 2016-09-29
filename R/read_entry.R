@@ -13,6 +13,7 @@ read_entry = function(file) {
 	week = 1
 
 	forecast = read.csv(file, stringsAsFactors = FALSE)
+	names(forecast) = tolower(names(forecast))
 
   if (any(forecast$type == "Point")) {
     point_forecast = forecast %>%
