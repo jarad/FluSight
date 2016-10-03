@@ -38,3 +38,5 @@ vignettes/*.pdf
 *.tex
 *.log
 *.synctex.gz
+
+*.Rproj
