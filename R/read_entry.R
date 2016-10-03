@@ -26,9 +26,7 @@ read_entry = function(file) {
 #' @export
 arrange_entry = function(entry) {
 
-
-
-	check_columns(entry)
+	verify_columns(entry)
 
 	# Arrange entry by type, location, target, bin
 	entry %>%
@@ -36,6 +34,8 @@ arrange_entry = function(entry) {
 		dplyr::select_("location", "target", "type", "unit",
 									"bin_start_incl", "bin_end_notincl", "value")
 }
+
+
 
 
 #' Check columns of an entry
@@ -48,7 +48,7 @@ arrange_entry = function(entry) {
 #' @param entry A data.frame
 #' @return Invisibly returns TRUE if the column names check out
 #'
-check_columns <- function(entry) {
+verify_columns <- function(entry) {
 	# Create vector of valid column names
 	necessary_columns <- c("location", "target", "type", "unit",
 	                       "bin_start_incl", "bin_end_notincl", "value")
