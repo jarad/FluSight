@@ -30,18 +30,30 @@ verify_entry_file <- function(file) {
 #' entry <- read.csv(file, stringsAsFactors = FALSE)
 #' verify_entry(entry) # TRUE
 verify_entry = function(entry) {
-	entry <- entry %>% arrange_entry
 
 	# Read known valid entry
 	valid_entry <- read_entry(system.file("extdata",
 																				"valid-test.csv",
 																				package="FluSight"))
 
-	errors <- character()
-	errors <- c(errors, verify_structure(    entry, valid_entry))
-	errors <- c(errors, verify_probabilities(entry))
+	# Return error and skip other checks if column names don't match
+	msg <- all.equal(names(entry),names(valid_entry))
 
-	if(length(errors) == 0) TRUE else errors
+	if (msg == TRUE) {
+		entry <- entry %>% arrange_entry
+
+		errors <- character()
+		errors <- c(errors, verify_structure(    entry, valid_entry))
+		errors <- c(errors, verify_probabilities(entry))
+
+	} else {
+		errors <- c(paste("ERROR: Column name error,", msg,"\n"),
+								"NOTE: Please take a look at the write_entry() function.")
+	}
+
+	if(length(errors) == 0) TRUE else {
+		stop(errors)
+	}
 }
 
 
@@ -54,9 +66,12 @@ verify_entry = function(entry) {
 verify_structure <- function(entry, valid_entry) {
 	msg <- all.equal(entry       %>% select(-value),
 									 valid_entry %>% select(-value))
-	if (!isTRUE(msg))
-		errors <- c(errors, paste("ERROR:", msg),
-								"NOTE: Please take a look at the write_entry() function.")
+	if (!isTRUE(msg)){
+		errors <- character()
+		errors <- c(errors, paste("ERROR:", msg,"\n"),
+							 "NOTE: Please take a look at the write_entry() function.\n")
+		return(errors)
+	}
 }
 
 
@@ -88,7 +103,7 @@ verify_probabilities <- function(entry) {
 		tmp <- probabilities %>%
 			filter(sum<0.9 | sum>1.1)
 
-		msg <- c(msg, paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ", tmp$sum, "."))
+		msg <- c(msg, paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ", tmp$sum, ". \n"))
 	}
 
 	return(msg)
