@@ -13,27 +13,59 @@ test_that("Return error when column name doesn't exist", {
   for (i in seq_along(names(valid_entry))) {
   	invalid_entry <- valid_entry
   	names(invalid_entry)[i] <- "invalidName"
-    expect_error(verify_entry(invalid_entry))
+    expect_error(arrange_entry(invalid_entry))
+    expect_error(verify_entry( invalid_entry))
   }
 })
+
 
 test_that("Return error when entry structure is incorrect", {
 	for (i in head(seq_along(names(valid_entry)),-1)) {
 		invalid_entry <- valid_entry
 		invalid_entry[, i] <- "invalidData"
+		expect_error(verify_structure(invalid_entry, valid_entry))
 		expect_error(verify_entry(invalid_entry))
 	}
 })
 
-#
-# test_that("Return error when probabilities are negative", {
-# 	for (this_location in unique(valid_entry$location)) {
-# 		for (this_target in unique(valid_entry$target)) {
-# 			invalid_entry <- valid_entry
-# 			invalid_entry$value[invalid_entry$location == this_location &
-# 														invalid_entry$target == this_target &
-# 														invalid_entry$type == "Bin"] <- -0.5
-# 			expect_error(verify_entry(invalid_entry))
-# 		}
-# 	}
-# })
+
+test_that("Return error when probabilities are negative", {
+	for (this_location in unique(valid_entry$location)) {
+		for (this_target in unique(valid_entry$target)) {
+			invalid_entry <- valid_entry
+			invalid_entry$value[invalid_entry$location == this_location &
+														invalid_entry$target == this_target &
+														invalid_entry$type == "Bin"] <- -0.5
+			expect_error(verify_probabilities(invalid_entry))
+			expect_error(verify_entry(        invalid_entry))
+		}
+	}
+})
+
+
+test_that("Return error when probabilities sum to less than 0.9", {
+	for (this_location in unique(valid_entry$location)) {
+		for (this_target in unique(valid_entry$target)) {
+			invalid_entry <- valid_entry
+			invalid_entry$value[invalid_entry$location == this_location &
+														invalid_entry$target == this_target &
+														invalid_entry$type == "Bin"] <- 0.01
+			expect_error(verify_probabilities(invalid_entry))
+			expect_error(verify_entry(        invalid_entry))
+		}
+	}
+})
+
+
+test_that("Return error when probabilities sum to more than 1.1", {
+	for (this_location in unique(valid_entry$location)) {
+		for (this_target in unique(valid_entry$target)) {
+			invalid_entry <- valid_entry
+			invalid_entry$value[invalid_entry$location == this_location &
+														invalid_entry$target == this_target &
+														invalid_entry$type == "Bin"] <- 0.1
+			expect_error(verify_probabilities(invalid_entry))
+			expect_error(verify_entry(        invalid_entry))
+		}
+	}
+})

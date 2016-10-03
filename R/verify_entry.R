@@ -21,7 +21,7 @@ verify_entry_file <- function(file) {
 #' Verify entry stored as an R data.frame
 #'
 #' @param entry A data.frame
-#' @return TRUE or a character vector of errors
+#' @return TRUE or a descriptive error message
 #' @import dplyr
 #' @export
 #' @seealso verify_entry_file
@@ -36,24 +36,16 @@ verify_entry = function(entry) {
 																				"valid-test.csv",
 																				package="FluSight"))
 
-	# Return error and skip other checks if column names don't match
-	msg <- all.equal(names(entry),names(valid_entry))
 
-	if (msg == TRUE) {
-		entry <- entry %>% arrange_entry
+	# Verify structure of submission
+	verify_structure(entry, valid_entry)
 
-		errors <- character()
-		errors <- c(errors, verify_structure(    entry, valid_entry))
-		errors <- c(errors, verify_probabilities(entry))
+	# Verify probabilities in submission
+	verify_probabilities(entry)
 
-	} else {
-		errors <- c(paste("ERROR: Column name error,", msg,"\n"),
-								"NOTE: Please take a look at the write_entry() function.")
-	}
+	# Return success message
+	return(TRUE)
 
-	if(length(errors) == 0) TRUE else {
-		stop(errors)
-	}
 }
 
 
@@ -62,15 +54,13 @@ verify_entry = function(entry) {
 #' @param entry An entry data.frame
 #' @param valid_entry A valid entry data.frame
 #' @import dplyr
-#' @return NULL or a character vector of error messages
+#' @return NULL or a descriptive error message
 verify_structure <- function(entry, valid_entry) {
 	msg <- all.equal(entry       %>% select(-value),
 									 valid_entry %>% select(-value))
 	if (!isTRUE(msg)){
-		errors <- character()
-		errors <- c(errors, paste("ERROR:", msg,"\n"),
+		stop(paste("ERROR:", msg,"\n"),
 							 "NOTE: Please take a look at the write_entry() function.\n")
-		return(errors)
 	}
 }
 
@@ -79,10 +69,8 @@ verify_structure <- function(entry, valid_entry) {
 #'
 #' @param entry An entry data.frame
 #' @import dplyr
-#' @return NULL or a character vector of error messages
+#' @return NULL or a descriptive error message
 verify_probabilities <- function(entry) {
-
-	msg    <- character()
 
 	probabilities = entry %>%
 		filter(type=="Bin") %>%
@@ -95,7 +83,9 @@ verify_probabilities <- function(entry) {
 		tmp <- probabilities %>%
 			filter(negative)
 
-		msg <- c(msg, paste0("ERROR: Negative probabilities detected in ", paste(tmp$location, tmp$target), "."))
+		stop(paste0("ERROR: Negative probabilities detected in ",
+								paste(tmp$location, tmp$target), ".\n"))
+
 	}
 
 	# Report message for sum of target probabilities outside of 0.9 and 1.1
@@ -103,10 +93,11 @@ verify_probabilities <- function(entry) {
 		tmp <- probabilities %>%
 			filter(sum<0.9 | sum>1.1)
 
-		msg <- c(msg, paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ", tmp$sum, ". \n"))
+		stop(paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ",
+								tmp$sum, ". \n"))
+
 	}
 
-	return(msg)
 }
 
 
