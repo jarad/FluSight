@@ -7,15 +7,15 @@
 #' @import magrittr
 #' @export
 read_entry = function(file) {
-	entry = read.csv(file,
-					 colClasses = "character",      # Due to bin_start_incl "none"
-					 stringsAsFactors = FALSE)
+  entry <- read.csv(file,
+                    colClasses = "character",      # Due to bin_start_incl "none"
+                    stringsAsFactors = FALSE)
 
-	names(entry) = tolower(names(entry))
+  names(entry) <- tolower(names(entry))
 
-	entry <- mutate(entry, value = as.numeric(value))
+  entry <- dplyr::mutate(entry, value = as.numeric(value))
 
-	entry %>% arrange_entry
+  entry %>% arrange_entry
 }
 
 #' Arrange an entry for consistency
@@ -26,13 +26,13 @@ read_entry = function(file) {
 #' @export
 arrange_entry = function(entry) {
 
-	verify_columns(entry)
+  verify_columns(entry)
 
-	# Arrange entry by type, location, target, bin
-	entry %>%
-		dplyr::arrange(type, location, target, bin_start_incl) %>%
-		dplyr::select_("location", "target", "type", "unit",
-									"bin_start_incl", "bin_end_notincl", "value")
+  # Arrange entry by type, location, target, bin
+  entry %>%
+    dplyr::arrange(type, location, target, bin_start_incl) %>%
+    dplyr::select_("location", "target", "type", "unit",
+                   "bin_start_incl", "bin_end_notincl", "value")
 }
 
 
@@ -49,21 +49,20 @@ arrange_entry = function(entry) {
 #' @return Invisibly returns TRUE if the column names check out
 #'
 verify_columns <- function(entry) {
-	# Create vector of valid column names
-	necessary_columns <- c("location", "target", "type", "unit",
-	                       "bin_start_incl", "bin_end_notincl", "value")
+  necessary_columns <- c("location", "target", "type", "unit",
+                         "bin_start_incl", "bin_end_notincl", "value")
 
-	cnames = names(entry)
+  cnames = names(entry)
 
-	missing_columns <- base::setdiff(necessary_columns, cnames)
-	if (length(missing_columns)>0) {
-		stop("Entry needs these columns: ", paste(missing_columns))
-	}
+  missing_columns <- base::setdiff(necessary_columns, cnames)
+  if (length(missing_columns)>0) {
+    stop("Entry needs these columns: ", paste(missing_columns))
+  }
 
-	extra_columns <- base::setdiff(cnames, necessary_columns)
-	if (length(extra_columns)>0) {
-		warning("Ignoring these extra columns:", extra_columns)
-	}
+  extra_columns <- base::setdiff(cnames, necessary_columns)
+  if (length(extra_columns)>0) {
+    warning("Ignoring these extra columns:", paste(extra_columns))
+  }
 
-	return(invisible(TRUE))
+  return(invisible(TRUE))
 }
