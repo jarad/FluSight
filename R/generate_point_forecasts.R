@@ -2,8 +2,9 @@
 #'
 #' @param entry An entry data.frame
 #' @return A data.frame of point forecasts for all locations and targets.
-#' @seealso \code{\link{generate_point_forecast }}, \code{\link{verify_entry}}
+#' @seealso \code{\link{generate_point_forecast}}, \code{\link{verify_entry}}
 #' @import magrittr
+#' @export
 generate_point_forecasts <- function(entry) {
   if (sum(entry$type == "Point") > 0)
   	warning("It appears point forecasts already exist.")
@@ -27,6 +28,7 @@ generate_point_forecasts <- function(entry) {
 #' @return A data.frame with columns `type` and `value`
 #' @seealso generate_point_forecasts
 #' @import magrittr
+#' @export
 generate_point_forecast <- function(d) {
 	d %>%
 		# Season onset has `none` as a possible bin_start_incl thus we

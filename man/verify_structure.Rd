@@ -12,7 +12,7 @@ verify_structure(entry, valid_entry)
 \item{valid_entry}{A valid entry data.frame}
 }
 \value{
-NULL or a character vector of error messages
+NULL or a descriptive error message
 }
 \description{
 Verify the entry structure

@@ -10,7 +10,7 @@ verify_entry(entry)
 \item{entry}{A data.frame}
 }
 \value{
-TRUE or a character vector of errors
+TRUE or a descriptive error message
 }
 \description{
 Verify entry stored as an R data.frame
