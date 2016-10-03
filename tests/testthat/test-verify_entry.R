@@ -69,3 +69,30 @@ test_that("Return error when probabilities sum to more than 1.1", {
 		}
 	}
 })
+
+test_that("Return warning when point forecast is missing", {
+	for (this_location in unique(valid_entry$location)) {
+		for (this_target in unique(valid_entry$target)) {
+			invalid_entry <- valid_entry
+			invalid_entry$value[invalid_entry$location == this_location &
+														invalid_entry$target == this_target &
+														invalid_entry$type == "Point"] <- NA
+			expect_warning(verify_point(invalid_entry))
+			expect_warning(verify_entry(invalid_entry))
+		}
+	}
+})
+
+test_that("Return error when point forecast is negative", {
+	for (this_location in unique(valid_entry$location)) {
+		for (this_target in unique(valid_entry$target)) {
+			invalid_entry <- valid_entry
+			invalid_entry$value[invalid_entry$location == this_location &
+														invalid_entry$target == this_target &
+														invalid_entry$type == "Point"] <- -1
+			expect_error(verify_point(invalid_entry))
+			expect_error(verify_entry(invalid_entry))
+		}
+	}
+})
+

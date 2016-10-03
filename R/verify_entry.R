@@ -43,6 +43,9 @@ verify_entry = function(entry) {
 	# Verify probabilities in submission
 	verify_probabilities(entry)
 
+	# Verify point predictions in submission
+	verify_point(entry)
+
 	# Return success message
 	return(TRUE)
 
@@ -64,7 +67,6 @@ verify_structure <- function(entry, valid_entry) {
 	}
 }
 
-
 #' Verify the entry probabilities
 #'
 #' @param entry An entry data.frame
@@ -77,6 +79,9 @@ verify_probabilities <- function(entry) {
 		group_by(location,target) %>%
 		summarize(sum      = sum(value),
 							negative = any(value<0))
+
+	# Need to add code for NA probabilities here
+
 
 	# Report message for negative probabilities
 	if (any(probabilities$negative)) {
@@ -96,6 +101,42 @@ verify_probabilities <- function(entry) {
 		stop(paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ",
 								tmp$sum, ". \n"))
 
+	}
+
+}
+
+
+#' Verify validity of point predictions
+#'
+#' @param entry An entry data.frame
+#' @import dplyr
+#' @return NULL or a descriptive warning/error message
+verify_point <- function(entry) {
+
+	point = entry %>%
+		filter(type == "Point") %>%
+		mutate(miss     = is.na(value),
+							negative = (!is.na(value) & value < 0))
+
+
+	# Report warning for missing point predictions
+	if (any(point$miss)) {
+		tmp <- point %>%
+			filter(miss)
+
+		warning(paste0("WARNING: Missing point predictions detected in ",
+									 paste(tmp$location, tmp$target), ". \n",
+									 "Please take a look at the generate_point_forecasts function"))
+	}
+
+	# Report error for missing point predictions
+	if (any(point$negative)) {
+		tmp <- point %>%
+			filter(negative)
+
+		stop(paste0("ERROR: Negative point predictions detected in ",
+									 paste(tmp$location, tmp$target), ". \n",
+									 "Please take a look at the generate_point_forecasts function"))
 	}
 
 }
