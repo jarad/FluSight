@@ -77,20 +77,28 @@ verify_probabilities <- function(entry) {
 	probabilities = entry %>%
 		filter(type=="Bin") %>%
 		group_by(location,target) %>%
-		summarize(sum      = sum(value),
-							negative = any(value<0))
+		summarize(miss     = any(is.na(value)),
+							sum      = sum(value, na.rm = TRUE),
+							negative = any(!is.na(value) & value < 0))
 
-	# Need to add code for NA probabilities here
+	errors <- character()
 
+	# Report message for missing probabilities
+	if (any(probabilities$miss)) {
+		tmp <- probabilities %>%
+			filter(miss)
+
+		errors <- c(errors, paste0("ERROR: Missing probabilities detected in ",
+												paste(tmp$location, tmp$target), ".\n"))
+	}
 
 	# Report message for negative probabilities
 	if (any(probabilities$negative)) {
 		tmp <- probabilities %>%
 			filter(negative)
 
-		stop(paste0("ERROR: Negative probabilities detected in ",
+		errors <- c(errors, paste0("ERROR: Negative probabilities detected in ",
 								paste(tmp$location, tmp$target), ".\n"))
-
 	}
 
 	# Report message for sum of target probabilities outside of 0.9 and 1.1
@@ -98,9 +106,13 @@ verify_probabilities <- function(entry) {
 		tmp <- probabilities %>%
 			filter(sum<0.9 | sum>1.1)
 
-		stop(paste0("In ", tmp$location, "-", tmp$target, ", probabilities sum to ",
+		errors <- c(errors, paste0("ERROR: In ", tmp$location, "-", tmp$target, ", probabilities sum to ",
 								tmp$sum, ". \n"))
+	}
 
+	#Output probability related errors
+	if (length(errors) != 0) {
+		stop(errors)
 	}
 
 }
@@ -126,7 +138,7 @@ verify_point <- function(entry) {
 
 		warning(paste0("WARNING: Missing point predictions detected in ",
 									 paste(tmp$location, tmp$target), ". \n",
-									 "Please take a look at the generate_point_forecasts function"))
+									 "Please take a look at the generate_point_forecasts function.\n"))
 	}
 
 	# Report error for missing point predictions
@@ -136,7 +148,7 @@ verify_point <- function(entry) {
 
 		stop(paste0("ERROR: Negative point predictions detected in ",
 									 paste(tmp$location, tmp$target), ". \n",
-									 "Please take a look at the generate_point_forecasts function"))
+									 "Please take a look at the generate_point_forecasts function.\n"))
 	}
 
 }
