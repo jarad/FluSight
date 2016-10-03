@@ -9,10 +9,11 @@
 read_entry = function(file) {
 	entry = read.csv(file,
 					 colClasses = "character",      # Due to bin_start_incl "none"
-					 stringsAsFactors = FALSE) %>%
-		mutate(value = as.numeric(value))
+					 stringsAsFactors = FALSE)
 
 	names(entry) = tolower(names(entry))
+
+	entry <- mutate(entry, value = as.numeric(value))
 
 	entry %>% arrange_entry
 }
