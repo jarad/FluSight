@@ -16,3 +16,24 @@ test_that("Return error when column name doesn't exist", {
     expect_error(verify_entry(invalid_entry))
   }
 })
+
+test_that("Return error when entry structure is incorrect", {
+	for (i in head(seq_along(names(valid_entry)),-1)) {
+		invalid_entry <- valid_entry
+		invalid_entry[, i] <- "invalidData"
+		expect_error(verify_entry(invalid_entry))
+	}
+})
+
+#
+# test_that("Return error when probabilities are negative", {
+# 	for (this_location in unique(valid_entry$location)) {
+# 		for (this_target in unique(valid_entry$target)) {
+# 			invalid_entry <- valid_entry
+# 			invalid_entry$value[invalid_entry$location == this_location &
+# 														invalid_entry$target == this_target &
+# 														invalid_entry$type == "Bin"] <- -0.5
+# 			expect_error(verify_entry(invalid_entry))
+# 		}
+# 	}
+# })
