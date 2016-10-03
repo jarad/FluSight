@@ -26,21 +26,44 @@ read_entry = function(file) {
 #' @export
 arrange_entry = function(entry) {
 
-	# Create vector of valid column names
-	valid_columns <- c("location", "target", "type", "unit",
-										 "bin_start_incl", "bin_end_notincl", "value")
 
-	# Return error if column names don't match
-	msg <- all.equal(names(entry),valid_columns)
 
-	if (!isTRUE(msg)) {
-		stop (c(paste("ERROR: Column name error,", msg,"\n"),
-					"NOTE: Please take a look at the write_entry() function."))
-	}
+	check_columns(entry)
 
 	# Arrange entry by type, location, target, bin
 	entry %>%
 		dplyr::arrange(type, location, target, bin_start_incl) %>%
 		dplyr::select_("location", "target", "type", "unit",
 									"bin_start_incl", "bin_end_notincl", "value")
+}
+
+
+#' Check columns of an entry
+#'
+#' Check to make sure the columns are location, target, type, unit,
+#' bin_start_incl, bin_end_notincl, and value. If any of these are missing,
+#' return an error indicating the column that is missing. If there are any
+#' extra columns, return a warning indicating the extra columns.
+#'
+#' @param entry A data.frame
+#' @return Invisibly returns TRUE if the column names check out
+#'
+check_columns <- function(entry) {
+	# Create vector of valid column names
+	necessary_columns <- c("location", "target", "type", "unit",
+	                       "bin_start_incl", "bin_end_notincl", "value")
+
+	cnames = names(entry)
+
+	missing_columns <- base::setdiff(necessary_columns, cnames)
+	if (length(missing_columns)>0) {
+		stop("Entry needs these columns: ", paste(missing_columns))
+	}
+
+	extra_columns <- base::setdiff(cnames, necessary_columns)
+	if (length(extra_columns)>0) {
+		warning("Ignoring these extra columns:", extra_columns)
+	}
+
+	return(invisible(TRUE))
 }
