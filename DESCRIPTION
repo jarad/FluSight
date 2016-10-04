@@ -7,7 +7,8 @@ Description: Provides utility functions for the CDC FluSight competition
 Depends:
     R (>= 3.0)
 Imports:
-		dplyr
+		dplyr,
+		magrittr
 Suggests:
 		testthat
 License: GPL-2
