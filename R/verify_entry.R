@@ -36,14 +36,8 @@ verify_entry = function(entry) {
 																				"valid-test.csv",
 																				package="FluSight"))
 
-
-	# Verify structure of submission
 	verify_structure(entry, valid_entry)
-
-	# Verify probabilities in submission
 	verify_probabilities(entry)
-
-	# Verify point predictions in submission
 	verify_point(entry)
 
 	# Return success message
