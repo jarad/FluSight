@@ -31,8 +31,13 @@ verify_entry_file <- function(file) {
 verify_entry = function(entry) {
 
   verify_colnames(entry)
+
+  # Verify column contents
   verify_locations(entry)
   verify_targets(entry)
+  verify_types(entry)
+
+
   verify_bins(entry)
 	verify_probabilities(entry)
 	verify_point(entry)
