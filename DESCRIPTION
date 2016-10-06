@@ -8,7 +8,8 @@ Depends:
     R (>= 3.0)
 Imports:
 		dplyr,
-		magrittr
+		magrittr,
+		MMWRweek
 Suggests:
 		testthat
 License: GPL-2
