@@ -36,7 +36,7 @@ verify_entry = function(entry) {
   verify_locations(entry)
   verify_targets(entry)
   verify_types(entry)
-
+  verify_units(entry)
 
   verify_bins(entry)
 	verify_probabilities(entry)
