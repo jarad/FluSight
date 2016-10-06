@@ -31,12 +31,7 @@ verify_entry_file <- function(file) {
 #' verify_entry(entry) # TRUE
 verify_entry = function(entry) {
 
-	# Read known valid entry
-	valid_entry <- read_entry(system.file("extdata",
-																				"valid-test.csv",
-																				package="FluSight"))
-
-	verify_structure(entry, valid_entry)
+  verify_colnames(entry)
 	verify_probabilities(entry)
 	verify_point(entry)
 
@@ -46,20 +41,15 @@ verify_entry = function(entry) {
 }
 
 
-#' Verify the entry structure
-#'
-#' @param entry An entry data.frame
-#' @param valid_entry A valid entry data.frame
-#' @import dplyr
-#' @return NULL or a descriptive error message
-verify_structure <- function(entry, valid_entry) {
-	msg <- all.equal(entry       %>% select(-value),
-									 valid_entry %>% select(-value))
-	if (!isTRUE(msg)){
-		stop(paste("ERROR:", msg,"\n"),
-							 "NOTE: Please take a look at the write_entry() function.\n")
-	}
+
+#' Verify the column names of an entry
+verify_colnames <- function(entry) {
+
+
 }
+
+
+
 
 #' Verify the entry probabilities
 #'
