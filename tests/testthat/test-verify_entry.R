@@ -6,6 +6,8 @@ valid_entry <- read_entry(valid_file)
 test_that("Valid entry passes", {
 	expect_true(verify_entry_file(valid_file ))
 	expect_true(verify_entry(     valid_entry))
+	expect_true(verify_entry(      full_entry))
+	expect_true(verify_entry(  minimal_entry))
 })
 
 
@@ -16,16 +18,6 @@ test_that("Return error when column name doesn't exist", {
     expect_error(arrange_entry(invalid_entry))
     expect_error(verify_entry( invalid_entry))
   }
-})
-
-
-test_that("Return error when entry structure is incorrect", {
-	for (i in head(seq_along(names(valid_entry)),-1)) {
-		invalid_entry <- valid_entry
-		invalid_entry[, i] <- "invalidData"
-		expect_error(verify_structure(invalid_entry, valid_entry))
-		expect_error(verify_entry(invalid_entry))
-	}
 })
 
 
