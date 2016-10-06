@@ -10,17 +10,16 @@ verify_entry(entry)
 \item{entry}{A data.frame}
 }
 \value{
-TRUE or a descriptive error message
+Invisibly returns TRUE if successful
 }
 \description{
 Verify entry stored as an R data.frame
 }
 \examples{
-file <- system.file("extdata", "valid-test.csv", package="FluSight")
-entry <- read.csv(file, stringsAsFactors = FALSE)
-verify_entry(entry) # TRUE
+verify_entry(minimal_entry)
+verify_entry(full_entry)
 }
 \seealso{
-verify_entry_file
+\code{\link{verify_entry_file}}
 }
 

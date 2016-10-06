@@ -10,7 +10,7 @@ verify_entry_file(file)
 \item{file}{A csv entry file}
 }
 \value{
-TRUE or a character vector of errors
+Invisibly returns TRUE if successful
 }
 \description{
 This function will check to make sure the structure is correct and that
@@ -22,6 +22,6 @@ file <- system.file("extdata", "valid-test.csv", package="FluSight")
 verify_entry_file(file) # TRUE
 }
 \seealso{
-verify_entry
+\code{\link{verify_entry}}
 }
 
