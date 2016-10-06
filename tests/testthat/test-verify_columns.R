@@ -1,4 +1,4 @@
-context("Check columns of an entry")
+context("verify_columns")
 
 valid_file  <- system.file("extdata", "valid-test.csv", package="FluSight")
 valid_entry <- read_entry(valid_file)

@@ -1,4 +1,4 @@
-context("Generate point forecasts")
+context("generate_point_forecasts")
 
 
 
