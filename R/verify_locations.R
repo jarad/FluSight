@@ -9,7 +9,7 @@
 #' @export
 #' @keywords internal
 verify_locations <- function(entry) {
-  entry_locations    <- unique(entry$locations)
+  entry_locations    <- unique(entry$location)
   required_locations <- unique(minimal_entry$location)
   valid_locations    <- unique(full_entry$location)
 
