@@ -8,5 +8,7 @@
 score_entry <- function(entry, truth) {
   entry %>%
     filter(type == "Bin") %>%
-    right_join(truth, by=c("location","target","bin_start_incl"))
+    right_join(truth, by=c("location","target","bin_start_incl")) %>%
+    mutate(score = log(value)) %>%
+    select(location, target, score)
 }
