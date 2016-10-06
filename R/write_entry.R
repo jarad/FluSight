@@ -50,6 +50,7 @@ write_valid_entry <- function(path) {
 #' @param team_name A character string indicating the team name
 #' @param week A scalar numeric indicating the week
 #' @return A character string for the filename
+#' @keywords internal
 construct_filename <- function(team_name, week) {
   # Construct filename
   today = Sys.Date()
@@ -71,6 +72,7 @@ construct_filename <- function(team_name, week) {
 #' @return The numeric week number
 #' @importFrom MMWRweek MMWRweek
 #' @seealso \code{\link{write_entry}}, \code{\link{as.Date}}
+#' @keywords internal
 get_week <- function(date) {
   warning("Getting a week automatically is an experimental feature. ",
           "Please check the week in the filename.")
