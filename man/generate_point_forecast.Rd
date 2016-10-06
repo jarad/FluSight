@@ -19,4 +19,5 @@ probabilistic forecasts.
 \seealso{
 generate_point_forecasts
 }
+\keyword{internal}
 

@@ -29,6 +29,7 @@ generate_point_forecasts <- function(entry) {
 #' @seealso generate_point_forecasts
 #' @import magrittr
 #' @export
+#' @keywords internal
 generate_point_forecast <- function(d) {
 	d %>%
 		# Season onset has `none` as a possible bin_start_incl thus we

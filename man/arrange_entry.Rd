@@ -15,4 +15,5 @@ An arranged data.frame
 \description{
 Arrange an entry for consistency
 }
+\keyword{internal}
 
