@@ -32,6 +32,7 @@ verify_entry = function(entry) {
 
   verify_colnames(entry)
   verify_locations(entry)
+  verify_bins(entry)
 	verify_probabilities(entry)
 	verify_point(entry)
 
