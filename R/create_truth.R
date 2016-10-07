@@ -4,7 +4,7 @@
 #'
 #' @param fluview A logical value (default TRUE) indicating whether to download ILINet from 
 #' Fluview
-#' @param week_flu A data.frame of weighted ILI values (default NULL). Must contain columns
+#' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
 #' location, week, and wILI. Must be NULL when downloading data using 
 #' fluview == TRUE. Required if fluview == FALSE.
 #' @import dplyr
@@ -12,20 +12,20 @@
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' 
-create_truth <- function(fluview = TRUE, week_flu = NULL) {
+create_truth <- function(fluview = TRUE, weekILI = NULL) {
 
   warning("Work in progress. Values need to be updated for 2016/2017 season")
 
     # Return an error if fluview == FALSE and no data frame provided
-  if (fluview == FALSE & is.null(week_flu)) {
+  if (fluview == FALSE & is.null(weekILI)) {
     stop("ILINet data required if not fetching data from FluView")
   }
   
-  if (fluview == TRUE & !is.null(week_flu)) {
+  if (fluview == TRUE & !is.null(weekILI)) {
     stop("Do not provide data if fetching data from ILINet")
   }
   
-  if (!is.null(week_flu)) {
+  if (!is.null(weekILI)) {
     verify_ILI() #Need to create this program still
   }
   
@@ -61,17 +61,14 @@ create_truth <- function(fluview = TRUE, week_flu = NULL) {
         week >= start.wk | week <= end.wk)
     
     # Join national and HHs regional flu data
-    week_flu <- rbind(usflu, regionflu)
+    weekILI <- rbind(usflu, regionflu)
   }
   
-  #Create baselines  
-  baselines <- data.frame(location = unique(week_flu$location),
-                          value = c(2.1, 1.3, 2.3, 1.8, 1.6, 1.9, 3.6, 1.7,
-                                    1.4, 2.6, 1.1))
+
   
   # Add 52 to weeks in new year to keep weeks in order
-  week_flu$week[week_flu$week < 40] <-
-    as.integer(week_flu$week[week_flu$week < 40] + 52)
+  weekILI$week[weekILI$week < 40] <-
+    as.integer(weekILI$week[weekILI$week < 40] + 52)
   
   # Create data shell to add targets to
   truth <- data.frame(target = character(),
@@ -80,11 +77,11 @@ create_truth <- function(fluview = TRUE, week_flu = NULL) {
                       bin_start_incl = numeric()) 
   
   # Calculate targets if reached ----------------------------------
-  for (this_location in levels(as.factor(week_flu$location))) {
-    filter(week_flu, location == this_location) %>%
+  for (this_location in levels(as.factor(weekILI$location))) {
+    filter(weekILI, location == this_location) %>%
       seasonal_targets()
     
-    filter(week_flu, location == this_location) %>%
+    filter(weekILI, location == this_location) %>%
       weekly_targets()
       # Need to write functions for creating onset, peak, week ahead forecasts
     
