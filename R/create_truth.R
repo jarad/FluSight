@@ -64,8 +64,6 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
     weekILI <- rbind(usflu, regionflu)
   }
   
-
-  
   # Add 52 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + 52)
@@ -75,16 +73,11 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
                       location = character(),
                       forecast.wk = numeric(),
                       bin_start_incl = numeric()) 
-  
+ 
   # Calculate targets if reached ----------------------------------
   for (this_location in levels(as.factor(weekILI$location))) {
     filter(weekILI, location == this_location) %>%
-      seasonal_targets()
-    
-    filter(weekILI, location == this_location) %>%
-      weekly_targets()
-      # Need to write functions for creating onset, peak, week ahead forecasts
-    
+      create_targets()
   }
   return(truth)
 }
