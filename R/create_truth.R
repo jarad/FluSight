@@ -30,9 +30,8 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   }
   
   # Date first forecasts received
-  start.date <- as.Date("2015-11-02")
-  start.wk <- 42    #First week of ILINet data used for forecasts
-  end.wk <- 18      #Last week of ILINet data used for forecasts
+  start_wk <- 42    #First week of ILINet data used for forecasts
+  end_wk <- 18      #Last week of ILINet data used for forecasts
   
   # Read in ILINet results
   if (fluview == TRUE) {
@@ -46,7 +45,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
         location = "US National",
         wILI = round(wILI,1)) %>%
       filter(
-        week >= start.wk | week <= end.wk)
+        week >= start_wk | week <= end_wk + 4)
     
     regionflu <- get_flu_data("HHS", sub_region = 1:10,
                               "ilinet", years = 2015:2016) %>%
@@ -58,7 +57,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
         location = paste("HHS", location),
         wILI = round(wILI,1)) %>%
       filter(
-        week >= start.wk | week <= end.wk)
+        week >= start_wk | week <= end_wk + 4)
     
     # Join national and HHs regional flu data
     weekILI <- rbind(usflu, regionflu)
@@ -76,8 +75,17 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
  
   # Calculate targets if reached ----------------------------------
   for (this_location in levels(as.factor(weekILI$location))) {
-    filter(weekILI, location == this_location) %>%
-      create_targets()
+    truth <- filter(weekILI, location == this_location) %>%
+              create_seasonal(
+                              this_location) %>%
+              rbind(truth, .)
   }
+  
+  truth <- rbind(truth,
+                 create_wk(weekILI, start_week, end_week),
+                 fill = TRUE)
+  # Need to look at warning messages here...
+  
+  
   return(truth)
 }
