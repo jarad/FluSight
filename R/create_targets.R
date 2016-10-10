@@ -78,9 +78,10 @@ create_onset <- function(weekILI, location) {
   return(onset_truth)
 }  
 
-#' Creates observed truth for seasonal peak week
+#' Creates observed truth for seasonal peak values
 #'
-#' Determines observed true values for peak week of seasonal influenza
+#' Determines observed true values for peak week and peak weighted ILINet
+#' percentage for an influenza season
 #'
 #' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
 #' location, week, and wILI. 
@@ -89,9 +90,10 @@ create_onset <- function(weekILI, location) {
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' 
-create_pkwk <- function(weekILI, location) {
+create_peak <- function(weekILI, location) {
   
   pkwk  <- weekILI$week[weekILI$wILI == max(weekILI$wILI)]
+  pkper <- max(weekILI$wILI)
   
   # Only create peak if after MMWR week 4 in new year (56 in ordered coding)
   if (tail(weekILI$week, n = 1) < 56) {
@@ -106,17 +108,20 @@ create_pkwk <- function(weekILI, location) {
     }
   }
 
-  pkwk.truth <- data.frame(target = "Season peak week",
+  peak.truth <- data.frame(target = c("Season peak week", 
+                                      "Season peak percentage"),
                           location = location,
                           forecast.wk = NA,
-                          bin_start_incl = pkwk[1])
+                          bin_start_incl = c(pkwk[1], pkper))
   for (i in 2:length(pkwk)) {
-    extra.obs <- data.frame(V1 = pkwk[i])
-    names(extra.obs) <- paste0("bin_start_incl", i)
-    pkwk.truth <- cbind(pkwk.truth, extra.obs)
+    extra.obs <- data.frame(target = "Season peak week",
+                            location = location,
+                            forecast.wk = NA,
+                            bin_start_incl = pkwk[i])
+    peak.truth <- rbind(peak.truth, extra.obs)
   }
   
-  return(pkwk_truth)
+  return(peak_truth)
 }  
   
   
