@@ -39,12 +39,9 @@ create_week <- function(weekILI, start_week, end_week) {
     }
   }
   
-  
-  # # Ad hoc forecast date corrections due to Thanksgiving/Christmas/New Years
-  # # TODO (Craig): Needs to be updated to 2016/17 values once code final
-  # week.target[forecast.date == "2015-11-30", forecast.date := as.Date("2015-12-01")]
-  # week.target[forecast.date == "2015-12-28", forecast.date := as.Date("2015-12-30")]
-  # week.target[forecast.date == "2016-01-04", forecast.date := as.Date("2016-01-06")]
+  # Subtract 52 from all weeks in new year to realign with MMWR week
+  week_target$forecast_wk[week_target$forecast_wk > 52] <-
+    week_target$forecast_wk[week_target$forecast_wk > 52] - 52
   
   return(week_target)
 } 
