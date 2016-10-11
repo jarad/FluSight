@@ -30,8 +30,8 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   }
   
   # Date first forecasts received
-  start_wk <- 42    #First week of ILINet data used for forecasts
-  end_wk <- 18      #Last week of ILINet data used for forecasts
+  start_week <- 42    #First week of ILINet data used for forecasts
+  end_week <- 18      #Last week of ILINet data used for forecasts
   
   # Read in ILINet results
   if (fluview == TRUE) {
@@ -43,7 +43,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
         wILI = X..WEIGHTED.ILI) %>%
       mutate(
         location = "US National",
-        wILI = round(wILI,1)) %>%
+        wILI = round(wILI, 1)) %>%
       filter(
         week >= start_wk | week <= end_wk + 4)
     
@@ -55,7 +55,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
         wILI = X..WEIGHTED.ILI) %>%
       mutate(
         location = paste("HHS", location),
-        wILI = round(wILI,1)) %>%
+        wILI = round(wILI, 1)) %>%
       filter(
         week >= start_wk | week <= end_wk + 4)
     
@@ -82,10 +82,11 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   }
   
   truth <- rbind(truth,
-                 create_wk(weekILI, start_week, end_week),
+                 create_week(weekILI, start_week, end_week),
                  fill = TRUE)
-  # Need to look at warning messages here...
-  
   
   return(truth)
 }
+
+
+
