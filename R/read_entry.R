@@ -27,7 +27,7 @@ read_entry = function(file) {
 #' @keywords internal
 arrange_entry = function(entry) {
 
-  verify_columns(entry)
+  verify_colnames(entry)
 
   # Arrange entry by type, location, target, bin
   entry %>%
