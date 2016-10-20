@@ -21,7 +21,9 @@ expand_truth <- function(truth, week_expand=1, percent_expand=5) {
     rowwise %>%
     expand_percent(., expand = percent_expand)
 
-  dplyr::bind_rows(week_targets, percent_targets)
+  dplyr::bind_rows(week_targets, percent_targets) %>%
+    mutate(bin_start_incl = as.character(bin_start_incl))
+  
 }
 
 #' Expands truth for weeks
@@ -106,5 +108,3 @@ expand_percent <- function(truth, expand) {
   
   return(expand_percent)
 }
-
-test <- expand_truth(full_truth)
