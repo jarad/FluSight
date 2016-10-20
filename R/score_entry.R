@@ -2,7 +2,10 @@
 #'
 #' @param entry An entry data.frame with columns location, target,
 #' bin_start_incl, and value
-#' @param truth A data.frame with columns location, target, and bin_start_incl
+#' @param truth A data.frame containing all true values with columns 
+#' location, target, forecast_wk, and bin_start_incl. If multiple bins are 
+#' considered correct for a given target, all correct bins must be included
+#' here.
 #' @import dplyr
 #' @return A data.frame of scores for each target
 score_entry <- function(entry, truth) {
