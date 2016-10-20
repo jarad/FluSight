@@ -53,7 +53,7 @@ create_onset <- function(weekILI, region) {
       break
     }
     if (i == tail(weekILI$week, n = 1)) {
-      onset <- NA
+      onset <- "none"
     }
   }
     

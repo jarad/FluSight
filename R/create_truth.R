@@ -31,8 +31,8 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   }
   
   # Date first forecasts received
-  start_week <- 42    #First week of ILINet data used for forecasts
-  end_week <- 18      #Last week of ILINet data used for forecasts
+  start_wk <- 42    #First week of ILINet data used for forecasts
+  end_wk <- 18      #Last week of ILINet data used for forecasts
   
   # Read in ILINet results
   if (fluview == TRUE) {
@@ -84,7 +84,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   }
   
   truth <- rbind(truth,
-                 create_week(weekILI, start_week, end_week),
+                 create_week(weekILI, start_wk, end_wk),
                  fill = TRUE)
   
   return(truth)
