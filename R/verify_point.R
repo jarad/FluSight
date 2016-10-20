@@ -23,7 +23,7 @@ verify_point <- function(entry) {
                    "Please take a look at the generate_point_forecasts function.\n"))
   }
 
-  # Report error for missing point predictions
+  # Report error for negative point predictions
   if (any(point$negative)) {
     tmp <- point %>%
       filter(negative)

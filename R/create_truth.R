@@ -25,8 +25,9 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
     stop("Do not provide data if fetching data from ILINet")
   }
   
+  # Verify user-submitted ILI data
   if (!is.null(weekILI)) {
-    verify_ILI() #Need to create this program still
+    verify_ILI(weekILI) 
   }
   
   # Date first forecasts received
@@ -36,7 +37,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   # Read in ILINet results
   if (fluview == TRUE) {
     # Read in ILINet data and rename locations to match template
-    usflu <- get_flu_data("national", "ilinet", years = 2015:2016) %>%
+    usflu <- get_flu_data("national", "ilinet", years = 2015) %>%
       select(
         location = REGION.TYPE,
         week = WEEK,
@@ -47,8 +48,9 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
       filter(
         week >= start_wk | week <= end_wk + 4)
     
+    
     regionflu <- get_flu_data("HHS", sub_region = 1:10,
-                              "ilinet", years = 2015:2016) %>%
+                              "ilinet", years = 2015) %>%
       select(
         location = REGION,
         week = WEEK,
@@ -62,7 +64,7 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
     # Join national and HHs regional flu data
     weekILI <- rbind(usflu, regionflu)
   }
-  
+
   # Add 52 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + 52)

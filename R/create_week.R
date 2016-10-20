@@ -46,6 +46,3 @@ create_week <- function(weekILI, start_week, end_week) {
   return(week_target)
 } 
 
-
-
-
