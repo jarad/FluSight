@@ -13,7 +13,10 @@ minimal_entry <- full_entry %>%
 
 valid_ILI <- read.csv("../FluSight/inst/extdata/valid_ILI.csv")
 
+truth_1516 <- read.csv("../FluSight/inst/extdata/truth_1516.csv")
+
 
 devtools::use_data(full_entry, overwrite=TRUE)
 devtools::use_data(minimal_entry, overwrite=TRUE)
 devtools::use_data(valid_ILI, overwrite = TRUE)
+devtools::use_data(truth_1516, overwrite = TRUE)

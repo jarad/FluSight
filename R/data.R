@@ -43,3 +43,17 @@
 #'   \item{wILI}{numeric vector of weighted ILI percentage}
 #' }
 "valid_ILI"
+
+
+#' Observed truth for 2015/2016 influenza season
+#'
+#' A data.frame containing the observed truth for the 2015/2016 influenza season
+#'
+#' @format A dta frame with 1310 rows and 4 variables:
+#' \describe{
+#'   \item{target}{character vector of targets}
+#'   \item{location}{character vector of locations}
+#'   \item{forecast_wk}{numeric vector of MMWR week forecasted value is based on}
+#'   \item{bin_start_incl}{numeric vector of observed truth}
+#' }
+"truth_1516"
