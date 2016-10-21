@@ -20,4 +20,9 @@ A data.frame with columns location, target, and bin_start_incl
 Determines observed true values for onset week, seasonal peak, and seasonal
 peak percentage
 }
+\examples{
+season_targets <- create_seasonal(valid_ILI, "US National")
+season_targets <- create_seasonal(valid_ILI, "HHS Region 4")
+  
+}
 

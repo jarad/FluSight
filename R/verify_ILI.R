@@ -3,8 +3,10 @@
 #' Verifies user-supplied wILI data to be used to generate forecasting targets
 #'
 #' @param weekILI A data.frame of weighted ILI values. 
-#' @return NULL or a descriptive error or warning message
+#' @return \code{NULL} or a descriptive error or warning message
 #' @export
+#' @examples 
+#' verify_ILI(valid_ILI)
 #' 
 verify_ILI <- function(weekILI) {
   
@@ -21,7 +23,8 @@ verify_ILI <- function(weekILI) {
 #' Verifies columns in user-supplied wILI data 
 #'
 #' @param weekILI A data.frame of weighted ILI values. 
-#' @return NULL or a descriptive error or warning message
+#' @return \code{NULL} or a descriptive error or warning message
+#' @keywords internal
 #' @export
 #' 
 verify_ILI_colnames <- function(weekILI) {
@@ -44,8 +47,9 @@ verify_ILI_colnames <- function(weekILI) {
 #' Verifies regions in user-supplied wILI data 
 #'
 #' @param weekILI A data.frame of weighted ILI values. 
-#' @return NULL or a descriptive error or warning message
+#' @return \code{NULL} or a descriptive error or warning message
 #' @export
+#' @keywords internal
 #' 
 verify_ILI_location <- function(weekILI) {
   sub_locations <- unique(weekILI$location)

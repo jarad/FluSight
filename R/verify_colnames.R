@@ -4,7 +4,7 @@
 #' are missing and a warning if there are any extra names.
 #'
 #' @param entry An entry data.frame
-#' @return Invisibly returns true if successful
+#' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @keywords internal
 verify_colnames <- function(entry) {

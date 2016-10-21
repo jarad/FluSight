@@ -10,9 +10,10 @@ verify_ILI_colnames(weekILI)
 \item{weekILI}{A data.frame of weighted ILI values.}
 }
 \value{
-NULL or a descriptive error or warning message
+\code{NULL} or a descriptive error or warning message
 }
 \description{
 Verifies columns in user-supplied wILI data
 }
+\keyword{internal}
 

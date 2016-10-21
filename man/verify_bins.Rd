@@ -10,7 +10,7 @@ verify_bins(entry)
 \item{entry}{An entry data.frame}
 }
 \value{
-Invisibly returns TRUE if successful
+Invisibly returns \code{TRUE} if successful
 }
 \description{
 The necessary bins depend on the target, so this will verify bins are correct

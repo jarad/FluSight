@@ -10,7 +10,7 @@ verify_colnames(entry)
 \item{entry}{An entry data.frame}
 }
 \value{
-Invisibly returns true if successful
+Invisibly returns \code{TRUE} if successful
 }
 \description{
 Compares column names to a valid entry and provides an error if any names

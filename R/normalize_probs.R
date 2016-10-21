@@ -7,7 +7,10 @@
 #'        bin_start_incl, bin_end_incl, and value.
 #' @return An entry data.frame with normalized probabilities
 #' @import dplyr
+#' @export
 #' @seealso \code{\link{verify_entry}}
+#' @examples
+#' norm_entry <- normalize_probs(full_entry)
 
 normalize_probs <- function(entry) {
   

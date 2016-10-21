@@ -10,9 +10,13 @@ verify_ILI(weekILI)
 \item{weekILI}{A data.frame of weighted ILI values.}
 }
 \value{
-NULL or a descriptive error or warning message
+\code{NULL} or a descriptive error or warning message
 }
 \description{
 Verifies user-supplied wILI data to be used to generate forecasting targets
+}
+\examples{
+verify_ILI(valid_ILI)
+
 }
 

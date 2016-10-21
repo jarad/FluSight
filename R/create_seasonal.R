@@ -9,6 +9,9 @@
 #' or one of HHS Region 1-10
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
+#' @examples 
+#' season_targets <- create_seasonal(valid_ILI, "US National")
+#' season_targets <- create_seasonal(valid_ILI, "HHS Region 4")
 #'   
 create_seasonal <- function(weekILI, region) {
   season_truth <- rbind(create_onset(weekILI, region),
@@ -38,6 +41,14 @@ create_onset <- function(weekILI, region) {
                                      "HHS Region 9", "HHS Region 10"),
                           value = c(2.1, 1.3, 2.3, 1.8, 1.6, 1.9, 3.6, 1.7,
                                     1.4, 2.6, 1.1))
+  
+  # 2016/2017 baselines - uncomment before releasing
+  # baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
+  #                                    "HHS Region 3", "HHS Region 4", "HHS Region 5",
+  #                                    "HHS Region 6", "HHS Region 7", "HHS Region 8",
+  #                                    "HHS Region 9", "HHS Region 10"),
+  #                         value = c(2.2, 1.4, 3.0, 2.2, 1.7, 1.9, 4.1, 1.8,
+  #                                   1.4, 2.5, 1.1))
 
   # Check to see if 3 weeks above baseline have passed
   j <- 0  # Counter for weeks above peak

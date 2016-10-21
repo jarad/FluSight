@@ -25,3 +25,4 @@ verify_targets <- function(entry) {
   
   return(invisible(TRUE))
 }
+

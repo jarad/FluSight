@@ -7,8 +7,8 @@
 create_week(weekILI, start_week, end_week)
 }
 \arguments{
-\item{weekILI}{A data.frame of weighted ILI values (default NULL). Must contain columns
-location, week, and wILI.}
+\item{weekILI}{A data.frame of weighted ILI values (default \code{NULL}). Must 
+contain columns location, week, and wILI.}
 
 \item{start_week}{The first MMWR week used for creating forecasts}
 
@@ -19,5 +19,9 @@ A data.frame with columns location, target, and bin_start_incl
 }
 \description{
 Determines observed true values for 1 to 4 week ahead weighted ILINet predictions
+}
+\examples{
+week_targets <- create_week(valid_ILI, 42, 18)
+
 }
 

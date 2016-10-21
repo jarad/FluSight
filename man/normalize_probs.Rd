@@ -17,6 +17,9 @@ An entry data.frame with normalized probabilities
 Checks an entry for validity and, if valid, normalizes all probabilistic
 predictions so that the cumulative probability for a target sums to 1.
 }
+\examples{
+norm_entry <- normalize_probs(full_entry)
+}
 \seealso{
 \code{\link{verify_entry}}
 }

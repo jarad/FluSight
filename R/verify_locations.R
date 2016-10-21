@@ -5,7 +5,7 @@
 #' message to suggest forecasting for additional locations.
 #'
 #' @param entry An entry data.frame
-#' @return Invisibly returns true if successful
+#' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @keywords internal
 verify_locations <- function(entry) {

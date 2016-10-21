@@ -10,10 +10,17 @@ verify_point(entry)
 \item{entry}{An entry data.frame}
 }
 \value{
-NULL or a descriptive warning/error message
+Invisibly returns \code{TRUE} or a descriptive warning/error 
+message
 }
 \description{
 Verify validity of point predictions
+}
+\examples{
+verify_point(minimal_entry)
+}
+\seealso{
+\code{\link{verify_entry}}
 }
 \keyword{internal}
 

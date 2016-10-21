@@ -10,7 +10,7 @@ verify_entry(entry)
 \item{entry}{A data.frame}
 }
 \value{
-Invisibly returns TRUE if successful
+Invisibly returns \code{TRUE} if successful
 }
 \description{
 Verify entry stored as an R data.frame

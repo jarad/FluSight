@@ -10,10 +10,16 @@ verify_probabilities(entry)
 \item{entry}{An entry data.frame}
 }
 \value{
-NULL or a descriptive error message
+Invisibly returns \code{TRUE} or a descriptive error message
 }
 \description{
 Verify the entry probabilities
+}
+\examples{
+verify_probabilities(minimal_entry)
+}
+\seealso{
+\code{\link{verify_entry}}
 }
 \keyword{internal}
 

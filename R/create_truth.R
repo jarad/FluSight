@@ -2,17 +2,29 @@
 #'
 #' Determines observed true values for each target 
 #'
-#' @param fluview A logical value (default TRUE) indicating whether to download ILINet from 
-#' Fluview
-#' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
-#' location, week, and wILI. Must be NULL when downloading data using 
-#' fluview == TRUE. Required if fluview == FALSE.
+#' @param fluview A logical value (default \code{TRUE}) indicating whether
+#' to download ILINet from Fluview
+#' @param year Calendar year during which the flu season of interest begins. 
+#' For the 2015/2016 flu season, \code{year = 2015}
+#' @param weekILI A data.frame of weighted ILI values (default \code{NULL}).
+#' Must contain columns location, week, and wILI. Must be \code{NULL} when 
+#' downloading data using \code{fluview = TRUE}. Required if \code{fluview 
+#' = FALSE.}
 #' @import dplyr
 #' @import cdcfluview
-#' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
+#' @return A data.frame with columns location, target, and bin_start_incl
+#' @examples 
+#' truth <- create_truth(year = 2015)
+#' truth <- create_truth(fluview = TRUE, year = 2015)
+#' truth <- create_truth(fluview = FALSE, weekILI = valid_ILI)
 #' 
-create_truth <- function(fluview = TRUE, weekILI = NULL) {
+#' \dontrun{
+#' truth <- create_truth(weekILI = valid_ILI)
+#' truth <- create_truth(fluview = FALSE)
+#' }
+#' 
+create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
 
   warning("Work in progress. Values need to be updated for 2016/2017 season")
 
@@ -23,6 +35,10 @@ create_truth <- function(fluview = TRUE, weekILI = NULL) {
   
   if (fluview == TRUE & !is.null(weekILI)) {
     stop("Do not provide data if fetching data from ILINet")
+  }
+
+  if (fluview == TRUE & is.null(year)) {
+    stop("Year is required if downloading data from ILINet")
   }
   
   # Verify user-submitted ILI data

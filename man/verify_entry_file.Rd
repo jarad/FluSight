@@ -10,7 +10,7 @@ verify_entry_file(file)
 \item{file}{A csv entry file}
 }
 \value{
-Invisibly returns TRUE if successful
+Invisibly returns \code{TRUE} if successful
 }
 \description{
 This function will check to make sure the structure is correct and that

@@ -2,12 +2,14 @@
 #'
 #' Determines observed true values for 1 to 4 week ahead weighted ILINet predictions
 #'
-#' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
-#' location, week, and wILI. 
+#' @param weekILI A data.frame of weighted ILI values (default \code{NULL}). Must 
+#' contain columns location, week, and wILI. 
 #' @param start_week The first MMWR week used for creating forecasts 
 #' @param end_week The last MMWR week used for creating forecasts
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
+#' @examples 
+#' week_targets <- create_week(valid_ILI, 42, 18)
 #' 
 create_week <- function(weekILI, start_week, end_week) {
   

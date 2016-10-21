@@ -4,7 +4,7 @@
 #' for all targets
 #'
 #' @param entry An entry data.frame
-#' @return Invisibly returns TRUE if successful
+#' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @keywords internal
 #' @seealso \code{\link{verify_entry}}
@@ -45,5 +45,4 @@ verify_bins <- function(entry) {
   
   return(invisible(TRUE))
 }
-
 

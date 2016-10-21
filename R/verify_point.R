@@ -2,9 +2,13 @@
 #'
 #' @param entry An entry data.frame
 #' @import dplyr
-#' @return NULL or a descriptive warning/error message
+#' @return Invisibly returns \code{TRUE} or a descriptive warning/error 
+#' message
 #' @export
 #' @keywords internal
+#' @seealso \code{\link{verify_entry}}
+#' @examples 
+#' verify_point(minimal_entry)
 verify_point <- function(entry) {
 
   point = entry %>%
@@ -32,4 +36,6 @@ verify_point <- function(entry) {
                 paste(tmp$location, tmp$target), ". \n",
                 "Please take a look at the generate_point_forecasts function.\n"))
   }
+  
+  return(invisible(TRUE))
 }

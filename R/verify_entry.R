@@ -5,7 +5,7 @@
 #' 0.9 and 1.1.
 #'
 #' @param file A csv entry file
-#' @return Invisibly returns TRUE if successful
+#' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @seealso \code{\link{verify_entry}}
 #' @examples
@@ -21,7 +21,7 @@ verify_entry_file <- function(file) {
 #' Verify entry stored as an R data.frame
 #'
 #' @param entry A data.frame
-#' @return Invisibly returns TRUE if successful
+#' @return Invisibly returns \code{TRUE} if successful
 #' @import dplyr
 #' @export
 #' @seealso \code{\link{verify_entry_file}}

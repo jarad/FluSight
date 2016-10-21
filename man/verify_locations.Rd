@@ -10,7 +10,7 @@ verify_locations(entry)
 \item{entry}{An entry data.frame}
 }
 \value{
-Invisibly returns true if successful
+Invisibly returns \code{TRUE} if successful
 }
 \description{
 Compares locations to minimal and full entries and provides an error if any

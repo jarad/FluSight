@@ -2,9 +2,12 @@
 #'
 #' @param entry An entry data.frame
 #' @import dplyr
-#' @return NULL or a descriptive error message
+#' @return Invisibly returns \code{TRUE} or a descriptive error message
 #' @export
 #' @keywords internal
+#' @seealso \code{\link{verify_entry}}
+#' @examples 
+#' verify_probabilities(minimal_entry)
 verify_probabilities <- function(entry) {
 
   probabilities = entry %>%
@@ -47,4 +50,6 @@ verify_probabilities <- function(entry) {
   if (length(errors) != 0) {
     stop(errors)
   }
+  
+  return(invisible(TRUE))
 }
