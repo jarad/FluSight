@@ -100,9 +100,8 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   }
   
   truth <- rbind(truth,
-                 create_week(weekILI, start_wk, end_wk),
-                 fill = TRUE)
-  
+                 create_week(weekILI, start_wk, end_wk))
+
   return(truth)
 }
 
