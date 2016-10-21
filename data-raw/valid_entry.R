@@ -11,9 +11,11 @@ full_entry <- FluSight::read_entry("../inst/extdata/valid-test.csv") # no idea w
 minimal_entry <- full_entry %>%
   dplyr::filter(location == "US National")
 
-valid_ILI <- read.csv("../FluSight/inst/extdata/valid_ILI.csv")
+valid_ILI <- read.csv("../FluSight/inst/extdata/valid_ILI.csv",
+                      stringsAsFactors = FALSE)
 
-truth_1516 <- read.csv("../FluSight/inst/extdata/truth_1516.csv")
+truth_1516 <- read.csv("../FluSight/inst/extdata/truth_1516.csv",
+                       stringsAsFactors = FALSE)
 
 
 devtools::use_data(full_entry, overwrite=TRUE)
