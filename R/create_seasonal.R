@@ -30,6 +30,7 @@ create_seasonal <- function(weekILI, region) {
 #' or one of HHS Region 1-10
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
+#' @keywords internal
 #'   
 create_onset <- function(weekILI, region) {
   
@@ -93,6 +94,7 @@ create_onset <- function(weekILI, region) {
 #' or one of HHS Region 1-10
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
+#' @keywords internal
 #' 
 create_peak <- function(weekILI, region) {
   
