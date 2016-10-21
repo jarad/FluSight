@@ -30,3 +30,16 @@
 #'   \item{value}{numeric vector with probabilities or point forecasts}
 #' }
 "minimal_entry"
+
+
+#' A valid ILINet submission
+#'
+#' A data.frame containing a valid submission of ILINet data
+#'
+#' @format A dta frame with 363 rows and 3 variables:
+#' \describe{
+#'   \item{location}{character vector of locations}
+#'   \item{week}{numeric vector of MMWR weeks}
+#'   \item{wILI}{numeric vector of weighted ILI percentage}
+#' }
+"valid_ILI"
