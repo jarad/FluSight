@@ -21,8 +21,7 @@ expand_truth <- function(truth, week_expand=1, percent_expand=5) {
     rowwise %>%
     expand_percent(., expand = percent_expand)
 
-  dplyr::bind_rows(week_targets, percent_targets) %>%
-    mutate(bin_start_incl = as.character(bin_start_incl))
+  dplyr::bind_rows(week_targets, percent_targets) 
   
 }
 
@@ -74,8 +73,10 @@ expand_week <- function(truth, expand) {
     expand_week$bin_start_incl[expand_week$bin_start_incl < 1] + 52
   
   # Add back in any regions with no onset
-  expand_week <- rbind(expand_week, no_onset)
-  
+  expand_week <- rbind(expand_week, no_onset) %>%
+                  arrange(location, target) %>%
+                  mutate(bin_start_incl = as.character(bin_start_incl))
+
   return(expand_week)
 }
 
@@ -91,6 +92,8 @@ expand_week <- function(truth, expand) {
 #' @keywords internal
 expand_percent <- function(truth, expand) {
 
+  truth <- mutate(truth, bin_start_incl = as.numeric(bin_start_incl))
+  
   expand_percent <- data.frame()
  
   for(i in 1:nrow(truth)) {
@@ -104,7 +107,8 @@ expand_percent <- function(truth, expand) {
   
   # Delete any edge cases
   expand_percent <- filter(expand_percent, 
-                        bin_start_incl >= 0 & bin_start_incl <= 13)
+                        bin_start_incl >= 0 & bin_start_incl <= 13) %>%
+                  mutate(bin_start_incl = as.character(bin_start_incl))
   
   return(expand_percent)
 }
