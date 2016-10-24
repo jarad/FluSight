@@ -33,7 +33,7 @@ create_seasonal <- function(weekILI, region) {
 #' @keywords internal
 #'   
 create_onset <- function(weekILI, region) {
-  
+ 
   # Create baselines  
   warning("Baselines need to be updated for 2016/2017 season")
   baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
@@ -54,7 +54,7 @@ create_onset <- function(weekILI, region) {
   # Check to see if 3 weeks above baseline have passed
   j <- 0  # Counter for weeks above peak
   for (i in head(weekILI$week, n = 1):tail(weekILI$week, n = 1)) {
-    if (weekILI$wILI[weekILI$week == i] >=
+    if (weekILI$wILI[weekILI$week == i & weekILI$location == region] >=
         baselines$value[baselines$region == region]) {
       j <- j + 1
     } else {
@@ -76,7 +76,7 @@ create_onset <- function(weekILI, region) {
     
   onset_truth <- data.frame(target = "Season onset",
                             location = region,
-                            forecast_wk = NA,
+                            forecast_wk = as.integer(NA),
                             bin_start_incl = onset,
                             stringsAsFactors = FALSE)
   
@@ -98,8 +98,10 @@ create_onset <- function(weekILI, region) {
 #' 
 create_peak <- function(weekILI, region) {
   
-  pkwk  <- weekILI$week[weekILI$wILI == max(weekILI$wILI)]
-  pkper <- max(weekILI$wILI)
+  pkwk  <- weekILI$week[weekILI$location == region &
+                          weekILI$wILI == max(weekILI$wILI[weekILI$location == 
+                                                           region])]
+  pkper <- max(weekILI$wILI[weekILI$location == region])
   
   # Only create peak if after MMWR week 4 in new year (56 in ordered coding)
   if (tail(weekILI$week, n = 1) < 56) {
@@ -117,13 +119,14 @@ create_peak <- function(weekILI, region) {
   peak_truth <- data.frame(target = c("Season peak week", 
                                       "Season peak percentage"),
                           location = region,
-                          forecast_wk = NA,
-                          bin_start_incl = c(pkwk[1], pkper))
+                          forecast_wk = as.integer(NA),
+                          bin_start_incl = c(pkwk[1], pkper),
+                          stringsAsFactors = FALSE)
   if (length(pkwk) > 1) {  
     for (i in 2:length(pkwk)) {
       extra_obs <- data.frame(target = "Season peak week",
                               location = region,
-                              forecast_wk = NA,
+                              forecast_wk = as.integer(NA),
                               bin_start_incl = pkwk[i],
                               stringsAsFactors = FALSE)
       peak_truth <- rbind(peak_truth, extra_obs)
@@ -132,5 +135,3 @@ create_peak <- function(weekILI, region) {
   
   return(peak_truth)
 }  
-
-
