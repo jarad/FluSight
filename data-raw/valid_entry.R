@@ -17,8 +17,13 @@ valid_ILI <- read.csv("../FluSight/inst/extdata/valid_ILI.csv",
 truth_1516 <- read.csv("../FluSight/inst/extdata/truth_1516.csv",
                        stringsAsFactors = FALSE)
 
+valid_exp_truth <- read.csv("../FluSight/inst/extdata/valid_exp_truth.csv",
+                            stringsAsFactors = FALSE)
+valid_exp_truth$bin_start_incl <- as.character(valid_exp_truth$bin_start_incl)
+
 
 devtools::use_data(full_entry, overwrite=TRUE)
 devtools::use_data(minimal_entry, overwrite=TRUE)
 devtools::use_data(valid_ILI, overwrite = TRUE)
 devtools::use_data(truth_1516, overwrite = TRUE)
+devtools::use_data(valid_exp_truth, overwrite = TRUE)
