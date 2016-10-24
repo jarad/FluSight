@@ -81,9 +81,9 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
     weekILI <- rbind(usflu, regionflu)
   }
 
-  # Add 52 to weeks in new year to keep weeks in order
-  weekILI$week[weekILI$week < 40] <-
-    as.integer(weekILI$week[weekILI$week < 40] + 52)
+  # # Add 52 to weeks in new year to keep weeks in order
+  # weekILI$week[weekILI$week < 40] <-
+  #   as.integer(weekILI$week[weekILI$week < 40] + 52)
   
   # Create data shell to add targets to
   truth <- data.frame(target = character(),

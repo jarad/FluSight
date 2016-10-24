@@ -12,6 +12,10 @@
 #' week_targets <- create_week(valid_ILI, 42, 18)
 #' 
 create_week <- function(weekILI, start_week, end_week) {
+
+  # Add 52 to weeks in new year to keep weeks in order
+  weekILI$week[weekILI$week < 40] <-
+    as.integer(weekILI$week[weekILI$week < 40] + 52)
   
   end_week <- end_week + 52
   
@@ -19,11 +23,11 @@ create_week <- function(weekILI, start_week, end_week) {
   
   week_target <- data.frame(target = character(),
                             location = character(),
-                            forecast_wk = numeric(),
+                            forecast_wk = integer(),
                             bin_start_incl = numeric()) 
   
   for (this_target in these_targets) {
-    wk <- as.numeric(substr(this_target, 1, 1))
+    wk <- as.integer(substr(this_target, 1, 1))
     for (this_week in start_week:end_week) {
       #Set forecast week
       forecast_wk <- this_week
@@ -32,9 +36,11 @@ create_week <- function(weekILI, start_week, end_week) {
                              week == this_week + wk) %>%
         mutate(
           target = this_target,
-          forecast_wk = forecast_wk) %>%
+          forecast_wk = as.integer(forecast_wk)) %>%
         select(
-          -week,
+          target,
+          location,
+          forecast_wk,
           bin_start_incl = wILI)
       
       week_target <- rbind(week_target, this_point)

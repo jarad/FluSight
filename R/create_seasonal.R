@@ -34,6 +34,10 @@ create_seasonal <- function(weekILI, region) {
 #'   
 create_onset <- function(weekILI, region) {
  
+  # Add 52 to weeks in new year to keep weeks in order
+  weekILI$week[weekILI$week < 40] <-
+    as.integer(weekILI$week[weekILI$week < 40] + 52)
+  
   # Create baselines  
   warning("Baselines need to be updated for 2016/2017 season")
   baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
@@ -97,6 +101,10 @@ create_onset <- function(weekILI, region) {
 #' @keywords internal
 #' 
 create_peak <- function(weekILI, region) {
+  
+  # Add 52 to weeks in new year to keep weeks in order
+  weekILI$week[weekILI$week < 40] <-
+    as.integer(weekILI$week[weekILI$week < 40] + 52)
   
   pkwk  <- weekILI$week[weekILI$location == region &
                           weekILI$wILI == max(weekILI$wILI[weekILI$location == 
