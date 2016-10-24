@@ -1,8 +1,6 @@
 context("create_week")
 
 
-
-
 test_that("create_week works", {
   
   locations <- unique(valid_ILI$location)
