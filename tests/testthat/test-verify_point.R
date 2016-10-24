@@ -1,8 +1,8 @@
 context("verify_point")
 
 test_that("Valid entry passes", {
-  expect_null(verify_point(minimal_entry))
-  expect_null(verify_point(full_entry))
+  expect_true(verify_point(minimal_entry))
+  expect_true(verify_point(full_entry))
 })
 
 test_that("Missing point predictions return warning", {
