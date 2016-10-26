@@ -19,4 +19,5 @@ A data.frame with columns location, target, and bin_start_incl
 \description{
 Determines observed true values for onset week
 }
+\keyword{internal}
 

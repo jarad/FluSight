@@ -20,4 +20,5 @@ A data.frame with columns location, target, and bin_start_incl
 Determines observed true values for peak week and peak weighted ILINet
 percentage for an influenza season
 }
+\keyword{internal}
 
