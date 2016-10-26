@@ -10,9 +10,9 @@ generate_point_forecasts <- function(entry) {
   	warning("It appears point forecasts already exist.")
 
   entry %>%
-  	dplyr::filter(type == "Bin") %>%
-  	dplyr::group_by(location,target) %>%
-  	generate_point_forecast(.)
+      dplyr::filter(type == "Bin") %>%
+      dplyr::group_by(location,target) %>%
+      generate_point_forecast(.)
 }
 
 
@@ -31,14 +31,33 @@ generate_point_forecasts <- function(entry) {
 #' @export
 #' @keywords internal
 generate_point_forecast <- function(d) {
-	d %>%
-		# Season onset has `none` as a possible bin_start_incl thus we
-		# exclude it from the point forecast by turning bin_start_incl
-		# into numeric and removing the none with na.omit
-		dplyr::mutate(probability = value/sum(value),
-									value       = suppressWarnings(as.numeric(bin_start_incl))) %>%
-		stats::na.omit() %>%
+	temp <- d %>%
+      		# Season onset has `none` as a possible bin_start_incl thus we
+      		# exclude it from the point forecast by turning bin_start_incl
+      		# into numeric and removing the none with na.omit
+      		dplyr::mutate(probability = value/sum(value),
+      									value       = suppressWarnings(as.numeric(bin_start_incl))) %>%
+      		stats::na.omit() 
+	
+	# Add 52 to weeks in new year to keep in order
+	temp$value[temp$unit == "week" & temp$value < 40] <- 
+	  temp$value[temp$unit == "week" & temp$value < 40] + 52
 
-		dplyr::summarize(value = sum(value*probability)) %>%
+	temp <- temp %>%
+	  dplyr::summarize(value = sum(value*probability)) %>%
 		dplyr::mutate(type = "Point")
+	
+	# Round off results to needed precision
+	temp$value[temp$target %in% c("Season onset", "Season peak week")] <- 
+	  round(temp$value[temp$target %in% c("Season onset", "Season peak week")], 0)
+	temp$value[!(temp$target %in% c("Season onset", "Season peak week"))] <- 
+	  round(temp$value[!(temp$target %in% c("Season onset", "Season peak week"))], 1)
+	
+	# Reset weeks back to MMWR format
+	temp$value[temp$target %in% c("Season onset", "Season peak week") & 
+	             temp$value > 52] <-
+	  temp$value[temp$target %in% c("Season onset", "Season peak week") & 
+	               temp$value > 52] - 52
+	
+	return(temp)
 }
