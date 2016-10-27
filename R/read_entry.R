@@ -16,8 +16,10 @@ read_entry = function(file) {
   forecast_week <- as.numeric(gsub("EW", "", 
                               regmatches(file, regexpr("(?:EW)[0-9]{2}", file))))
 
-  entry <- dplyr::mutate(entry, value = as.numeric(value),
-                         forecast_week  = forecast_week)
+  entry <- dplyr::mutate(entry, value = as.numeric(value))
+  
+  if (length(forecast_week > 0))
+     entry <- dplyr::mutate(entry, forecast_week  = forecast_week)
 
   entry %>% arrange_entry
 }
@@ -33,12 +35,12 @@ arrange_entry = function(entry) {
 
   verify_colnames(entry)
 
+  cols <- c("location", "target", "type", "unit",
+            "bin_start_incl", "bin_end_notincl", "value",
+            everything())
+  
   # Arrange entry by type, location, target, bin
   entry %>%
     dplyr::arrange(type, location, target) %>% 
-    dplyr::select_("location", "target", "type", "unit",
-                   "bin_start_incl", "bin_end_notincl", "value",
-                   "forecast_week")
+    dplyr::select_(.dots = cols)
 }
-
-?regmatches
