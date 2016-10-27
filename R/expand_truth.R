@@ -36,6 +36,7 @@ expand_truth <- function(truth, week_expand=1, percent_expand=5) {
 #' @param expand The number of weeks to expand around the observed truth.
 #' @return A data.frame with the same columns as `truth` but additional rows
 #' around the observed value.
+#' @import dplyr
 #' @export
 #' @keywords internal
 expand_week <- function(truth, expand) {
@@ -59,11 +60,8 @@ expand_week <- function(truth, expand) {
   }
   
   # Remove any repeated values in the case of multiple peaks
-  expand_week <- unique(expand_week)
-  
-  # Delete any edge cases
-  expand_week <- filter(expand_week, 
-                        (bin_start_incl >= 42 | bin_start_incl <= 18) &
+  expand_week <- unique(expand_week) %>%
+                  filter((bin_start_incl >= 42 | bin_start_incl <= 18) &
                           !is.na(bin_start_incl))
   
   # Deal with week 52/week 1 being sequential
@@ -88,6 +86,7 @@ expand_week <- function(truth, expand) {
 #' @param expand The number of percent bins to expand around the observed truth.
 #' @return A data.frame with the same columns as `truth` but additional rows
 #' around the observed value.
+#' @import dplyr
 #' @export
 #' @keywords internal
 expand_percent <- function(truth, expand) {
