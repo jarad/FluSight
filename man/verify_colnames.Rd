@@ -13,7 +13,7 @@ verify_colnames(entry)
 Invisibly returns \code{TRUE} if successful
 }
 \description{
-Compares column names to a valid entry and provides an error if any names
+Compares column names to a valid entry and provides an error if any required names
 are missing and a warning if there are any extra names.
 }
 \keyword{internal}
