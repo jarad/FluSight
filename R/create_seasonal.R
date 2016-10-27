@@ -16,6 +16,7 @@
 create_seasonal <- function(weekILI, region) {
   season_truth <- rbind(create_onset(weekILI, region),
                         create_peak(weekILI, region))
+  
   return(season_truth)
 }  
 
@@ -81,7 +82,7 @@ create_onset <- function(weekILI, region) {
   onset_truth <- data.frame(target = "Season onset",
                             location = region,
                             forecast_week = as.integer(NA),
-                            bin_start_incl = onset,
+                            bin_start_incl = as.character(onset),
                             stringsAsFactors = FALSE)
   
   return(onset_truth)
@@ -140,6 +141,8 @@ create_peak <- function(weekILI, region) {
       peak_truth <- rbind(peak_truth, extra_obs)
     }
   }
+  
+  peak_truth$bin_start_incl <- as.character(peak_truth$bin_start_incl)
   
   return(peak_truth)
 }  

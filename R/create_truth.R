@@ -100,8 +100,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   }
   
   truth <- bind_rows(truth,
-                 create_week(weekILI, start_wk, end_wk)) %>%
-              mutate(bin_start_incl = as.character(bin_start_incl))
+                 create_week(weekILI, start_wk, end_wk))
 
   return(truth)
 }
