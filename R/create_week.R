@@ -23,24 +23,24 @@ create_week <- function(weekILI, start_week, end_week) {
   
   week_target <- data.frame(target = character(),
                             location = character(),
-                            forecast_wk = integer(),
+                            forecast_week = integer(),
                             bin_start_incl = numeric()) 
   
   for (this_target in these_targets) {
     wk <- as.integer(substr(this_target, 1, 1))
     for (this_week in start_week:end_week) {
       #Set forecast week
-      forecast_wk <- this_week
+      forecast_week <- this_week
       #Set forecast location
       this_point <- filter(weekILI, location == location &
                              week == this_week + wk) %>%
         mutate(
           target = this_target,
-          forecast_wk = as.integer(forecast_wk)) %>%
+          forecast_week = as.integer(forecast_week)) %>%
         select(
           target,
           location,
-          forecast_wk,
+          forecast_week,
           bin_start_incl = wILI)
       
       week_target <- rbind(week_target, this_point)
@@ -48,8 +48,8 @@ create_week <- function(weekILI, start_week, end_week) {
   }
   
   # Subtract 52 from all weeks in new year to realign with MMWR week
-  week_target$forecast_wk[week_target$forecast_wk > 52] <-
-    week_target$forecast_wk[week_target$forecast_wk > 52] - 52
+  week_target$forecast_week[week_target$forecast_week > 52] <-
+    week_target$forecast_week[week_target$forecast_week > 52] - 52
   
   return(week_target)
 } 

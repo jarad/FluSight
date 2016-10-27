@@ -88,7 +88,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   # Create data shell to add targets to
   truth <- data.frame(target = character(),
                       location = character(),
-                      forecast.wk = numeric(),
+                      forecast_week = numeric(),
                       bin_start_incl = numeric()) 
  
   # Calculate targets if reached ----------------------------------
@@ -99,8 +99,9 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
               rbind(truth, .)
   }
   
-  truth <- rbind(truth,
-                 create_week(weekILI, start_wk, end_wk))
+  truth <- bind_rows(truth,
+                 create_week(weekILI, start_wk, end_wk)) %>%
+              mutate(bin_start_incl = as.character(bin_start_incl))
 
   return(truth)
 }
