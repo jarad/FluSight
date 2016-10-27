@@ -1,6 +1,6 @@
 context("verify_entry")
 
-valid_file  <- system.file("extdata", "valid-test.csv", package="FluSight")
+valid_file  <- system.file("inst/extdata", "EW44_ValidTest_2016-11-07.csv", package="FluSight")
 valid_entry <- read_entry(valid_file)
 
 test_that("Valid entry passes", {
