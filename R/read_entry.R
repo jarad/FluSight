@@ -35,10 +35,6 @@ arrange_entry = function(entry) {
 
   verify_colnames(entry)
 
-  # cols <- c("location", "target", "type", "unit",
-  #           "bin_start_incl", "bin_end_notincl", "value",
-  #           everything())
-  
   # Arrange entry by type, location, target, bin
   entry %>%
     dplyr::arrange(type, location, target) %>% 

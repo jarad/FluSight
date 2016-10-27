@@ -2,18 +2,27 @@ context("verify_entry")
 
 valid_file  <- system.file("inst/extdata", "EW44_ValidTest_2016-11-07.csv", package="FluSight")
 valid_entry <- read_entry(valid_file)
+valid_noweek_file <- system.file("inst/extdata", "valid_test.csv", package="FluSight")
+valid_noweek <- read_entry(valid_noweek_file)
 
 test_that("Valid entry passes", {
 	expect_true(verify_entry_file(valid_file ))
 	expect_true(verify_entry(     valid_entry))
+	expect_true(verify_entry_file(valid_noweek_file))
+	expect_true(verify_entry(valid_noweek))
 	expect_true(verify_entry(      full_entry))
 	expect_true(verify_entry(  minimal_entry))
 })
 
+test_that("Entry without forecast week generates warnings", {
+  expect_warning(verify_entry_file(valid_noweek_file))
+  expect_warning(verify_entry(valid_noweek))
+})
 
-test_that("Return error when column name doesn't exist", {
-  for (i in seq_along(names(valid_entry))) {
-  	invalid_entry <- valid_entry
+
+test_that("Return error when required column name doesn't exist", {
+  for (i in seq_along(names(valid_noweek))) {
+  	invalid_entry <- valid_noweek
   	names(invalid_entry)[i] <- "invalidName"
     expect_error(arrange_entry(invalid_entry))
     expect_error(verify_entry( invalid_entry))
