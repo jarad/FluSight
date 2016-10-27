@@ -9,13 +9,13 @@
 #' @keywords internal
 verify_colnames <- function(entry) {
   entry_names <- colnames(entry)
-  valid_names <- colnames(minimal_entry)
+  valid_names <- colnames(full_entry_score)
 
   missing_names <- setdiff(valid_names, entry_names)
   extra_names   <- setdiff(entry_names, valid_names)
 
   if (length(missing_names) > 0) {
-    if (missing_names == "forecast_week") {
+    if (length(missing_names) == 1 && missing_names == "forecast_week") {
       warning("Missing forecast_week - verification will proceed but 
               forecast cannot be scored")
     } else {
@@ -27,3 +27,5 @@ verify_colnames <- function(entry) {
 
   return(invisible(TRUE))
 }
+
+
