@@ -53,7 +53,38 @@
 #' \describe{
 #'   \item{target}{character vector of targets}
 #'   \item{location}{character vector of locations}
-#'   \item{forecast_wk}{numeric vector of MMWR week forecasted value is based on}
+#'   \item{forecast_week}{numeric vector of MMWR week forecasted value is based on}
 #'   \item{bin_start_incl}{numeric vector of observed truth}
 #' }
 "truth_1516"
+
+#' Expanded truth for 2015/2016 influenza season
+#'
+#' A data.frame containing the observed truth for the 2015/2016 influenza season,
+#' expanded for one bin around week targets and five bins around percent targets
+#'
+#' @format A dta frame with 14212 rows and 4 variables:
+#' \describe{
+#'   \item{target}{character vector of targets}
+#'   \item{location}{character vector of locations}
+#'   \item{forecast_week}{numeric vector of MMWR week forecasted value is based on}
+#'   \item{bin_start_incl}{numeric vector of observed truth}
+#' }
+"valid_exp_truth"
+
+#' A full valid entry containing forecast week for scoring
+#'
+#' A data.frame containing a scorable valid entry
+#'
+#' @format A dta frame with 8019 rows and 8 variables:
+#' \describe{
+#'   \item{location}{character vector of locations}
+#'   \item{target}{character vector of targets}
+#'   \item{type}{character vector with elements "Bin" or "Point"}
+#'   \item{unit}{character vector with elements "percent" or "week"}
+#'   \item{bin_start_incl}{character vector with forecast bin start value (inclusive)}
+#'   \item{bin_end_notincl}{character vector the forecast bin end value}
+#'   \item{value}{numeric vector with probabilities or point forecasts}
+#'   \item{forecast_week}{numeric vector of MMWR week forecasted value is based on}
+#' }
+"full_entry_score"
