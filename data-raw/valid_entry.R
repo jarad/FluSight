@@ -1,7 +1,7 @@
 library(magrittr)
 
 
-full_entry <- FluSight::read_entry("../inst/extdata/valid-test.csv") # no idea why this isn't working
+full_entry <- FluSight::read_entry("inst/extdata/EW44_ValidTest_2016-11-07.csv") # no idea why this isn't working
 
 
 # full_entry <- utils::read.csv("../inst/extdata/valid-test.csv",
