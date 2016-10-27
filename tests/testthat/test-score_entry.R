@@ -28,3 +28,17 @@ test_that("Missing target scored as -10", {
                rep(-10, length(tmp_score$score[tmp_score$target == rand_target])))  
   
 })
+
+test_that("Probability zero scored as -10", {
+  rand_location <- sample(unique(full_entry_score$location), 1)
+  rand_target <- sample(unique(full_entry_score$target), 1)
+  
+  tmp <- full_entry_score
+  tmp$value[tmp$location == rand_location & tmp$target == rand_target] <- 0
+
+  tmp_score <- score_entry(tmp, truth_1516)
+  
+  expect_equal(tmp_score$score[tmp_score$location == rand_location &
+                                 tmp_score$target == rand_target], -10)
+  
+})
