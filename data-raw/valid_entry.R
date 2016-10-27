@@ -17,7 +17,8 @@ valid_ILI <- read.csv("../FluSight/inst/extdata/valid_ILI.csv",
                       stringsAsFactors = FALSE)
 
 truth_1516 <- read.csv("../FluSight/inst/extdata/truth_1516.csv",
-                       stringsAsFactors = FALSE)
+                       stringsAsFactors = FALSE) %>%
+                dplyr::mutate(bin_start_incl = as.character(bin_start_incl))
 
 valid_exp_truth <- read.csv("../FluSight/inst/extdata/valid_exp_truth.csv",
                             stringsAsFactors = FALSE)
