@@ -20,7 +20,7 @@ verify_types <- function(entry) {
   if (length(missing_types)>0)
     stop("Missing these types: ", paste(missing_types))
 
-  if (length(extra_types)>0)
+  if (length(extra_types)>0 && extra_types != "point")
     warning("These extra types are ignored: ", paste(extra_types))
   
   return(invisible(TRUE))
