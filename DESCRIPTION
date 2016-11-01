@@ -11,7 +11,8 @@ Imports:
 		magrittr,
 		MMWRweek
 Suggests:
-		testthat
+		testthat,
+    cdcfluview
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
