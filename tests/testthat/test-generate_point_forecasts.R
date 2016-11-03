@@ -1,23 +1,125 @@
 context("generate_point_forecasts")
 
-
+test_that("generate_point_forecast throws error with invalid method", {
+  expect_error(generate_point_forecast(d, method = "test"), 
+               "'arg' should be one of “Median”, “Expected Value”, “Mode”")
+  expect_error(generate_point_forecasts(d, method = "test"), 
+               "'arg' should be one of “Median”, “Expected Value”, “Mode”")
+})
 
 
 test_that("generate_point_forecast works", {
-	n <- 100
+	
+  # Random onset data
+  weeks <- full_entry %>%
+	            filter(location == "US National", target == "Season onset",
+	                   type == "Bin") %>%
+	            mutate(value = runif(length(value)),
+	                   bin_start_incl = suppressWarnings(as.numeric(bin_start_incl))) %>%
+	            mutate(value = value/sum(value))
+ 
+  week_exp <- weeks %>%
+                na.omit() %>%
+                  mutate(bin_start_incl = ifelse(bin_start_incl >= 40,
+                                                 bin_start_incl, 
+                                                 bin_start_incl + 52)) %>%
+                  summarize(week_exp = round(sum(bin_start_incl * value/sum(value)), 0)) %>%
+                  mutate(week_exp = ifelse(week_exp <= 52, 
+                                           week_exp, week_exp - 52)) %>%
+                  first()
 
-  values <- rnorm(n)
-  probs <- runif(n); probs <- probs/sum(probs)
-  exp_value = sum(values*probs)
+  week_mode <- weeks$bin_start_incl[weeks$value == max(weeks$value)]
+  week_mode <- as.numeric(ifelse(week_mode == "none", NA, week_mode))
 
-  d = data.frame(bin_start_incl = values,
-  							 value = probs)
+  week_med <- weeks %>%
+                    mutate(bin_start_incl = ifelse(bin_start_incl >= 40,
+                                                   bin_start_incl, 
+                                                   bin_start_incl + 52)) %>%
+                    arrange(bin_start_incl) %>%
+                    mutate(cumsum = cumsum(value)) %>%
+                    filter(bin_start_incl == 
+                             bin_start_incl[min(which(cumsum >= 0.5))]) %>%
+                    mutate(bin_start_incl = ifelse(bin_start_incl <= 52, 
+                                                   bin_start_incl, bin_start_incl - 52)) %>%
+                    select(bin_start_incl) %>%
+                    first()
+ 
 
-  d_truth = data.frame(value = exp_value,
-  										 type="Point",
-  										 stringsAsFactors = FALSE)
+  # Random percent data
+  percent <- full_entry %>%
+              filter(location == "HHS Region 1", target == "1 wk ahead",
+                     type == "Bin") %>%
+              mutate(value = runif(length(value))) %>%
+              mutate(value = value/sum(value))
+  
+  percent_exp <- round(sum(as.numeric(percent$bin_start_incl) *
+                           percent$value), 1)
+  percent_mode <- as.numeric(percent$bin_start_incl
+                             [percent$value == max(percent$value)])
+  percent_med <- percent %>%
+                  mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
+                  arrange(bin_start_incl) %>%
+                  mutate(cumsum = cumsum(value)) %>%
+                  filter(bin_start_incl == 
+                           bin_start_incl[min(which(cumsum >= 0.5))]) %>%
+                  select(bin_start_incl) %>%
+                  first()
 
-  expect_equal(d_truth, generate_point_forecast(d))
+  
+  # Full test data
+  d <- rbind(weeks, percent) %>%
+        group_by(location, target)
+  d$bin_start_incl[is.na(d$bin_start_incl)] <- "none"
+  
+  exp_truth <- data.frame(location = c("HHS Region 1", "US National"),
+                        target = c("1 wk ahead", "Season onset"),
+                        value = c(percent_exp, week_exp),
+                        type = "Point",
+                        stringsAsFactors = FALSE) 
+  med_truth <- data.frame(location = c("HHS Region 1", "US National"),
+                          target = c("1 wk ahead", "Season onset"),
+                          value = c(percent_med, week_med),
+                          type = "Point",
+                          stringsAsFactors = FALSE)
+  mode_truth <- data.frame(location = c("HHS Region 1", "US National"),
+                           target = c("1 wk ahead", "Season onset"),
+                           value = c(percent_mode, week_mode),
+                          type = "Point",
+                          stringsAsFactors = FALSE)
+ 
+  # Test function
+  expect_equivalent(exp_truth, generate_point_forecast(d, method = "Expect"))
+  expect_equivalent(med_truth, generate_point_forecast(d, method = "Median"))
+  expect_equivalent(mode_truth, generate_point_forecast(d, method = "Mode"))
+  
+})
+
+
+test_that("median and mode recognize 'none' for onset if applicable", {
+  weeks <- full_entry %>%
+    filter(location == "US National", target == "Season onset",
+           type == "Bin")
+  
+  weeks$value[weeks$bin_start_incl == "none"] <- 3
+  weeks$value <- weeks$value/sum(weeks$value)
+  
+  week_mode <- weeks$bin_start_incl[weeks$value == max(weeks$value)]
+  week_mode <- as.numeric(ifelse(week_mode == "none", NA, week_mode))
+  
+  week_med <- weeks %>%
+    mutate(bin_start_incl = suppressWarnings(as.numeric(bin_start_incl)),
+           bin_start_incl = ifelse(bin_start_incl >= 40,
+                                   bin_start_incl, 
+                                   bin_start_incl + 52)) %>%
+    arrange(bin_start_incl) %>%
+    mutate(cumsum = cumsum(value)) %>%
+    filter(bin_start_incl == 
+             bin_start_incl[min(which(cumsum >= 0.5))]) %>%
+    mutate(bin_start_incl = ifelse(bin_start_incl <= 52, 
+                                   bin_start_incl, bin_start_incl - 52)) %>%
+    select(bin_start_incl) %>%
+    first()
+  
 })
 
 
