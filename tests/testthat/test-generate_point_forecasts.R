@@ -97,28 +97,38 @@ test_that("generate_point_forecast works", {
 
 test_that("median and mode recognize 'none' for onset if applicable", {
   weeks <- full_entry %>%
-    filter(location == "US National", target == "Season onset",
-           type == "Bin")
+    filter(location %in% c("US National", "HHS Region 1"), 
+                           target == "Season onset", type == "Bin") %>%
+    group_by(location, target) %>%
+    mutate(value = ifelse(bin_start_incl == "none",
+                          3, value),
+           value = value/sum(value))
   
-  weeks$value[weeks$bin_start_incl == "none"] <- 3
-  weeks$value <- weeks$value/sum(weeks$value)
-  
-  week_mode <- weeks$bin_start_incl[weeks$value == max(weeks$value)]
-  week_mode <- as.numeric(ifelse(week_mode == "none", NA, week_mode))
-  
+  week_mode <- weeks %>%
+                filter(bin_start_incl == bin_start_incl[value == max(value)]) %>%
+                select(location, target, value = bin_start_incl, type) %>%
+                mutate(value = as.numeric(ifelse(value == "none",
+                                      NA, value)),
+                       type = "Point")
+
   week_med <- weeks %>%
     mutate(bin_start_incl = suppressWarnings(as.numeric(bin_start_incl)),
            bin_start_incl = ifelse(bin_start_incl >= 40,
                                    bin_start_incl, 
-                                   bin_start_incl + 52)) %>%
-    arrange(bin_start_incl) %>%
-    mutate(cumsum = cumsum(value)) %>%
+                                   bin_start_incl + 52),
+           type = "Point") %>%
+    arrange(location, target, bin_start_incl) %>%
+    mutate(cumsum = cumsum(value),
+           bin_start_incl = ifelse(is.na(bin_start_incl),
+                                   "none", bin_start_incl)) %>%
     filter(bin_start_incl == 
              bin_start_incl[min(which(cumsum >= 0.5))]) %>%
-    mutate(bin_start_incl = ifelse(bin_start_incl <= 52, 
-                                   bin_start_incl, bin_start_incl - 52)) %>%
-    select(bin_start_incl) %>%
-    first()
+    select(location, target, value = bin_start_incl, type) %>%
+    mutate(value = as.numeric(ifelse(value == "none",
+                                     NA, value)))
+
+  expect_equivalent(week_mode, generate_point_forecast(weeks, method = "Mode"))
+  expect_equivalent(week_med, generate_point_forecast(weeks, method = "Median"))
   
 })
 
