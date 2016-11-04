@@ -1,10 +1,8 @@
 context("generate_point_forecasts")
 
 test_that("generate_point_forecast throws error with invalid method", {
-  expect_error(generate_point_forecast(d, method = "test"), 
-               "'arg' should be one of “Median”, “Expected Value”, “Mode”")
-  expect_error(generate_point_forecasts(d, method = "test"), 
-               "'arg' should be one of “Median”, “Expected Value”, “Mode”")
+  expect_error(generate_point_forecast(d, method = "test"))
+  expect_error(generate_point_forecasts(d, method = "test"))
 })
 
 
@@ -131,5 +129,4 @@ test_that("median and mode recognize 'none' for onset if applicable", {
   expect_equivalent(week_med, generate_point_forecast(weeks, method = "Median"))
   
 })
-
 
