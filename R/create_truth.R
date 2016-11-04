@@ -2,14 +2,15 @@
 #'
 #' Determines observed true values for each target 
 #'
-#' @param fluview A logical value (default \code{TRUE}) indicating whether
-#' to download ILINet from Fluview
-#' @param year Calendar year during which the flu season of interest begins. 
-#' For the 2015/2016 flu season, \code{year = 2015}
-#' @param weekILI A data.frame of weighted ILI values (default \code{NULL}).
-#' Must contain columns location, week, and wILI. Must be \code{NULL} when 
-#' downloading data using \code{fluview = TRUE}. Required if \code{fluview 
-#' = FALSE.}
+#' @param fluview A logical value (default \code{TRUE}) indicating whether to
+#'   download ILINet from Fluview
+#' @param weekILI A data.frame of weighted ILI values (default \code{NULL}). 
+#'   Must contain columns location, week, and wILI. Must be \code{NULL} when 
+#'   downloading data using \code{fluview = TRUE}. Required if \code{fluview =
+#'   FALSE.}
+#' @param year Calendar year during which the flu season of interest begins. For
+#'   the 2015/2016 flu season, \code{year = 2015}. Required whether downloading
+#'   data from fluview or providing ILI data
 #' @import dplyr
 #' @import cdcfluview
 #' @export
@@ -26,9 +27,11 @@
 #' 
 create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
 
-  warning("Work in progress. Values need to be updated for 2016/2017 season")
-
-    # Return an error if fluview == FALSE and no data frame provided
+  # Return an error if fluview == FALSE and no data frame provided
+  if (is.null(year)) {
+    stop("Year is required")
+  }
+  
   if (fluview == FALSE & is.null(weekILI)) {
     stop("ILINet data required if not fetching data from FluView")
   }
@@ -36,24 +39,26 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   if (fluview == TRUE & !is.null(weekILI)) {
     stop("Do not provide data if fetching data from ILINet")
   }
-
-  if (fluview == TRUE & is.null(year)) {
-    stop("Year is required if downloading data from ILINet")
-  }
   
   # Verify user-submitted ILI data
   if (!is.null(weekILI)) {
     verify_ILI(weekILI) 
   }
   
-  # Date first forecasts received
-  start_wk <- 42    #First week of ILINet data used for forecasts
-  end_wk <- 18      #Last week of ILINet data used for forecasts
+  # Date first forecasts received - varies depending on forecast year
+  if (year == 2015) {
+    start_wk <- 42    #First week of ILINet data used for forecasts
+    end_wk <- 18      #Last week of ILINet data used for forecasts
+  }
+  if (year == 2016) {
+    start_wk <- 43
+    end_wk <- 18
+  }
   
   # Read in ILINet results
   if (fluview == TRUE) {
     # Read in ILINet data and rename locations to match template
-    usflu <- get_flu_data("national", "ilinet", years = 2015) %>%
+    usflu <- get_flu_data("national", "ilinet", years = year) %>%
       select(
         location = REGION.TYPE,
         week = WEEK,
@@ -66,7 +71,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
     
     
     regionflu <- get_flu_data("HHS", sub_region = 1:10,
-                              "ilinet", years = 2015) %>%
+                              "ilinet", years = year) %>%
       select(
         location = REGION,
         week = WEEK,
@@ -95,7 +100,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   for (this_location in levels(as.factor(weekILI$location))) {
     truth <- filter(weekILI, location == this_location) %>%
               create_seasonal(
-                              this_location) %>%
+                              this_location, year) %>%
               rbind(truth, .)
   }
   

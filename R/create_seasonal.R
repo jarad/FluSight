@@ -7,14 +7,16 @@
 #' location, week, and wILI. 
 #' @param region A character string specifying the target location - either US National 
 #' or one of HHS Region 1-10
+#' @param year Calendar year during which the flu season of interest begins. 
+#' For the 2015/2016 flu season, \code{year = 2015}
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' @examples 
 #' season_targets <- create_seasonal(valid_ILI, "US National")
 #' season_targets <- create_seasonal(valid_ILI, "HHS Region 4")
 #'   
-create_seasonal <- function(weekILI, region) {
-  season_truth <- rbind(create_onset(weekILI, region),
+create_seasonal <- function(weekILI, region, year) {
+  season_truth <- rbind(create_onset(weekILI, region, year),
                         create_peak(weekILI, region))
   return(season_truth)
 }  
@@ -28,33 +30,37 @@ create_seasonal <- function(weekILI, region) {
 #' location, week, and wILI. 
 #' @param region A character string specifying the target location - either US National 
 #' or one of HHS Region 1-10
+#' @param year Calendar year during which the flu season of interest begins. 
+#' For the 2015/2016 flu season, \code{year = 2015}
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' @keywords internal
 #'   
-create_onset <- function(weekILI, region) {
+create_onset <- function(weekILI, region, year) {
  
   # Add 52 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + 52)
   
   # Create baselines  
-  warning("Baselines need to be updated for 2016/2017 season")
-  baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
-                                     "HHS Region 3", "HHS Region 4", "HHS Region 5",
-                                     "HHS Region 6", "HHS Region 7", "HHS Region 8",
-                                     "HHS Region 9", "HHS Region 10"),
-                          value = c(2.1, 1.3, 2.3, 1.8, 1.6, 1.9, 3.6, 1.7,
-                                    1.4, 2.6, 1.1))
+  if (year == 2015){
+    baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
+                                       "HHS Region 3", "HHS Region 4", "HHS Region 5",
+                                       "HHS Region 6", "HHS Region 7", "HHS Region 8",
+                                       "HHS Region 9", "HHS Region 10"),
+                            value = c(2.1, 1.3, 2.3, 1.8, 1.6, 1.9, 3.6, 1.7,
+                                      1.4, 2.6, 1.1))
+  }
   
-  # 2016/2017 baselines - uncomment before releasing
-  # baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
-  #                                    "HHS Region 3", "HHS Region 4", "HHS Region 5",
-  #                                    "HHS Region 6", "HHS Region 7", "HHS Region 8",
-  #                                    "HHS Region 9", "HHS Region 10"),
-  #                         value = c(2.2, 1.4, 3.0, 2.2, 1.7, 1.9, 4.1, 1.8,
-  #                                   1.4, 2.5, 1.1))
-
+  if (year == 2016){
+    baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2",
+                                       "HHS Region 3", "HHS Region 4", "HHS Region 5",
+                                       "HHS Region 6", "HHS Region 7", "HHS Region 8",
+                                       "HHS Region 9", "HHS Region 10"),
+                            value = c(2.2, 1.4, 3.0, 2.2, 1.7, 1.9, 4.1, 1.8,
+                                      1.4, 2.5, 1.1))
+  }
+  
   # Check to see if 3 weeks above baseline have passed
   j <- 0  # Counter for weeks above peak
   for (i in head(weekILI$week, n = 1):tail(weekILI$week, n = 1)) {
