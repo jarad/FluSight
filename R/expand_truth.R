@@ -11,6 +11,9 @@
 #' @return A data.frame with expanded truth
 #' @export
 expand_truth <- function(truth, week_expand=1, percent_expand=5) {
+  
+  names(truth) <- tolower(names(truth))
+  
   week_targets <- truth %>%
     dplyr::filter(target %in% c("Season onset", "Season peak week")) %>%
     rowwise %>%

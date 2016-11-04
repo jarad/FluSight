@@ -10,6 +10,8 @@
 #' verify_probabilities(minimal_entry)
 verify_probabilities <- function(entry) {
 
+  names(entry) <- tolower(names(entry))
+  
   probabilities = entry %>%
     filter(type=="Bin") %>%
     group_by(location,target) %>%

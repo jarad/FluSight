@@ -12,6 +12,8 @@
 #' verify_bins(minimal_entry)
 verify_bins <- function(entry) {
   
+  names(entry) <- tolower(names(entry))
+  
   entry_targets <- unique(entry$target)  
   
   errors <- character()

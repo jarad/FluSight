@@ -10,6 +10,9 @@
 #' @return A data.frame of scores for each target
 score_entry <- function(entry, truth) {
 
+  names(entry) <- tolower(names(entry))
+  names(truth) <- tolower(names(truth))
+  
   entry %>%
     filter(type == "Bin") %>%
     right_join(truth, by=c("location", "target",

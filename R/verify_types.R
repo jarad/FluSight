@@ -11,6 +11,9 @@
 #' @examples
 #' verify_types(minimal_entry)
 verify_types <- function(entry) {
+  
+  names(entry) <- tolower(names(entry))
+  
   valid_types <- unique(minimal_entry$type)
   entry_types <- unique(entry$type)
   

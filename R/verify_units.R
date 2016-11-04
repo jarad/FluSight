@@ -11,6 +11,8 @@
 #' @examples
 #' verify_units(minimal_entry)
 verify_units <- function(entry) {
+  names(entry) <- tolower(names(entry))
+  
   valid_units <- unique(minimal_entry$unit)
   entry_units <- unique(entry$unit)
   

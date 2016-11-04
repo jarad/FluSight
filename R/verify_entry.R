@@ -29,6 +29,8 @@ verify_entry_file <- function(file) {
 #' verify_entry(minimal_entry)
 #' verify_entry(full_entry)
 verify_entry = function(entry) {
+  
+  names(entry) <- tolower(names(entry))
 
   verify_colnames(entry)
 

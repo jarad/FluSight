@@ -14,6 +14,8 @@
 
 normalize_probs <- function(entry) {
   
+  names(entry) <- tolower(names(entry))
+  
   # Verify entry first to find implausible values
   verify_entry(entry)
   

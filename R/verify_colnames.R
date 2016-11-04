@@ -8,6 +8,9 @@
 #' @export
 #' @keywords internal
 verify_colnames <- function(entry) {
+  
+  names(entry) <- tolower(names(entry))
+  
   entry_names <- colnames(entry)
   valid_names <- colnames(minimal_entry)
 

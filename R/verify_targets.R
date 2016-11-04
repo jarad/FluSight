@@ -11,6 +11,9 @@
 #' @examples
 #' verify_targets(minimal_entry)
 verify_targets <- function(entry) {
+  
+  names(entry) <- tolower(names(entry))
+  
   valid_targets <- unique(minimal_entry$target)
   entry_targets <- unique(entry$target)
   

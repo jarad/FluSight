@@ -42,6 +42,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   
   # Verify user-submitted ILI data
   if (!is.null(weekILI)) {
+    names(weekILI) <- tolower(names(weekILI))
     verify_ILI(weekILI) 
   }
   

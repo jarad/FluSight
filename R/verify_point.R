@@ -11,6 +11,8 @@
 #' verify_point(minimal_entry)
 verify_point <- function(entry) {
 
+  names(entry) <- tolower(names(entry))
+  
   point = entry %>%
     filter(type == "Point") %>%
     mutate(miss     = is.na(value),

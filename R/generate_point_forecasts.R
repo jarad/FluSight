@@ -13,7 +13,9 @@ generate_point_forecasts <- function(entry, method =
                                        c("Median", "Expected Value", "Mode")) {
   
   method <- match.arg(method)
-  
+
+  names(entry) <- tolower(names(entry))
+    
   if (sum(entry$type == "Point") > 0)
   	warning("It appears point forecasts already exist.")
 
@@ -21,6 +23,7 @@ generate_point_forecasts <- function(entry, method =
       dplyr::filter(type == "Bin") %>%
       dplyr::group_by(location,target) %>%
       generate_point_forecast(., method)
+  
 }
 
 
@@ -44,21 +47,21 @@ generate_point_forecast <- function(d, method =
                                      c("Median", "Expected Value", "Mode")) {
   method <- match.arg(method)
   
+  names(d) <- tolower(names(d))
+  
   d <- d %>%
           # Season onset has `none` as a possible bin_start_incl thus we
           # exclude it from the point forecast by turning bin_start_incl
           # into numeric 
     dplyr::mutate(bin_start_incl = 
-                          suppressWarnings(as.numeric(bin_start_incl)))
+                          suppressWarnings(as.numeric(bin_start_incl)),
+                  bin_start_incl = ifelse(!(is.na(bin_start_incl)) & 
+                                            unit == "week" & 
+                                            bin_start_incl < 40,
+                                          bin_start_incl + 52,
+                                          bin_start_incl)) %>%
+    dplyr::arrange(location, target, bin_start_incl)
   
-	# Add 52 to weeks in new year to keep in order
-	d$bin_start_incl[!(is.na(d$bin_start_incl)) & d$unit == "week" & 
-	             d$bin_start_incl < 40] <- 
-	  d$bin_start_incl[!(is.na(d$bin_start_incl)) & d$unit == "week" & 
-	               d$bin_start_incl < 40] + 52
-	
-	d <- dplyr::arrange(d, location, target, bin_start_incl)
-
 	# Expected Value method
   if (method == "Expected Value") {
     temp <- d %>%
@@ -66,19 +69,15 @@ generate_point_forecast <- function(d, method =
       dplyr::mutate(probability = value/sum(value),
                     value       = bin_start_incl) %>%
   	  dplyr::summarize(value = sum(value*probability)) %>%
-  		dplyr::mutate(type = "Point")
-  	
-  	# Round off results to needed precision
-  	temp$value[temp$target %in% c("Season onset", "Season peak week")] <- 
-  	  round(temp$value[temp$target %in% c("Season onset", "Season peak week")], 0)
-  	temp$value[!(temp$target %in% c("Season onset", "Season peak week"))] <- 
-  	  round(temp$value[!(temp$target %in% c("Season onset", "Season peak week"))], 1)
+  		dplyr::mutate(type = "Point",
+  		              value = ifelse(target %in% c("Season onset", "Season peak week"),
+  		                             round(value, 0),
+  		                             round(value, 1)))
   }
   
   # Median method
   if (method == "Median") {
     temp <- d %>%
-      dplyr::arrange(bin_start_incl) %>%
       dplyr::mutate(cumulative = cumsum(value),
                     type = "Point") %>%
       dplyr::filter(row_number() == min(which(cumulative >= 0.5))) %>%
@@ -93,12 +92,12 @@ generate_point_forecast <- function(d, method =
       dplyr::mutate(type = "Point")
   }
   
-	
 	# Reset weeks back to MMWR format
-	temp$value[temp$target %in% c("Season onset", "Season peak week") & 
-	             temp$value > 52 & !(is.na(temp$value))] <-
-	  temp$value[temp$target %in% c("Season onset", "Season peak week") & 
-	               temp$value > 52 & !(is.na(temp$value))] - 52
-	
+	temp <- temp %>%
+	          dplyr::mutate(value = ifelse(target %in% c("Season onset", "Season peak week") & 
+	                                         value > 52 & !(is.na(value)),
+	                                       value - 52,
+	                                       value))
+
 	return(temp)
 }

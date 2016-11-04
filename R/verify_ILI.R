@@ -10,6 +10,8 @@
 #' 
 verify_ILI <- function(weekILI) {
   
+  names(weekILI) <- tolower(names(weekILI))
+  
   # Verify column names
   verify_ILI_colnames(weekILI)
   
