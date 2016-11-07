@@ -21,7 +21,6 @@ create_seasonal <- function(weekILI, region, year) {
   return(season_truth)
 }  
 
-
 #' Creates observed truth for seasonal onset
 #'
 #' Determines observed true values for onset week
@@ -80,7 +79,7 @@ create_onset <- function(weekILI, region, year) {
   }
     
   # If onset week > 52, reset to MMWR week
-  if (onset > 52) {
+  if (is.numeric(onset) && onset > 52) {
     onset <- onset - 52
   }
     
@@ -125,7 +124,7 @@ create_peak <- function(weekILI, region) {
   
   # If peak week > 52, reset to MMWR week
   for (i in 1:length(pkwk)) {
-    if (pkwk[i] > 52) {
+    if (!(is.na(pkwk[i])) && pkwk[i] > 52) {
       pkwk[i] <- pkwk[i] - 52
     }
   }

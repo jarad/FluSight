@@ -55,7 +55,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
     start_wk <- 43
     end_wk <- 18
   }
-  
+ 
   # Read in ILINet results
   if (fluview == TRUE) {
     # Read in ILINet data and rename locations to match template
