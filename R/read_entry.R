@@ -4,7 +4,7 @@
 #'
 #' @param file A csv file
 #' @return An arranged data.frame
-#' @import magrittr
+#' @import dplyr
 #' @export
 read_entry = function(file) {
   entry <- read.csv(file,
@@ -12,9 +12,20 @@ read_entry = function(file) {
                     stringsAsFactors = FALSE)
 
   names(entry) <- tolower(names(entry))
-
-  entry <- dplyr::mutate(entry, value = as.numeric(value))
-
+  
+  entry <- entry %>%
+            mutate(value = as.numeric(value),
+                   bin_start_incl = replace(bin_start_incl,
+                                            !is.na(bin_start_incl) & bin_start_incl != "none",
+                                            format(round(as.numeric(
+                                              bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                              , 1), nsmall = 1)),
+                   bin_end_notincl = replace(bin_end_notincl,
+                                            !is.na(bin_end_notincl) & bin_end_notincl != "none",
+                                            format(round(as.numeric(
+                                              bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
+                                              , 1), nsmall = 1)))
+         
   entry %>% arrange_entry
 }
 
@@ -35,3 +46,4 @@ arrange_entry = function(entry) {
     dplyr::select_("location", "target", "type", "unit",
                    "bin_start_incl", "bin_end_notincl", "value")
 }
+
