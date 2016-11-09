@@ -15,16 +15,16 @@ read_entry = function(file) {
   
   entry <- entry %>%
             mutate(value = as.numeric(value),
-                   bin_start_incl = replace(bin_start_incl,
+                   bin_start_incl = trimws(replace(bin_start_incl,
                                             !is.na(bin_start_incl) & bin_start_incl != "none",
                                             format(round(as.numeric(
                                               bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
-                                              , 1), nsmall = 1)),
-                   bin_end_notincl = replace(bin_end_notincl,
+                                              , 1), nsmall = 1))),
+                   bin_end_notincl = trimws(replace(bin_end_notincl,
                                             !is.na(bin_end_notincl) & bin_end_notincl != "none",
                                             format(round(as.numeric(
                                               bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
-                                              , 1), nsmall = 1)))
+                                              , 1), nsmall = 1))))
          
   entry %>% arrange_entry
 }
