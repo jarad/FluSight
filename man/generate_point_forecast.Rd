@@ -22,7 +22,7 @@ The point forecast is taken to be either the expected value, median,
 or mode of the probabilistic forecasts.
 }
 \seealso{
-generate_point_forecasts
+\code{\link{generate_point_forecasts}}
 }
 \keyword{internal}
 

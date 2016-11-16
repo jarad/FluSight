@@ -27,7 +27,7 @@ generate_point_forecasts <- function(entry, method =
 }
 
 
-#' Generate point forecasts from probabilistic forecasts
+#' Generate a point forecast from probabilistic forecast
 #'
 #' The point forecast is taken to be either the expected value, median, 
 #' or mode of the probabilistic forecasts.
@@ -38,7 +38,7 @@ generate_point_forecasts <- function(entry, method =
 #'   Value"} generates the expected value from the provided probabilities,and
 #'   \code{"Mode"} returns the individual bin with the largest probability 
 #' @return A data.frame with columns `type` and `value`
-#' @seealso generate_point_forecasts
+#' @seealso \code{\link{generate_point_forecasts}}
 #' @import magrittr
 #' @export
 #' @keywords internal
