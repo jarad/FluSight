@@ -4,10 +4,16 @@
 \alias{generate_point_forecasts}
 \title{Generate point forecasts for all locations and targets}
 \usage{
-generate_point_forecasts(entry)
+generate_point_forecasts(entry, method = c("Median", "Expected Value",
+  "Mode"))
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{method}{The method to be used to generate the point forecasts. 
+\code{"Median"} (the default) uses the median value, \code{"Expected
+Value"} generates the expected value from the provided probabilities,and
+\code{"Mode"} returns the individual bin with the largest probability}
 }
 \value{
 A data.frame of point forecasts for all locations and targets.
