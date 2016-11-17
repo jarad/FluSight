@@ -42,7 +42,6 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   
   # Verify user-submitted ILI data
   if (!is.null(weekILI)) {
-    names(weekILI) <- tolower(names(weekILI))
     verify_ILI(weekILI) 
   }
   
@@ -55,34 +54,63 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
     start_wk <- 43
     end_wk <- 18
   }
- 
+  
   # Read in ILINet results
   if (fluview == TRUE) {
-    # Read in ILINet data and rename locations to match template
-    usflu <- get_flu_data("national", "ilinet", years = year) %>%
-      select(
-        location = REGION.TYPE,
-        week = WEEK,
-        wILI = X..WEIGHTED.ILI) %>%
-      mutate(
-        location = "US National",
-        wILI = round(wILI, 1)) %>%
-      filter(
-        week >= start_wk | week <= end_wk + 4)
     
-    
-    regionflu <- get_flu_data("HHS", sub_region = 1:10,
-                              "ilinet", years = year) %>%
-      select(
-        location = REGION,
-        week = WEEK,
-        wILI = X..WEIGHTED.ILI) %>%
-      mutate(
-        location = paste("HHS", location),
-        wILI = round(wILI, 1)) %>%
-      filter(
-        week >= start_wk | week <= end_wk + 4)
-    
+    # Check cdcfluview version number - output is different depending on version
+    if (as.numeric(substr(packageVersion("cdcfluview"), 1, 3)) >= 0.5) {
+      # Read in ILINet data and rename locations to match template
+      usflu <- get_flu_data(region = "national", data_source = "ilinet",
+                            years = year) %>%
+        select(
+          week = WEEK,
+          wILI = `% WEIGHTED ILI`) %>%
+        mutate(
+          location = "US National",
+          wILI = round(wILI, 1)) %>%
+        filter(
+          week >= start_wk | week <= end_wk + 4)
+      
+      
+      regionflu <- get_flu_data(region = "HHS", sub_region = 1:10,
+                                data_source = "ilinet", years = year) %>%
+        select(
+          location = REGION,
+          week = WEEK,
+          wILI = `% WEIGHTED ILI`) %>%
+        mutate(
+          location = paste("HHS", location),
+          wILI = round(wILI, 1)) %>%
+        filter(
+          week >= start_wk | week <= end_wk + 4)
+    } else {
+          # Read in ILINet data and rename locations to match template
+      usflu <- get_flu_data(region = "national", data_source = "ilinet",
+                            years = year) %>%
+        select(
+          location = REGION.TYPE,
+          week = WEEK,
+          wILI = X..WEIGHTED.ILI) %>%
+        mutate(
+          location = "US National",
+          wILI = round(wILI, 1)) %>%
+        filter(
+          week >= start_wk | week <= end_wk + 4)
+      
+      
+      regionflu <- get_flu_data(region = "HHS", sub_region = 1:10,
+                                data_source = "ilinet", years = year) %>%
+        select(
+          location = REGION,
+          week = WEEK,
+          wILI = X..WEIGHTED.ILI) %>%
+        mutate(
+          location = paste("HHS", location),
+          wILI = round(wILI, 1)) %>%
+        filter(
+          week >= start_wk | week <= end_wk + 4)
+    }
     # Join national and HHs regional flu data
     weekILI <- rbind(usflu, regionflu)
   }
