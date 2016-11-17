@@ -16,22 +16,21 @@ generate_point_forecasts <- function(entry, method =
 
   names(entry) <- tolower(names(entry))
     
-  if (sum(entry$type == "Point") > 0)
+  if (sum(entry$type == "Point") > 0) {
   	warning("It appears point forecasts already exist.")
+  }
 
-  d<-entry %>%
+  entry %>%
       dplyr::filter(type == "Bin") %>%
       dplyr::group_by(location,target) %>%
       generate_point_forecast(., method)
-  
 }
 
 
-#' Generate point forecasts from probabilistic forecasts
+#' Generate a point forecast from probabilistic forecast
 #'
 #' The point forecast is taken to be either the expected value, median, 
-#' or mode of the
-#' probabilistic forecasts.
+#' or mode of the probabilistic forecasts.
 #'
 #' @param d A data.frame with columns `bin_start_incl` and `value`
 #' @param method The method to be used to generate the point forecasts. 
@@ -39,7 +38,7 @@ generate_point_forecasts <- function(entry, method =
 #'   Value"} generates the expected value from the provided probabilities,and
 #'   \code{"Mode"} returns the individual bin with the largest probability 
 #' @return A data.frame with columns `type` and `value`
-#' @seealso generate_point_forecasts
+#' @seealso \code{\link{generate_point_forecasts}}
 #' @import magrittr
 #' @export
 #' @keywords internal
@@ -50,6 +49,7 @@ generate_point_forecast <- function(d, method =
   names(d) <- tolower(names(d))
   
   d <- d %>%
+#    filter(bin_start_incl != "none") %>%
           # Season onset has `none` as a possible bin_start_incl thus we
           # exclude it from the point forecast by turning bin_start_incl
           # into numeric 

@@ -4,7 +4,7 @@
 \alias{create_onset}
 \title{Creates observed truth for seasonal onset}
 \usage{
-create_onset(weekILI, region)
+create_onset(weekILI, region, year)
 }
 \arguments{
 \item{weekILI}{A data.frame of weighted ILI values (default NULL). Must contain columns
@@ -12,6 +12,9 @@ location, week, and wILI.}
 
 \item{region}{A character string specifying the target location - either US National 
 or one of HHS Region 1-10}
+
+\item{year}{Calendar year during which the flu season of interest begins. 
+For the 2015/2016 flu season, \code{year = 2015}}
 }
 \value{
 A data.frame with columns location, target, and bin_start_incl

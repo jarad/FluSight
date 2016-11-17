@@ -7,16 +7,17 @@
 create_truth(fluview = TRUE, year = NULL, weekILI = NULL)
 }
 \arguments{
-\item{fluview}{A logical value (default \code{TRUE}) indicating whether
-to download ILINet from Fluview}
+\item{fluview}{A logical value (default \code{TRUE}) indicating whether to
+download ILINet from Fluview}
 
-\item{year}{Calendar year during which the flu season of interest begins. 
-For the 2015/2016 flu season, \code{year = 2015}}
+\item{year}{Calendar year during which the flu season of interest begins. For
+the 2015/2016 flu season, \code{year = 2015}. Required whether downloading
+data from fluview or providing ILI data}
 
-\item{weekILI}{A data.frame of weighted ILI values (default \code{NULL}).
+\item{weekILI}{A data.frame of weighted ILI values (default \code{NULL}). 
 Must contain columns location, week, and wILI. Must be \code{NULL} when 
-downloading data using \code{fluview = TRUE}. Required if \code{fluview 
-= FALSE.}}
+downloading data using \code{fluview = TRUE}. Required if \code{fluview =
+FALSE.}}
 }
 \value{
 A data.frame with columns location, target, and bin_start_incl
