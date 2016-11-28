@@ -13,6 +13,7 @@ read_entry = function(file) {
 
   names(entry) <- tolower(names(entry))
   
+  
   entry <- entry %>%
             mutate(value = as.numeric(value),
                    bin_start_incl = trimws(replace(bin_start_incl,
@@ -25,7 +26,16 @@ read_entry = function(file) {
                                             format(round(as.numeric(
                                               bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
                                               , 1), nsmall = 1))))
-         
+
+  # Add forecast week to imported data
+  forecast_week <- as.numeric(gsub("EW", "", 
+                                   regmatches(file, regexpr("(?:EW)[0-9]{2}", file))))
+  
+  
+  if (length(forecast_week > 0))
+     entry <- dplyr::mutate(entry, forecast_week  = forecast_week)
+
+
   entry %>% arrange_entry
 }
 
@@ -43,7 +53,7 @@ arrange_entry = function(entry) {
   # Arrange entry by type, location, target, bin
   entry %>%
     dplyr::arrange(type, location, target) %>% 
-    dplyr::select_("location", "target", "type", "unit",
-                   "bin_start_incl", "bin_end_notincl", "value")
+    dplyr::select(location, target, type, unit, bin_start_incl,
+                  bin_end_notincl, value, everything())
 }
 

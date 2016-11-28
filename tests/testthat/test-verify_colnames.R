@@ -12,8 +12,14 @@ test_that("Missing columns report errors.", {
   }
 })
 
+test_that("Missing forecast_week reports warning", {
+  expect_warning(verify_colnames(minimal_entry))
+  expect_warning(verify_colnames(full_entry))
+})
+
 test_that("Extra column report warnings.", {
   tmp_entry <- minimal_entry
   tmp_entry$extra_column = NA
   expect_warning(verify_colnames(tmp_entry))
 })
+

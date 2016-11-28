@@ -8,7 +8,7 @@ score_entry(entry, truth)
 }
 \arguments{
 \item{entry}{An entry data.frame with columns location, target,
-bin_start_incl, and value}
+bin_start_incl, value, and forecast week}
 
 \item{truth}{A data.frame containing all true values with columns 
 location, target, forecast_wk, and bin_start_incl. If multiple bins are 
@@ -20,5 +20,12 @@ A data.frame of scores for each target
 }
 \description{
 Scores an entry
+}
+\examples{
+scores < - score(full_entry_week, truth_1516)
+
+}
+\seealso{
+\code{\link{expand_truth}}
 }
 
