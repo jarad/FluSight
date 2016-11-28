@@ -9,8 +9,9 @@
 #' @seealso \code{\link{expand_truth}}
 #' @import dplyr
 #' @return A data.frame of scores for each target
+#' @export
 #' @examples 
-#' scores < - score(full_entry_week, truth_1516)
+#' scores < - score_entry(full_entry_week, truth_1516)
 #' 
 score_entry <- function(entry, truth) {
 

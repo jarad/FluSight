@@ -2,7 +2,7 @@
 % Please edit documentation in R/generate_point_forecasts.R
 \name{generate_point_forecast}
 \alias{generate_point_forecast}
-\title{Generate point forecasts from probabilistic forecasts}
+\title{Generate a point forecast from probabilistic forecast}
 \usage{
 generate_point_forecast(d, method = c("Median", "Expected Value", "Mode"))
 }

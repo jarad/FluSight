@@ -22,7 +22,7 @@ A data.frame of scores for each target
 Scores an entry
 }
 \examples{
-scores < - score(full_entry_week, truth_1516)
+scores < - score_entry(full_entry_week, truth_1516)
 
 }
 \seealso{
