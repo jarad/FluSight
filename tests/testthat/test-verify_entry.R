@@ -14,10 +14,10 @@ test_that("Valid entry passes", {
 	expect_true(verify_entry(  minimal_entry))
 })
 
-test_that("Entry without forecast week generates warnings", {
-  expect_warning(verify_entry_file(valid_file))
-  expect_warning(verify_entry(valid_entry))
-})
+# test_that("Entry without forecast week generates warnings", {
+#   expect_warning(verify_entry_file(valid_file))
+#   expect_warning(verify_entry(valid_entry))
+# })
 
 
 test_that("Return error when required column name doesn't exist", {

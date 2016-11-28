@@ -19,8 +19,8 @@ verify_colnames <- function(entry) {
 
   if (length(missing_names) > 0) {
     if (length(missing_names) == 1 && missing_names == "forecast_week") {
-      warning("Missing forecast_week - verification will proceed but 
-              forecast cannot be scored")
+      # warning("Missing forecast_week - verification will proceed but
+      #         forecast cannot be scored")
     } else {
       stop("Missing these columns: ", paste(missing_names))
     }
