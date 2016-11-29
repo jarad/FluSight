@@ -112,7 +112,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
           week >= start_wk | week <= end_wk + 4)
     }
     # Join national and HHs regional flu data
-    weekILI <- rbind(usflu, regionflu)
+    weekILI <- rbind(usflu, regionflu) 
   }
 
   # # Add 52 to weeks in new year to keep weeks in order
@@ -134,7 +134,13 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   }
   
   truth <- bind_rows(truth,
-                 create_week(weekILI, start_wk, end_wk))
+                 create_week(weekILI, start_wk, end_wk))%>%
+    # Ensure all bin_start_incl values have one decimal place to match for scoring
+    mutate(bin_start_incl = trimws(replace(bin_start_incl,
+                                           !is.na(bin_start_incl) & bin_start_incl != "none",
+                                           format(round(as.numeric(
+                                             bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                             , 1), nsmall = 1))))
 
   return(truth)
 }

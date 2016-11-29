@@ -24,7 +24,12 @@ expand_truth <- function(truth, week_expand=1, percent_expand=5) {
     rowwise %>%
     expand_percent(., expand = percent_expand)
 
-  dplyr::bind_rows(week_targets, percent_targets) 
+  dplyr::bind_rows(week_targets, percent_targets) %>%
+    mutate(bin_start_incl = trimws(replace(bin_start_incl,
+                                  !is.na(bin_start_incl) & bin_start_incl != "none",
+                                  format(round(as.numeric(
+                                  bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                  , 1), nsmall = 1))))
   
 }
 
@@ -47,7 +52,8 @@ expand_week <- function(truth, expand) {
   # Remove regions with no onset
   no_onset <- filter(truth, bin_start_incl == "none")
 
-  truth <- filter(truth, bin_start_incl != "none") %>%
+  truth <- filter(truth, bin_start_incl != "none" & 
+                    !(is.na(bin_start_incl))) %>%
             mutate(bin_start_incl = as.numeric(bin_start_incl))
   
   # Expand known truth  
@@ -94,7 +100,8 @@ expand_week <- function(truth, expand) {
 #' @keywords internal
 expand_percent <- function(truth, expand) {
 
-  truth <- mutate(truth, bin_start_incl = as.numeric(bin_start_incl))
+  truth <- mutate(truth, bin_start_incl = as.numeric(bin_start_incl)) %>%
+            filter(!is.na(bin_start_incl))
   
   expand_percent <- data.frame()
  

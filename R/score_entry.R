@@ -47,7 +47,8 @@ score_entry <- function(entry, truth) {
               group_by(location, target, forecast_week) %>%
               mutate(score = log(sum(value))) %>%
               select(location, target, score, forecast_week) %>%
-              unique()
+              unique() %>%
+              ungroup()
   
   # If score < -10 or forecast is missing, set to -10
   scores$score[scores$score < -10 | is.na(scores$score)] <- -10
