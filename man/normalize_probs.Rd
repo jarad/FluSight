@@ -4,23 +4,29 @@
 \alias{normalize_probs}
 \title{Normalize probabilistic predictions}
 \usage{
-normalize_probs(entry)
+normalize_probs(entry, ignore_invalid = FALSE)
 }
 \arguments{
-\item{entry}{An entry data.frame with columns location, target, type, unit, 
+\item{entry}{A verified entry data.frame with columns location, target, type, unit, 
 bin_start_incl, bin_end_incl, and value.}
+
+\item{ignore_invalid}{logical; if \code{FALSE} all location/target combinations
+have probabilities normalized: if \code{TRUE} location/target
+combinations with probabilities summing to < 0.9 or > 1.1 are not
+normalized. Should be \code{TRUE} and run in combination with 
+\code{\link{remove_invalid}} if run on an entry prior to scoring.}
 }
 \value{
 An entry data.frame with normalized probabilities
 }
 \description{
-Checks an entry for validity and, if valid, normalizes all probabilistic
-predictions so that the cumulative probability for a target sums to 1.
+Normalizes all probabilistic predictions so that the cumulative probability 
+for a target sums to 1.
 }
 \examples{
 norm_entry <- normalize_probs(full_entry)
 }
 \seealso{
-\code{\link{verify_entry}}
+\code{\link{verify_entry}} \code{\link{remove_invalid}}
 }
 
