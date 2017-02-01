@@ -7,7 +7,7 @@
 score_entry(entry, truth)
 }
 \arguments{
-\item{entry}{An entry data.frame with columns location, target,
+\item{entry}{A valid entry data.frame with columns location, target,
 bin_start_incl, value, and forecast week}
 
 \item{truth}{A data.frame containing all true values with columns 
@@ -19,13 +19,15 @@ here.}
 A data.frame of scores for each target
 }
 \description{
-Scores an entry
+Scores an entry based on the observed truth provided. \code{\link{verify_entry}}
+should be run prior to scoring, along with \code{\link{remove_invalid}} if 
+invalid probabilities are detected.
 }
 \examples{
 scores < - score_entry(full_entry_week, truth_1516)
 
 }
 \seealso{
-\code{\link{expand_truth}}
+\code{\link{expand_truth}} \code{\link{verify_entry}} \code{\link{remove_invalid}}
 }
 

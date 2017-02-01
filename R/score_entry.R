@@ -1,12 +1,16 @@
 #' Scores an entry
+#' 
+#' Scores an entry based on the observed truth provided. \code{\link{verify_entry}}
+#' should be run prior to scoring, along with \code{\link{remove_invalid}} if 
+#' invalid probabilities are detected.
 #'
-#' @param entry An entry data.frame with columns location, target,
+#' @param entry A valid entry data.frame with columns location, target,
 #' bin_start_incl, value, and forecast week
 #' @param truth A data.frame containing all true values with columns 
 #' location, target, forecast_wk, and bin_start_incl. If multiple bins are 
 #' considered correct for a given target, all correct bins must be included
 #' here.
-#' @seealso \code{\link{expand_truth}}
+#' @seealso \code{\link{expand_truth}} \code{\link{verify_entry}} \code{\link{remove_invalid}}
 #' @import dplyr
 #' @return A data.frame of scores for each target
 #' @export
@@ -23,7 +27,7 @@ score_entry <- function(entry, truth) {
   if (!("forecast_week" %in% names(entry)))
     stop("Forecast week needed in entry - 
          use read_entry() with your submission CSV")
-  
+ 
   seasonal <- entry %>%
     filter(type == "Bin", target %in% c("Season onset", "Season peak week",
                                         "Season peak percentage")) %>%
@@ -48,10 +52,10 @@ score_entry <- function(entry, truth) {
               mutate(score = log(sum(value))) %>%
               select(location, target, score, forecast_week) %>%
               unique() %>%
-              ungroup()
-  
-  # If score < -10 or forecast is missing, set to -10
-  scores$score[scores$score < -10 | is.na(scores$score)] <- -10
-  
+              ungroup() %>%
+      # If score < -10 or forecast is missing, set to -10
+              mutate(score = ifelse(score < -10 | is.na(score), -10, score)) 
+    
+
   return(scores)
 }

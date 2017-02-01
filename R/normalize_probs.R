@@ -24,7 +24,7 @@ normalize_probs <- function(entry) {
                 filter(type == "Bin") %>%
                 group_by(location, target) %>%
                 summarize(total = sum(value)) %>%
-                filter(abs(total[1] - 1) > 1e-8)
+                filter(abs(total[1] - 1) > 1e-8 & (total < 1.1 | total > 0.9))
 
   # Loop through groups identified and normalize probabilities
   for(i in 1:nrow(to_normal)) {

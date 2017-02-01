@@ -44,14 +44,14 @@ test_that("expand_week deals with New Year transition", {
     filter(target %in% c("Season onset", "Season peak week"))
   rand_location <- sample(unique(tmp_truth$location), 1)
   tmp_truth$bin_start_incl[tmp_truth$location == rand_location &
-                             tmp_truth$target == "Season onset"] <- "52"
+                             tmp_truth$target == "Season onset"] <- "52.0"
   
   # Set expanded truth to reflect week 52 onset
   tmp_valid <- filter(valid_exp_truth, target %in%
                         c("Season onset", "Season peak week"))
   tmp_valid$bin_start_incl[tmp_valid$location == rand_location &
                              tmp_valid$target == "Season onset"] <- 
-    c("51", "52", "1")
+    c("51.0", "52.0", "1.0")
 
   tmp_week <- expand_week(tmp_truth, 1)
   
@@ -64,14 +64,14 @@ test_that("expand_week deals with New Year transition", {
     filter(target %in% c("Season onset", "Season peak week"))
   rand_location <- sample(unique(tmp_truth$location), 1)
   tmp_truth$bin_start_incl[tmp_truth$location == rand_location &
-                             tmp_truth$target == "Season onset"] <- "1"
+                             tmp_truth$target == "Season onset"] <- "1.0"
   
   # Set expanded truth to reflect week 52 onset
   tmp_valid <- filter(valid_exp_truth, target %in%
                         c("Season onset", "Season peak week"))
   tmp_valid$bin_start_incl[tmp_valid$location == rand_location &
                              tmp_valid$target == "Season onset"] <- 
-    c("52", "1", "2")
+    c("52.0", "1.0", "2.0")
   
   tmp_week <- expand_week(tmp_truth, 1)
   
@@ -84,14 +84,14 @@ test_that("expand_week deals with New Year transition", {
     filter(target %in% c("Season onset", "Season peak week"))
   rand_location <- sample(unique(tmp_truth$location), 1)
   tmp_truth$bin_start_incl[tmp_truth$location == rand_location &
-                             tmp_truth$target == "Season peak week"] <- "52"
+                             tmp_truth$target == "Season peak week"] <- "52.0"
   
   # Set expanded truth to reflect week 52 peak
   tmp_valid <- filter(valid_exp_truth, target %in%
                         c("Season onset", "Season peak week"))
   tmp_valid$bin_start_incl[tmp_valid$location == rand_location &
                              tmp_valid$target == "Season peak week"] <- 
-    c("51", "52", "1")
+    c("51.0", "52.0", "1.0")
   
   tmp_week <- expand_week(tmp_truth, 1)
   
@@ -104,14 +104,14 @@ test_that("expand_week deals with New Year transition", {
     filter(target %in% c("Season onset", "Season peak week"))
   rand_location <- sample(unique(tmp_truth$location), 1)
   tmp_truth$bin_start_incl[tmp_truth$location == rand_location &
-                             tmp_truth$target == "Season peak week"] <- "1"
+                             tmp_truth$target == "Season peak week"] <- "1.0"
   
   # Set expanded truth to reflect week 1 peak
   tmp_valid <- filter(valid_exp_truth, target %in%
                         c("Season onset", "Season peak week"))
   tmp_valid$bin_start_incl[tmp_valid$location == rand_location &
                              tmp_valid$target == "Season peak week"] <- 
-    c("52", "1", "2")
+    c("52.0", "1.0", "2.0")
   
   tmp_week <- expand_week(tmp_truth, 1)
   
@@ -155,14 +155,14 @@ test_that("expand_percent doesn't return negative results", {
                              tmp_truth$target == "Season peak percentage"] <- 
                              "0.3"
 
-  # Set expanded truth to reflect week 1 peak
+  # Set expanded truth to reflect reduced peak percentage
   tmp_valid <- filter(valid_exp_truth, target %in%
                         c("Season peak percentage", "1 wk ahead",
                           "2 wk ahead", "3 wk ahead", 
                           "4 wk ahead"))
   tmp_valid$bin_start_incl[tmp_valid$location == rand_location &
                              tmp_valid$target == "Season peak percentage"] <- 
-                             c("-0.2", "-0.1", "0", "0.1", "0.2", 
+                             c("-0.2", "-0.1", "0.0", "0.1", "0.2", 
                                "0.3", "0.4", "0.5", "0.6", "0.7", "0.8")
   tmp_valid <- filter(tmp_valid, as.numeric(bin_start_incl) >= 0)
 

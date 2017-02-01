@@ -51,7 +51,7 @@ create_week <- function(weekILI, start_week, end_week) {
   week_target$forecast_week[week_target$forecast_week > 52] <-
     week_target$forecast_week[week_target$forecast_week > 52] - 52
   
-  week_target$bin_start_incl <- as.character(week_target$bin_start_incl)
+  week_target$bin_start_incl <- format(round(week_target$bin_start_incl, 1), trim = T, nsmall = 1)
   
   return(week_target)
 } 

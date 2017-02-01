@@ -9,6 +9,7 @@
 #' or one of HHS Region 1-10
 #' @param year Calendar year during which the flu season of interest begins. 
 #' For the 2015/2016 flu season, \code{year = 2015}
+#' @import dplyr
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' @examples 
@@ -32,12 +33,13 @@ create_seasonal <- function(weekILI, region, year) {
 #' or one of HHS Region 1-10
 #' @param year Calendar year during which the flu season of interest begins. 
 #' For the 2015/2016 flu season, \code{year = 2015}
+#' @import dplyr
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' @keywords internal
 #'   
 create_onset <- function(weekILI, region, year) {
- 
+  
   # Add 52 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + 52)
@@ -88,7 +90,13 @@ create_onset <- function(weekILI, region, year) {
                             location = region,
                             forecast_week = as.integer(NA),
                             bin_start_incl = as.character(onset),
-                            stringsAsFactors = FALSE)
+                            stringsAsFactors = FALSE) %>%
+    mutate(bin_start_incl = trimws(replace(bin_start_incl,
+                                           !is.na(bin_start_incl) & bin_start_incl != "none",
+                                           format(round(as.numeric(
+                                             bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                             , 1), nsmall = 1, trim = T))))
+  
   
   return(onset_truth)
 }  
@@ -102,6 +110,7 @@ create_onset <- function(weekILI, region, year) {
 #' location, week, and wILI. 
 #' @param location A character string specifying the target location - either US National 
 #' or one of HHS Region 1-10
+#' @import dplyr
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
 #' @keywords internal
@@ -147,7 +156,7 @@ create_peak <- function(weekILI, region) {
     }
   }
   
-  peak_truth$bin_start_incl <- as.character(peak_truth$bin_start_incl)
-  
+  peak_truth$bin_start_incl <- format(round(peak_truth$bin_start_incl, 1), trim = T, nsmall = 1)
+
   return(peak_truth)
 }  

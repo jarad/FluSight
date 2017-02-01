@@ -81,8 +81,12 @@ expand_week <- function(truth, expand) {
   
   # Add back in any regions with no onset
   expand_week <- rbind(expand_week, no_onset) %>%
-                  arrange(location, target) %>%
-                  mutate(bin_start_incl = as.character(bin_start_incl))
+    arrange(location, target) %>%
+    mutate(bin_start_incl = replace(bin_start_incl,
+                                    !is.na(bin_start_incl) & bin_start_incl != "none",
+                                    format(round(as.numeric(
+                                      bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                      , 1), nsmall = 1, trim = T)))
 
   return(expand_week)
 }
@@ -117,7 +121,8 @@ expand_percent <- function(truth, expand) {
   # Delete any edge cases
   expand_percent <- filter(expand_percent, 
                         bin_start_incl >= 0 & bin_start_incl <= 13) %>%
-                  mutate(bin_start_incl = as.character(bin_start_incl))
+                  mutate(bin_start_incl = format(round(bin_start_incl, 1), 
+                                                 trim = T, nsmall = 1))
   
   return(expand_percent)
 }

@@ -19,11 +19,19 @@ valid_ILI <- read.csv("inst/extdata/valid_ILI.csv",
 
 truth_1516 <- read.csv("inst/extdata/truth_1516.csv",
                        stringsAsFactors = FALSE) %>%
-                dplyr::mutate(bin_start_incl = as.character(bin_start_incl))
+  dplyr::mutate(bin_start_incl = trimws(replace(bin_start_incl,
+                                                !is.na(bin_start_incl) & bin_start_incl != "none",
+                                                format(round(as.numeric(
+                                                  bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                                  , 1), nsmall = 1))))
 
 valid_exp_truth <- read.csv("inst/extdata/valid_exp_truth.csv",
-                            stringsAsFactors = FALSE)
-valid_exp_truth$bin_start_incl <- as.character(valid_exp_truth$bin_start_incl)
+                            stringsAsFactors = FALSE) %>%
+  dplyr::mutate(bin_start_incl = trimws(replace(bin_start_incl,
+                                                !is.na(bin_start_incl) & bin_start_incl != "none",
+                                                format(round(as.numeric(
+                                                  bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                                  , 1), nsmall = 1))))
 
 
 devtools::use_data(full_entry, overwrite=TRUE)
