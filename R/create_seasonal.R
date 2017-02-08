@@ -116,7 +116,7 @@ create_onset <- function(weekILI, region, year) {
 #' @keywords internal
 #' 
 create_peak <- function(weekILI, region) {
-  
+ 
   # Add 52 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + 52)
@@ -125,6 +125,12 @@ create_peak <- function(weekILI, region) {
                           weekILI$wILI == max(weekILI$wILI[weekILI$location == 
                                                            region])]
   pkper <- max(weekILI$wILI[weekILI$location == region])
+  
+  # Only create peak if at least three weeks of decline following last peak
+  if (tail(weekILI$week, n = 1) - tail(pkwk, n = 1) < 3) {
+    pkwk <- NA
+    pkper <- NA
+  }
   
   # Only create peak if after MMWR week 4 in new year (56 in ordered coding)
   if (tail(weekILI$week, n = 1) < 56) {
