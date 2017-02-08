@@ -36,6 +36,27 @@ test_that("expand_truth works", {
   expect_equivalent(tmp_truth, valid_exp_truth)
 })
 
+test_that("expand_truth handles NA truth", {
+  skip_on_cran()
+  
+  rand_location <- sample(unique(truth_1516$location), 1) 
+  
+  tmp_truth <- truth_1516 %>%
+    mutate(bin_start_incl = ifelse(location == rand_location & 
+                                     target %in% c("Season peak week", "Season peak percentage"),
+                                   NA,
+                                   bin_start_incl))
+  
+  tmp_valid <- valid_exp_truth %>%
+    mutate(bin_start_incl = ifelse(location == rand_location & 
+                                     target %in% c("Season peak week", "Season peak percentage"),
+                                   NA,
+                                   bin_start_incl)) %>%
+    unique()
+
+  expect_equivalent(expand_truth(tmp_truth), tmp_valid)
+})
+
 test_that("expand_week deals with New Year transition", {
   skip_on_cran()
   

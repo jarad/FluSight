@@ -162,7 +162,11 @@ create_peak <- function(weekILI, region) {
     }
   }
   
-  peak_truth$bin_start_incl <- format(round(peak_truth$bin_start_incl, 1), trim = T, nsmall = 1)
+  peak_truth$bin_start_incl <- ifelse(is.na(peak_truth$bin_start_incl),
+                                      peak_truth$bin_start_incl,
+                                      format(round(peak_truth$bin_start_incl, 1), trim = T, nsmall = 1))
+  
+  
 
   return(peak_truth)
 }  

@@ -7,24 +7,33 @@
 #' bins to include around the observed value for week targets.
 #' @param percent_expand A scalar numeric (default 5) indicating the number
 #' of bins to include around the observed value for percent targets.
-#' @import magrittr
+#' @import dplyr
 #' @return A data.frame with expanded truth
 #' @export
 expand_truth <- function(truth, week_expand=1, percent_expand=5) {
-  
+ 
   names(truth) <- tolower(names(truth))
+
+  # Pull out targets that have no observed truth yet
+  na_rows <- truth %>%
+    filter(is.na(bin_start_incl))
+  truth <- truth %>%
+    filter(!(is.na(bin_start_incl)))
   
+  # Weekly targets
   week_targets <- truth %>%
-    dplyr::filter(target %in% c("Season onset", "Season peak week")) %>%
+    filter(target %in% c("Season onset", "Season peak week")) %>%
     rowwise %>%
     expand_week(., expand = week_expand)
 
+  # Percentage targets
   percent_targets <- truth %>%
-    dplyr::filter(!(target %in% c("Season onset", "Season peak week"))) %>%
+    filter(!(target %in% c("Season onset", "Season peak week"))) %>%
     rowwise %>%
     expand_percent(., expand = percent_expand)
 
-  dplyr::bind_rows(week_targets, percent_targets) %>%
+  # Combine weekly targets, percentage targets, and unobserved truth
+  bind_rows(week_targets, percent_targets, na_rows) %>%
     mutate(bin_start_incl = trimws(replace(bin_start_incl,
                                   !is.na(bin_start_incl) & bin_start_incl != "none",
                                   format(round(as.numeric(
@@ -52,8 +61,8 @@ expand_week <- function(truth, expand) {
   # Remove regions with no onset
   no_onset <- filter(truth, bin_start_incl == "none")
 
-  truth <- filter(truth, bin_start_incl != "none" & 
-                    !(is.na(bin_start_incl))) %>%
+  truth <- truth %>%
+            filter(bin_start_incl != "none") %>%
             mutate(bin_start_incl = as.numeric(bin_start_incl))
   
   # Expand known truth  
@@ -104,8 +113,7 @@ expand_week <- function(truth, expand) {
 #' @keywords internal
 expand_percent <- function(truth, expand) {
 
-  truth <- mutate(truth, bin_start_incl = as.numeric(bin_start_incl)) %>%
-            filter(!is.na(bin_start_incl))
+  truth <- mutate(truth, bin_start_incl = as.numeric(bin_start_incl))
   
   expand_percent <- data.frame()
  
