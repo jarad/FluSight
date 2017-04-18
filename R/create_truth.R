@@ -46,9 +46,13 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
   }
   
   # Date first forecasts received - varies depending on forecast year
+  if (year == 2014) {
+    start_wk <- 41    #First week of ILINet data used for forecasts
+    end_wk <- 19      #Last week of ILINet data used for forecasts
+  }
   if (year == 2015) {
-    start_wk <- 42    #First week of ILINet data used for forecasts
-    end_wk <- 18      #Last week of ILINet data used for forecasts
+    start_wk <- 42    
+    end_wk <- 18      
   }
   if (year == 2016) {
     start_wk <- 43

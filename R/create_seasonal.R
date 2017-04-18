@@ -44,7 +44,16 @@ create_onset <- function(weekILI, region, year) {
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + 52)
   
-  # Create baselines  
+  # Create baselines 
+  if (year == 2014){
+    baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
+                                       "HHS Region 3", "HHS Region 4", "HHS Region 5",
+                                       "HHS Region 6", "HHS Region 7", "HHS Region 8",
+                                       "HHS Region 9", "HHS Region 10"),
+                            value = c(2.0, 1.1, 2.3, 2.0, 1.9, 1.7, 3.3, 1.7,
+                                      1.3, 2.7, 1.1))
+  }
+  
   if (year == 2015){
     baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
                                        "HHS Region 3", "HHS Region 4", "HHS Region 5",
