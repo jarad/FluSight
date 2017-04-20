@@ -40,9 +40,12 @@ create_seasonal <- function(weekILI, region, year) {
 #'   
 create_onset <- function(weekILI, region, year) {
   
-  # Add 52 to weeks in new year to keep weeks in order
+  # Save maximum MMWR week in season being analyzed
+  maxMMWR <- max(weekILI$week)
+  
+  # Add 52/53 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
-    as.integer(weekILI$week[weekILI$week < 40] + 52)
+    as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
   
   # Create baselines 
   if (year == 2014){
@@ -50,7 +53,7 @@ create_onset <- function(weekILI, region, year) {
                                        "HHS Region 3", "HHS Region 4", "HHS Region 5",
                                        "HHS Region 6", "HHS Region 7", "HHS Region 8",
                                        "HHS Region 9", "HHS Region 10"),
-                            value = c(2.0, 1.1, 2.3, 2.0, 1.9, 1.7, 3.3, 1.7,
+                            value = c(2.0, 1.2, 2.3, 2.0, 1.9, 1.7, 3.3, 1.7,
                                       1.3, 2.7, 1.1))
   }
   
@@ -91,8 +94,8 @@ create_onset <- function(weekILI, region, year) {
   }
     
   # If onset week > 52, reset to MMWR week
-  if (is.numeric(onset) && onset > 52) {
-    onset <- onset - 52
+  if (is.numeric(onset) && onset > maxMMWR) {
+    onset <- onset - maxMMWR
   }
     
   onset_truth <- data.frame(target = "Season onset",
@@ -126,9 +129,12 @@ create_onset <- function(weekILI, region, year) {
 #' 
 create_peak <- function(weekILI, region) {
  
-  # Add 52 to weeks in new year to keep weeks in order
+  # Save maximum MMWR week in season being analyzed
+  maxMMWR <- max(weekILI$week)
+  
+  # Add 52/53 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
-    as.integer(weekILI$week[weekILI$week < 40] + 52)
+    as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
   
   pkwk  <- weekILI$week[weekILI$location == region &
                           weekILI$wILI == max(weekILI$wILI[weekILI$location == 
@@ -141,16 +147,16 @@ create_peak <- function(weekILI, region) {
     pkper <- NA
   }
   
-  # Only create peak if after MMWR week 4 in new year (56 in ordered coding)
-  if (tail(weekILI$week, n = 1) < 56) {
+  # Only create peak if after MMWR week 4 in new year (56/57 in ordered coding)
+  if (tail(weekILI$week, n = 1) < (maxMMWR + 4)) {
     pkwk  <- NA
     pkper <- NA
   }
   
-  # If peak week > 52, reset to MMWR week
+  # If peak week > 52/53, reset to MMWR week
   for (i in 1:length(pkwk)) {
-    if (!(is.na(pkwk[i])) && pkwk[i] > 52) {
-      pkwk[i] <- pkwk[i] - 52
+    if (!(is.na(pkwk[i])) && pkwk[i] > maxMMWR) {
+      pkwk[i] <- pkwk[i] - maxMMWR
     }
   }
 

@@ -13,11 +13,14 @@
 #' 
 create_week <- function(weekILI, start_week, end_week) {
 
-  # Add 52 to weeks in new year to keep weeks in order
-  weekILI$week[weekILI$week < 40] <-
-    as.integer(weekILI$week[weekILI$week < 40] + 52)
+  # Save maximum MMWR week in season being analyzed
+  maxMMWR <- max(weekILI$week)
   
-  end_week <- end_week + 52
+  # Add 52/53 to weeks in new year to keep weeks in order
+  weekILI$week[weekILI$week < 40] <-
+    as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
+  
+  end_week <- end_week + maxMMWR
   
   these_targets <- c("1 wk ahead", "2 wk ahead", "3 wk ahead", "4 wk ahead")
   
@@ -47,9 +50,9 @@ create_week <- function(weekILI, start_week, end_week) {
     }
   }
   
-  # Subtract 52 from all weeks in new year to realign with MMWR week
-  week_target$forecast_week[week_target$forecast_week > 52] <-
-    week_target$forecast_week[week_target$forecast_week > 52] - 52
+  # Subtract 52/53 from all weeks in new year to realign with MMWR week
+  week_target$forecast_week[week_target$forecast_week > maxMMWR] <-
+    week_target$forecast_week[week_target$forecast_week > maxMMWR] - maxMMWR
   
   week_target$bin_start_incl <- format(round(week_target$bin_start_incl, 1), trim = T, nsmall = 1)
   
