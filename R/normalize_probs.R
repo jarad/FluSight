@@ -24,7 +24,7 @@ normalize_probs <- function(entry, ignore_invalid = FALSE) {
   
   if (ignore_invalid == FALSE) {
     # Verify entry first to find implausible values
-    verify_entry(entry)
+    # verify_entry(entry)
     
     # Identify targets where cumulative probability is not = 1
     to_normal <- entry %>%
