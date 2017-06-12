@@ -18,11 +18,10 @@ remove_invalid <- function(entry) {
     left_join(entry %>%
                 filter(type == "Bin") %>%
                 group_by(location, target, type) %>%
-                summarize(total = sum(value)) %>%
+                summarize(total = sum(value, na.rm = T)) %>%
                 filter(total > 1.1 | total < 0.9),
               by = c("location", "target", "type")) %>%
     mutate(value = ifelse(is.na(total), value, NA)) %>%
     select(-total)
 
 }
-

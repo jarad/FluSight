@@ -49,3 +49,19 @@ test_that("Probability zero scored as -10", {
   expect_equal(exp_score$score[exp_score$location == rand_location &
                                  exp_score$target == rand_target], -10)
 })
+
+test_that("Probability NA scored as -10", {
+  rand_location <- sample(unique(full_entry_score$location), 1)
+  rand_target <- sample(unique(full_entry_score$target), 1)
+  
+  tmp <- full_entry_score
+  tmp$value[tmp$location == rand_location & tmp$target == rand_target] <- NA
+  
+  tmp_score <- score_entry(tmp, truth_1516)
+  exp_score <- score_entry(tmp, valid_exp_truth)
+  
+  expect_equal(tmp_score$score[tmp_score$location == rand_location &
+                                 tmp_score$target == rand_target], -10)
+  expect_equal(exp_score$score[exp_score$location == rand_location &
+                                 exp_score$target == rand_target], -10)
+})

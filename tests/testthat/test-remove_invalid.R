@@ -28,7 +28,7 @@ test_that("Invalid high probs set to zero.", {
   
 })
 
-test_that("Invalid high probs set to zero.", {
+test_that("Invalid low probs set to zero.", {
   rand_target <- sample(unique(minimal_entry$target), 1)
   rand_location <- sample(unique(full_entry$location), 1)
   
