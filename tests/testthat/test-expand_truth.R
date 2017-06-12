@@ -192,3 +192,29 @@ test_that("expand_percent doesn't return negative results", {
   expect_equivalent(tmp_percent, tmp_valid)
 
 })
+
+
+test_that("expand_truth handles consecutive peaks", {
+  skip_on_cran()
+  
+  rand_location <- sample(unique(truth_1516$location), 1)
+  peak_week <- truth_1516 %>%
+    filter(location == rand_location, target == "Season peak week") %>%
+    select(bin_start_incl) %>%
+    as.double()
+    
+  
+  tmp_truth <- truth_1516 %>%
+    bind_rows(tibble(target = "Season peak week",
+                     location = rand_location,
+                     forecast_week = NA,
+                     bin_start_incl = trimws(format(peak_week + 1, nsmall = 1))))
+  
+  tmp_valid <- valid_exp_truth %>%
+    bind_rows(tibble(target = "Season peak week",
+                     location = rand_location,
+                     forecast_week = NA,
+                     bin_start_incl = trimws(format(peak_week + 2, nsmall = 1)))) 
+  
+  expect_equivalent(expand_truth(tmp_truth), tmp_valid)
+})
