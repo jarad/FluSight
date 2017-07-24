@@ -17,6 +17,11 @@
 #' season_targets <- create_seasonal(valid_ILI, "HHS Region 4")
 #'   
 create_seasonal <- function(weekILI, region, year) {
+  
+  # Round weekILI values to one decimal place for calculating onset and peak week
+  weekILI$wILI <- round(weekILI$wILI, 1)
+  
+  # Create truth for seasonal targets
   season_truth <- rbind(create_onset(weekILI, region, year),
                         create_peak(weekILI, region))
   
