@@ -4,15 +4,25 @@
 #' are missing and a warning if there are any extra names.
 #'
 #' @param entry An entry data.frame
+#' @param challenge one of "ilinet", "hosp", or "state_ili", indicating which
+#'   forecasting challenge the entry is for
 #' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @keywords internal
-verify_colnames <- function(entry) {
+verify_colnames <- function(entry, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "hosp", "state_ili"))) {
+    stop("Challenge must be one of ilinet, hosp, or state_ili")
+  }
   
   names(entry) <- tolower(names(entry))
   
   entry_names <- colnames(entry)
-  valid_names <- colnames(full_entry_score)
+  if (challenge %in% c("ilinet", "state_ili")) {
+    valid_names <- colnames(full_entry_score)
+  } else {
+    valid_names <- colnames(full_entry_hosp_score)
+  }
 
   missing_names <- setdiff(valid_names, entry_names)
   extra_names   <- setdiff(entry_names, valid_names)
