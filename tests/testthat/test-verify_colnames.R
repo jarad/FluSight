@@ -23,3 +23,7 @@ test_that("Extra column report warnings.", {
   expect_warning(verify_colnames(tmp_entry))
 })
 
+test_that("Correct hospitalization entries are successful.",{
+  expect_true(verify_colnames(full_entry_hosp, challenge = "hosp"))
+})
+
