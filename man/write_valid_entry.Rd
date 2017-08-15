@@ -19,4 +19,3 @@ see the structure of the file. The file will be called
 \seealso{
 \code{\link{write_entry}}
 }
-

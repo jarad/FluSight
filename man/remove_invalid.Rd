@@ -24,4 +24,3 @@ valid_entry <- remove_invald(full_entry)
 \seealso{
 \code{\link{verify_entry}} \code{\link{score_entry}}
 }
-

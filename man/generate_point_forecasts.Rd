@@ -24,4 +24,3 @@ Generate point forecasts for all locations and targets
 \seealso{
 \code{\link{generate_point_forecast}}, \code{\link{verify_entry}}
 }
-

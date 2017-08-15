@@ -36,4 +36,3 @@ truth <- create_truth(fluview = FALSE)
 }
 
 }
-

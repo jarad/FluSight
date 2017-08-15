@@ -24,4 +24,3 @@ Determines observed true values for 1 to 4 week ahead weighted ILINet prediction
 week_targets <- create_week(valid_ILI, 42, 18)
 
 }
-

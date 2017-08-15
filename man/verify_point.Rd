@@ -23,4 +23,3 @@ verify_point(minimal_entry)
 \code{\link{verify_entry}}
 }
 \keyword{internal}
-

@@ -23,4 +23,3 @@ verify_bins(minimal_entry)
 \code{\link{verify_entry}}
 }
 \keyword{internal}
-

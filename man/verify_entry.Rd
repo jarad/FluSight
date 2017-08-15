@@ -22,4 +22,3 @@ verify_entry(full_entry)
 \seealso{
 \code{\link{verify_entry_file}}
 }
-

@@ -4,13 +4,16 @@
 \alias{expand_week}
 \title{Expands truth for weeks}
 \usage{
-expand_week(truth, expand)
+expand_week(truth, expand, week53 = F)
 }
 \arguments{
 \item{truth}{A data.frame with a single row and, at minimum, columns unit
 and value}
 
 \item{expand}{The number of weeks to expand around the observed truth.}
+
+\item{week53}{A logical value (default `FALSE`) indicating whether to include
+MMWR week 53 in the expanded truth}
 }
 \value{
 A data.frame with the same columns as `truth` but additional rows
@@ -22,4 +25,3 @@ depending on the year) and week 1 is sequentially, immediately after week 52
 (or 53).
 }
 \keyword{internal}
-

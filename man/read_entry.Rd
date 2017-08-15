@@ -4,10 +4,13 @@
 \alias{read_entry}
 \title{Read in a csv entry file}
 \usage{
-read_entry(file)
+read_entry(file, challenge = "ilinet")
 }
 \arguments{
-\item{file}{A csv file}
+\item{file}{A csv file path}
+
+\item{challenge}{one of "ilinet", "hosp", or "state_ili", indicating which 
+forecasting challenge the entry is for. Default is "ilinet"}
 }
 \value{
 An arranged data.frame
@@ -15,4 +18,3 @@ An arranged data.frame
 \description{
 This function reads in the csv file and arranges it for consistency.
 }
-

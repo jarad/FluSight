@@ -23,4 +23,3 @@ verify_units(minimal_entry)
 \code{\link{verify_entry}}
 }
 \keyword{internal}
-

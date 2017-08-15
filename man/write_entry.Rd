@@ -25,4 +25,3 @@ Verify an entry and then write it to a csv file
 \seealso{
 \code{\link{write_valid_entry}}, \code{\link{read_entry}}
 }
-

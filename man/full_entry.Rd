@@ -3,7 +3,7 @@
 \docType{data}
 \name{full_entry}
 \alias{full_entry}
-\title{A full valid entry}
+\title{A full valid entry for national ILI forecasting}
 \format{A dta frame with 8019 rows and 7 variables:
 \describe{
   \item{location}{character vector of locations}
@@ -18,7 +18,6 @@
 full_entry
 }
 \description{
-A data.frame containing a valid entry
+A data.frame containing a valid entry for national ILI forecasting
 }
 \keyword{datasets}
-

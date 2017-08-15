@@ -23,4 +23,3 @@ verify_types(minimal_entry)
 \code{\link{verify_entry}}
 }
 \keyword{internal}
-

@@ -3,7 +3,7 @@
 \docType{data}
 \name{truth_1516}
 \alias{truth_1516}
-\title{Observed truth for 2015/2016 influenza season}
+\title{Observed national ILINet truth for 2015/2016 influenza season}
 \format{A dta frame with 1310 rows and 4 variables:
 \describe{
   \item{target}{character vector of targets}
@@ -15,7 +15,7 @@
 truth_1516
 }
 \description{
-A data.frame containing the observed truth for the 2015/2016 influenza season
+A data.frame containing the observed national ILI forecasting truth for the
+2015/2016 influenza season
 }
 \keyword{datasets}
-

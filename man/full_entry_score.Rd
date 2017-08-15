@@ -3,7 +3,7 @@
 \docType{data}
 \name{full_entry_score}
 \alias{full_entry_score}
-\title{A full valid entry containing forecast week for scoring}
+\title{A full valid national ILINet entry containing forecast week for scoring}
 \format{A dta frame with 8019 rows and 8 variables:
 \describe{
   \item{location}{character vector of locations}
@@ -19,7 +19,6 @@
 full_entry_score
 }
 \description{
-A data.frame containing a scorable valid entry
+A data.frame containing a scorable valid entry for national ILI forecasting
 }
 \keyword{datasets}
-

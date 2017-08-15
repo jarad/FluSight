@@ -19,4 +19,3 @@ Get the surveillance week
 \code{\link{write_entry}}, \code{\link{as.Date}}
 }
 \keyword{internal}
-

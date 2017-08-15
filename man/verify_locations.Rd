@@ -18,4 +18,3 @@ locations are missing, a warning if there are any extra locations, and a
 message to suggest forecasting for additional locations.
 }
 \keyword{internal}
-

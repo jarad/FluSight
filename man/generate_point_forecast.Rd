@@ -25,4 +25,3 @@ or mode of the probabilistic forecasts.
 \code{\link{generate_point_forecasts}}
 }
 \keyword{internal}
-

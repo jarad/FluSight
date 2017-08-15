@@ -29,4 +29,3 @@ norm_entry <- normalize_probs(full_entry)
 \seealso{
 \code{\link{verify_entry}} \code{\link{remove_invalid}}
 }
-

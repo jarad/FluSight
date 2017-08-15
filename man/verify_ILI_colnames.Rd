@@ -16,4 +16,3 @@ verify_ILI_colnames(weekILI)
 Verifies columns in user-supplied wILI data
 }
 \keyword{internal}
-

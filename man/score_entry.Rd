@@ -30,4 +30,3 @@ scores < - score_entry(full_entry_week, truth_1516)
 \seealso{
 \code{\link{expand_truth}} \code{\link{verify_entry}} \code{\link{remove_invalid}}
 }
-

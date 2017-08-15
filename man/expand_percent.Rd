@@ -20,4 +20,3 @@ around the observed value.
 Expands truth for percents
 }
 \keyword{internal}
-

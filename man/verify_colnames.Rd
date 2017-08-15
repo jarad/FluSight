@@ -4,10 +4,13 @@
 \alias{verify_colnames}
 \title{Verify the column names of an entry}
 \usage{
-verify_colnames(entry)
+verify_colnames(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{challenge}{one of "ilinet", "hosp", or "state_ili", indicating which
+forecasting challenge the entry is for}
 }
 \value{
 Invisibly returns \code{TRUE} if successful
@@ -17,4 +20,3 @@ Compares column names to a valid entry and provides an error if any required nam
 are missing and a warning if there are any extra names.
 }
 \keyword{internal}
-

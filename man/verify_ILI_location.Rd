@@ -16,4 +16,3 @@ verify_ILI_location(weekILI)
 Verifies regions in user-supplied wILI data
 }
 \keyword{internal}
-

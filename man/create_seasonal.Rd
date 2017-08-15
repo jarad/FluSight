@@ -28,4 +28,3 @@ season_targets <- create_seasonal(valid_ILI, "US National")
 season_targets <- create_seasonal(valid_ILI, "HHS Region 4")
   
 }
-

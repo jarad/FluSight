@@ -14,7 +14,6 @@
 valid_ILI
 }
 \description{
-A data.frame containing a valid submission of ILINet data
+A data.frame containing a valid submission of national ILINet data
 }
 \keyword{datasets}
-

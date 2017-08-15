@@ -4,7 +4,7 @@
 \alias{expand_truth}
 \title{Creates a range of bins to score}
 \usage{
-expand_truth(truth, week_expand = 1, percent_expand = 5)
+expand_truth(truth, week_expand = 1, percent_expand = 5, week53 = F)
 }
 \arguments{
 \item{truth}{A data.frame including columns unit and bin_start_incl}
@@ -14,6 +14,9 @@ bins to include around the observed value for week targets.}
 
 \item{percent_expand}{A scalar numeric (default 5) indicating the number
 of bins to include around the observed value for percent targets.}
+
+\item{week53}{A logical value (default `FALSE`) indicating whether to include
+MMWR week 53 in the expanded truth}
 }
 \value{
 A data.frame with expanded truth
@@ -21,4 +24,3 @@ A data.frame with expanded truth
 \description{
 Expands the observed truth across a range of bins
 }
-

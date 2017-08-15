@@ -18,4 +18,3 @@ A character string for the filename
 Construct the file name
 }
 \keyword{internal}
-

@@ -24,4 +24,3 @@ verify_entry_file(file) # TRUE
 \seealso{
 \code{\link{verify_entry}}
 }
-

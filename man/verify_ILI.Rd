@@ -19,4 +19,3 @@ Verifies user-supplied wILI data to be used to generate forecasting targets
 verify_ILI(valid_ILI)
 
 }
-
