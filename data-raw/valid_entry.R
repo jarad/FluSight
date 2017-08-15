@@ -1,12 +1,6 @@
 library(magrittr)
 
-
-
 full_entry_score <- FluSight::read_entry("inst/extdata/EW44_ValidTest_2016-11-07.csv") # no idea why this isn't working
-
-
-# full_entry <- utils::read.csv("../inst/extdata/valid-test.csv",
-#                               stringsAsFactors = FALSE) %>%
 
 full_entry <- full_entry_score %>%
   dplyr::select(-forecast_week)
@@ -33,6 +27,25 @@ valid_exp_truth <- read.csv("inst/extdata/valid_exp_truth.csv",
                                                   bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
                                                   , 1), nsmall = 1))))
 
+full_entry_hosp_score <- read.csv("inst/extdata/EW44_ValidHospTest_2017-11-07.csv",
+                                  stringsAsFactors = FALSE) %>%
+  setNames(tolower(names(.))) %>%
+  dplyr::mutate(value = as.numeric(value),
+                bin_start_incl = trimws(replace(bin_start_incl,
+                                         !is.na(bin_start_incl) & bin_start_incl != "none",
+                                         format(round(as.numeric(
+                                           bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
+                                           , 1), nsmall = 1))),
+                bin_end_notincl = trimws(replace(bin_end_notincl,
+                                          !is.na(bin_end_notincl) & bin_end_notincl != "none",
+                                          format(round(as.numeric(
+                                            bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
+                                            , 1), nsmall = 1))),
+         forecast_week = 44)
+
+full_entry_hosp <- full_entry_hosp_score %>%
+  dplyr::select(-forecast_week)
+
 
 devtools::use_data(full_entry, overwrite=TRUE)
 devtools::use_data(minimal_entry, overwrite=TRUE)
@@ -40,3 +53,5 @@ devtools::use_data(full_entry_score, overwrite = TRUE)
 devtools::use_data(valid_ILI, overwrite = TRUE)
 devtools::use_data(truth_1516, overwrite = TRUE)
 devtools::use_data(valid_exp_truth, overwrite = TRUE)
+devtools::use_data(full_entry_hosp_score, overwrite = TRUE)
+devtools::use_data(full_entry_hosp, overwrite = TRUE)
