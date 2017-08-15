@@ -4,10 +4,13 @@
 \alias{verify_entry_file}
 \title{Verify an entry file}
 \usage{
-verify_entry_file(file)
+verify_entry_file(file, challenge = "ilinet")
 }
 \arguments{
 \item{file}{A csv entry file}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns \code{TRUE} if successful

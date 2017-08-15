@@ -3,6 +3,8 @@ context("verify_bins")
 test_that("Correct entries are successful.",{
   expect_true(verify_bins(minimal_entry))
   expect_true(verify_bins(full_entry   ))
+  expect_true(verify_bins(full_entry_hosp, challenge = "hospital"))
+  expect_true(verify_bins(full_entry_state, challenge = "state_ili"))
 })
 
 test_that("Missing bins report errors.", {

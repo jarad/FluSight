@@ -4,10 +4,13 @@
 \alias{verify_types}
 \title{Verify types are correct}
 \usage{
-verify_types(entry)
+verify_types(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns TRUE if successful

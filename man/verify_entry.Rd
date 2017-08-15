@@ -4,10 +4,13 @@
 \alias{verify_entry}
 \title{Verify entry stored as an R data.frame}
 \usage{
-verify_entry(entry)
+verify_entry(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{A data.frame}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns \code{TRUE} if successful

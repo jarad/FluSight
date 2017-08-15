@@ -4,10 +4,13 @@
 \alias{verify_bins}
 \title{Verify bins are correct}
 \usage{
-verify_bins(entry)
+verify_bins(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns \code{TRUE} if successful

@@ -3,6 +3,8 @@ context("verify_units")
 test_that("Correct entries are successful.",{
   expect_true(verify_units(minimal_entry))
   expect_true(verify_units(full_entry   ))
+  expect_true(verify_units(full_entry_hosp, challenge = "hospital"))
+  expect_true(verify_units(full_entry_state, challenge = "state_ili"))
 })
 
 test_that("Missing units report errors.", {

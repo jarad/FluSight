@@ -3,6 +3,12 @@ context("verify_types")
 test_that("Correct entries are successful.",{
   expect_true(verify_types(minimal_entry))
   expect_true(verify_types(full_entry   ))
+  expect_true(verify_types(full_entry_hosp, challenge = "hospital"))
+  expect_true(verify_types(full_entry_state, challenge = "state_ili"))
+})
+
+test_that("Misspecified challenge throws errors", {
+  expect_error(verify_types(full_entry, challenge = "hosp"))
 })
 
 test_that("Missing types report errors.", {

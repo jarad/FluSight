@@ -125,3 +125,38 @@
 #'   \item{value}{numeric vector with probabilities or point forecasts}
 #' }
 "full_entry_hosp"
+
+#' A full valid state ILI forecast entry containing forecast week for 
+#' scoring
+#'
+#' A data.frame containing a scorable valid entry for state ILI
+#' forecasting
+#'
+#' @format A dta frame with 24290 rows and 8 variables:
+#' \describe{
+#'   \item{location}{character vector of location}
+#'   \item{target}{character vector of targets}
+#'   \item{type}{character vector with elements "Bin" or "Point"}
+#'   \item{unit}{character vector with elements "percent" or "week"}
+#'   \item{bin_start_incl}{character vector with forecast bin start value (inclusive)}
+#'   \item{bin_end_notincl}{character vector the forecast bin end value}
+#'   \item{value}{numeric vector with probabilities or point forecasts}
+#'   \item{forecast_week}{numeric vector of MMWR week forecasted value is based on}
+#' }
+"full_entry_state_score"
+
+#' A full valid entry for state ILI forecasting
+#'
+#' A data.frame containing a valid entry for state ILI forecasting
+#'
+#' @format A dta frame with 24290 rows and 7 variables:
+#' \describe{
+#'   \item{location}{character vector of location}
+#'   \item{target}{character vector of targets}
+#'   \item{type}{character vector with elements "Bin" or "Point"}
+#'   \item{unit}{character vector with elements "percent" or "week"}
+#'   \item{bin_start_incl}{character vector with forecast bin start value (inclusive)}
+#'   \item{bin_end_notincl}{character vector the forecast bin end value}
+#'   \item{value}{numeric vector with probabilities or point forecasts}
+#' }
+"full_entry_state"

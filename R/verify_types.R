@@ -4,17 +4,30 @@
 #' for all types
 #'
 #' @param entry An entry data.frame
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for
 #' @return Invisibly returns TRUE if successful
 #' @export
 #' @keywords internal
 #' @seealso \code{\link{verify_entry}}
 #' @examples
 #' verify_types(minimal_entry)
-verify_types <- function(entry) {
+verify_types <- function(entry, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
+  }
   
   names(entry) <- tolower(names(entry))
   
-  valid_types <- unique(minimal_entry$type)
+  # ILINet challenge
+  if (challenge == "ilinet") {
+    valid_types <- unique(minimal_entry$type)
+  } else if (challenge == "hospital") {
+    valid_types <- unique(full_entry_hosp$type)
+  } else if (challenge == "state_ili") {
+    valid_types <- unique(full_entry_state$type)
+  } 
   entry_types <- unique(entry$type)
   
   missing_types <- setdiff(valid_types, entry_types)

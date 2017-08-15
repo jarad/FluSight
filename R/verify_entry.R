@@ -5,15 +5,17 @@
 #' 0.9 and 1.1.
 #'
 #' @param file A csv entry file
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for
 #' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @seealso \code{\link{verify_entry}}
 #' @examples
 #' file <- system.file("extdata", "valid-test.csv", package="FluSight")
 #' verify_entry_file(file) # TRUE
-verify_entry_file <- function(file) {
-	entry <- read_entry(file)
-  verify_entry(entry)
+verify_entry_file <- function(file, challenge = "ilinet") {
+	entry <- read_entry(file, challenge)
+  verify_entry(entry, challenge)
 }
 
 
@@ -21,6 +23,8 @@ verify_entry_file <- function(file) {
 #' Verify entry stored as an R data.frame
 #'
 #' @param entry A data.frame
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for
 #' @return Invisibly returns \code{TRUE} if successful
 #' @import dplyr
 #' @export
@@ -28,17 +32,25 @@ verify_entry_file <- function(file) {
 #' @examples
 #' verify_entry(minimal_entry)
 #' verify_entry(full_entry)
-verify_entry <- function(entry) {
+verify_entry <- function(entry, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
+  }
   
   names(entry) <- tolower(names(entry))
 
-  verify_colnames(entry)
+  verify_colnames(entry, challenge)
 
   # Verify column contents
-  verify_locations(entry)
-  verify_targets(entry)
-  verify_types(entry)
-  verify_units(entry)
+  if (challenge %in% c("ilinet", "state_ili")) {
+    verify_locations(entry)
+  } else {
+    verify_agegrp(entry)
+  }
+  verify_targets(entry, challenge)
+  verify_types(entry, challenge)
+  verify_units(entry, challenge)
 
   verify_bins(entry)
 	verify_probabilities(entry)

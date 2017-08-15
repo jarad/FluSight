@@ -4,13 +4,27 @@
 #' for all targets
 #'
 #' @param entry An entry data.frame
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for
 #' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @keywords internal
 #' @seealso \code{\link{verify_entry}}
 #' @examples
 #' verify_bins(minimal_entry)
-verify_bins <- function(entry) {
+verify_bins <- function(entry, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
+  }
+  
+  if (challenge == "ilinet") {
+    valid <- minimal_entry
+  } else if (challenge == "hospital") {
+    valid <- full_entry_hosp
+  } else {
+    valid <- full_entry_state
+  }
   
   names(entry) <- tolower(names(entry))
   
@@ -22,10 +36,10 @@ verify_bins <- function(entry) {
   for(i in seq_along(entry_targets)) {
     entry_bins <- unique(entry$bin_start_incl[entry$target == entry_targets[i] & 
                                                 entry$type == "Bin"])
-    valid_bins <- unique(minimal_entry$bin_start_incl[minimal_entry$target ==
-                                                        entry_targets[i] &
-                                                      minimal_entry$type ==
-                                                        "Bin"])
+    valid_bins <- unique(valid$bin_start_incl[valid$target ==
+                                                entry_targets[i] &
+                                                valid$type ==
+                                                "Bin"])
     missing_bins <- setdiff(valid_bins, entry_bins)
     extra_bins <- setdiff(entry_bins, valid_bins)
     

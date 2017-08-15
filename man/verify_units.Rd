@@ -4,10 +4,13 @@
 \alias{verify_units}
 \title{Verify units are correct}
 \usage{
-verify_units(entry)
+verify_units(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns TRUE if successful
@@ -18,6 +21,7 @@ for all units
 }
 \examples{
 verify_units(minimal_entry)
+verify_units(full_entry_hosp, challenge = "hospital")
 }
 \seealso{
 \code{\link{verify_entry}}

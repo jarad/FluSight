@@ -4,16 +4,19 @@
 \alias{verify_targets}
 \title{Verify targets are correct}
 \usage{
-verify_targets(entry)
+verify_targets(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns TRUE if successful
 }
 \description{
-The necessary targets depend on the target, so this will verify targets are correct
+The necessary targets depend on the challenge, so this will verify targets are correct
 for all targets
 }
 \examples{
