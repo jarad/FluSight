@@ -3,6 +3,8 @@ context("verify_colnames")
 test_that("Correct entries are successful.",{
   expect_true(verify_colnames(minimal_entry))
   expect_true(verify_colnames(full_entry   ))
+  expect_true(verify_colnames(full_entry_hosp, challenge = "hospital"))
+  expect_true(verify_colnames(full_entry_state, challenge = "state_ili"))
 })
 
 test_that("Missing columns report errors.", {
@@ -23,7 +25,4 @@ test_that("Extra column report warnings.", {
   expect_warning(verify_colnames(tmp_entry))
 })
 
-test_that("Correct hospitalization entries are successful.",{
-  expect_true(verify_colnames(full_entry_hosp, challenge = "hosp"))
-})
 

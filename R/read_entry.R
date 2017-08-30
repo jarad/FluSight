@@ -3,15 +3,15 @@
 #' This function reads in the csv file and arranges it for consistency.
 #'
 #' @param file A csv file path
-#' @param challenge one of "ilinet", "hosp", or "state_ili", indicating which 
+#' @param challenge one of "ilinet", "hospital", or "state_ili", indicating which 
 #'   forecasting challenge the entry is for. Default is "ilinet"
 #' @return An arranged data.frame
 #' @import dplyr
 #' @export
 read_entry = function(file, challenge = "ilinet") {
   
-  if (!(challenge %in% c("ilinet", "hosp", "state_ili"))) {
-    stop("Challenge must be one of ilinet, hosp, or state_ili")
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("Challenge must be one of ilinet, hospital, or state_ili")
   }
   
   entry <- read.csv(file,
@@ -49,7 +49,7 @@ read_entry = function(file, challenge = "ilinet") {
 #' Arrange an entry for consistency
 #'
 #' @param entry A data.frame
-#' @param challenge one of "ilinet", "hosp", or "state_ili", indicating which
+#' @param challenge one of "ilinet", "hospital", or "state_ili", indicating which
 #'   forecasting challenge the entry is for
 #' @return An arranged data.frame
 #' @import dplyr
@@ -57,8 +57,8 @@ read_entry = function(file, challenge = "ilinet") {
 #' @keywords internal
 arrange_entry <- function(entry, challenge = "ilinet") {
 
-  if (!(challenge %in% c("ilinet", "hosp", "state_ili"))) {
-    stop("Challenge must be one of ilinet, hosp, or state_ili")
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("Challenge must be one of ilinet, hospital, or state_ili")
   }
   
   verify_colnames(entry, challenge)

@@ -9,7 +9,7 @@ verify_colnames(entry, challenge = "ilinet")
 \arguments{
 \item{entry}{An entry data.frame}
 
-\item{challenge}{one of "ilinet", "hosp", or "state_ili", indicating which
+\item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which
 forecasting challenge the entry is for}
 }
 \value{

@@ -4,15 +4,15 @@
 #' are missing and a warning if there are any extra names.
 #'
 #' @param entry An entry data.frame
-#' @param challenge one of "ilinet", "hosp", or "state_ili", indicating which
+#' @param challenge one of "ilinet", "hospital", or "state_ili", indicating which
 #'   forecasting challenge the entry is for
 #' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @keywords internal
 verify_colnames <- function(entry, challenge = "ilinet") {
   
-  if (!(challenge %in% c("ilinet", "hosp", "state_ili"))) {
-    stop("Challenge must be one of ilinet, hosp, or state_ili")
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("Challenge must be one of ilinet, hospital, or state_ili")
   }
   
   names(entry) <- tolower(names(entry))
@@ -29,8 +29,8 @@ verify_colnames <- function(entry, challenge = "ilinet") {
 
   if (length(missing_names) > 0) {
     if (length(missing_names) == 1 && missing_names == "forecast_week") {
-      # warning("Missing forecast_week - verification will proceed but
-      #         forecast cannot be scored")
+      warning("Missing forecast_week - verification will proceed but
+              forecast cannot be scored")
     } else {
       stop("Missing these columns: ", paste(missing_names))
     }
