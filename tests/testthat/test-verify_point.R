@@ -3,6 +3,12 @@ context("verify_point")
 test_that("Valid entry passes", {
   expect_true(verify_point(minimal_entry))
   expect_true(verify_point(full_entry))
+  expect_true(verify_point(full_entry_hosp, challenge = "hospital"))
+  expect_true(verify_point(full_entry_state, challenge = "state_ili"))
+})
+
+test_that("Invalid challenge throws error", {
+  expect_error(verify_point(minimal_entry, challenge = "hosp"))
 })
 
 test_that("Missing point predictions return warning", {
