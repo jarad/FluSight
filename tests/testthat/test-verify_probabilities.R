@@ -4,6 +4,12 @@ context("verify_probabilities")
 test_that("Valid entry passes", {
   expect_true(verify_probabilities(minimal_entry))
   expect_true(verify_probabilities(full_entry))
+  expect_true(verify_probabilities(full_entry_hosp, challenge = "hospital"))
+  expect_true(verify_probabilities(full_entry_state, challenge = "state_ili"))
+})
+
+test_that("Invalid challenge throws errors", {
+  expect_error(verify_probabilities(minimal_entry, challenge = "hosp"))
 })
 
 test_that("Missing probabilities throw errors", {
