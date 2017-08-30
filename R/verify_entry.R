@@ -52,9 +52,9 @@ verify_entry <- function(entry, challenge = "ilinet") {
   verify_types(entry, challenge)
   verify_units(entry, challenge)
 
-  verify_bins(entry)
-	verify_probabilities(entry)
-	verify_point(entry)
+  verify_bins(entry, challenge)
+	verify_probabilities(entry, challenge)
+	verify_point(entry, challenge)
 
 	return(invisible(TRUE))
 }
