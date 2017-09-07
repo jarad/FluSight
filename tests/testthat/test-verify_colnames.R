@@ -1,10 +1,10 @@
 context("verify_colnames")
 
 test_that("Correct entries are successful.",{
-  expect_true(verify_colnames(minimal_entry))
-  expect_true(verify_colnames(full_entry   ))
-  expect_true(verify_colnames(full_entry_hosp, challenge = "hospital"))
-  expect_true(verify_colnames(full_entry_state, challenge = "state_ili"))
+  expect_warning(verify_colnames(minimal_entry))
+  expect_true(verify_colnames(full_entry_score))
+  expect_true(verify_colnames(full_entry_hosp_score, challenge = "hospital"))
+  expect_true(verify_colnames(full_entry_state_score, challenge = "state_ili"))
 })
 
 test_that("Missing columns report errors.", {

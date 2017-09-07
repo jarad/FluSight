@@ -1,14 +1,13 @@
 context("create_seasonal")
 
 test_that("Onset creation works", {
-  locations <- unique(valid_ILI$location)
+  rand_loc <- sample(valid_ILI$location, 1)
 
-  for (i in seq_along(locations)) {
-    tmp_onset <- create_onset(valid_ILI, locations[i], 2015)
-    tmp_truth <- truth_1516[truth_1516$location == locations[i] &
-                              truth_1516$target == "Season onset", ]
-    expect_equivalent(tmp_onset, tmp_truth)
-  }
+  tmp_onset <- create_onset(valid_ILI, rand_loc, 2015)
+  tmp_truth <- truth_1516[truth_1516$location == rand_loc &
+                            truth_1516$target == "Season onset", ]
+  expect_equivalent(tmp_onset, tmp_truth)
+  
 })
 
 test_that("Peak creation works for ILINet", {

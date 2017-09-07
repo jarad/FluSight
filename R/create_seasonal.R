@@ -92,7 +92,7 @@ create_onset <- function(weekILI, region, year) {
   # Check to see if 3 weeks above baseline have passed
   j <- 0  # Counter for weeks above peak
   for (i in head(weekILI$week, n = 1):tail(weekILI$week, n = 1)) {
-    if (weekILI$wILI[weekILI$week == i & weekILI$location == region] >=
+    if (weekILI$ILI[weekILI$week == i & weekILI$location == region] >=
         baselines$value[baselines$region == region]) {
       j <- j + 1
     } else {
