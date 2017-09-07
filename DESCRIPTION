@@ -9,10 +9,10 @@ Depends:
 Imports:
 		dplyr,
 		magrittr,
-		MMWRweek
+		MMWRweek,
+		cdcfluview
 Suggests:
-		testthat,
-    cdcfluview
+		testthat
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
