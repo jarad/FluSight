@@ -4,10 +4,13 @@
 \alias{verify_ILI}
 \title{Verify supplied weighted ILI data}
 \usage{
-verify_ILI(weekILI)
+verify_ILI(weekILI, challenge = "ilinet")
 }
 \arguments{
 \item{weekILI}{A data.frame of weighted ILI values.}
+
+\item{challenge}{one of "ilinet" or "state_ili", indicating which
+challenge the submission is for (default \code{"ilinet"})}
 }
 \value{
 \code{NULL} or a descriptive error or warning message
