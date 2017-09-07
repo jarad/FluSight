@@ -4,15 +4,18 @@
 \alias{create_week}
 \title{Creates observed truth for 1-4 week ahead prediction}
 \usage{
-create_week(weekILI, start_week, end_week)
+create_week(weekILI, start_wk, end_wk, challenge = "ilinet")
 }
 \arguments{
 \item{weekILI}{A data.frame of weighted ILI values (default \code{NULL}). Must 
 contain columns location, week, and wILI.}
 
-\item{start_week}{The first MMWR week used for creating forecasts}
+\item{start_wk}{The first MMWR week used for creating forecasts}
 
-\item{end_week}{The last MMWR week used for creating forecasts}
+\item{end_wk}{The last MMWR week used for creating forecasts}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for (default \code{"ilinet"})}
 }
 \value{
 A data.frame with columns location, target, and bin_start_incl

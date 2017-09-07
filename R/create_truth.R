@@ -3,31 +3,40 @@
 #' Determines observed true values for each target 
 #'
 #' @param fluview A logical value (default \code{TRUE}) indicating whether to
-#'   download ILINet from Fluview
-#' @param weekILI A data.frame of weighted ILI values (default \code{NULL}). 
-#'   Must contain columns location, week, and wILI. Must be \code{NULL} when 
-#'   downloading data using \code{fluview = TRUE}. Required if \code{fluview =
-#'   FALSE.}
+#'   download ILINet from Fluview. Only applicable if 
+#'   \code{challenge = "ilinet"}.
+#' @param weekILI A data.frame of observed values (default \code{NULL}). Must be 
+#'   \code{NULL} when downloading data using \code{fluview = TRUE}. Required 
+#'   if \code{fluview = FALSE}.
+#'   
+#'   For \code{challege = "ilinet"} or \code{challenge = "state_ili"}, must
+#'   contain columns location, week, and wILI. For \code{challenge = "hospital"},
+#'   must contain columns age_grp, week, and weeklyrate.
 #' @param year Calendar year during which the flu season of interest begins. For
 #'   the 2015/2016 flu season, \code{year = 2015}. Required whether downloading
-#'   data from fluview or providing ILI data
+#'   data from fluview or providing observed data
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for (default \code{"ilinet"})
 #' @import dplyr
 #' @import cdcfluview
 #' @export
-#' @return A data.frame with columns location, target, and bin_start_incl
+#' @return A data.frame with columns location, target, and bin_start_incl or
+#'   columns age_grp, target, and bin_start_incl if \code{challenge = "hospital"}
 #' @examples 
 #' truth <- create_truth(year = 2015)
-#' truth <- create_truth(fluview = TRUE, year = 2015)
+#' truth <- create_truth(fluview = TRUE, year = 2015, challenge = "ilinet")
 #' truth <- create_truth(fluview = FALSE, weekILI = valid_ILI)
 #' 
 #' \dontrun{
 #' truth <- create_truth(weekILI = valid_ILI)
 #' truth <- create_truth(fluview = FALSE)
+#' truth <- create_truth(fluview = TRUE, year = 2015, challenge = "hospital")
 #' }
 #' 
-create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
+create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
+                         challenge = "ilinet") {
 
-  # Return an error if fluview == FALSE and no data frame provided
+  # Return informative errors if invalid parameter combinations provided
   if (is.null(year)) {
     stop("Year is required")
   }
@@ -40,24 +49,48 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
     stop("Do not provide data if fetching data from ILINet")
   }
   
-  # Verify user-submitted ILI data
-  if (!is.null(weekILI)) {
-    verify_ILI(weekILI) 
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
   }
   
-  # Date first forecasts received - varies depending on forecast year
-  if (year == 2014) {
-    start_wk <- 41    #First week of ILINet data used for forecasts
-    end_wk <- 19      #Last week of ILINet data used for forecasts
+  if (fluview == TRUE & challenge != "ilinet") {
+    stop("Data can only be fetched from FluView for national ILINet forecasting")
   }
-  if (year == 2015) {
-    start_wk <- 42    
-    end_wk <- 18      
+  
+  # Verify user-submitted ILI data
+  if (!is.null(weekILI) && challenge %in% c("ilinet", "state_ili")) {
+    verify_ILI(weekILI, challenge) 
+  } else verify_hosp(weekILI)
+  
+  # Date first forecasts - varies depending on forecast year and challenge
+  if (challenge %in% c("ilinet", "state_ili")) {
+    if (year == 2014) {
+      start_wk <- 41    #First week of ILINet data used for forecasts
+      end_wk <- 19      #Last week of ILINet data used for forecasts
+    }
+    if (year == 2015) {
+      start_wk <- 42    
+      end_wk <- 18      
+    }
+    if (year == 2016) {
+      start_wk <- 43
+      end_wk <- 18
+    }
+    if (year == 2017) {
+      start_wk <- 43
+      end_wk <- 18
+    }
+  } else {
+    if (year == 2016) {
+      start_wk <- 48
+      end_wk <- 17
+    }
+    if (year == 2017) {
+      start_wk <- 48
+      end_wk <- 17
+    }
   }
-  if (year == 2016) {
-    start_wk <- 43
-    end_wk <- 18
-  }
+  
   
   # Read in ILINet results
   if (fluview == TRUE) {
@@ -119,32 +152,31 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL) {
     weekILI <- rbind(usflu, regionflu) 
   }
 
-  # # Add 52 to weeks in new year to keep weeks in order
-  # weekILI$week[weekILI$week < 40] <-
-  #   as.integer(weekILI$week[weekILI$week < 40] + 52)
-  
   # Create data shell to add targets to
-  truth <- data.frame(target = character(),
-                      location = character(),
-                      forecast_week = numeric(),
-                      bin_start_incl = numeric()) 
- 
-  # Calculate targets if reached ----------------------------------
-  for (this_location in levels(as.factor(weekILI$location))) {
-    truth <- filter(weekILI, location == this_location) %>%
-              create_seasonal(
-                              this_location, year) %>%
-              rbind(truth, .)
-  }
+  truth <- data.frame()
   
+  if (challenge %in% c("ilinet", "state_ili")) {
+    
+    # Calculate targets if reached ----------------------------------
+    for (this_location in levels(as.factor(weekILI$location))) {
+      truth <- filter(weekILI, location == this_location) %>%
+                create_seasonal(this_location, year, challenge) %>%
+                bind_rows(truth, .)
+    }
+    
+  } else {
+    
+    # Calculate targets if reached ----------------------------------
+    for (this_age in levels(as.factor(weekILI$age_grp))) {
+      truth <- filter(weekILI, age_grp == this_age) %>%
+        create_seasonal(this_age, year, challenge) %>%
+        bind_rows(truth, .)
+    }
+    
+  }
   truth <- bind_rows(truth,
-                 create_week(weekILI, start_wk, end_wk)) #%>%
-    # # Ensure all bin_start_incl values have one decimal place to match for scoring
-    # mutate(bin_start_incl = trimws(replace(bin_start_incl,
-    #                                        !is.na(bin_start_incl) & bin_start_incl != "none",
-    #                                        format(round(as.numeric(
-    #                                          bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
-    #                                          , 1), nsmall = 1))))
+                 create_week(weekILI, start_wk, end_wk, challenge)) #%>%
 
+  
   return(truth)
 }

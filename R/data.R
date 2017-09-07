@@ -83,6 +83,34 @@
 #' }
 "truth_1516"
 
+#' Observed state ILI truth for 2016/2017 influenza season
+#'
+#' A data.frame containing the observed state ILI forecasting truth for the
+#' 2016/2017 influenza season
+#'
+#' @format A dta frame with 3992 rows and 4 variables:
+#' \describe{
+#'   \item{target}{character vector of targets}
+#'   \item{location}{character vector of locations}
+#'   \item{forecast_week}{numeric vector of MMWR week forecasted value is based on}
+#'   \item{bin_start_incl}{numeric vector of observed truth}
+#' }
+"state_truth_1617"
+
+#' Observed FluSurv-Net hospitalizations truth for 2016/2017 influenza season
+#'
+#' A data.frame containing the observed national hospitalization forecasting 
+#' truth for the 2016/2017 influenza season
+#'
+#' @format A dta frame with 480 rows and 4 variables:
+#' \describe{
+#'   \item{target}{character vector of targets}
+#'   \item{age_grp}{character vector of age groups}
+#'   \item{forecast_week}{numeric vector of MMWR week forecasted value is based on}
+#'   \item{bin_start_incl}{numeric vector of observed truth}
+#' }
+"hosp_truth_1617"
+
 #' Expanded national ILINet truth for 2015/2016 influenza season
 #'
 #' A data.frame containing the observed national ILI forecasting truth for the 

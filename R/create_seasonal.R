@@ -5,10 +5,11 @@
 #'
 #' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
 #' location, week, and wILI. 
-#' @param region A character string specifying the target location - either US National 
-#' or one of HHS Region 1-10
+#' @param location A character string specifying the target location or age group
 #' @param year Calendar year during which the flu season of interest begins. 
 #' For the 2015/2016 flu season, \code{year = 2015}
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for (default \code{"ilinet"})
 #' @import dplyr
 #' @return A data.frame with columns location, target, and bin_start_incl
 #' @export
@@ -16,14 +17,22 @@
 #' season_targets <- create_seasonal(valid_ILI, "US National")
 #' season_targets <- create_seasonal(valid_ILI, "HHS Region 4")
 #'   
-create_seasonal <- function(weekILI, region, year) {
+create_seasonal <- function(weekILI, location, year, challenge = "ilinet") {
   
-  # Round weekILI values to one decimal place for calculating onset and peak week
-  weekILI$wILI <- round(weekILI$wILI, 1)
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
+  }
+  
+  # Round weekILI or rate values to one decimal place for calculating targets
+  if (challenge %in% c("ilinet", "state_ili")) {
+    weekILI$ILI <- round(weekILI$ILI, 1)
+  } else weekILI$weeklyrate <- round(weekILI$weeklyrate, 1)
   
   # Create truth for seasonal targets
-  season_truth <- rbind(create_onset(weekILI, region, year),
-                        create_peak(weekILI, region))
+  if (challenge == "ilinet") {
+    season_truth <- bind_rows(create_onset(weekILI, location, year),
+                              create_peak(weekILI, location, challenge))
+  } else season_truth <- create_peak(weekILI, location, challenge)
   
   return(season_truth)
 }  
@@ -123,17 +132,26 @@ create_onset <- function(weekILI, region, year) {
 #' Determines observed true values for peak week and peak weighted ILINet
 #' percentage for an influenza season
 #'
-#' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
-#' location, week, and wILI. 
-#' @param location A character string specifying the target location - either US National 
-#' or one of HHS Region 1-10
+#' @param weekILI A data.frame of weighted ILI values (default NULL). 
+#' Must contain columns location (or age_grp), week, and wILI. 
+#' @param location A character string specifying the target location or age group
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for (default \code{"ilinet"})
 #' @import dplyr
-#' @return A data.frame with columns location, target, and bin_start_incl
+#' @return A data.frame with columns location (or age_grp), target, and bin_start_incl
 #' @export
 #' @keywords internal
 #' 
-create_peak <- function(weekILI, region) {
- 
+create_peak <- function(weekILI, location, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
+  }
+  
+  # Rename submitted file to have same column names to work with following code
+  if (challenge == "hospital") weekILI <- rename(weekILI, location = age_grp,
+                                                 ILI = weeklyrate)
+  
   # Save maximum MMWR week in season being analyzed
   maxMMWR <- max(weekILI$week)
   
@@ -141,10 +159,10 @@ create_peak <- function(weekILI, region) {
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
   
-  pkwk  <- weekILI$week[weekILI$location == region &
-                          weekILI$wILI == max(weekILI$wILI[weekILI$location == 
-                                                           region])]
-  pkper <- max(weekILI$wILI[weekILI$location == region])
+  pkwk  <- weekILI$week[weekILI$location == location &
+                          weekILI$ILI == max(weekILI$ILI[weekILI$location == 
+                                                             location])]
+  pkper <- max(weekILI$ILI[weekILI$location == location])
   
   # Only create peak if at least three weeks of decline following last peak
   if (tail(weekILI$week, n = 1) - tail(pkwk, n = 1) < 3) {
@@ -152,7 +170,8 @@ create_peak <- function(weekILI, region) {
     pkper <- NA
   }
   
-  # Only create peak if after MMWR week 4 in new year (56/57 in ordered coding)
+  # Only create peak if data from after MMWR week 4 in new year 
+  # (56/57 in ordered coding)
   if (tail(weekILI$week, n = 1) < (maxMMWR + 4)) {
     pkwk  <- NA
     pkper <- NA
@@ -167,14 +186,14 @@ create_peak <- function(weekILI, region) {
 
   peak_truth <- data.frame(target = c("Season peak week", 
                                       "Season peak percentage"),
-                          location = region,
+                          location = location,
                           forecast_week = as.integer(NA),
                           bin_start_incl = c(pkwk[1], pkper),
                           stringsAsFactors = FALSE)
   if (length(pkwk) > 1) {  
     for (i in 2:length(pkwk)) {
       extra_obs <- data.frame(target = "Season peak week",
-                              location = region,
+                              location = location,
                               forecast_week = as.integer(NA),
                               bin_start_incl = pkwk[i],
                               stringsAsFactors = FALSE)
@@ -186,7 +205,13 @@ create_peak <- function(weekILI, region) {
                                       peak_truth$bin_start_incl,
                                       format(round(peak_truth$bin_start_incl, 1), trim = T, nsmall = 1))
   
-  
+  # Rename returned file to have correct column names for hospitalizations
+  if (challenge == "hospital") {
+    peak_truth <- peak_truth %>%
+      rename(age_grp = location) %>%
+      mutate(target = ifelse(target == "Season peak percentage", "Season peak rate", 
+                             target))
+  }
 
   return(peak_truth)
 }  

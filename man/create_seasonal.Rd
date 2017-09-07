@@ -4,17 +4,19 @@
 \alias{create_seasonal}
 \title{Creates observed truth for seasonal targets}
 \usage{
-create_seasonal(weekILI, region, year)
+create_seasonal(weekILI, location, year, challenge = "ilinet")
 }
 \arguments{
 \item{weekILI}{A data.frame of weighted ILI values (default NULL). Must contain columns
 location, week, and wILI.}
 
-\item{region}{A character string specifying the target location - either US National 
-or one of HHS Region 1-10}
+\item{location}{A character string specifying the target location or age group}
 
 \item{year}{Calendar year during which the flu season of interest begins. 
 For the 2015/2016 flu season, \code{year = 2015}}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for (default \code{"ilinet"})}
 }
 \value{
 A data.frame with columns location, target, and bin_start_incl

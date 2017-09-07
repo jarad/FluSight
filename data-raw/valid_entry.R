@@ -74,6 +74,20 @@ valid_observe_hosp <- read.csv("inst/extdata/valid_observe_hosp.csv",
 valid_ILI_state <- read.csv("inst/extdata/valid_ILI_state.csv",
                             stringsAsFactors = FALSE)
 
+state_truth_1617 <- read.csv("inst/extdata/state_truth_1617.csv",
+                             stringsAsFactors = FALSE) %>%
+  dplyr::mutate(bin_start_incl = trimws(replace(bin_start_incl,!is.na(bin_start_incl),
+                                                format(round(as.numeric(
+                                                  bin_start_incl[!is.na(bin_start_incl)])
+                                                  , 1), nsmall = 1))))
+
+hosp_truth_1617 <- read.csv("inst/extdata/hosp_truth_1617.csv",
+                             stringsAsFactors = FALSE) %>%
+  dplyr::mutate(bin_start_incl = trimws(replace(bin_start_incl,!is.na(bin_start_incl),
+                                                format(round(as.numeric(
+                                                  bin_start_incl[!is.na(bin_start_incl)])
+                                                  , 1), nsmall = 1))))
+
 
 devtools::use_data(full_entry, overwrite=TRUE)
 devtools::use_data(minimal_entry, overwrite=TRUE)
@@ -87,3 +101,5 @@ devtools::use_data(full_entry_state_score, overwrite = TRUE)
 devtools::use_data(full_entry_state, overwrite = TRUE)
 devtools::use_data(valid_observe_hosp, overwrite = TRUE)
 devtools::use_data(valid_ILI_state, overwrite = TRUE)
+devtools::use_data(state_truth_1617, overwrite = TRUE)
+devtools::use_data(hosp_truth_1617, overwrite = TRUE)

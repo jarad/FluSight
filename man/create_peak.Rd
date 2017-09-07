@@ -4,17 +4,19 @@
 \alias{create_peak}
 \title{Creates observed truth for seasonal peak values}
 \usage{
-create_peak(weekILI, region)
+create_peak(weekILI, location, challenge = "ilinet")
 }
 \arguments{
-\item{weekILI}{A data.frame of weighted ILI values (default NULL). Must contain columns
-location, week, and wILI.}
+\item{weekILI}{A data.frame of weighted ILI values (default NULL). 
+Must contain columns location (or age_grp), week, and wILI.}
 
-\item{location}{A character string specifying the target location - either US National 
-or one of HHS Region 1-10}
+\item{location}{A character string specifying the target location or age group}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for (default \code{"ilinet"})}
 }
 \value{
-A data.frame with columns location, target, and bin_start_incl
+A data.frame with columns location (or age_grp), target, and bin_start_incl
 }
 \description{
 Determines observed true values for peak week and peak weighted ILINet
