@@ -164,6 +164,27 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
                                                              location])]
   pkper <- max(weekILI$ILI[weekILI$location == location])
   
+  # If peak percentage > max bin, set to max bin size
+  if (challenge == "ilinet") {
+    max_pkper <- max(as.numeric(
+      full_entry$bin_start_incl[full_entry$target == "Season peak percentage" &
+                                  full_entry$type == "Bin" &
+                                  full_entry$location == location]))
+  } else if (challenge == "state_ili") {
+    max_pkper <- max(as.numeric(
+      full_entry_state$bin_start_incl[full_entry_state$target == "Season peak percentage" &
+                                        full_entry_state$type == "Bin" &
+                                        full_entry_state$location == location]))
+  } else {
+    max_pkper <- max(as.numeric(
+      full_entry_hosp$bin_start_incl[full_entry_hosp$target == "Season peak rate" &
+                                       full_entry_hosp$type == "Bin" &
+                                       full_entry_hosp$age_grp == location]))
+  }
+ 
+  if (pkper > max_pkper) pkper <- max_pkper
+  
+  
   # Only create peak if at least three weeks of decline following last peak
   if (tail(weekILI$week, n = 1) - tail(pkwk, n = 1) < 3) {
     pkwk <- NA

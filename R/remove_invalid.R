@@ -6,6 +6,8 @@
 #'
 #' @param entry An entry data.frame with columns location, target, type, unit, 
 #'        bin_start_incl, bin_end_incl, and value.
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
+#'   challenge the submission is for (default \code{"ilinet"})
 #' @return An entry data.frame with invalid probabilities all set to zero.
 #' @import dplyr
 #' @export
@@ -13,8 +15,16 @@
 #' @examples
 #' valid_entry <- remove_invald(full_entry)
 
-remove_invalid <- function(entry) {
-  entry %>%
+remove_invalid <- function(entry, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
+    stop("challenge must be one of ilinet, hospital, or state_ili")
+  }
+  
+  # Rename hospitalization entries to work with following code
+  if (challenge == "hospital")  entry <- rename(entry, location = age_grp)
+  
+  entry <- entry %>%
     left_join(entry %>%
                 filter(type == "Bin") %>%
                 group_by(location, target, type) %>%
@@ -23,5 +33,10 @@ remove_invalid <- function(entry) {
               by = c("location", "target", "type")) %>%
     mutate(value = ifelse(is.na(total), value, NA)) %>%
     select(-total)
+  
+  # Rename back to hospitalization format
+  if (challenge == "hospital") entry <- rename(entry, age_grp, location)
+  
+  return(entry)
 
 }

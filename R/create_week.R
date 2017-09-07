@@ -35,10 +35,7 @@ create_week <- function(weekILI, start_wk, end_wk,
   
   these_targets <- c("1 wk ahead", "2 wk ahead", "3 wk ahead", "4 wk ahead")
   
-  week_target <- data.frame(target = character(),
-                            location = character(),
-                            forecast_week = integer(),
-                            bin_start_incl = numeric()) 
+  week_target <- data.frame() 
   
   for (this_target in these_targets) {
     wk <- as.integer(substr(this_target, 1, 1))
@@ -56,10 +53,45 @@ create_week <- function(weekILI, start_wk, end_wk,
     }
   }
   
+  # If determine maximum bin value and reset if above that value
+  if (challenge == "ilinet") {
+    
+    max_per <- full_entry %>%
+      dplyr::filter(target == "Season peak percentage", type == "Bin") %>%
+      dplyr::group_by(location) %>%
+      dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
+      dplyr::filter(bin_start_incl == max(bin_start_incl, na.rm = TRUE)) %>%
+      dplyr::select(location, max_per = bin_start_incl)
+    
+  } else if (challenge == "state_ili") {
+    
+    max_per <- full_entry_state %>%
+      dplyr::filter(target == "Season peak percentage", type == "Bin") %>%
+      dplyr::group_by(location) %>%
+      dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
+      dplyr::filter(bin_start_incl == max(bin_start_incl, na.rm = TRUE))%>%
+      dplyr::select(location, max_per = bin_start_incl)
+    
+  } else {
+    
+    max_per <- full_entry_hosp %>%
+      dplyr::filter(target == "Season peak rate", type == "Bin") %>%
+      dplyr::group_by(age_grp) %>%
+      dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
+      dplyr::filter(bin_start_incl == max(bin_start_incl, na.rm = TRUE)) %>%
+      dplyr::select(location = age_grp, max_per = bin_start_incl)
+    
+  }
+  
+  week_target <- dplyr::left_join(week_target, max_per, by = "location") %>%
+    dplyr::mutate(bin_start_incl = ifelse(bin_start_incl > max_per,
+                                          max_per, bin_start_incl)) %>%
+    dplyr::select(-max_per)
+  
   # Subtract 52/53 from all weeks in new year to realign with MMWR week
   week_target$forecast_week[week_target$forecast_week > maxMMWR] <-
     week_target$forecast_week[week_target$forecast_week > maxMMWR] - maxMMWR
-  
+
   week_target$bin_start_incl <- format(round(week_target$bin_start_incl, 1), trim = T, nsmall = 1)
   
   # Rename column for hospitalization targets
