@@ -44,7 +44,7 @@ verify_entry <- function(entry, challenge = "ilinet") {
 
   # Verify column contents
   if (challenge %in% c("ilinet", "state_ili")) {
-    verify_locations(entry)
+    verify_locations(entry, challenge)
   } else {
     verify_agegrp(entry)
   }
