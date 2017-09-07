@@ -4,11 +4,14 @@
 \alias{remove_invalid}
 \title{Remove invalid predicted probabilities for scoring}
 \usage{
-remove_invalid(entry)
+remove_invalid(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame with columns location, target, type, unit, 
 bin_start_incl, bin_end_incl, and value.}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for (default \code{"ilinet"})}
 }
 \value{
 An entry data.frame with invalid probabilities all set to zero.

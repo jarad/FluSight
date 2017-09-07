@@ -4,7 +4,7 @@
 \alias{score_entry}
 \title{Scores an entry}
 \usage{
-score_entry(entry, truth)
+score_entry(entry, truth, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{A valid entry data.frame with columns location, target,
@@ -24,7 +24,9 @@ should be run prior to scoring, along with \code{\link{remove_invalid}} if
 invalid probabilities are detected.
 }
 \examples{
-scores < - score_entry(full_entry_week, truth_1516)
+scores <- score_entry(full_entry_week, truth_1516)
+scores <- score_entry(full_entry_hosp_score, hosp_truth_1617, challenge = "hospital")
+scores <- score_entry(full_entry_state_score, state_truth_1617, challenge = "state_ili")
 
 }
 \seealso{

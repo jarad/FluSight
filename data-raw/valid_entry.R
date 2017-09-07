@@ -28,7 +28,7 @@ valid_exp_truth <- read.csv("inst/extdata/valid_exp_truth.csv",
                                                   bin_start_incl[!is.na(bin_start_incl) & bin_start_incl != "none"])
                                                   , 1), nsmall = 1))))
 
-full_entry_hosp_score <- read.csv("inst/extdata/EW44_ValidHospTest_2017-11-07.csv",
+full_entry_hosp_score <- read.csv("inst/extdata/EW48_ValidHospTest_2017-12-04.csv",
                                   stringsAsFactors = FALSE) %>%
   setNames(tolower(names(.))) %>%
   dplyr::mutate(value = as.numeric(value),
@@ -42,7 +42,7 @@ full_entry_hosp_score <- read.csv("inst/extdata/EW44_ValidHospTest_2017-11-07.cs
                                           format(round(as.numeric(
                                             bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
                                             , 1), nsmall = 1))),
-         forecast_week = 44)
+         forecast_week = 48)
 
 full_entry_hosp <- full_entry_hosp_score %>%
   dplyr::select(-forecast_week)
