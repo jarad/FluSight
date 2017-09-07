@@ -8,7 +8,7 @@
 \describe{
   \item{location}{character vector of locations}
   \item{week}{numeric vector of MMWR weeks}
-  \item{wILI}{numeric vector of weighted ILI percentage}
+  \item{ILI}{numeric vector of weighted ILI percentage}
 }}
 \usage{
 valid_ILI

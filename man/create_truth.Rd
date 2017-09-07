@@ -4,35 +4,45 @@
 \alias{create_truth}
 \title{Creates observed truth to score entry against}
 \usage{
-create_truth(fluview = TRUE, year = NULL, weekILI = NULL)
+create_truth(fluview = TRUE, year = NULL, weekILI = NULL,
+  challenge = "ilinet")
 }
 \arguments{
 \item{fluview}{A logical value (default \code{TRUE}) indicating whether to
-download ILINet from Fluview}
+download ILINet from Fluview. Only applicable if 
+\code{challenge = "ilinet"}.}
 
 \item{year}{Calendar year during which the flu season of interest begins. For
 the 2015/2016 flu season, \code{year = 2015}. Required whether downloading
-data from fluview or providing ILI data}
+data from fluview or providing observed data}
 
-\item{weekILI}{A data.frame of weighted ILI values (default \code{NULL}). 
-Must contain columns location, week, and wILI. Must be \code{NULL} when 
-downloading data using \code{fluview = TRUE}. Required if \code{fluview =
-FALSE.}}
+\item{weekILI}{A data.frame of observed values (default \code{NULL}). Must be 
+\code{NULL} when downloading data using \code{fluview = TRUE}. Required 
+if \code{fluview = FALSE}.
+
+For \code{challege = "ilinet"} or \code{challenge = "state_ili"}, must
+contain columns location, week, and wILI. For \code{challenge = "hospital"},
+must contain columns age_grp, week, and weeklyrate.}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
+challenge the submission is for (default \code{"ilinet"})}
 }
 \value{
-A data.frame with columns location, target, and bin_start_incl
+A data.frame with columns location, target, and bin_start_incl or
+  columns age_grp, target, and bin_start_incl if \code{challenge = "hospital"}
 }
 \description{
 Determines observed true values for each target
 }
 \examples{
 truth <- create_truth(year = 2015)
-truth <- create_truth(fluview = TRUE, year = 2015)
+truth <- create_truth(fluview = TRUE, year = 2015, challenge = "ilinet")
 truth <- create_truth(fluview = FALSE, weekILI = valid_ILI)
 
 \dontrun{
 truth <- create_truth(weekILI = valid_ILI)
 truth <- create_truth(fluview = FALSE)
+truth <- create_truth(fluview = TRUE, year = 2015, challenge = "hospital")
 }
 
 }

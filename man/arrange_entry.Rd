@@ -9,7 +9,7 @@ arrange_entry(entry, challenge = "ilinet")
 \arguments{
 \item{entry}{A data.frame}
 
-\item{challenge}{one of "ilinet", "hosp", or "state_ili", indicating which
+\item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which
 forecasting challenge the entry is for}
 }
 \value{

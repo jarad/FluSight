@@ -40,9 +40,33 @@
 #' \describe{
 #'   \item{location}{character vector of locations}
 #'   \item{week}{numeric vector of MMWR weeks}
-#'   \item{wILI}{numeric vector of weighted ILI percentage}
+#'   \item{ILI}{numeric vector of weighted ILI percentage}
 #' }
 "valid_ILI"
+
+#' A valid state ILINet submission
+#'
+#' A data.frame containing a valid submission of state ILI data
+#'
+#' @format A dta frame with 1860 rows and 3 variables:
+#' \describe{
+#'   \item{location}{character vector of locations}
+#'   \item{week}{numeric vector of MMWR weeks}
+#'   \item{ILI}{numeric vector of ILI percentage}
+#' }
+"valid_ILI_state"
+
+#' A valid FluSurv-NET submission
+#'
+#' A data.frame containing a valid submission of FluSurv-Net data
+#'
+#' @format A dta frame with 180 rows and 3 variables:
+#' \describe{
+#'   \item{age_grp}{character vector of age groups}
+#'   \item{week}{numeric vector of MMWR weeks}
+#'   \item{weeklyrate}{numeric vector of weighted ILI percentage}
+#' }
+"valid_observe_hosp"
 
 
 #' Observed national ILINet truth for 2015/2016 influenza season

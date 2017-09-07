@@ -4,10 +4,13 @@
 \alias{verify_locations}
 \title{Verify the locations}
 \usage{
-verify_locations(entry)
+verify_locations(entry, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
+
+\item{challenge}{one of "ilinet" or "state_ili", indicating which
+challenge the submission is for}
 }
 \value{
 Invisibly returns \code{TRUE} if successful

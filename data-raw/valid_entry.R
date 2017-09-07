@@ -9,7 +9,8 @@ minimal_entry <- full_entry %>%
   dplyr::filter(location == "US National") 
 
 valid_ILI <- read.csv("inst/extdata/valid_ILI.csv",
-                      stringsAsFactors = FALSE)
+                      stringsAsFactors = FALSE) %>%
+  rename(ILI = wILI)
 
 truth_1516 <- read.csv("inst/extdata/truth_1516.csv",
                        stringsAsFactors = FALSE) %>%
@@ -67,6 +68,13 @@ full_entry_state <- full_entry_state_score %>%
   dplyr::select(-forecast_week)
 
 
+valid_observe_hosp <- read.csv("inst/extdata/valid_observe_hosp.csv", 
+                               stringsAsFactors = FALSE)
+
+valid_ILI_state <- read.csv("inst/extdata/valid_ILI_state.csv",
+                            stringsAsFactors = FALSE)
+
+
 devtools::use_data(full_entry, overwrite=TRUE)
 devtools::use_data(minimal_entry, overwrite=TRUE)
 devtools::use_data(full_entry_score, overwrite = TRUE)
@@ -77,3 +85,5 @@ devtools::use_data(full_entry_hosp_score, overwrite = TRUE)
 devtools::use_data(full_entry_hosp, overwrite = TRUE)
 devtools::use_data(full_entry_state_score, overwrite = TRUE)
 devtools::use_data(full_entry_state, overwrite = TRUE)
+devtools::use_data(valid_observe_hosp, overwrite = TRUE)
+devtools::use_data(valid_ILI_state, overwrite = TRUE)

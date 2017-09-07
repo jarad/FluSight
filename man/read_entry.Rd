@@ -9,7 +9,7 @@ read_entry(file, challenge = "ilinet")
 \arguments{
 \item{file}{A csv file path}
 
-\item{challenge}{one of "ilinet", "hosp", or "state_ili", indicating which 
+\item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which 
 forecasting challenge the entry is for. Default is "ilinet"}
 }
 \value{

@@ -3,18 +3,24 @@
 #' Verifies user-supplied wILI data to be used to generate forecasting targets
 #'
 #' @param weekILI A data.frame of weighted ILI values. 
+#' @param challenge one of "ilinet" or "state_ili", indicating which
+#'   challenge the submission is for (default \code{"ilinet"})
 #' @return \code{NULL} or a descriptive error or warning message
 #' @export
 #' @examples 
 #' verify_ILI(valid_ILI)
 #' 
-verify_ILI <- function(weekILI) {
+verify_ILI <- function(weekILI, challenge = "ilinet") {
 
+  if (!(challenge %in% c("ilinet", "state_ili"))) {
+    stop("challenge must be one of ilinet or state_ili")
+  }
+  
   # Verify column names
   verify_ILI_colnames(weekILI)
   
   # Verify locations
-  verify_ILI_location(weekILI)
+  verify_ILI_location(weekILI, challenge)
 
 }
 
@@ -29,7 +35,7 @@ verify_ILI <- function(weekILI) {
 #' 
 verify_ILI_colnames <- function(weekILI) {
   sub_names <- colnames(weekILI)
-  valid_names <- c("location", "week", "wILI")
+  valid_names <- c("location", "week", "ILI")
   
   missing_names <- setdiff(valid_names, sub_names)
   extra_names   <- setdiff(sub_names, valid_names)
@@ -46,17 +52,26 @@ verify_ILI_colnames <- function(weekILI) {
 #' 
 #' Verifies regions in user-supplied wILI data 
 #'
-#' @param weekILI A data.frame of weighted ILI values. 
+#' @param weekILI A data.frame of weighted ILI values.
+#' @param challenge one of "ilinet" or "state_ili", indicating which
+#'   challenge the submission is for (default \code{"ilinet"}) 
 #' @return \code{NULL} or a descriptive error or warning message
 #' @export
 #' @keywords internal
 #' 
-verify_ILI_location <- function(weekILI) {
+verify_ILI_location <- function(weekILI, challenge = "ilinet") {
+  
+  if (!(challenge %in% c("ilinet", "state_ili"))) {
+    stop("challenge must be one of ilinet or state_ili")
+  }
+  
   sub_locations <- unique(weekILI$location)
-  valid_locations <- c("US National", "HHS Region 1", "HHS Region 2", 
-                       "HHS Region 3", "HHS Region 4", "HHS Region 5", 
-                       "HHS Region 6", "HHS Region 7", "HHS Region 8", 
-                       "HHS Region 9", "HHS Region 10")
+  
+  if (challenge == "ilinet") {
+    valid_locations <- unique(full_entry$location)
+  } else {
+    valid_locations <- unique(full_entry_state$location)
+  }
   
   missing_names <- setdiff(valid_locations, sub_locations)
   extra_names   <- setdiff(sub_locations, valid_locations)
