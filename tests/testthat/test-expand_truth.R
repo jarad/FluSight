@@ -4,8 +4,9 @@ test_that("expand_week works", {
   skip_on_cran()
   
   tmp_week <- truth_1516 %>%
-                filter(target %in% c("Season onset", "Season peak week")) %>%
-                expand_week(1)
+    filter(target %in% c("Season onset", "Season peak week")) %>%
+    rowwise() %>%
+    expand_week(1)
   tmp_valid <- filter(valid_exp_truth, target %in%
                                  c("Season onset", "Season peak week"))
   
@@ -16,10 +17,12 @@ test_that("expand_percent works", {
   skip_on_cran()
   
   tmp_percent <- truth_1516 %>%
-                    filter(target %in% c("Season peak percentage", "1 wk ahead",
-                                         "2 wk ahead", "3 wk ahead", 
-                                         "4 wk ahead")) %>%
-                    expand_percent(5)
+    filter(target %in% c("Season peak percentage", "1 wk ahead",
+                         "2 wk ahead", "3 wk ahead",
+                         "4 wk ahead")) %>%
+    rowwise() %>%
+    expand_percent(challenge = "ilinet", expand_by_percent = F,
+                   percent_expand = 5, percent_observed = 0.05)
   tmp_valid <- filter(valid_exp_truth, target %in%
                         c("Season peak percentage", "1 wk ahead",
                           "2 wk ahead", "3 wk ahead", 
@@ -31,9 +34,7 @@ test_that("expand_percent works", {
 test_that("expand_truth works", {
   skip_on_cran()
   
-  tmp_truth <- expand_truth(truth_1516)
-  
-  expect_equivalent(tmp_truth, valid_exp_truth)
+  expect_equivalent(expand_truth(truth_1516), valid_exp_truth)
 })
 
 test_that("expand_truth handles NA truth", {
@@ -57,13 +58,15 @@ test_that("expand_truth handles NA truth", {
   expect_equivalent(expand_truth(tmp_truth), tmp_valid)
 })
 
-test_that("expand_week deals with New Year transition", {
+test_that("expand_week deals with New Year transition for onset", {
   skip_on_cran()
   
   # Set one region to have onset week 52
   tmp_truth <- truth_1516 %>%
     filter(target %in% c("Season onset", "Season peak week"))
+  
   rand_location <- sample(unique(tmp_truth$location), 1)
+  
   tmp_truth$bin_start_incl[tmp_truth$location == rand_location &
                              tmp_truth$target == "Season onset"] <- "52.0"
   
@@ -74,7 +77,9 @@ test_that("expand_week deals with New Year transition", {
                              tmp_valid$target == "Season onset"] <- 
     c("51.0", "52.0", "1.0")
 
-  tmp_week <- expand_week(tmp_truth, 1)
+  tmp_week <- tmp_truth %>%
+    rowwise() %>%
+    expand_week(1)
   
   expect_equivalent(tmp_week, tmp_valid)
   
@@ -83,7 +88,9 @@ test_that("expand_week deals with New Year transition", {
   # Set one region to have onset week 1
   tmp_truth <- truth_1516 %>%
     filter(target %in% c("Season onset", "Season peak week"))
+  
   rand_location <- sample(unique(tmp_truth$location), 1)
+  
   tmp_truth$bin_start_incl[tmp_truth$location == rand_location &
                              tmp_truth$target == "Season onset"] <- "1.0"
   
@@ -94,13 +101,18 @@ test_that("expand_week deals with New Year transition", {
                              tmp_valid$target == "Season onset"] <- 
     c("52.0", "1.0", "2.0")
   
-  tmp_week <- expand_week(tmp_truth, 1)
+  tmp_week <- tmp_truth %>%
+    rowwise() %>%
+    expand_week(1)
   
   expect_equivalent(tmp_week, tmp_valid)
   
+})
   
-  
-  # Set one region to have peak week 52
+test_that("expand_week deals with New Year transition for peak week", {
+  skip_on_cran()
+ 
+   # Set one region to have peak week 52
   tmp_truth <- truth_1516 %>%
     filter(target %in% c("Season onset", "Season peak week"))
   rand_location <- sample(unique(tmp_truth$location), 1)
@@ -114,7 +126,9 @@ test_that("expand_week deals with New Year transition", {
                              tmp_valid$target == "Season peak week"] <- 
     c("51.0", "52.0", "1.0")
   
-  tmp_week <- expand_week(tmp_truth, 1)
+  tmp_week <- tmp_truth %>%
+    rowwise() %>%
+    expand_week(1)
   
   expect_equivalent(tmp_week, tmp_valid)
   
@@ -134,7 +148,9 @@ test_that("expand_week deals with New Year transition", {
                              tmp_valid$target == "Season peak week"] <- 
     c("52.0", "1.0", "2.0")
   
-  tmp_week <- expand_week(tmp_truth, 1)
+  tmp_week <- tmp_truth %>%
+    rowwise() %>%
+    expand_week(1)
   
   expect_equivalent(tmp_week, tmp_valid)
   
@@ -158,7 +174,9 @@ test_that("expand_week catches 'none' in onset", {
   tmp_valid <- unique(tmp_valid)
   
   
-  tmp_week <- expand_week(tmp_truth, 1)
+  tmp_week <- tmp_truth %>%
+    rowwise() %>%
+    expand_week(1)
   
   expect_equivalent(tmp_week, tmp_valid)  	
 })
@@ -187,7 +205,9 @@ test_that("expand_percent doesn't return negative results", {
                                "0.3", "0.4", "0.5", "0.6", "0.7", "0.8")
   tmp_valid <- filter(tmp_valid, as.numeric(bin_start_incl) >= 0)
 
-  tmp_percent <- expand_percent(tmp_truth, 5)
+  tmp_percent <- tmp_truth %>%
+    rowwise() %>%
+    expand_percent(5)
  
   expect_equivalent(tmp_percent, tmp_valid)
 
