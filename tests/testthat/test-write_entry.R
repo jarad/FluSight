@@ -22,7 +22,7 @@ test_that("First submission date works", {
 
 context("write_entry")
 
-valid_file  <- system.file("extdata", "valid-test.csv", package="FluSight")
+valid_file  <- system.file("extdata", "valid_test.csv", package="FluSight")
 valid_entry <- read_entry(valid_file)
 
 test_that("Valid entry successfully writes",{

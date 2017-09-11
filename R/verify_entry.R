@@ -7,15 +7,18 @@
 #' @param file A csv entry file
 #' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
 #'   challenge the submission is for
+#' @param check_week A logical value (default `TRUE`) indicating whether to check
+#'   for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
+#'   scoring, can be `FALSE` if evaluating entry prior to writing to disk.
 #' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @seealso \code{\link{verify_entry}}
 #' @examples
 #' file <- system.file("extdata", "valid-test.csv", package="FluSight")
 #' verify_entry_file(file) # TRUE
-verify_entry_file <- function(file, challenge = "ilinet") {
+verify_entry_file <- function(file, challenge = "ilinet", check_week = T) {
 	entry <- read_entry(file, challenge)
-  verify_entry(entry, challenge)
+  verify_entry(entry, challenge, check_week)
 }
 
 
@@ -25,6 +28,9 @@ verify_entry_file <- function(file, challenge = "ilinet") {
 #' @param entry A data.frame
 #' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
 #'   challenge the submission is for
+#' @param check_week A logical value (default `TRUE`) indicating whether to check
+#'   for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
+#'   scoring, can be `FALSE` if evaluating entry prior to writing to disk.
 #' @return Invisibly returns \code{TRUE} if successful
 #' @import dplyr
 #' @export
@@ -32,7 +38,7 @@ verify_entry_file <- function(file, challenge = "ilinet") {
 #' @examples
 #' verify_entry(minimal_entry)
 #' verify_entry(full_entry)
-verify_entry <- function(entry, challenge = "ilinet") {
+verify_entry <- function(entry, challenge = "ilinet", check_week = T) {
   
   if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
     stop("challenge must be one of ilinet, hospital, or state_ili")
@@ -40,7 +46,7 @@ verify_entry <- function(entry, challenge = "ilinet") {
   
   names(entry) <- tolower(names(entry))
 
-  verify_colnames(entry, challenge)
+  verify_colnames(entry, challenge, check_week)
 
   # Verify column contents
   if (challenge %in% c("ilinet", "state_ili")) {

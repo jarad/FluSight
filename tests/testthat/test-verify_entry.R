@@ -12,23 +12,23 @@ valid_state_entry <- read_entry(valid_state_file, challenge = "state_ili")
 
 test_that("Valid entry passes", {
 	expect_warning(verify_entry_file(valid_file ), 
-                "Missing forecast_week - verification will proceed but\n              forecast cannot be scored")
+                "Missing forecast_week - verification will proceed but forecast cannot be scored")
 	expect_warning(verify_entry(     valid_entry), 
-	               "Missing forecast_week - verification will proceed but\n              forecast cannot be scored")
+	               "Missing forecast_week - verification will proceed but forecast cannot be scored")
 	expect_true(verify_entry_file(valid_file_week))
 	expect_true(verify_entry(valid_entry_week))
 	expect_warning(verify_entry(      full_entry), 
-	               "Missing forecast_week - verification will proceed but\n              forecast cannot be scored")
+	               "Missing forecast_week - verification will proceed but forecast cannot be scored")
 	expect_warning(verify_entry(  minimal_entry), 
-	            "Missing forecast_week - verification will proceed but\n              forecast cannot be scored")
+	            "Missing forecast_week - verification will proceed but forecast cannot be scored")
 	expect_true(verify_entry_file(valid_hosp_file, challenge = "hospital"))
 	expect_true(verify_entry(valid_hosp_entry, challenge = "hospital"))
 	expect_warning(verify_entry(full_entry_hosp, challenge = "hospital"), 
-	               "Missing forecast_week - verification will proceed but\n              forecast cannot be scored")
+	               "Missing forecast_week - verification will proceed but forecast cannot be scored")
 	expect_true(verify_entry_file(valid_state_file, challenge = "state_ili"))
 	expect_true(verify_entry(valid_state_entry, challenge = "state_ili"))
 	expect_warning(verify_entry(full_entry_state, challenge = "state_ili"), 
-	               "Missing forecast_week - verification will proceed but\n              forecast cannot be scored")
+	               "Missing forecast_week - verification will proceed but forecast cannot be scored")
 })
 
 # test_that("Entry without forecast week generates warnings", {

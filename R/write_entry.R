@@ -7,15 +7,20 @@
 #' @param team_name A character string specifying the team name
 #' @param week A scalar numeric indicating the week number or NULL (default).
 #'   If NULL, the week will automatically be determined from the current date.
+#' @param challenge one of "ilinet", "hospital", or "state_ili", indicating which 
+#'   forecasting challenge the entry is for. Default is "ilinet"
+#' @param check_week A logical value (default `TRUE`) indicating whether to check
+#'   for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
+#'   scoring, can be `FALSE` if evaluating entry prior to writing to disk.
 #' @return Invisibly returns TRUE if successful
 #' @seealso \code{\link{write_valid_entry}}, \code{\link{read_entry}}
 #' @export
-write_entry <- function(entry, path, team_name, week=NULL) {
+write_entry <- function(entry, path, team_name, week=NULL, challenge = "ilinet") {
   if (missing(entry    )) stop("Need to specify `entry`.")
   if (missing(path     )) stop("Need to specify `path`.")
   if (missing(team_name)) stop("Need to specify `team_name`.")
 
-  success <- verify_entry(entry)
+  success <- verify_entry(entry, challenge = challenge, check_week = F)
 
   filename <- construct_filename(team_name, week)
   file <- file.path(path, filename)
