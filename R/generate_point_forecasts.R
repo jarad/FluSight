@@ -5,12 +5,15 @@
 #'   \code{"Median"} (the default) uses the median value, \code{"Expected
 #'   Value"} generates the expected value from the provided probabilities,and
 #'   \code{"Mode"} returns the individual bin with the largest probability
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating
+#' which challenge the submission is for (default \code{"ilinet"}).
 #' @return A data.frame of point forecasts for all locations and targets.
 #' @seealso \code{\link{generate_point_forecast}}, \code{\link{verify_entry}}
 #' @import magrittr
 #' @export
 generate_point_forecasts <- function(entry, method = 
-                                       c("Median", "Expected Value", "Mode")) {
+                                       c("Median", "Expected Value", "Mode"),
+                                     challenge = "ilinet") {
   
   method <- match.arg(method)
 
@@ -19,11 +22,25 @@ generate_point_forecasts <- function(entry, method =
   if (sum(entry$type == "Point") > 0) {
   	warning("It appears point forecasts already exist.")
   }
+  
+  #Rename columns if hospital forecast for use with later code
+  if (challenge == "hospital") {
+    entry <- rename(entry, location = age_grp)
+  }
 
-  entry %>%
+  # Generate point forecasts
+  entry <- entry %>%
       dplyr::filter(type == "Bin") %>%
       dplyr::group_by(location,target) %>%
       generate_point_forecast(., method)
+  
+  # Rename columns back
+  if (challenge == "hospital") {
+    entry <- rename(entry, age_grp = location)
+  }
+  
+  return(entry)
+  
 }
 
 
@@ -48,6 +65,13 @@ generate_point_forecast <- function(d, method =
   
   names(d) <- tolower(names(d))
   
+  # Find max MMWR week in submitted entry
+  maxMMWR <- d %>%
+    dplyr::filter(target == "Season peak week") %>%
+    dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
+    dplyr::pull(bin_start_incl) %>%
+    max()
+  
   d <- d %>%
 #    filter(bin_start_incl != "none") %>%
           # Season onset has `none` as a possible bin_start_incl thus we
@@ -58,7 +82,7 @@ generate_point_forecast <- function(d, method =
                   bin_start_incl = ifelse(!(is.na(bin_start_incl)) & 
                                             unit == "week" & 
                                             bin_start_incl < 40,
-                                          bin_start_incl + 52,
+                                          bin_start_incl + maxMMWR,
                                           bin_start_incl)) %>%
     dplyr::arrange(location, target, bin_start_incl)
   
@@ -95,8 +119,8 @@ generate_point_forecast <- function(d, method =
 	# Reset weeks back to MMWR format
 	temp <- temp %>%
 	          dplyr::mutate(value = ifelse(target %in% c("Season onset", "Season peak week") & 
-	                                         value > 52 & !(is.na(value)),
-	                                       value - 52,
+	                                         value > maxMMWR & !(is.na(value)),
+	                                       value - maxMMWR,
 	                                       value))
 
 	return(temp)
