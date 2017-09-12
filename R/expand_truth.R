@@ -169,9 +169,9 @@ expand_percent <- function(truth, percent_expand, challenge = "ilinet",
   if (isTRUE(expand_by_percent)) {
     for (i in 1:nrow(truth)) {
       lower <- truth$bin_start_incl[i] - 
-        max(round(percent_observed*truth$bin_start_incl[i], 1), 1)
+        max(round(percent_observed*truth$bin_start_incl[i], 1), 0.1)
       upper <- truth$bin_start_incl[i] + 
-        max(round(percent_observed*truth$bin_start_incl[i], 1), 1)
+        max(round(percent_observed*truth$bin_start_incl[i], 1), 0.1)
       for(j in seq(lower, upper, 0.1)) {
         expand_percent <- bind_rows(expand_percent, 
                                     mutate(truth[i, ], bin_start_incl = j))
@@ -182,16 +182,18 @@ expand_percent <- function(truth, percent_expand, challenge = "ilinet",
   
   
   # Delete any edge cases
-  if (challenge == "hospital" && expand_percent$age_grp[1] == "65 + yr") {
-    expand_percent <- filter(expand_percent,
-                             bin_start_incl >= 0 & bin_start_incl <= 60) %>%
-      mutate(bin_start_incl = format(round(bin_start_incl, 1), 
+  if (challenge == "hospital") {
+    expand_percent <- expand_percent %>%
+      filter(ifelse(age_grp == "65 + yr",
+                    bin_start_incl >= 0 & bin_start_incl <= 60,
+                    bin_start_incl >= 0 & bin_start_incl <= 13)) %>%
+      mutate(bin_start_incl = format(round(bin_start_incl, 1),
                                      trim = T, nsmall = 1))
   } else {
-    expand_percent <- filter(expand_percent, 
-                          bin_start_incl >= 0 & bin_start_incl <= 13) %>%
-                    mutate(bin_start_incl = format(round(bin_start_incl, 1), 
-                                                   trim = T, nsmall = 1))
+    expand_percent <- expand_percent %>%
+      filter(bin_start_incl >= 0, bin_start_incl <= 13) %>%
+      mutate(bin_start_incl = format(round(bin_start_incl, 1),
+                                     trim = T, nsmall = 1))
   }
   return(expand_percent)
 }
