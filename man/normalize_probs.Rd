@@ -4,7 +4,7 @@
 \alias{normalize_probs}
 \title{Normalize probabilistic predictions}
 \usage{
-normalize_probs(entry, ignore_invalid = FALSE)
+normalize_probs(entry, ignore_invalid = FALSE, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{A verified entry data.frame with columns location, target, type, unit, 
@@ -15,6 +15,9 @@ have probabilities normalized: if \code{TRUE} location/target
 combinations with probabilities summing to < 0.9 or > 1.1 are not
 normalized. Should be \code{TRUE} and run in combination with 
 \code{\link{remove_invalid}} if run on an entry prior to scoring.}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating
+which challenge the submission is for (default \code{"ilinet"}).}
 }
 \value{
 An entry data.frame with normalized probabilities

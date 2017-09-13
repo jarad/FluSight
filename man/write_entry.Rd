@@ -4,7 +4,7 @@
 \alias{write_entry}
 \title{Write an entry to a csv file}
 \usage{
-write_entry(entry, path, team_name, week = NULL)
+write_entry(entry, path, team_name, week = NULL, challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
@@ -15,6 +15,13 @@ write_entry(entry, path, team_name, week = NULL)
 
 \item{week}{A scalar numeric indicating the week number or NULL (default).
 If NULL, the week will automatically be determined from the current date.}
+
+\item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which 
+forecasting challenge the entry is for. Default is "ilinet"}
+
+\item{check_week}{A logical value (default `TRUE`) indicating whether to check
+for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
+scoring, can be `FALSE` if evaluating entry prior to writing to disk.}
 }
 \value{
 Invisibly returns TRUE if successful

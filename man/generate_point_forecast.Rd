@@ -7,7 +7,8 @@
 generate_point_forecast(d, method = c("Median", "Expected Value", "Mode"))
 }
 \arguments{
-\item{d}{A data.frame with columns `bin_start_incl` and `value`}
+\item{d}{A data.frame with columns `location`, `target`, bin_start_incl`,
+and `value`}
 
 \item{method}{The method to be used to generate the point forecasts. 
 \code{"Median"} (the default) uses the median value, \code{"Expected

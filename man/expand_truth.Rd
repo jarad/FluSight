@@ -4,7 +4,8 @@
 \alias{expand_truth}
 \title{Creates a range of bins to score}
 \usage{
-expand_truth(truth, week_expand = 1, percent_expand = 5, week53 = F)
+expand_truth(truth, week_expand = 1, percent_expand = 5, week53 = F,
+  challenge = "ilinet", expand_by_percent = F, percent_observed = 0.05)
 }
 \arguments{
 \item{truth}{A data.frame including columns unit and bin_start_incl}
@@ -13,10 +14,23 @@ expand_truth(truth, week_expand = 1, percent_expand = 5, week53 = F)
 bins to include around the observed value for week targets.}
 
 \item{percent_expand}{A scalar numeric (default 5) indicating the number
-of bins to include around the observed value for percent targets.}
+of bins to include around the observed value for percent or rate targets.
+If \code{expand_by_percent = TRUE} then this value is ignored.}
 
-\item{week53}{A logical value (default `FALSE`) indicating whether to include
-MMWR week 53 in the expanded truth}
+\item{week53}{A logical value (default `FALSE`) indicating whether to 
+include MMWR week 53 in the expanded truth.}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating
+which challenge the submission is for (default \code{"ilinet"}).}
+
+\item{expand_by_percent}{A logical value (default `FALSE`) indicating 
+whether to expand truth around percent or ratetargets by a percentage 
+of the observed value.}
+
+\item{percent_observed}{A scalar numeric between 0 and 1 (default 0.05),
+indicating the one-sided percentage of the observed percent or rate target
+that will be included. If \code{expand_by_percent = FALSE} then this
+value is ignored.}
 }
 \value{
 A data.frame with expanded truth

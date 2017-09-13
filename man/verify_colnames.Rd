@@ -4,13 +4,17 @@
 \alias{verify_colnames}
 \title{Verify the column names of an entry}
 \usage{
-verify_colnames(entry, challenge = "ilinet")
+verify_colnames(entry, challenge = "ilinet", check_week = T)
 }
 \arguments{
 \item{entry}{An entry data.frame}
 
 \item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which
-forecasting challenge the entry is for}
+forecasting challenge the entry is for (default "ilinet")}
+
+\item{check_week}{A logical value (default `TRUE`) indicating whether to check
+for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
+scoring, can be `FALSE` if evaluating entry prior to writing to disk.}
 }
 \value{
 Invisibly returns \code{TRUE} if successful

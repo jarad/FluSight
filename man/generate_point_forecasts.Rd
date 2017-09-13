@@ -5,7 +5,7 @@
 \title{Generate point forecasts for all locations and targets}
 \usage{
 generate_point_forecasts(entry, method = c("Median", "Expected Value",
-  "Mode"))
+  "Mode"), challenge = "ilinet")
 }
 \arguments{
 \item{entry}{An entry data.frame}
@@ -14,6 +14,9 @@ generate_point_forecasts(entry, method = c("Median", "Expected Value",
 \code{"Median"} (the default) uses the median value, \code{"Expected
 Value"} generates the expected value from the provided probabilities,and
 \code{"Mode"} returns the individual bin with the largest probability}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating
+which challenge the submission is for (default \code{"ilinet"}).}
 }
 \value{
 A data.frame of point forecasts for all locations and targets.

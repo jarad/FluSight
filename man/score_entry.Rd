@@ -14,6 +14,9 @@ bin_start_incl, value, and forecast week}
 location, target, forecast_wk, and bin_start_incl. If multiple bins are 
 considered correct for a given target, all correct bins must be included
 here.}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating
+which challenge the submission is for (default \code{"ilinet"}).}
 }
 \value{
 A data.frame of scores for each target

@@ -10,6 +10,8 @@
 #' location, target, forecast_wk, and bin_start_incl. If multiple bins are 
 #' considered correct for a given target, all correct bins must be included
 #' here.
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating
+#' which challenge the submission is for (default \code{"ilinet"}).
 #' @seealso \code{\link{expand_truth}} \code{\link{verify_entry}} \code{\link{remove_invalid}}
 #' @import dplyr
 #' @return A data.frame of scores for each target

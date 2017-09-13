@@ -4,13 +4,26 @@
 \alias{expand_percent}
 \title{Expands truth for percents}
 \usage{
-expand_percent(truth, expand)
+expand_percent(truth, percent_expand, challenge = "ilinet",
+  expand_by_percent = F, percent_observed = 0.05)
 }
 \arguments{
 \item{truth}{A data.frame with a single row and, at minimum, columns unit
 and value}
 
-\item{expand}{The number of percent bins to expand around the observed truth.}
+\item{percent_expand}{The number of percent bins to expand around the 
+observed truth. If \code{expand_by_percent = TRUE} then this value is 
+ignored.}
+
+\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating
+which challenge the submission is for.}
+
+\item{expand_by_percent}{A logical value indicating whether to expand truth
+around percent or rate targets by a percentage of the observed value.}
+
+\item{percent_observed}{A scalar numeric between 0 and 1, indicating the 
+one-sided percentage of the observed percent or rate target that will be 
+included. If \code{expand_by_percent = FALSE} then this value is ignored.}
 }
 \value{
 A data.frame with the same columns as `truth` but additional rows

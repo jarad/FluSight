@@ -4,13 +4,17 @@
 \alias{verify_entry}
 \title{Verify entry stored as an R data.frame}
 \usage{
-verify_entry(entry, challenge = "ilinet")
+verify_entry(entry, challenge = "ilinet", check_week = T)
 }
 \arguments{
 \item{entry}{A data.frame}
 
 \item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
 challenge the submission is for}
+
+\item{check_week}{A logical value (default `TRUE`) indicating whether to check
+for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
+scoring, can be `FALSE` if evaluating entry prior to writing to disk.}
 }
 \value{
 Invisibly returns \code{TRUE} if successful
