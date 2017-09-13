@@ -102,6 +102,9 @@ valid_hosp_expand_1617 <- read.csv("inst/extdata/valid_hosp_expand_1617.csv",
                                                   bin_start_incl[!is.na(bin_start_incl)])
                                                   , 1), nsmall = 1))))
 
+past_baselines <- read.csv("inst/extdata/wILI_Baseline.csv",
+                           stringsAsFactors = F)
+
 
 devtools::use_data(full_entry, overwrite=TRUE)
 devtools::use_data(minimal_entry, overwrite=TRUE)
@@ -119,3 +122,4 @@ devtools::use_data(state_truth_1617, overwrite = TRUE)
 devtools::use_data(hosp_truth_1617, overwrite = TRUE)
 devtools::use_data(valid_state_expand_1617, overwrite = TRUE)
 devtools::use_data(valid_hosp_expand_1617, overwrite = TRUE)
+devtools::use_data(past_baselines, overwrite = TRUE)
