@@ -49,7 +49,8 @@ generate_point_forecasts <- function(entry, method =
 #' The point forecast is taken to be either the expected value, median, 
 #' or mode of the probabilistic forecasts.
 #'
-#' @param d A data.frame with columns `bin_start_incl` and `value`
+#' @param d A data.frame with columns `location`, `target`, bin_start_incl`,
+#'   and `value`
 #' @param method The method to be used to generate the point forecasts. 
 #'   \code{"Median"} (the default) uses the median value, \code{"Expected
 #'   Value"} generates the expected value from the provided probabilities,and
@@ -67,8 +68,10 @@ generate_point_forecast <- function(d, method =
   
   # Find max MMWR week in submitted entry
   maxMMWR <- d %>%
-    dplyr::filter(target == "Season peak week") %>%
-    dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
+    dplyr::filter(target %in% c("Season peak week", "Season onset")) %>%
+    dplyr::mutate(bin_start_incl = 
+                    suppressWarnings(as.numeric(bin_start_incl))) %>%
+    stats::na.omit() %>%
     dplyr::pull(bin_start_incl) %>%
     max()
   

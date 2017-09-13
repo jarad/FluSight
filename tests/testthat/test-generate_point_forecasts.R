@@ -8,6 +8,7 @@ test_that("generate_point_forecast throws error with invalid method", {
 
 test_that("generate_point_forecast works", {
 	
+  set.seed(123)
   # Random onset data
   weeks <- full_entry %>%
 	            filter(location == "US National", target == "Season onset",
@@ -39,8 +40,7 @@ test_that("generate_point_forecast works", {
                              bin_start_incl[min(which(cumsum >= 0.5))]) %>%
                     mutate(bin_start_incl = ifelse(bin_start_incl <= 52, 
                                                    bin_start_incl, bin_start_incl - 52)) %>%
-                    select(bin_start_incl) %>%
-                    first()
+                    pull(bin_start_incl) 
  
 
   # Random percent data
@@ -60,8 +60,7 @@ test_that("generate_point_forecast works", {
                   mutate(cumsum = cumsum(value)) %>%
                   filter(bin_start_incl == 
                            bin_start_incl[min(which(cumsum >= 0.5))]) %>%
-                  select(bin_start_incl) %>%
-                  first()
+                  pull(bin_start_incl) 
 
   
   # Full test data

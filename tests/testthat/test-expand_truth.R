@@ -31,7 +31,28 @@ test_that("expand_percent works", {
   expect_equivalent(tmp_percent, tmp_valid)
 })
 
-test_that("expand_truth works", {
+test_that("expand_truth works for ilinet", {
+  skip_on_cran()
+  
+  expect_equivalent(expand_truth(truth_1516), valid_exp_truth)
+})
+
+test_that("expand_truth works for state ili", {
+  skip_on_cran()
+  
+  expect_equivalent(expand_truth(state_truth_1617, challenge = "state_ili"), 
+                    valid_state_expand_1617)
+})
+
+test_that("expand_truth works for hospitalizations", {
+  skip_on_cran()
+  
+  expect_equivalent(expand_truth(hosp_truth_1617, challenge = "hospital",
+                                 expand_by_percent = T, percent_observed = 0.05), 
+                    valid_hosp_expand_1617)
+})
+
+test_that("expand_truth works for ilinet", {
   skip_on_cran()
   
   expect_equivalent(expand_truth(truth_1516), valid_exp_truth)
