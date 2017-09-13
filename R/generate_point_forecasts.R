@@ -62,6 +62,11 @@ generate_point_forecasts <- function(entry, method =
 #' @keywords internal
 generate_point_forecast <- function(d, method = 
                                      c("Median", "Expected Value", "Mode")) {
+  
+  if (packageVersion("dplyr") < "0.7.0") {
+    stop("dplyr >= 0.7.0 needed for this function.", call. = FALSE)
+  }
+  
   method <- match.arg(method)
   
   names(d) <- tolower(names(d))

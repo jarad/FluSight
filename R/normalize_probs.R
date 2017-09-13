@@ -10,6 +10,8 @@
 #'        combinations with probabilities summing to < 0.9 or > 1.1 are not
 #'        normalized. Should be \code{TRUE} and run in combination with 
 #'        \code{\link{remove_invalid}} if run on an entry prior to scoring. 
+#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating
+#' which challenge the submission is for (default \code{"ilinet"}).
 #' 
 #' @return An entry data.frame with normalized probabilities
 #' @import dplyr
@@ -18,9 +20,15 @@
 #' @examples
 #' norm_entry <- normalize_probs(full_entry)
 
-normalize_probs <- function(entry, ignore_invalid = FALSE) {
+normalize_probs <- function(entry, ignore_invalid = FALSE,
+                            challenge = "ilinet") {
   
   names(entry) <- tolower(names(entry))
+  
+  # Rename columns if challenge == "hospital"
+  if (challenge == "hospital") {
+    entry <- rename(entry, location = age_grp)
+  }
   
   if (ignore_invalid == FALSE) {
     # Verify entry first to find implausible values
@@ -42,8 +50,10 @@ normalize_probs <- function(entry, ignore_invalid = FALSE) {
   } 
   
   # Return entry if no rows need to be normalized
-  if (nrow(to_normal) == 0) return(entry)
-  else {
+  if (nrow(to_normal) == 0) {
+    if (challenge == "hospital") entry <- rename(entry, age_grp = location)
+    return(entry)
+  } else {
     # Loop through groups identified and normalize probabilities
     for(i in 1:nrow(to_normal)) {
       entry$value[entry$location == to_normal$location[i] & 
@@ -57,7 +67,7 @@ normalize_probs <- function(entry, ignore_invalid = FALSE) {
                           entry$type == "Bin"])
       
     }
-  
+    if (challenge == "hospital") entry <- rename(entry, age_grp = location)
     return(entry) 
   }
 }

@@ -35,7 +35,7 @@ remove_invalid <- function(entry, challenge = "ilinet") {
     select(-total)
   
   # Rename back to hospitalization format
-  if (challenge == "hospital") entry <- rename(entry, age_grp, location)
+  if (challenge == "hospital") entry <- rename(entry, age_grp = location)
   
   return(entry)
 
