@@ -212,3 +212,15 @@
 #'   \item{value}{numeric vector with probabilities or point forecasts}
 #' }
 "full_entry_state"
+
+#' Past ILINet baselines for all locations
+#'
+#' A data.frame containing a past ILINet baselines
+#'
+#' @format A data frame with 110 rows and 3 variables:
+#' \describe{
+#'   \item{location}{character vector of location}
+#'   \item{year}{numeric vector with the start year of the flu season}
+#'   \item{value}{numeric vector with the ILINet baseline value}
+#' }
+"past_baselines"

@@ -64,7 +64,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
   
   # Date first forecasts - varies depending on forecast year and challenge
   if (challenge %in% c("ilinet", "state_ili")) {
-    if (year == 2014) {
+    if (year <= 2014) {
       start_wk <- 41    #First week of ILINet data used for forecasts
       end_wk <- 19      #Last week of ILINet data used for forecasts
     }

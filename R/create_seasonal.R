@@ -61,39 +61,12 @@ create_onset <- function(weekILI, region, year) {
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
   
-  # Create baselines 
-  if (year == 2014){
-    baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
-                                       "HHS Region 3", "HHS Region 4", "HHS Region 5",
-                                       "HHS Region 6", "HHS Region 7", "HHS Region 8",
-                                       "HHS Region 9", "HHS Region 10"),
-                            value = c(2.0, 1.2, 2.3, 2.0, 1.9, 1.7, 3.3, 1.7,
-                                      1.3, 2.7, 1.1))
-  }
-  
-  if (year == 2015){
-    baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2", 
-                                       "HHS Region 3", "HHS Region 4", "HHS Region 5",
-                                       "HHS Region 6", "HHS Region 7", "HHS Region 8",
-                                       "HHS Region 9", "HHS Region 10"),
-                            value = c(2.1, 1.3, 2.3, 1.8, 1.6, 1.9, 3.6, 1.7,
-                                      1.4, 2.6, 1.1))
-  }
-  
-  if (year == 2016){
-    baselines <- data.frame(region = c("US National", "HHS Region 1", "HHS Region 2",
-                                       "HHS Region 3", "HHS Region 4", "HHS Region 5",
-                                       "HHS Region 6", "HHS Region 7", "HHS Region 8",
-                                       "HHS Region 9", "HHS Region 10"),
-                            value = c(2.2, 1.4, 3.0, 2.2, 1.7, 1.9, 4.1, 1.8,
-                                      1.4, 2.5, 1.1))
-  }
-  
   # Check to see if 3 weeks above baseline have passed
   j <- 0  # Counter for weeks above peak
   for (i in head(weekILI$week, n = 1):tail(weekILI$week, n = 1)) {
     if (weekILI$ILI[weekILI$week == i & weekILI$location == region] >=
-        baselines$value[baselines$region == region]) {
+        past_baselines$value[past_baselines$location == region & 
+                             past_baselines$year == year]) {
       j <- j + 1
     } else {
       j <- 0
