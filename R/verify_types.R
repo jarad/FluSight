@@ -22,11 +22,11 @@ verify_types <- function(entry, challenge = "ilinet") {
   
   # ILINet challenge
   if (challenge == "ilinet") {
-    valid_types <- unique(minimal_entry$type)
+    valid_types <- unique(FluSight::minimal_entry$type)
   } else if (challenge == "hospital") {
-    valid_types <- unique(full_entry_hosp$type)
+    valid_types <- unique(FluSight::full_entry_hosp$type)
   } else if (challenge == "state_ili") {
-    valid_types <- unique(full_entry_state$type)
+    valid_types <- unique(FluSight::full_entry_state$type)
   } 
   entry_types <- unique(entry$type)
   

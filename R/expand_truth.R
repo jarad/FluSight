@@ -38,13 +38,13 @@ expand_truth <- function(truth, week_expand=1, percent_expand=5, week53 = F,
   week_targets <- truth %>%
     filter(target %in% c("Season onset", "Season peak week")) %>%
     rowwise %>%
-    expand_week(., expand = week_expand, week53 = week53)
+    FluSight::expand_week(., expand = week_expand, week53 = week53)
 
   # Percentage or rate targets
   percent_targets <- truth %>%
     filter(!(target %in% c("Season onset", "Season peak week"))) %>%
     rowwise %>%
-    expand_percent(., challenge = challenge, 
+    FluSight::expand_percent(., challenge = challenge, 
                    percent_expand = percent_expand,
                    expand_by_percent = expand_by_percent,
                    percent_observed = percent_observed)

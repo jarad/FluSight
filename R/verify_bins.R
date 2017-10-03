@@ -19,11 +19,11 @@ verify_bins <- function(entry, challenge = "ilinet") {
   }
   
   if (challenge == "ilinet") {
-    valid <- minimal_entry
+    valid <- FluSight::minimal_entry
   } else if (challenge == "hospital") {
-    valid <- full_entry_hosp
+    valid <- FluSight::full_entry_hosp
   } else {
-    valid <- full_entry_state
+    valid <- FluSight::full_entry_state
   }
   
   names(entry) <- tolower(names(entry))

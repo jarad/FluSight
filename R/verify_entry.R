@@ -17,8 +17,8 @@
 #' file <- system.file("extdata", "valid-test.csv", package="FluSight")
 #' verify_entry_file(file) # TRUE
 verify_entry_file <- function(file, challenge = "ilinet", check_week = T) {
-	entry <- read_entry(file, challenge)
-  verify_entry(entry, challenge, check_week)
+	entry <- FluSight::read_entry(file, challenge)
+	FluSight::verify_entry(entry, challenge, check_week)
 }
 
 
@@ -46,21 +46,21 @@ verify_entry <- function(entry, challenge = "ilinet", check_week = T) {
   
   names(entry) <- tolower(names(entry))
 
-  verify_colnames(entry, challenge, check_week)
+  FluSight::verify_colnames(entry, challenge, check_week)
 
   # Verify column contents
   if (challenge %in% c("ilinet", "state_ili")) {
-    verify_locations(entry, challenge)
+    FluSight::verify_locations(entry, challenge)
   } else {
-    verify_agegrp(entry)
+    FluSight::verify_agegrp(entry)
   }
-  verify_targets(entry, challenge)
-  verify_types(entry, challenge)
-  verify_units(entry, challenge)
+  FluSight::verify_targets(entry, challenge)
+  FluSight::verify_types(entry, challenge)
+  FluSight::verify_units(entry, challenge)
 
-  verify_bins(entry, challenge)
-	verify_probabilities(entry, challenge)
-	verify_point(entry, challenge)
+  FluSight::verify_bins(entry, challenge)
+  FluSight::verify_probabilities(entry, challenge)
+  FluSight::verify_point(entry, challenge)
 
 	return(invisible(TRUE))
 }

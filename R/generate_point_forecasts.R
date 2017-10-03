@@ -30,9 +30,9 @@ generate_point_forecasts <- function(entry, method =
 
   # Generate point forecasts
   entry <- entry %>%
-      dplyr::filter(type == "Bin") %>%
-      dplyr::group_by(location,target) %>%
-      generate_point_forecast(., method)
+    dplyr::filter(type == "Bin") %>%
+    dplyr::group_by(location,target) %>%
+    FluSight::generate_point_forecast(., method)
   
   # Rename columns back
   if (challenge == "hospital") {

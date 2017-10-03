@@ -17,8 +17,8 @@ verify_locations <- function(entry, challenge = "ilinet") {
   entry_locations    <- unique(entry$location)
   
   if (challenge == "ilinet") {
-    required_locations <- unique(minimal_entry$location)
-    valid_locations    <- unique(full_entry$location)
+    required_locations <- unique(FluSight::minimal_entry$location)
+    valid_locations    <- unique(FluSight::full_entry$location)
     
     # Identify missing locations and throw error
     missing_locations <- setdiff(required_locations, entry_locations)
@@ -27,7 +27,7 @@ verify_locations <- function(entry, challenge = "ilinet") {
   }
   
   if (challenge == "state_ili") {
-    valid_locations <- unique(full_entry_state$location)
+    valid_locations <- unique(FluSight::full_entry_state$location)
   }
   
   # Determine extra locations and non-required missing locations

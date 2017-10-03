@@ -17,10 +17,10 @@ verify_ILI <- function(weekILI, challenge = "ilinet") {
   }
   
   # Verify column names
-  verify_ILI_colnames(weekILI)
+  FluSight::verify_ILI_colnames(weekILI)
   
   # Verify locations
-  verify_ILI_location(weekILI, challenge)
+  FluSight::verify_ILI_location(weekILI, challenge)
 
 }
 
@@ -68,9 +68,9 @@ verify_ILI_location <- function(weekILI, challenge = "ilinet") {
   sub_locations <- unique(weekILI$location)
   
   if (challenge == "ilinet") {
-    valid_locations <- unique(full_entry$location)
+    valid_locations <- unique(FluSight::full_entry$location)
   } else {
-    valid_locations <- unique(full_entry_state$location)
+    valid_locations <- unique(FluSight::full_entry_state$location)
   }
   
   missing_names <- setdiff(valid_locations, sub_locations)

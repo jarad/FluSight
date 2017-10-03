@@ -14,7 +14,7 @@ verify_agegrp <- function(entry) {
   
   entry_agegrp    <- unique(entry$age_grp)
   required_agegrp <- "Overall"
-  valid_agegrp    <- unique(full_entry_hosp$age_grp)
+  valid_agegrp    <- unique(FluSight::full_entry_hosp$age_grp)
 
   missing_agegrp <- setdiff(required_agegrp, entry_agegrp)
   extra_agegrp   <- setdiff(entry_agegrp, valid_agegrp)

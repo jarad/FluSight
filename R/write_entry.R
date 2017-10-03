@@ -20,9 +20,9 @@ write_entry <- function(entry, path, team_name, week=NULL, challenge = "ilinet")
   if (missing(path     )) stop("Need to specify `path`.")
   if (missing(team_name)) stop("Need to specify `team_name`.")
 
-  success <- verify_entry(entry, challenge = challenge, check_week = F)
+  success <- FluSight::verify_entry(entry, challenge = challenge, check_week = F)
 
-  filename <- construct_filename(team_name, week)
+  filename <- FluSight::construct_filename(team_name, week)
   file <- file.path(path, filename)
 
   utils::write.csv(entry, file = file, row.names=FALSE)
@@ -44,7 +44,7 @@ write_entry <- function(entry, path, team_name, week=NULL, challenge = "ilinet")
 #' @seealso \code{\link{write_entry}}
 #' @export
 write_valid_entry <- function(path) {
-  write_entry(valid_entry, path=path, team_name="teamDefault")
+  FluSight::write_entry(valid_entry, path=path, team_name="teamDefault")
 }
 
 

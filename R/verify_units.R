@@ -23,11 +23,11 @@ verify_units <- function(entry, challenge = "ilinet") {
   
   # ILINet challenge
   if (challenge == "ilinet") {
-    valid_units <- unique(minimal_entry$unit)
+    valid_units <- unique(FluSight::minimal_entry$unit)
   } else if (challenge == "hospital") {
-    valid_units <- unique(full_entry_hosp$unit)
+    valid_units <- unique(FluSight::full_entry_hosp$unit)
   } else if (challenge == "state_ili") {
-    valid_units <- unique(full_entry_state$unit)
+    valid_units <- unique(FluSight::full_entry_state$unit)
   } 
   entry_units <- unique(entry$unit)
   

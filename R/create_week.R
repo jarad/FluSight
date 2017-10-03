@@ -56,7 +56,7 @@ create_week <- function(weekILI, start_wk, end_wk,
   # If determine maximum bin value and reset if above that value
   if (challenge == "ilinet") {
     
-    max_per <- full_entry %>%
+    max_per <- FluSight::full_entry %>%
       dplyr::filter(target == "Season peak percentage", type == "Bin") %>%
       dplyr::group_by(location) %>%
       dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
@@ -65,7 +65,7 @@ create_week <- function(weekILI, start_wk, end_wk,
     
   } else if (challenge == "state_ili") {
     
-    max_per <- full_entry_state %>%
+    max_per <- FluSight::full_entry_state %>%
       dplyr::filter(target == "Season peak percentage", type == "Bin") %>%
       dplyr::group_by(location) %>%
       dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
@@ -74,7 +74,7 @@ create_week <- function(weekILI, start_wk, end_wk,
     
   } else {
     
-    max_per <- full_entry_hosp %>%
+    max_per <- FluSight::full_entry_hosp %>%
       dplyr::filter(target == "Season peak rate", type == "Bin") %>%
       dplyr::group_by(age_grp) %>%
       dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
@@ -92,7 +92,8 @@ create_week <- function(weekILI, start_wk, end_wk,
   week_target$forecast_week[week_target$forecast_week > maxMMWR] <-
     week_target$forecast_week[week_target$forecast_week > maxMMWR] - maxMMWR
 
-  week_target$bin_start_incl <- format(round(week_target$bin_start_incl, 1), trim = T, nsmall = 1)
+  week_target$bin_start_incl <- format(round(week_target$bin_start_incl, 1),
+                                       trim = T, nsmall = 1)
   
   # Rename column for hospitalization targets
   if (challenge == "hospital") week_target <- rename(week_target, age_grp = location)

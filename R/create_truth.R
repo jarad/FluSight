@@ -59,8 +59,8 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
   
   # Verify user-submitted ILI data
   if (!is.null(weekILI) && challenge %in% c("ilinet", "state_ili")) {
-    verify_ILI(weekILI, challenge) 
-  } else verify_hosp(weekILI)
+    FluSight::verify_ILI(weekILI, challenge) 
+  } else FluSight::verify_hosp(weekILI)
   
   # Date first forecasts - varies depending on forecast year and challenge
   if (challenge %in% c("ilinet", "state_ili")) {
@@ -160,7 +160,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
     # Calculate targets if reached ----------------------------------
     for (this_location in levels(as.factor(weekILI$location))) {
       truth <- filter(weekILI, location == this_location) %>%
-                create_seasonal(this_location, year, challenge) %>%
+                FluSight::create_seasonal(this_location, year, challenge) %>%
                 bind_rows(truth, .)
     }
     
@@ -169,13 +169,13 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
     # Calculate targets if reached ----------------------------------
     for (this_age in levels(as.factor(weekILI$age_grp))) {
       truth <- filter(weekILI, age_grp == this_age) %>%
-        create_seasonal(this_age, year, challenge) %>%
+        FluSight::create_seasonal(this_age, year, challenge) %>%
         bind_rows(truth, .)
     }
     
   }
   truth <- bind_rows(truth,
-                 create_week(weekILI, start_wk, end_wk, challenge)) #%>%
+                 FluSight::create_week(weekILI, start_wk, end_wk, challenge)) #%>%
 
   
   return(truth)

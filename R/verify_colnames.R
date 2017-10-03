@@ -22,9 +22,9 @@ verify_colnames <- function(entry, challenge = "ilinet", check_week = T) {
   
   entry_names <- colnames(entry)
   if (challenge %in% c("ilinet", "state_ili")) {
-    valid_names <- colnames(full_entry_score)
+    valid_names <- colnames(FluSight::full_entry_score)
   } else {
-    valid_names <- colnames(full_entry_hosp_score)
+    valid_names <- colnames(FluSight::full_entry_hosp_score)
   }
 
   missing_names <- setdiff(valid_names, entry_names)

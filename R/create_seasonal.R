@@ -30,9 +30,9 @@ create_seasonal <- function(weekILI, location, year, challenge = "ilinet") {
   
   # Create truth for seasonal targets
   if (challenge == "ilinet") {
-    season_truth <- bind_rows(create_onset(weekILI, location, year),
-                              create_peak(weekILI, location, challenge))
-  } else season_truth <- create_peak(weekILI, location, challenge)
+    season_truth <- bind_rows(FluSight::create_onset(weekILI, location, year),
+                              FluSight::create_peak(weekILI, location, challenge))
+  } else season_truth <- FluSight::create_peak(weekILI, location, challenge)
   
   return(season_truth)
 }  
@@ -65,8 +65,9 @@ create_onset <- function(weekILI, region, year) {
   j <- 0  # Counter for weeks above peak
   for (i in head(weekILI$week, n = 1):tail(weekILI$week, n = 1)) {
     if (weekILI$ILI[weekILI$week == i & weekILI$location == region] >=
-        past_baselines$value[past_baselines$location == region & 
-                             past_baselines$year == year]) {
+        FluSight::past_baselines$value[
+          FluSight::past_baselines$location == region & 
+          FluSight::past_baselines$year == year]) {
       j <- j + 1
     } else {
       j <- 0
@@ -140,19 +141,22 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
   # If peak percentage > max bin, set to max bin size
   if (challenge == "ilinet") {
     max_pkper <- max(as.numeric(
-      full_entry$bin_start_incl[full_entry$target == "Season peak percentage" &
-                                  full_entry$type == "Bin" &
-                                  full_entry$location == location]))
+      FluSight::full_entry$bin_start_incl[
+        FluSight::full_entry$target == "Season peak percentage" &
+          FluSight::full_entry$type == "Bin" &
+          FluSight::full_entry$location == location]))
   } else if (challenge == "state_ili") {
     max_pkper <- max(as.numeric(
-      full_entry_state$bin_start_incl[full_entry_state$target == "Season peak percentage" &
-                                        full_entry_state$type == "Bin" &
-                                        full_entry_state$location == location]))
+      FluSight::full_entry_state$bin_start_incl[
+        FluSight::full_entry_state$target == "Season peak percentage" &
+          FluSight::full_entry_state$type == "Bin" &
+          FluSight::full_entry_state$location == location]))
   } else {
     max_pkper <- max(as.numeric(
-      full_entry_hosp$bin_start_incl[full_entry_hosp$target == "Season peak rate" &
-                                       full_entry_hosp$type == "Bin" &
-                                       full_entry_hosp$age_grp == location]))
+      FluSight::full_entry_hosp$bin_start_incl[
+        FluSight::full_entry_hosp$target == "Season peak rate" &
+          FluSight::full_entry_hosp$type == "Bin" &
+          FluSight::full_entry_hosp$age_grp == location]))
   }
  
   if (pkper > max_pkper) pkper <- max_pkper

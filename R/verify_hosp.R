@@ -14,7 +14,7 @@ verify_hosp <- function(observe_hosp) {
  
   # Verify column names
   sub_names <- colnames(observe_hosp)
-  valid_names <- colnames(valid_observe_hosp)
+  valid_names <- colnames(FluSight::valid_observe_hosp)
   
   missing_names <- setdiff(valid_names, sub_names)
   extra_names   <- setdiff(sub_names, valid_names)
@@ -28,7 +28,7 @@ verify_hosp <- function(observe_hosp) {
   
   # Verify age groups
   sub_agegrp <- unique(observe_hosp$age_grp)
-  valid_agegrp <- unique(valid_observe_hosp$age_grp)
+  valid_agegrp <- unique(FluSight::valid_observe_hosp$age_grp)
   
   missing_names <- setdiff(valid_agegrp, sub_agegrp)
   extra_names   <- setdiff(sub_agegrp, valid_agegrp)

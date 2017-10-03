@@ -22,11 +22,11 @@ verify_targets <- function(entry, challenge = "ilinet") {
   
   # ILINet challenge
   if (challenge == "ilinet") {
-    valid_targets <- unique(minimal_entry$target)
+    valid_targets <- unique(FluSight::minimal_entry$target)
   } else if (challenge == "hospital") {
-    valid_targets <- unique(full_entry_hosp$target)
+    valid_targets <- unique(FluSight::full_entry_hosp$target)
   } else if (challenge == "state_ili") {
-    valid_targets <- unique(full_entry_state$target)
+    valid_targets <- unique(FluSight::full_entry_state$target)
   } 
   
   entry_targets <- unique(entry$target)

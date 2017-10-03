@@ -43,7 +43,7 @@ read_entry = function(file, challenge = "ilinet") {
      entry <- dplyr::mutate(entry, forecast_week  = forecast_week)
 
 
-  arrange_entry(entry = entry, challenge = challenge)
+  FluSight::arrange_entry(entry = entry, challenge = challenge)
 }
 
 #' Arrange an entry for consistency
@@ -61,7 +61,7 @@ arrange_entry <- function(entry, challenge = "ilinet") {
     stop("Challenge must be one of ilinet, hospital, or state_ili")
   }
   
-  verify_colnames(entry, challenge)
+  FluSight::verify_colnames(entry, challenge)
 
   # Arrange entry by type, location, target, bin
   if (challenge %in% c("ilinet", "state_ili")) {
