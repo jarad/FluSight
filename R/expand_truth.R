@@ -184,7 +184,7 @@ expand_percent <- function(truth, percent_expand, challenge = "ilinet",
   # Delete any edge cases
   if (challenge == "hospital") {
     expand_percent <- expand_percent %>%
-      filter(ifelse(age_grp == "65 + yr",
+      filter(ifelse(age_grp == "65+ yr",
                     bin_start_incl >= 0 & bin_start_incl <= 60,
                     bin_start_incl >= 0 & bin_start_incl <= 13)) %>%
       mutate(bin_start_incl = format(round(bin_start_incl, 1),
