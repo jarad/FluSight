@@ -82,7 +82,7 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
     }
   } else {
     if (year == 2016) {
-      start_wk <- 48
+      start_wk <- 45
       end_wk <- 17
     }
     if (year == 2017) {
