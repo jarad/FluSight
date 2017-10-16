@@ -31,7 +31,7 @@ generate_point_forecasts <- function(entry, method =
   # Generate point forecasts
   entry <- entry %>%
     dplyr::filter(type == "Bin") %>%
-    dplyr::group_by(location,target) %>%
+    dplyr::group_by(location, target, unit) %>%
     FluSight::generate_point_forecast(., method)
   
   # Rename columns back
@@ -113,14 +113,14 @@ generate_point_forecast <- function(d, method =
       dplyr::mutate(cumulative = cumsum(value),
                     type = "Point") %>%
       dplyr::filter(row_number() == min(which(cumulative >= 0.5))) %>%
-      dplyr::select(location, target, value = bin_start_incl, type) 
+      dplyr::select(location, target, unit, value = bin_start_incl, type) 
   }
   
   # Mode method
   if (method == "Mode") {
     temp <- d %>%
       dplyr::filter(value == max(value)) %>%
-      dplyr::select(location, target, value = bin_start_incl, type) %>%
+      dplyr::select(location, target, unit, value = bin_start_incl, type) %>%
       dplyr::mutate(type = "Point")
   }
   
