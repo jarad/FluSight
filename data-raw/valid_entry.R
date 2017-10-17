@@ -1,6 +1,7 @@
 library(magrittr)
 
-full_entry_score <- FluSight::read_entry("inst/extdata/EW44_ValidTest_2016-11-07.csv") # no idea why this isn't working
+full_entry_score <- FluSight::read_entry("inst/extdata/EW44_ValidTest_2016-11-07.csv") %>%
+  normalize_probs# no idea why this isn't working
 
 full_entry <- full_entry_score %>%
   dplyr::select(-forecast_week)
@@ -42,7 +43,8 @@ full_entry_hosp_score <- read.csv("inst/extdata/EW48_ValidHospTest_2017-12-04.cs
                                           format(round(as.numeric(
                                             bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
                                             , 1), nsmall = 1))),
-         forecast_week = 48)
+         forecast_week = 48) %>%
+  normalize_probs(challenge = "hospital")
 
 full_entry_hosp <- full_entry_hosp_score %>%
   dplyr::select(-forecast_week)
@@ -62,7 +64,8 @@ full_entry_state_score <- read.csv("inst/extdata/EW44_ValidStateTest_2017-11-07.
                                                  format(round(as.numeric(
                                                    bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
                                                    , 1), nsmall = 1))),
-                forecast_week = 44)
+                forecast_week = 44) %>%
+  normalize_probs(challenge = "state_ili")
 
 full_entry_state <- full_entry_state_score %>%
   dplyr::select(-forecast_week)

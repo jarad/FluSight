@@ -14,7 +14,6 @@
 generate_point_forecasts <- function(entry, method = 
                                        c("Median", "Expected Value", "Mode"),
                                      challenge = "ilinet") {
-  
   method <- match.arg(method)
 
   names(entry) <- tolower(names(entry))
@@ -81,10 +80,6 @@ generate_point_forecast <- function(d, method =
     max()
   
   d <- d %>%
-#    filter(bin_start_incl != "none") %>%
-          # Season onset has `none` as a possible bin_start_incl thus we
-          # exclude it from the point forecast by turning bin_start_incl
-          # into numeric 
     dplyr::mutate(bin_start_incl = 
                           suppressWarnings(as.numeric(bin_start_incl)),
                   bin_start_incl = ifelse(!(is.na(bin_start_incl)) & 

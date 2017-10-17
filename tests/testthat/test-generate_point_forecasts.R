@@ -70,24 +70,27 @@ test_that("generate_point_forecast works", {
   
   exp_truth <- data.frame(location = c("HHS Region 1", "US National"),
                         target = c("1 wk ahead", "Season onset"),
+                        unit = c("percent", "week"),
                         value = c(percent_exp, week_exp),
                         type = "Point",
                         stringsAsFactors = FALSE) 
   med_truth <- data.frame(location = c("HHS Region 1", "US National"),
                           target = c("1 wk ahead", "Season onset"),
+                          unit = c("percent", "week"),
                           value = c(percent_med, week_med),
                           type = "Point",
                           stringsAsFactors = FALSE)
   mode_truth <- data.frame(location = c("HHS Region 1", "US National"),
                            target = c("1 wk ahead", "Season onset"),
+                           unit = c("percent", "week"),
                            value = c(percent_mode, week_mode),
-                          type = "Point",
-                          stringsAsFactors = FALSE)
+                           type = "Point",
+                           stringsAsFactors = FALSE)
  
   # Test function
-  expect_equivalent(exp_truth, generate_point_forecast(d, method = "Expect"))
-  expect_equivalent(med_truth, generate_point_forecast(d, method = "Median"))
-  expect_equivalent(mode_truth, generate_point_forecast(d, method = "Mode"))
+  expect_equivalent(exp_truth, generate_point_forecasts(d, method = "Expected Value"))
+  expect_equivalent(med_truth, generate_point_forecasts(d, method = "Median"))
+  expect_equivalent(mode_truth, generate_point_forecasts(d, method = "Mode"))
   
 })
 
@@ -96,14 +99,14 @@ test_that("median and mode recognize 'none' for onset if applicable", {
   weeks <- full_entry %>%
     filter(location %in% c("US National", "HHS Region 1"), 
                            target == "Season onset", type == "Bin") %>%
-    group_by(location, target) %>%
+    group_by(location, target, unit) %>%
     mutate(value = ifelse(bin_start_incl == "none",
                           3, value),
            value = value/sum(value))
   
   week_mode <- weeks %>%
                 filter(bin_start_incl == bin_start_incl[value == max(value)]) %>%
-                select(location, target, value = bin_start_incl, type) %>%
+                select(location, target, unit, value = bin_start_incl, type) %>%
                 mutate(value = as.numeric(ifelse(value == "none",
                                       NA, value)),
                        type = "Point")
@@ -120,12 +123,12 @@ test_that("median and mode recognize 'none' for onset if applicable", {
                                    "none", bin_start_incl)) %>%
     filter(bin_start_incl == 
              bin_start_incl[min(which(cumsum >= 0.5))]) %>%
-    select(location, target, value = bin_start_incl, type) %>%
+    select(location, target, unit, value = bin_start_incl, type) %>%
     mutate(value = as.numeric(ifelse(value == "none",
                                      NA, value)))
 
-  expect_equivalent(week_mode, generate_point_forecast(weeks, method = "Mode"))
-  expect_equivalent(week_med, generate_point_forecast(weeks, method = "Median"))
+  expect_equivalent(week_mode, generate_point_forecasts(weeks, method = "Mode"))
+  expect_equivalent(week_med, generate_point_forecasts(weeks, method = "Median"))
   
 })
 

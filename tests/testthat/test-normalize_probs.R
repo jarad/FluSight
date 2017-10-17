@@ -63,3 +63,4 @@ test_that("normalize_probs normalizes close prob and ignores invalid", {
                             0, value)),
     normalize_probs(tmp_full, ignore_invalid = TRUE))
 })
+
