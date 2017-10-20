@@ -8,9 +8,9 @@
 #' @keywords grid plots
 #' @export
 #' @examples
-#' plot_forecast(dat=full_entry, ilimx=10, years=2016)
+#' visualize_forecast(dat=full_entry, ilimx=10, years=2016)
 
-plot_forecast <- function(dat, ilimx, years=NA, pdfloc=NULL){
+visualize_forecast <- function(dat, ilimx, years=NA, pdfloc=NULL){
   require(ggplot2)
   require(gridExtra)
   require(cdcfluview)
