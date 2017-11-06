@@ -6,15 +6,15 @@
 #' @keywords Peak Week Prediction Plot
 #' @export
 #' @examples
-#' plotPeakWeek()
 
 
 plot_peakweek <- function(dat, region){
-  require(ggplot2)
-  
-  d <- subset(dat, location==region & target=="Season peak week" & type=="Bin")
-  d$Week <- c(1:33)[as.factor(d$bin_start_incl)]
-  
-  ggplot(data=d, aes(x=Week, y=value)) + 
-    geom_point() + ylim(0, 1) + labs(title = "Season Peak Week", x="Week", y="Prob")
+    d <- subset(dat, location == region & target == "Season peak week" & 
+                    type == "Bin")
+    d$Week <- c(1:33)[as.factor(d$bin_start_incl)]
+    d$bin_start_incl <- factor(substr(d$bin_start_incl, 1, nchar(d$bin_start_incl) - 2),
+                               levels=paste(c(40:52, 1:20), sep = ""))
+    ggplot(data = d, aes(x = bin_start_incl, y = value)) + geom_point() + 
+        ylim(0, 1) + 
+        labs(title = "Season Peak Week", x = "Week", y = "Prob")
 }
