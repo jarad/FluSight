@@ -22,7 +22,7 @@ write_entry <- function(entry, path, team_name, week=NULL, challenge = "ilinet")
 
   success <- FluSight::verify_entry(entry, challenge = challenge, check_week = F)
 
-  filename <- FluSight::construct_filename(team_name, week)
+  filename <- FluSight:::construct_filename(team_name, week)
   file <- file.path(path, filename)
 
   utils::write.csv(entry, file = file, row.names=FALSE)
