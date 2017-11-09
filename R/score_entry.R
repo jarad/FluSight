@@ -32,7 +32,7 @@ score_entry <- function(entry, truth, challenge = "ilinet") {
 
   # Check for missing forecast week
   if (!("forecast_week" %in% names(entry)))
-    stop("Forecast week needed in entry - 
+    stop("Column forecast_week needed in entry - 
          use read_entry() with your submission CSV")
  
   # Rename hospitalization entry for consistency with later code

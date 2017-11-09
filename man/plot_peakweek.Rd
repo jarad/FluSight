@@ -14,9 +14,6 @@ plot_peakweek(dat, region)
 \description{
 This function allows you to plot Peak Week Predictions
 }
-\examples{
-plotPeakWeek()
-}
 \keyword{Peak}
 \keyword{Plot}
 \keyword{Prediction}

@@ -4,17 +4,13 @@
 \alias{verify_entry_file}
 \title{Verify an entry file}
 \usage{
-verify_entry_file(file, challenge = "ilinet", check_week = T)
+verify_entry_file(file, challenge = "ilinet")
 }
 \arguments{
 \item{file}{A csv entry file}
 
 \item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
 challenge the submission is for}
-
-\item{check_week}{A logical value (default `TRUE`) indicating whether to check
-for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
-scoring, can be `FALSE` if evaluating entry prior to writing to disk.}
 }
 \value{
 Invisibly returns \code{TRUE} if successful

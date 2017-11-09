@@ -7,18 +7,15 @@
 #' @param file A csv entry file
 #' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
 #'   challenge the submission is for
-#' @param check_week A logical value (default `TRUE`) indicating whether to check
-#'   for the column forecast_week. Should be `TRUE` if evaluating entry prior to 
-#'   scoring, can be `FALSE` if evaluating entry prior to writing to disk.
 #' @return Invisibly returns \code{TRUE} if successful
 #' @export
 #' @seealso \code{\link{verify_entry}}
 #' @examples
 #' file <- system.file("extdata", "valid-test.csv", package="FluSight")
 #' verify_entry_file(file) # TRUE
-verify_entry_file <- function(file, challenge = "ilinet", check_week = T) {
+verify_entry_file <- function(file, challenge = "ilinet") {
 	entry <- FluSight::read_entry(file, challenge)
-	FluSight::verify_entry(entry, challenge, check_week)
+	FluSight::verify_entry(entry, challenge, check_week = F)
 }
 
 
