@@ -61,7 +61,7 @@ arrange_entry <- function(entry, challenge = "ilinet") {
     stop("Challenge must be one of ilinet, hospital, or state_ili")
   }
   
-  FluSight::verify_colnames(entry, challenge)
+  FluSight::verify_colnames(entry, challenge, check_week = F)
 
   # Arrange entry by type, location, target, bin
   if (challenge %in% c("ilinet", "state_ili")) {
