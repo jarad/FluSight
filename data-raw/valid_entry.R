@@ -41,10 +41,10 @@ full_entry_hosp_score <- read.csv("inst/extdata/EW48_ValidHospTest_2017-12-04.cs
                 bin_end_notincl = trimws(replace(bin_end_notincl,
                                           !is.na(bin_end_notincl) & bin_end_notincl != "none",
                                           format(round(as.numeric(
-                                            bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
-                                            , 1), nsmall = 1))),
-         forecast_week = 48) %>%
-  normalize_probs(challenge = "hospital")
+                                            bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"]), 1),
+                                            nsmall = 1))),
+                forecast_week = 48) %>%
+  FluSight::normalize_probs()
 
 full_entry_hosp <- full_entry_hosp_score %>%
   dplyr::select(-forecast_week)
@@ -65,7 +65,7 @@ full_entry_state_score <- read.csv("inst/extdata/EW44_ValidStateTest_2017-11-07.
                                                    bin_end_notincl[!is.na(bin_end_notincl) & bin_end_notincl != "none"])
                                                    , 1), nsmall = 1))),
                 forecast_week = 44) %>%
-  normalize_probs(challenge = "state_ili")
+  FluSight::normalize_probs()
 
 full_entry_state <- full_entry_state_score %>%
   dplyr::select(-forecast_week)

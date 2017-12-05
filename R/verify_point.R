@@ -1,8 +1,6 @@
 #' Verify validity of point predictions
 #'
 #' @param entry An entry data.frame
-#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
-#'   challenge the submission is for
 #' @import dplyr
 #' @return Invisibly returns \code{TRUE} or a descriptive warning/error 
 #' message
@@ -11,13 +9,9 @@
 #' @seealso \code{\link{verify_entry}}
 #' @examples 
 #' verify_point(minimal_entry)
-#' verify_point(full_entry_hosp, challenge = "hosptial")
-verify_point <- function(entry, challenge = "ilinet") {
+#' verify_point(full_entry_hosp)
+verify_point <- function(entry) {
 
-  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
-    stop("challenge must be one of ilinet, hospital, or state_ili")
-  }
-  
   names(entry) <- tolower(names(entry))
   
   point <- entry %>%
@@ -25,11 +19,6 @@ verify_point <- function(entry, challenge = "ilinet") {
     mutate(miss     = is.na(value),
            negative = (!is.na(value) & value < 0))
   
-  # Rename age_grp in hospital to integrate with later code
-  if (challenge == "hospital") {
-    point <- rename(point, location = age_grp)
-  }
-
   # Report warning for missing point predictions
   if (any(point$miss)) {
     tmp <- point %>%

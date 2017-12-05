@@ -1,2949 +1,2949 @@
-"target","age_grp","forecast_week","bin_start_incl"
-"Season peak week","0-4 yr",NA,"6.0"
-"Season peak week","0-4 yr",NA,"7.0"
-"Season peak week","0-4 yr",NA,"8.0"
-"Season peak week","18-49 yr",NA,"7.0"
-"Season peak week","18-49 yr",NA,"8.0"
-"Season peak week","18-49 yr",NA,"9.0"
-"Season peak week","5-17 yr",NA,"6.0"
-"Season peak week","5-17 yr",NA,"7.0"
-"Season peak week","5-17 yr",NA,"8.0"
-"Season peak week","50-64 yr",NA,"7.0"
-"Season peak week","50-64 yr",NA,"8.0"
-"Season peak week","50-64 yr",NA,"9.0"
-"Season peak week","65+ yr",NA,"7.0"
-"Season peak week","65+ yr",NA,"8.0"
-"Season peak week","65+ yr",NA,"9.0"
-"Season peak week","Overall",NA,"7.0"
-"Season peak week","Overall",NA,"8.0"
-"Season peak week","Overall",NA,"9.0"
-"Season peak rate","0-4 yr",NA,"4.0"
-"Season peak rate","0-4 yr",NA,"4.1"
-"Season peak rate","0-4 yr",NA,"4.2"
-"Season peak rate","0-4 yr",NA,"4.3"
-"Season peak rate","0-4 yr",NA,"4.4"
-"Season peak rate","18-49 yr",NA,"1.6"
-"Season peak rate","18-49 yr",NA,"1.7"
-"Season peak rate","18-49 yr",NA,"1.8"
-"Season peak rate","5-17 yr",NA,"1.7"
-"Season peak rate","5-17 yr",NA,"1.8"
-"Season peak rate","5-17 yr",NA,"1.9"
-"Season peak rate","50-64 yr",NA,"5.2"
-"Season peak rate","50-64 yr",NA,"5.3"
-"Season peak rate","50-64 yr",NA,"5.4"
-"Season peak rate","50-64 yr",NA,"5.5"
-"Season peak rate","50-64 yr",NA,"5.6"
-"Season peak rate","50-64 yr",NA,"5.7"
-"Season peak rate","50-64 yr",NA,"5.8"
-"Season peak rate","65+ yr",NA,"23.6"
-"Season peak rate","65+ yr",NA,"23.7"
-"Season peak rate","65+ yr",NA,"23.8"
-"Season peak rate","65+ yr",NA,"23.9"
-"Season peak rate","65+ yr",NA,"24.0"
-"Season peak rate","65+ yr",NA,"24.1"
-"Season peak rate","65+ yr",NA,"24.2"
-"Season peak rate","65+ yr",NA,"24.3"
-"Season peak rate","65+ yr",NA,"24.4"
-"Season peak rate","65+ yr",NA,"24.5"
-"Season peak rate","65+ yr",NA,"24.6"
-"Season peak rate","65+ yr",NA,"24.7"
-"Season peak rate","65+ yr",NA,"24.8"
-"Season peak rate","65+ yr",NA,"24.9"
-"Season peak rate","65+ yr",NA,"25.0"
-"Season peak rate","65+ yr",NA,"25.1"
-"Season peak rate","65+ yr",NA,"25.2"
-"Season peak rate","65+ yr",NA,"25.3"
-"Season peak rate","65+ yr",NA,"25.4"
-"Season peak rate","65+ yr",NA,"25.5"
-"Season peak rate","65+ yr",NA,"25.6"
-"Season peak rate","65+ yr",NA,"25.7"
-"Season peak rate","65+ yr",NA,"25.8"
-"Season peak rate","65+ yr",NA,"25.9"
-"Season peak rate","65+ yr",NA,"26.0"
-"Season peak rate","Overall",NA,"5.3"
-"Season peak rate","Overall",NA,"5.4"
-"Season peak rate","Overall",NA,"5.5"
-"Season peak rate","Overall",NA,"5.6"
-"Season peak rate","Overall",NA,"5.7"
-"Season peak rate","Overall",NA,"5.8"
-"Season peak rate","Overall",NA,"5.9"
-"1 wk ahead","0-4 yr",45,"0.0"
-"1 wk ahead","0-4 yr",45,"0.1"
-"1 wk ahead","0-4 yr",45,"0.2"
-"1 wk ahead","5-17 yr",45,"0.0"
-"1 wk ahead","5-17 yr",45,"0.1"
-"1 wk ahead","18-49 yr",45,"0.0"
-"1 wk ahead","18-49 yr",45,"0.1"
-"1 wk ahead","50-64 yr",45,"0.1"
-"1 wk ahead","50-64 yr",45,"0.2"
-"1 wk ahead","50-64 yr",45,"0.3"
-"1 wk ahead","65+ yr",45,"0.7"
-"1 wk ahead","65+ yr",45,"0.8"
-"1 wk ahead","65+ yr",45,"0.9"
-"1 wk ahead","Overall",45,"0.1"
-"1 wk ahead","Overall",45,"0.2"
-"1 wk ahead","Overall",45,"0.3"
-"1 wk ahead","0-4 yr",46,"0.1"
-"1 wk ahead","0-4 yr",46,"0.2"
-"1 wk ahead","0-4 yr",46,"0.3"
-"1 wk ahead","5-17 yr",46,"0.0"
-"1 wk ahead","5-17 yr",46,"0.1"
-"1 wk ahead","18-49 yr",46,"0.1"
-"1 wk ahead","18-49 yr",46,"0.2"
-"1 wk ahead","18-49 yr",46,"0.3"
-"1 wk ahead","50-64 yr",46,"0.3"
-"1 wk ahead","50-64 yr",46,"0.4"
-"1 wk ahead","50-64 yr",46,"0.5"
-"1 wk ahead","65+ yr",46,"1.0"
-"1 wk ahead","65+ yr",46,"1.1"
-"1 wk ahead","65+ yr",46,"1.2"
-"1 wk ahead","Overall",46,"0.2"
-"1 wk ahead","Overall",46,"0.3"
-"1 wk ahead","Overall",46,"0.4"
-"1 wk ahead","0-4 yr",47,"0.4"
-"1 wk ahead","0-4 yr",47,"0.5"
-"1 wk ahead","0-4 yr",47,"0.6"
-"1 wk ahead","5-17 yr",47,"0.0"
-"1 wk ahead","5-17 yr",47,"0.1"
-"1 wk ahead","5-17 yr",47,"0.2"
-"1 wk ahead","18-49 yr",47,"0.0"
-"1 wk ahead","18-49 yr",47,"0.1"
-"1 wk ahead","18-49 yr",47,"0.2"
-"1 wk ahead","50-64 yr",47,"0.3"
-"1 wk ahead","50-64 yr",47,"0.4"
-"1 wk ahead","50-64 yr",47,"0.5"
-"1 wk ahead","65+ yr",47,"1.8"
-"1 wk ahead","65+ yr",47,"1.9"
-"1 wk ahead","65+ yr",47,"2.0"
-"1 wk ahead","Overall",47,"0.3"
-"1 wk ahead","Overall",47,"0.4"
-"1 wk ahead","Overall",47,"0.5"
-"1 wk ahead","0-4 yr",48,"0.5"
-"1 wk ahead","0-4 yr",48,"0.6"
-"1 wk ahead","0-4 yr",48,"0.7"
-"1 wk ahead","5-17 yr",48,"0.0"
-"1 wk ahead","5-17 yr",48,"0.1"
-"1 wk ahead","5-17 yr",48,"0.2"
-"1 wk ahead","18-49 yr",48,"0.1"
-"1 wk ahead","18-49 yr",48,"0.2"
-"1 wk ahead","18-49 yr",48,"0.3"
-"1 wk ahead","50-64 yr",48,"0.5"
-"1 wk ahead","50-64 yr",48,"0.6"
-"1 wk ahead","50-64 yr",48,"0.7"
-"1 wk ahead","65+ yr",48,"2.6"
-"1 wk ahead","65+ yr",48,"2.7"
-"1 wk ahead","65+ yr",48,"2.8"
-"1 wk ahead","Overall",48,"0.5"
-"1 wk ahead","Overall",48,"0.6"
-"1 wk ahead","Overall",48,"0.7"
-"1 wk ahead","0-4 yr",49,"0.4"
-"1 wk ahead","0-4 yr",49,"0.5"
-"1 wk ahead","0-4 yr",49,"0.6"
-"1 wk ahead","5-17 yr",49,"0.1"
-"1 wk ahead","5-17 yr",49,"0.2"
-"1 wk ahead","5-17 yr",49,"0.3"
-"1 wk ahead","18-49 yr",49,"0.3"
-"1 wk ahead","18-49 yr",49,"0.4"
-"1 wk ahead","18-49 yr",49,"0.5"
-"1 wk ahead","50-64 yr",49,"1.0"
-"1 wk ahead","50-64 yr",49,"1.1"
-"1 wk ahead","50-64 yr",49,"1.2"
-"1 wk ahead","65+ yr",49,"3.2"
-"1 wk ahead","65+ yr",49,"3.3"
-"1 wk ahead","65+ yr",49,"3.4"
-"1 wk ahead","65+ yr",49,"3.5"
-"1 wk ahead","65+ yr",49,"3.6"
-"1 wk ahead","Overall",49,"0.8"
-"1 wk ahead","Overall",49,"0.9"
-"1 wk ahead","Overall",49,"1.0"
-"1 wk ahead","0-4 yr",50,"1.5"
-"1 wk ahead","0-4 yr",50,"1.6"
-"1 wk ahead","0-4 yr",50,"1.7"
-"1 wk ahead","5-17 yr",50,"0.2"
-"1 wk ahead","5-17 yr",50,"0.3"
-"1 wk ahead","5-17 yr",50,"0.4"
-"1 wk ahead","18-49 yr",50,"0.4"
-"1 wk ahead","18-49 yr",50,"0.5"
-"1 wk ahead","18-49 yr",50,"0.6"
-"1 wk ahead","50-64 yr",50,"1.4"
-"1 wk ahead","50-64 yr",50,"1.5"
-"1 wk ahead","50-64 yr",50,"1.6"
-"1 wk ahead","65+ yr",50,"7.2"
-"1 wk ahead","65+ yr",50,"7.3"
-"1 wk ahead","65+ yr",50,"7.4"
-"1 wk ahead","65+ yr",50,"7.5"
-"1 wk ahead","65+ yr",50,"7.6"
-"1 wk ahead","65+ yr",50,"7.7"
-"1 wk ahead","65+ yr",50,"7.8"
-"1 wk ahead","65+ yr",50,"7.9"
-"1 wk ahead","65+ yr",50,"8.0"
-"1 wk ahead","Overall",50,"1.6"
-"1 wk ahead","Overall",50,"1.7"
-"1 wk ahead","Overall",50,"1.8"
-"1 wk ahead","0-4 yr",51,"1.3"
-"1 wk ahead","0-4 yr",51,"1.4"
-"1 wk ahead","0-4 yr",51,"1.5"
-"1 wk ahead","5-17 yr",51,"0.2"
-"1 wk ahead","5-17 yr",51,"0.3"
-"1 wk ahead","5-17 yr",51,"0.4"
-"1 wk ahead","18-49 yr",51,"0.8"
-"1 wk ahead","18-49 yr",51,"0.9"
-"1 wk ahead","18-49 yr",51,"1.0"
-"1 wk ahead","50-64 yr",51,"2.8"
-"1 wk ahead","50-64 yr",51,"2.9"
-"1 wk ahead","50-64 yr",51,"3.0"
-"1 wk ahead","50-64 yr",51,"3.1"
-"1 wk ahead","50-64 yr",51,"3.2"
-"1 wk ahead","65+ yr",51,"16.5"
-"1 wk ahead","65+ yr",51,"16.6"
-"1 wk ahead","65+ yr",51,"16.7"
-"1 wk ahead","65+ yr",51,"16.8"
-"1 wk ahead","65+ yr",51,"16.9"
-"1 wk ahead","65+ yr",51,"17.0"
-"1 wk ahead","65+ yr",51,"17.1"
-"1 wk ahead","65+ yr",51,"17.2"
-"1 wk ahead","65+ yr",51,"17.3"
-"1 wk ahead","65+ yr",51,"17.4"
-"1 wk ahead","65+ yr",51,"17.5"
-"1 wk ahead","65+ yr",51,"17.6"
-"1 wk ahead","65+ yr",51,"17.7"
-"1 wk ahead","65+ yr",51,"17.8"
-"1 wk ahead","65+ yr",51,"17.9"
-"1 wk ahead","65+ yr",51,"18.0"
-"1 wk ahead","65+ yr",51,"18.1"
-"1 wk ahead","65+ yr",51,"18.2"
-"1 wk ahead","65+ yr",51,"18.3"
-"1 wk ahead","Overall",51,"3.2"
-"1 wk ahead","Overall",51,"3.3"
-"1 wk ahead","Overall",51,"3.4"
-"1 wk ahead","Overall",51,"3.5"
-"1 wk ahead","Overall",51,"3.6"
-"1 wk ahead","0-4 yr",52,"1.2"
-"1 wk ahead","0-4 yr",52,"1.3"
-"1 wk ahead","0-4 yr",52,"1.4"
-"1 wk ahead","5-17 yr",52,"0.2"
-"1 wk ahead","5-17 yr",52,"0.3"
-"1 wk ahead","5-17 yr",52,"0.4"
-"1 wk ahead","18-49 yr",52,"1.0"
-"1 wk ahead","18-49 yr",52,"1.1"
-"1 wk ahead","18-49 yr",52,"1.2"
-"1 wk ahead","50-64 yr",52,"4.0"
-"1 wk ahead","50-64 yr",52,"4.1"
-"1 wk ahead","50-64 yr",52,"4.2"
-"1 wk ahead","50-64 yr",52,"4.3"
-"1 wk ahead","50-64 yr",52,"4.4"
-"1 wk ahead","65+ yr",52,"21.8"
-"1 wk ahead","65+ yr",52,"21.9"
-"1 wk ahead","65+ yr",52,"22.0"
-"1 wk ahead","65+ yr",52,"22.1"
-"1 wk ahead","65+ yr",52,"22.2"
-"1 wk ahead","65+ yr",52,"22.3"
-"1 wk ahead","65+ yr",52,"22.4"
-"1 wk ahead","65+ yr",52,"22.5"
-"1 wk ahead","65+ yr",52,"22.6"
-"1 wk ahead","65+ yr",52,"22.7"
-"1 wk ahead","65+ yr",52,"22.8"
-"1 wk ahead","65+ yr",52,"22.9"
-"1 wk ahead","65+ yr",52,"23.0"
-"1 wk ahead","65+ yr",52,"23.1"
-"1 wk ahead","65+ yr",52,"23.2"
-"1 wk ahead","65+ yr",52,"23.3"
-"1 wk ahead","65+ yr",52,"23.4"
-"1 wk ahead","65+ yr",52,"23.5"
-"1 wk ahead","65+ yr",52,"23.6"
-"1 wk ahead","65+ yr",52,"23.7"
-"1 wk ahead","65+ yr",52,"23.8"
-"1 wk ahead","65+ yr",52,"23.9"
-"1 wk ahead","65+ yr",52,"24.0"
-"1 wk ahead","65+ yr",52,"24.1"
-"1 wk ahead","65+ yr",52,"24.2"
-"1 wk ahead","Overall",52,"4.2"
-"1 wk ahead","Overall",52,"4.3"
-"1 wk ahead","Overall",52,"4.4"
-"1 wk ahead","Overall",52,"4.5"
-"1 wk ahead","Overall",52,"4.6"
-"1 wk ahead","0-4 yr",1,"1.5"
-"1 wk ahead","0-4 yr",1,"1.6"
-"1 wk ahead","0-4 yr",1,"1.7"
-"1 wk ahead","5-17 yr",1,"0.7"
-"1 wk ahead","5-17 yr",1,"0.8"
-"1 wk ahead","5-17 yr",1,"0.9"
-"1 wk ahead","18-49 yr",1,"1.0"
-"1 wk ahead","18-49 yr",1,"1.1"
-"1 wk ahead","18-49 yr",1,"1.2"
-"1 wk ahead","50-64 yr",1,"3.9"
-"1 wk ahead","50-64 yr",1,"4.0"
-"1 wk ahead","50-64 yr",1,"4.1"
-"1 wk ahead","50-64 yr",1,"4.2"
-"1 wk ahead","50-64 yr",1,"4.3"
-"1 wk ahead","65+ yr",1,"18.3"
-"1 wk ahead","65+ yr",1,"18.4"
-"1 wk ahead","65+ yr",1,"18.5"
-"1 wk ahead","65+ yr",1,"18.6"
-"1 wk ahead","65+ yr",1,"18.7"
-"1 wk ahead","65+ yr",1,"18.8"
-"1 wk ahead","65+ yr",1,"18.9"
-"1 wk ahead","65+ yr",1,"19.0"
-"1 wk ahead","65+ yr",1,"19.1"
-"1 wk ahead","65+ yr",1,"19.2"
-"1 wk ahead","65+ yr",1,"19.3"
-"1 wk ahead","65+ yr",1,"19.4"
-"1 wk ahead","65+ yr",1,"19.5"
-"1 wk ahead","65+ yr",1,"19.6"
-"1 wk ahead","65+ yr",1,"19.7"
-"1 wk ahead","65+ yr",1,"19.8"
-"1 wk ahead","65+ yr",1,"19.9"
-"1 wk ahead","65+ yr",1,"20.0"
-"1 wk ahead","65+ yr",1,"20.1"
-"1 wk ahead","65+ yr",1,"20.2"
-"1 wk ahead","65+ yr",1,"20.3"
-"1 wk ahead","Overall",1,"3.8"
-"1 wk ahead","Overall",1,"3.9"
-"1 wk ahead","Overall",1,"4.0"
-"1 wk ahead","Overall",1,"4.1"
-"1 wk ahead","Overall",1,"4.2"
-"1 wk ahead","0-4 yr",2,"1.7"
-"1 wk ahead","0-4 yr",2,"1.8"
-"1 wk ahead","0-4 yr",2,"1.9"
-"1 wk ahead","5-17 yr",2,"0.8"
-"1 wk ahead","5-17 yr",2,"0.9"
-"1 wk ahead","5-17 yr",2,"1.0"
-"1 wk ahead","18-49 yr",2,"1.1"
-"1 wk ahead","18-49 yr",2,"1.2"
-"1 wk ahead","18-49 yr",2,"1.3"
-"1 wk ahead","50-64 yr",2,"3.7"
-"1 wk ahead","50-64 yr",2,"3.8"
-"1 wk ahead","50-64 yr",2,"3.9"
-"1 wk ahead","50-64 yr",2,"4.0"
-"1 wk ahead","50-64 yr",2,"4.1"
-"1 wk ahead","65+ yr",2,"17.8"
-"1 wk ahead","65+ yr",2,"17.9"
-"1 wk ahead","65+ yr",2,"18.0"
-"1 wk ahead","65+ yr",2,"18.1"
-"1 wk ahead","65+ yr",2,"18.2"
-"1 wk ahead","65+ yr",2,"18.3"
-"1 wk ahead","65+ yr",2,"18.4"
-"1 wk ahead","65+ yr",2,"18.5"
-"1 wk ahead","65+ yr",2,"18.6"
-"1 wk ahead","65+ yr",2,"18.7"
-"1 wk ahead","65+ yr",2,"18.8"
-"1 wk ahead","65+ yr",2,"18.9"
-"1 wk ahead","65+ yr",2,"19.0"
-"1 wk ahead","65+ yr",2,"19.1"
-"1 wk ahead","65+ yr",2,"19.2"
-"1 wk ahead","65+ yr",2,"19.3"
-"1 wk ahead","65+ yr",2,"19.4"
-"1 wk ahead","65+ yr",2,"19.5"
-"1 wk ahead","65+ yr",2,"19.6"
-"1 wk ahead","Overall",2,"3.8"
-"1 wk ahead","Overall",2,"3.9"
-"1 wk ahead","Overall",2,"4.0"
-"1 wk ahead","Overall",2,"4.1"
-"1 wk ahead","Overall",2,"4.2"
-"1 wk ahead","0-4 yr",3,"2.1"
-"1 wk ahead","0-4 yr",3,"2.2"
-"1 wk ahead","0-4 yr",3,"2.3"
-"1 wk ahead","5-17 yr",3,"0.7"
-"1 wk ahead","5-17 yr",3,"0.8"
-"1 wk ahead","5-17 yr",3,"0.9"
-"1 wk ahead","18-49 yr",3,"1.0"
-"1 wk ahead","18-49 yr",3,"1.1"
-"1 wk ahead","18-49 yr",3,"1.2"
-"1 wk ahead","50-64 yr",3,"3.3"
-"1 wk ahead","50-64 yr",3,"3.4"
-"1 wk ahead","50-64 yr",3,"3.5"
-"1 wk ahead","50-64 yr",3,"3.6"
-"1 wk ahead","50-64 yr",3,"3.7"
-"1 wk ahead","65+ yr",3,"14.8"
-"1 wk ahead","65+ yr",3,"14.9"
-"1 wk ahead","65+ yr",3,"15.0"
-"1 wk ahead","65+ yr",3,"15.1"
-"1 wk ahead","65+ yr",3,"15.2"
-"1 wk ahead","65+ yr",3,"15.3"
-"1 wk ahead","65+ yr",3,"15.4"
-"1 wk ahead","65+ yr",3,"15.5"
-"1 wk ahead","65+ yr",3,"15.6"
-"1 wk ahead","65+ yr",3,"15.7"
-"1 wk ahead","65+ yr",3,"15.8"
-"1 wk ahead","65+ yr",3,"15.9"
-"1 wk ahead","65+ yr",3,"16.0"
-"1 wk ahead","65+ yr",3,"16.1"
-"1 wk ahead","65+ yr",3,"16.2"
-"1 wk ahead","65+ yr",3,"16.3"
-"1 wk ahead","65+ yr",3,"16.4"
-"1 wk ahead","Overall",3,"3.3"
-"1 wk ahead","Overall",3,"3.4"
-"1 wk ahead","Overall",3,"3.5"
-"1 wk ahead","Overall",3,"3.6"
-"1 wk ahead","Overall",3,"3.7"
-"1 wk ahead","0-4 yr",4,"2.5"
-"1 wk ahead","0-4 yr",4,"2.6"
-"1 wk ahead","0-4 yr",4,"2.7"
-"1 wk ahead","5-17 yr",4,"1.0"
-"1 wk ahead","5-17 yr",4,"1.1"
-"1 wk ahead","5-17 yr",4,"1.2"
-"1 wk ahead","18-49 yr",4,"1.2"
-"1 wk ahead","18-49 yr",4,"1.3"
-"1 wk ahead","18-49 yr",4,"1.4"
-"1 wk ahead","50-64 yr",4,"3.2"
-"1 wk ahead","50-64 yr",4,"3.3"
-"1 wk ahead","50-64 yr",4,"3.4"
-"1 wk ahead","50-64 yr",4,"3.5"
-"1 wk ahead","50-64 yr",4,"3.6"
-"1 wk ahead","65+ yr",4,"16.9"
-"1 wk ahead","65+ yr",4,"17.0"
-"1 wk ahead","65+ yr",4,"17.1"
-"1 wk ahead","65+ yr",4,"17.2"
-"1 wk ahead","65+ yr",4,"17.3"
-"1 wk ahead","65+ yr",4,"17.4"
-"1 wk ahead","65+ yr",4,"17.5"
-"1 wk ahead","65+ yr",4,"17.6"
-"1 wk ahead","65+ yr",4,"17.7"
-"1 wk ahead","65+ yr",4,"17.8"
-"1 wk ahead","65+ yr",4,"17.9"
-"1 wk ahead","65+ yr",4,"18.0"
-"1 wk ahead","65+ yr",4,"18.1"
-"1 wk ahead","65+ yr",4,"18.2"
-"1 wk ahead","65+ yr",4,"18.3"
-"1 wk ahead","65+ yr",4,"18.4"
-"1 wk ahead","65+ yr",4,"18.5"
-"1 wk ahead","65+ yr",4,"18.6"
-"1 wk ahead","65+ yr",4,"18.7"
-"1 wk ahead","Overall",4,"3.7"
-"1 wk ahead","Overall",4,"3.8"
-"1 wk ahead","Overall",4,"3.9"
-"1 wk ahead","Overall",4,"4.0"
-"1 wk ahead","Overall",4,"4.1"
-"1 wk ahead","0-4 yr",5,"3.3"
-"1 wk ahead","0-4 yr",5,"3.4"
-"1 wk ahead","0-4 yr",5,"3.5"
-"1 wk ahead","0-4 yr",5,"3.6"
-"1 wk ahead","0-4 yr",5,"3.7"
-"1 wk ahead","5-17 yr",5,"1.3"
-"1 wk ahead","5-17 yr",5,"1.4"
-"1 wk ahead","5-17 yr",5,"1.5"
-"1 wk ahead","18-49 yr",5,"1.3"
-"1 wk ahead","18-49 yr",5,"1.4"
-"1 wk ahead","18-49 yr",5,"1.5"
-"1 wk ahead","50-64 yr",5,"4.8"
-"1 wk ahead","50-64 yr",5,"4.9"
-"1 wk ahead","50-64 yr",5,"5.0"
-"1 wk ahead","50-64 yr",5,"5.1"
-"1 wk ahead","50-64 yr",5,"5.2"
-"1 wk ahead","65+ yr",5,"20.4"
-"1 wk ahead","65+ yr",5,"20.5"
-"1 wk ahead","65+ yr",5,"20.6"
-"1 wk ahead","65+ yr",5,"20.7"
-"1 wk ahead","65+ yr",5,"20.8"
-"1 wk ahead","65+ yr",5,"20.9"
-"1 wk ahead","65+ yr",5,"21.0"
-"1 wk ahead","65+ yr",5,"21.1"
-"1 wk ahead","65+ yr",5,"21.2"
-"1 wk ahead","65+ yr",5,"21.3"
-"1 wk ahead","65+ yr",5,"21.4"
-"1 wk ahead","65+ yr",5,"21.5"
-"1 wk ahead","65+ yr",5,"21.6"
-"1 wk ahead","65+ yr",5,"21.7"
-"1 wk ahead","65+ yr",5,"21.8"
-"1 wk ahead","65+ yr",5,"21.9"
-"1 wk ahead","65+ yr",5,"22.0"
-"1 wk ahead","65+ yr",5,"22.1"
-"1 wk ahead","65+ yr",5,"22.2"
-"1 wk ahead","65+ yr",5,"22.3"
-"1 wk ahead","65+ yr",5,"22.4"
-"1 wk ahead","65+ yr",5,"22.5"
-"1 wk ahead","65+ yr",5,"22.6"
-"1 wk ahead","Overall",5,"4.7"
-"1 wk ahead","Overall",5,"4.8"
-"1 wk ahead","Overall",5,"4.9"
-"1 wk ahead","Overall",5,"5.0"
-"1 wk ahead","Overall",5,"5.1"
-"1 wk ahead","0-4 yr",6,"4.0"
-"1 wk ahead","0-4 yr",6,"4.1"
-"1 wk ahead","0-4 yr",6,"4.2"
-"1 wk ahead","0-4 yr",6,"4.3"
-"1 wk ahead","0-4 yr",6,"4.4"
-"1 wk ahead","5-17 yr",6,"1.7"
-"1 wk ahead","5-17 yr",6,"1.8"
-"1 wk ahead","5-17 yr",6,"1.9"
-"1 wk ahead","18-49 yr",6,"1.4"
-"1 wk ahead","18-49 yr",6,"1.5"
-"1 wk ahead","18-49 yr",6,"1.6"
-"1 wk ahead","50-64 yr",6,"4.8"
-"1 wk ahead","50-64 yr",6,"4.9"
-"1 wk ahead","50-64 yr",6,"5.0"
-"1 wk ahead","50-64 yr",6,"5.1"
-"1 wk ahead","50-64 yr",6,"5.2"
-"1 wk ahead","50-64 yr",6,"5.3"
-"1 wk ahead","50-64 yr",6,"5.4"
-"1 wk ahead","65+ yr",6,"21.6"
-"1 wk ahead","65+ yr",6,"21.7"
-"1 wk ahead","65+ yr",6,"21.8"
-"1 wk ahead","65+ yr",6,"21.9"
-"1 wk ahead","65+ yr",6,"22.0"
-"1 wk ahead","65+ yr",6,"22.1"
-"1 wk ahead","65+ yr",6,"22.2"
-"1 wk ahead","65+ yr",6,"22.3"
-"1 wk ahead","65+ yr",6,"22.4"
-"1 wk ahead","65+ yr",6,"22.5"
-"1 wk ahead","65+ yr",6,"22.6"
-"1 wk ahead","65+ yr",6,"22.7"
-"1 wk ahead","65+ yr",6,"22.8"
-"1 wk ahead","65+ yr",6,"22.9"
-"1 wk ahead","65+ yr",6,"23.0"
-"1 wk ahead","65+ yr",6,"23.1"
-"1 wk ahead","65+ yr",6,"23.2"
-"1 wk ahead","65+ yr",6,"23.3"
-"1 wk ahead","65+ yr",6,"23.4"
-"1 wk ahead","65+ yr",6,"23.5"
-"1 wk ahead","65+ yr",6,"23.6"
-"1 wk ahead","65+ yr",6,"23.7"
-"1 wk ahead","65+ yr",6,"23.8"
-"1 wk ahead","Overall",6,"4.9"
-"1 wk ahead","Overall",6,"5.0"
-"1 wk ahead","Overall",6,"5.1"
-"1 wk ahead","Overall",6,"5.2"
-"1 wk ahead","Overall",6,"5.3"
-"1 wk ahead","Overall",6,"5.4"
-"1 wk ahead","Overall",6,"5.5"
-"1 wk ahead","0-4 yr",7,"3.9"
-"1 wk ahead","0-4 yr",7,"4.0"
-"1 wk ahead","0-4 yr",7,"4.1"
-"1 wk ahead","0-4 yr",7,"4.2"
-"1 wk ahead","0-4 yr",7,"4.3"
-"1 wk ahead","5-17 yr",7,"1.5"
-"1 wk ahead","5-17 yr",7,"1.6"
-"1 wk ahead","5-17 yr",7,"1.7"
-"1 wk ahead","18-49 yr",7,"1.6"
-"1 wk ahead","18-49 yr",7,"1.7"
-"1 wk ahead","18-49 yr",7,"1.8"
-"1 wk ahead","50-64 yr",7,"5.2"
-"1 wk ahead","50-64 yr",7,"5.3"
-"1 wk ahead","50-64 yr",7,"5.4"
-"1 wk ahead","50-64 yr",7,"5.5"
-"1 wk ahead","50-64 yr",7,"5.6"
-"1 wk ahead","50-64 yr",7,"5.7"
-"1 wk ahead","50-64 yr",7,"5.8"
-"1 wk ahead","65+ yr",7,"23.6"
-"1 wk ahead","65+ yr",7,"23.7"
-"1 wk ahead","65+ yr",7,"23.8"
-"1 wk ahead","65+ yr",7,"23.9"
-"1 wk ahead","65+ yr",7,"24.0"
-"1 wk ahead","65+ yr",7,"24.1"
-"1 wk ahead","65+ yr",7,"24.2"
-"1 wk ahead","65+ yr",7,"24.3"
-"1 wk ahead","65+ yr",7,"24.4"
-"1 wk ahead","65+ yr",7,"24.5"
-"1 wk ahead","65+ yr",7,"24.6"
-"1 wk ahead","65+ yr",7,"24.7"
-"1 wk ahead","65+ yr",7,"24.8"
-"1 wk ahead","65+ yr",7,"24.9"
-"1 wk ahead","65+ yr",7,"25.0"
-"1 wk ahead","65+ yr",7,"25.1"
-"1 wk ahead","65+ yr",7,"25.2"
-"1 wk ahead","65+ yr",7,"25.3"
-"1 wk ahead","65+ yr",7,"25.4"
-"1 wk ahead","65+ yr",7,"25.5"
-"1 wk ahead","65+ yr",7,"25.6"
-"1 wk ahead","65+ yr",7,"25.7"
-"1 wk ahead","65+ yr",7,"25.8"
-"1 wk ahead","65+ yr",7,"25.9"
-"1 wk ahead","65+ yr",7,"26.0"
-"1 wk ahead","Overall",7,"5.3"
-"1 wk ahead","Overall",7,"5.4"
-"1 wk ahead","Overall",7,"5.5"
-"1 wk ahead","Overall",7,"5.6"
-"1 wk ahead","Overall",7,"5.7"
-"1 wk ahead","Overall",7,"5.8"
-"1 wk ahead","Overall",7,"5.9"
-"1 wk ahead","0-4 yr",8,"2.8"
-"1 wk ahead","0-4 yr",8,"2.9"
-"1 wk ahead","0-4 yr",8,"3.0"
-"1 wk ahead","0-4 yr",8,"3.1"
-"1 wk ahead","0-4 yr",8,"3.2"
-"1 wk ahead","5-17 yr",8,"0.5"
-"1 wk ahead","5-17 yr",8,"0.6"
-"1 wk ahead","5-17 yr",8,"0.7"
-"1 wk ahead","18-49 yr",8,"0.9"
-"1 wk ahead","18-49 yr",8,"1.0"
-"1 wk ahead","18-49 yr",8,"1.1"
-"1 wk ahead","50-64 yr",8,"3.1"
-"1 wk ahead","50-64 yr",8,"3.2"
-"1 wk ahead","50-64 yr",8,"3.3"
-"1 wk ahead","50-64 yr",8,"3.4"
-"1 wk ahead","50-64 yr",8,"3.5"
-"1 wk ahead","65+ yr",8,"14.7"
-"1 wk ahead","65+ yr",8,"14.8"
-"1 wk ahead","65+ yr",8,"14.9"
-"1 wk ahead","65+ yr",8,"15.0"
-"1 wk ahead","65+ yr",8,"15.1"
-"1 wk ahead","65+ yr",8,"15.2"
-"1 wk ahead","65+ yr",8,"15.3"
-"1 wk ahead","65+ yr",8,"15.4"
-"1 wk ahead","65+ yr",8,"15.5"
-"1 wk ahead","65+ yr",8,"15.6"
-"1 wk ahead","65+ yr",8,"15.7"
-"1 wk ahead","65+ yr",8,"15.8"
-"1 wk ahead","65+ yr",8,"15.9"
-"1 wk ahead","65+ yr",8,"16.0"
-"1 wk ahead","65+ yr",8,"16.1"
-"1 wk ahead","65+ yr",8,"16.2"
-"1 wk ahead","65+ yr",8,"16.3"
-"1 wk ahead","Overall",8,"3.2"
-"1 wk ahead","Overall",8,"3.3"
-"1 wk ahead","Overall",8,"3.4"
-"1 wk ahead","Overall",8,"3.5"
-"1 wk ahead","Overall",8,"3.6"
-"1 wk ahead","0-4 yr",9,"2.1"
-"1 wk ahead","0-4 yr",9,"2.2"
-"1 wk ahead","0-4 yr",9,"2.3"
-"1 wk ahead","5-17 yr",9,"1.1"
-"1 wk ahead","5-17 yr",9,"1.2"
-"1 wk ahead","5-17 yr",9,"1.3"
-"1 wk ahead","18-49 yr",9,"0.7"
-"1 wk ahead","18-49 yr",9,"0.8"
-"1 wk ahead","18-49 yr",9,"0.9"
-"1 wk ahead","50-64 yr",9,"3.2"
-"1 wk ahead","50-64 yr",9,"3.3"
-"1 wk ahead","50-64 yr",9,"3.4"
-"1 wk ahead","50-64 yr",9,"3.5"
-"1 wk ahead","50-64 yr",9,"3.6"
-"1 wk ahead","65+ yr",9,"12.6"
-"1 wk ahead","65+ yr",9,"12.7"
-"1 wk ahead","65+ yr",9,"12.8"
-"1 wk ahead","65+ yr",9,"12.9"
-"1 wk ahead","65+ yr",9,"13.0"
-"1 wk ahead","65+ yr",9,"13.1"
-"1 wk ahead","65+ yr",9,"13.2"
-"1 wk ahead","65+ yr",9,"13.3"
-"1 wk ahead","65+ yr",9,"13.4"
-"1 wk ahead","65+ yr",9,"13.5"
-"1 wk ahead","65+ yr",9,"13.6"
-"1 wk ahead","65+ yr",9,"13.7"
-"1 wk ahead","65+ yr",9,"13.8"
-"1 wk ahead","65+ yr",9,"13.9"
-"1 wk ahead","65+ yr",9,"14.0"
-"1 wk ahead","Overall",9,"2.9"
-"1 wk ahead","Overall",9,"3.0"
-"1 wk ahead","Overall",9,"3.1"
-"1 wk ahead","Overall",9,"3.2"
-"1 wk ahead","Overall",9,"3.3"
-"1 wk ahead","0-4 yr",10,"2.4"
-"1 wk ahead","0-4 yr",10,"2.5"
-"1 wk ahead","0-4 yr",10,"2.6"
-"1 wk ahead","5-17 yr",10,"1.0"
-"1 wk ahead","5-17 yr",10,"1.1"
-"1 wk ahead","5-17 yr",10,"1.2"
-"1 wk ahead","18-49 yr",10,"0.9"
-"1 wk ahead","18-49 yr",10,"1.0"
-"1 wk ahead","18-49 yr",10,"1.1"
-"1 wk ahead","50-64 yr",10,"2.8"
-"1 wk ahead","50-64 yr",10,"2.9"
-"1 wk ahead","50-64 yr",10,"3.0"
-"1 wk ahead","50-64 yr",10,"3.1"
-"1 wk ahead","50-64 yr",10,"3.2"
-"1 wk ahead","65+ yr",10,"11.6"
-"1 wk ahead","65+ yr",10,"11.7"
-"1 wk ahead","65+ yr",10,"11.8"
-"1 wk ahead","65+ yr",10,"11.9"
-"1 wk ahead","65+ yr",10,"12.0"
-"1 wk ahead","65+ yr",10,"12.1"
-"1 wk ahead","65+ yr",10,"12.2"
-"1 wk ahead","65+ yr",10,"12.3"
-"1 wk ahead","65+ yr",10,"12.4"
-"1 wk ahead","65+ yr",10,"12.5"
-"1 wk ahead","65+ yr",10,"12.6"
-"1 wk ahead","65+ yr",10,"12.7"
-"1 wk ahead","65+ yr",10,"12.8"
-"1 wk ahead","Overall",10,"2.8"
-"1 wk ahead","Overall",10,"2.9"
-"1 wk ahead","Overall",10,"3.0"
-"1 wk ahead","Overall",10,"3.1"
-"1 wk ahead","Overall",10,"3.2"
-"1 wk ahead","0-4 yr",11,"2.8"
-"1 wk ahead","0-4 yr",11,"2.9"
-"1 wk ahead","0-4 yr",11,"3.0"
-"1 wk ahead","5-17 yr",11,"1.0"
-"1 wk ahead","5-17 yr",11,"1.1"
-"1 wk ahead","5-17 yr",11,"1.2"
-"1 wk ahead","18-49 yr",11,"1.0"
-"1 wk ahead","18-49 yr",11,"1.1"
-"1 wk ahead","18-49 yr",11,"1.2"
-"1 wk ahead","50-64 yr",11,"3.1"
-"1 wk ahead","50-64 yr",11,"3.2"
-"1 wk ahead","50-64 yr",11,"3.3"
-"1 wk ahead","50-64 yr",11,"3.4"
-"1 wk ahead","50-64 yr",11,"3.5"
-"1 wk ahead","65+ yr",11,"12.6"
-"1 wk ahead","65+ yr",11,"12.7"
-"1 wk ahead","65+ yr",11,"12.8"
-"1 wk ahead","65+ yr",11,"12.9"
-"1 wk ahead","65+ yr",11,"13.0"
-"1 wk ahead","65+ yr",11,"13.1"
-"1 wk ahead","65+ yr",11,"13.2"
-"1 wk ahead","65+ yr",11,"13.3"
-"1 wk ahead","65+ yr",11,"13.4"
-"1 wk ahead","65+ yr",11,"13.5"
-"1 wk ahead","65+ yr",11,"13.6"
-"1 wk ahead","65+ yr",11,"13.7"
-"1 wk ahead","65+ yr",11,"13.8"
-"1 wk ahead","65+ yr",11,"13.9"
-"1 wk ahead","65+ yr",11,"14.0"
-"1 wk ahead","Overall",11,"3.0"
-"1 wk ahead","Overall",11,"3.1"
-"1 wk ahead","Overall",11,"3.2"
-"1 wk ahead","Overall",11,"3.3"
-"1 wk ahead","Overall",11,"3.4"
-"1 wk ahead","0-4 yr",12,"1.7"
-"1 wk ahead","0-4 yr",12,"1.8"
-"1 wk ahead","0-4 yr",12,"1.9"
-"1 wk ahead","5-17 yr",12,"1.1"
-"1 wk ahead","5-17 yr",12,"1.2"
-"1 wk ahead","5-17 yr",12,"1.3"
-"1 wk ahead","18-49 yr",12,"1.0"
-"1 wk ahead","18-49 yr",12,"1.1"
-"1 wk ahead","18-49 yr",12,"1.2"
-"1 wk ahead","50-64 yr",12,"3.4"
-"1 wk ahead","50-64 yr",12,"3.5"
-"1 wk ahead","50-64 yr",12,"3.6"
-"1 wk ahead","50-64 yr",12,"3.7"
-"1 wk ahead","50-64 yr",12,"3.8"
-"1 wk ahead","65+ yr",12,"10.9"
-"1 wk ahead","65+ yr",12,"11.0"
-"1 wk ahead","65+ yr",12,"11.1"
-"1 wk ahead","65+ yr",12,"11.2"
-"1 wk ahead","65+ yr",12,"11.3"
-"1 wk ahead","65+ yr",12,"11.4"
-"1 wk ahead","65+ yr",12,"11.5"
-"1 wk ahead","65+ yr",12,"11.6"
-"1 wk ahead","65+ yr",12,"11.7"
-"1 wk ahead","65+ yr",12,"11.8"
-"1 wk ahead","65+ yr",12,"11.9"
-"1 wk ahead","65+ yr",12,"12.0"
-"1 wk ahead","65+ yr",12,"12.1"
-"1 wk ahead","Overall",12,"2.8"
-"1 wk ahead","Overall",12,"2.9"
-"1 wk ahead","Overall",12,"3.0"
-"1 wk ahead","Overall",12,"3.1"
-"1 wk ahead","Overall",12,"3.2"
-"1 wk ahead","0-4 yr",13,"2.0"
-"1 wk ahead","0-4 yr",13,"2.1"
-"1 wk ahead","0-4 yr",13,"2.2"
-"1 wk ahead","5-17 yr",13,"0.5"
-"1 wk ahead","5-17 yr",13,"0.6"
-"1 wk ahead","5-17 yr",13,"0.7"
-"1 wk ahead","18-49 yr",13,"0.6"
-"1 wk ahead","18-49 yr",13,"0.7"
-"1 wk ahead","18-49 yr",13,"0.8"
-"1 wk ahead","50-64 yr",13,"2.0"
-"1 wk ahead","50-64 yr",13,"2.1"
-"1 wk ahead","50-64 yr",13,"2.2"
-"1 wk ahead","65+ yr",13,"8.8"
-"1 wk ahead","65+ yr",13,"8.9"
-"1 wk ahead","65+ yr",13,"9.0"
-"1 wk ahead","65+ yr",13,"9.1"
-"1 wk ahead","65+ yr",13,"9.2"
-"1 wk ahead","65+ yr",13,"9.3"
-"1 wk ahead","65+ yr",13,"9.4"
-"1 wk ahead","65+ yr",13,"9.5"
-"1 wk ahead","65+ yr",13,"9.6"
-"1 wk ahead","65+ yr",13,"9.7"
-"1 wk ahead","65+ yr",13,"9.8"
-"1 wk ahead","Overall",13,"2.1"
-"1 wk ahead","Overall",13,"2.2"
-"1 wk ahead","Overall",13,"2.3"
-"1 wk ahead","0-4 yr",14,"1.0"
-"1 wk ahead","0-4 yr",14,"1.1"
-"1 wk ahead","0-4 yr",14,"1.2"
-"1 wk ahead","5-17 yr",14,"0.4"
-"1 wk ahead","5-17 yr",14,"0.5"
-"1 wk ahead","5-17 yr",14,"0.6"
-"1 wk ahead","18-49 yr",14,"0.2"
-"1 wk ahead","18-49 yr",14,"0.3"
-"1 wk ahead","18-49 yr",14,"0.4"
-"1 wk ahead","50-64 yr",14,"1.4"
-"1 wk ahead","50-64 yr",14,"1.5"
-"1 wk ahead","50-64 yr",14,"1.6"
-"1 wk ahead","65+ yr",14,"6.6"
-"1 wk ahead","65+ yr",14,"6.7"
-"1 wk ahead","65+ yr",14,"6.8"
-"1 wk ahead","65+ yr",14,"6.9"
-"1 wk ahead","65+ yr",14,"7.0"
-"1 wk ahead","65+ yr",14,"7.1"
-"1 wk ahead","65+ yr",14,"7.2"
-"1 wk ahead","Overall",14,"1.4"
-"1 wk ahead","Overall",14,"1.5"
-"1 wk ahead","Overall",14,"1.6"
-"1 wk ahead","0-4 yr",15,"0.9"
-"1 wk ahead","0-4 yr",15,"1.0"
-"1 wk ahead","0-4 yr",15,"1.1"
-"1 wk ahead","5-17 yr",15,"0.3"
-"1 wk ahead","5-17 yr",15,"0.4"
-"1 wk ahead","5-17 yr",15,"0.5"
-"1 wk ahead","18-49 yr",15,"0.2"
-"1 wk ahead","18-49 yr",15,"0.3"
-"1 wk ahead","18-49 yr",15,"0.4"
-"1 wk ahead","50-64 yr",15,"1.1"
-"1 wk ahead","50-64 yr",15,"1.2"
-"1 wk ahead","50-64 yr",15,"1.3"
-"1 wk ahead","65+ yr",15,"3.9"
-"1 wk ahead","65+ yr",15,"4.0"
-"1 wk ahead","65+ yr",15,"4.1"
-"1 wk ahead","65+ yr",15,"4.2"
-"1 wk ahead","65+ yr",15,"4.3"
-"1 wk ahead","Overall",15,"0.9"
-"1 wk ahead","Overall",15,"1.0"
-"1 wk ahead","Overall",15,"1.1"
-"1 wk ahead","0-4 yr",16,"0.5"
-"1 wk ahead","0-4 yr",16,"0.6"
-"1 wk ahead","0-4 yr",16,"0.7"
-"1 wk ahead","5-17 yr",16,"0.1"
-"1 wk ahead","5-17 yr",16,"0.2"
-"1 wk ahead","5-17 yr",16,"0.3"
-"1 wk ahead","18-49 yr",16,"0.1"
-"1 wk ahead","18-49 yr",16,"0.2"
-"1 wk ahead","18-49 yr",16,"0.3"
-"1 wk ahead","50-64 yr",16,"0.7"
-"1 wk ahead","50-64 yr",16,"0.8"
-"1 wk ahead","50-64 yr",16,"0.9"
-"1 wk ahead","65+ yr",16,"2.6"
-"1 wk ahead","65+ yr",16,"2.7"
-"1 wk ahead","65+ yr",16,"2.8"
-"1 wk ahead","Overall",16,"0.6"
-"1 wk ahead","Overall",16,"0.7"
-"1 wk ahead","Overall",16,"0.8"
-"2 wk ahead","0-4 yr",45,"0.1"
-"2 wk ahead","0-4 yr",45,"0.2"
-"2 wk ahead","0-4 yr",45,"0.3"
-"2 wk ahead","5-17 yr",45,"0.0"
-"2 wk ahead","5-17 yr",45,"0.1"
-"2 wk ahead","18-49 yr",45,"0.1"
-"2 wk ahead","18-49 yr",45,"0.2"
-"2 wk ahead","18-49 yr",45,"0.3"
-"2 wk ahead","50-64 yr",45,"0.3"
-"2 wk ahead","50-64 yr",45,"0.4"
-"2 wk ahead","50-64 yr",45,"0.5"
-"2 wk ahead","65+ yr",45,"1.0"
-"2 wk ahead","65+ yr",45,"1.1"
-"2 wk ahead","65+ yr",45,"1.2"
-"2 wk ahead","Overall",45,"0.2"
-"2 wk ahead","Overall",45,"0.3"
-"2 wk ahead","Overall",45,"0.4"
-"2 wk ahead","0-4 yr",46,"0.4"
-"2 wk ahead","0-4 yr",46,"0.5"
-"2 wk ahead","0-4 yr",46,"0.6"
-"2 wk ahead","5-17 yr",46,"0.0"
-"2 wk ahead","5-17 yr",46,"0.1"
-"2 wk ahead","5-17 yr",46,"0.2"
-"2 wk ahead","18-49 yr",46,"0.0"
-"2 wk ahead","18-49 yr",46,"0.1"
-"2 wk ahead","18-49 yr",46,"0.2"
-"2 wk ahead","50-64 yr",46,"0.3"
-"2 wk ahead","50-64 yr",46,"0.4"
-"2 wk ahead","50-64 yr",46,"0.5"
-"2 wk ahead","65+ yr",46,"1.8"
-"2 wk ahead","65+ yr",46,"1.9"
-"2 wk ahead","65+ yr",46,"2.0"
-"2 wk ahead","Overall",46,"0.3"
-"2 wk ahead","Overall",46,"0.4"
-"2 wk ahead","Overall",46,"0.5"
-"2 wk ahead","0-4 yr",47,"0.5"
-"2 wk ahead","0-4 yr",47,"0.6"
-"2 wk ahead","0-4 yr",47,"0.7"
-"2 wk ahead","5-17 yr",47,"0.0"
-"2 wk ahead","5-17 yr",47,"0.1"
-"2 wk ahead","5-17 yr",47,"0.2"
-"2 wk ahead","18-49 yr",47,"0.1"
-"2 wk ahead","18-49 yr",47,"0.2"
-"2 wk ahead","18-49 yr",47,"0.3"
-"2 wk ahead","50-64 yr",47,"0.5"
-"2 wk ahead","50-64 yr",47,"0.6"
-"2 wk ahead","50-64 yr",47,"0.7"
-"2 wk ahead","65+ yr",47,"2.6"
-"2 wk ahead","65+ yr",47,"2.7"
-"2 wk ahead","65+ yr",47,"2.8"
-"2 wk ahead","Overall",47,"0.5"
-"2 wk ahead","Overall",47,"0.6"
-"2 wk ahead","Overall",47,"0.7"
-"2 wk ahead","0-4 yr",48,"0.4"
-"2 wk ahead","0-4 yr",48,"0.5"
-"2 wk ahead","0-4 yr",48,"0.6"
-"2 wk ahead","5-17 yr",48,"0.1"
-"2 wk ahead","5-17 yr",48,"0.2"
-"2 wk ahead","5-17 yr",48,"0.3"
-"2 wk ahead","18-49 yr",48,"0.3"
-"2 wk ahead","18-49 yr",48,"0.4"
-"2 wk ahead","18-49 yr",48,"0.5"
-"2 wk ahead","50-64 yr",48,"1.0"
-"2 wk ahead","50-64 yr",48,"1.1"
-"2 wk ahead","50-64 yr",48,"1.2"
-"2 wk ahead","65+ yr",48,"3.2"
-"2 wk ahead","65+ yr",48,"3.3"
-"2 wk ahead","65+ yr",48,"3.4"
-"2 wk ahead","65+ yr",48,"3.5"
-"2 wk ahead","65+ yr",48,"3.6"
-"2 wk ahead","Overall",48,"0.8"
-"2 wk ahead","Overall",48,"0.9"
-"2 wk ahead","Overall",48,"1.0"
-"2 wk ahead","0-4 yr",49,"1.5"
-"2 wk ahead","0-4 yr",49,"1.6"
-"2 wk ahead","0-4 yr",49,"1.7"
-"2 wk ahead","5-17 yr",49,"0.2"
-"2 wk ahead","5-17 yr",49,"0.3"
-"2 wk ahead","5-17 yr",49,"0.4"
-"2 wk ahead","18-49 yr",49,"0.4"
-"2 wk ahead","18-49 yr",49,"0.5"
-"2 wk ahead","18-49 yr",49,"0.6"
-"2 wk ahead","50-64 yr",49,"1.4"
-"2 wk ahead","50-64 yr",49,"1.5"
-"2 wk ahead","50-64 yr",49,"1.6"
-"2 wk ahead","65+ yr",49,"7.2"
-"2 wk ahead","65+ yr",49,"7.3"
-"2 wk ahead","65+ yr",49,"7.4"
-"2 wk ahead","65+ yr",49,"7.5"
-"2 wk ahead","65+ yr",49,"7.6"
-"2 wk ahead","65+ yr",49,"7.7"
-"2 wk ahead","65+ yr",49,"7.8"
-"2 wk ahead","65+ yr",49,"7.9"
-"2 wk ahead","65+ yr",49,"8.0"
-"2 wk ahead","Overall",49,"1.6"
-"2 wk ahead","Overall",49,"1.7"
-"2 wk ahead","Overall",49,"1.8"
-"2 wk ahead","0-4 yr",50,"1.3"
-"2 wk ahead","0-4 yr",50,"1.4"
-"2 wk ahead","0-4 yr",50,"1.5"
-"2 wk ahead","5-17 yr",50,"0.2"
-"2 wk ahead","5-17 yr",50,"0.3"
-"2 wk ahead","5-17 yr",50,"0.4"
-"2 wk ahead","18-49 yr",50,"0.8"
-"2 wk ahead","18-49 yr",50,"0.9"
-"2 wk ahead","18-49 yr",50,"1.0"
-"2 wk ahead","50-64 yr",50,"2.8"
-"2 wk ahead","50-64 yr",50,"2.9"
-"2 wk ahead","50-64 yr",50,"3.0"
-"2 wk ahead","50-64 yr",50,"3.1"
-"2 wk ahead","50-64 yr",50,"3.2"
-"2 wk ahead","65+ yr",50,"16.5"
-"2 wk ahead","65+ yr",50,"16.6"
-"2 wk ahead","65+ yr",50,"16.7"
-"2 wk ahead","65+ yr",50,"16.8"
-"2 wk ahead","65+ yr",50,"16.9"
-"2 wk ahead","65+ yr",50,"17.0"
-"2 wk ahead","65+ yr",50,"17.1"
-"2 wk ahead","65+ yr",50,"17.2"
-"2 wk ahead","65+ yr",50,"17.3"
-"2 wk ahead","65+ yr",50,"17.4"
-"2 wk ahead","65+ yr",50,"17.5"
-"2 wk ahead","65+ yr",50,"17.6"
-"2 wk ahead","65+ yr",50,"17.7"
-"2 wk ahead","65+ yr",50,"17.8"
-"2 wk ahead","65+ yr",50,"17.9"
-"2 wk ahead","65+ yr",50,"18.0"
-"2 wk ahead","65+ yr",50,"18.1"
-"2 wk ahead","65+ yr",50,"18.2"
-"2 wk ahead","65+ yr",50,"18.3"
-"2 wk ahead","Overall",50,"3.2"
-"2 wk ahead","Overall",50,"3.3"
-"2 wk ahead","Overall",50,"3.4"
-"2 wk ahead","Overall",50,"3.5"
-"2 wk ahead","Overall",50,"3.6"
-"2 wk ahead","0-4 yr",51,"1.2"
-"2 wk ahead","0-4 yr",51,"1.3"
-"2 wk ahead","0-4 yr",51,"1.4"
-"2 wk ahead","5-17 yr",51,"0.2"
-"2 wk ahead","5-17 yr",51,"0.3"
-"2 wk ahead","5-17 yr",51,"0.4"
-"2 wk ahead","18-49 yr",51,"1.0"
-"2 wk ahead","18-49 yr",51,"1.1"
-"2 wk ahead","18-49 yr",51,"1.2"
-"2 wk ahead","50-64 yr",51,"4.0"
-"2 wk ahead","50-64 yr",51,"4.1"
-"2 wk ahead","50-64 yr",51,"4.2"
-"2 wk ahead","50-64 yr",51,"4.3"
-"2 wk ahead","50-64 yr",51,"4.4"
-"2 wk ahead","65+ yr",51,"21.8"
-"2 wk ahead","65+ yr",51,"21.9"
-"2 wk ahead","65+ yr",51,"22.0"
-"2 wk ahead","65+ yr",51,"22.1"
-"2 wk ahead","65+ yr",51,"22.2"
-"2 wk ahead","65+ yr",51,"22.3"
-"2 wk ahead","65+ yr",51,"22.4"
-"2 wk ahead","65+ yr",51,"22.5"
-"2 wk ahead","65+ yr",51,"22.6"
-"2 wk ahead","65+ yr",51,"22.7"
-"2 wk ahead","65+ yr",51,"22.8"
-"2 wk ahead","65+ yr",51,"22.9"
-"2 wk ahead","65+ yr",51,"23.0"
-"2 wk ahead","65+ yr",51,"23.1"
-"2 wk ahead","65+ yr",51,"23.2"
-"2 wk ahead","65+ yr",51,"23.3"
-"2 wk ahead","65+ yr",51,"23.4"
-"2 wk ahead","65+ yr",51,"23.5"
-"2 wk ahead","65+ yr",51,"23.6"
-"2 wk ahead","65+ yr",51,"23.7"
-"2 wk ahead","65+ yr",51,"23.8"
-"2 wk ahead","65+ yr",51,"23.9"
-"2 wk ahead","65+ yr",51,"24.0"
-"2 wk ahead","65+ yr",51,"24.1"
-"2 wk ahead","65+ yr",51,"24.2"
-"2 wk ahead","Overall",51,"4.2"
-"2 wk ahead","Overall",51,"4.3"
-"2 wk ahead","Overall",51,"4.4"
-"2 wk ahead","Overall",51,"4.5"
-"2 wk ahead","Overall",51,"4.6"
-"2 wk ahead","0-4 yr",52,"1.5"
-"2 wk ahead","0-4 yr",52,"1.6"
-"2 wk ahead","0-4 yr",52,"1.7"
-"2 wk ahead","5-17 yr",52,"0.7"
-"2 wk ahead","5-17 yr",52,"0.8"
-"2 wk ahead","5-17 yr",52,"0.9"
-"2 wk ahead","18-49 yr",52,"1.0"
-"2 wk ahead","18-49 yr",52,"1.1"
-"2 wk ahead","18-49 yr",52,"1.2"
-"2 wk ahead","50-64 yr",52,"3.9"
-"2 wk ahead","50-64 yr",52,"4.0"
-"2 wk ahead","50-64 yr",52,"4.1"
-"2 wk ahead","50-64 yr",52,"4.2"
-"2 wk ahead","50-64 yr",52,"4.3"
-"2 wk ahead","65+ yr",52,"18.3"
-"2 wk ahead","65+ yr",52,"18.4"
-"2 wk ahead","65+ yr",52,"18.5"
-"2 wk ahead","65+ yr",52,"18.6"
-"2 wk ahead","65+ yr",52,"18.7"
-"2 wk ahead","65+ yr",52,"18.8"
-"2 wk ahead","65+ yr",52,"18.9"
-"2 wk ahead","65+ yr",52,"19.0"
-"2 wk ahead","65+ yr",52,"19.1"
-"2 wk ahead","65+ yr",52,"19.2"
-"2 wk ahead","65+ yr",52,"19.3"
-"2 wk ahead","65+ yr",52,"19.4"
-"2 wk ahead","65+ yr",52,"19.5"
-"2 wk ahead","65+ yr",52,"19.6"
-"2 wk ahead","65+ yr",52,"19.7"
-"2 wk ahead","65+ yr",52,"19.8"
-"2 wk ahead","65+ yr",52,"19.9"
-"2 wk ahead","65+ yr",52,"20.0"
-"2 wk ahead","65+ yr",52,"20.1"
-"2 wk ahead","65+ yr",52,"20.2"
-"2 wk ahead","65+ yr",52,"20.3"
-"2 wk ahead","Overall",52,"3.8"
-"2 wk ahead","Overall",52,"3.9"
-"2 wk ahead","Overall",52,"4.0"
-"2 wk ahead","Overall",52,"4.1"
-"2 wk ahead","Overall",52,"4.2"
-"2 wk ahead","0-4 yr",1,"1.7"
-"2 wk ahead","0-4 yr",1,"1.8"
-"2 wk ahead","0-4 yr",1,"1.9"
-"2 wk ahead","5-17 yr",1,"0.8"
-"2 wk ahead","5-17 yr",1,"0.9"
-"2 wk ahead","5-17 yr",1,"1.0"
-"2 wk ahead","18-49 yr",1,"1.1"
-"2 wk ahead","18-49 yr",1,"1.2"
-"2 wk ahead","18-49 yr",1,"1.3"
-"2 wk ahead","50-64 yr",1,"3.7"
-"2 wk ahead","50-64 yr",1,"3.8"
-"2 wk ahead","50-64 yr",1,"3.9"
-"2 wk ahead","50-64 yr",1,"4.0"
-"2 wk ahead","50-64 yr",1,"4.1"
-"2 wk ahead","65+ yr",1,"17.8"
-"2 wk ahead","65+ yr",1,"17.9"
-"2 wk ahead","65+ yr",1,"18.0"
-"2 wk ahead","65+ yr",1,"18.1"
-"2 wk ahead","65+ yr",1,"18.2"
-"2 wk ahead","65+ yr",1,"18.3"
-"2 wk ahead","65+ yr",1,"18.4"
-"2 wk ahead","65+ yr",1,"18.5"
-"2 wk ahead","65+ yr",1,"18.6"
-"2 wk ahead","65+ yr",1,"18.7"
-"2 wk ahead","65+ yr",1,"18.8"
-"2 wk ahead","65+ yr",1,"18.9"
-"2 wk ahead","65+ yr",1,"19.0"
-"2 wk ahead","65+ yr",1,"19.1"
-"2 wk ahead","65+ yr",1,"19.2"
-"2 wk ahead","65+ yr",1,"19.3"
-"2 wk ahead","65+ yr",1,"19.4"
-"2 wk ahead","65+ yr",1,"19.5"
-"2 wk ahead","65+ yr",1,"19.6"
-"2 wk ahead","Overall",1,"3.8"
-"2 wk ahead","Overall",1,"3.9"
-"2 wk ahead","Overall",1,"4.0"
-"2 wk ahead","Overall",1,"4.1"
-"2 wk ahead","Overall",1,"4.2"
-"2 wk ahead","0-4 yr",2,"2.1"
-"2 wk ahead","0-4 yr",2,"2.2"
-"2 wk ahead","0-4 yr",2,"2.3"
-"2 wk ahead","5-17 yr",2,"0.7"
-"2 wk ahead","5-17 yr",2,"0.8"
-"2 wk ahead","5-17 yr",2,"0.9"
-"2 wk ahead","18-49 yr",2,"1.0"
-"2 wk ahead","18-49 yr",2,"1.1"
-"2 wk ahead","18-49 yr",2,"1.2"
-"2 wk ahead","50-64 yr",2,"3.3"
-"2 wk ahead","50-64 yr",2,"3.4"
-"2 wk ahead","50-64 yr",2,"3.5"
-"2 wk ahead","50-64 yr",2,"3.6"
-"2 wk ahead","50-64 yr",2,"3.7"
-"2 wk ahead","65+ yr",2,"14.8"
-"2 wk ahead","65+ yr",2,"14.9"
-"2 wk ahead","65+ yr",2,"15.0"
-"2 wk ahead","65+ yr",2,"15.1"
-"2 wk ahead","65+ yr",2,"15.2"
-"2 wk ahead","65+ yr",2,"15.3"
-"2 wk ahead","65+ yr",2,"15.4"
-"2 wk ahead","65+ yr",2,"15.5"
-"2 wk ahead","65+ yr",2,"15.6"
-"2 wk ahead","65+ yr",2,"15.7"
-"2 wk ahead","65+ yr",2,"15.8"
-"2 wk ahead","65+ yr",2,"15.9"
-"2 wk ahead","65+ yr",2,"16.0"
-"2 wk ahead","65+ yr",2,"16.1"
-"2 wk ahead","65+ yr",2,"16.2"
-"2 wk ahead","65+ yr",2,"16.3"
-"2 wk ahead","65+ yr",2,"16.4"
-"2 wk ahead","Overall",2,"3.3"
-"2 wk ahead","Overall",2,"3.4"
-"2 wk ahead","Overall",2,"3.5"
-"2 wk ahead","Overall",2,"3.6"
-"2 wk ahead","Overall",2,"3.7"
-"2 wk ahead","0-4 yr",3,"2.5"
-"2 wk ahead","0-4 yr",3,"2.6"
-"2 wk ahead","0-4 yr",3,"2.7"
-"2 wk ahead","5-17 yr",3,"1.0"
-"2 wk ahead","5-17 yr",3,"1.1"
-"2 wk ahead","5-17 yr",3,"1.2"
-"2 wk ahead","18-49 yr",3,"1.2"
-"2 wk ahead","18-49 yr",3,"1.3"
-"2 wk ahead","18-49 yr",3,"1.4"
-"2 wk ahead","50-64 yr",3,"3.2"
-"2 wk ahead","50-64 yr",3,"3.3"
-"2 wk ahead","50-64 yr",3,"3.4"
-"2 wk ahead","50-64 yr",3,"3.5"
-"2 wk ahead","50-64 yr",3,"3.6"
-"2 wk ahead","65+ yr",3,"16.9"
-"2 wk ahead","65+ yr",3,"17.0"
-"2 wk ahead","65+ yr",3,"17.1"
-"2 wk ahead","65+ yr",3,"17.2"
-"2 wk ahead","65+ yr",3,"17.3"
-"2 wk ahead","65+ yr",3,"17.4"
-"2 wk ahead","65+ yr",3,"17.5"
-"2 wk ahead","65+ yr",3,"17.6"
-"2 wk ahead","65+ yr",3,"17.7"
-"2 wk ahead","65+ yr",3,"17.8"
-"2 wk ahead","65+ yr",3,"17.9"
-"2 wk ahead","65+ yr",3,"18.0"
-"2 wk ahead","65+ yr",3,"18.1"
-"2 wk ahead","65+ yr",3,"18.2"
-"2 wk ahead","65+ yr",3,"18.3"
-"2 wk ahead","65+ yr",3,"18.4"
-"2 wk ahead","65+ yr",3,"18.5"
-"2 wk ahead","65+ yr",3,"18.6"
-"2 wk ahead","65+ yr",3,"18.7"
-"2 wk ahead","Overall",3,"3.7"
-"2 wk ahead","Overall",3,"3.8"
-"2 wk ahead","Overall",3,"3.9"
-"2 wk ahead","Overall",3,"4.0"
-"2 wk ahead","Overall",3,"4.1"
-"2 wk ahead","0-4 yr",4,"3.3"
-"2 wk ahead","0-4 yr",4,"3.4"
-"2 wk ahead","0-4 yr",4,"3.5"
-"2 wk ahead","0-4 yr",4,"3.6"
-"2 wk ahead","0-4 yr",4,"3.7"
-"2 wk ahead","5-17 yr",4,"1.3"
-"2 wk ahead","5-17 yr",4,"1.4"
-"2 wk ahead","5-17 yr",4,"1.5"
-"2 wk ahead","18-49 yr",4,"1.3"
-"2 wk ahead","18-49 yr",4,"1.4"
-"2 wk ahead","18-49 yr",4,"1.5"
-"2 wk ahead","50-64 yr",4,"4.8"
-"2 wk ahead","50-64 yr",4,"4.9"
-"2 wk ahead","50-64 yr",4,"5.0"
-"2 wk ahead","50-64 yr",4,"5.1"
-"2 wk ahead","50-64 yr",4,"5.2"
-"2 wk ahead","65+ yr",4,"20.4"
-"2 wk ahead","65+ yr",4,"20.5"
-"2 wk ahead","65+ yr",4,"20.6"
-"2 wk ahead","65+ yr",4,"20.7"
-"2 wk ahead","65+ yr",4,"20.8"
-"2 wk ahead","65+ yr",4,"20.9"
-"2 wk ahead","65+ yr",4,"21.0"
-"2 wk ahead","65+ yr",4,"21.1"
-"2 wk ahead","65+ yr",4,"21.2"
-"2 wk ahead","65+ yr",4,"21.3"
-"2 wk ahead","65+ yr",4,"21.4"
-"2 wk ahead","65+ yr",4,"21.5"
-"2 wk ahead","65+ yr",4,"21.6"
-"2 wk ahead","65+ yr",4,"21.7"
-"2 wk ahead","65+ yr",4,"21.8"
-"2 wk ahead","65+ yr",4,"21.9"
-"2 wk ahead","65+ yr",4,"22.0"
-"2 wk ahead","65+ yr",4,"22.1"
-"2 wk ahead","65+ yr",4,"22.2"
-"2 wk ahead","65+ yr",4,"22.3"
-"2 wk ahead","65+ yr",4,"22.4"
-"2 wk ahead","65+ yr",4,"22.5"
-"2 wk ahead","65+ yr",4,"22.6"
-"2 wk ahead","Overall",4,"4.7"
-"2 wk ahead","Overall",4,"4.8"
-"2 wk ahead","Overall",4,"4.9"
-"2 wk ahead","Overall",4,"5.0"
-"2 wk ahead","Overall",4,"5.1"
-"2 wk ahead","0-4 yr",5,"4.0"
-"2 wk ahead","0-4 yr",5,"4.1"
-"2 wk ahead","0-4 yr",5,"4.2"
-"2 wk ahead","0-4 yr",5,"4.3"
-"2 wk ahead","0-4 yr",5,"4.4"
-"2 wk ahead","5-17 yr",5,"1.7"
-"2 wk ahead","5-17 yr",5,"1.8"
-"2 wk ahead","5-17 yr",5,"1.9"
-"2 wk ahead","18-49 yr",5,"1.4"
-"2 wk ahead","18-49 yr",5,"1.5"
-"2 wk ahead","18-49 yr",5,"1.6"
-"2 wk ahead","50-64 yr",5,"4.8"
-"2 wk ahead","50-64 yr",5,"4.9"
-"2 wk ahead","50-64 yr",5,"5.0"
-"2 wk ahead","50-64 yr",5,"5.1"
-"2 wk ahead","50-64 yr",5,"5.2"
-"2 wk ahead","50-64 yr",5,"5.3"
-"2 wk ahead","50-64 yr",5,"5.4"
-"2 wk ahead","65+ yr",5,"21.6"
-"2 wk ahead","65+ yr",5,"21.7"
-"2 wk ahead","65+ yr",5,"21.8"
-"2 wk ahead","65+ yr",5,"21.9"
-"2 wk ahead","65+ yr",5,"22.0"
-"2 wk ahead","65+ yr",5,"22.1"
-"2 wk ahead","65+ yr",5,"22.2"
-"2 wk ahead","65+ yr",5,"22.3"
-"2 wk ahead","65+ yr",5,"22.4"
-"2 wk ahead","65+ yr",5,"22.5"
-"2 wk ahead","65+ yr",5,"22.6"
-"2 wk ahead","65+ yr",5,"22.7"
-"2 wk ahead","65+ yr",5,"22.8"
-"2 wk ahead","65+ yr",5,"22.9"
-"2 wk ahead","65+ yr",5,"23.0"
-"2 wk ahead","65+ yr",5,"23.1"
-"2 wk ahead","65+ yr",5,"23.2"
-"2 wk ahead","65+ yr",5,"23.3"
-"2 wk ahead","65+ yr",5,"23.4"
-"2 wk ahead","65+ yr",5,"23.5"
-"2 wk ahead","65+ yr",5,"23.6"
-"2 wk ahead","65+ yr",5,"23.7"
-"2 wk ahead","65+ yr",5,"23.8"
-"2 wk ahead","Overall",5,"4.9"
-"2 wk ahead","Overall",5,"5.0"
-"2 wk ahead","Overall",5,"5.1"
-"2 wk ahead","Overall",5,"5.2"
-"2 wk ahead","Overall",5,"5.3"
-"2 wk ahead","Overall",5,"5.4"
-"2 wk ahead","Overall",5,"5.5"
-"2 wk ahead","0-4 yr",6,"3.9"
-"2 wk ahead","0-4 yr",6,"4.0"
-"2 wk ahead","0-4 yr",6,"4.1"
-"2 wk ahead","0-4 yr",6,"4.2"
-"2 wk ahead","0-4 yr",6,"4.3"
-"2 wk ahead","5-17 yr",6,"1.5"
-"2 wk ahead","5-17 yr",6,"1.6"
-"2 wk ahead","5-17 yr",6,"1.7"
-"2 wk ahead","18-49 yr",6,"1.6"
-"2 wk ahead","18-49 yr",6,"1.7"
-"2 wk ahead","18-49 yr",6,"1.8"
-"2 wk ahead","50-64 yr",6,"5.2"
-"2 wk ahead","50-64 yr",6,"5.3"
-"2 wk ahead","50-64 yr",6,"5.4"
-"2 wk ahead","50-64 yr",6,"5.5"
-"2 wk ahead","50-64 yr",6,"5.6"
-"2 wk ahead","50-64 yr",6,"5.7"
-"2 wk ahead","50-64 yr",6,"5.8"
-"2 wk ahead","65+ yr",6,"23.6"
-"2 wk ahead","65+ yr",6,"23.7"
-"2 wk ahead","65+ yr",6,"23.8"
-"2 wk ahead","65+ yr",6,"23.9"
-"2 wk ahead","65+ yr",6,"24.0"
-"2 wk ahead","65+ yr",6,"24.1"
-"2 wk ahead","65+ yr",6,"24.2"
-"2 wk ahead","65+ yr",6,"24.3"
-"2 wk ahead","65+ yr",6,"24.4"
-"2 wk ahead","65+ yr",6,"24.5"
-"2 wk ahead","65+ yr",6,"24.6"
-"2 wk ahead","65+ yr",6,"24.7"
-"2 wk ahead","65+ yr",6,"24.8"
-"2 wk ahead","65+ yr",6,"24.9"
-"2 wk ahead","65+ yr",6,"25.0"
-"2 wk ahead","65+ yr",6,"25.1"
-"2 wk ahead","65+ yr",6,"25.2"
-"2 wk ahead","65+ yr",6,"25.3"
-"2 wk ahead","65+ yr",6,"25.4"
-"2 wk ahead","65+ yr",6,"25.5"
-"2 wk ahead","65+ yr",6,"25.6"
-"2 wk ahead","65+ yr",6,"25.7"
-"2 wk ahead","65+ yr",6,"25.8"
-"2 wk ahead","65+ yr",6,"25.9"
-"2 wk ahead","65+ yr",6,"26.0"
-"2 wk ahead","Overall",6,"5.3"
-"2 wk ahead","Overall",6,"5.4"
-"2 wk ahead","Overall",6,"5.5"
-"2 wk ahead","Overall",6,"5.6"
-"2 wk ahead","Overall",6,"5.7"
-"2 wk ahead","Overall",6,"5.8"
-"2 wk ahead","Overall",6,"5.9"
-"2 wk ahead","0-4 yr",7,"2.8"
-"2 wk ahead","0-4 yr",7,"2.9"
-"2 wk ahead","0-4 yr",7,"3.0"
-"2 wk ahead","0-4 yr",7,"3.1"
-"2 wk ahead","0-4 yr",7,"3.2"
-"2 wk ahead","5-17 yr",7,"0.5"
-"2 wk ahead","5-17 yr",7,"0.6"
-"2 wk ahead","5-17 yr",7,"0.7"
-"2 wk ahead","18-49 yr",7,"0.9"
-"2 wk ahead","18-49 yr",7,"1.0"
-"2 wk ahead","18-49 yr",7,"1.1"
-"2 wk ahead","50-64 yr",7,"3.1"
-"2 wk ahead","50-64 yr",7,"3.2"
-"2 wk ahead","50-64 yr",7,"3.3"
-"2 wk ahead","50-64 yr",7,"3.4"
-"2 wk ahead","50-64 yr",7,"3.5"
-"2 wk ahead","65+ yr",7,"14.7"
-"2 wk ahead","65+ yr",7,"14.8"
-"2 wk ahead","65+ yr",7,"14.9"
-"2 wk ahead","65+ yr",7,"15.0"
-"2 wk ahead","65+ yr",7,"15.1"
-"2 wk ahead","65+ yr",7,"15.2"
-"2 wk ahead","65+ yr",7,"15.3"
-"2 wk ahead","65+ yr",7,"15.4"
-"2 wk ahead","65+ yr",7,"15.5"
-"2 wk ahead","65+ yr",7,"15.6"
-"2 wk ahead","65+ yr",7,"15.7"
-"2 wk ahead","65+ yr",7,"15.8"
-"2 wk ahead","65+ yr",7,"15.9"
-"2 wk ahead","65+ yr",7,"16.0"
-"2 wk ahead","65+ yr",7,"16.1"
-"2 wk ahead","65+ yr",7,"16.2"
-"2 wk ahead","65+ yr",7,"16.3"
-"2 wk ahead","Overall",7,"3.2"
-"2 wk ahead","Overall",7,"3.3"
-"2 wk ahead","Overall",7,"3.4"
-"2 wk ahead","Overall",7,"3.5"
-"2 wk ahead","Overall",7,"3.6"
-"2 wk ahead","0-4 yr",8,"2.1"
-"2 wk ahead","0-4 yr",8,"2.2"
-"2 wk ahead","0-4 yr",8,"2.3"
-"2 wk ahead","5-17 yr",8,"1.1"
-"2 wk ahead","5-17 yr",8,"1.2"
-"2 wk ahead","5-17 yr",8,"1.3"
-"2 wk ahead","18-49 yr",8,"0.7"
-"2 wk ahead","18-49 yr",8,"0.8"
-"2 wk ahead","18-49 yr",8,"0.9"
-"2 wk ahead","50-64 yr",8,"3.2"
-"2 wk ahead","50-64 yr",8,"3.3"
-"2 wk ahead","50-64 yr",8,"3.4"
-"2 wk ahead","50-64 yr",8,"3.5"
-"2 wk ahead","50-64 yr",8,"3.6"
-"2 wk ahead","65+ yr",8,"12.6"
-"2 wk ahead","65+ yr",8,"12.7"
-"2 wk ahead","65+ yr",8,"12.8"
-"2 wk ahead","65+ yr",8,"12.9"
-"2 wk ahead","65+ yr",8,"13.0"
-"2 wk ahead","65+ yr",8,"13.1"
-"2 wk ahead","65+ yr",8,"13.2"
-"2 wk ahead","65+ yr",8,"13.3"
-"2 wk ahead","65+ yr",8,"13.4"
-"2 wk ahead","65+ yr",8,"13.5"
-"2 wk ahead","65+ yr",8,"13.6"
-"2 wk ahead","65+ yr",8,"13.7"
-"2 wk ahead","65+ yr",8,"13.8"
-"2 wk ahead","65+ yr",8,"13.9"
-"2 wk ahead","65+ yr",8,"14.0"
-"2 wk ahead","Overall",8,"2.9"
-"2 wk ahead","Overall",8,"3.0"
-"2 wk ahead","Overall",8,"3.1"
-"2 wk ahead","Overall",8,"3.2"
-"2 wk ahead","Overall",8,"3.3"
-"2 wk ahead","0-4 yr",9,"2.4"
-"2 wk ahead","0-4 yr",9,"2.5"
-"2 wk ahead","0-4 yr",9,"2.6"
-"2 wk ahead","5-17 yr",9,"1.0"
-"2 wk ahead","5-17 yr",9,"1.1"
-"2 wk ahead","5-17 yr",9,"1.2"
-"2 wk ahead","18-49 yr",9,"0.9"
-"2 wk ahead","18-49 yr",9,"1.0"
-"2 wk ahead","18-49 yr",9,"1.1"
-"2 wk ahead","50-64 yr",9,"2.8"
-"2 wk ahead","50-64 yr",9,"2.9"
-"2 wk ahead","50-64 yr",9,"3.0"
-"2 wk ahead","50-64 yr",9,"3.1"
-"2 wk ahead","50-64 yr",9,"3.2"
-"2 wk ahead","65+ yr",9,"11.6"
-"2 wk ahead","65+ yr",9,"11.7"
-"2 wk ahead","65+ yr",9,"11.8"
-"2 wk ahead","65+ yr",9,"11.9"
-"2 wk ahead","65+ yr",9,"12.0"
-"2 wk ahead","65+ yr",9,"12.1"
-"2 wk ahead","65+ yr",9,"12.2"
-"2 wk ahead","65+ yr",9,"12.3"
-"2 wk ahead","65+ yr",9,"12.4"
-"2 wk ahead","65+ yr",9,"12.5"
-"2 wk ahead","65+ yr",9,"12.6"
-"2 wk ahead","65+ yr",9,"12.7"
-"2 wk ahead","65+ yr",9,"12.8"
-"2 wk ahead","Overall",9,"2.8"
-"2 wk ahead","Overall",9,"2.9"
-"2 wk ahead","Overall",9,"3.0"
-"2 wk ahead","Overall",9,"3.1"
-"2 wk ahead","Overall",9,"3.2"
-"2 wk ahead","0-4 yr",10,"2.8"
-"2 wk ahead","0-4 yr",10,"2.9"
-"2 wk ahead","0-4 yr",10,"3.0"
-"2 wk ahead","5-17 yr",10,"1.0"
-"2 wk ahead","5-17 yr",10,"1.1"
-"2 wk ahead","5-17 yr",10,"1.2"
-"2 wk ahead","18-49 yr",10,"1.0"
-"2 wk ahead","18-49 yr",10,"1.1"
-"2 wk ahead","18-49 yr",10,"1.2"
-"2 wk ahead","50-64 yr",10,"3.1"
-"2 wk ahead","50-64 yr",10,"3.2"
-"2 wk ahead","50-64 yr",10,"3.3"
-"2 wk ahead","50-64 yr",10,"3.4"
-"2 wk ahead","50-64 yr",10,"3.5"
-"2 wk ahead","65+ yr",10,"12.6"
-"2 wk ahead","65+ yr",10,"12.7"
-"2 wk ahead","65+ yr",10,"12.8"
-"2 wk ahead","65+ yr",10,"12.9"
-"2 wk ahead","65+ yr",10,"13.0"
-"2 wk ahead","65+ yr",10,"13.1"
-"2 wk ahead","65+ yr",10,"13.2"
-"2 wk ahead","65+ yr",10,"13.3"
-"2 wk ahead","65+ yr",10,"13.4"
-"2 wk ahead","65+ yr",10,"13.5"
-"2 wk ahead","65+ yr",10,"13.6"
-"2 wk ahead","65+ yr",10,"13.7"
-"2 wk ahead","65+ yr",10,"13.8"
-"2 wk ahead","65+ yr",10,"13.9"
-"2 wk ahead","65+ yr",10,"14.0"
-"2 wk ahead","Overall",10,"3.0"
-"2 wk ahead","Overall",10,"3.1"
-"2 wk ahead","Overall",10,"3.2"
-"2 wk ahead","Overall",10,"3.3"
-"2 wk ahead","Overall",10,"3.4"
-"2 wk ahead","0-4 yr",11,"1.7"
-"2 wk ahead","0-4 yr",11,"1.8"
-"2 wk ahead","0-4 yr",11,"1.9"
-"2 wk ahead","5-17 yr",11,"1.1"
-"2 wk ahead","5-17 yr",11,"1.2"
-"2 wk ahead","5-17 yr",11,"1.3"
-"2 wk ahead","18-49 yr",11,"1.0"
-"2 wk ahead","18-49 yr",11,"1.1"
-"2 wk ahead","18-49 yr",11,"1.2"
-"2 wk ahead","50-64 yr",11,"3.4"
-"2 wk ahead","50-64 yr",11,"3.5"
-"2 wk ahead","50-64 yr",11,"3.6"
-"2 wk ahead","50-64 yr",11,"3.7"
-"2 wk ahead","50-64 yr",11,"3.8"
-"2 wk ahead","65+ yr",11,"10.9"
-"2 wk ahead","65+ yr",11,"11.0"
-"2 wk ahead","65+ yr",11,"11.1"
-"2 wk ahead","65+ yr",11,"11.2"
-"2 wk ahead","65+ yr",11,"11.3"
-"2 wk ahead","65+ yr",11,"11.4"
-"2 wk ahead","65+ yr",11,"11.5"
-"2 wk ahead","65+ yr",11,"11.6"
-"2 wk ahead","65+ yr",11,"11.7"
-"2 wk ahead","65+ yr",11,"11.8"
-"2 wk ahead","65+ yr",11,"11.9"
-"2 wk ahead","65+ yr",11,"12.0"
-"2 wk ahead","65+ yr",11,"12.1"
-"2 wk ahead","Overall",11,"2.8"
-"2 wk ahead","Overall",11,"2.9"
-"2 wk ahead","Overall",11,"3.0"
-"2 wk ahead","Overall",11,"3.1"
-"2 wk ahead","Overall",11,"3.2"
-"2 wk ahead","0-4 yr",12,"2.0"
-"2 wk ahead","0-4 yr",12,"2.1"
-"2 wk ahead","0-4 yr",12,"2.2"
-"2 wk ahead","5-17 yr",12,"0.5"
-"2 wk ahead","5-17 yr",12,"0.6"
-"2 wk ahead","5-17 yr",12,"0.7"
-"2 wk ahead","18-49 yr",12,"0.6"
-"2 wk ahead","18-49 yr",12,"0.7"
-"2 wk ahead","18-49 yr",12,"0.8"
-"2 wk ahead","50-64 yr",12,"2.0"
-"2 wk ahead","50-64 yr",12,"2.1"
-"2 wk ahead","50-64 yr",12,"2.2"
-"2 wk ahead","65+ yr",12,"8.8"
-"2 wk ahead","65+ yr",12,"8.9"
-"2 wk ahead","65+ yr",12,"9.0"
-"2 wk ahead","65+ yr",12,"9.1"
-"2 wk ahead","65+ yr",12,"9.2"
-"2 wk ahead","65+ yr",12,"9.3"
-"2 wk ahead","65+ yr",12,"9.4"
-"2 wk ahead","65+ yr",12,"9.5"
-"2 wk ahead","65+ yr",12,"9.6"
-"2 wk ahead","65+ yr",12,"9.7"
-"2 wk ahead","65+ yr",12,"9.8"
-"2 wk ahead","Overall",12,"2.1"
-"2 wk ahead","Overall",12,"2.2"
-"2 wk ahead","Overall",12,"2.3"
-"2 wk ahead","0-4 yr",13,"1.0"
-"2 wk ahead","0-4 yr",13,"1.1"
-"2 wk ahead","0-4 yr",13,"1.2"
-"2 wk ahead","5-17 yr",13,"0.4"
-"2 wk ahead","5-17 yr",13,"0.5"
-"2 wk ahead","5-17 yr",13,"0.6"
-"2 wk ahead","18-49 yr",13,"0.2"
-"2 wk ahead","18-49 yr",13,"0.3"
-"2 wk ahead","18-49 yr",13,"0.4"
-"2 wk ahead","50-64 yr",13,"1.4"
-"2 wk ahead","50-64 yr",13,"1.5"
-"2 wk ahead","50-64 yr",13,"1.6"
-"2 wk ahead","65+ yr",13,"6.6"
-"2 wk ahead","65+ yr",13,"6.7"
-"2 wk ahead","65+ yr",13,"6.8"
-"2 wk ahead","65+ yr",13,"6.9"
-"2 wk ahead","65+ yr",13,"7.0"
-"2 wk ahead","65+ yr",13,"7.1"
-"2 wk ahead","65+ yr",13,"7.2"
-"2 wk ahead","Overall",13,"1.4"
-"2 wk ahead","Overall",13,"1.5"
-"2 wk ahead","Overall",13,"1.6"
-"2 wk ahead","0-4 yr",14,"0.9"
-"2 wk ahead","0-4 yr",14,"1.0"
-"2 wk ahead","0-4 yr",14,"1.1"
-"2 wk ahead","5-17 yr",14,"0.3"
-"2 wk ahead","5-17 yr",14,"0.4"
-"2 wk ahead","5-17 yr",14,"0.5"
-"2 wk ahead","18-49 yr",14,"0.2"
-"2 wk ahead","18-49 yr",14,"0.3"
-"2 wk ahead","18-49 yr",14,"0.4"
-"2 wk ahead","50-64 yr",14,"1.1"
-"2 wk ahead","50-64 yr",14,"1.2"
-"2 wk ahead","50-64 yr",14,"1.3"
-"2 wk ahead","65+ yr",14,"3.9"
-"2 wk ahead","65+ yr",14,"4.0"
-"2 wk ahead","65+ yr",14,"4.1"
-"2 wk ahead","65+ yr",14,"4.2"
-"2 wk ahead","65+ yr",14,"4.3"
-"2 wk ahead","Overall",14,"0.9"
-"2 wk ahead","Overall",14,"1.0"
-"2 wk ahead","Overall",14,"1.1"
-"2 wk ahead","0-4 yr",15,"0.5"
-"2 wk ahead","0-4 yr",15,"0.6"
-"2 wk ahead","0-4 yr",15,"0.7"
-"2 wk ahead","5-17 yr",15,"0.1"
-"2 wk ahead","5-17 yr",15,"0.2"
-"2 wk ahead","5-17 yr",15,"0.3"
-"2 wk ahead","18-49 yr",15,"0.1"
-"2 wk ahead","18-49 yr",15,"0.2"
-"2 wk ahead","18-49 yr",15,"0.3"
-"2 wk ahead","50-64 yr",15,"0.7"
-"2 wk ahead","50-64 yr",15,"0.8"
-"2 wk ahead","50-64 yr",15,"0.9"
-"2 wk ahead","65+ yr",15,"2.6"
-"2 wk ahead","65+ yr",15,"2.7"
-"2 wk ahead","65+ yr",15,"2.8"
-"2 wk ahead","Overall",15,"0.6"
-"2 wk ahead","Overall",15,"0.7"
-"2 wk ahead","Overall",15,"0.8"
-"3 wk ahead","0-4 yr",45,"0.4"
-"3 wk ahead","0-4 yr",45,"0.5"
-"3 wk ahead","0-4 yr",45,"0.6"
-"3 wk ahead","5-17 yr",45,"0.0"
-"3 wk ahead","5-17 yr",45,"0.1"
-"3 wk ahead","5-17 yr",45,"0.2"
-"3 wk ahead","18-49 yr",45,"0.0"
-"3 wk ahead","18-49 yr",45,"0.1"
-"3 wk ahead","18-49 yr",45,"0.2"
-"3 wk ahead","50-64 yr",45,"0.3"
-"3 wk ahead","50-64 yr",45,"0.4"
-"3 wk ahead","50-64 yr",45,"0.5"
-"3 wk ahead","65+ yr",45,"1.8"
-"3 wk ahead","65+ yr",45,"1.9"
-"3 wk ahead","65+ yr",45,"2.0"
-"3 wk ahead","Overall",45,"0.3"
-"3 wk ahead","Overall",45,"0.4"
-"3 wk ahead","Overall",45,"0.5"
-"3 wk ahead","0-4 yr",46,"0.5"
-"3 wk ahead","0-4 yr",46,"0.6"
-"3 wk ahead","0-4 yr",46,"0.7"
-"3 wk ahead","5-17 yr",46,"0.0"
-"3 wk ahead","5-17 yr",46,"0.1"
-"3 wk ahead","5-17 yr",46,"0.2"
-"3 wk ahead","18-49 yr",46,"0.1"
-"3 wk ahead","18-49 yr",46,"0.2"
-"3 wk ahead","18-49 yr",46,"0.3"
-"3 wk ahead","50-64 yr",46,"0.5"
-"3 wk ahead","50-64 yr",46,"0.6"
-"3 wk ahead","50-64 yr",46,"0.7"
-"3 wk ahead","65+ yr",46,"2.6"
-"3 wk ahead","65+ yr",46,"2.7"
-"3 wk ahead","65+ yr",46,"2.8"
-"3 wk ahead","Overall",46,"0.5"
-"3 wk ahead","Overall",46,"0.6"
-"3 wk ahead","Overall",46,"0.7"
-"3 wk ahead","0-4 yr",47,"0.4"
-"3 wk ahead","0-4 yr",47,"0.5"
-"3 wk ahead","0-4 yr",47,"0.6"
-"3 wk ahead","5-17 yr",47,"0.1"
-"3 wk ahead","5-17 yr",47,"0.2"
-"3 wk ahead","5-17 yr",47,"0.3"
-"3 wk ahead","18-49 yr",47,"0.3"
-"3 wk ahead","18-49 yr",47,"0.4"
-"3 wk ahead","18-49 yr",47,"0.5"
-"3 wk ahead","50-64 yr",47,"1.0"
-"3 wk ahead","50-64 yr",47,"1.1"
-"3 wk ahead","50-64 yr",47,"1.2"
-"3 wk ahead","65+ yr",47,"3.2"
-"3 wk ahead","65+ yr",47,"3.3"
-"3 wk ahead","65+ yr",47,"3.4"
-"3 wk ahead","65+ yr",47,"3.5"
-"3 wk ahead","65+ yr",47,"3.6"
-"3 wk ahead","Overall",47,"0.8"
-"3 wk ahead","Overall",47,"0.9"
-"3 wk ahead","Overall",47,"1.0"
-"3 wk ahead","0-4 yr",48,"1.5"
-"3 wk ahead","0-4 yr",48,"1.6"
-"3 wk ahead","0-4 yr",48,"1.7"
-"3 wk ahead","5-17 yr",48,"0.2"
-"3 wk ahead","5-17 yr",48,"0.3"
-"3 wk ahead","5-17 yr",48,"0.4"
-"3 wk ahead","18-49 yr",48,"0.4"
-"3 wk ahead","18-49 yr",48,"0.5"
-"3 wk ahead","18-49 yr",48,"0.6"
-"3 wk ahead","50-64 yr",48,"1.4"
-"3 wk ahead","50-64 yr",48,"1.5"
-"3 wk ahead","50-64 yr",48,"1.6"
-"3 wk ahead","65+ yr",48,"7.2"
-"3 wk ahead","65+ yr",48,"7.3"
-"3 wk ahead","65+ yr",48,"7.4"
-"3 wk ahead","65+ yr",48,"7.5"
-"3 wk ahead","65+ yr",48,"7.6"
-"3 wk ahead","65+ yr",48,"7.7"
-"3 wk ahead","65+ yr",48,"7.8"
-"3 wk ahead","65+ yr",48,"7.9"
-"3 wk ahead","65+ yr",48,"8.0"
-"3 wk ahead","Overall",48,"1.6"
-"3 wk ahead","Overall",48,"1.7"
-"3 wk ahead","Overall",48,"1.8"
-"3 wk ahead","0-4 yr",49,"1.3"
-"3 wk ahead","0-4 yr",49,"1.4"
-"3 wk ahead","0-4 yr",49,"1.5"
-"3 wk ahead","5-17 yr",49,"0.2"
-"3 wk ahead","5-17 yr",49,"0.3"
-"3 wk ahead","5-17 yr",49,"0.4"
-"3 wk ahead","18-49 yr",49,"0.8"
-"3 wk ahead","18-49 yr",49,"0.9"
-"3 wk ahead","18-49 yr",49,"1.0"
-"3 wk ahead","50-64 yr",49,"2.8"
-"3 wk ahead","50-64 yr",49,"2.9"
-"3 wk ahead","50-64 yr",49,"3.0"
-"3 wk ahead","50-64 yr",49,"3.1"
-"3 wk ahead","50-64 yr",49,"3.2"
-"3 wk ahead","65+ yr",49,"16.5"
-"3 wk ahead","65+ yr",49,"16.6"
-"3 wk ahead","65+ yr",49,"16.7"
-"3 wk ahead","65+ yr",49,"16.8"
-"3 wk ahead","65+ yr",49,"16.9"
-"3 wk ahead","65+ yr",49,"17.0"
-"3 wk ahead","65+ yr",49,"17.1"
-"3 wk ahead","65+ yr",49,"17.2"
-"3 wk ahead","65+ yr",49,"17.3"
-"3 wk ahead","65+ yr",49,"17.4"
-"3 wk ahead","65+ yr",49,"17.5"
-"3 wk ahead","65+ yr",49,"17.6"
-"3 wk ahead","65+ yr",49,"17.7"
-"3 wk ahead","65+ yr",49,"17.8"
-"3 wk ahead","65+ yr",49,"17.9"
-"3 wk ahead","65+ yr",49,"18.0"
-"3 wk ahead","65+ yr",49,"18.1"
-"3 wk ahead","65+ yr",49,"18.2"
-"3 wk ahead","65+ yr",49,"18.3"
-"3 wk ahead","Overall",49,"3.2"
-"3 wk ahead","Overall",49,"3.3"
-"3 wk ahead","Overall",49,"3.4"
-"3 wk ahead","Overall",49,"3.5"
-"3 wk ahead","Overall",49,"3.6"
-"3 wk ahead","0-4 yr",50,"1.2"
-"3 wk ahead","0-4 yr",50,"1.3"
-"3 wk ahead","0-4 yr",50,"1.4"
-"3 wk ahead","5-17 yr",50,"0.2"
-"3 wk ahead","5-17 yr",50,"0.3"
-"3 wk ahead","5-17 yr",50,"0.4"
-"3 wk ahead","18-49 yr",50,"1.0"
-"3 wk ahead","18-49 yr",50,"1.1"
-"3 wk ahead","18-49 yr",50,"1.2"
-"3 wk ahead","50-64 yr",50,"4.0"
-"3 wk ahead","50-64 yr",50,"4.1"
-"3 wk ahead","50-64 yr",50,"4.2"
-"3 wk ahead","50-64 yr",50,"4.3"
-"3 wk ahead","50-64 yr",50,"4.4"
-"3 wk ahead","65+ yr",50,"21.8"
-"3 wk ahead","65+ yr",50,"21.9"
-"3 wk ahead","65+ yr",50,"22.0"
-"3 wk ahead","65+ yr",50,"22.1"
-"3 wk ahead","65+ yr",50,"22.2"
-"3 wk ahead","65+ yr",50,"22.3"
-"3 wk ahead","65+ yr",50,"22.4"
-"3 wk ahead","65+ yr",50,"22.5"
-"3 wk ahead","65+ yr",50,"22.6"
-"3 wk ahead","65+ yr",50,"22.7"
-"3 wk ahead","65+ yr",50,"22.8"
-"3 wk ahead","65+ yr",50,"22.9"
-"3 wk ahead","65+ yr",50,"23.0"
-"3 wk ahead","65+ yr",50,"23.1"
-"3 wk ahead","65+ yr",50,"23.2"
-"3 wk ahead","65+ yr",50,"23.3"
-"3 wk ahead","65+ yr",50,"23.4"
-"3 wk ahead","65+ yr",50,"23.5"
-"3 wk ahead","65+ yr",50,"23.6"
-"3 wk ahead","65+ yr",50,"23.7"
-"3 wk ahead","65+ yr",50,"23.8"
-"3 wk ahead","65+ yr",50,"23.9"
-"3 wk ahead","65+ yr",50,"24.0"
-"3 wk ahead","65+ yr",50,"24.1"
-"3 wk ahead","65+ yr",50,"24.2"
-"3 wk ahead","Overall",50,"4.2"
-"3 wk ahead","Overall",50,"4.3"
-"3 wk ahead","Overall",50,"4.4"
-"3 wk ahead","Overall",50,"4.5"
-"3 wk ahead","Overall",50,"4.6"
-"3 wk ahead","0-4 yr",51,"1.5"
-"3 wk ahead","0-4 yr",51,"1.6"
-"3 wk ahead","0-4 yr",51,"1.7"
-"3 wk ahead","5-17 yr",51,"0.7"
-"3 wk ahead","5-17 yr",51,"0.8"
-"3 wk ahead","5-17 yr",51,"0.9"
-"3 wk ahead","18-49 yr",51,"1.0"
-"3 wk ahead","18-49 yr",51,"1.1"
-"3 wk ahead","18-49 yr",51,"1.2"
-"3 wk ahead","50-64 yr",51,"3.9"
-"3 wk ahead","50-64 yr",51,"4.0"
-"3 wk ahead","50-64 yr",51,"4.1"
-"3 wk ahead","50-64 yr",51,"4.2"
-"3 wk ahead","50-64 yr",51,"4.3"
-"3 wk ahead","65+ yr",51,"18.3"
-"3 wk ahead","65+ yr",51,"18.4"
-"3 wk ahead","65+ yr",51,"18.5"
-"3 wk ahead","65+ yr",51,"18.6"
-"3 wk ahead","65+ yr",51,"18.7"
-"3 wk ahead","65+ yr",51,"18.8"
-"3 wk ahead","65+ yr",51,"18.9"
-"3 wk ahead","65+ yr",51,"19.0"
-"3 wk ahead","65+ yr",51,"19.1"
-"3 wk ahead","65+ yr",51,"19.2"
-"3 wk ahead","65+ yr",51,"19.3"
-"3 wk ahead","65+ yr",51,"19.4"
-"3 wk ahead","65+ yr",51,"19.5"
-"3 wk ahead","65+ yr",51,"19.6"
-"3 wk ahead","65+ yr",51,"19.7"
-"3 wk ahead","65+ yr",51,"19.8"
-"3 wk ahead","65+ yr",51,"19.9"
-"3 wk ahead","65+ yr",51,"20.0"
-"3 wk ahead","65+ yr",51,"20.1"
-"3 wk ahead","65+ yr",51,"20.2"
-"3 wk ahead","65+ yr",51,"20.3"
-"3 wk ahead","Overall",51,"3.8"
-"3 wk ahead","Overall",51,"3.9"
-"3 wk ahead","Overall",51,"4.0"
-"3 wk ahead","Overall",51,"4.1"
-"3 wk ahead","Overall",51,"4.2"
-"3 wk ahead","0-4 yr",52,"1.7"
-"3 wk ahead","0-4 yr",52,"1.8"
-"3 wk ahead","0-4 yr",52,"1.9"
-"3 wk ahead","5-17 yr",52,"0.8"
-"3 wk ahead","5-17 yr",52,"0.9"
-"3 wk ahead","5-17 yr",52,"1.0"
-"3 wk ahead","18-49 yr",52,"1.1"
-"3 wk ahead","18-49 yr",52,"1.2"
-"3 wk ahead","18-49 yr",52,"1.3"
-"3 wk ahead","50-64 yr",52,"3.7"
-"3 wk ahead","50-64 yr",52,"3.8"
-"3 wk ahead","50-64 yr",52,"3.9"
-"3 wk ahead","50-64 yr",52,"4.0"
-"3 wk ahead","50-64 yr",52,"4.1"
-"3 wk ahead","65+ yr",52,"17.8"
-"3 wk ahead","65+ yr",52,"17.9"
-"3 wk ahead","65+ yr",52,"18.0"
-"3 wk ahead","65+ yr",52,"18.1"
-"3 wk ahead","65+ yr",52,"18.2"
-"3 wk ahead","65+ yr",52,"18.3"
-"3 wk ahead","65+ yr",52,"18.4"
-"3 wk ahead","65+ yr",52,"18.5"
-"3 wk ahead","65+ yr",52,"18.6"
-"3 wk ahead","65+ yr",52,"18.7"
-"3 wk ahead","65+ yr",52,"18.8"
-"3 wk ahead","65+ yr",52,"18.9"
-"3 wk ahead","65+ yr",52,"19.0"
-"3 wk ahead","65+ yr",52,"19.1"
-"3 wk ahead","65+ yr",52,"19.2"
-"3 wk ahead","65+ yr",52,"19.3"
-"3 wk ahead","65+ yr",52,"19.4"
-"3 wk ahead","65+ yr",52,"19.5"
-"3 wk ahead","65+ yr",52,"19.6"
-"3 wk ahead","Overall",52,"3.8"
-"3 wk ahead","Overall",52,"3.9"
-"3 wk ahead","Overall",52,"4.0"
-"3 wk ahead","Overall",52,"4.1"
-"3 wk ahead","Overall",52,"4.2"
-"3 wk ahead","0-4 yr",1,"2.1"
-"3 wk ahead","0-4 yr",1,"2.2"
-"3 wk ahead","0-4 yr",1,"2.3"
-"3 wk ahead","5-17 yr",1,"0.7"
-"3 wk ahead","5-17 yr",1,"0.8"
-"3 wk ahead","5-17 yr",1,"0.9"
-"3 wk ahead","18-49 yr",1,"1.0"
-"3 wk ahead","18-49 yr",1,"1.1"
-"3 wk ahead","18-49 yr",1,"1.2"
-"3 wk ahead","50-64 yr",1,"3.3"
-"3 wk ahead","50-64 yr",1,"3.4"
-"3 wk ahead","50-64 yr",1,"3.5"
-"3 wk ahead","50-64 yr",1,"3.6"
-"3 wk ahead","50-64 yr",1,"3.7"
-"3 wk ahead","65+ yr",1,"14.8"
-"3 wk ahead","65+ yr",1,"14.9"
-"3 wk ahead","65+ yr",1,"15.0"
-"3 wk ahead","65+ yr",1,"15.1"
-"3 wk ahead","65+ yr",1,"15.2"
-"3 wk ahead","65+ yr",1,"15.3"
-"3 wk ahead","65+ yr",1,"15.4"
-"3 wk ahead","65+ yr",1,"15.5"
-"3 wk ahead","65+ yr",1,"15.6"
-"3 wk ahead","65+ yr",1,"15.7"
-"3 wk ahead","65+ yr",1,"15.8"
-"3 wk ahead","65+ yr",1,"15.9"
-"3 wk ahead","65+ yr",1,"16.0"
-"3 wk ahead","65+ yr",1,"16.1"
-"3 wk ahead","65+ yr",1,"16.2"
-"3 wk ahead","65+ yr",1,"16.3"
-"3 wk ahead","65+ yr",1,"16.4"
-"3 wk ahead","Overall",1,"3.3"
-"3 wk ahead","Overall",1,"3.4"
-"3 wk ahead","Overall",1,"3.5"
-"3 wk ahead","Overall",1,"3.6"
-"3 wk ahead","Overall",1,"3.7"
-"3 wk ahead","0-4 yr",2,"2.5"
-"3 wk ahead","0-4 yr",2,"2.6"
-"3 wk ahead","0-4 yr",2,"2.7"
-"3 wk ahead","5-17 yr",2,"1.0"
-"3 wk ahead","5-17 yr",2,"1.1"
-"3 wk ahead","5-17 yr",2,"1.2"
-"3 wk ahead","18-49 yr",2,"1.2"
-"3 wk ahead","18-49 yr",2,"1.3"
-"3 wk ahead","18-49 yr",2,"1.4"
-"3 wk ahead","50-64 yr",2,"3.2"
-"3 wk ahead","50-64 yr",2,"3.3"
-"3 wk ahead","50-64 yr",2,"3.4"
-"3 wk ahead","50-64 yr",2,"3.5"
-"3 wk ahead","50-64 yr",2,"3.6"
-"3 wk ahead","65+ yr",2,"16.9"
-"3 wk ahead","65+ yr",2,"17.0"
-"3 wk ahead","65+ yr",2,"17.1"
-"3 wk ahead","65+ yr",2,"17.2"
-"3 wk ahead","65+ yr",2,"17.3"
-"3 wk ahead","65+ yr",2,"17.4"
-"3 wk ahead","65+ yr",2,"17.5"
-"3 wk ahead","65+ yr",2,"17.6"
-"3 wk ahead","65+ yr",2,"17.7"
-"3 wk ahead","65+ yr",2,"17.8"
-"3 wk ahead","65+ yr",2,"17.9"
-"3 wk ahead","65+ yr",2,"18.0"
-"3 wk ahead","65+ yr",2,"18.1"
-"3 wk ahead","65+ yr",2,"18.2"
-"3 wk ahead","65+ yr",2,"18.3"
-"3 wk ahead","65+ yr",2,"18.4"
-"3 wk ahead","65+ yr",2,"18.5"
-"3 wk ahead","65+ yr",2,"18.6"
-"3 wk ahead","65+ yr",2,"18.7"
-"3 wk ahead","Overall",2,"3.7"
-"3 wk ahead","Overall",2,"3.8"
-"3 wk ahead","Overall",2,"3.9"
-"3 wk ahead","Overall",2,"4.0"
-"3 wk ahead","Overall",2,"4.1"
-"3 wk ahead","0-4 yr",3,"3.3"
-"3 wk ahead","0-4 yr",3,"3.4"
-"3 wk ahead","0-4 yr",3,"3.5"
-"3 wk ahead","0-4 yr",3,"3.6"
-"3 wk ahead","0-4 yr",3,"3.7"
-"3 wk ahead","5-17 yr",3,"1.3"
-"3 wk ahead","5-17 yr",3,"1.4"
-"3 wk ahead","5-17 yr",3,"1.5"
-"3 wk ahead","18-49 yr",3,"1.3"
-"3 wk ahead","18-49 yr",3,"1.4"
-"3 wk ahead","18-49 yr",3,"1.5"
-"3 wk ahead","50-64 yr",3,"4.8"
-"3 wk ahead","50-64 yr",3,"4.9"
-"3 wk ahead","50-64 yr",3,"5.0"
-"3 wk ahead","50-64 yr",3,"5.1"
-"3 wk ahead","50-64 yr",3,"5.2"
-"3 wk ahead","65+ yr",3,"20.4"
-"3 wk ahead","65+ yr",3,"20.5"
-"3 wk ahead","65+ yr",3,"20.6"
-"3 wk ahead","65+ yr",3,"20.7"
-"3 wk ahead","65+ yr",3,"20.8"
-"3 wk ahead","65+ yr",3,"20.9"
-"3 wk ahead","65+ yr",3,"21.0"
-"3 wk ahead","65+ yr",3,"21.1"
-"3 wk ahead","65+ yr",3,"21.2"
-"3 wk ahead","65+ yr",3,"21.3"
-"3 wk ahead","65+ yr",3,"21.4"
-"3 wk ahead","65+ yr",3,"21.5"
-"3 wk ahead","65+ yr",3,"21.6"
-"3 wk ahead","65+ yr",3,"21.7"
-"3 wk ahead","65+ yr",3,"21.8"
-"3 wk ahead","65+ yr",3,"21.9"
-"3 wk ahead","65+ yr",3,"22.0"
-"3 wk ahead","65+ yr",3,"22.1"
-"3 wk ahead","65+ yr",3,"22.2"
-"3 wk ahead","65+ yr",3,"22.3"
-"3 wk ahead","65+ yr",3,"22.4"
-"3 wk ahead","65+ yr",3,"22.5"
-"3 wk ahead","65+ yr",3,"22.6"
-"3 wk ahead","Overall",3,"4.7"
-"3 wk ahead","Overall",3,"4.8"
-"3 wk ahead","Overall",3,"4.9"
-"3 wk ahead","Overall",3,"5.0"
-"3 wk ahead","Overall",3,"5.1"
-"3 wk ahead","0-4 yr",4,"4.0"
-"3 wk ahead","0-4 yr",4,"4.1"
-"3 wk ahead","0-4 yr",4,"4.2"
-"3 wk ahead","0-4 yr",4,"4.3"
-"3 wk ahead","0-4 yr",4,"4.4"
-"3 wk ahead","5-17 yr",4,"1.7"
-"3 wk ahead","5-17 yr",4,"1.8"
-"3 wk ahead","5-17 yr",4,"1.9"
-"3 wk ahead","18-49 yr",4,"1.4"
-"3 wk ahead","18-49 yr",4,"1.5"
-"3 wk ahead","18-49 yr",4,"1.6"
-"3 wk ahead","50-64 yr",4,"4.8"
-"3 wk ahead","50-64 yr",4,"4.9"
-"3 wk ahead","50-64 yr",4,"5.0"
-"3 wk ahead","50-64 yr",4,"5.1"
-"3 wk ahead","50-64 yr",4,"5.2"
-"3 wk ahead","50-64 yr",4,"5.3"
-"3 wk ahead","50-64 yr",4,"5.4"
-"3 wk ahead","65+ yr",4,"21.6"
-"3 wk ahead","65+ yr",4,"21.7"
-"3 wk ahead","65+ yr",4,"21.8"
-"3 wk ahead","65+ yr",4,"21.9"
-"3 wk ahead","65+ yr",4,"22.0"
-"3 wk ahead","65+ yr",4,"22.1"
-"3 wk ahead","65+ yr",4,"22.2"
-"3 wk ahead","65+ yr",4,"22.3"
-"3 wk ahead","65+ yr",4,"22.4"
-"3 wk ahead","65+ yr",4,"22.5"
-"3 wk ahead","65+ yr",4,"22.6"
-"3 wk ahead","65+ yr",4,"22.7"
-"3 wk ahead","65+ yr",4,"22.8"
-"3 wk ahead","65+ yr",4,"22.9"
-"3 wk ahead","65+ yr",4,"23.0"
-"3 wk ahead","65+ yr",4,"23.1"
-"3 wk ahead","65+ yr",4,"23.2"
-"3 wk ahead","65+ yr",4,"23.3"
-"3 wk ahead","65+ yr",4,"23.4"
-"3 wk ahead","65+ yr",4,"23.5"
-"3 wk ahead","65+ yr",4,"23.6"
-"3 wk ahead","65+ yr",4,"23.7"
-"3 wk ahead","65+ yr",4,"23.8"
-"3 wk ahead","Overall",4,"4.9"
-"3 wk ahead","Overall",4,"5.0"
-"3 wk ahead","Overall",4,"5.1"
-"3 wk ahead","Overall",4,"5.2"
-"3 wk ahead","Overall",4,"5.3"
-"3 wk ahead","Overall",4,"5.4"
-"3 wk ahead","Overall",4,"5.5"
-"3 wk ahead","0-4 yr",5,"3.9"
-"3 wk ahead","0-4 yr",5,"4.0"
-"3 wk ahead","0-4 yr",5,"4.1"
-"3 wk ahead","0-4 yr",5,"4.2"
-"3 wk ahead","0-4 yr",5,"4.3"
-"3 wk ahead","5-17 yr",5,"1.5"
-"3 wk ahead","5-17 yr",5,"1.6"
-"3 wk ahead","5-17 yr",5,"1.7"
-"3 wk ahead","18-49 yr",5,"1.6"
-"3 wk ahead","18-49 yr",5,"1.7"
-"3 wk ahead","18-49 yr",5,"1.8"
-"3 wk ahead","50-64 yr",5,"5.2"
-"3 wk ahead","50-64 yr",5,"5.3"
-"3 wk ahead","50-64 yr",5,"5.4"
-"3 wk ahead","50-64 yr",5,"5.5"
-"3 wk ahead","50-64 yr",5,"5.6"
-"3 wk ahead","50-64 yr",5,"5.7"
-"3 wk ahead","50-64 yr",5,"5.8"
-"3 wk ahead","65+ yr",5,"23.6"
-"3 wk ahead","65+ yr",5,"23.7"
-"3 wk ahead","65+ yr",5,"23.8"
-"3 wk ahead","65+ yr",5,"23.9"
-"3 wk ahead","65+ yr",5,"24.0"
-"3 wk ahead","65+ yr",5,"24.1"
-"3 wk ahead","65+ yr",5,"24.2"
-"3 wk ahead","65+ yr",5,"24.3"
-"3 wk ahead","65+ yr",5,"24.4"
-"3 wk ahead","65+ yr",5,"24.5"
-"3 wk ahead","65+ yr",5,"24.6"
-"3 wk ahead","65+ yr",5,"24.7"
-"3 wk ahead","65+ yr",5,"24.8"
-"3 wk ahead","65+ yr",5,"24.9"
-"3 wk ahead","65+ yr",5,"25.0"
-"3 wk ahead","65+ yr",5,"25.1"
-"3 wk ahead","65+ yr",5,"25.2"
-"3 wk ahead","65+ yr",5,"25.3"
-"3 wk ahead","65+ yr",5,"25.4"
-"3 wk ahead","65+ yr",5,"25.5"
-"3 wk ahead","65+ yr",5,"25.6"
-"3 wk ahead","65+ yr",5,"25.7"
-"3 wk ahead","65+ yr",5,"25.8"
-"3 wk ahead","65+ yr",5,"25.9"
-"3 wk ahead","65+ yr",5,"26.0"
-"3 wk ahead","Overall",5,"5.3"
-"3 wk ahead","Overall",5,"5.4"
-"3 wk ahead","Overall",5,"5.5"
-"3 wk ahead","Overall",5,"5.6"
-"3 wk ahead","Overall",5,"5.7"
-"3 wk ahead","Overall",5,"5.8"
-"3 wk ahead","Overall",5,"5.9"
-"3 wk ahead","0-4 yr",6,"2.8"
-"3 wk ahead","0-4 yr",6,"2.9"
-"3 wk ahead","0-4 yr",6,"3.0"
-"3 wk ahead","0-4 yr",6,"3.1"
-"3 wk ahead","0-4 yr",6,"3.2"
-"3 wk ahead","5-17 yr",6,"0.5"
-"3 wk ahead","5-17 yr",6,"0.6"
-"3 wk ahead","5-17 yr",6,"0.7"
-"3 wk ahead","18-49 yr",6,"0.9"
-"3 wk ahead","18-49 yr",6,"1.0"
-"3 wk ahead","18-49 yr",6,"1.1"
-"3 wk ahead","50-64 yr",6,"3.1"
-"3 wk ahead","50-64 yr",6,"3.2"
-"3 wk ahead","50-64 yr",6,"3.3"
-"3 wk ahead","50-64 yr",6,"3.4"
-"3 wk ahead","50-64 yr",6,"3.5"
-"3 wk ahead","65+ yr",6,"14.7"
-"3 wk ahead","65+ yr",6,"14.8"
-"3 wk ahead","65+ yr",6,"14.9"
-"3 wk ahead","65+ yr",6,"15.0"
-"3 wk ahead","65+ yr",6,"15.1"
-"3 wk ahead","65+ yr",6,"15.2"
-"3 wk ahead","65+ yr",6,"15.3"
-"3 wk ahead","65+ yr",6,"15.4"
-"3 wk ahead","65+ yr",6,"15.5"
-"3 wk ahead","65+ yr",6,"15.6"
-"3 wk ahead","65+ yr",6,"15.7"
-"3 wk ahead","65+ yr",6,"15.8"
-"3 wk ahead","65+ yr",6,"15.9"
-"3 wk ahead","65+ yr",6,"16.0"
-"3 wk ahead","65+ yr",6,"16.1"
-"3 wk ahead","65+ yr",6,"16.2"
-"3 wk ahead","65+ yr",6,"16.3"
-"3 wk ahead","Overall",6,"3.2"
-"3 wk ahead","Overall",6,"3.3"
-"3 wk ahead","Overall",6,"3.4"
-"3 wk ahead","Overall",6,"3.5"
-"3 wk ahead","Overall",6,"3.6"
-"3 wk ahead","0-4 yr",7,"2.1"
-"3 wk ahead","0-4 yr",7,"2.2"
-"3 wk ahead","0-4 yr",7,"2.3"
-"3 wk ahead","5-17 yr",7,"1.1"
-"3 wk ahead","5-17 yr",7,"1.2"
-"3 wk ahead","5-17 yr",7,"1.3"
-"3 wk ahead","18-49 yr",7,"0.7"
-"3 wk ahead","18-49 yr",7,"0.8"
-"3 wk ahead","18-49 yr",7,"0.9"
-"3 wk ahead","50-64 yr",7,"3.2"
-"3 wk ahead","50-64 yr",7,"3.3"
-"3 wk ahead","50-64 yr",7,"3.4"
-"3 wk ahead","50-64 yr",7,"3.5"
-"3 wk ahead","50-64 yr",7,"3.6"
-"3 wk ahead","65+ yr",7,"12.6"
-"3 wk ahead","65+ yr",7,"12.7"
-"3 wk ahead","65+ yr",7,"12.8"
-"3 wk ahead","65+ yr",7,"12.9"
-"3 wk ahead","65+ yr",7,"13.0"
-"3 wk ahead","65+ yr",7,"13.1"
-"3 wk ahead","65+ yr",7,"13.2"
-"3 wk ahead","65+ yr",7,"13.3"
-"3 wk ahead","65+ yr",7,"13.4"
-"3 wk ahead","65+ yr",7,"13.5"
-"3 wk ahead","65+ yr",7,"13.6"
-"3 wk ahead","65+ yr",7,"13.7"
-"3 wk ahead","65+ yr",7,"13.8"
-"3 wk ahead","65+ yr",7,"13.9"
-"3 wk ahead","65+ yr",7,"14.0"
-"3 wk ahead","Overall",7,"2.9"
-"3 wk ahead","Overall",7,"3.0"
-"3 wk ahead","Overall",7,"3.1"
-"3 wk ahead","Overall",7,"3.2"
-"3 wk ahead","Overall",7,"3.3"
-"3 wk ahead","0-4 yr",8,"2.4"
-"3 wk ahead","0-4 yr",8,"2.5"
-"3 wk ahead","0-4 yr",8,"2.6"
-"3 wk ahead","5-17 yr",8,"1.0"
-"3 wk ahead","5-17 yr",8,"1.1"
-"3 wk ahead","5-17 yr",8,"1.2"
-"3 wk ahead","18-49 yr",8,"0.9"
-"3 wk ahead","18-49 yr",8,"1.0"
-"3 wk ahead","18-49 yr",8,"1.1"
-"3 wk ahead","50-64 yr",8,"2.8"
-"3 wk ahead","50-64 yr",8,"2.9"
-"3 wk ahead","50-64 yr",8,"3.0"
-"3 wk ahead","50-64 yr",8,"3.1"
-"3 wk ahead","50-64 yr",8,"3.2"
-"3 wk ahead","65+ yr",8,"11.6"
-"3 wk ahead","65+ yr",8,"11.7"
-"3 wk ahead","65+ yr",8,"11.8"
-"3 wk ahead","65+ yr",8,"11.9"
-"3 wk ahead","65+ yr",8,"12.0"
-"3 wk ahead","65+ yr",8,"12.1"
-"3 wk ahead","65+ yr",8,"12.2"
-"3 wk ahead","65+ yr",8,"12.3"
-"3 wk ahead","65+ yr",8,"12.4"
-"3 wk ahead","65+ yr",8,"12.5"
-"3 wk ahead","65+ yr",8,"12.6"
-"3 wk ahead","65+ yr",8,"12.7"
-"3 wk ahead","65+ yr",8,"12.8"
-"3 wk ahead","Overall",8,"2.8"
-"3 wk ahead","Overall",8,"2.9"
-"3 wk ahead","Overall",8,"3.0"
-"3 wk ahead","Overall",8,"3.1"
-"3 wk ahead","Overall",8,"3.2"
-"3 wk ahead","0-4 yr",9,"2.8"
-"3 wk ahead","0-4 yr",9,"2.9"
-"3 wk ahead","0-4 yr",9,"3.0"
-"3 wk ahead","5-17 yr",9,"1.0"
-"3 wk ahead","5-17 yr",9,"1.1"
-"3 wk ahead","5-17 yr",9,"1.2"
-"3 wk ahead","18-49 yr",9,"1.0"
-"3 wk ahead","18-49 yr",9,"1.1"
-"3 wk ahead","18-49 yr",9,"1.2"
-"3 wk ahead","50-64 yr",9,"3.1"
-"3 wk ahead","50-64 yr",9,"3.2"
-"3 wk ahead","50-64 yr",9,"3.3"
-"3 wk ahead","50-64 yr",9,"3.4"
-"3 wk ahead","50-64 yr",9,"3.5"
-"3 wk ahead","65+ yr",9,"12.6"
-"3 wk ahead","65+ yr",9,"12.7"
-"3 wk ahead","65+ yr",9,"12.8"
-"3 wk ahead","65+ yr",9,"12.9"
-"3 wk ahead","65+ yr",9,"13.0"
-"3 wk ahead","65+ yr",9,"13.1"
-"3 wk ahead","65+ yr",9,"13.2"
-"3 wk ahead","65+ yr",9,"13.3"
-"3 wk ahead","65+ yr",9,"13.4"
-"3 wk ahead","65+ yr",9,"13.5"
-"3 wk ahead","65+ yr",9,"13.6"
-"3 wk ahead","65+ yr",9,"13.7"
-"3 wk ahead","65+ yr",9,"13.8"
-"3 wk ahead","65+ yr",9,"13.9"
-"3 wk ahead","65+ yr",9,"14.0"
-"3 wk ahead","Overall",9,"3.0"
-"3 wk ahead","Overall",9,"3.1"
-"3 wk ahead","Overall",9,"3.2"
-"3 wk ahead","Overall",9,"3.3"
-"3 wk ahead","Overall",9,"3.4"
-"3 wk ahead","0-4 yr",10,"1.7"
-"3 wk ahead","0-4 yr",10,"1.8"
-"3 wk ahead","0-4 yr",10,"1.9"
-"3 wk ahead","5-17 yr",10,"1.1"
-"3 wk ahead","5-17 yr",10,"1.2"
-"3 wk ahead","5-17 yr",10,"1.3"
-"3 wk ahead","18-49 yr",10,"1.0"
-"3 wk ahead","18-49 yr",10,"1.1"
-"3 wk ahead","18-49 yr",10,"1.2"
-"3 wk ahead","50-64 yr",10,"3.4"
-"3 wk ahead","50-64 yr",10,"3.5"
-"3 wk ahead","50-64 yr",10,"3.6"
-"3 wk ahead","50-64 yr",10,"3.7"
-"3 wk ahead","50-64 yr",10,"3.8"
-"3 wk ahead","65+ yr",10,"10.9"
-"3 wk ahead","65+ yr",10,"11.0"
-"3 wk ahead","65+ yr",10,"11.1"
-"3 wk ahead","65+ yr",10,"11.2"
-"3 wk ahead","65+ yr",10,"11.3"
-"3 wk ahead","65+ yr",10,"11.4"
-"3 wk ahead","65+ yr",10,"11.5"
-"3 wk ahead","65+ yr",10,"11.6"
-"3 wk ahead","65+ yr",10,"11.7"
-"3 wk ahead","65+ yr",10,"11.8"
-"3 wk ahead","65+ yr",10,"11.9"
-"3 wk ahead","65+ yr",10,"12.0"
-"3 wk ahead","65+ yr",10,"12.1"
-"3 wk ahead","Overall",10,"2.8"
-"3 wk ahead","Overall",10,"2.9"
-"3 wk ahead","Overall",10,"3.0"
-"3 wk ahead","Overall",10,"3.1"
-"3 wk ahead","Overall",10,"3.2"
-"3 wk ahead","0-4 yr",11,"2.0"
-"3 wk ahead","0-4 yr",11,"2.1"
-"3 wk ahead","0-4 yr",11,"2.2"
-"3 wk ahead","5-17 yr",11,"0.5"
-"3 wk ahead","5-17 yr",11,"0.6"
-"3 wk ahead","5-17 yr",11,"0.7"
-"3 wk ahead","18-49 yr",11,"0.6"
-"3 wk ahead","18-49 yr",11,"0.7"
-"3 wk ahead","18-49 yr",11,"0.8"
-"3 wk ahead","50-64 yr",11,"2.0"
-"3 wk ahead","50-64 yr",11,"2.1"
-"3 wk ahead","50-64 yr",11,"2.2"
-"3 wk ahead","65+ yr",11,"8.8"
-"3 wk ahead","65+ yr",11,"8.9"
-"3 wk ahead","65+ yr",11,"9.0"
-"3 wk ahead","65+ yr",11,"9.1"
-"3 wk ahead","65+ yr",11,"9.2"
-"3 wk ahead","65+ yr",11,"9.3"
-"3 wk ahead","65+ yr",11,"9.4"
-"3 wk ahead","65+ yr",11,"9.5"
-"3 wk ahead","65+ yr",11,"9.6"
-"3 wk ahead","65+ yr",11,"9.7"
-"3 wk ahead","65+ yr",11,"9.8"
-"3 wk ahead","Overall",11,"2.1"
-"3 wk ahead","Overall",11,"2.2"
-"3 wk ahead","Overall",11,"2.3"
-"3 wk ahead","0-4 yr",12,"1.0"
-"3 wk ahead","0-4 yr",12,"1.1"
-"3 wk ahead","0-4 yr",12,"1.2"
-"3 wk ahead","5-17 yr",12,"0.4"
-"3 wk ahead","5-17 yr",12,"0.5"
-"3 wk ahead","5-17 yr",12,"0.6"
-"3 wk ahead","18-49 yr",12,"0.2"
-"3 wk ahead","18-49 yr",12,"0.3"
-"3 wk ahead","18-49 yr",12,"0.4"
-"3 wk ahead","50-64 yr",12,"1.4"
-"3 wk ahead","50-64 yr",12,"1.5"
-"3 wk ahead","50-64 yr",12,"1.6"
-"3 wk ahead","65+ yr",12,"6.6"
-"3 wk ahead","65+ yr",12,"6.7"
-"3 wk ahead","65+ yr",12,"6.8"
-"3 wk ahead","65+ yr",12,"6.9"
-"3 wk ahead","65+ yr",12,"7.0"
-"3 wk ahead","65+ yr",12,"7.1"
-"3 wk ahead","65+ yr",12,"7.2"
-"3 wk ahead","Overall",12,"1.4"
-"3 wk ahead","Overall",12,"1.5"
-"3 wk ahead","Overall",12,"1.6"
-"3 wk ahead","0-4 yr",13,"0.9"
-"3 wk ahead","0-4 yr",13,"1.0"
-"3 wk ahead","0-4 yr",13,"1.1"
-"3 wk ahead","5-17 yr",13,"0.3"
-"3 wk ahead","5-17 yr",13,"0.4"
-"3 wk ahead","5-17 yr",13,"0.5"
-"3 wk ahead","18-49 yr",13,"0.2"
-"3 wk ahead","18-49 yr",13,"0.3"
-"3 wk ahead","18-49 yr",13,"0.4"
-"3 wk ahead","50-64 yr",13,"1.1"
-"3 wk ahead","50-64 yr",13,"1.2"
-"3 wk ahead","50-64 yr",13,"1.3"
-"3 wk ahead","65+ yr",13,"3.9"
-"3 wk ahead","65+ yr",13,"4.0"
-"3 wk ahead","65+ yr",13,"4.1"
-"3 wk ahead","65+ yr",13,"4.2"
-"3 wk ahead","65+ yr",13,"4.3"
-"3 wk ahead","Overall",13,"0.9"
-"3 wk ahead","Overall",13,"1.0"
-"3 wk ahead","Overall",13,"1.1"
-"3 wk ahead","0-4 yr",14,"0.5"
-"3 wk ahead","0-4 yr",14,"0.6"
-"3 wk ahead","0-4 yr",14,"0.7"
-"3 wk ahead","5-17 yr",14,"0.1"
-"3 wk ahead","5-17 yr",14,"0.2"
-"3 wk ahead","5-17 yr",14,"0.3"
-"3 wk ahead","18-49 yr",14,"0.1"
-"3 wk ahead","18-49 yr",14,"0.2"
-"3 wk ahead","18-49 yr",14,"0.3"
-"3 wk ahead","50-64 yr",14,"0.7"
-"3 wk ahead","50-64 yr",14,"0.8"
-"3 wk ahead","50-64 yr",14,"0.9"
-"3 wk ahead","65+ yr",14,"2.6"
-"3 wk ahead","65+ yr",14,"2.7"
-"3 wk ahead","65+ yr",14,"2.8"
-"3 wk ahead","Overall",14,"0.6"
-"3 wk ahead","Overall",14,"0.7"
-"3 wk ahead","Overall",14,"0.8"
-"4 wk ahead","0-4 yr",45,"0.5"
-"4 wk ahead","0-4 yr",45,"0.6"
-"4 wk ahead","0-4 yr",45,"0.7"
-"4 wk ahead","5-17 yr",45,"0.0"
-"4 wk ahead","5-17 yr",45,"0.1"
-"4 wk ahead","5-17 yr",45,"0.2"
-"4 wk ahead","18-49 yr",45,"0.1"
-"4 wk ahead","18-49 yr",45,"0.2"
-"4 wk ahead","18-49 yr",45,"0.3"
-"4 wk ahead","50-64 yr",45,"0.5"
-"4 wk ahead","50-64 yr",45,"0.6"
-"4 wk ahead","50-64 yr",45,"0.7"
-"4 wk ahead","65+ yr",45,"2.6"
-"4 wk ahead","65+ yr",45,"2.7"
-"4 wk ahead","65+ yr",45,"2.8"
-"4 wk ahead","Overall",45,"0.5"
-"4 wk ahead","Overall",45,"0.6"
-"4 wk ahead","Overall",45,"0.7"
-"4 wk ahead","0-4 yr",46,"0.4"
-"4 wk ahead","0-4 yr",46,"0.5"
-"4 wk ahead","0-4 yr",46,"0.6"
-"4 wk ahead","5-17 yr",46,"0.1"
-"4 wk ahead","5-17 yr",46,"0.2"
-"4 wk ahead","5-17 yr",46,"0.3"
-"4 wk ahead","18-49 yr",46,"0.3"
-"4 wk ahead","18-49 yr",46,"0.4"
-"4 wk ahead","18-49 yr",46,"0.5"
-"4 wk ahead","50-64 yr",46,"1.0"
-"4 wk ahead","50-64 yr",46,"1.1"
-"4 wk ahead","50-64 yr",46,"1.2"
-"4 wk ahead","65+ yr",46,"3.2"
-"4 wk ahead","65+ yr",46,"3.3"
-"4 wk ahead","65+ yr",46,"3.4"
-"4 wk ahead","65+ yr",46,"3.5"
-"4 wk ahead","65+ yr",46,"3.6"
-"4 wk ahead","Overall",46,"0.8"
-"4 wk ahead","Overall",46,"0.9"
-"4 wk ahead","Overall",46,"1.0"
-"4 wk ahead","0-4 yr",47,"1.5"
-"4 wk ahead","0-4 yr",47,"1.6"
-"4 wk ahead","0-4 yr",47,"1.7"
-"4 wk ahead","5-17 yr",47,"0.2"
-"4 wk ahead","5-17 yr",47,"0.3"
-"4 wk ahead","5-17 yr",47,"0.4"
-"4 wk ahead","18-49 yr",47,"0.4"
-"4 wk ahead","18-49 yr",47,"0.5"
-"4 wk ahead","18-49 yr",47,"0.6"
-"4 wk ahead","50-64 yr",47,"1.4"
-"4 wk ahead","50-64 yr",47,"1.5"
-"4 wk ahead","50-64 yr",47,"1.6"
-"4 wk ahead","65+ yr",47,"7.2"
-"4 wk ahead","65+ yr",47,"7.3"
-"4 wk ahead","65+ yr",47,"7.4"
-"4 wk ahead","65+ yr",47,"7.5"
-"4 wk ahead","65+ yr",47,"7.6"
-"4 wk ahead","65+ yr",47,"7.7"
-"4 wk ahead","65+ yr",47,"7.8"
-"4 wk ahead","65+ yr",47,"7.9"
-"4 wk ahead","65+ yr",47,"8.0"
-"4 wk ahead","Overall",47,"1.6"
-"4 wk ahead","Overall",47,"1.7"
-"4 wk ahead","Overall",47,"1.8"
-"4 wk ahead","0-4 yr",48,"1.3"
-"4 wk ahead","0-4 yr",48,"1.4"
-"4 wk ahead","0-4 yr",48,"1.5"
-"4 wk ahead","5-17 yr",48,"0.2"
-"4 wk ahead","5-17 yr",48,"0.3"
-"4 wk ahead","5-17 yr",48,"0.4"
-"4 wk ahead","18-49 yr",48,"0.8"
-"4 wk ahead","18-49 yr",48,"0.9"
-"4 wk ahead","18-49 yr",48,"1.0"
-"4 wk ahead","50-64 yr",48,"2.8"
-"4 wk ahead","50-64 yr",48,"2.9"
-"4 wk ahead","50-64 yr",48,"3.0"
-"4 wk ahead","50-64 yr",48,"3.1"
-"4 wk ahead","50-64 yr",48,"3.2"
-"4 wk ahead","65+ yr",48,"16.5"
-"4 wk ahead","65+ yr",48,"16.6"
-"4 wk ahead","65+ yr",48,"16.7"
-"4 wk ahead","65+ yr",48,"16.8"
-"4 wk ahead","65+ yr",48,"16.9"
-"4 wk ahead","65+ yr",48,"17.0"
-"4 wk ahead","65+ yr",48,"17.1"
-"4 wk ahead","65+ yr",48,"17.2"
-"4 wk ahead","65+ yr",48,"17.3"
-"4 wk ahead","65+ yr",48,"17.4"
-"4 wk ahead","65+ yr",48,"17.5"
-"4 wk ahead","65+ yr",48,"17.6"
-"4 wk ahead","65+ yr",48,"17.7"
-"4 wk ahead","65+ yr",48,"17.8"
-"4 wk ahead","65+ yr",48,"17.9"
-"4 wk ahead","65+ yr",48,"18.0"
-"4 wk ahead","65+ yr",48,"18.1"
-"4 wk ahead","65+ yr",48,"18.2"
-"4 wk ahead","65+ yr",48,"18.3"
-"4 wk ahead","Overall",48,"3.2"
-"4 wk ahead","Overall",48,"3.3"
-"4 wk ahead","Overall",48,"3.4"
-"4 wk ahead","Overall",48,"3.5"
-"4 wk ahead","Overall",48,"3.6"
-"4 wk ahead","0-4 yr",49,"1.2"
-"4 wk ahead","0-4 yr",49,"1.3"
-"4 wk ahead","0-4 yr",49,"1.4"
-"4 wk ahead","5-17 yr",49,"0.2"
-"4 wk ahead","5-17 yr",49,"0.3"
-"4 wk ahead","5-17 yr",49,"0.4"
-"4 wk ahead","18-49 yr",49,"1.0"
-"4 wk ahead","18-49 yr",49,"1.1"
-"4 wk ahead","18-49 yr",49,"1.2"
-"4 wk ahead","50-64 yr",49,"4.0"
-"4 wk ahead","50-64 yr",49,"4.1"
-"4 wk ahead","50-64 yr",49,"4.2"
-"4 wk ahead","50-64 yr",49,"4.3"
-"4 wk ahead","50-64 yr",49,"4.4"
-"4 wk ahead","65+ yr",49,"21.8"
-"4 wk ahead","65+ yr",49,"21.9"
-"4 wk ahead","65+ yr",49,"22.0"
-"4 wk ahead","65+ yr",49,"22.1"
-"4 wk ahead","65+ yr",49,"22.2"
-"4 wk ahead","65+ yr",49,"22.3"
-"4 wk ahead","65+ yr",49,"22.4"
-"4 wk ahead","65+ yr",49,"22.5"
-"4 wk ahead","65+ yr",49,"22.6"
-"4 wk ahead","65+ yr",49,"22.7"
-"4 wk ahead","65+ yr",49,"22.8"
-"4 wk ahead","65+ yr",49,"22.9"
-"4 wk ahead","65+ yr",49,"23.0"
-"4 wk ahead","65+ yr",49,"23.1"
-"4 wk ahead","65+ yr",49,"23.2"
-"4 wk ahead","65+ yr",49,"23.3"
-"4 wk ahead","65+ yr",49,"23.4"
-"4 wk ahead","65+ yr",49,"23.5"
-"4 wk ahead","65+ yr",49,"23.6"
-"4 wk ahead","65+ yr",49,"23.7"
-"4 wk ahead","65+ yr",49,"23.8"
-"4 wk ahead","65+ yr",49,"23.9"
-"4 wk ahead","65+ yr",49,"24.0"
-"4 wk ahead","65+ yr",49,"24.1"
-"4 wk ahead","65+ yr",49,"24.2"
-"4 wk ahead","Overall",49,"4.2"
-"4 wk ahead","Overall",49,"4.3"
-"4 wk ahead","Overall",49,"4.4"
-"4 wk ahead","Overall",49,"4.5"
-"4 wk ahead","Overall",49,"4.6"
-"4 wk ahead","0-4 yr",50,"1.5"
-"4 wk ahead","0-4 yr",50,"1.6"
-"4 wk ahead","0-4 yr",50,"1.7"
-"4 wk ahead","5-17 yr",50,"0.7"
-"4 wk ahead","5-17 yr",50,"0.8"
-"4 wk ahead","5-17 yr",50,"0.9"
-"4 wk ahead","18-49 yr",50,"1.0"
-"4 wk ahead","18-49 yr",50,"1.1"
-"4 wk ahead","18-49 yr",50,"1.2"
-"4 wk ahead","50-64 yr",50,"3.9"
-"4 wk ahead","50-64 yr",50,"4.0"
-"4 wk ahead","50-64 yr",50,"4.1"
-"4 wk ahead","50-64 yr",50,"4.2"
-"4 wk ahead","50-64 yr",50,"4.3"
-"4 wk ahead","65+ yr",50,"18.3"
-"4 wk ahead","65+ yr",50,"18.4"
-"4 wk ahead","65+ yr",50,"18.5"
-"4 wk ahead","65+ yr",50,"18.6"
-"4 wk ahead","65+ yr",50,"18.7"
-"4 wk ahead","65+ yr",50,"18.8"
-"4 wk ahead","65+ yr",50,"18.9"
-"4 wk ahead","65+ yr",50,"19.0"
-"4 wk ahead","65+ yr",50,"19.1"
-"4 wk ahead","65+ yr",50,"19.2"
-"4 wk ahead","65+ yr",50,"19.3"
-"4 wk ahead","65+ yr",50,"19.4"
-"4 wk ahead","65+ yr",50,"19.5"
-"4 wk ahead","65+ yr",50,"19.6"
-"4 wk ahead","65+ yr",50,"19.7"
-"4 wk ahead","65+ yr",50,"19.8"
-"4 wk ahead","65+ yr",50,"19.9"
-"4 wk ahead","65+ yr",50,"20.0"
-"4 wk ahead","65+ yr",50,"20.1"
-"4 wk ahead","65+ yr",50,"20.2"
-"4 wk ahead","65+ yr",50,"20.3"
-"4 wk ahead","Overall",50,"3.8"
-"4 wk ahead","Overall",50,"3.9"
-"4 wk ahead","Overall",50,"4.0"
-"4 wk ahead","Overall",50,"4.1"
-"4 wk ahead","Overall",50,"4.2"
-"4 wk ahead","0-4 yr",51,"1.7"
-"4 wk ahead","0-4 yr",51,"1.8"
-"4 wk ahead","0-4 yr",51,"1.9"
-"4 wk ahead","5-17 yr",51,"0.8"
-"4 wk ahead","5-17 yr",51,"0.9"
-"4 wk ahead","5-17 yr",51,"1.0"
-"4 wk ahead","18-49 yr",51,"1.1"
-"4 wk ahead","18-49 yr",51,"1.2"
-"4 wk ahead","18-49 yr",51,"1.3"
-"4 wk ahead","50-64 yr",51,"3.7"
-"4 wk ahead","50-64 yr",51,"3.8"
-"4 wk ahead","50-64 yr",51,"3.9"
-"4 wk ahead","50-64 yr",51,"4.0"
-"4 wk ahead","50-64 yr",51,"4.1"
-"4 wk ahead","65+ yr",51,"17.8"
-"4 wk ahead","65+ yr",51,"17.9"
-"4 wk ahead","65+ yr",51,"18.0"
-"4 wk ahead","65+ yr",51,"18.1"
-"4 wk ahead","65+ yr",51,"18.2"
-"4 wk ahead","65+ yr",51,"18.3"
-"4 wk ahead","65+ yr",51,"18.4"
-"4 wk ahead","65+ yr",51,"18.5"
-"4 wk ahead","65+ yr",51,"18.6"
-"4 wk ahead","65+ yr",51,"18.7"
-"4 wk ahead","65+ yr",51,"18.8"
-"4 wk ahead","65+ yr",51,"18.9"
-"4 wk ahead","65+ yr",51,"19.0"
-"4 wk ahead","65+ yr",51,"19.1"
-"4 wk ahead","65+ yr",51,"19.2"
-"4 wk ahead","65+ yr",51,"19.3"
-"4 wk ahead","65+ yr",51,"19.4"
-"4 wk ahead","65+ yr",51,"19.5"
-"4 wk ahead","65+ yr",51,"19.6"
-"4 wk ahead","Overall",51,"3.8"
-"4 wk ahead","Overall",51,"3.9"
-"4 wk ahead","Overall",51,"4.0"
-"4 wk ahead","Overall",51,"4.1"
-"4 wk ahead","Overall",51,"4.2"
-"4 wk ahead","0-4 yr",52,"2.1"
-"4 wk ahead","0-4 yr",52,"2.2"
-"4 wk ahead","0-4 yr",52,"2.3"
-"4 wk ahead","5-17 yr",52,"0.7"
-"4 wk ahead","5-17 yr",52,"0.8"
-"4 wk ahead","5-17 yr",52,"0.9"
-"4 wk ahead","18-49 yr",52,"1.0"
-"4 wk ahead","18-49 yr",52,"1.1"
-"4 wk ahead","18-49 yr",52,"1.2"
-"4 wk ahead","50-64 yr",52,"3.3"
-"4 wk ahead","50-64 yr",52,"3.4"
-"4 wk ahead","50-64 yr",52,"3.5"
-"4 wk ahead","50-64 yr",52,"3.6"
-"4 wk ahead","50-64 yr",52,"3.7"
-"4 wk ahead","65+ yr",52,"14.8"
-"4 wk ahead","65+ yr",52,"14.9"
-"4 wk ahead","65+ yr",52,"15.0"
-"4 wk ahead","65+ yr",52,"15.1"
-"4 wk ahead","65+ yr",52,"15.2"
-"4 wk ahead","65+ yr",52,"15.3"
-"4 wk ahead","65+ yr",52,"15.4"
-"4 wk ahead","65+ yr",52,"15.5"
-"4 wk ahead","65+ yr",52,"15.6"
-"4 wk ahead","65+ yr",52,"15.7"
-"4 wk ahead","65+ yr",52,"15.8"
-"4 wk ahead","65+ yr",52,"15.9"
-"4 wk ahead","65+ yr",52,"16.0"
-"4 wk ahead","65+ yr",52,"16.1"
-"4 wk ahead","65+ yr",52,"16.2"
-"4 wk ahead","65+ yr",52,"16.3"
-"4 wk ahead","65+ yr",52,"16.4"
-"4 wk ahead","Overall",52,"3.3"
-"4 wk ahead","Overall",52,"3.4"
-"4 wk ahead","Overall",52,"3.5"
-"4 wk ahead","Overall",52,"3.6"
-"4 wk ahead","Overall",52,"3.7"
-"4 wk ahead","0-4 yr",1,"2.5"
-"4 wk ahead","0-4 yr",1,"2.6"
-"4 wk ahead","0-4 yr",1,"2.7"
-"4 wk ahead","5-17 yr",1,"1.0"
-"4 wk ahead","5-17 yr",1,"1.1"
-"4 wk ahead","5-17 yr",1,"1.2"
-"4 wk ahead","18-49 yr",1,"1.2"
-"4 wk ahead","18-49 yr",1,"1.3"
-"4 wk ahead","18-49 yr",1,"1.4"
-"4 wk ahead","50-64 yr",1,"3.2"
-"4 wk ahead","50-64 yr",1,"3.3"
-"4 wk ahead","50-64 yr",1,"3.4"
-"4 wk ahead","50-64 yr",1,"3.5"
-"4 wk ahead","50-64 yr",1,"3.6"
-"4 wk ahead","65+ yr",1,"16.9"
-"4 wk ahead","65+ yr",1,"17.0"
-"4 wk ahead","65+ yr",1,"17.1"
-"4 wk ahead","65+ yr",1,"17.2"
-"4 wk ahead","65+ yr",1,"17.3"
-"4 wk ahead","65+ yr",1,"17.4"
-"4 wk ahead","65+ yr",1,"17.5"
-"4 wk ahead","65+ yr",1,"17.6"
-"4 wk ahead","65+ yr",1,"17.7"
-"4 wk ahead","65+ yr",1,"17.8"
-"4 wk ahead","65+ yr",1,"17.9"
-"4 wk ahead","65+ yr",1,"18.0"
-"4 wk ahead","65+ yr",1,"18.1"
-"4 wk ahead","65+ yr",1,"18.2"
-"4 wk ahead","65+ yr",1,"18.3"
-"4 wk ahead","65+ yr",1,"18.4"
-"4 wk ahead","65+ yr",1,"18.5"
-"4 wk ahead","65+ yr",1,"18.6"
-"4 wk ahead","65+ yr",1,"18.7"
-"4 wk ahead","Overall",1,"3.7"
-"4 wk ahead","Overall",1,"3.8"
-"4 wk ahead","Overall",1,"3.9"
-"4 wk ahead","Overall",1,"4.0"
-"4 wk ahead","Overall",1,"4.1"
-"4 wk ahead","0-4 yr",2,"3.3"
-"4 wk ahead","0-4 yr",2,"3.4"
-"4 wk ahead","0-4 yr",2,"3.5"
-"4 wk ahead","0-4 yr",2,"3.6"
-"4 wk ahead","0-4 yr",2,"3.7"
-"4 wk ahead","5-17 yr",2,"1.3"
-"4 wk ahead","5-17 yr",2,"1.4"
-"4 wk ahead","5-17 yr",2,"1.5"
-"4 wk ahead","18-49 yr",2,"1.3"
-"4 wk ahead","18-49 yr",2,"1.4"
-"4 wk ahead","18-49 yr",2,"1.5"
-"4 wk ahead","50-64 yr",2,"4.8"
-"4 wk ahead","50-64 yr",2,"4.9"
-"4 wk ahead","50-64 yr",2,"5.0"
-"4 wk ahead","50-64 yr",2,"5.1"
-"4 wk ahead","50-64 yr",2,"5.2"
-"4 wk ahead","65+ yr",2,"20.4"
-"4 wk ahead","65+ yr",2,"20.5"
-"4 wk ahead","65+ yr",2,"20.6"
-"4 wk ahead","65+ yr",2,"20.7"
-"4 wk ahead","65+ yr",2,"20.8"
-"4 wk ahead","65+ yr",2,"20.9"
-"4 wk ahead","65+ yr",2,"21.0"
-"4 wk ahead","65+ yr",2,"21.1"
-"4 wk ahead","65+ yr",2,"21.2"
-"4 wk ahead","65+ yr",2,"21.3"
-"4 wk ahead","65+ yr",2,"21.4"
-"4 wk ahead","65+ yr",2,"21.5"
-"4 wk ahead","65+ yr",2,"21.6"
-"4 wk ahead","65+ yr",2,"21.7"
-"4 wk ahead","65+ yr",2,"21.8"
-"4 wk ahead","65+ yr",2,"21.9"
-"4 wk ahead","65+ yr",2,"22.0"
-"4 wk ahead","65+ yr",2,"22.1"
-"4 wk ahead","65+ yr",2,"22.2"
-"4 wk ahead","65+ yr",2,"22.3"
-"4 wk ahead","65+ yr",2,"22.4"
-"4 wk ahead","65+ yr",2,"22.5"
-"4 wk ahead","65+ yr",2,"22.6"
-"4 wk ahead","Overall",2,"4.7"
-"4 wk ahead","Overall",2,"4.8"
-"4 wk ahead","Overall",2,"4.9"
-"4 wk ahead","Overall",2,"5.0"
-"4 wk ahead","Overall",2,"5.1"
-"4 wk ahead","0-4 yr",3,"4.0"
-"4 wk ahead","0-4 yr",3,"4.1"
-"4 wk ahead","0-4 yr",3,"4.2"
-"4 wk ahead","0-4 yr",3,"4.3"
-"4 wk ahead","0-4 yr",3,"4.4"
-"4 wk ahead","5-17 yr",3,"1.7"
-"4 wk ahead","5-17 yr",3,"1.8"
-"4 wk ahead","5-17 yr",3,"1.9"
-"4 wk ahead","18-49 yr",3,"1.4"
-"4 wk ahead","18-49 yr",3,"1.5"
-"4 wk ahead","18-49 yr",3,"1.6"
-"4 wk ahead","50-64 yr",3,"4.8"
-"4 wk ahead","50-64 yr",3,"4.9"
-"4 wk ahead","50-64 yr",3,"5.0"
-"4 wk ahead","50-64 yr",3,"5.1"
-"4 wk ahead","50-64 yr",3,"5.2"
-"4 wk ahead","50-64 yr",3,"5.3"
-"4 wk ahead","50-64 yr",3,"5.4"
-"4 wk ahead","65+ yr",3,"21.6"
-"4 wk ahead","65+ yr",3,"21.7"
-"4 wk ahead","65+ yr",3,"21.8"
-"4 wk ahead","65+ yr",3,"21.9"
-"4 wk ahead","65+ yr",3,"22.0"
-"4 wk ahead","65+ yr",3,"22.1"
-"4 wk ahead","65+ yr",3,"22.2"
-"4 wk ahead","65+ yr",3,"22.3"
-"4 wk ahead","65+ yr",3,"22.4"
-"4 wk ahead","65+ yr",3,"22.5"
-"4 wk ahead","65+ yr",3,"22.6"
-"4 wk ahead","65+ yr",3,"22.7"
-"4 wk ahead","65+ yr",3,"22.8"
-"4 wk ahead","65+ yr",3,"22.9"
-"4 wk ahead","65+ yr",3,"23.0"
-"4 wk ahead","65+ yr",3,"23.1"
-"4 wk ahead","65+ yr",3,"23.2"
-"4 wk ahead","65+ yr",3,"23.3"
-"4 wk ahead","65+ yr",3,"23.4"
-"4 wk ahead","65+ yr",3,"23.5"
-"4 wk ahead","65+ yr",3,"23.6"
-"4 wk ahead","65+ yr",3,"23.7"
-"4 wk ahead","65+ yr",3,"23.8"
-"4 wk ahead","Overall",3,"4.9"
-"4 wk ahead","Overall",3,"5.0"
-"4 wk ahead","Overall",3,"5.1"
-"4 wk ahead","Overall",3,"5.2"
-"4 wk ahead","Overall",3,"5.3"
-"4 wk ahead","Overall",3,"5.4"
-"4 wk ahead","Overall",3,"5.5"
-"4 wk ahead","0-4 yr",4,"3.9"
-"4 wk ahead","0-4 yr",4,"4.0"
-"4 wk ahead","0-4 yr",4,"4.1"
-"4 wk ahead","0-4 yr",4,"4.2"
-"4 wk ahead","0-4 yr",4,"4.3"
-"4 wk ahead","5-17 yr",4,"1.5"
-"4 wk ahead","5-17 yr",4,"1.6"
-"4 wk ahead","5-17 yr",4,"1.7"
-"4 wk ahead","18-49 yr",4,"1.6"
-"4 wk ahead","18-49 yr",4,"1.7"
-"4 wk ahead","18-49 yr",4,"1.8"
-"4 wk ahead","50-64 yr",4,"5.2"
-"4 wk ahead","50-64 yr",4,"5.3"
-"4 wk ahead","50-64 yr",4,"5.4"
-"4 wk ahead","50-64 yr",4,"5.5"
-"4 wk ahead","50-64 yr",4,"5.6"
-"4 wk ahead","50-64 yr",4,"5.7"
-"4 wk ahead","50-64 yr",4,"5.8"
-"4 wk ahead","65+ yr",4,"23.6"
-"4 wk ahead","65+ yr",4,"23.7"
-"4 wk ahead","65+ yr",4,"23.8"
-"4 wk ahead","65+ yr",4,"23.9"
-"4 wk ahead","65+ yr",4,"24.0"
-"4 wk ahead","65+ yr",4,"24.1"
-"4 wk ahead","65+ yr",4,"24.2"
-"4 wk ahead","65+ yr",4,"24.3"
-"4 wk ahead","65+ yr",4,"24.4"
-"4 wk ahead","65+ yr",4,"24.5"
-"4 wk ahead","65+ yr",4,"24.6"
-"4 wk ahead","65+ yr",4,"24.7"
-"4 wk ahead","65+ yr",4,"24.8"
-"4 wk ahead","65+ yr",4,"24.9"
-"4 wk ahead","65+ yr",4,"25.0"
-"4 wk ahead","65+ yr",4,"25.1"
-"4 wk ahead","65+ yr",4,"25.2"
-"4 wk ahead","65+ yr",4,"25.3"
-"4 wk ahead","65+ yr",4,"25.4"
-"4 wk ahead","65+ yr",4,"25.5"
-"4 wk ahead","65+ yr",4,"25.6"
-"4 wk ahead","65+ yr",4,"25.7"
-"4 wk ahead","65+ yr",4,"25.8"
-"4 wk ahead","65+ yr",4,"25.9"
-"4 wk ahead","65+ yr",4,"26.0"
-"4 wk ahead","Overall",4,"5.3"
-"4 wk ahead","Overall",4,"5.4"
-"4 wk ahead","Overall",4,"5.5"
-"4 wk ahead","Overall",4,"5.6"
-"4 wk ahead","Overall",4,"5.7"
-"4 wk ahead","Overall",4,"5.8"
-"4 wk ahead","Overall",4,"5.9"
-"4 wk ahead","0-4 yr",5,"2.8"
-"4 wk ahead","0-4 yr",5,"2.9"
-"4 wk ahead","0-4 yr",5,"3.0"
-"4 wk ahead","0-4 yr",5,"3.1"
-"4 wk ahead","0-4 yr",5,"3.2"
-"4 wk ahead","5-17 yr",5,"0.5"
-"4 wk ahead","5-17 yr",5,"0.6"
-"4 wk ahead","5-17 yr",5,"0.7"
-"4 wk ahead","18-49 yr",5,"0.9"
-"4 wk ahead","18-49 yr",5,"1.0"
-"4 wk ahead","18-49 yr",5,"1.1"
-"4 wk ahead","50-64 yr",5,"3.1"
-"4 wk ahead","50-64 yr",5,"3.2"
-"4 wk ahead","50-64 yr",5,"3.3"
-"4 wk ahead","50-64 yr",5,"3.4"
-"4 wk ahead","50-64 yr",5,"3.5"
-"4 wk ahead","65+ yr",5,"14.7"
-"4 wk ahead","65+ yr",5,"14.8"
-"4 wk ahead","65+ yr",5,"14.9"
-"4 wk ahead","65+ yr",5,"15.0"
-"4 wk ahead","65+ yr",5,"15.1"
-"4 wk ahead","65+ yr",5,"15.2"
-"4 wk ahead","65+ yr",5,"15.3"
-"4 wk ahead","65+ yr",5,"15.4"
-"4 wk ahead","65+ yr",5,"15.5"
-"4 wk ahead","65+ yr",5,"15.6"
-"4 wk ahead","65+ yr",5,"15.7"
-"4 wk ahead","65+ yr",5,"15.8"
-"4 wk ahead","65+ yr",5,"15.9"
-"4 wk ahead","65+ yr",5,"16.0"
-"4 wk ahead","65+ yr",5,"16.1"
-"4 wk ahead","65+ yr",5,"16.2"
-"4 wk ahead","65+ yr",5,"16.3"
-"4 wk ahead","Overall",5,"3.2"
-"4 wk ahead","Overall",5,"3.3"
-"4 wk ahead","Overall",5,"3.4"
-"4 wk ahead","Overall",5,"3.5"
-"4 wk ahead","Overall",5,"3.6"
-"4 wk ahead","0-4 yr",6,"2.1"
-"4 wk ahead","0-4 yr",6,"2.2"
-"4 wk ahead","0-4 yr",6,"2.3"
-"4 wk ahead","5-17 yr",6,"1.1"
-"4 wk ahead","5-17 yr",6,"1.2"
-"4 wk ahead","5-17 yr",6,"1.3"
-"4 wk ahead","18-49 yr",6,"0.7"
-"4 wk ahead","18-49 yr",6,"0.8"
-"4 wk ahead","18-49 yr",6,"0.9"
-"4 wk ahead","50-64 yr",6,"3.2"
-"4 wk ahead","50-64 yr",6,"3.3"
-"4 wk ahead","50-64 yr",6,"3.4"
-"4 wk ahead","50-64 yr",6,"3.5"
-"4 wk ahead","50-64 yr",6,"3.6"
-"4 wk ahead","65+ yr",6,"12.6"
-"4 wk ahead","65+ yr",6,"12.7"
-"4 wk ahead","65+ yr",6,"12.8"
-"4 wk ahead","65+ yr",6,"12.9"
-"4 wk ahead","65+ yr",6,"13.0"
-"4 wk ahead","65+ yr",6,"13.1"
-"4 wk ahead","65+ yr",6,"13.2"
-"4 wk ahead","65+ yr",6,"13.3"
-"4 wk ahead","65+ yr",6,"13.4"
-"4 wk ahead","65+ yr",6,"13.5"
-"4 wk ahead","65+ yr",6,"13.6"
-"4 wk ahead","65+ yr",6,"13.7"
-"4 wk ahead","65+ yr",6,"13.8"
-"4 wk ahead","65+ yr",6,"13.9"
-"4 wk ahead","65+ yr",6,"14.0"
-"4 wk ahead","Overall",6,"2.9"
-"4 wk ahead","Overall",6,"3.0"
-"4 wk ahead","Overall",6,"3.1"
-"4 wk ahead","Overall",6,"3.2"
-"4 wk ahead","Overall",6,"3.3"
-"4 wk ahead","0-4 yr",7,"2.4"
-"4 wk ahead","0-4 yr",7,"2.5"
-"4 wk ahead","0-4 yr",7,"2.6"
-"4 wk ahead","5-17 yr",7,"1.0"
-"4 wk ahead","5-17 yr",7,"1.1"
-"4 wk ahead","5-17 yr",7,"1.2"
-"4 wk ahead","18-49 yr",7,"0.9"
-"4 wk ahead","18-49 yr",7,"1.0"
-"4 wk ahead","18-49 yr",7,"1.1"
-"4 wk ahead","50-64 yr",7,"2.8"
-"4 wk ahead","50-64 yr",7,"2.9"
-"4 wk ahead","50-64 yr",7,"3.0"
-"4 wk ahead","50-64 yr",7,"3.1"
-"4 wk ahead","50-64 yr",7,"3.2"
-"4 wk ahead","65+ yr",7,"11.6"
-"4 wk ahead","65+ yr",7,"11.7"
-"4 wk ahead","65+ yr",7,"11.8"
-"4 wk ahead","65+ yr",7,"11.9"
-"4 wk ahead","65+ yr",7,"12.0"
-"4 wk ahead","65+ yr",7,"12.1"
-"4 wk ahead","65+ yr",7,"12.2"
-"4 wk ahead","65+ yr",7,"12.3"
-"4 wk ahead","65+ yr",7,"12.4"
-"4 wk ahead","65+ yr",7,"12.5"
-"4 wk ahead","65+ yr",7,"12.6"
-"4 wk ahead","65+ yr",7,"12.7"
-"4 wk ahead","65+ yr",7,"12.8"
-"4 wk ahead","Overall",7,"2.8"
-"4 wk ahead","Overall",7,"2.9"
-"4 wk ahead","Overall",7,"3.0"
-"4 wk ahead","Overall",7,"3.1"
-"4 wk ahead","Overall",7,"3.2"
-"4 wk ahead","0-4 yr",8,"2.8"
-"4 wk ahead","0-4 yr",8,"2.9"
-"4 wk ahead","0-4 yr",8,"3.0"
-"4 wk ahead","5-17 yr",8,"1.0"
-"4 wk ahead","5-17 yr",8,"1.1"
-"4 wk ahead","5-17 yr",8,"1.2"
-"4 wk ahead","18-49 yr",8,"1.0"
-"4 wk ahead","18-49 yr",8,"1.1"
-"4 wk ahead","18-49 yr",8,"1.2"
-"4 wk ahead","50-64 yr",8,"3.1"
-"4 wk ahead","50-64 yr",8,"3.2"
-"4 wk ahead","50-64 yr",8,"3.3"
-"4 wk ahead","50-64 yr",8,"3.4"
-"4 wk ahead","50-64 yr",8,"3.5"
-"4 wk ahead","65+ yr",8,"12.6"
-"4 wk ahead","65+ yr",8,"12.7"
-"4 wk ahead","65+ yr",8,"12.8"
-"4 wk ahead","65+ yr",8,"12.9"
-"4 wk ahead","65+ yr",8,"13.0"
-"4 wk ahead","65+ yr",8,"13.1"
-"4 wk ahead","65+ yr",8,"13.2"
-"4 wk ahead","65+ yr",8,"13.3"
-"4 wk ahead","65+ yr",8,"13.4"
-"4 wk ahead","65+ yr",8,"13.5"
-"4 wk ahead","65+ yr",8,"13.6"
-"4 wk ahead","65+ yr",8,"13.7"
-"4 wk ahead","65+ yr",8,"13.8"
-"4 wk ahead","65+ yr",8,"13.9"
-"4 wk ahead","65+ yr",8,"14.0"
-"4 wk ahead","Overall",8,"3.0"
-"4 wk ahead","Overall",8,"3.1"
-"4 wk ahead","Overall",8,"3.2"
-"4 wk ahead","Overall",8,"3.3"
-"4 wk ahead","Overall",8,"3.4"
-"4 wk ahead","0-4 yr",9,"1.7"
-"4 wk ahead","0-4 yr",9,"1.8"
-"4 wk ahead","0-4 yr",9,"1.9"
-"4 wk ahead","5-17 yr",9,"1.1"
-"4 wk ahead","5-17 yr",9,"1.2"
-"4 wk ahead","5-17 yr",9,"1.3"
-"4 wk ahead","18-49 yr",9,"1.0"
-"4 wk ahead","18-49 yr",9,"1.1"
-"4 wk ahead","18-49 yr",9,"1.2"
-"4 wk ahead","50-64 yr",9,"3.4"
-"4 wk ahead","50-64 yr",9,"3.5"
-"4 wk ahead","50-64 yr",9,"3.6"
-"4 wk ahead","50-64 yr",9,"3.7"
-"4 wk ahead","50-64 yr",9,"3.8"
-"4 wk ahead","65+ yr",9,"10.9"
-"4 wk ahead","65+ yr",9,"11.0"
-"4 wk ahead","65+ yr",9,"11.1"
-"4 wk ahead","65+ yr",9,"11.2"
-"4 wk ahead","65+ yr",9,"11.3"
-"4 wk ahead","65+ yr",9,"11.4"
-"4 wk ahead","65+ yr",9,"11.5"
-"4 wk ahead","65+ yr",9,"11.6"
-"4 wk ahead","65+ yr",9,"11.7"
-"4 wk ahead","65+ yr",9,"11.8"
-"4 wk ahead","65+ yr",9,"11.9"
-"4 wk ahead","65+ yr",9,"12.0"
-"4 wk ahead","65+ yr",9,"12.1"
-"4 wk ahead","Overall",9,"2.8"
-"4 wk ahead","Overall",9,"2.9"
-"4 wk ahead","Overall",9,"3.0"
-"4 wk ahead","Overall",9,"3.1"
-"4 wk ahead","Overall",9,"3.2"
-"4 wk ahead","0-4 yr",10,"2.0"
-"4 wk ahead","0-4 yr",10,"2.1"
-"4 wk ahead","0-4 yr",10,"2.2"
-"4 wk ahead","5-17 yr",10,"0.5"
-"4 wk ahead","5-17 yr",10,"0.6"
-"4 wk ahead","5-17 yr",10,"0.7"
-"4 wk ahead","18-49 yr",10,"0.6"
-"4 wk ahead","18-49 yr",10,"0.7"
-"4 wk ahead","18-49 yr",10,"0.8"
-"4 wk ahead","50-64 yr",10,"2.0"
-"4 wk ahead","50-64 yr",10,"2.1"
-"4 wk ahead","50-64 yr",10,"2.2"
-"4 wk ahead","65+ yr",10,"8.8"
-"4 wk ahead","65+ yr",10,"8.9"
-"4 wk ahead","65+ yr",10,"9.0"
-"4 wk ahead","65+ yr",10,"9.1"
-"4 wk ahead","65+ yr",10,"9.2"
-"4 wk ahead","65+ yr",10,"9.3"
-"4 wk ahead","65+ yr",10,"9.4"
-"4 wk ahead","65+ yr",10,"9.5"
-"4 wk ahead","65+ yr",10,"9.6"
-"4 wk ahead","65+ yr",10,"9.7"
-"4 wk ahead","65+ yr",10,"9.8"
-"4 wk ahead","Overall",10,"2.1"
-"4 wk ahead","Overall",10,"2.2"
-"4 wk ahead","Overall",10,"2.3"
-"4 wk ahead","0-4 yr",11,"1.0"
-"4 wk ahead","0-4 yr",11,"1.1"
-"4 wk ahead","0-4 yr",11,"1.2"
-"4 wk ahead","5-17 yr",11,"0.4"
-"4 wk ahead","5-17 yr",11,"0.5"
-"4 wk ahead","5-17 yr",11,"0.6"
-"4 wk ahead","18-49 yr",11,"0.2"
-"4 wk ahead","18-49 yr",11,"0.3"
-"4 wk ahead","18-49 yr",11,"0.4"
-"4 wk ahead","50-64 yr",11,"1.4"
-"4 wk ahead","50-64 yr",11,"1.5"
-"4 wk ahead","50-64 yr",11,"1.6"
-"4 wk ahead","65+ yr",11,"6.6"
-"4 wk ahead","65+ yr",11,"6.7"
-"4 wk ahead","65+ yr",11,"6.8"
-"4 wk ahead","65+ yr",11,"6.9"
-"4 wk ahead","65+ yr",11,"7.0"
-"4 wk ahead","65+ yr",11,"7.1"
-"4 wk ahead","65+ yr",11,"7.2"
-"4 wk ahead","Overall",11,"1.4"
-"4 wk ahead","Overall",11,"1.5"
-"4 wk ahead","Overall",11,"1.6"
-"4 wk ahead","0-4 yr",12,"0.9"
-"4 wk ahead","0-4 yr",12,"1.0"
-"4 wk ahead","0-4 yr",12,"1.1"
-"4 wk ahead","5-17 yr",12,"0.3"
-"4 wk ahead","5-17 yr",12,"0.4"
-"4 wk ahead","5-17 yr",12,"0.5"
-"4 wk ahead","18-49 yr",12,"0.2"
-"4 wk ahead","18-49 yr",12,"0.3"
-"4 wk ahead","18-49 yr",12,"0.4"
-"4 wk ahead","50-64 yr",12,"1.1"
-"4 wk ahead","50-64 yr",12,"1.2"
-"4 wk ahead","50-64 yr",12,"1.3"
-"4 wk ahead","65+ yr",12,"3.9"
-"4 wk ahead","65+ yr",12,"4.0"
-"4 wk ahead","65+ yr",12,"4.1"
-"4 wk ahead","65+ yr",12,"4.2"
-"4 wk ahead","65+ yr",12,"4.3"
-"4 wk ahead","Overall",12,"0.9"
-"4 wk ahead","Overall",12,"1.0"
-"4 wk ahead","Overall",12,"1.1"
-"4 wk ahead","0-4 yr",13,"0.5"
-"4 wk ahead","0-4 yr",13,"0.6"
-"4 wk ahead","0-4 yr",13,"0.7"
-"4 wk ahead","5-17 yr",13,"0.1"
-"4 wk ahead","5-17 yr",13,"0.2"
-"4 wk ahead","5-17 yr",13,"0.3"
-"4 wk ahead","18-49 yr",13,"0.1"
-"4 wk ahead","18-49 yr",13,"0.2"
-"4 wk ahead","18-49 yr",13,"0.3"
-"4 wk ahead","50-64 yr",13,"0.7"
-"4 wk ahead","50-64 yr",13,"0.8"
-"4 wk ahead","50-64 yr",13,"0.9"
-"4 wk ahead","65+ yr",13,"2.6"
-"4 wk ahead","65+ yr",13,"2.7"
-"4 wk ahead","65+ yr",13,"2.8"
-"4 wk ahead","Overall",13,"0.6"
-"4 wk ahead","Overall",13,"0.7"
-"4 wk ahead","Overall",13,"0.8"
+target,location,forecast_week,bin_start_incl
+Season peak week,0-4 yr,NA,6
+Season peak week,0-4 yr,NA,7
+Season peak week,0-4 yr,NA,8
+Season peak week,18-49 yr,NA,7
+Season peak week,18-49 yr,NA,8
+Season peak week,18-49 yr,NA,9
+Season peak week,5-17 yr,NA,6
+Season peak week,5-17 yr,NA,7
+Season peak week,5-17 yr,NA,8
+Season peak week,50-64 yr,NA,7
+Season peak week,50-64 yr,NA,8
+Season peak week,50-64 yr,NA,9
+Season peak week,65+ yr,NA,7
+Season peak week,65+ yr,NA,8
+Season peak week,65+ yr,NA,9
+Season peak week,Overall,NA,7
+Season peak week,Overall,NA,8
+Season peak week,Overall,NA,9
+Season peak percentage,0-4 yr,NA,4
+Season peak percentage,0-4 yr,NA,4.1
+Season peak percentage,0-4 yr,NA,4.2
+Season peak percentage,0-4 yr,NA,4.3
+Season peak percentage,0-4 yr,NA,4.4
+Season peak percentage,18-49 yr,NA,1.6
+Season peak percentage,18-49 yr,NA,1.7
+Season peak percentage,18-49 yr,NA,1.8
+Season peak percentage,5-17 yr,NA,1.7
+Season peak percentage,5-17 yr,NA,1.8
+Season peak percentage,5-17 yr,NA,1.9
+Season peak percentage,50-64 yr,NA,5.2
+Season peak percentage,50-64 yr,NA,5.3
+Season peak percentage,50-64 yr,NA,5.4
+Season peak percentage,50-64 yr,NA,5.5
+Season peak percentage,50-64 yr,NA,5.6
+Season peak percentage,50-64 yr,NA,5.7
+Season peak percentage,50-64 yr,NA,5.8
+Season peak percentage,65+ yr,NA,23.6
+Season peak percentage,65+ yr,NA,23.7
+Season peak percentage,65+ yr,NA,23.8
+Season peak percentage,65+ yr,NA,23.9
+Season peak percentage,65+ yr,NA,24
+Season peak percentage,65+ yr,NA,24.1
+Season peak percentage,65+ yr,NA,24.2
+Season peak percentage,65+ yr,NA,24.3
+Season peak percentage,65+ yr,NA,24.4
+Season peak percentage,65+ yr,NA,24.5
+Season peak percentage,65+ yr,NA,24.6
+Season peak percentage,65+ yr,NA,24.7
+Season peak percentage,65+ yr,NA,24.8
+Season peak percentage,65+ yr,NA,24.9
+Season peak percentage,65+ yr,NA,25
+Season peak percentage,65+ yr,NA,25.1
+Season peak percentage,65+ yr,NA,25.2
+Season peak percentage,65+ yr,NA,25.3
+Season peak percentage,65+ yr,NA,25.4
+Season peak percentage,65+ yr,NA,25.5
+Season peak percentage,65+ yr,NA,25.6
+Season peak percentage,65+ yr,NA,25.7
+Season peak percentage,65+ yr,NA,25.8
+Season peak percentage,65+ yr,NA,25.9
+Season peak percentage,65+ yr,NA,26
+Season peak percentage,Overall,NA,5.3
+Season peak percentage,Overall,NA,5.4
+Season peak percentage,Overall,NA,5.5
+Season peak percentage,Overall,NA,5.6
+Season peak percentage,Overall,NA,5.7
+Season peak percentage,Overall,NA,5.8
+Season peak percentage,Overall,NA,5.9
+1 wk ahead,0-4 yr,45,0
+1 wk ahead,0-4 yr,45,0.1
+1 wk ahead,0-4 yr,45,0.2
+1 wk ahead,5-17 yr,45,0
+1 wk ahead,5-17 yr,45,0.1
+1 wk ahead,18-49 yr,45,0
+1 wk ahead,18-49 yr,45,0.1
+1 wk ahead,50-64 yr,45,0.1
+1 wk ahead,50-64 yr,45,0.2
+1 wk ahead,50-64 yr,45,0.3
+1 wk ahead,65+ yr,45,0.7
+1 wk ahead,65+ yr,45,0.8
+1 wk ahead,65+ yr,45,0.9
+1 wk ahead,Overall,45,0.1
+1 wk ahead,Overall,45,0.2
+1 wk ahead,Overall,45,0.3
+1 wk ahead,0-4 yr,46,0.1
+1 wk ahead,0-4 yr,46,0.2
+1 wk ahead,0-4 yr,46,0.3
+1 wk ahead,5-17 yr,46,0
+1 wk ahead,5-17 yr,46,0.1
+1 wk ahead,18-49 yr,46,0.1
+1 wk ahead,18-49 yr,46,0.2
+1 wk ahead,18-49 yr,46,0.3
+1 wk ahead,50-64 yr,46,0.3
+1 wk ahead,50-64 yr,46,0.4
+1 wk ahead,50-64 yr,46,0.5
+1 wk ahead,65+ yr,46,1
+1 wk ahead,65+ yr,46,1.1
+1 wk ahead,65+ yr,46,1.2
+1 wk ahead,Overall,46,0.2
+1 wk ahead,Overall,46,0.3
+1 wk ahead,Overall,46,0.4
+1 wk ahead,0-4 yr,47,0.4
+1 wk ahead,0-4 yr,47,0.5
+1 wk ahead,0-4 yr,47,0.6
+1 wk ahead,5-17 yr,47,0
+1 wk ahead,5-17 yr,47,0.1
+1 wk ahead,5-17 yr,47,0.2
+1 wk ahead,18-49 yr,47,0
+1 wk ahead,18-49 yr,47,0.1
+1 wk ahead,18-49 yr,47,0.2
+1 wk ahead,50-64 yr,47,0.3
+1 wk ahead,50-64 yr,47,0.4
+1 wk ahead,50-64 yr,47,0.5
+1 wk ahead,65+ yr,47,1.8
+1 wk ahead,65+ yr,47,1.9
+1 wk ahead,65+ yr,47,2
+1 wk ahead,Overall,47,0.3
+1 wk ahead,Overall,47,0.4
+1 wk ahead,Overall,47,0.5
+1 wk ahead,0-4 yr,48,0.5
+1 wk ahead,0-4 yr,48,0.6
+1 wk ahead,0-4 yr,48,0.7
+1 wk ahead,5-17 yr,48,0
+1 wk ahead,5-17 yr,48,0.1
+1 wk ahead,5-17 yr,48,0.2
+1 wk ahead,18-49 yr,48,0.1
+1 wk ahead,18-49 yr,48,0.2
+1 wk ahead,18-49 yr,48,0.3
+1 wk ahead,50-64 yr,48,0.5
+1 wk ahead,50-64 yr,48,0.6
+1 wk ahead,50-64 yr,48,0.7
+1 wk ahead,65+ yr,48,2.6
+1 wk ahead,65+ yr,48,2.7
+1 wk ahead,65+ yr,48,2.8
+1 wk ahead,Overall,48,0.5
+1 wk ahead,Overall,48,0.6
+1 wk ahead,Overall,48,0.7
+1 wk ahead,0-4 yr,49,0.4
+1 wk ahead,0-4 yr,49,0.5
+1 wk ahead,0-4 yr,49,0.6
+1 wk ahead,5-17 yr,49,0.1
+1 wk ahead,5-17 yr,49,0.2
+1 wk ahead,5-17 yr,49,0.3
+1 wk ahead,18-49 yr,49,0.3
+1 wk ahead,18-49 yr,49,0.4
+1 wk ahead,18-49 yr,49,0.5
+1 wk ahead,50-64 yr,49,1
+1 wk ahead,50-64 yr,49,1.1
+1 wk ahead,50-64 yr,49,1.2
+1 wk ahead,65+ yr,49,3.2
+1 wk ahead,65+ yr,49,3.3
+1 wk ahead,65+ yr,49,3.4
+1 wk ahead,65+ yr,49,3.5
+1 wk ahead,65+ yr,49,3.6
+1 wk ahead,Overall,49,0.8
+1 wk ahead,Overall,49,0.9
+1 wk ahead,Overall,49,1
+1 wk ahead,0-4 yr,50,1.5
+1 wk ahead,0-4 yr,50,1.6
+1 wk ahead,0-4 yr,50,1.7
+1 wk ahead,5-17 yr,50,0.2
+1 wk ahead,5-17 yr,50,0.3
+1 wk ahead,5-17 yr,50,0.4
+1 wk ahead,18-49 yr,50,0.4
+1 wk ahead,18-49 yr,50,0.5
+1 wk ahead,18-49 yr,50,0.6
+1 wk ahead,50-64 yr,50,1.4
+1 wk ahead,50-64 yr,50,1.5
+1 wk ahead,50-64 yr,50,1.6
+1 wk ahead,65+ yr,50,7.2
+1 wk ahead,65+ yr,50,7.3
+1 wk ahead,65+ yr,50,7.4
+1 wk ahead,65+ yr,50,7.5
+1 wk ahead,65+ yr,50,7.6
+1 wk ahead,65+ yr,50,7.7
+1 wk ahead,65+ yr,50,7.8
+1 wk ahead,65+ yr,50,7.9
+1 wk ahead,65+ yr,50,8
+1 wk ahead,Overall,50,1.6
+1 wk ahead,Overall,50,1.7
+1 wk ahead,Overall,50,1.8
+1 wk ahead,0-4 yr,51,1.3
+1 wk ahead,0-4 yr,51,1.4
+1 wk ahead,0-4 yr,51,1.5
+1 wk ahead,5-17 yr,51,0.2
+1 wk ahead,5-17 yr,51,0.3
+1 wk ahead,5-17 yr,51,0.4
+1 wk ahead,18-49 yr,51,0.8
+1 wk ahead,18-49 yr,51,0.9
+1 wk ahead,18-49 yr,51,1
+1 wk ahead,50-64 yr,51,2.8
+1 wk ahead,50-64 yr,51,2.9
+1 wk ahead,50-64 yr,51,3
+1 wk ahead,50-64 yr,51,3.1
+1 wk ahead,50-64 yr,51,3.2
+1 wk ahead,65+ yr,51,16.5
+1 wk ahead,65+ yr,51,16.6
+1 wk ahead,65+ yr,51,16.7
+1 wk ahead,65+ yr,51,16.8
+1 wk ahead,65+ yr,51,16.9
+1 wk ahead,65+ yr,51,17
+1 wk ahead,65+ yr,51,17.1
+1 wk ahead,65+ yr,51,17.2
+1 wk ahead,65+ yr,51,17.3
+1 wk ahead,65+ yr,51,17.4
+1 wk ahead,65+ yr,51,17.5
+1 wk ahead,65+ yr,51,17.6
+1 wk ahead,65+ yr,51,17.7
+1 wk ahead,65+ yr,51,17.8
+1 wk ahead,65+ yr,51,17.9
+1 wk ahead,65+ yr,51,18
+1 wk ahead,65+ yr,51,18.1
+1 wk ahead,65+ yr,51,18.2
+1 wk ahead,65+ yr,51,18.3
+1 wk ahead,Overall,51,3.2
+1 wk ahead,Overall,51,3.3
+1 wk ahead,Overall,51,3.4
+1 wk ahead,Overall,51,3.5
+1 wk ahead,Overall,51,3.6
+1 wk ahead,0-4 yr,52,1.2
+1 wk ahead,0-4 yr,52,1.3
+1 wk ahead,0-4 yr,52,1.4
+1 wk ahead,5-17 yr,52,0.2
+1 wk ahead,5-17 yr,52,0.3
+1 wk ahead,5-17 yr,52,0.4
+1 wk ahead,18-49 yr,52,1
+1 wk ahead,18-49 yr,52,1.1
+1 wk ahead,18-49 yr,52,1.2
+1 wk ahead,50-64 yr,52,4
+1 wk ahead,50-64 yr,52,4.1
+1 wk ahead,50-64 yr,52,4.2
+1 wk ahead,50-64 yr,52,4.3
+1 wk ahead,50-64 yr,52,4.4
+1 wk ahead,65+ yr,52,21.8
+1 wk ahead,65+ yr,52,21.9
+1 wk ahead,65+ yr,52,22
+1 wk ahead,65+ yr,52,22.1
+1 wk ahead,65+ yr,52,22.2
+1 wk ahead,65+ yr,52,22.3
+1 wk ahead,65+ yr,52,22.4
+1 wk ahead,65+ yr,52,22.5
+1 wk ahead,65+ yr,52,22.6
+1 wk ahead,65+ yr,52,22.7
+1 wk ahead,65+ yr,52,22.8
+1 wk ahead,65+ yr,52,22.9
+1 wk ahead,65+ yr,52,23
+1 wk ahead,65+ yr,52,23.1
+1 wk ahead,65+ yr,52,23.2
+1 wk ahead,65+ yr,52,23.3
+1 wk ahead,65+ yr,52,23.4
+1 wk ahead,65+ yr,52,23.5
+1 wk ahead,65+ yr,52,23.6
+1 wk ahead,65+ yr,52,23.7
+1 wk ahead,65+ yr,52,23.8
+1 wk ahead,65+ yr,52,23.9
+1 wk ahead,65+ yr,52,24
+1 wk ahead,65+ yr,52,24.1
+1 wk ahead,65+ yr,52,24.2
+1 wk ahead,Overall,52,4.2
+1 wk ahead,Overall,52,4.3
+1 wk ahead,Overall,52,4.4
+1 wk ahead,Overall,52,4.5
+1 wk ahead,Overall,52,4.6
+1 wk ahead,0-4 yr,1,1.5
+1 wk ahead,0-4 yr,1,1.6
+1 wk ahead,0-4 yr,1,1.7
+1 wk ahead,5-17 yr,1,0.7
+1 wk ahead,5-17 yr,1,0.8
+1 wk ahead,5-17 yr,1,0.9
+1 wk ahead,18-49 yr,1,1
+1 wk ahead,18-49 yr,1,1.1
+1 wk ahead,18-49 yr,1,1.2
+1 wk ahead,50-64 yr,1,3.9
+1 wk ahead,50-64 yr,1,4
+1 wk ahead,50-64 yr,1,4.1
+1 wk ahead,50-64 yr,1,4.2
+1 wk ahead,50-64 yr,1,4.3
+1 wk ahead,65+ yr,1,18.3
+1 wk ahead,65+ yr,1,18.4
+1 wk ahead,65+ yr,1,18.5
+1 wk ahead,65+ yr,1,18.6
+1 wk ahead,65+ yr,1,18.7
+1 wk ahead,65+ yr,1,18.8
+1 wk ahead,65+ yr,1,18.9
+1 wk ahead,65+ yr,1,19
+1 wk ahead,65+ yr,1,19.1
+1 wk ahead,65+ yr,1,19.2
+1 wk ahead,65+ yr,1,19.3
+1 wk ahead,65+ yr,1,19.4
+1 wk ahead,65+ yr,1,19.5
+1 wk ahead,65+ yr,1,19.6
+1 wk ahead,65+ yr,1,19.7
+1 wk ahead,65+ yr,1,19.8
+1 wk ahead,65+ yr,1,19.9
+1 wk ahead,65+ yr,1,20
+1 wk ahead,65+ yr,1,20.1
+1 wk ahead,65+ yr,1,20.2
+1 wk ahead,65+ yr,1,20.3
+1 wk ahead,Overall,1,3.8
+1 wk ahead,Overall,1,3.9
+1 wk ahead,Overall,1,4
+1 wk ahead,Overall,1,4.1
+1 wk ahead,Overall,1,4.2
+1 wk ahead,0-4 yr,2,1.7
+1 wk ahead,0-4 yr,2,1.8
+1 wk ahead,0-4 yr,2,1.9
+1 wk ahead,5-17 yr,2,0.8
+1 wk ahead,5-17 yr,2,0.9
+1 wk ahead,5-17 yr,2,1
+1 wk ahead,18-49 yr,2,1.1
+1 wk ahead,18-49 yr,2,1.2
+1 wk ahead,18-49 yr,2,1.3
+1 wk ahead,50-64 yr,2,3.7
+1 wk ahead,50-64 yr,2,3.8
+1 wk ahead,50-64 yr,2,3.9
+1 wk ahead,50-64 yr,2,4
+1 wk ahead,50-64 yr,2,4.1
+1 wk ahead,65+ yr,2,17.8
+1 wk ahead,65+ yr,2,17.9
+1 wk ahead,65+ yr,2,18
+1 wk ahead,65+ yr,2,18.1
+1 wk ahead,65+ yr,2,18.2
+1 wk ahead,65+ yr,2,18.3
+1 wk ahead,65+ yr,2,18.4
+1 wk ahead,65+ yr,2,18.5
+1 wk ahead,65+ yr,2,18.6
+1 wk ahead,65+ yr,2,18.7
+1 wk ahead,65+ yr,2,18.8
+1 wk ahead,65+ yr,2,18.9
+1 wk ahead,65+ yr,2,19
+1 wk ahead,65+ yr,2,19.1
+1 wk ahead,65+ yr,2,19.2
+1 wk ahead,65+ yr,2,19.3
+1 wk ahead,65+ yr,2,19.4
+1 wk ahead,65+ yr,2,19.5
+1 wk ahead,65+ yr,2,19.6
+1 wk ahead,Overall,2,3.8
+1 wk ahead,Overall,2,3.9
+1 wk ahead,Overall,2,4
+1 wk ahead,Overall,2,4.1
+1 wk ahead,Overall,2,4.2
+1 wk ahead,0-4 yr,3,2.1
+1 wk ahead,0-4 yr,3,2.2
+1 wk ahead,0-4 yr,3,2.3
+1 wk ahead,5-17 yr,3,0.7
+1 wk ahead,5-17 yr,3,0.8
+1 wk ahead,5-17 yr,3,0.9
+1 wk ahead,18-49 yr,3,1
+1 wk ahead,18-49 yr,3,1.1
+1 wk ahead,18-49 yr,3,1.2
+1 wk ahead,50-64 yr,3,3.3
+1 wk ahead,50-64 yr,3,3.4
+1 wk ahead,50-64 yr,3,3.5
+1 wk ahead,50-64 yr,3,3.6
+1 wk ahead,50-64 yr,3,3.7
+1 wk ahead,65+ yr,3,14.8
+1 wk ahead,65+ yr,3,14.9
+1 wk ahead,65+ yr,3,15
+1 wk ahead,65+ yr,3,15.1
+1 wk ahead,65+ yr,3,15.2
+1 wk ahead,65+ yr,3,15.3
+1 wk ahead,65+ yr,3,15.4
+1 wk ahead,65+ yr,3,15.5
+1 wk ahead,65+ yr,3,15.6
+1 wk ahead,65+ yr,3,15.7
+1 wk ahead,65+ yr,3,15.8
+1 wk ahead,65+ yr,3,15.9
+1 wk ahead,65+ yr,3,16
+1 wk ahead,65+ yr,3,16.1
+1 wk ahead,65+ yr,3,16.2
+1 wk ahead,65+ yr,3,16.3
+1 wk ahead,65+ yr,3,16.4
+1 wk ahead,Overall,3,3.3
+1 wk ahead,Overall,3,3.4
+1 wk ahead,Overall,3,3.5
+1 wk ahead,Overall,3,3.6
+1 wk ahead,Overall,3,3.7
+1 wk ahead,0-4 yr,4,2.5
+1 wk ahead,0-4 yr,4,2.6
+1 wk ahead,0-4 yr,4,2.7
+1 wk ahead,5-17 yr,4,1
+1 wk ahead,5-17 yr,4,1.1
+1 wk ahead,5-17 yr,4,1.2
+1 wk ahead,18-49 yr,4,1.2
+1 wk ahead,18-49 yr,4,1.3
+1 wk ahead,18-49 yr,4,1.4
+1 wk ahead,50-64 yr,4,3.2
+1 wk ahead,50-64 yr,4,3.3
+1 wk ahead,50-64 yr,4,3.4
+1 wk ahead,50-64 yr,4,3.5
+1 wk ahead,50-64 yr,4,3.6
+1 wk ahead,65+ yr,4,16.9
+1 wk ahead,65+ yr,4,17
+1 wk ahead,65+ yr,4,17.1
+1 wk ahead,65+ yr,4,17.2
+1 wk ahead,65+ yr,4,17.3
+1 wk ahead,65+ yr,4,17.4
+1 wk ahead,65+ yr,4,17.5
+1 wk ahead,65+ yr,4,17.6
+1 wk ahead,65+ yr,4,17.7
+1 wk ahead,65+ yr,4,17.8
+1 wk ahead,65+ yr,4,17.9
+1 wk ahead,65+ yr,4,18
+1 wk ahead,65+ yr,4,18.1
+1 wk ahead,65+ yr,4,18.2
+1 wk ahead,65+ yr,4,18.3
+1 wk ahead,65+ yr,4,18.4
+1 wk ahead,65+ yr,4,18.5
+1 wk ahead,65+ yr,4,18.6
+1 wk ahead,65+ yr,4,18.7
+1 wk ahead,Overall,4,3.7
+1 wk ahead,Overall,4,3.8
+1 wk ahead,Overall,4,3.9
+1 wk ahead,Overall,4,4
+1 wk ahead,Overall,4,4.1
+1 wk ahead,0-4 yr,5,3.3
+1 wk ahead,0-4 yr,5,3.4
+1 wk ahead,0-4 yr,5,3.5
+1 wk ahead,0-4 yr,5,3.6
+1 wk ahead,0-4 yr,5,3.7
+1 wk ahead,5-17 yr,5,1.3
+1 wk ahead,5-17 yr,5,1.4
+1 wk ahead,5-17 yr,5,1.5
+1 wk ahead,18-49 yr,5,1.3
+1 wk ahead,18-49 yr,5,1.4
+1 wk ahead,18-49 yr,5,1.5
+1 wk ahead,50-64 yr,5,4.8
+1 wk ahead,50-64 yr,5,4.9
+1 wk ahead,50-64 yr,5,5
+1 wk ahead,50-64 yr,5,5.1
+1 wk ahead,50-64 yr,5,5.2
+1 wk ahead,65+ yr,5,20.4
+1 wk ahead,65+ yr,5,20.5
+1 wk ahead,65+ yr,5,20.6
+1 wk ahead,65+ yr,5,20.7
+1 wk ahead,65+ yr,5,20.8
+1 wk ahead,65+ yr,5,20.9
+1 wk ahead,65+ yr,5,21
+1 wk ahead,65+ yr,5,21.1
+1 wk ahead,65+ yr,5,21.2
+1 wk ahead,65+ yr,5,21.3
+1 wk ahead,65+ yr,5,21.4
+1 wk ahead,65+ yr,5,21.5
+1 wk ahead,65+ yr,5,21.6
+1 wk ahead,65+ yr,5,21.7
+1 wk ahead,65+ yr,5,21.8
+1 wk ahead,65+ yr,5,21.9
+1 wk ahead,65+ yr,5,22
+1 wk ahead,65+ yr,5,22.1
+1 wk ahead,65+ yr,5,22.2
+1 wk ahead,65+ yr,5,22.3
+1 wk ahead,65+ yr,5,22.4
+1 wk ahead,65+ yr,5,22.5
+1 wk ahead,65+ yr,5,22.6
+1 wk ahead,Overall,5,4.7
+1 wk ahead,Overall,5,4.8
+1 wk ahead,Overall,5,4.9
+1 wk ahead,Overall,5,5
+1 wk ahead,Overall,5,5.1
+1 wk ahead,0-4 yr,6,4
+1 wk ahead,0-4 yr,6,4.1
+1 wk ahead,0-4 yr,6,4.2
+1 wk ahead,0-4 yr,6,4.3
+1 wk ahead,0-4 yr,6,4.4
+1 wk ahead,5-17 yr,6,1.7
+1 wk ahead,5-17 yr,6,1.8
+1 wk ahead,5-17 yr,6,1.9
+1 wk ahead,18-49 yr,6,1.4
+1 wk ahead,18-49 yr,6,1.5
+1 wk ahead,18-49 yr,6,1.6
+1 wk ahead,50-64 yr,6,4.8
+1 wk ahead,50-64 yr,6,4.9
+1 wk ahead,50-64 yr,6,5
+1 wk ahead,50-64 yr,6,5.1
+1 wk ahead,50-64 yr,6,5.2
+1 wk ahead,50-64 yr,6,5.3
+1 wk ahead,50-64 yr,6,5.4
+1 wk ahead,65+ yr,6,21.6
+1 wk ahead,65+ yr,6,21.7
+1 wk ahead,65+ yr,6,21.8
+1 wk ahead,65+ yr,6,21.9
+1 wk ahead,65+ yr,6,22
+1 wk ahead,65+ yr,6,22.1
+1 wk ahead,65+ yr,6,22.2
+1 wk ahead,65+ yr,6,22.3
+1 wk ahead,65+ yr,6,22.4
+1 wk ahead,65+ yr,6,22.5
+1 wk ahead,65+ yr,6,22.6
+1 wk ahead,65+ yr,6,22.7
+1 wk ahead,65+ yr,6,22.8
+1 wk ahead,65+ yr,6,22.9
+1 wk ahead,65+ yr,6,23
+1 wk ahead,65+ yr,6,23.1
+1 wk ahead,65+ yr,6,23.2
+1 wk ahead,65+ yr,6,23.3
+1 wk ahead,65+ yr,6,23.4
+1 wk ahead,65+ yr,6,23.5
+1 wk ahead,65+ yr,6,23.6
+1 wk ahead,65+ yr,6,23.7
+1 wk ahead,65+ yr,6,23.8
+1 wk ahead,Overall,6,4.9
+1 wk ahead,Overall,6,5
+1 wk ahead,Overall,6,5.1
+1 wk ahead,Overall,6,5.2
+1 wk ahead,Overall,6,5.3
+1 wk ahead,Overall,6,5.4
+1 wk ahead,Overall,6,5.5
+1 wk ahead,0-4 yr,7,3.9
+1 wk ahead,0-4 yr,7,4
+1 wk ahead,0-4 yr,7,4.1
+1 wk ahead,0-4 yr,7,4.2
+1 wk ahead,0-4 yr,7,4.3
+1 wk ahead,5-17 yr,7,1.5
+1 wk ahead,5-17 yr,7,1.6
+1 wk ahead,5-17 yr,7,1.7
+1 wk ahead,18-49 yr,7,1.6
+1 wk ahead,18-49 yr,7,1.7
+1 wk ahead,18-49 yr,7,1.8
+1 wk ahead,50-64 yr,7,5.2
+1 wk ahead,50-64 yr,7,5.3
+1 wk ahead,50-64 yr,7,5.4
+1 wk ahead,50-64 yr,7,5.5
+1 wk ahead,50-64 yr,7,5.6
+1 wk ahead,50-64 yr,7,5.7
+1 wk ahead,50-64 yr,7,5.8
+1 wk ahead,65+ yr,7,23.6
+1 wk ahead,65+ yr,7,23.7
+1 wk ahead,65+ yr,7,23.8
+1 wk ahead,65+ yr,7,23.9
+1 wk ahead,65+ yr,7,24
+1 wk ahead,65+ yr,7,24.1
+1 wk ahead,65+ yr,7,24.2
+1 wk ahead,65+ yr,7,24.3
+1 wk ahead,65+ yr,7,24.4
+1 wk ahead,65+ yr,7,24.5
+1 wk ahead,65+ yr,7,24.6
+1 wk ahead,65+ yr,7,24.7
+1 wk ahead,65+ yr,7,24.8
+1 wk ahead,65+ yr,7,24.9
+1 wk ahead,65+ yr,7,25
+1 wk ahead,65+ yr,7,25.1
+1 wk ahead,65+ yr,7,25.2
+1 wk ahead,65+ yr,7,25.3
+1 wk ahead,65+ yr,7,25.4
+1 wk ahead,65+ yr,7,25.5
+1 wk ahead,65+ yr,7,25.6
+1 wk ahead,65+ yr,7,25.7
+1 wk ahead,65+ yr,7,25.8
+1 wk ahead,65+ yr,7,25.9
+1 wk ahead,65+ yr,7,26
+1 wk ahead,Overall,7,5.3
+1 wk ahead,Overall,7,5.4
+1 wk ahead,Overall,7,5.5
+1 wk ahead,Overall,7,5.6
+1 wk ahead,Overall,7,5.7
+1 wk ahead,Overall,7,5.8
+1 wk ahead,Overall,7,5.9
+1 wk ahead,0-4 yr,8,2.8
+1 wk ahead,0-4 yr,8,2.9
+1 wk ahead,0-4 yr,8,3
+1 wk ahead,0-4 yr,8,3.1
+1 wk ahead,0-4 yr,8,3.2
+1 wk ahead,5-17 yr,8,0.5
+1 wk ahead,5-17 yr,8,0.6
+1 wk ahead,5-17 yr,8,0.7
+1 wk ahead,18-49 yr,8,0.9
+1 wk ahead,18-49 yr,8,1
+1 wk ahead,18-49 yr,8,1.1
+1 wk ahead,50-64 yr,8,3.1
+1 wk ahead,50-64 yr,8,3.2
+1 wk ahead,50-64 yr,8,3.3
+1 wk ahead,50-64 yr,8,3.4
+1 wk ahead,50-64 yr,8,3.5
+1 wk ahead,65+ yr,8,14.7
+1 wk ahead,65+ yr,8,14.8
+1 wk ahead,65+ yr,8,14.9
+1 wk ahead,65+ yr,8,15
+1 wk ahead,65+ yr,8,15.1
+1 wk ahead,65+ yr,8,15.2
+1 wk ahead,65+ yr,8,15.3
+1 wk ahead,65+ yr,8,15.4
+1 wk ahead,65+ yr,8,15.5
+1 wk ahead,65+ yr,8,15.6
+1 wk ahead,65+ yr,8,15.7
+1 wk ahead,65+ yr,8,15.8
+1 wk ahead,65+ yr,8,15.9
+1 wk ahead,65+ yr,8,16
+1 wk ahead,65+ yr,8,16.1
+1 wk ahead,65+ yr,8,16.2
+1 wk ahead,65+ yr,8,16.3
+1 wk ahead,Overall,8,3.2
+1 wk ahead,Overall,8,3.3
+1 wk ahead,Overall,8,3.4
+1 wk ahead,Overall,8,3.5
+1 wk ahead,Overall,8,3.6
+1 wk ahead,0-4 yr,9,2.1
+1 wk ahead,0-4 yr,9,2.2
+1 wk ahead,0-4 yr,9,2.3
+1 wk ahead,5-17 yr,9,1.1
+1 wk ahead,5-17 yr,9,1.2
+1 wk ahead,5-17 yr,9,1.3
+1 wk ahead,18-49 yr,9,0.7
+1 wk ahead,18-49 yr,9,0.8
+1 wk ahead,18-49 yr,9,0.9
+1 wk ahead,50-64 yr,9,3.2
+1 wk ahead,50-64 yr,9,3.3
+1 wk ahead,50-64 yr,9,3.4
+1 wk ahead,50-64 yr,9,3.5
+1 wk ahead,50-64 yr,9,3.6
+1 wk ahead,65+ yr,9,12.6
+1 wk ahead,65+ yr,9,12.7
+1 wk ahead,65+ yr,9,12.8
+1 wk ahead,65+ yr,9,12.9
+1 wk ahead,65+ yr,9,13
+1 wk ahead,65+ yr,9,13.1
+1 wk ahead,65+ yr,9,13.2
+1 wk ahead,65+ yr,9,13.3
+1 wk ahead,65+ yr,9,13.4
+1 wk ahead,65+ yr,9,13.5
+1 wk ahead,65+ yr,9,13.6
+1 wk ahead,65+ yr,9,13.7
+1 wk ahead,65+ yr,9,13.8
+1 wk ahead,65+ yr,9,13.9
+1 wk ahead,65+ yr,9,14
+1 wk ahead,Overall,9,2.9
+1 wk ahead,Overall,9,3
+1 wk ahead,Overall,9,3.1
+1 wk ahead,Overall,9,3.2
+1 wk ahead,Overall,9,3.3
+1 wk ahead,0-4 yr,10,2.4
+1 wk ahead,0-4 yr,10,2.5
+1 wk ahead,0-4 yr,10,2.6
+1 wk ahead,5-17 yr,10,1
+1 wk ahead,5-17 yr,10,1.1
+1 wk ahead,5-17 yr,10,1.2
+1 wk ahead,18-49 yr,10,0.9
+1 wk ahead,18-49 yr,10,1
+1 wk ahead,18-49 yr,10,1.1
+1 wk ahead,50-64 yr,10,2.8
+1 wk ahead,50-64 yr,10,2.9
+1 wk ahead,50-64 yr,10,3
+1 wk ahead,50-64 yr,10,3.1
+1 wk ahead,50-64 yr,10,3.2
+1 wk ahead,65+ yr,10,11.6
+1 wk ahead,65+ yr,10,11.7
+1 wk ahead,65+ yr,10,11.8
+1 wk ahead,65+ yr,10,11.9
+1 wk ahead,65+ yr,10,12
+1 wk ahead,65+ yr,10,12.1
+1 wk ahead,65+ yr,10,12.2
+1 wk ahead,65+ yr,10,12.3
+1 wk ahead,65+ yr,10,12.4
+1 wk ahead,65+ yr,10,12.5
+1 wk ahead,65+ yr,10,12.6
+1 wk ahead,65+ yr,10,12.7
+1 wk ahead,65+ yr,10,12.8
+1 wk ahead,Overall,10,2.8
+1 wk ahead,Overall,10,2.9
+1 wk ahead,Overall,10,3
+1 wk ahead,Overall,10,3.1
+1 wk ahead,Overall,10,3.2
+1 wk ahead,0-4 yr,11,2.8
+1 wk ahead,0-4 yr,11,2.9
+1 wk ahead,0-4 yr,11,3
+1 wk ahead,5-17 yr,11,1
+1 wk ahead,5-17 yr,11,1.1
+1 wk ahead,5-17 yr,11,1.2
+1 wk ahead,18-49 yr,11,1
+1 wk ahead,18-49 yr,11,1.1
+1 wk ahead,18-49 yr,11,1.2
+1 wk ahead,50-64 yr,11,3.1
+1 wk ahead,50-64 yr,11,3.2
+1 wk ahead,50-64 yr,11,3.3
+1 wk ahead,50-64 yr,11,3.4
+1 wk ahead,50-64 yr,11,3.5
+1 wk ahead,65+ yr,11,12.6
+1 wk ahead,65+ yr,11,12.7
+1 wk ahead,65+ yr,11,12.8
+1 wk ahead,65+ yr,11,12.9
+1 wk ahead,65+ yr,11,13
+1 wk ahead,65+ yr,11,13.1
+1 wk ahead,65+ yr,11,13.2
+1 wk ahead,65+ yr,11,13.3
+1 wk ahead,65+ yr,11,13.4
+1 wk ahead,65+ yr,11,13.5
+1 wk ahead,65+ yr,11,13.6
+1 wk ahead,65+ yr,11,13.7
+1 wk ahead,65+ yr,11,13.8
+1 wk ahead,65+ yr,11,13.9
+1 wk ahead,65+ yr,11,14
+1 wk ahead,Overall,11,3
+1 wk ahead,Overall,11,3.1
+1 wk ahead,Overall,11,3.2
+1 wk ahead,Overall,11,3.3
+1 wk ahead,Overall,11,3.4
+1 wk ahead,0-4 yr,12,1.7
+1 wk ahead,0-4 yr,12,1.8
+1 wk ahead,0-4 yr,12,1.9
+1 wk ahead,5-17 yr,12,1.1
+1 wk ahead,5-17 yr,12,1.2
+1 wk ahead,5-17 yr,12,1.3
+1 wk ahead,18-49 yr,12,1
+1 wk ahead,18-49 yr,12,1.1
+1 wk ahead,18-49 yr,12,1.2
+1 wk ahead,50-64 yr,12,3.4
+1 wk ahead,50-64 yr,12,3.5
+1 wk ahead,50-64 yr,12,3.6
+1 wk ahead,50-64 yr,12,3.7
+1 wk ahead,50-64 yr,12,3.8
+1 wk ahead,65+ yr,12,10.9
+1 wk ahead,65+ yr,12,11
+1 wk ahead,65+ yr,12,11.1
+1 wk ahead,65+ yr,12,11.2
+1 wk ahead,65+ yr,12,11.3
+1 wk ahead,65+ yr,12,11.4
+1 wk ahead,65+ yr,12,11.5
+1 wk ahead,65+ yr,12,11.6
+1 wk ahead,65+ yr,12,11.7
+1 wk ahead,65+ yr,12,11.8
+1 wk ahead,65+ yr,12,11.9
+1 wk ahead,65+ yr,12,12
+1 wk ahead,65+ yr,12,12.1
+1 wk ahead,Overall,12,2.8
+1 wk ahead,Overall,12,2.9
+1 wk ahead,Overall,12,3
+1 wk ahead,Overall,12,3.1
+1 wk ahead,Overall,12,3.2
+1 wk ahead,0-4 yr,13,2
+1 wk ahead,0-4 yr,13,2.1
+1 wk ahead,0-4 yr,13,2.2
+1 wk ahead,5-17 yr,13,0.5
+1 wk ahead,5-17 yr,13,0.6
+1 wk ahead,5-17 yr,13,0.7
+1 wk ahead,18-49 yr,13,0.6
+1 wk ahead,18-49 yr,13,0.7
+1 wk ahead,18-49 yr,13,0.8
+1 wk ahead,50-64 yr,13,2
+1 wk ahead,50-64 yr,13,2.1
+1 wk ahead,50-64 yr,13,2.2
+1 wk ahead,65+ yr,13,8.8
+1 wk ahead,65+ yr,13,8.9
+1 wk ahead,65+ yr,13,9
+1 wk ahead,65+ yr,13,9.1
+1 wk ahead,65+ yr,13,9.2
+1 wk ahead,65+ yr,13,9.3
+1 wk ahead,65+ yr,13,9.4
+1 wk ahead,65+ yr,13,9.5
+1 wk ahead,65+ yr,13,9.6
+1 wk ahead,65+ yr,13,9.7
+1 wk ahead,65+ yr,13,9.8
+1 wk ahead,Overall,13,2.1
+1 wk ahead,Overall,13,2.2
+1 wk ahead,Overall,13,2.3
+1 wk ahead,0-4 yr,14,1
+1 wk ahead,0-4 yr,14,1.1
+1 wk ahead,0-4 yr,14,1.2
+1 wk ahead,5-17 yr,14,0.4
+1 wk ahead,5-17 yr,14,0.5
+1 wk ahead,5-17 yr,14,0.6
+1 wk ahead,18-49 yr,14,0.2
+1 wk ahead,18-49 yr,14,0.3
+1 wk ahead,18-49 yr,14,0.4
+1 wk ahead,50-64 yr,14,1.4
+1 wk ahead,50-64 yr,14,1.5
+1 wk ahead,50-64 yr,14,1.6
+1 wk ahead,65+ yr,14,6.6
+1 wk ahead,65+ yr,14,6.7
+1 wk ahead,65+ yr,14,6.8
+1 wk ahead,65+ yr,14,6.9
+1 wk ahead,65+ yr,14,7
+1 wk ahead,65+ yr,14,7.1
+1 wk ahead,65+ yr,14,7.2
+1 wk ahead,Overall,14,1.4
+1 wk ahead,Overall,14,1.5
+1 wk ahead,Overall,14,1.6
+1 wk ahead,0-4 yr,15,0.9
+1 wk ahead,0-4 yr,15,1
+1 wk ahead,0-4 yr,15,1.1
+1 wk ahead,5-17 yr,15,0.3
+1 wk ahead,5-17 yr,15,0.4
+1 wk ahead,5-17 yr,15,0.5
+1 wk ahead,18-49 yr,15,0.2
+1 wk ahead,18-49 yr,15,0.3
+1 wk ahead,18-49 yr,15,0.4
+1 wk ahead,50-64 yr,15,1.1
+1 wk ahead,50-64 yr,15,1.2
+1 wk ahead,50-64 yr,15,1.3
+1 wk ahead,65+ yr,15,3.9
+1 wk ahead,65+ yr,15,4
+1 wk ahead,65+ yr,15,4.1
+1 wk ahead,65+ yr,15,4.2
+1 wk ahead,65+ yr,15,4.3
+1 wk ahead,Overall,15,0.9
+1 wk ahead,Overall,15,1
+1 wk ahead,Overall,15,1.1
+1 wk ahead,0-4 yr,16,0.5
+1 wk ahead,0-4 yr,16,0.6
+1 wk ahead,0-4 yr,16,0.7
+1 wk ahead,5-17 yr,16,0.1
+1 wk ahead,5-17 yr,16,0.2
+1 wk ahead,5-17 yr,16,0.3
+1 wk ahead,18-49 yr,16,0.1
+1 wk ahead,18-49 yr,16,0.2
+1 wk ahead,18-49 yr,16,0.3
+1 wk ahead,50-64 yr,16,0.7
+1 wk ahead,50-64 yr,16,0.8
+1 wk ahead,50-64 yr,16,0.9
+1 wk ahead,65+ yr,16,2.6
+1 wk ahead,65+ yr,16,2.7
+1 wk ahead,65+ yr,16,2.8
+1 wk ahead,Overall,16,0.6
+1 wk ahead,Overall,16,0.7
+1 wk ahead,Overall,16,0.8
+2 wk ahead,0-4 yr,45,0.1
+2 wk ahead,0-4 yr,45,0.2
+2 wk ahead,0-4 yr,45,0.3
+2 wk ahead,5-17 yr,45,0
+2 wk ahead,5-17 yr,45,0.1
+2 wk ahead,18-49 yr,45,0.1
+2 wk ahead,18-49 yr,45,0.2
+2 wk ahead,18-49 yr,45,0.3
+2 wk ahead,50-64 yr,45,0.3
+2 wk ahead,50-64 yr,45,0.4
+2 wk ahead,50-64 yr,45,0.5
+2 wk ahead,65+ yr,45,1
+2 wk ahead,65+ yr,45,1.1
+2 wk ahead,65+ yr,45,1.2
+2 wk ahead,Overall,45,0.2
+2 wk ahead,Overall,45,0.3
+2 wk ahead,Overall,45,0.4
+2 wk ahead,0-4 yr,46,0.4
+2 wk ahead,0-4 yr,46,0.5
+2 wk ahead,0-4 yr,46,0.6
+2 wk ahead,5-17 yr,46,0
+2 wk ahead,5-17 yr,46,0.1
+2 wk ahead,5-17 yr,46,0.2
+2 wk ahead,18-49 yr,46,0
+2 wk ahead,18-49 yr,46,0.1
+2 wk ahead,18-49 yr,46,0.2
+2 wk ahead,50-64 yr,46,0.3
+2 wk ahead,50-64 yr,46,0.4
+2 wk ahead,50-64 yr,46,0.5
+2 wk ahead,65+ yr,46,1.8
+2 wk ahead,65+ yr,46,1.9
+2 wk ahead,65+ yr,46,2
+2 wk ahead,Overall,46,0.3
+2 wk ahead,Overall,46,0.4
+2 wk ahead,Overall,46,0.5
+2 wk ahead,0-4 yr,47,0.5
+2 wk ahead,0-4 yr,47,0.6
+2 wk ahead,0-4 yr,47,0.7
+2 wk ahead,5-17 yr,47,0
+2 wk ahead,5-17 yr,47,0.1
+2 wk ahead,5-17 yr,47,0.2
+2 wk ahead,18-49 yr,47,0.1
+2 wk ahead,18-49 yr,47,0.2
+2 wk ahead,18-49 yr,47,0.3
+2 wk ahead,50-64 yr,47,0.5
+2 wk ahead,50-64 yr,47,0.6
+2 wk ahead,50-64 yr,47,0.7
+2 wk ahead,65+ yr,47,2.6
+2 wk ahead,65+ yr,47,2.7
+2 wk ahead,65+ yr,47,2.8
+2 wk ahead,Overall,47,0.5
+2 wk ahead,Overall,47,0.6
+2 wk ahead,Overall,47,0.7
+2 wk ahead,0-4 yr,48,0.4
+2 wk ahead,0-4 yr,48,0.5
+2 wk ahead,0-4 yr,48,0.6
+2 wk ahead,5-17 yr,48,0.1
+2 wk ahead,5-17 yr,48,0.2
+2 wk ahead,5-17 yr,48,0.3
+2 wk ahead,18-49 yr,48,0.3
+2 wk ahead,18-49 yr,48,0.4
+2 wk ahead,18-49 yr,48,0.5
+2 wk ahead,50-64 yr,48,1
+2 wk ahead,50-64 yr,48,1.1
+2 wk ahead,50-64 yr,48,1.2
+2 wk ahead,65+ yr,48,3.2
+2 wk ahead,65+ yr,48,3.3
+2 wk ahead,65+ yr,48,3.4
+2 wk ahead,65+ yr,48,3.5
+2 wk ahead,65+ yr,48,3.6
+2 wk ahead,Overall,48,0.8
+2 wk ahead,Overall,48,0.9
+2 wk ahead,Overall,48,1
+2 wk ahead,0-4 yr,49,1.5
+2 wk ahead,0-4 yr,49,1.6
+2 wk ahead,0-4 yr,49,1.7
+2 wk ahead,5-17 yr,49,0.2
+2 wk ahead,5-17 yr,49,0.3
+2 wk ahead,5-17 yr,49,0.4
+2 wk ahead,18-49 yr,49,0.4
+2 wk ahead,18-49 yr,49,0.5
+2 wk ahead,18-49 yr,49,0.6
+2 wk ahead,50-64 yr,49,1.4
+2 wk ahead,50-64 yr,49,1.5
+2 wk ahead,50-64 yr,49,1.6
+2 wk ahead,65+ yr,49,7.2
+2 wk ahead,65+ yr,49,7.3
+2 wk ahead,65+ yr,49,7.4
+2 wk ahead,65+ yr,49,7.5
+2 wk ahead,65+ yr,49,7.6
+2 wk ahead,65+ yr,49,7.7
+2 wk ahead,65+ yr,49,7.8
+2 wk ahead,65+ yr,49,7.9
+2 wk ahead,65+ yr,49,8
+2 wk ahead,Overall,49,1.6
+2 wk ahead,Overall,49,1.7
+2 wk ahead,Overall,49,1.8
+2 wk ahead,0-4 yr,50,1.3
+2 wk ahead,0-4 yr,50,1.4
+2 wk ahead,0-4 yr,50,1.5
+2 wk ahead,5-17 yr,50,0.2
+2 wk ahead,5-17 yr,50,0.3
+2 wk ahead,5-17 yr,50,0.4
+2 wk ahead,18-49 yr,50,0.8
+2 wk ahead,18-49 yr,50,0.9
+2 wk ahead,18-49 yr,50,1
+2 wk ahead,50-64 yr,50,2.8
+2 wk ahead,50-64 yr,50,2.9
+2 wk ahead,50-64 yr,50,3
+2 wk ahead,50-64 yr,50,3.1
+2 wk ahead,50-64 yr,50,3.2
+2 wk ahead,65+ yr,50,16.5
+2 wk ahead,65+ yr,50,16.6
+2 wk ahead,65+ yr,50,16.7
+2 wk ahead,65+ yr,50,16.8
+2 wk ahead,65+ yr,50,16.9
+2 wk ahead,65+ yr,50,17
+2 wk ahead,65+ yr,50,17.1
+2 wk ahead,65+ yr,50,17.2
+2 wk ahead,65+ yr,50,17.3
+2 wk ahead,65+ yr,50,17.4
+2 wk ahead,65+ yr,50,17.5
+2 wk ahead,65+ yr,50,17.6
+2 wk ahead,65+ yr,50,17.7
+2 wk ahead,65+ yr,50,17.8
+2 wk ahead,65+ yr,50,17.9
+2 wk ahead,65+ yr,50,18
+2 wk ahead,65+ yr,50,18.1
+2 wk ahead,65+ yr,50,18.2
+2 wk ahead,65+ yr,50,18.3
+2 wk ahead,Overall,50,3.2
+2 wk ahead,Overall,50,3.3
+2 wk ahead,Overall,50,3.4
+2 wk ahead,Overall,50,3.5
+2 wk ahead,Overall,50,3.6
+2 wk ahead,0-4 yr,51,1.2
+2 wk ahead,0-4 yr,51,1.3
+2 wk ahead,0-4 yr,51,1.4
+2 wk ahead,5-17 yr,51,0.2
+2 wk ahead,5-17 yr,51,0.3
+2 wk ahead,5-17 yr,51,0.4
+2 wk ahead,18-49 yr,51,1
+2 wk ahead,18-49 yr,51,1.1
+2 wk ahead,18-49 yr,51,1.2
+2 wk ahead,50-64 yr,51,4
+2 wk ahead,50-64 yr,51,4.1
+2 wk ahead,50-64 yr,51,4.2
+2 wk ahead,50-64 yr,51,4.3
+2 wk ahead,50-64 yr,51,4.4
+2 wk ahead,65+ yr,51,21.8
+2 wk ahead,65+ yr,51,21.9
+2 wk ahead,65+ yr,51,22
+2 wk ahead,65+ yr,51,22.1
+2 wk ahead,65+ yr,51,22.2
+2 wk ahead,65+ yr,51,22.3
+2 wk ahead,65+ yr,51,22.4
+2 wk ahead,65+ yr,51,22.5
+2 wk ahead,65+ yr,51,22.6
+2 wk ahead,65+ yr,51,22.7
+2 wk ahead,65+ yr,51,22.8
+2 wk ahead,65+ yr,51,22.9
+2 wk ahead,65+ yr,51,23
+2 wk ahead,65+ yr,51,23.1
+2 wk ahead,65+ yr,51,23.2
+2 wk ahead,65+ yr,51,23.3
+2 wk ahead,65+ yr,51,23.4
+2 wk ahead,65+ yr,51,23.5
+2 wk ahead,65+ yr,51,23.6
+2 wk ahead,65+ yr,51,23.7
+2 wk ahead,65+ yr,51,23.8
+2 wk ahead,65+ yr,51,23.9
+2 wk ahead,65+ yr,51,24
+2 wk ahead,65+ yr,51,24.1
+2 wk ahead,65+ yr,51,24.2
+2 wk ahead,Overall,51,4.2
+2 wk ahead,Overall,51,4.3
+2 wk ahead,Overall,51,4.4
+2 wk ahead,Overall,51,4.5
+2 wk ahead,Overall,51,4.6
+2 wk ahead,0-4 yr,52,1.5
+2 wk ahead,0-4 yr,52,1.6
+2 wk ahead,0-4 yr,52,1.7
+2 wk ahead,5-17 yr,52,0.7
+2 wk ahead,5-17 yr,52,0.8
+2 wk ahead,5-17 yr,52,0.9
+2 wk ahead,18-49 yr,52,1
+2 wk ahead,18-49 yr,52,1.1
+2 wk ahead,18-49 yr,52,1.2
+2 wk ahead,50-64 yr,52,3.9
+2 wk ahead,50-64 yr,52,4
+2 wk ahead,50-64 yr,52,4.1
+2 wk ahead,50-64 yr,52,4.2
+2 wk ahead,50-64 yr,52,4.3
+2 wk ahead,65+ yr,52,18.3
+2 wk ahead,65+ yr,52,18.4
+2 wk ahead,65+ yr,52,18.5
+2 wk ahead,65+ yr,52,18.6
+2 wk ahead,65+ yr,52,18.7
+2 wk ahead,65+ yr,52,18.8
+2 wk ahead,65+ yr,52,18.9
+2 wk ahead,65+ yr,52,19
+2 wk ahead,65+ yr,52,19.1
+2 wk ahead,65+ yr,52,19.2
+2 wk ahead,65+ yr,52,19.3
+2 wk ahead,65+ yr,52,19.4
+2 wk ahead,65+ yr,52,19.5
+2 wk ahead,65+ yr,52,19.6
+2 wk ahead,65+ yr,52,19.7
+2 wk ahead,65+ yr,52,19.8
+2 wk ahead,65+ yr,52,19.9
+2 wk ahead,65+ yr,52,20
+2 wk ahead,65+ yr,52,20.1
+2 wk ahead,65+ yr,52,20.2
+2 wk ahead,65+ yr,52,20.3
+2 wk ahead,Overall,52,3.8
+2 wk ahead,Overall,52,3.9
+2 wk ahead,Overall,52,4
+2 wk ahead,Overall,52,4.1
+2 wk ahead,Overall,52,4.2
+2 wk ahead,0-4 yr,1,1.7
+2 wk ahead,0-4 yr,1,1.8
+2 wk ahead,0-4 yr,1,1.9
+2 wk ahead,5-17 yr,1,0.8
+2 wk ahead,5-17 yr,1,0.9
+2 wk ahead,5-17 yr,1,1
+2 wk ahead,18-49 yr,1,1.1
+2 wk ahead,18-49 yr,1,1.2
+2 wk ahead,18-49 yr,1,1.3
+2 wk ahead,50-64 yr,1,3.7
+2 wk ahead,50-64 yr,1,3.8
+2 wk ahead,50-64 yr,1,3.9
+2 wk ahead,50-64 yr,1,4
+2 wk ahead,50-64 yr,1,4.1
+2 wk ahead,65+ yr,1,17.8
+2 wk ahead,65+ yr,1,17.9
+2 wk ahead,65+ yr,1,18
+2 wk ahead,65+ yr,1,18.1
+2 wk ahead,65+ yr,1,18.2
+2 wk ahead,65+ yr,1,18.3
+2 wk ahead,65+ yr,1,18.4
+2 wk ahead,65+ yr,1,18.5
+2 wk ahead,65+ yr,1,18.6
+2 wk ahead,65+ yr,1,18.7
+2 wk ahead,65+ yr,1,18.8
+2 wk ahead,65+ yr,1,18.9
+2 wk ahead,65+ yr,1,19
+2 wk ahead,65+ yr,1,19.1
+2 wk ahead,65+ yr,1,19.2
+2 wk ahead,65+ yr,1,19.3
+2 wk ahead,65+ yr,1,19.4
+2 wk ahead,65+ yr,1,19.5
+2 wk ahead,65+ yr,1,19.6
+2 wk ahead,Overall,1,3.8
+2 wk ahead,Overall,1,3.9
+2 wk ahead,Overall,1,4
+2 wk ahead,Overall,1,4.1
+2 wk ahead,Overall,1,4.2
+2 wk ahead,0-4 yr,2,2.1
+2 wk ahead,0-4 yr,2,2.2
+2 wk ahead,0-4 yr,2,2.3
+2 wk ahead,5-17 yr,2,0.7
+2 wk ahead,5-17 yr,2,0.8
+2 wk ahead,5-17 yr,2,0.9
+2 wk ahead,18-49 yr,2,1
+2 wk ahead,18-49 yr,2,1.1
+2 wk ahead,18-49 yr,2,1.2
+2 wk ahead,50-64 yr,2,3.3
+2 wk ahead,50-64 yr,2,3.4
+2 wk ahead,50-64 yr,2,3.5
+2 wk ahead,50-64 yr,2,3.6
+2 wk ahead,50-64 yr,2,3.7
+2 wk ahead,65+ yr,2,14.8
+2 wk ahead,65+ yr,2,14.9
+2 wk ahead,65+ yr,2,15
+2 wk ahead,65+ yr,2,15.1
+2 wk ahead,65+ yr,2,15.2
+2 wk ahead,65+ yr,2,15.3
+2 wk ahead,65+ yr,2,15.4
+2 wk ahead,65+ yr,2,15.5
+2 wk ahead,65+ yr,2,15.6
+2 wk ahead,65+ yr,2,15.7
+2 wk ahead,65+ yr,2,15.8
+2 wk ahead,65+ yr,2,15.9
+2 wk ahead,65+ yr,2,16
+2 wk ahead,65+ yr,2,16.1
+2 wk ahead,65+ yr,2,16.2
+2 wk ahead,65+ yr,2,16.3
+2 wk ahead,65+ yr,2,16.4
+2 wk ahead,Overall,2,3.3
+2 wk ahead,Overall,2,3.4
+2 wk ahead,Overall,2,3.5
+2 wk ahead,Overall,2,3.6
+2 wk ahead,Overall,2,3.7
+2 wk ahead,0-4 yr,3,2.5
+2 wk ahead,0-4 yr,3,2.6
+2 wk ahead,0-4 yr,3,2.7
+2 wk ahead,5-17 yr,3,1
+2 wk ahead,5-17 yr,3,1.1
+2 wk ahead,5-17 yr,3,1.2
+2 wk ahead,18-49 yr,3,1.2
+2 wk ahead,18-49 yr,3,1.3
+2 wk ahead,18-49 yr,3,1.4
+2 wk ahead,50-64 yr,3,3.2
+2 wk ahead,50-64 yr,3,3.3
+2 wk ahead,50-64 yr,3,3.4
+2 wk ahead,50-64 yr,3,3.5
+2 wk ahead,50-64 yr,3,3.6
+2 wk ahead,65+ yr,3,16.9
+2 wk ahead,65+ yr,3,17
+2 wk ahead,65+ yr,3,17.1
+2 wk ahead,65+ yr,3,17.2
+2 wk ahead,65+ yr,3,17.3
+2 wk ahead,65+ yr,3,17.4
+2 wk ahead,65+ yr,3,17.5
+2 wk ahead,65+ yr,3,17.6
+2 wk ahead,65+ yr,3,17.7
+2 wk ahead,65+ yr,3,17.8
+2 wk ahead,65+ yr,3,17.9
+2 wk ahead,65+ yr,3,18
+2 wk ahead,65+ yr,3,18.1
+2 wk ahead,65+ yr,3,18.2
+2 wk ahead,65+ yr,3,18.3
+2 wk ahead,65+ yr,3,18.4
+2 wk ahead,65+ yr,3,18.5
+2 wk ahead,65+ yr,3,18.6
+2 wk ahead,65+ yr,3,18.7
+2 wk ahead,Overall,3,3.7
+2 wk ahead,Overall,3,3.8
+2 wk ahead,Overall,3,3.9
+2 wk ahead,Overall,3,4
+2 wk ahead,Overall,3,4.1
+2 wk ahead,0-4 yr,4,3.3
+2 wk ahead,0-4 yr,4,3.4
+2 wk ahead,0-4 yr,4,3.5
+2 wk ahead,0-4 yr,4,3.6
+2 wk ahead,0-4 yr,4,3.7
+2 wk ahead,5-17 yr,4,1.3
+2 wk ahead,5-17 yr,4,1.4
+2 wk ahead,5-17 yr,4,1.5
+2 wk ahead,18-49 yr,4,1.3
+2 wk ahead,18-49 yr,4,1.4
+2 wk ahead,18-49 yr,4,1.5
+2 wk ahead,50-64 yr,4,4.8
+2 wk ahead,50-64 yr,4,4.9
+2 wk ahead,50-64 yr,4,5
+2 wk ahead,50-64 yr,4,5.1
+2 wk ahead,50-64 yr,4,5.2
+2 wk ahead,65+ yr,4,20.4
+2 wk ahead,65+ yr,4,20.5
+2 wk ahead,65+ yr,4,20.6
+2 wk ahead,65+ yr,4,20.7
+2 wk ahead,65+ yr,4,20.8
+2 wk ahead,65+ yr,4,20.9
+2 wk ahead,65+ yr,4,21
+2 wk ahead,65+ yr,4,21.1
+2 wk ahead,65+ yr,4,21.2
+2 wk ahead,65+ yr,4,21.3
+2 wk ahead,65+ yr,4,21.4
+2 wk ahead,65+ yr,4,21.5
+2 wk ahead,65+ yr,4,21.6
+2 wk ahead,65+ yr,4,21.7
+2 wk ahead,65+ yr,4,21.8
+2 wk ahead,65+ yr,4,21.9
+2 wk ahead,65+ yr,4,22
+2 wk ahead,65+ yr,4,22.1
+2 wk ahead,65+ yr,4,22.2
+2 wk ahead,65+ yr,4,22.3
+2 wk ahead,65+ yr,4,22.4
+2 wk ahead,65+ yr,4,22.5
+2 wk ahead,65+ yr,4,22.6
+2 wk ahead,Overall,4,4.7
+2 wk ahead,Overall,4,4.8
+2 wk ahead,Overall,4,4.9
+2 wk ahead,Overall,4,5
+2 wk ahead,Overall,4,5.1
+2 wk ahead,0-4 yr,5,4
+2 wk ahead,0-4 yr,5,4.1
+2 wk ahead,0-4 yr,5,4.2
+2 wk ahead,0-4 yr,5,4.3
+2 wk ahead,0-4 yr,5,4.4
+2 wk ahead,5-17 yr,5,1.7
+2 wk ahead,5-17 yr,5,1.8
+2 wk ahead,5-17 yr,5,1.9
+2 wk ahead,18-49 yr,5,1.4
+2 wk ahead,18-49 yr,5,1.5
+2 wk ahead,18-49 yr,5,1.6
+2 wk ahead,50-64 yr,5,4.8
+2 wk ahead,50-64 yr,5,4.9
+2 wk ahead,50-64 yr,5,5
+2 wk ahead,50-64 yr,5,5.1
+2 wk ahead,50-64 yr,5,5.2
+2 wk ahead,50-64 yr,5,5.3
+2 wk ahead,50-64 yr,5,5.4
+2 wk ahead,65+ yr,5,21.6
+2 wk ahead,65+ yr,5,21.7
+2 wk ahead,65+ yr,5,21.8
+2 wk ahead,65+ yr,5,21.9
+2 wk ahead,65+ yr,5,22
+2 wk ahead,65+ yr,5,22.1
+2 wk ahead,65+ yr,5,22.2
+2 wk ahead,65+ yr,5,22.3
+2 wk ahead,65+ yr,5,22.4
+2 wk ahead,65+ yr,5,22.5
+2 wk ahead,65+ yr,5,22.6
+2 wk ahead,65+ yr,5,22.7
+2 wk ahead,65+ yr,5,22.8
+2 wk ahead,65+ yr,5,22.9
+2 wk ahead,65+ yr,5,23
+2 wk ahead,65+ yr,5,23.1
+2 wk ahead,65+ yr,5,23.2
+2 wk ahead,65+ yr,5,23.3
+2 wk ahead,65+ yr,5,23.4
+2 wk ahead,65+ yr,5,23.5
+2 wk ahead,65+ yr,5,23.6
+2 wk ahead,65+ yr,5,23.7
+2 wk ahead,65+ yr,5,23.8
+2 wk ahead,Overall,5,4.9
+2 wk ahead,Overall,5,5
+2 wk ahead,Overall,5,5.1
+2 wk ahead,Overall,5,5.2
+2 wk ahead,Overall,5,5.3
+2 wk ahead,Overall,5,5.4
+2 wk ahead,Overall,5,5.5
+2 wk ahead,0-4 yr,6,3.9
+2 wk ahead,0-4 yr,6,4
+2 wk ahead,0-4 yr,6,4.1
+2 wk ahead,0-4 yr,6,4.2
+2 wk ahead,0-4 yr,6,4.3
+2 wk ahead,5-17 yr,6,1.5
+2 wk ahead,5-17 yr,6,1.6
+2 wk ahead,5-17 yr,6,1.7
+2 wk ahead,18-49 yr,6,1.6
+2 wk ahead,18-49 yr,6,1.7
+2 wk ahead,18-49 yr,6,1.8
+2 wk ahead,50-64 yr,6,5.2
+2 wk ahead,50-64 yr,6,5.3
+2 wk ahead,50-64 yr,6,5.4
+2 wk ahead,50-64 yr,6,5.5
+2 wk ahead,50-64 yr,6,5.6
+2 wk ahead,50-64 yr,6,5.7
+2 wk ahead,50-64 yr,6,5.8
+2 wk ahead,65+ yr,6,23.6
+2 wk ahead,65+ yr,6,23.7
+2 wk ahead,65+ yr,6,23.8
+2 wk ahead,65+ yr,6,23.9
+2 wk ahead,65+ yr,6,24
+2 wk ahead,65+ yr,6,24.1
+2 wk ahead,65+ yr,6,24.2
+2 wk ahead,65+ yr,6,24.3
+2 wk ahead,65+ yr,6,24.4
+2 wk ahead,65+ yr,6,24.5
+2 wk ahead,65+ yr,6,24.6
+2 wk ahead,65+ yr,6,24.7
+2 wk ahead,65+ yr,6,24.8
+2 wk ahead,65+ yr,6,24.9
+2 wk ahead,65+ yr,6,25
+2 wk ahead,65+ yr,6,25.1
+2 wk ahead,65+ yr,6,25.2
+2 wk ahead,65+ yr,6,25.3
+2 wk ahead,65+ yr,6,25.4
+2 wk ahead,65+ yr,6,25.5
+2 wk ahead,65+ yr,6,25.6
+2 wk ahead,65+ yr,6,25.7
+2 wk ahead,65+ yr,6,25.8
+2 wk ahead,65+ yr,6,25.9
+2 wk ahead,65+ yr,6,26
+2 wk ahead,Overall,6,5.3
+2 wk ahead,Overall,6,5.4
+2 wk ahead,Overall,6,5.5
+2 wk ahead,Overall,6,5.6
+2 wk ahead,Overall,6,5.7
+2 wk ahead,Overall,6,5.8
+2 wk ahead,Overall,6,5.9
+2 wk ahead,0-4 yr,7,2.8
+2 wk ahead,0-4 yr,7,2.9
+2 wk ahead,0-4 yr,7,3
+2 wk ahead,0-4 yr,7,3.1
+2 wk ahead,0-4 yr,7,3.2
+2 wk ahead,5-17 yr,7,0.5
+2 wk ahead,5-17 yr,7,0.6
+2 wk ahead,5-17 yr,7,0.7
+2 wk ahead,18-49 yr,7,0.9
+2 wk ahead,18-49 yr,7,1
+2 wk ahead,18-49 yr,7,1.1
+2 wk ahead,50-64 yr,7,3.1
+2 wk ahead,50-64 yr,7,3.2
+2 wk ahead,50-64 yr,7,3.3
+2 wk ahead,50-64 yr,7,3.4
+2 wk ahead,50-64 yr,7,3.5
+2 wk ahead,65+ yr,7,14.7
+2 wk ahead,65+ yr,7,14.8
+2 wk ahead,65+ yr,7,14.9
+2 wk ahead,65+ yr,7,15
+2 wk ahead,65+ yr,7,15.1
+2 wk ahead,65+ yr,7,15.2
+2 wk ahead,65+ yr,7,15.3
+2 wk ahead,65+ yr,7,15.4
+2 wk ahead,65+ yr,7,15.5
+2 wk ahead,65+ yr,7,15.6
+2 wk ahead,65+ yr,7,15.7
+2 wk ahead,65+ yr,7,15.8
+2 wk ahead,65+ yr,7,15.9
+2 wk ahead,65+ yr,7,16
+2 wk ahead,65+ yr,7,16.1
+2 wk ahead,65+ yr,7,16.2
+2 wk ahead,65+ yr,7,16.3
+2 wk ahead,Overall,7,3.2
+2 wk ahead,Overall,7,3.3
+2 wk ahead,Overall,7,3.4
+2 wk ahead,Overall,7,3.5
+2 wk ahead,Overall,7,3.6
+2 wk ahead,0-4 yr,8,2.1
+2 wk ahead,0-4 yr,8,2.2
+2 wk ahead,0-4 yr,8,2.3
+2 wk ahead,5-17 yr,8,1.1
+2 wk ahead,5-17 yr,8,1.2
+2 wk ahead,5-17 yr,8,1.3
+2 wk ahead,18-49 yr,8,0.7
+2 wk ahead,18-49 yr,8,0.8
+2 wk ahead,18-49 yr,8,0.9
+2 wk ahead,50-64 yr,8,3.2
+2 wk ahead,50-64 yr,8,3.3
+2 wk ahead,50-64 yr,8,3.4
+2 wk ahead,50-64 yr,8,3.5
+2 wk ahead,50-64 yr,8,3.6
+2 wk ahead,65+ yr,8,12.6
+2 wk ahead,65+ yr,8,12.7
+2 wk ahead,65+ yr,8,12.8
+2 wk ahead,65+ yr,8,12.9
+2 wk ahead,65+ yr,8,13
+2 wk ahead,65+ yr,8,13.1
+2 wk ahead,65+ yr,8,13.2
+2 wk ahead,65+ yr,8,13.3
+2 wk ahead,65+ yr,8,13.4
+2 wk ahead,65+ yr,8,13.5
+2 wk ahead,65+ yr,8,13.6
+2 wk ahead,65+ yr,8,13.7
+2 wk ahead,65+ yr,8,13.8
+2 wk ahead,65+ yr,8,13.9
+2 wk ahead,65+ yr,8,14
+2 wk ahead,Overall,8,2.9
+2 wk ahead,Overall,8,3
+2 wk ahead,Overall,8,3.1
+2 wk ahead,Overall,8,3.2
+2 wk ahead,Overall,8,3.3
+2 wk ahead,0-4 yr,9,2.4
+2 wk ahead,0-4 yr,9,2.5
+2 wk ahead,0-4 yr,9,2.6
+2 wk ahead,5-17 yr,9,1
+2 wk ahead,5-17 yr,9,1.1
+2 wk ahead,5-17 yr,9,1.2
+2 wk ahead,18-49 yr,9,0.9
+2 wk ahead,18-49 yr,9,1
+2 wk ahead,18-49 yr,9,1.1
+2 wk ahead,50-64 yr,9,2.8
+2 wk ahead,50-64 yr,9,2.9
+2 wk ahead,50-64 yr,9,3
+2 wk ahead,50-64 yr,9,3.1
+2 wk ahead,50-64 yr,9,3.2
+2 wk ahead,65+ yr,9,11.6
+2 wk ahead,65+ yr,9,11.7
+2 wk ahead,65+ yr,9,11.8
+2 wk ahead,65+ yr,9,11.9
+2 wk ahead,65+ yr,9,12
+2 wk ahead,65+ yr,9,12.1
+2 wk ahead,65+ yr,9,12.2
+2 wk ahead,65+ yr,9,12.3
+2 wk ahead,65+ yr,9,12.4
+2 wk ahead,65+ yr,9,12.5
+2 wk ahead,65+ yr,9,12.6
+2 wk ahead,65+ yr,9,12.7
+2 wk ahead,65+ yr,9,12.8
+2 wk ahead,Overall,9,2.8
+2 wk ahead,Overall,9,2.9
+2 wk ahead,Overall,9,3
+2 wk ahead,Overall,9,3.1
+2 wk ahead,Overall,9,3.2
+2 wk ahead,0-4 yr,10,2.8
+2 wk ahead,0-4 yr,10,2.9
+2 wk ahead,0-4 yr,10,3
+2 wk ahead,5-17 yr,10,1
+2 wk ahead,5-17 yr,10,1.1
+2 wk ahead,5-17 yr,10,1.2
+2 wk ahead,18-49 yr,10,1
+2 wk ahead,18-49 yr,10,1.1
+2 wk ahead,18-49 yr,10,1.2
+2 wk ahead,50-64 yr,10,3.1
+2 wk ahead,50-64 yr,10,3.2
+2 wk ahead,50-64 yr,10,3.3
+2 wk ahead,50-64 yr,10,3.4
+2 wk ahead,50-64 yr,10,3.5
+2 wk ahead,65+ yr,10,12.6
+2 wk ahead,65+ yr,10,12.7
+2 wk ahead,65+ yr,10,12.8
+2 wk ahead,65+ yr,10,12.9
+2 wk ahead,65+ yr,10,13
+2 wk ahead,65+ yr,10,13.1
+2 wk ahead,65+ yr,10,13.2
+2 wk ahead,65+ yr,10,13.3
+2 wk ahead,65+ yr,10,13.4
+2 wk ahead,65+ yr,10,13.5
+2 wk ahead,65+ yr,10,13.6
+2 wk ahead,65+ yr,10,13.7
+2 wk ahead,65+ yr,10,13.8
+2 wk ahead,65+ yr,10,13.9
+2 wk ahead,65+ yr,10,14
+2 wk ahead,Overall,10,3
+2 wk ahead,Overall,10,3.1
+2 wk ahead,Overall,10,3.2
+2 wk ahead,Overall,10,3.3
+2 wk ahead,Overall,10,3.4
+2 wk ahead,0-4 yr,11,1.7
+2 wk ahead,0-4 yr,11,1.8
+2 wk ahead,0-4 yr,11,1.9
+2 wk ahead,5-17 yr,11,1.1
+2 wk ahead,5-17 yr,11,1.2
+2 wk ahead,5-17 yr,11,1.3
+2 wk ahead,18-49 yr,11,1
+2 wk ahead,18-49 yr,11,1.1
+2 wk ahead,18-49 yr,11,1.2
+2 wk ahead,50-64 yr,11,3.4
+2 wk ahead,50-64 yr,11,3.5
+2 wk ahead,50-64 yr,11,3.6
+2 wk ahead,50-64 yr,11,3.7
+2 wk ahead,50-64 yr,11,3.8
+2 wk ahead,65+ yr,11,10.9
+2 wk ahead,65+ yr,11,11
+2 wk ahead,65+ yr,11,11.1
+2 wk ahead,65+ yr,11,11.2
+2 wk ahead,65+ yr,11,11.3
+2 wk ahead,65+ yr,11,11.4
+2 wk ahead,65+ yr,11,11.5
+2 wk ahead,65+ yr,11,11.6
+2 wk ahead,65+ yr,11,11.7
+2 wk ahead,65+ yr,11,11.8
+2 wk ahead,65+ yr,11,11.9
+2 wk ahead,65+ yr,11,12
+2 wk ahead,65+ yr,11,12.1
+2 wk ahead,Overall,11,2.8
+2 wk ahead,Overall,11,2.9
+2 wk ahead,Overall,11,3
+2 wk ahead,Overall,11,3.1
+2 wk ahead,Overall,11,3.2
+2 wk ahead,0-4 yr,12,2
+2 wk ahead,0-4 yr,12,2.1
+2 wk ahead,0-4 yr,12,2.2
+2 wk ahead,5-17 yr,12,0.5
+2 wk ahead,5-17 yr,12,0.6
+2 wk ahead,5-17 yr,12,0.7
+2 wk ahead,18-49 yr,12,0.6
+2 wk ahead,18-49 yr,12,0.7
+2 wk ahead,18-49 yr,12,0.8
+2 wk ahead,50-64 yr,12,2
+2 wk ahead,50-64 yr,12,2.1
+2 wk ahead,50-64 yr,12,2.2
+2 wk ahead,65+ yr,12,8.8
+2 wk ahead,65+ yr,12,8.9
+2 wk ahead,65+ yr,12,9
+2 wk ahead,65+ yr,12,9.1
+2 wk ahead,65+ yr,12,9.2
+2 wk ahead,65+ yr,12,9.3
+2 wk ahead,65+ yr,12,9.4
+2 wk ahead,65+ yr,12,9.5
+2 wk ahead,65+ yr,12,9.6
+2 wk ahead,65+ yr,12,9.7
+2 wk ahead,65+ yr,12,9.8
+2 wk ahead,Overall,12,2.1
+2 wk ahead,Overall,12,2.2
+2 wk ahead,Overall,12,2.3
+2 wk ahead,0-4 yr,13,1
+2 wk ahead,0-4 yr,13,1.1
+2 wk ahead,0-4 yr,13,1.2
+2 wk ahead,5-17 yr,13,0.4
+2 wk ahead,5-17 yr,13,0.5
+2 wk ahead,5-17 yr,13,0.6
+2 wk ahead,18-49 yr,13,0.2
+2 wk ahead,18-49 yr,13,0.3
+2 wk ahead,18-49 yr,13,0.4
+2 wk ahead,50-64 yr,13,1.4
+2 wk ahead,50-64 yr,13,1.5
+2 wk ahead,50-64 yr,13,1.6
+2 wk ahead,65+ yr,13,6.6
+2 wk ahead,65+ yr,13,6.7
+2 wk ahead,65+ yr,13,6.8
+2 wk ahead,65+ yr,13,6.9
+2 wk ahead,65+ yr,13,7
+2 wk ahead,65+ yr,13,7.1
+2 wk ahead,65+ yr,13,7.2
+2 wk ahead,Overall,13,1.4
+2 wk ahead,Overall,13,1.5
+2 wk ahead,Overall,13,1.6
+2 wk ahead,0-4 yr,14,0.9
+2 wk ahead,0-4 yr,14,1
+2 wk ahead,0-4 yr,14,1.1
+2 wk ahead,5-17 yr,14,0.3
+2 wk ahead,5-17 yr,14,0.4
+2 wk ahead,5-17 yr,14,0.5
+2 wk ahead,18-49 yr,14,0.2
+2 wk ahead,18-49 yr,14,0.3
+2 wk ahead,18-49 yr,14,0.4
+2 wk ahead,50-64 yr,14,1.1
+2 wk ahead,50-64 yr,14,1.2
+2 wk ahead,50-64 yr,14,1.3
+2 wk ahead,65+ yr,14,3.9
+2 wk ahead,65+ yr,14,4
+2 wk ahead,65+ yr,14,4.1
+2 wk ahead,65+ yr,14,4.2
+2 wk ahead,65+ yr,14,4.3
+2 wk ahead,Overall,14,0.9
+2 wk ahead,Overall,14,1
+2 wk ahead,Overall,14,1.1
+2 wk ahead,0-4 yr,15,0.5
+2 wk ahead,0-4 yr,15,0.6
+2 wk ahead,0-4 yr,15,0.7
+2 wk ahead,5-17 yr,15,0.1
+2 wk ahead,5-17 yr,15,0.2
+2 wk ahead,5-17 yr,15,0.3
+2 wk ahead,18-49 yr,15,0.1
+2 wk ahead,18-49 yr,15,0.2
+2 wk ahead,18-49 yr,15,0.3
+2 wk ahead,50-64 yr,15,0.7
+2 wk ahead,50-64 yr,15,0.8
+2 wk ahead,50-64 yr,15,0.9
+2 wk ahead,65+ yr,15,2.6
+2 wk ahead,65+ yr,15,2.7
+2 wk ahead,65+ yr,15,2.8
+2 wk ahead,Overall,15,0.6
+2 wk ahead,Overall,15,0.7
+2 wk ahead,Overall,15,0.8
+3 wk ahead,0-4 yr,45,0.4
+3 wk ahead,0-4 yr,45,0.5
+3 wk ahead,0-4 yr,45,0.6
+3 wk ahead,5-17 yr,45,0
+3 wk ahead,5-17 yr,45,0.1
+3 wk ahead,5-17 yr,45,0.2
+3 wk ahead,18-49 yr,45,0
+3 wk ahead,18-49 yr,45,0.1
+3 wk ahead,18-49 yr,45,0.2
+3 wk ahead,50-64 yr,45,0.3
+3 wk ahead,50-64 yr,45,0.4
+3 wk ahead,50-64 yr,45,0.5
+3 wk ahead,65+ yr,45,1.8
+3 wk ahead,65+ yr,45,1.9
+3 wk ahead,65+ yr,45,2
+3 wk ahead,Overall,45,0.3
+3 wk ahead,Overall,45,0.4
+3 wk ahead,Overall,45,0.5
+3 wk ahead,0-4 yr,46,0.5
+3 wk ahead,0-4 yr,46,0.6
+3 wk ahead,0-4 yr,46,0.7
+3 wk ahead,5-17 yr,46,0
+3 wk ahead,5-17 yr,46,0.1
+3 wk ahead,5-17 yr,46,0.2
+3 wk ahead,18-49 yr,46,0.1
+3 wk ahead,18-49 yr,46,0.2
+3 wk ahead,18-49 yr,46,0.3
+3 wk ahead,50-64 yr,46,0.5
+3 wk ahead,50-64 yr,46,0.6
+3 wk ahead,50-64 yr,46,0.7
+3 wk ahead,65+ yr,46,2.6
+3 wk ahead,65+ yr,46,2.7
+3 wk ahead,65+ yr,46,2.8
+3 wk ahead,Overall,46,0.5
+3 wk ahead,Overall,46,0.6
+3 wk ahead,Overall,46,0.7
+3 wk ahead,0-4 yr,47,0.4
+3 wk ahead,0-4 yr,47,0.5
+3 wk ahead,0-4 yr,47,0.6
+3 wk ahead,5-17 yr,47,0.1
+3 wk ahead,5-17 yr,47,0.2
+3 wk ahead,5-17 yr,47,0.3
+3 wk ahead,18-49 yr,47,0.3
+3 wk ahead,18-49 yr,47,0.4
+3 wk ahead,18-49 yr,47,0.5
+3 wk ahead,50-64 yr,47,1
+3 wk ahead,50-64 yr,47,1.1
+3 wk ahead,50-64 yr,47,1.2
+3 wk ahead,65+ yr,47,3.2
+3 wk ahead,65+ yr,47,3.3
+3 wk ahead,65+ yr,47,3.4
+3 wk ahead,65+ yr,47,3.5
+3 wk ahead,65+ yr,47,3.6
+3 wk ahead,Overall,47,0.8
+3 wk ahead,Overall,47,0.9
+3 wk ahead,Overall,47,1
+3 wk ahead,0-4 yr,48,1.5
+3 wk ahead,0-4 yr,48,1.6
+3 wk ahead,0-4 yr,48,1.7
+3 wk ahead,5-17 yr,48,0.2
+3 wk ahead,5-17 yr,48,0.3
+3 wk ahead,5-17 yr,48,0.4
+3 wk ahead,18-49 yr,48,0.4
+3 wk ahead,18-49 yr,48,0.5
+3 wk ahead,18-49 yr,48,0.6
+3 wk ahead,50-64 yr,48,1.4
+3 wk ahead,50-64 yr,48,1.5
+3 wk ahead,50-64 yr,48,1.6
+3 wk ahead,65+ yr,48,7.2
+3 wk ahead,65+ yr,48,7.3
+3 wk ahead,65+ yr,48,7.4
+3 wk ahead,65+ yr,48,7.5
+3 wk ahead,65+ yr,48,7.6
+3 wk ahead,65+ yr,48,7.7
+3 wk ahead,65+ yr,48,7.8
+3 wk ahead,65+ yr,48,7.9
+3 wk ahead,65+ yr,48,8
+3 wk ahead,Overall,48,1.6
+3 wk ahead,Overall,48,1.7
+3 wk ahead,Overall,48,1.8
+3 wk ahead,0-4 yr,49,1.3
+3 wk ahead,0-4 yr,49,1.4
+3 wk ahead,0-4 yr,49,1.5
+3 wk ahead,5-17 yr,49,0.2
+3 wk ahead,5-17 yr,49,0.3
+3 wk ahead,5-17 yr,49,0.4
+3 wk ahead,18-49 yr,49,0.8
+3 wk ahead,18-49 yr,49,0.9
+3 wk ahead,18-49 yr,49,1
+3 wk ahead,50-64 yr,49,2.8
+3 wk ahead,50-64 yr,49,2.9
+3 wk ahead,50-64 yr,49,3
+3 wk ahead,50-64 yr,49,3.1
+3 wk ahead,50-64 yr,49,3.2
+3 wk ahead,65+ yr,49,16.5
+3 wk ahead,65+ yr,49,16.6
+3 wk ahead,65+ yr,49,16.7
+3 wk ahead,65+ yr,49,16.8
+3 wk ahead,65+ yr,49,16.9
+3 wk ahead,65+ yr,49,17
+3 wk ahead,65+ yr,49,17.1
+3 wk ahead,65+ yr,49,17.2
+3 wk ahead,65+ yr,49,17.3
+3 wk ahead,65+ yr,49,17.4
+3 wk ahead,65+ yr,49,17.5
+3 wk ahead,65+ yr,49,17.6
+3 wk ahead,65+ yr,49,17.7
+3 wk ahead,65+ yr,49,17.8
+3 wk ahead,65+ yr,49,17.9
+3 wk ahead,65+ yr,49,18
+3 wk ahead,65+ yr,49,18.1
+3 wk ahead,65+ yr,49,18.2
+3 wk ahead,65+ yr,49,18.3
+3 wk ahead,Overall,49,3.2
+3 wk ahead,Overall,49,3.3
+3 wk ahead,Overall,49,3.4
+3 wk ahead,Overall,49,3.5
+3 wk ahead,Overall,49,3.6
+3 wk ahead,0-4 yr,50,1.2
+3 wk ahead,0-4 yr,50,1.3
+3 wk ahead,0-4 yr,50,1.4
+3 wk ahead,5-17 yr,50,0.2
+3 wk ahead,5-17 yr,50,0.3
+3 wk ahead,5-17 yr,50,0.4
+3 wk ahead,18-49 yr,50,1
+3 wk ahead,18-49 yr,50,1.1
+3 wk ahead,18-49 yr,50,1.2
+3 wk ahead,50-64 yr,50,4
+3 wk ahead,50-64 yr,50,4.1
+3 wk ahead,50-64 yr,50,4.2
+3 wk ahead,50-64 yr,50,4.3
+3 wk ahead,50-64 yr,50,4.4
+3 wk ahead,65+ yr,50,21.8
+3 wk ahead,65+ yr,50,21.9
+3 wk ahead,65+ yr,50,22
+3 wk ahead,65+ yr,50,22.1
+3 wk ahead,65+ yr,50,22.2
+3 wk ahead,65+ yr,50,22.3
+3 wk ahead,65+ yr,50,22.4
+3 wk ahead,65+ yr,50,22.5
+3 wk ahead,65+ yr,50,22.6
+3 wk ahead,65+ yr,50,22.7
+3 wk ahead,65+ yr,50,22.8
+3 wk ahead,65+ yr,50,22.9
+3 wk ahead,65+ yr,50,23
+3 wk ahead,65+ yr,50,23.1
+3 wk ahead,65+ yr,50,23.2
+3 wk ahead,65+ yr,50,23.3
+3 wk ahead,65+ yr,50,23.4
+3 wk ahead,65+ yr,50,23.5
+3 wk ahead,65+ yr,50,23.6
+3 wk ahead,65+ yr,50,23.7
+3 wk ahead,65+ yr,50,23.8
+3 wk ahead,65+ yr,50,23.9
+3 wk ahead,65+ yr,50,24
+3 wk ahead,65+ yr,50,24.1
+3 wk ahead,65+ yr,50,24.2
+3 wk ahead,Overall,50,4.2
+3 wk ahead,Overall,50,4.3
+3 wk ahead,Overall,50,4.4
+3 wk ahead,Overall,50,4.5
+3 wk ahead,Overall,50,4.6
+3 wk ahead,0-4 yr,51,1.5
+3 wk ahead,0-4 yr,51,1.6
+3 wk ahead,0-4 yr,51,1.7
+3 wk ahead,5-17 yr,51,0.7
+3 wk ahead,5-17 yr,51,0.8
+3 wk ahead,5-17 yr,51,0.9
+3 wk ahead,18-49 yr,51,1
+3 wk ahead,18-49 yr,51,1.1
+3 wk ahead,18-49 yr,51,1.2
+3 wk ahead,50-64 yr,51,3.9
+3 wk ahead,50-64 yr,51,4
+3 wk ahead,50-64 yr,51,4.1
+3 wk ahead,50-64 yr,51,4.2
+3 wk ahead,50-64 yr,51,4.3
+3 wk ahead,65+ yr,51,18.3
+3 wk ahead,65+ yr,51,18.4
+3 wk ahead,65+ yr,51,18.5
+3 wk ahead,65+ yr,51,18.6
+3 wk ahead,65+ yr,51,18.7
+3 wk ahead,65+ yr,51,18.8
+3 wk ahead,65+ yr,51,18.9
+3 wk ahead,65+ yr,51,19
+3 wk ahead,65+ yr,51,19.1
+3 wk ahead,65+ yr,51,19.2
+3 wk ahead,65+ yr,51,19.3
+3 wk ahead,65+ yr,51,19.4
+3 wk ahead,65+ yr,51,19.5
+3 wk ahead,65+ yr,51,19.6
+3 wk ahead,65+ yr,51,19.7
+3 wk ahead,65+ yr,51,19.8
+3 wk ahead,65+ yr,51,19.9
+3 wk ahead,65+ yr,51,20
+3 wk ahead,65+ yr,51,20.1
+3 wk ahead,65+ yr,51,20.2
+3 wk ahead,65+ yr,51,20.3
+3 wk ahead,Overall,51,3.8
+3 wk ahead,Overall,51,3.9
+3 wk ahead,Overall,51,4
+3 wk ahead,Overall,51,4.1
+3 wk ahead,Overall,51,4.2
+3 wk ahead,0-4 yr,52,1.7
+3 wk ahead,0-4 yr,52,1.8
+3 wk ahead,0-4 yr,52,1.9
+3 wk ahead,5-17 yr,52,0.8
+3 wk ahead,5-17 yr,52,0.9
+3 wk ahead,5-17 yr,52,1
+3 wk ahead,18-49 yr,52,1.1
+3 wk ahead,18-49 yr,52,1.2
+3 wk ahead,18-49 yr,52,1.3
+3 wk ahead,50-64 yr,52,3.7
+3 wk ahead,50-64 yr,52,3.8
+3 wk ahead,50-64 yr,52,3.9
+3 wk ahead,50-64 yr,52,4
+3 wk ahead,50-64 yr,52,4.1
+3 wk ahead,65+ yr,52,17.8
+3 wk ahead,65+ yr,52,17.9
+3 wk ahead,65+ yr,52,18
+3 wk ahead,65+ yr,52,18.1
+3 wk ahead,65+ yr,52,18.2
+3 wk ahead,65+ yr,52,18.3
+3 wk ahead,65+ yr,52,18.4
+3 wk ahead,65+ yr,52,18.5
+3 wk ahead,65+ yr,52,18.6
+3 wk ahead,65+ yr,52,18.7
+3 wk ahead,65+ yr,52,18.8
+3 wk ahead,65+ yr,52,18.9
+3 wk ahead,65+ yr,52,19
+3 wk ahead,65+ yr,52,19.1
+3 wk ahead,65+ yr,52,19.2
+3 wk ahead,65+ yr,52,19.3
+3 wk ahead,65+ yr,52,19.4
+3 wk ahead,65+ yr,52,19.5
+3 wk ahead,65+ yr,52,19.6
+3 wk ahead,Overall,52,3.8
+3 wk ahead,Overall,52,3.9
+3 wk ahead,Overall,52,4
+3 wk ahead,Overall,52,4.1
+3 wk ahead,Overall,52,4.2
+3 wk ahead,0-4 yr,1,2.1
+3 wk ahead,0-4 yr,1,2.2
+3 wk ahead,0-4 yr,1,2.3
+3 wk ahead,5-17 yr,1,0.7
+3 wk ahead,5-17 yr,1,0.8
+3 wk ahead,5-17 yr,1,0.9
+3 wk ahead,18-49 yr,1,1
+3 wk ahead,18-49 yr,1,1.1
+3 wk ahead,18-49 yr,1,1.2
+3 wk ahead,50-64 yr,1,3.3
+3 wk ahead,50-64 yr,1,3.4
+3 wk ahead,50-64 yr,1,3.5
+3 wk ahead,50-64 yr,1,3.6
+3 wk ahead,50-64 yr,1,3.7
+3 wk ahead,65+ yr,1,14.8
+3 wk ahead,65+ yr,1,14.9
+3 wk ahead,65+ yr,1,15
+3 wk ahead,65+ yr,1,15.1
+3 wk ahead,65+ yr,1,15.2
+3 wk ahead,65+ yr,1,15.3
+3 wk ahead,65+ yr,1,15.4
+3 wk ahead,65+ yr,1,15.5
+3 wk ahead,65+ yr,1,15.6
+3 wk ahead,65+ yr,1,15.7
+3 wk ahead,65+ yr,1,15.8
+3 wk ahead,65+ yr,1,15.9
+3 wk ahead,65+ yr,1,16
+3 wk ahead,65+ yr,1,16.1
+3 wk ahead,65+ yr,1,16.2
+3 wk ahead,65+ yr,1,16.3
+3 wk ahead,65+ yr,1,16.4
+3 wk ahead,Overall,1,3.3
+3 wk ahead,Overall,1,3.4
+3 wk ahead,Overall,1,3.5
+3 wk ahead,Overall,1,3.6
+3 wk ahead,Overall,1,3.7
+3 wk ahead,0-4 yr,2,2.5
+3 wk ahead,0-4 yr,2,2.6
+3 wk ahead,0-4 yr,2,2.7
+3 wk ahead,5-17 yr,2,1
+3 wk ahead,5-17 yr,2,1.1
+3 wk ahead,5-17 yr,2,1.2
+3 wk ahead,18-49 yr,2,1.2
+3 wk ahead,18-49 yr,2,1.3
+3 wk ahead,18-49 yr,2,1.4
+3 wk ahead,50-64 yr,2,3.2
+3 wk ahead,50-64 yr,2,3.3
+3 wk ahead,50-64 yr,2,3.4
+3 wk ahead,50-64 yr,2,3.5
+3 wk ahead,50-64 yr,2,3.6
+3 wk ahead,65+ yr,2,16.9
+3 wk ahead,65+ yr,2,17
+3 wk ahead,65+ yr,2,17.1
+3 wk ahead,65+ yr,2,17.2
+3 wk ahead,65+ yr,2,17.3
+3 wk ahead,65+ yr,2,17.4
+3 wk ahead,65+ yr,2,17.5
+3 wk ahead,65+ yr,2,17.6
+3 wk ahead,65+ yr,2,17.7
+3 wk ahead,65+ yr,2,17.8
+3 wk ahead,65+ yr,2,17.9
+3 wk ahead,65+ yr,2,18
+3 wk ahead,65+ yr,2,18.1
+3 wk ahead,65+ yr,2,18.2
+3 wk ahead,65+ yr,2,18.3
+3 wk ahead,65+ yr,2,18.4
+3 wk ahead,65+ yr,2,18.5
+3 wk ahead,65+ yr,2,18.6
+3 wk ahead,65+ yr,2,18.7
+3 wk ahead,Overall,2,3.7
+3 wk ahead,Overall,2,3.8
+3 wk ahead,Overall,2,3.9
+3 wk ahead,Overall,2,4
+3 wk ahead,Overall,2,4.1
+3 wk ahead,0-4 yr,3,3.3
+3 wk ahead,0-4 yr,3,3.4
+3 wk ahead,0-4 yr,3,3.5
+3 wk ahead,0-4 yr,3,3.6
+3 wk ahead,0-4 yr,3,3.7
+3 wk ahead,5-17 yr,3,1.3
+3 wk ahead,5-17 yr,3,1.4
+3 wk ahead,5-17 yr,3,1.5
+3 wk ahead,18-49 yr,3,1.3
+3 wk ahead,18-49 yr,3,1.4
+3 wk ahead,18-49 yr,3,1.5
+3 wk ahead,50-64 yr,3,4.8
+3 wk ahead,50-64 yr,3,4.9
+3 wk ahead,50-64 yr,3,5
+3 wk ahead,50-64 yr,3,5.1
+3 wk ahead,50-64 yr,3,5.2
+3 wk ahead,65+ yr,3,20.4
+3 wk ahead,65+ yr,3,20.5
+3 wk ahead,65+ yr,3,20.6
+3 wk ahead,65+ yr,3,20.7
+3 wk ahead,65+ yr,3,20.8
+3 wk ahead,65+ yr,3,20.9
+3 wk ahead,65+ yr,3,21
+3 wk ahead,65+ yr,3,21.1
+3 wk ahead,65+ yr,3,21.2
+3 wk ahead,65+ yr,3,21.3
+3 wk ahead,65+ yr,3,21.4
+3 wk ahead,65+ yr,3,21.5
+3 wk ahead,65+ yr,3,21.6
+3 wk ahead,65+ yr,3,21.7
+3 wk ahead,65+ yr,3,21.8
+3 wk ahead,65+ yr,3,21.9
+3 wk ahead,65+ yr,3,22
+3 wk ahead,65+ yr,3,22.1
+3 wk ahead,65+ yr,3,22.2
+3 wk ahead,65+ yr,3,22.3
+3 wk ahead,65+ yr,3,22.4
+3 wk ahead,65+ yr,3,22.5
+3 wk ahead,65+ yr,3,22.6
+3 wk ahead,Overall,3,4.7
+3 wk ahead,Overall,3,4.8
+3 wk ahead,Overall,3,4.9
+3 wk ahead,Overall,3,5
+3 wk ahead,Overall,3,5.1
+3 wk ahead,0-4 yr,4,4
+3 wk ahead,0-4 yr,4,4.1
+3 wk ahead,0-4 yr,4,4.2
+3 wk ahead,0-4 yr,4,4.3
+3 wk ahead,0-4 yr,4,4.4
+3 wk ahead,5-17 yr,4,1.7
+3 wk ahead,5-17 yr,4,1.8
+3 wk ahead,5-17 yr,4,1.9
+3 wk ahead,18-49 yr,4,1.4
+3 wk ahead,18-49 yr,4,1.5
+3 wk ahead,18-49 yr,4,1.6
+3 wk ahead,50-64 yr,4,4.8
+3 wk ahead,50-64 yr,4,4.9
+3 wk ahead,50-64 yr,4,5
+3 wk ahead,50-64 yr,4,5.1
+3 wk ahead,50-64 yr,4,5.2
+3 wk ahead,50-64 yr,4,5.3
+3 wk ahead,50-64 yr,4,5.4
+3 wk ahead,65+ yr,4,21.6
+3 wk ahead,65+ yr,4,21.7
+3 wk ahead,65+ yr,4,21.8
+3 wk ahead,65+ yr,4,21.9
+3 wk ahead,65+ yr,4,22
+3 wk ahead,65+ yr,4,22.1
+3 wk ahead,65+ yr,4,22.2
+3 wk ahead,65+ yr,4,22.3
+3 wk ahead,65+ yr,4,22.4
+3 wk ahead,65+ yr,4,22.5
+3 wk ahead,65+ yr,4,22.6
+3 wk ahead,65+ yr,4,22.7
+3 wk ahead,65+ yr,4,22.8
+3 wk ahead,65+ yr,4,22.9
+3 wk ahead,65+ yr,4,23
+3 wk ahead,65+ yr,4,23.1
+3 wk ahead,65+ yr,4,23.2
+3 wk ahead,65+ yr,4,23.3
+3 wk ahead,65+ yr,4,23.4
+3 wk ahead,65+ yr,4,23.5
+3 wk ahead,65+ yr,4,23.6
+3 wk ahead,65+ yr,4,23.7
+3 wk ahead,65+ yr,4,23.8
+3 wk ahead,Overall,4,4.9
+3 wk ahead,Overall,4,5
+3 wk ahead,Overall,4,5.1
+3 wk ahead,Overall,4,5.2
+3 wk ahead,Overall,4,5.3
+3 wk ahead,Overall,4,5.4
+3 wk ahead,Overall,4,5.5
+3 wk ahead,0-4 yr,5,3.9
+3 wk ahead,0-4 yr,5,4
+3 wk ahead,0-4 yr,5,4.1
+3 wk ahead,0-4 yr,5,4.2
+3 wk ahead,0-4 yr,5,4.3
+3 wk ahead,5-17 yr,5,1.5
+3 wk ahead,5-17 yr,5,1.6
+3 wk ahead,5-17 yr,5,1.7
+3 wk ahead,18-49 yr,5,1.6
+3 wk ahead,18-49 yr,5,1.7
+3 wk ahead,18-49 yr,5,1.8
+3 wk ahead,50-64 yr,5,5.2
+3 wk ahead,50-64 yr,5,5.3
+3 wk ahead,50-64 yr,5,5.4
+3 wk ahead,50-64 yr,5,5.5
+3 wk ahead,50-64 yr,5,5.6
+3 wk ahead,50-64 yr,5,5.7
+3 wk ahead,50-64 yr,5,5.8
+3 wk ahead,65+ yr,5,23.6
+3 wk ahead,65+ yr,5,23.7
+3 wk ahead,65+ yr,5,23.8
+3 wk ahead,65+ yr,5,23.9
+3 wk ahead,65+ yr,5,24
+3 wk ahead,65+ yr,5,24.1
+3 wk ahead,65+ yr,5,24.2
+3 wk ahead,65+ yr,5,24.3
+3 wk ahead,65+ yr,5,24.4
+3 wk ahead,65+ yr,5,24.5
+3 wk ahead,65+ yr,5,24.6
+3 wk ahead,65+ yr,5,24.7
+3 wk ahead,65+ yr,5,24.8
+3 wk ahead,65+ yr,5,24.9
+3 wk ahead,65+ yr,5,25
+3 wk ahead,65+ yr,5,25.1
+3 wk ahead,65+ yr,5,25.2
+3 wk ahead,65+ yr,5,25.3
+3 wk ahead,65+ yr,5,25.4
+3 wk ahead,65+ yr,5,25.5
+3 wk ahead,65+ yr,5,25.6
+3 wk ahead,65+ yr,5,25.7
+3 wk ahead,65+ yr,5,25.8
+3 wk ahead,65+ yr,5,25.9
+3 wk ahead,65+ yr,5,26
+3 wk ahead,Overall,5,5.3
+3 wk ahead,Overall,5,5.4
+3 wk ahead,Overall,5,5.5
+3 wk ahead,Overall,5,5.6
+3 wk ahead,Overall,5,5.7
+3 wk ahead,Overall,5,5.8
+3 wk ahead,Overall,5,5.9
+3 wk ahead,0-4 yr,6,2.8
+3 wk ahead,0-4 yr,6,2.9
+3 wk ahead,0-4 yr,6,3
+3 wk ahead,0-4 yr,6,3.1
+3 wk ahead,0-4 yr,6,3.2
+3 wk ahead,5-17 yr,6,0.5
+3 wk ahead,5-17 yr,6,0.6
+3 wk ahead,5-17 yr,6,0.7
+3 wk ahead,18-49 yr,6,0.9
+3 wk ahead,18-49 yr,6,1
+3 wk ahead,18-49 yr,6,1.1
+3 wk ahead,50-64 yr,6,3.1
+3 wk ahead,50-64 yr,6,3.2
+3 wk ahead,50-64 yr,6,3.3
+3 wk ahead,50-64 yr,6,3.4
+3 wk ahead,50-64 yr,6,3.5
+3 wk ahead,65+ yr,6,14.7
+3 wk ahead,65+ yr,6,14.8
+3 wk ahead,65+ yr,6,14.9
+3 wk ahead,65+ yr,6,15
+3 wk ahead,65+ yr,6,15.1
+3 wk ahead,65+ yr,6,15.2
+3 wk ahead,65+ yr,6,15.3
+3 wk ahead,65+ yr,6,15.4
+3 wk ahead,65+ yr,6,15.5
+3 wk ahead,65+ yr,6,15.6
+3 wk ahead,65+ yr,6,15.7
+3 wk ahead,65+ yr,6,15.8
+3 wk ahead,65+ yr,6,15.9
+3 wk ahead,65+ yr,6,16
+3 wk ahead,65+ yr,6,16.1
+3 wk ahead,65+ yr,6,16.2
+3 wk ahead,65+ yr,6,16.3
+3 wk ahead,Overall,6,3.2
+3 wk ahead,Overall,6,3.3
+3 wk ahead,Overall,6,3.4
+3 wk ahead,Overall,6,3.5
+3 wk ahead,Overall,6,3.6
+3 wk ahead,0-4 yr,7,2.1
+3 wk ahead,0-4 yr,7,2.2
+3 wk ahead,0-4 yr,7,2.3
+3 wk ahead,5-17 yr,7,1.1
+3 wk ahead,5-17 yr,7,1.2
+3 wk ahead,5-17 yr,7,1.3
+3 wk ahead,18-49 yr,7,0.7
+3 wk ahead,18-49 yr,7,0.8
+3 wk ahead,18-49 yr,7,0.9
+3 wk ahead,50-64 yr,7,3.2
+3 wk ahead,50-64 yr,7,3.3
+3 wk ahead,50-64 yr,7,3.4
+3 wk ahead,50-64 yr,7,3.5
+3 wk ahead,50-64 yr,7,3.6
+3 wk ahead,65+ yr,7,12.6
+3 wk ahead,65+ yr,7,12.7
+3 wk ahead,65+ yr,7,12.8
+3 wk ahead,65+ yr,7,12.9
+3 wk ahead,65+ yr,7,13
+3 wk ahead,65+ yr,7,13.1
+3 wk ahead,65+ yr,7,13.2
+3 wk ahead,65+ yr,7,13.3
+3 wk ahead,65+ yr,7,13.4
+3 wk ahead,65+ yr,7,13.5
+3 wk ahead,65+ yr,7,13.6
+3 wk ahead,65+ yr,7,13.7
+3 wk ahead,65+ yr,7,13.8
+3 wk ahead,65+ yr,7,13.9
+3 wk ahead,65+ yr,7,14
+3 wk ahead,Overall,7,2.9
+3 wk ahead,Overall,7,3
+3 wk ahead,Overall,7,3.1
+3 wk ahead,Overall,7,3.2
+3 wk ahead,Overall,7,3.3
+3 wk ahead,0-4 yr,8,2.4
+3 wk ahead,0-4 yr,8,2.5
+3 wk ahead,0-4 yr,8,2.6
+3 wk ahead,5-17 yr,8,1
+3 wk ahead,5-17 yr,8,1.1
+3 wk ahead,5-17 yr,8,1.2
+3 wk ahead,18-49 yr,8,0.9
+3 wk ahead,18-49 yr,8,1
+3 wk ahead,18-49 yr,8,1.1
+3 wk ahead,50-64 yr,8,2.8
+3 wk ahead,50-64 yr,8,2.9
+3 wk ahead,50-64 yr,8,3
+3 wk ahead,50-64 yr,8,3.1
+3 wk ahead,50-64 yr,8,3.2
+3 wk ahead,65+ yr,8,11.6
+3 wk ahead,65+ yr,8,11.7
+3 wk ahead,65+ yr,8,11.8
+3 wk ahead,65+ yr,8,11.9
+3 wk ahead,65+ yr,8,12
+3 wk ahead,65+ yr,8,12.1
+3 wk ahead,65+ yr,8,12.2
+3 wk ahead,65+ yr,8,12.3
+3 wk ahead,65+ yr,8,12.4
+3 wk ahead,65+ yr,8,12.5
+3 wk ahead,65+ yr,8,12.6
+3 wk ahead,65+ yr,8,12.7
+3 wk ahead,65+ yr,8,12.8
+3 wk ahead,Overall,8,2.8
+3 wk ahead,Overall,8,2.9
+3 wk ahead,Overall,8,3
+3 wk ahead,Overall,8,3.1
+3 wk ahead,Overall,8,3.2
+3 wk ahead,0-4 yr,9,2.8
+3 wk ahead,0-4 yr,9,2.9
+3 wk ahead,0-4 yr,9,3
+3 wk ahead,5-17 yr,9,1
+3 wk ahead,5-17 yr,9,1.1
+3 wk ahead,5-17 yr,9,1.2
+3 wk ahead,18-49 yr,9,1
+3 wk ahead,18-49 yr,9,1.1
+3 wk ahead,18-49 yr,9,1.2
+3 wk ahead,50-64 yr,9,3.1
+3 wk ahead,50-64 yr,9,3.2
+3 wk ahead,50-64 yr,9,3.3
+3 wk ahead,50-64 yr,9,3.4
+3 wk ahead,50-64 yr,9,3.5
+3 wk ahead,65+ yr,9,12.6
+3 wk ahead,65+ yr,9,12.7
+3 wk ahead,65+ yr,9,12.8
+3 wk ahead,65+ yr,9,12.9
+3 wk ahead,65+ yr,9,13
+3 wk ahead,65+ yr,9,13.1
+3 wk ahead,65+ yr,9,13.2
+3 wk ahead,65+ yr,9,13.3
+3 wk ahead,65+ yr,9,13.4
+3 wk ahead,65+ yr,9,13.5
+3 wk ahead,65+ yr,9,13.6
+3 wk ahead,65+ yr,9,13.7
+3 wk ahead,65+ yr,9,13.8
+3 wk ahead,65+ yr,9,13.9
+3 wk ahead,65+ yr,9,14
+3 wk ahead,Overall,9,3
+3 wk ahead,Overall,9,3.1
+3 wk ahead,Overall,9,3.2
+3 wk ahead,Overall,9,3.3
+3 wk ahead,Overall,9,3.4
+3 wk ahead,0-4 yr,10,1.7
+3 wk ahead,0-4 yr,10,1.8
+3 wk ahead,0-4 yr,10,1.9
+3 wk ahead,5-17 yr,10,1.1
+3 wk ahead,5-17 yr,10,1.2
+3 wk ahead,5-17 yr,10,1.3
+3 wk ahead,18-49 yr,10,1
+3 wk ahead,18-49 yr,10,1.1
+3 wk ahead,18-49 yr,10,1.2
+3 wk ahead,50-64 yr,10,3.4
+3 wk ahead,50-64 yr,10,3.5
+3 wk ahead,50-64 yr,10,3.6
+3 wk ahead,50-64 yr,10,3.7
+3 wk ahead,50-64 yr,10,3.8
+3 wk ahead,65+ yr,10,10.9
+3 wk ahead,65+ yr,10,11
+3 wk ahead,65+ yr,10,11.1
+3 wk ahead,65+ yr,10,11.2
+3 wk ahead,65+ yr,10,11.3
+3 wk ahead,65+ yr,10,11.4
+3 wk ahead,65+ yr,10,11.5
+3 wk ahead,65+ yr,10,11.6
+3 wk ahead,65+ yr,10,11.7
+3 wk ahead,65+ yr,10,11.8
+3 wk ahead,65+ yr,10,11.9
+3 wk ahead,65+ yr,10,12
+3 wk ahead,65+ yr,10,12.1
+3 wk ahead,Overall,10,2.8
+3 wk ahead,Overall,10,2.9
+3 wk ahead,Overall,10,3
+3 wk ahead,Overall,10,3.1
+3 wk ahead,Overall,10,3.2
+3 wk ahead,0-4 yr,11,2
+3 wk ahead,0-4 yr,11,2.1
+3 wk ahead,0-4 yr,11,2.2
+3 wk ahead,5-17 yr,11,0.5
+3 wk ahead,5-17 yr,11,0.6
+3 wk ahead,5-17 yr,11,0.7
+3 wk ahead,18-49 yr,11,0.6
+3 wk ahead,18-49 yr,11,0.7
+3 wk ahead,18-49 yr,11,0.8
+3 wk ahead,50-64 yr,11,2
+3 wk ahead,50-64 yr,11,2.1
+3 wk ahead,50-64 yr,11,2.2
+3 wk ahead,65+ yr,11,8.8
+3 wk ahead,65+ yr,11,8.9
+3 wk ahead,65+ yr,11,9
+3 wk ahead,65+ yr,11,9.1
+3 wk ahead,65+ yr,11,9.2
+3 wk ahead,65+ yr,11,9.3
+3 wk ahead,65+ yr,11,9.4
+3 wk ahead,65+ yr,11,9.5
+3 wk ahead,65+ yr,11,9.6
+3 wk ahead,65+ yr,11,9.7
+3 wk ahead,65+ yr,11,9.8
+3 wk ahead,Overall,11,2.1
+3 wk ahead,Overall,11,2.2
+3 wk ahead,Overall,11,2.3
+3 wk ahead,0-4 yr,12,1
+3 wk ahead,0-4 yr,12,1.1
+3 wk ahead,0-4 yr,12,1.2
+3 wk ahead,5-17 yr,12,0.4
+3 wk ahead,5-17 yr,12,0.5
+3 wk ahead,5-17 yr,12,0.6
+3 wk ahead,18-49 yr,12,0.2
+3 wk ahead,18-49 yr,12,0.3
+3 wk ahead,18-49 yr,12,0.4
+3 wk ahead,50-64 yr,12,1.4
+3 wk ahead,50-64 yr,12,1.5
+3 wk ahead,50-64 yr,12,1.6
+3 wk ahead,65+ yr,12,6.6
+3 wk ahead,65+ yr,12,6.7
+3 wk ahead,65+ yr,12,6.8
+3 wk ahead,65+ yr,12,6.9
+3 wk ahead,65+ yr,12,7
+3 wk ahead,65+ yr,12,7.1
+3 wk ahead,65+ yr,12,7.2
+3 wk ahead,Overall,12,1.4
+3 wk ahead,Overall,12,1.5
+3 wk ahead,Overall,12,1.6
+3 wk ahead,0-4 yr,13,0.9
+3 wk ahead,0-4 yr,13,1
+3 wk ahead,0-4 yr,13,1.1
+3 wk ahead,5-17 yr,13,0.3
+3 wk ahead,5-17 yr,13,0.4
+3 wk ahead,5-17 yr,13,0.5
+3 wk ahead,18-49 yr,13,0.2
+3 wk ahead,18-49 yr,13,0.3
+3 wk ahead,18-49 yr,13,0.4
+3 wk ahead,50-64 yr,13,1.1
+3 wk ahead,50-64 yr,13,1.2
+3 wk ahead,50-64 yr,13,1.3
+3 wk ahead,65+ yr,13,3.9
+3 wk ahead,65+ yr,13,4
+3 wk ahead,65+ yr,13,4.1
+3 wk ahead,65+ yr,13,4.2
+3 wk ahead,65+ yr,13,4.3
+3 wk ahead,Overall,13,0.9
+3 wk ahead,Overall,13,1
+3 wk ahead,Overall,13,1.1
+3 wk ahead,0-4 yr,14,0.5
+3 wk ahead,0-4 yr,14,0.6
+3 wk ahead,0-4 yr,14,0.7
+3 wk ahead,5-17 yr,14,0.1
+3 wk ahead,5-17 yr,14,0.2
+3 wk ahead,5-17 yr,14,0.3
+3 wk ahead,18-49 yr,14,0.1
+3 wk ahead,18-49 yr,14,0.2
+3 wk ahead,18-49 yr,14,0.3
+3 wk ahead,50-64 yr,14,0.7
+3 wk ahead,50-64 yr,14,0.8
+3 wk ahead,50-64 yr,14,0.9
+3 wk ahead,65+ yr,14,2.6
+3 wk ahead,65+ yr,14,2.7
+3 wk ahead,65+ yr,14,2.8
+3 wk ahead,Overall,14,0.6
+3 wk ahead,Overall,14,0.7
+3 wk ahead,Overall,14,0.8
+4 wk ahead,0-4 yr,45,0.5
+4 wk ahead,0-4 yr,45,0.6
+4 wk ahead,0-4 yr,45,0.7
+4 wk ahead,5-17 yr,45,0
+4 wk ahead,5-17 yr,45,0.1
+4 wk ahead,5-17 yr,45,0.2
+4 wk ahead,18-49 yr,45,0.1
+4 wk ahead,18-49 yr,45,0.2
+4 wk ahead,18-49 yr,45,0.3
+4 wk ahead,50-64 yr,45,0.5
+4 wk ahead,50-64 yr,45,0.6
+4 wk ahead,50-64 yr,45,0.7
+4 wk ahead,65+ yr,45,2.6
+4 wk ahead,65+ yr,45,2.7
+4 wk ahead,65+ yr,45,2.8
+4 wk ahead,Overall,45,0.5
+4 wk ahead,Overall,45,0.6
+4 wk ahead,Overall,45,0.7
+4 wk ahead,0-4 yr,46,0.4
+4 wk ahead,0-4 yr,46,0.5
+4 wk ahead,0-4 yr,46,0.6
+4 wk ahead,5-17 yr,46,0.1
+4 wk ahead,5-17 yr,46,0.2
+4 wk ahead,5-17 yr,46,0.3
+4 wk ahead,18-49 yr,46,0.3
+4 wk ahead,18-49 yr,46,0.4
+4 wk ahead,18-49 yr,46,0.5
+4 wk ahead,50-64 yr,46,1
+4 wk ahead,50-64 yr,46,1.1
+4 wk ahead,50-64 yr,46,1.2
+4 wk ahead,65+ yr,46,3.2
+4 wk ahead,65+ yr,46,3.3
+4 wk ahead,65+ yr,46,3.4
+4 wk ahead,65+ yr,46,3.5
+4 wk ahead,65+ yr,46,3.6
+4 wk ahead,Overall,46,0.8
+4 wk ahead,Overall,46,0.9
+4 wk ahead,Overall,46,1
+4 wk ahead,0-4 yr,47,1.5
+4 wk ahead,0-4 yr,47,1.6
+4 wk ahead,0-4 yr,47,1.7
+4 wk ahead,5-17 yr,47,0.2
+4 wk ahead,5-17 yr,47,0.3
+4 wk ahead,5-17 yr,47,0.4
+4 wk ahead,18-49 yr,47,0.4
+4 wk ahead,18-49 yr,47,0.5
+4 wk ahead,18-49 yr,47,0.6
+4 wk ahead,50-64 yr,47,1.4
+4 wk ahead,50-64 yr,47,1.5
+4 wk ahead,50-64 yr,47,1.6
+4 wk ahead,65+ yr,47,7.2
+4 wk ahead,65+ yr,47,7.3
+4 wk ahead,65+ yr,47,7.4
+4 wk ahead,65+ yr,47,7.5
+4 wk ahead,65+ yr,47,7.6
+4 wk ahead,65+ yr,47,7.7
+4 wk ahead,65+ yr,47,7.8
+4 wk ahead,65+ yr,47,7.9
+4 wk ahead,65+ yr,47,8
+4 wk ahead,Overall,47,1.6
+4 wk ahead,Overall,47,1.7
+4 wk ahead,Overall,47,1.8
+4 wk ahead,0-4 yr,48,1.3
+4 wk ahead,0-4 yr,48,1.4
+4 wk ahead,0-4 yr,48,1.5
+4 wk ahead,5-17 yr,48,0.2
+4 wk ahead,5-17 yr,48,0.3
+4 wk ahead,5-17 yr,48,0.4
+4 wk ahead,18-49 yr,48,0.8
+4 wk ahead,18-49 yr,48,0.9
+4 wk ahead,18-49 yr,48,1
+4 wk ahead,50-64 yr,48,2.8
+4 wk ahead,50-64 yr,48,2.9
+4 wk ahead,50-64 yr,48,3
+4 wk ahead,50-64 yr,48,3.1
+4 wk ahead,50-64 yr,48,3.2
+4 wk ahead,65+ yr,48,16.5
+4 wk ahead,65+ yr,48,16.6
+4 wk ahead,65+ yr,48,16.7
+4 wk ahead,65+ yr,48,16.8
+4 wk ahead,65+ yr,48,16.9
+4 wk ahead,65+ yr,48,17
+4 wk ahead,65+ yr,48,17.1
+4 wk ahead,65+ yr,48,17.2
+4 wk ahead,65+ yr,48,17.3
+4 wk ahead,65+ yr,48,17.4
+4 wk ahead,65+ yr,48,17.5
+4 wk ahead,65+ yr,48,17.6
+4 wk ahead,65+ yr,48,17.7
+4 wk ahead,65+ yr,48,17.8
+4 wk ahead,65+ yr,48,17.9
+4 wk ahead,65+ yr,48,18
+4 wk ahead,65+ yr,48,18.1
+4 wk ahead,65+ yr,48,18.2
+4 wk ahead,65+ yr,48,18.3
+4 wk ahead,Overall,48,3.2
+4 wk ahead,Overall,48,3.3
+4 wk ahead,Overall,48,3.4
+4 wk ahead,Overall,48,3.5
+4 wk ahead,Overall,48,3.6
+4 wk ahead,0-4 yr,49,1.2
+4 wk ahead,0-4 yr,49,1.3
+4 wk ahead,0-4 yr,49,1.4
+4 wk ahead,5-17 yr,49,0.2
+4 wk ahead,5-17 yr,49,0.3
+4 wk ahead,5-17 yr,49,0.4
+4 wk ahead,18-49 yr,49,1
+4 wk ahead,18-49 yr,49,1.1
+4 wk ahead,18-49 yr,49,1.2
+4 wk ahead,50-64 yr,49,4
+4 wk ahead,50-64 yr,49,4.1
+4 wk ahead,50-64 yr,49,4.2
+4 wk ahead,50-64 yr,49,4.3
+4 wk ahead,50-64 yr,49,4.4
+4 wk ahead,65+ yr,49,21.8
+4 wk ahead,65+ yr,49,21.9
+4 wk ahead,65+ yr,49,22
+4 wk ahead,65+ yr,49,22.1
+4 wk ahead,65+ yr,49,22.2
+4 wk ahead,65+ yr,49,22.3
+4 wk ahead,65+ yr,49,22.4
+4 wk ahead,65+ yr,49,22.5
+4 wk ahead,65+ yr,49,22.6
+4 wk ahead,65+ yr,49,22.7
+4 wk ahead,65+ yr,49,22.8
+4 wk ahead,65+ yr,49,22.9
+4 wk ahead,65+ yr,49,23
+4 wk ahead,65+ yr,49,23.1
+4 wk ahead,65+ yr,49,23.2
+4 wk ahead,65+ yr,49,23.3
+4 wk ahead,65+ yr,49,23.4
+4 wk ahead,65+ yr,49,23.5
+4 wk ahead,65+ yr,49,23.6
+4 wk ahead,65+ yr,49,23.7
+4 wk ahead,65+ yr,49,23.8
+4 wk ahead,65+ yr,49,23.9
+4 wk ahead,65+ yr,49,24
+4 wk ahead,65+ yr,49,24.1
+4 wk ahead,65+ yr,49,24.2
+4 wk ahead,Overall,49,4.2
+4 wk ahead,Overall,49,4.3
+4 wk ahead,Overall,49,4.4
+4 wk ahead,Overall,49,4.5
+4 wk ahead,Overall,49,4.6
+4 wk ahead,0-4 yr,50,1.5
+4 wk ahead,0-4 yr,50,1.6
+4 wk ahead,0-4 yr,50,1.7
+4 wk ahead,5-17 yr,50,0.7
+4 wk ahead,5-17 yr,50,0.8
+4 wk ahead,5-17 yr,50,0.9
+4 wk ahead,18-49 yr,50,1
+4 wk ahead,18-49 yr,50,1.1
+4 wk ahead,18-49 yr,50,1.2
+4 wk ahead,50-64 yr,50,3.9
+4 wk ahead,50-64 yr,50,4
+4 wk ahead,50-64 yr,50,4.1
+4 wk ahead,50-64 yr,50,4.2
+4 wk ahead,50-64 yr,50,4.3
+4 wk ahead,65+ yr,50,18.3
+4 wk ahead,65+ yr,50,18.4
+4 wk ahead,65+ yr,50,18.5
+4 wk ahead,65+ yr,50,18.6
+4 wk ahead,65+ yr,50,18.7
+4 wk ahead,65+ yr,50,18.8
+4 wk ahead,65+ yr,50,18.9
+4 wk ahead,65+ yr,50,19
+4 wk ahead,65+ yr,50,19.1
+4 wk ahead,65+ yr,50,19.2
+4 wk ahead,65+ yr,50,19.3
+4 wk ahead,65+ yr,50,19.4
+4 wk ahead,65+ yr,50,19.5
+4 wk ahead,65+ yr,50,19.6
+4 wk ahead,65+ yr,50,19.7
+4 wk ahead,65+ yr,50,19.8
+4 wk ahead,65+ yr,50,19.9
+4 wk ahead,65+ yr,50,20
+4 wk ahead,65+ yr,50,20.1
+4 wk ahead,65+ yr,50,20.2
+4 wk ahead,65+ yr,50,20.3
+4 wk ahead,Overall,50,3.8
+4 wk ahead,Overall,50,3.9
+4 wk ahead,Overall,50,4
+4 wk ahead,Overall,50,4.1
+4 wk ahead,Overall,50,4.2
+4 wk ahead,0-4 yr,51,1.7
+4 wk ahead,0-4 yr,51,1.8
+4 wk ahead,0-4 yr,51,1.9
+4 wk ahead,5-17 yr,51,0.8
+4 wk ahead,5-17 yr,51,0.9
+4 wk ahead,5-17 yr,51,1
+4 wk ahead,18-49 yr,51,1.1
+4 wk ahead,18-49 yr,51,1.2
+4 wk ahead,18-49 yr,51,1.3
+4 wk ahead,50-64 yr,51,3.7
+4 wk ahead,50-64 yr,51,3.8
+4 wk ahead,50-64 yr,51,3.9
+4 wk ahead,50-64 yr,51,4
+4 wk ahead,50-64 yr,51,4.1
+4 wk ahead,65+ yr,51,17.8
+4 wk ahead,65+ yr,51,17.9
+4 wk ahead,65+ yr,51,18
+4 wk ahead,65+ yr,51,18.1
+4 wk ahead,65+ yr,51,18.2
+4 wk ahead,65+ yr,51,18.3
+4 wk ahead,65+ yr,51,18.4
+4 wk ahead,65+ yr,51,18.5
+4 wk ahead,65+ yr,51,18.6
+4 wk ahead,65+ yr,51,18.7
+4 wk ahead,65+ yr,51,18.8
+4 wk ahead,65+ yr,51,18.9
+4 wk ahead,65+ yr,51,19
+4 wk ahead,65+ yr,51,19.1
+4 wk ahead,65+ yr,51,19.2
+4 wk ahead,65+ yr,51,19.3
+4 wk ahead,65+ yr,51,19.4
+4 wk ahead,65+ yr,51,19.5
+4 wk ahead,65+ yr,51,19.6
+4 wk ahead,Overall,51,3.8
+4 wk ahead,Overall,51,3.9
+4 wk ahead,Overall,51,4
+4 wk ahead,Overall,51,4.1
+4 wk ahead,Overall,51,4.2
+4 wk ahead,0-4 yr,52,2.1
+4 wk ahead,0-4 yr,52,2.2
+4 wk ahead,0-4 yr,52,2.3
+4 wk ahead,5-17 yr,52,0.7
+4 wk ahead,5-17 yr,52,0.8
+4 wk ahead,5-17 yr,52,0.9
+4 wk ahead,18-49 yr,52,1
+4 wk ahead,18-49 yr,52,1.1
+4 wk ahead,18-49 yr,52,1.2
+4 wk ahead,50-64 yr,52,3.3
+4 wk ahead,50-64 yr,52,3.4
+4 wk ahead,50-64 yr,52,3.5
+4 wk ahead,50-64 yr,52,3.6
+4 wk ahead,50-64 yr,52,3.7
+4 wk ahead,65+ yr,52,14.8
+4 wk ahead,65+ yr,52,14.9
+4 wk ahead,65+ yr,52,15
+4 wk ahead,65+ yr,52,15.1
+4 wk ahead,65+ yr,52,15.2
+4 wk ahead,65+ yr,52,15.3
+4 wk ahead,65+ yr,52,15.4
+4 wk ahead,65+ yr,52,15.5
+4 wk ahead,65+ yr,52,15.6
+4 wk ahead,65+ yr,52,15.7
+4 wk ahead,65+ yr,52,15.8
+4 wk ahead,65+ yr,52,15.9
+4 wk ahead,65+ yr,52,16
+4 wk ahead,65+ yr,52,16.1
+4 wk ahead,65+ yr,52,16.2
+4 wk ahead,65+ yr,52,16.3
+4 wk ahead,65+ yr,52,16.4
+4 wk ahead,Overall,52,3.3
+4 wk ahead,Overall,52,3.4
+4 wk ahead,Overall,52,3.5
+4 wk ahead,Overall,52,3.6
+4 wk ahead,Overall,52,3.7
+4 wk ahead,0-4 yr,1,2.5
+4 wk ahead,0-4 yr,1,2.6
+4 wk ahead,0-4 yr,1,2.7
+4 wk ahead,5-17 yr,1,1
+4 wk ahead,5-17 yr,1,1.1
+4 wk ahead,5-17 yr,1,1.2
+4 wk ahead,18-49 yr,1,1.2
+4 wk ahead,18-49 yr,1,1.3
+4 wk ahead,18-49 yr,1,1.4
+4 wk ahead,50-64 yr,1,3.2
+4 wk ahead,50-64 yr,1,3.3
+4 wk ahead,50-64 yr,1,3.4
+4 wk ahead,50-64 yr,1,3.5
+4 wk ahead,50-64 yr,1,3.6
+4 wk ahead,65+ yr,1,16.9
+4 wk ahead,65+ yr,1,17
+4 wk ahead,65+ yr,1,17.1
+4 wk ahead,65+ yr,1,17.2
+4 wk ahead,65+ yr,1,17.3
+4 wk ahead,65+ yr,1,17.4
+4 wk ahead,65+ yr,1,17.5
+4 wk ahead,65+ yr,1,17.6
+4 wk ahead,65+ yr,1,17.7
+4 wk ahead,65+ yr,1,17.8
+4 wk ahead,65+ yr,1,17.9
+4 wk ahead,65+ yr,1,18
+4 wk ahead,65+ yr,1,18.1
+4 wk ahead,65+ yr,1,18.2
+4 wk ahead,65+ yr,1,18.3
+4 wk ahead,65+ yr,1,18.4
+4 wk ahead,65+ yr,1,18.5
+4 wk ahead,65+ yr,1,18.6
+4 wk ahead,65+ yr,1,18.7
+4 wk ahead,Overall,1,3.7
+4 wk ahead,Overall,1,3.8
+4 wk ahead,Overall,1,3.9
+4 wk ahead,Overall,1,4
+4 wk ahead,Overall,1,4.1
+4 wk ahead,0-4 yr,2,3.3
+4 wk ahead,0-4 yr,2,3.4
+4 wk ahead,0-4 yr,2,3.5
+4 wk ahead,0-4 yr,2,3.6
+4 wk ahead,0-4 yr,2,3.7
+4 wk ahead,5-17 yr,2,1.3
+4 wk ahead,5-17 yr,2,1.4
+4 wk ahead,5-17 yr,2,1.5
+4 wk ahead,18-49 yr,2,1.3
+4 wk ahead,18-49 yr,2,1.4
+4 wk ahead,18-49 yr,2,1.5
+4 wk ahead,50-64 yr,2,4.8
+4 wk ahead,50-64 yr,2,4.9
+4 wk ahead,50-64 yr,2,5
+4 wk ahead,50-64 yr,2,5.1
+4 wk ahead,50-64 yr,2,5.2
+4 wk ahead,65+ yr,2,20.4
+4 wk ahead,65+ yr,2,20.5
+4 wk ahead,65+ yr,2,20.6
+4 wk ahead,65+ yr,2,20.7
+4 wk ahead,65+ yr,2,20.8
+4 wk ahead,65+ yr,2,20.9
+4 wk ahead,65+ yr,2,21
+4 wk ahead,65+ yr,2,21.1
+4 wk ahead,65+ yr,2,21.2
+4 wk ahead,65+ yr,2,21.3
+4 wk ahead,65+ yr,2,21.4
+4 wk ahead,65+ yr,2,21.5
+4 wk ahead,65+ yr,2,21.6
+4 wk ahead,65+ yr,2,21.7
+4 wk ahead,65+ yr,2,21.8
+4 wk ahead,65+ yr,2,21.9
+4 wk ahead,65+ yr,2,22
+4 wk ahead,65+ yr,2,22.1
+4 wk ahead,65+ yr,2,22.2
+4 wk ahead,65+ yr,2,22.3
+4 wk ahead,65+ yr,2,22.4
+4 wk ahead,65+ yr,2,22.5
+4 wk ahead,65+ yr,2,22.6
+4 wk ahead,Overall,2,4.7
+4 wk ahead,Overall,2,4.8
+4 wk ahead,Overall,2,4.9
+4 wk ahead,Overall,2,5
+4 wk ahead,Overall,2,5.1
+4 wk ahead,0-4 yr,3,4
+4 wk ahead,0-4 yr,3,4.1
+4 wk ahead,0-4 yr,3,4.2
+4 wk ahead,0-4 yr,3,4.3
+4 wk ahead,0-4 yr,3,4.4
+4 wk ahead,5-17 yr,3,1.7
+4 wk ahead,5-17 yr,3,1.8
+4 wk ahead,5-17 yr,3,1.9
+4 wk ahead,18-49 yr,3,1.4
+4 wk ahead,18-49 yr,3,1.5
+4 wk ahead,18-49 yr,3,1.6
+4 wk ahead,50-64 yr,3,4.8
+4 wk ahead,50-64 yr,3,4.9
+4 wk ahead,50-64 yr,3,5
+4 wk ahead,50-64 yr,3,5.1
+4 wk ahead,50-64 yr,3,5.2
+4 wk ahead,50-64 yr,3,5.3
+4 wk ahead,50-64 yr,3,5.4
+4 wk ahead,65+ yr,3,21.6
+4 wk ahead,65+ yr,3,21.7
+4 wk ahead,65+ yr,3,21.8
+4 wk ahead,65+ yr,3,21.9
+4 wk ahead,65+ yr,3,22
+4 wk ahead,65+ yr,3,22.1
+4 wk ahead,65+ yr,3,22.2
+4 wk ahead,65+ yr,3,22.3
+4 wk ahead,65+ yr,3,22.4
+4 wk ahead,65+ yr,3,22.5
+4 wk ahead,65+ yr,3,22.6
+4 wk ahead,65+ yr,3,22.7
+4 wk ahead,65+ yr,3,22.8
+4 wk ahead,65+ yr,3,22.9
+4 wk ahead,65+ yr,3,23
+4 wk ahead,65+ yr,3,23.1
+4 wk ahead,65+ yr,3,23.2
+4 wk ahead,65+ yr,3,23.3
+4 wk ahead,65+ yr,3,23.4
+4 wk ahead,65+ yr,3,23.5
+4 wk ahead,65+ yr,3,23.6
+4 wk ahead,65+ yr,3,23.7
+4 wk ahead,65+ yr,3,23.8
+4 wk ahead,Overall,3,4.9
+4 wk ahead,Overall,3,5
+4 wk ahead,Overall,3,5.1
+4 wk ahead,Overall,3,5.2
+4 wk ahead,Overall,3,5.3
+4 wk ahead,Overall,3,5.4
+4 wk ahead,Overall,3,5.5
+4 wk ahead,0-4 yr,4,3.9
+4 wk ahead,0-4 yr,4,4
+4 wk ahead,0-4 yr,4,4.1
+4 wk ahead,0-4 yr,4,4.2
+4 wk ahead,0-4 yr,4,4.3
+4 wk ahead,5-17 yr,4,1.5
+4 wk ahead,5-17 yr,4,1.6
+4 wk ahead,5-17 yr,4,1.7
+4 wk ahead,18-49 yr,4,1.6
+4 wk ahead,18-49 yr,4,1.7
+4 wk ahead,18-49 yr,4,1.8
+4 wk ahead,50-64 yr,4,5.2
+4 wk ahead,50-64 yr,4,5.3
+4 wk ahead,50-64 yr,4,5.4
+4 wk ahead,50-64 yr,4,5.5
+4 wk ahead,50-64 yr,4,5.6
+4 wk ahead,50-64 yr,4,5.7
+4 wk ahead,50-64 yr,4,5.8
+4 wk ahead,65+ yr,4,23.6
+4 wk ahead,65+ yr,4,23.7
+4 wk ahead,65+ yr,4,23.8
+4 wk ahead,65+ yr,4,23.9
+4 wk ahead,65+ yr,4,24
+4 wk ahead,65+ yr,4,24.1
+4 wk ahead,65+ yr,4,24.2
+4 wk ahead,65+ yr,4,24.3
+4 wk ahead,65+ yr,4,24.4
+4 wk ahead,65+ yr,4,24.5
+4 wk ahead,65+ yr,4,24.6
+4 wk ahead,65+ yr,4,24.7
+4 wk ahead,65+ yr,4,24.8
+4 wk ahead,65+ yr,4,24.9
+4 wk ahead,65+ yr,4,25
+4 wk ahead,65+ yr,4,25.1
+4 wk ahead,65+ yr,4,25.2
+4 wk ahead,65+ yr,4,25.3
+4 wk ahead,65+ yr,4,25.4
+4 wk ahead,65+ yr,4,25.5
+4 wk ahead,65+ yr,4,25.6
+4 wk ahead,65+ yr,4,25.7
+4 wk ahead,65+ yr,4,25.8
+4 wk ahead,65+ yr,4,25.9
+4 wk ahead,65+ yr,4,26
+4 wk ahead,Overall,4,5.3
+4 wk ahead,Overall,4,5.4
+4 wk ahead,Overall,4,5.5
+4 wk ahead,Overall,4,5.6
+4 wk ahead,Overall,4,5.7
+4 wk ahead,Overall,4,5.8
+4 wk ahead,Overall,4,5.9
+4 wk ahead,0-4 yr,5,2.8
+4 wk ahead,0-4 yr,5,2.9
+4 wk ahead,0-4 yr,5,3
+4 wk ahead,0-4 yr,5,3.1
+4 wk ahead,0-4 yr,5,3.2
+4 wk ahead,5-17 yr,5,0.5
+4 wk ahead,5-17 yr,5,0.6
+4 wk ahead,5-17 yr,5,0.7
+4 wk ahead,18-49 yr,5,0.9
+4 wk ahead,18-49 yr,5,1
+4 wk ahead,18-49 yr,5,1.1
+4 wk ahead,50-64 yr,5,3.1
+4 wk ahead,50-64 yr,5,3.2
+4 wk ahead,50-64 yr,5,3.3
+4 wk ahead,50-64 yr,5,3.4
+4 wk ahead,50-64 yr,5,3.5
+4 wk ahead,65+ yr,5,14.7
+4 wk ahead,65+ yr,5,14.8
+4 wk ahead,65+ yr,5,14.9
+4 wk ahead,65+ yr,5,15
+4 wk ahead,65+ yr,5,15.1
+4 wk ahead,65+ yr,5,15.2
+4 wk ahead,65+ yr,5,15.3
+4 wk ahead,65+ yr,5,15.4
+4 wk ahead,65+ yr,5,15.5
+4 wk ahead,65+ yr,5,15.6
+4 wk ahead,65+ yr,5,15.7
+4 wk ahead,65+ yr,5,15.8
+4 wk ahead,65+ yr,5,15.9
+4 wk ahead,65+ yr,5,16
+4 wk ahead,65+ yr,5,16.1
+4 wk ahead,65+ yr,5,16.2
+4 wk ahead,65+ yr,5,16.3
+4 wk ahead,Overall,5,3.2
+4 wk ahead,Overall,5,3.3
+4 wk ahead,Overall,5,3.4
+4 wk ahead,Overall,5,3.5
+4 wk ahead,Overall,5,3.6
+4 wk ahead,0-4 yr,6,2.1
+4 wk ahead,0-4 yr,6,2.2
+4 wk ahead,0-4 yr,6,2.3
+4 wk ahead,5-17 yr,6,1.1
+4 wk ahead,5-17 yr,6,1.2
+4 wk ahead,5-17 yr,6,1.3
+4 wk ahead,18-49 yr,6,0.7
+4 wk ahead,18-49 yr,6,0.8
+4 wk ahead,18-49 yr,6,0.9
+4 wk ahead,50-64 yr,6,3.2
+4 wk ahead,50-64 yr,6,3.3
+4 wk ahead,50-64 yr,6,3.4
+4 wk ahead,50-64 yr,6,3.5
+4 wk ahead,50-64 yr,6,3.6
+4 wk ahead,65+ yr,6,12.6
+4 wk ahead,65+ yr,6,12.7
+4 wk ahead,65+ yr,6,12.8
+4 wk ahead,65+ yr,6,12.9
+4 wk ahead,65+ yr,6,13
+4 wk ahead,65+ yr,6,13.1
+4 wk ahead,65+ yr,6,13.2
+4 wk ahead,65+ yr,6,13.3
+4 wk ahead,65+ yr,6,13.4
+4 wk ahead,65+ yr,6,13.5
+4 wk ahead,65+ yr,6,13.6
+4 wk ahead,65+ yr,6,13.7
+4 wk ahead,65+ yr,6,13.8
+4 wk ahead,65+ yr,6,13.9
+4 wk ahead,65+ yr,6,14
+4 wk ahead,Overall,6,2.9
+4 wk ahead,Overall,6,3
+4 wk ahead,Overall,6,3.1
+4 wk ahead,Overall,6,3.2
+4 wk ahead,Overall,6,3.3
+4 wk ahead,0-4 yr,7,2.4
+4 wk ahead,0-4 yr,7,2.5
+4 wk ahead,0-4 yr,7,2.6
+4 wk ahead,5-17 yr,7,1
+4 wk ahead,5-17 yr,7,1.1
+4 wk ahead,5-17 yr,7,1.2
+4 wk ahead,18-49 yr,7,0.9
+4 wk ahead,18-49 yr,7,1
+4 wk ahead,18-49 yr,7,1.1
+4 wk ahead,50-64 yr,7,2.8
+4 wk ahead,50-64 yr,7,2.9
+4 wk ahead,50-64 yr,7,3
+4 wk ahead,50-64 yr,7,3.1
+4 wk ahead,50-64 yr,7,3.2
+4 wk ahead,65+ yr,7,11.6
+4 wk ahead,65+ yr,7,11.7
+4 wk ahead,65+ yr,7,11.8
+4 wk ahead,65+ yr,7,11.9
+4 wk ahead,65+ yr,7,12
+4 wk ahead,65+ yr,7,12.1
+4 wk ahead,65+ yr,7,12.2
+4 wk ahead,65+ yr,7,12.3
+4 wk ahead,65+ yr,7,12.4
+4 wk ahead,65+ yr,7,12.5
+4 wk ahead,65+ yr,7,12.6
+4 wk ahead,65+ yr,7,12.7
+4 wk ahead,65+ yr,7,12.8
+4 wk ahead,Overall,7,2.8
+4 wk ahead,Overall,7,2.9
+4 wk ahead,Overall,7,3
+4 wk ahead,Overall,7,3.1
+4 wk ahead,Overall,7,3.2
+4 wk ahead,0-4 yr,8,2.8
+4 wk ahead,0-4 yr,8,2.9
+4 wk ahead,0-4 yr,8,3
+4 wk ahead,5-17 yr,8,1
+4 wk ahead,5-17 yr,8,1.1
+4 wk ahead,5-17 yr,8,1.2
+4 wk ahead,18-49 yr,8,1
+4 wk ahead,18-49 yr,8,1.1
+4 wk ahead,18-49 yr,8,1.2
+4 wk ahead,50-64 yr,8,3.1
+4 wk ahead,50-64 yr,8,3.2
+4 wk ahead,50-64 yr,8,3.3
+4 wk ahead,50-64 yr,8,3.4
+4 wk ahead,50-64 yr,8,3.5
+4 wk ahead,65+ yr,8,12.6
+4 wk ahead,65+ yr,8,12.7
+4 wk ahead,65+ yr,8,12.8
+4 wk ahead,65+ yr,8,12.9
+4 wk ahead,65+ yr,8,13
+4 wk ahead,65+ yr,8,13.1
+4 wk ahead,65+ yr,8,13.2
+4 wk ahead,65+ yr,8,13.3
+4 wk ahead,65+ yr,8,13.4
+4 wk ahead,65+ yr,8,13.5
+4 wk ahead,65+ yr,8,13.6
+4 wk ahead,65+ yr,8,13.7
+4 wk ahead,65+ yr,8,13.8
+4 wk ahead,65+ yr,8,13.9
+4 wk ahead,65+ yr,8,14
+4 wk ahead,Overall,8,3
+4 wk ahead,Overall,8,3.1
+4 wk ahead,Overall,8,3.2
+4 wk ahead,Overall,8,3.3
+4 wk ahead,Overall,8,3.4
+4 wk ahead,0-4 yr,9,1.7
+4 wk ahead,0-4 yr,9,1.8
+4 wk ahead,0-4 yr,9,1.9
+4 wk ahead,5-17 yr,9,1.1
+4 wk ahead,5-17 yr,9,1.2
+4 wk ahead,5-17 yr,9,1.3
+4 wk ahead,18-49 yr,9,1
+4 wk ahead,18-49 yr,9,1.1
+4 wk ahead,18-49 yr,9,1.2
+4 wk ahead,50-64 yr,9,3.4
+4 wk ahead,50-64 yr,9,3.5
+4 wk ahead,50-64 yr,9,3.6
+4 wk ahead,50-64 yr,9,3.7
+4 wk ahead,50-64 yr,9,3.8
+4 wk ahead,65+ yr,9,10.9
+4 wk ahead,65+ yr,9,11
+4 wk ahead,65+ yr,9,11.1
+4 wk ahead,65+ yr,9,11.2
+4 wk ahead,65+ yr,9,11.3
+4 wk ahead,65+ yr,9,11.4
+4 wk ahead,65+ yr,9,11.5
+4 wk ahead,65+ yr,9,11.6
+4 wk ahead,65+ yr,9,11.7
+4 wk ahead,65+ yr,9,11.8
+4 wk ahead,65+ yr,9,11.9
+4 wk ahead,65+ yr,9,12
+4 wk ahead,65+ yr,9,12.1
+4 wk ahead,Overall,9,2.8
+4 wk ahead,Overall,9,2.9
+4 wk ahead,Overall,9,3
+4 wk ahead,Overall,9,3.1
+4 wk ahead,Overall,9,3.2
+4 wk ahead,0-4 yr,10,2
+4 wk ahead,0-4 yr,10,2.1
+4 wk ahead,0-4 yr,10,2.2
+4 wk ahead,5-17 yr,10,0.5
+4 wk ahead,5-17 yr,10,0.6
+4 wk ahead,5-17 yr,10,0.7
+4 wk ahead,18-49 yr,10,0.6
+4 wk ahead,18-49 yr,10,0.7
+4 wk ahead,18-49 yr,10,0.8
+4 wk ahead,50-64 yr,10,2
+4 wk ahead,50-64 yr,10,2.1
+4 wk ahead,50-64 yr,10,2.2
+4 wk ahead,65+ yr,10,8.8
+4 wk ahead,65+ yr,10,8.9
+4 wk ahead,65+ yr,10,9
+4 wk ahead,65+ yr,10,9.1
+4 wk ahead,65+ yr,10,9.2
+4 wk ahead,65+ yr,10,9.3
+4 wk ahead,65+ yr,10,9.4
+4 wk ahead,65+ yr,10,9.5
+4 wk ahead,65+ yr,10,9.6
+4 wk ahead,65+ yr,10,9.7
+4 wk ahead,65+ yr,10,9.8
+4 wk ahead,Overall,10,2.1
+4 wk ahead,Overall,10,2.2
+4 wk ahead,Overall,10,2.3
+4 wk ahead,0-4 yr,11,1
+4 wk ahead,0-4 yr,11,1.1
+4 wk ahead,0-4 yr,11,1.2
+4 wk ahead,5-17 yr,11,0.4
+4 wk ahead,5-17 yr,11,0.5
+4 wk ahead,5-17 yr,11,0.6
+4 wk ahead,18-49 yr,11,0.2
+4 wk ahead,18-49 yr,11,0.3
+4 wk ahead,18-49 yr,11,0.4
+4 wk ahead,50-64 yr,11,1.4
+4 wk ahead,50-64 yr,11,1.5
+4 wk ahead,50-64 yr,11,1.6
+4 wk ahead,65+ yr,11,6.6
+4 wk ahead,65+ yr,11,6.7
+4 wk ahead,65+ yr,11,6.8
+4 wk ahead,65+ yr,11,6.9
+4 wk ahead,65+ yr,11,7
+4 wk ahead,65+ yr,11,7.1
+4 wk ahead,65+ yr,11,7.2
+4 wk ahead,Overall,11,1.4
+4 wk ahead,Overall,11,1.5
+4 wk ahead,Overall,11,1.6
+4 wk ahead,0-4 yr,12,0.9
+4 wk ahead,0-4 yr,12,1
+4 wk ahead,0-4 yr,12,1.1
+4 wk ahead,5-17 yr,12,0.3
+4 wk ahead,5-17 yr,12,0.4
+4 wk ahead,5-17 yr,12,0.5
+4 wk ahead,18-49 yr,12,0.2
+4 wk ahead,18-49 yr,12,0.3
+4 wk ahead,18-49 yr,12,0.4
+4 wk ahead,50-64 yr,12,1.1
+4 wk ahead,50-64 yr,12,1.2
+4 wk ahead,50-64 yr,12,1.3
+4 wk ahead,65+ yr,12,3.9
+4 wk ahead,65+ yr,12,4
+4 wk ahead,65+ yr,12,4.1
+4 wk ahead,65+ yr,12,4.2
+4 wk ahead,65+ yr,12,4.3
+4 wk ahead,Overall,12,0.9
+4 wk ahead,Overall,12,1
+4 wk ahead,Overall,12,1.1
+4 wk ahead,0-4 yr,13,0.5
+4 wk ahead,0-4 yr,13,0.6
+4 wk ahead,0-4 yr,13,0.7
+4 wk ahead,5-17 yr,13,0.1
+4 wk ahead,5-17 yr,13,0.2
+4 wk ahead,5-17 yr,13,0.3
+4 wk ahead,18-49 yr,13,0.1
+4 wk ahead,18-49 yr,13,0.2
+4 wk ahead,18-49 yr,13,0.3
+4 wk ahead,50-64 yr,13,0.7
+4 wk ahead,50-64 yr,13,0.8
+4 wk ahead,50-64 yr,13,0.9
+4 wk ahead,65+ yr,13,2.6
+4 wk ahead,65+ yr,13,2.7
+4 wk ahead,65+ yr,13,2.8
+4 wk ahead,Overall,13,0.6
+4 wk ahead,Overall,13,0.7
+4 wk ahead,Overall,13,0.8

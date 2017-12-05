@@ -4,13 +4,10 @@
 \alias{arrange_entry}
 \title{Arrange an entry for consistency}
 \usage{
-arrange_entry(entry, challenge = "ilinet")
+arrange_entry(entry)
 }
 \arguments{
 \item{entry}{A data.frame}
-
-\item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which
-forecasting challenge the entry is for}
 }
 \value{
 An arranged data.frame

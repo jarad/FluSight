@@ -3,8 +3,7 @@
 #' Determines observed true values for each target
 #'
 #' @param fluview A logical value (default \code{TRUE}) indicating whether to
-#'   download ILINet from Fluview. Only applicable if
-#'   \code{challenge = "ilinet"}.
+#'   download ILINet from Fluview. 
 #' @param weekILI A data.frame of observed values (default \code{NULL}). Must be
 #'   \code{NULL} when downloading data using \code{fluview = TRUE}. Required
 #'   if \code{fluview = FALSE}.
@@ -26,11 +25,11 @@
 #' truth <- create_truth(year = 2015)
 #' truth <- create_truth(fluview = TRUE, year = 2015, challenge = "ilinet")
 #' truth <- create_truth(fluview = FALSE, weekILI = valid_ILI)
+#' truth <- create_truth(fluview = TRUE, year = 2015, challenge = "hospital")
 #'
 #' \dontrun{
 #' truth <- create_truth(weekILI = valid_ILI)
 #' truth <- create_truth(fluview = FALSE)
-#' truth <- create_truth(fluview = TRUE, year = 2015, challenge = "hospital")
 #' }
 #'
 create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
@@ -209,9 +208,10 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
         weekILI <- hospitalizations(surveillance_area = "flusurv",
                                     region = "all",
                                     years = year) %>%
-          select(age_grp = age_label,
+          select(location = age_label,
                  weeklyrate,
                  week = year_wk_num) %>%
+          mutate(location = as.character(location)) %>%
           filter(week >= start_wk | week <= end_wk + 4)
       }
       
@@ -234,15 +234,15 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
   } else {
 
     # Calculate targets if reached ----------------------------------
-    for (this_age in levels(as.factor(weekILI$age_grp))) {
-      truth <- filter(weekILI, age_grp == this_age) %>%
+    for (this_age in levels(as.factor(weekILI$location))) {
+      truth <- filter(weekILI, location == this_age) %>%
         FluSight::create_seasonal(this_age, year, challenge) %>%
         bind_rows(truth, .)
     }
 
   }
   truth <- bind_rows(truth,
-                 FluSight::create_week(weekILI, start_wk, end_wk, challenge)) 
+                     FluSight::create_week(weekILI, start_wk, end_wk, challenge)) 
 
 
   return(truth)

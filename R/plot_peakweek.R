@@ -5,7 +5,6 @@
 #' @param region Specifies the region to be plotted
 #' @keywords Peak Week Prediction Plot
 #' @export
-#' @examples
 
 
 plot_peakweek <- function(dat, region){

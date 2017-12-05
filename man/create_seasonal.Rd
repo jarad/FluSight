@@ -7,8 +7,10 @@
 create_seasonal(weekILI, location, year, challenge = "ilinet")
 }
 \arguments{
-\item{weekILI}{A data.frame of weighted ILI values (default NULL). Must contain columns
-location, week, and wILI.}
+\item{weekILI}{A data.frame of weighted ILI values (default NULL). 
+For \code{challege = "ilinet"} or \code{challenge = "state_ili"}, must
+contain columns location, week, and wILI. For \code{challenge = "hospital"},
+must contain columns age_grp, week, and weeklyrate.}
 
 \item{location}{A character string specifying the target location or age group}
 

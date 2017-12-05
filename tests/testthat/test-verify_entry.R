@@ -5,15 +5,14 @@ valid_entry_week <- read_entry(valid_file_week)
 valid_file <- system.file("/extdata", "valid_test.csv", package="FluSight")
 valid_entry <- read_entry(valid_file)
 valid_hosp_file <- system.file("extdata", "EW48_ValidHospTest_2017-12-04.csv", package="FluSight")
-valid_hosp_entry <- read_entry(valid_hosp_file, challenge = "hospital")
+valid_hosp_entry <- read_entry(valid_hosp_file)
 valid_state_file <- system.file("extdata", "EW44_ValidStateTest_2017-11-07.csv", package = "FluSight")
-valid_state_entry <- read_entry(valid_state_file, challenge = "state_ili")
+valid_state_entry <- read_entry(valid_state_file)
 
 
 test_that("Valid entry passes", {
-	expect_warning(verify_entry_file(valid_file ), 
-                "Missing forecast_week - verification will proceed but forecast cannot be scored")
-	expect_warning(verify_entry(     valid_entry), 
+	expect_true(verify_entry_file(valid_file))
+	expect_warning(verify_entry(valid_entry), 
 	               "Missing forecast_week - verification will proceed but forecast cannot be scored")
 	expect_true(verify_entry_file(valid_file_week))
 	expect_true(verify_entry(valid_entry_week))
