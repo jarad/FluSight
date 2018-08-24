@@ -23,7 +23,8 @@ generate_point_forecasts <- function(entry, method =
   entry <- entry %>%
     dplyr::filter(type == "Bin") %>%
     dplyr::group_by(location, target, unit) %>%
-    FluSight::generate_point_forecast(., method)
+    FluSight::generate_point_forecast(., method) %>%
+    dplyr::ungroup()
   
   return(entry)
   
