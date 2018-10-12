@@ -9,12 +9,12 @@
 #' @export
 #' @keywords internal
 verify_agegrp <- function(entry) {
-  
+
   names(entry) <- tolower(names(entry))
   
-  entry_agegrp    <- unique(entry$age_grp)
+  entry_agegrp    <- unique(entry$location)
   required_agegrp <- "Overall"
-  valid_agegrp    <- unique(FluSight::full_entry_hosp$age_grp)
+  valid_agegrp    <- unique(FluSight::full_entry_hosp$location)
 
   missing_agegrp <- setdiff(required_agegrp, entry_agegrp)
   extra_agegrp   <- setdiff(entry_agegrp, valid_agegrp)

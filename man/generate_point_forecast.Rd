@@ -4,7 +4,8 @@
 \alias{generate_point_forecast}
 \title{Generate a point forecast from probabilistic forecast}
 \usage{
-generate_point_forecast(d, method = c("Median", "Expected Value", "Mode"))
+generate_point_forecast(d, method = c("Median", "Expected Value",
+  "Mode"))
 }
 \arguments{
 \item{d}{A data.frame with columns `location`, `target`, bin_start_incl`,

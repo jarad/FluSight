@@ -4,7 +4,7 @@
 \alias{score_entry}
 \title{Scores an entry}
 \usage{
-score_entry(entry, truth, challenge = "ilinet")
+score_entry(entry, truth)
 }
 \arguments{
 \item{entry}{A valid entry data.frame with columns location, target,
@@ -14,9 +14,6 @@ bin_start_incl, value, and forecast week}
 location, target, forecast_wk, and bin_start_incl. If multiple bins are 
 considered correct for a given target, all correct bins must be included
 here.}
-
-\item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating
-which challenge the submission is for (default \code{"ilinet"}).}
 }
 \value{
 A data.frame of scores for each target
@@ -28,8 +25,8 @@ invalid probabilities are detected.
 }
 \examples{
 scores <- score_entry(full_entry_week, truth_1516)
-scores <- score_entry(full_entry_hosp_score, hosp_truth_1617, challenge = "hospital")
-scores <- score_entry(full_entry_state_score, state_truth_1617, challenge = "state_ili")
+scores <- score_entry(full_entry_hosp_score, hosp_truth_1617)
+scores <- score_entry(full_entry_state_score, state_truth_1617)
 
 }
 \seealso{

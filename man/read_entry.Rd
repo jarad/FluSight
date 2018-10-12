@@ -4,13 +4,10 @@
 \alias{read_entry}
 \title{Read in a csv entry file}
 \usage{
-read_entry(file, challenge = "ilinet")
+read_entry(file)
 }
 \arguments{
 \item{file}{A csv file path}
-
-\item{challenge}{one of "ilinet", "hospital", or "state_ili", indicating which 
-forecasting challenge the entry is for. Default is "ilinet"}
 }
 \value{
 An arranged data.frame

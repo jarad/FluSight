@@ -1,8 +1,6 @@
 #' Verify the entry probabilities
 #'
 #' @param entry An entry data.frame
-#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
-#'   challenge the submission is for
 #' @import dplyr
 #' @return Invisibly returns \code{TRUE} or a descriptive error message
 #' @export
@@ -10,34 +8,19 @@
 #' @seealso \code{\link{verify_entry}}
 #' @examples 
 #' verify_probabilities(minimal_entry)
-#' verify_probabilities(full_entry_hosp, challenge = "hospital")
+#' verify_probabilities(full_entry_hosp)
 #' 
-verify_probabilities <- function(entry, challenge = "ilinet") {
+verify_probabilities <- function(entry) {
 
-  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
-    stop("challenge must be one of ilinet, hospital, or state_ili")
-  }
-  
   names(entry) <- tolower(names(entry))
   
-  if (challenge %in% c("ilinet", "state_ili")) {
-    probabilities <- entry %>%
-      filter(type == "Bin") %>%
-      group_by(location, target) %>%
-      summarize(miss     = any(is.na(value)),
-                sum      = sum(value, na.rm = TRUE),
-                negative = any(!is.na(value) & value < 0))
-  } else {
-    probabilities <- entry %>%
-      filter(type == "Bin") %>%
-      group_by(age_grp, target) %>%
-      summarize(miss     = any(is.na(value)),
-                sum      = sum(value, na.rm = TRUE),
-                negative = any(!is.na(value) & value < 0)) %>%
-      # Rename age_grp as location to integrate with following code
-      rename(location = age_grp) 
-  }
-
+  probabilities <- entry %>%
+    filter(type == "Bin") %>%
+    group_by(location, target) %>%
+    summarize(miss     = any(is.na(value)),
+              sum      = sum(value, na.rm = TRUE),
+              negative = any(!is.na(value) & value < 0))
+  
   errors <- character()
 
   # Report message for missing probabilities

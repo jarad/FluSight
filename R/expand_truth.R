@@ -15,7 +15,7 @@
 #' @param expand_by_percent A logical value (default `FALSE`) indicating 
 #' whether to expand truth around percent or ratetargets by a percentage 
 #' of the observed value. 
-#' @param percent_observed A scalar numeric between 0 and 1 (default 0.05),
+#' @param percent_observed A scalar numeric between 0 and 1 (default 0.1),
 #' indicating the one-sided percentage of the observed percent or rate target
 #' that will be included. If \code{expand_by_percent = FALSE} then this
 #' value is ignored.
@@ -24,7 +24,7 @@
 #' @export
 expand_truth <- function(truth, week_expand=1, percent_expand=5, week53 = F,
                          challenge = "ilinet", expand_by_percent = F,
-                         percent_observed = 0.05) {
+                         percent_observed = 0.1) {
 
   names(truth) <- tolower(names(truth))
 
@@ -146,7 +146,7 @@ expand_week <- function(truth, expand, week53 = F) {
 #' @export
 #' @keywords internal
 expand_percent <- function(truth, percent_expand, challenge = "ilinet", 
-                           expand_by_percent = F, percent_observed = 0.05) {
+                           expand_by_percent = F, percent_observed = 0.1) {
 
   truth <- mutate(truth, bin_start_incl = as.numeric(bin_start_incl))
   
@@ -184,7 +184,7 @@ expand_percent <- function(truth, percent_expand, challenge = "ilinet",
   # Delete any edge cases
   if (challenge == "hospital") {
     expand_percent <- expand_percent %>%
-      filter(ifelse(age_grp == "65+ yr",
+      filter(ifelse(location == "65+ yr",
                     bin_start_incl >= 0 & bin_start_incl <= 60,
                     bin_start_incl >= 0 & bin_start_incl <= 13)) %>%
       mutate(bin_start_incl = format(round(bin_start_incl, 1),

@@ -31,12 +31,6 @@ test_that("expand_percent works", {
   expect_equivalent(tmp_percent, tmp_valid)
 })
 
-test_that("expand_truth works for ilinet", {
-  skip_on_cran()
-  
-  expect_equivalent(expand_truth(truth_1516), valid_exp_truth)
-})
-
 test_that("expand_truth works for state ili", {
   skip_on_cran()
   

@@ -5,15 +5,12 @@
 #'   \code{"Median"} (the default) uses the median value, \code{"Expected
 #'   Value"} generates the expected value from the provided probabilities,and
 #'   \code{"Mode"} returns the individual bin with the largest probability
-#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating
-#' which challenge the submission is for (default \code{"ilinet"}).
 #' @return A data.frame of point forecasts for all locations and targets.
 #' @seealso \code{\link{generate_point_forecast}}, \code{\link{verify_entry}}
 #' @import magrittr
 #' @export
 generate_point_forecasts <- function(entry, method = 
-                                       c("Median", "Expected Value", "Mode"),
-                                     challenge = "ilinet") {
+                                       c("Median", "Expected Value", "Mode")) {
   method <- match.arg(method)
 
   names(entry) <- tolower(names(entry))
@@ -22,21 +19,12 @@ generate_point_forecasts <- function(entry, method =
   	warning("It appears point forecasts already exist.")
   }
   
-  #Rename columns if hospital forecast for use with later code
-  if (challenge == "hospital") {
-    entry <- rename(entry, location = age_grp)
-  }
-
   # Generate point forecasts
   entry <- entry %>%
     dplyr::filter(type == "Bin") %>%
     dplyr::group_by(location, target, unit) %>%
-    FluSight::generate_point_forecast(., method)
-  
-  # Rename columns back
-  if (challenge == "hospital") {
-    entry <- rename(entry, age_grp = location)
-  }
+    FluSight::generate_point_forecast(., method) %>%
+    dplyr::ungroup()
   
   return(entry)
   

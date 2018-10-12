@@ -1,2237 +1,2757 @@
-"location","week","ILI"
-"Alabama",40,2.2
-"Alabama",41,1.7
-"Alabama",42,2
-"Alabama",43,2.4
-"Alabama",44,2.7
-"Alabama",45,2.5
-"Alabama",46,2.8
-"Alabama",47,2.6
-"Alabama",48,2.7
-"Alabama",49,2.7
-"Alabama",50,3.8
-"Alabama",51,5
-"Alabama",52,5.5
-"Alabama",1,4.4
-"Alabama",2,4.1
-"Alabama",3,6.1
-"Alabama",4,5.3
-"Alabama",5,6.5
-"Alabama",6,7.8
-"Alabama",7,7.6
-"Alabama",8,7.4
-"Alabama",9,6.3
-"Alabama",10,6.6
-"Alabama",11,6
-"Alabama",12,6.8
-"Alabama",13,5.2
-"Alabama",14,3.3
-"Alabama",15,2.9
-"Alabama",16,2.8
-"Alabama",17,2.1
-"Alabama",18,2.3
-"Alabama",19,2.3
-"Alabama",20,2.5
-"Alabama",21,2
-"Alabama",22,1.3
-"Alabama",23,1.1
-"Alabama",24,0.8
-"Alabama",25,1.1
-"Alabama",26,0.9
-"Alabama",27,0.9
-"Alabama",28,1
-"Alabama",29,0.7
-"Alabama",30,0.6
-"Alaska",40,0.9
-"Alaska",41,1.2
-"Alaska",42,0.5
-"Alaska",43,0.8
-"Alaska",44,0.5
-"Alaska",45,0.8
-"Alaska",46,1.1
-"Alaska",47,1
-"Alaska",48,1.1
-"Alaska",49,0.7
-"Alaska",50,0.7
-"Alaska",51,1.3
-"Alaska",52,1.6
-"Alaska",1,0.9
-"Alaska",2,3
-"Alaska",3,2
-"Alaska",4,1.9
-"Alaska",5,2.3
-"Alaska",6,3.7
-"Alaska",7,4.3
-"Alaska",8,3.8
-"Alaska",9,3.5
-"Alaska",10,1.7
-"Alaska",11,2.4
-"Alaska",12,2.5
-"Alaska",13,4.3
-"Alaska",14,3.9
-"Alaska",15,3.2
-"Alaska",16,2.4
-"Alaska",17,1.7
-"Alaska",18,2.8
-"Alaska",19,1.4
-"Alaska",20,1.2
-"Alaska",21,0.8
-"Alaska",22,0.8
-"Alaska",23,1
-"Alaska",24,0.5
-"Alaska",25,1.8
-"Alaska",26,0.4
-"Alaska",27,0.5
-"Alaska",28,0.7
-"Alaska",29,0
-"Alaska",30,0
-"Arizona",40,1.2
-"Arizona",41,0.9
-"Arizona",42,1
-"Arizona",43,1.2
-"Arizona",44,1.3
-"Arizona",45,1
-"Arizona",46,1.4
-"Arizona",47,1.3
-"Arizona",48,1.4
-"Arizona",49,1.7
-"Arizona",50,2
-"Arizona",51,2.5
-"Arizona",52,2.5
-"Arizona",1,2.4
-"Arizona",2,2.1
-"Arizona",3,2.4
-"Arizona",4,2.2
-"Arizona",5,2.4
-"Arizona",6,2.5
-"Arizona",7,2.3
-"Arizona",8,2.5
-"Arizona",9,2.8
-"Arizona",10,2.5
-"Arizona",11,2.2
-"Arizona",12,2.2
-"Arizona",13,2.4
-"Arizona",14,2.4
-"Arizona",15,2
-"Arizona",16,2.1
-"Arizona",17,2.8
-"Arizona",18,2.3
-"Arizona",19,2.1
-"Arizona",20,2.2
-"Arizona",21,2.1
-"Arizona",22,1.9
-"Arizona",23,1.7
-"Arizona",24,1.4
-"Arizona",25,1
-"Arizona",26,1.2
-"Arizona",27,1.1
-"Arizona",28,1.1
-"Arizona",29,1.2
-"Arizona",30,1.1
-"Arkansas",40,0.9
-"Arkansas",41,0.8
-"Arkansas",42,1
-"Arkansas",43,1.2
-"Arkansas",44,1.3
-"Arkansas",45,1.6
-"Arkansas",46,1.8
-"Arkansas",47,1.6
-"Arkansas",48,1.3
-"Arkansas",49,1.3
-"Arkansas",50,2
-"Arkansas",51,1.6
-"Arkansas",52,2.3
-"Arkansas",1,1.9
-"Arkansas",2,2.4
-"Arkansas",3,3.1
-"Arkansas",4,4
-"Arkansas",5,6.7
-"Arkansas",6,9.8
-"Arkansas",7,9.2
-"Arkansas",8,7.9
-"Arkansas",9,4.5
-"Arkansas",10,4.6
-"Arkansas",11,3.6
-"Arkansas",12,4
-"Arkansas",13,2.7
-"Arkansas",14,2.2
-"Arkansas",15,2
-"Arkansas",16,1.6
-"Arkansas",17,1.4
-"Arkansas",18,1.9
-"Arkansas",19,1
-"Arkansas",20,1.4
-"Arkansas",21,1.2
-"Arkansas",22,0.8
-"Arkansas",23,0.5
-"Arkansas",24,0.5
-"Arkansas",25,0.6
-"Arkansas",26,0.7
-"Arkansas",27,0.3
-"Arkansas",28,0.5
-"Arkansas",29,0.6
-"Arkansas",30,0.3
-"California",40,1.3
-"California",41,1.4
-"California",42,1.5
-"California",43,1.5
-"California",44,1.6
-"California",45,1.7
-"California",46,1.8
-"California",47,2.1
-"California",48,2
-"California",49,2.1
-"California",50,2.4
-"California",51,2.9
-"California",52,3.5
-"California",1,3.3
-"California",2,3
-"California",3,2.8
-"California",4,3.1
-"California",5,3.2
-"California",6,2.7
-"California",7,2.5
-"California",8,2.4
-"California",9,2.1
-"California",10,2.2
-"California",11,2.3
-"California",12,2
-"California",13,2
-"California",14,1.7
-"California",15,1.6
-"California",16,1.6
-"California",17,1.7
-"California",18,1.5
-"California",19,1.4
-"California",20,1.4
-"California",21,1.4
-"California",22,1.4
-"California",23,1.6
-"California",24,1.3
-"California",25,1.3
-"California",26,1.4
-"California",27,1.4
-"California",28,1.2
-"California",29,1.1
-"California",30,1
-"Colorado",40,0.8
-"Colorado",41,1.2
-"Colorado",42,1.1
-"Colorado",43,0.9
-"Colorado",44,0.4
-"Colorado",45,0.7
-"Colorado",46,1
-"Colorado",47,0.7
-"Colorado",48,1.7
-"Colorado",49,1.3
-"Colorado",50,1.4
-"Colorado",51,1.7
-"Colorado",52,0.5
-"Colorado",1,1.9
-"Colorado",2,1.6
-"Colorado",3,2.2
-"Colorado",4,1.9
-"Colorado",5,2.3
-"Colorado",6,2
-"Colorado",7,3.5
-"Colorado",8,1.3
-"Colorado",9,1.7
-"Colorado",10,1.6
-"Colorado",11,1.2
-"Colorado",12,1.8
-"Colorado",13,1.4
-"Colorado",14,1.5
-"Colorado",15,1
-"Colorado",16,1.1
-"Colorado",17,1.4
-"Colorado",18,1.3
-"Colorado",19,0.6
-"Colorado",20,1.1
-"Colorado",21,1.4
-"Colorado",22,0.7
-"Colorado",23,0.5
-"Colorado",24,0
-"Colorado",25,0.7
-"Colorado",26,0.5
-"Colorado",27,0.4
-"Colorado",28,0.4
-"Colorado",29,0.2
-"Colorado",30,0.2
-"Connecticut",40,1.2
-"Connecticut",41,1.1
-"Connecticut",42,1
-"Connecticut",43,1.1
-"Connecticut",44,1.7
-"Connecticut",45,1.7
-"Connecticut",46,1.6
-"Connecticut",47,1.8
-"Connecticut",48,1.7
-"Connecticut",49,1.6
-"Connecticut",50,1.7
-"Connecticut",51,1.8
-"Connecticut",52,2
-"Connecticut",1,2.9
-"Connecticut",2,2.8
-"Connecticut",3,3.3
-"Connecticut",4,3.7
-"Connecticut",5,4.4
-"Connecticut",6,5.5
-"Connecticut",7,5.3
-"Connecticut",8,5
-"Connecticut",9,4
-"Connecticut",10,3.4
-"Connecticut",11,3.4
-"Connecticut",12,2.2
-"Connecticut",13,2.3
-"Connecticut",14,2.8
-"Connecticut",15,2.2
-"Connecticut",16,2.5
-"Connecticut",17,2
-"Connecticut",18,1.6
-"Connecticut",19,0.8
-"Connecticut",20,0.7
-"Connecticut",21,0.6
-"Connecticut",22,0.5
-"Connecticut",23,0.6
-"Connecticut",24,0.3
-"Connecticut",25,0.3
-"Connecticut",26,0.5
-"Connecticut",27,0.3
-"Connecticut",28,0
-"Connecticut",29,0
-"Connecticut",30,0
-"Delaware",40,0.1
-"Delaware",41,0.1
-"Delaware",42,0.2
-"Delaware",43,0.3
-"Delaware",44,0.4
-"Delaware",45,0
-"Delaware",46,0.1
-"Delaware",47,0
-"Delaware",48,0
-"Delaware",49,0.2
-"Delaware",50,0.1
-"Delaware",51,0.1
-"Delaware",52,0.1
-"Delaware",1,0.2
-"Delaware",2,0.6
-"Delaware",3,0.4
-"Delaware",4,0.4
-"Delaware",5,0.7
-"Delaware",6,0.6
-"Delaware",7,1.3
-"Delaware",8,1.1
-"Delaware",9,0.6
-"Delaware",10,0.8
-"Delaware",11,0.5
-"Delaware",12,0.3
-"Delaware",13,0.6
-"Delaware",14,0.5
-"Delaware",15,0.5
-"Delaware",16,0.2
-"Delaware",17,0
-"Delaware",18,0.1
-"Delaware",19,0
-"Delaware",20,0.1
-"Delaware",21,0.1
-"Delaware",22,0.2
-"Delaware",23,0
-"Delaware",24,0.6
-"Delaware",25,0
-"Delaware",26,0
-"Delaware",27,0
-"Delaware",28,0
-"Delaware",29,0.1
-"Delaware",30,0
-"District of Columbia",40,5.5
-"District of Columbia",41,5
-"District of Columbia",42,5.3
-"District of Columbia",43,5.6
-"District of Columbia",44,4.8
-"District of Columbia",45,5.1
-"District of Columbia",46,5.5
-"District of Columbia",47,6.5
-"District of Columbia",48,6.7
-"District of Columbia",49,5.2
-"District of Columbia",50,7.8
-"District of Columbia",51,8.4
-"District of Columbia",52,8.3
-"District of Columbia",1,7.8
-"District of Columbia",2,8.5
-"District of Columbia",3,5
-"District of Columbia",4,7.4
-"District of Columbia",5,8.9
-"District of Columbia",6,9.4
-"District of Columbia",7,8.5
-"District of Columbia",8,7.2
-"District of Columbia",9,7.4
-"District of Columbia",10,8.2
-"District of Columbia",11,9.1
-"District of Columbia",12,7.8
-"District of Columbia",13,7.1
-"District of Columbia",14,6.7
-"District of Columbia",15,0.2
-"District of Columbia",16,4.5
-"District of Columbia",17,0
-"District of Columbia",18,4.7
-"District of Columbia",19,3.6
-"District of Columbia",20,0
-"District of Columbia",21,5.8
-"District of Columbia",22,4.5
-"District of Columbia",23,5.1
-"District of Columbia",24,0
-"District of Columbia",25,6
-"District of Columbia",26,4.1
-"District of Columbia",27,3.9
-"District of Columbia",28,3.3
-"District of Columbia",29,3.2
-"District of Columbia",30,4.2
-"Georgia",40,1.3
-"Georgia",41,2
-"Georgia",42,2
-"Georgia",43,2
-"Georgia",44,2.4
-"Georgia",45,2.6
-"Georgia",46,2.6
-"Georgia",47,3.1
-"Georgia",48,2.7
-"Georgia",49,2.8
-"Georgia",50,3.2
-"Georgia",51,4.2
-"Georgia",52,4.5
-"Georgia",1,3.7
-"Georgia",2,3.4
-"Georgia",3,4.2
-"Georgia",4,4.2
-"Georgia",5,4.7
-"Georgia",6,5.1
-"Georgia",7,6.2
-"Georgia",8,6
-"Georgia",9,4.6
-"Georgia",10,4.5
-"Georgia",11,4.7
-"Georgia",12,5.2
-"Georgia",13,4.2
-"Georgia",14,2.9
-"Georgia",15,2.3
-"Georgia",16,2
-"Georgia",17,1.7
-"Georgia",18,1.7
-"Georgia",19,1.7
-"Georgia",20,1.6
-"Georgia",21,1.6
-"Georgia",22,1.2
-"Georgia",23,1.1
-"Georgia",24,1.1
-"Georgia",25,0.9
-"Georgia",26,0.9
-"Georgia",27,1
-"Georgia",28,0.8
-"Georgia",29,0.8
-"Georgia",30,0.8
-"Hawaii",40,1.9
-"Hawaii",41,1.5
-"Hawaii",42,1.5
-"Hawaii",43,2.2
-"Hawaii",44,2.3
-"Hawaii",45,2
-"Hawaii",46,1.7
-"Hawaii",47,2.3
-"Hawaii",48,2.1
-"Hawaii",49,2.9
-"Hawaii",50,3.7
-"Hawaii",51,2.9
-"Hawaii",52,3.3
-"Hawaii",1,3.5
-"Hawaii",2,4.4
-"Hawaii",3,3.6
-"Hawaii",4,5.1
-"Hawaii",5,4.3
-"Hawaii",6,3.8
-"Hawaii",7,3.7
-"Hawaii",8,4.2
-"Hawaii",9,3.4
-"Hawaii",10,4.6
-"Hawaii",11,2.8
-"Hawaii",12,3.3
-"Hawaii",13,2.8
-"Hawaii",14,2.9
-"Hawaii",15,2.2
-"Hawaii",16,2.7
-"Hawaii",17,2.2
-"Hawaii",18,2.5
-"Hawaii",19,1.2
-"Hawaii",20,1.8
-"Hawaii",21,1.2
-"Hawaii",22,1.4
-"Hawaii",23,1.2
-"Hawaii",24,1.1
-"Hawaii",25,1.2
-"Hawaii",26,1.3
-"Hawaii",27,1.2
-"Hawaii",28,0.8
-"Hawaii",29,0.7
-"Hawaii",30,1.2
-"Idaho",40,0.4
-"Idaho",41,0.3
-"Idaho",42,0.6
-"Idaho",43,0.8
-"Idaho",44,0.4
-"Idaho",45,0.7
-"Idaho",46,0.7
-"Idaho",47,0.8
-"Idaho",48,1
-"Idaho",49,0.7
-"Idaho",50,1.4
-"Idaho",51,1.2
-"Idaho",52,2.7
-"Idaho",1,1.8
-"Idaho",2,2.3
-"Idaho",3,2.8
-"Idaho",4,1.7
-"Idaho",5,1.7
-"Idaho",6,1.8
-"Idaho",7,2
-"Idaho",8,1.5
-"Idaho",9,1.1
-"Idaho",10,1.5
-"Idaho",11,1.1
-"Idaho",12,0.6
-"Idaho",13,0.6
-"Idaho",14,0.6
-"Idaho",15,0.7
-"Idaho",16,0.3
-"Idaho",17,0.6
-"Idaho",18,0.8
-"Idaho",19,0.5
-"Idaho",20,0.9
-"Idaho",21,0.1
-"Idaho",22,0
-"Idaho",23,0
-"Idaho",24,0
-"Idaho",25,0
-"Idaho",26,0
-"Idaho",27,0
-"Idaho",28,0
-"Idaho",29,0
-"Idaho",30,0
-"Illinois",40,1.3
-"Illinois",41,1.2
-"Illinois",42,1.5
-"Illinois",43,1.5
-"Illinois",44,1.7
-"Illinois",45,1.8
-"Illinois",46,1.9
-"Illinois",47,1.9
-"Illinois",48,1.8
-"Illinois",49,1.9
-"Illinois",50,2.1
-"Illinois",51,2.3
-"Illinois",52,3.1
-"Illinois",1,2.8
-"Illinois",2,2.9
-"Illinois",3,3
-"Illinois",4,3.2
-"Illinois",5,3.6
-"Illinois",6,4.4
-"Illinois",7,4.8
-"Illinois",8,4.6
-"Illinois",9,3.5
-"Illinois",10,3.6
-"Illinois",11,3.2
-"Illinois",12,3.1
-"Illinois",13,2.7
-"Illinois",14,2.4
-"Illinois",15,1.6
-"Illinois",16,1.4
-"Illinois",17,1.4
-"Illinois",18,1.3
-"Illinois",19,1.5
-"Illinois",20,1.3
-"Illinois",21,1.2
-"Illinois",22,1.1
-"Illinois",23,1
-"Illinois",24,0.9
-"Illinois",25,0.9
-"Illinois",26,0.8
-"Illinois",27,0.7
-"Illinois",28,0.8
-"Illinois",29,0.7
-"Illinois",30,0.7
-"Indiana",40,1
-"Indiana",41,1
-"Indiana",42,0.6
-"Indiana",43,0.5
-"Indiana",44,1.1
-"Indiana",45,0.9
-"Indiana",46,0.6
-"Indiana",47,0.9
-"Indiana",48,0.9
-"Indiana",49,1.3
-"Indiana",50,1.6
-"Indiana",51,1.5
-"Indiana",52,3.4
-"Indiana",1,2.3
-"Indiana",2,2
-"Indiana",3,2.1
-"Indiana",4,3.4
-"Indiana",5,4.6
-"Indiana",6,4.7
-"Indiana",7,6
-"Indiana",8,5.3
-"Indiana",9,3.3
-"Indiana",10,5.1
-"Indiana",11,4.5
-"Indiana",12,3.2
-"Indiana",13,2.7
-"Indiana",14,2.6
-"Indiana",15,1.3
-"Indiana",16,1.4
-"Indiana",17,1.1
-"Indiana",18,1
-"Indiana",19,0.5
-"Indiana",20,0.5
-"Indiana",21,0.4
-"Indiana",22,0.4
-"Indiana",23,0.3
-"Indiana",24,0.2
-"Indiana",25,0.1
-"Indiana",26,0.1
-"Indiana",27,0.1
-"Indiana",28,0.2
-"Indiana",29,0.6
-"Indiana",30,0.4
-"Iowa",40,0.1
-"Iowa",41,0.2
-"Iowa",42,0.1
-"Iowa",43,0.2
-"Iowa",44,0.1
-"Iowa",45,0.4
-"Iowa",46,0.4
-"Iowa",47,0.7
-"Iowa",48,0.6
-"Iowa",49,0.7
-"Iowa",50,0.4
-"Iowa",51,0.6
-"Iowa",52,1.4
-"Iowa",1,0.8
-"Iowa",2,1
-"Iowa",3,1.8
-"Iowa",4,2.6
-"Iowa",5,2.3
-"Iowa",6,3.2
-"Iowa",7,2.8
-"Iowa",8,2
-"Iowa",9,1.1
-"Iowa",10,1.3
-"Iowa",11,0.6
-"Iowa",12,0.6
-"Iowa",13,0.3
-"Iowa",14,0.4
-"Iowa",15,0.2
-"Iowa",16,0.3
-"Iowa",17,0.2
-"Iowa",18,0.2
-"Iowa",19,0.3
-"Iowa",20,0.1
-"Iowa",21,0
-"Iowa",22,0.3
-"Iowa",23,0.1
-"Iowa",24,0.1
-"Iowa",25,0
-"Iowa",26,0.3
-"Iowa",27,0.2
-"Iowa",28,0.1
-"Iowa",29,0
-"Iowa",30,0
-"Kansas",40,0.8
-"Kansas",41,0.8
-"Kansas",42,1.3
-"Kansas",43,0.7
-"Kansas",44,0.8
-"Kansas",45,1
-"Kansas",46,1
-"Kansas",47,2
-"Kansas",48,1.6
-"Kansas",49,1.5
-"Kansas",50,1.5
-"Kansas",51,2.4
-"Kansas",52,2.3
-"Kansas",1,2.9
-"Kansas",2,3.4
-"Kansas",3,5.1
-"Kansas",4,5.6
-"Kansas",5,8.5
-"Kansas",6,10.4
-"Kansas",7,8.7
-"Kansas",8,6.9
-"Kansas",9,5.1
-"Kansas",10,4.4
-"Kansas",11,4.3
-"Kansas",12,4
-"Kansas",13,2.6
-"Kansas",14,2.3
-"Kansas",15,1.4
-"Kansas",16,1.2
-"Kansas",17,1.1
-"Kansas",18,0.9
-"Kansas",19,0.7
-"Kansas",20,0.3
-"Kansas",21,0.3
-"Kansas",22,0.4
-"Kansas",23,0.3
-"Kansas",24,0.3
-"Kansas",25,0.2
-"Kansas",26,0.3
-"Kansas",27,0.4
-"Kansas",28,0
-"Kansas",29,0.2
-"Kansas",30,0.7
-"Kentucky",40,0.5
-"Kentucky",41,0.4
-"Kentucky",42,0.6
-"Kentucky",43,1
-"Kentucky",44,0.7
-"Kentucky",45,0.7
-"Kentucky",46,1.2
-"Kentucky",47,0.9
-"Kentucky",48,1.4
-"Kentucky",49,0.7
-"Kentucky",50,1
-"Kentucky",51,3.8
-"Kentucky",52,4.3
-"Kentucky",1,2.6
-"Kentucky",2,3.6
-"Kentucky",3,4.4
-"Kentucky",4,4.9
-"Kentucky",5,4.5
-"Kentucky",6,6.5
-"Kentucky",7,9.2
-"Kentucky",8,8.2
-"Kentucky",9,6.1
-"Kentucky",10,6.7
-"Kentucky",11,7.5
-"Kentucky",12,8.2
-"Kentucky",13,5.5
-"Kentucky",14,3.9
-"Kentucky",15,1.9
-"Kentucky",16,1.3
-"Kentucky",17,0.9
-"Kentucky",18,0.7
-"Kentucky",19,0.5
-"Kentucky",20,0.4
-"Kentucky",21,0.4
-"Kentucky",22,0.3
-"Kentucky",23,0.2
-"Kentucky",24,0.1
-"Kentucky",25,0.2
-"Kentucky",26,0.2
-"Kentucky",27,0.2
-"Kentucky",28,0.2
-"Kentucky",29,0.1
-"Kentucky",30,0.1
-"Louisiana",1,3.6
-"Louisiana",2,3.7
-"Louisiana",3,4.1
-"Louisiana",4,4.2
-"Louisiana",5,5.2
-"Louisiana",6,6
-"Louisiana",7,5.7
-"Louisiana",8,5
-"Louisiana",9,4.7
-"Louisiana",10,4.4
-"Louisiana",11,4.3
-"Louisiana",12,3.4
-"Louisiana",13,3
-"Louisiana",14,3.1
-"Louisiana",15,2.3
-"Louisiana",16,2.4
-"Louisiana",17,2.6
-"Louisiana",18,2
-"Louisiana",19,1.9
-"Louisiana",20,2.5
-"Louisiana",21,2.3
-"Louisiana",22,2.3
-"Louisiana",23,2.1
-"Louisiana",24,2.2
-"Louisiana",25,2.1
-"Louisiana",26,1.3
-"Louisiana",27,1.9
-"Louisiana",28,1.1
-"Louisiana",29,1.3
-"Louisiana",30,1.2
-"Louisiana",40,1.6
-"Louisiana",41,1.7
-"Louisiana",42,1.7
-"Louisiana",43,1.7
-"Louisiana",44,1.9
-"Louisiana",45,2.2
-"Louisiana",46,2.1
-"Louisiana",47,2.4
-"Louisiana",48,3.2
-"Louisiana",49,3.2
-"Louisiana",50,3.6
-"Louisiana",51,4.1
-"Louisiana",52,3.9
-"Maine",40,0.8
-"Maine",41,0.7
-"Maine",42,0.8
-"Maine",43,0.9
-"Maine",44,0.9
-"Maine",45,0.6
-"Maine",46,0.8
-"Maine",47,0.7
-"Maine",48,0.8
-"Maine",49,0.8
-"Maine",50,0.6
-"Maine",51,0.7
-"Maine",52,1
-"Maine",1,0.9
-"Maine",2,0.6
-"Maine",3,0.9
-"Maine",4,0.8
-"Maine",5,0.9
-"Maine",6,1.6
-"Maine",7,1.2
-"Maine",8,1.2
-"Maine",9,1.4
-"Maine",10,1.6
-"Maine",11,1.8
-"Maine",12,2.2
-"Maine",13,1.7
-"Maine",14,1.9
-"Maine",15,2.1
-"Maine",16,1.2
-"Maine",17,1
-"Maine",18,0.9
-"Maine",19,0.7
-"Maine",20,0.4
-"Maine",21,0.5
-"Maine",22,0.9
-"Maine",23,0.7
-"Maine",24,0.6
-"Maine",25,0.5
-"Maine",26,0.8
-"Maine",27,0.5
-"Maine",28,0.4
-"Maine",29,0.3
-"Maine",30,0.6
-"Maryland",40,0.6
-"Maryland",41,0.7
-"Maryland",42,1
-"Maryland",43,0.8
-"Maryland",44,1
-"Maryland",45,1.2
-"Maryland",46,0.9
-"Maryland",47,1.7
-"Maryland",48,1.1
-"Maryland",49,1.1
-"Maryland",50,1.4
-"Maryland",51,1.8
-"Maryland",52,2.4
-"Maryland",1,1.7
-"Maryland",2,2.2
-"Maryland",3,2.7
-"Maryland",4,2.9
-"Maryland",5,2.9
-"Maryland",6,4.6
-"Maryland",7,6.1
-"Maryland",8,5.8
-"Maryland",9,3.4
-"Maryland",10,3.5
-"Maryland",11,3.9
-"Maryland",12,3.3
-"Maryland",13,3.6
-"Maryland",14,2.4
-"Maryland",15,1.8
-"Maryland",16,1.3
-"Maryland",17,1.2
-"Maryland",18,0.9
-"Maryland",19,0.9
-"Maryland",20,1.4
-"Maryland",21,0.8
-"Maryland",22,1.3
-"Maryland",23,1
-"Maryland",24,1.2
-"Maryland",25,1.1
-"Maryland",26,1.3
-"Maryland",27,1.4
-"Maryland",28,1.6
-"Maryland",29,0.9
-"Maryland",30,1
-"Massachusetts",40,0.6
-"Massachusetts",41,0.5
-"Massachusetts",42,0.7
-"Massachusetts",43,0.6
-"Massachusetts",44,0.8
-"Massachusetts",45,0.7
-"Massachusetts",46,0.8
-"Massachusetts",47,0.8
-"Massachusetts",48,0.7
-"Massachusetts",49,0.9
-"Massachusetts",50,1
-"Massachusetts",51,1.2
-"Massachusetts",52,1.6
-"Massachusetts",1,1.3
-"Massachusetts",2,1.3
-"Massachusetts",3,1.5
-"Massachusetts",4,1.8
-"Massachusetts",5,2.2
-"Massachusetts",6,2.7
-"Massachusetts",7,2.4
-"Massachusetts",8,2.5
-"Massachusetts",9,1.6
-"Massachusetts",10,1.7
-"Massachusetts",11,1.8
-"Massachusetts",12,1.8
-"Massachusetts",13,2
-"Massachusetts",14,2.1
-"Massachusetts",15,1.7
-"Massachusetts",16,1.3
-"Massachusetts",17,0.9
-"Massachusetts",18,0.7
-"Massachusetts",19,0.8
-"Massachusetts",20,0.8
-"Massachusetts",21,0.7
-"Massachusetts",22,0.8
-"Massachusetts",23,0.7
-"Massachusetts",24,0.7
-"Massachusetts",25,0.6
-"Massachusetts",26,0.4
-"Massachusetts",27,0.6
-"Massachusetts",28,0.5
-"Massachusetts",29,0.4
-"Massachusetts",30,0.4
-"Michigan",40,0.9
-"Michigan",41,0.9
-"Michigan",42,1.3
-"Michigan",43,1.3
-"Michigan",44,1.6
-"Michigan",45,1.6
-"Michigan",46,1.7
-"Michigan",47,1.5
-"Michigan",48,1.1
-"Michigan",49,1.9
-"Michigan",50,1.7
-"Michigan",51,2.1
-"Michigan",52,2.4
-"Michigan",1,2.2
-"Michigan",2,2.2
-"Michigan",3,2.1
-"Michigan",4,2.4
-"Michigan",5,3.2
-"Michigan",6,3.7
-"Michigan",7,4.6
-"Michigan",8,4.3
-"Michigan",9,3.3
-"Michigan",10,3.5
-"Michigan",11,3.3
-"Michigan",12,3.2
-"Michigan",13,2.7
-"Michigan",14,1.9
-"Michigan",15,1.5
-"Michigan",16,1.4
-"Michigan",17,1.2
-"Michigan",18,0.9
-"Michigan",19,1
-"Michigan",20,1
-"Michigan",21,0.8
-"Michigan",22,0.8
-"Michigan",23,0.6
-"Michigan",24,0.6
-"Michigan",25,0.6
-"Michigan",26,0.6
-"Michigan",27,0.7
-"Michigan",28,0.5
-"Michigan",29,0.4
-"Michigan",30,0.5
-"Minnesota",40,1.4
-"Minnesota",41,1.4
-"Minnesota",42,1.1
-"Minnesota",43,1.5
-"Minnesota",44,0.8
-"Minnesota",45,0.7
-"Minnesota",46,1
-"Minnesota",47,1.1
-"Minnesota",48,1.5
-"Minnesota",49,1.1
-"Minnesota",50,1.2
-"Minnesota",51,2.2
-"Minnesota",52,2.3
-"Minnesota",1,2.3
-"Minnesota",2,2.3
-"Minnesota",3,3.4
-"Minnesota",4,3.4
-"Minnesota",5,3.4
-"Minnesota",6,4.4
-"Minnesota",7,4.5
-"Minnesota",8,4.6
-"Minnesota",9,3
-"Minnesota",10,3.6
-"Minnesota",11,2.8
-"Minnesota",12,3
-"Minnesota",13,3.2
-"Minnesota",14,3.3
-"Minnesota",15,2.8
-"Minnesota",16,2.9
-"Minnesota",17,2.4
-"Minnesota",18,2.1
-"Minnesota",19,2.2
-"Minnesota",20,1.9
-"Minnesota",21,1.3
-"Minnesota",22,1
-"Minnesota",23,0.8
-"Minnesota",24,0.7
-"Minnesota",25,1.3
-"Minnesota",26,0.7
-"Minnesota",27,0.6
-"Minnesota",28,0.8
-"Minnesota",29,1.1
-"Minnesota",30,1.2
-"Mississippi",40,1.9
-"Mississippi",41,2
-"Mississippi",42,2.3
-"Mississippi",43,2.6
-"Mississippi",44,2.9
-"Mississippi",45,3
-"Mississippi",46,2.7
-"Mississippi",47,3.6
-"Mississippi",48,3.1
-"Mississippi",49,2.8
-"Mississippi",50,3.6
-"Mississippi",51,4.8
-"Mississippi",52,4.1
-"Mississippi",1,3.5
-"Mississippi",2,3.4
-"Mississippi",3,4.2
-"Mississippi",4,3.6
-"Mississippi",5,5.5
-"Mississippi",6,6.4
-"Mississippi",7,6.3
-"Mississippi",8,6.8
-"Mississippi",9,5.8
-"Mississippi",10,5.4
-"Mississippi",11,4.8
-"Mississippi",12,3.7
-"Mississippi",13,3.4
-"Mississippi",14,2.9
-"Mississippi",15,3.1
-"Mississippi",16,2.8
-"Mississippi",17,2.3
-"Mississippi",18,2.1
-"Mississippi",19,2.2
-"Mississippi",20,2.3
-"Mississippi",21,2.3
-"Mississippi",22,1.8
-"Mississippi",23,1.8
-"Mississippi",24,1.8
-"Mississippi",25,1.4
-"Mississippi",26,1.4
-"Mississippi",27,1.5
-"Mississippi",28,1.2
-"Mississippi",29,1.4
-"Mississippi",30,1
-"Missouri",40,0.8
-"Missouri",41,1.1
-"Missouri",42,1
-"Missouri",43,1.1
-"Missouri",44,1.4
-"Missouri",45,1.3
-"Missouri",46,1.4
-"Missouri",47,1.8
-"Missouri",48,1.9
-"Missouri",49,1.7
-"Missouri",50,1.9
-"Missouri",51,2.3
-"Missouri",52,4.1
-"Missouri",1,4.4
-"Missouri",2,3.6
-"Missouri",3,3.7
-"Missouri",4,5.7
-"Missouri",5,6.5
-"Missouri",6,6.7
-"Missouri",7,5
-"Missouri",8,4.4
-"Missouri",9,3.1
-"Missouri",10,3.1
-"Missouri",11,2.5
-"Missouri",12,2
-"Missouri",13,2.2
-"Missouri",14,1.6
-"Missouri",15,1.3
-"Missouri",16,1.2
-"Missouri",17,1
-"Missouri",18,1.1
-"Missouri",19,0.4
-"Missouri",20,0.3
-"Missouri",21,0.2
-"Missouri",22,0.1
-"Missouri",23,0.1
-"Missouri",24,0.2
-"Missouri",25,0
-"Missouri",26,0.2
-"Missouri",27,0.1
-"Missouri",28,0
-"Missouri",29,0
-"Missouri",30,0.1
-"Montana",40,0
-"Montana",41,0.3
-"Montana",42,0.2
-"Montana",43,0.1
-"Montana",44,0.1
-"Montana",45,0.2
-"Montana",46,0.1
-"Montana",47,0.2
-"Montana",48,0
-"Montana",49,0.1
-"Montana",50,0.2
-"Montana",51,0.6
-"Montana",52,0.2
-"Montana",1,0.2
-"Montana",2,0.4
-"Montana",3,0.5
-"Montana",4,0.3
-"Montana",5,0.5
-"Montana",6,0.5
-"Montana",7,0.1
-"Montana",8,0.2
-"Montana",9,0.2
-"Montana",10,0.2
-"Montana",11,0.3
-"Montana",12,0
-"Montana",13,0.2
-"Montana",14,0.2
-"Montana",15,0.1
-"Montana",16,0.1
-"Montana",17,0
-"Montana",18,0
-"Montana",19,0
-"Montana",20,0
-"Montana",21,0
-"Montana",22,0
-"Montana",23,0
-"Montana",24,0
-"Montana",25,0
-"Montana",26,0
-"Montana",27,0
-"Montana",28,0
-"Montana",29,0
-"Montana",30,0
-"Nebraska",40,0.3
-"Nebraska",41,0.3
-"Nebraska",42,0.3
-"Nebraska",43,0.2
-"Nebraska",44,0.4
-"Nebraska",45,0.6
-"Nebraska",46,0.4
-"Nebraska",47,0.6
-"Nebraska",48,0.8
-"Nebraska",49,0.5
-"Nebraska",50,0.5
-"Nebraska",51,0.9
-"Nebraska",52,1
-"Nebraska",1,1.5
-"Nebraska",2,1.9
-"Nebraska",3,2.9
-"Nebraska",4,2.6
-"Nebraska",5,3.2
-"Nebraska",6,4.2
-"Nebraska",7,2.3
-"Nebraska",8,1.9
-"Nebraska",9,1.2
-"Nebraska",10,1.5
-"Nebraska",11,2
-"Nebraska",12,1.4
-"Nebraska",13,0.9
-"Nebraska",14,0.9
-"Nebraska",15,0.6
-"Nebraska",16,0.3
-"Nebraska",17,0.3
-"Nebraska",18,0.3
-"Nebraska",19,0.3
-"Nebraska",20,0.4
-"Nebraska",21,0.1
-"Nebraska",22,0.2
-"Nebraska",23,0.4
-"Nebraska",24,0.4
-"Nebraska",25,0.2
-"Nebraska",26,0.4
-"Nebraska",27,0.2
-"Nebraska",28,0.2
-"Nebraska",29,0.2
-"Nebraska",30,0
-"Nevada",40,0.4
-"Nevada",41,0.5
-"Nevada",42,0.5
-"Nevada",43,0.6
-"Nevada",44,0.9
-"Nevada",45,1.1
-"Nevada",46,0.9
-"Nevada",47,1.2
-"Nevada",48,1.3
-"Nevada",49,1.9
-"Nevada",50,1.5
-"Nevada",51,1.7
-"Nevada",52,2.1
-"Nevada",1,1.9
-"Nevada",2,1.7
-"Nevada",3,1.6
-"Nevada",4,1.5
-"Nevada",5,1.8
-"Nevada",6,1.8
-"Nevada",7,1.3
-"Nevada",8,1.3
-"Nevada",9,1.3
-"Nevada",10,1.1
-"Nevada",11,1.2
-"Nevada",12,1
-"Nevada",13,0.9
-"Nevada",14,0.9
-"Nevada",15,0.8
-"Nevada",16,0.8
-"Nevada",17,0.7
-"Nevada",18,0.9
-"Nevada",19,0.8
-"Nevada",20,0.3
-"Nevada",21,0.7
-"Nevada",22,0.8
-"Nevada",23,0.6
-"Nevada",24,0.7
-"Nevada",25,0.5
-"Nevada",26,0.4
-"Nevada",27,0.5
-"Nevada",28,0.3
-"Nevada",29,0.3
-"Nevada",30,0.1
-"New Hampshire",40,0.2
-"New Hampshire",41,0.2
-"New Hampshire",42,0.2
-"New Hampshire",43,0.3
-"New Hampshire",44,0.5
-"New Hampshire",45,0.5
-"New Hampshire",46,0.4
-"New Hampshire",47,0.4
-"New Hampshire",48,0.3
-"New Hampshire",49,0.3
-"New Hampshire",50,0.5
-"New Hampshire",51,0.6
-"New Hampshire",52,0.2
-"New Hampshire",1,0.5
-"New Hampshire",2,0.6
-"New Hampshire",3,0.5
-"New Hampshire",4,0.7
-"New Hampshire",5,0.6
-"New Hampshire",6,1.2
-"New Hampshire",7,1.7
-"New Hampshire",8,1.7
-"New Hampshire",9,1.2
-"New Hampshire",10,1.1
-"New Hampshire",11,1.2
-"New Hampshire",12,1.1
-"New Hampshire",13,0.9
-"New Hampshire",14,1.8
-"New Hampshire",15,0.7
-"New Hampshire",16,1.2
-"New Hampshire",17,0.5
-"New Hampshire",18,0.4
-"New Hampshire",19,0.7
-"New Hampshire",20,0.4
-"New Hampshire",21,0.4
-"New Hampshire",22,0.5
-"New Hampshire",23,0.2
-"New Hampshire",24,0.2
-"New Hampshire",25,0.4
-"New Hampshire",26,0.1
-"New Hampshire",27,0.4
-"New Hampshire",28,0.7
-"New Hampshire",29,0.4
-"New Hampshire",30,0.6
-"New Jersey",40,2.4
-"New Jersey",41,2.5
-"New Jersey",42,2.5
-"New Jersey",43,2.7
-"New Jersey",44,2.8
-"New Jersey",45,2.6
-"New Jersey",46,2.7
-"New Jersey",47,3.3
-"New Jersey",48,3
-"New Jersey",49,3
-"New Jersey",50,3.7
-"New Jersey",51,4.2
-"New Jersey",52,5.8
-"New Jersey",1,5.5
-"New Jersey",2,5.1
-"New Jersey",3,6
-"New Jersey",4,6.2
-"New Jersey",5,6.8
-"New Jersey",6,6.9
-"New Jersey",7,5.6
-"New Jersey",8,4.9
-"New Jersey",9,4.1
-"New Jersey",10,3.8
-"New Jersey",11,3.4
-"New Jersey",12,3.3
-"New Jersey",13,4
-"New Jersey",14,3.5
-"New Jersey",15,3.1
-"New Jersey",16,2.3
-"New Jersey",17,2.2
-"New Jersey",18,2
-"New Jersey",19,2.1
-"New Jersey",20,2
-"New Jersey",21,1.7
-"New Jersey",22,1.9
-"New Jersey",23,2
-"New Jersey",24,1.9
-"New Jersey",25,1.8
-"New Jersey",26,1.6
-"New Jersey",27,1.4
-"New Jersey",28,1.3
-"New Jersey",29,1.4
-"New Jersey",30,1.4
-"New Mexico",40,1.1
-"New Mexico",41,1
-"New Mexico",42,0.9
-"New Mexico",43,1.1
-"New Mexico",44,1.5
-"New Mexico",45,1.4
-"New Mexico",46,1.3
-"New Mexico",47,1.4
-"New Mexico",48,1.4
-"New Mexico",49,1.5
-"New Mexico",50,1.6
-"New Mexico",51,2.1
-"New Mexico",52,2
-"New Mexico",1,2.2
-"New Mexico",2,2.1
-"New Mexico",3,2.7
-"New Mexico",4,2.9
-"New Mexico",5,4.1
-"New Mexico",6,4.9
-"New Mexico",7,4.8
-"New Mexico",8,4.6
-"New Mexico",9,3.9
-"New Mexico",10,3.3
-"New Mexico",11,3.3
-"New Mexico",12,2.4
-"New Mexico",13,2
-"New Mexico",14,1.7
-"New Mexico",15,2
-"New Mexico",16,1.6
-"New Mexico",17,1.4
-"New Mexico",18,1.7
-"New Mexico",19,1.4
-"New Mexico",20,1.3
-"New Mexico",21,0.9
-"New Mexico",22,1.5
-"New Mexico",23,0.9
-"New Mexico",24,1.2
-"New Mexico",25,1.3
-"New Mexico",26,0.9
-"New Mexico",27,0.9
-"New Mexico",28,1
-"New Mexico",29,1
-"New Mexico",30,1.1
-"New York",40,0.7
-"New York",41,0.9
-"New York",42,1.1
-"New York",43,0.9
-"New York",44,0.9
-"New York",45,1.2
-"New York",46,1.1
-"New York",47,1.7
-"New York",48,1.6
-"New York",49,1.5
-"New York",50,1.5
-"New York",51,3.1
-"New York",52,5.4
-"New York",1,5.2
-"New York",2,5.9
-"New York",3,6.8
-"New York",4,7.5
-"New York",5,8.7
-"New York",6,9.8
-"New York",7,8.3
-"New York",8,6.3
-"New York",9,3
-"New York",10,3.2
-"New York",11,3.9
-"New York",12,3.6
-"New York",13,4.6
-"New York",14,4.9
-"New York",15,3.3
-"New York",16,2
-"New York",17,2
-"New York",18,2
-"New York",19,1.5
-"New York",20,1.5
-"New York",21,1.6
-"New York",22,1.7
-"New York",23,1.4
-"New York",24,1.4
-"New York",25,1.4
-"New York",26,1.2
-"New York",27,1.1
-"New York",28,1
-"New York",29,1.1
-"New York",30,1
-"North Carolina",40,0.8
-"North Carolina",41,0.9
-"North Carolina",42,1
-"North Carolina",43,1.1
-"North Carolina",44,0.9
-"North Carolina",45,1.4
-"North Carolina",46,1.6
-"North Carolina",47,2
-"North Carolina",48,1.6
-"North Carolina",49,1.5
-"North Carolina",50,2.2
-"North Carolina",51,3
-"North Carolina",52,3.4
-"North Carolina",1,2.6
-"North Carolina",2,2.2
-"North Carolina",3,2.7
-"North Carolina",4,2.8
-"North Carolina",5,5.2
-"North Carolina",6,5.6
-"North Carolina",7,6.7
-"North Carolina",8,7.6
-"North Carolina",9,6
-"North Carolina",10,5.2
-"North Carolina",11,3.3
-"North Carolina",12,5.5
-"North Carolina",13,4.1
-"North Carolina",14,3
-"North Carolina",15,2.5
-"North Carolina",16,1.4
-"North Carolina",17,1
-"North Carolina",18,0.9
-"North Carolina",19,1.1
-"North Carolina",20,1
-"North Carolina",21,1.4
-"North Carolina",22,0.9
-"North Carolina",23,1.3
-"North Carolina",24,0.7
-"North Carolina",25,0.7
-"North Carolina",26,0.6
-"North Carolina",27,0.2
-"North Carolina",28,0.6
-"North Carolina",29,0.3
-"North Carolina",30,0.5
-"North Dakota",40,0.5
-"North Dakota",41,0.2
-"North Dakota",42,0.7
-"North Dakota",43,1
-"North Dakota",44,0.2
-"North Dakota",45,0.2
-"North Dakota",46,0.4
-"North Dakota",47,0.5
-"North Dakota",48,0.7
-"North Dakota",49,1.3
-"North Dakota",50,0
-"North Dakota",51,2.9
-"North Dakota",52,0.4
-"North Dakota",1,4.3
-"North Dakota",2,0.9
-"North Dakota",3,1.9
-"North Dakota",4,3.9
-"North Dakota",5,3.8
-"North Dakota",6,5.2
-"North Dakota",7,3.8
-"North Dakota",8,3.5
-"North Dakota",9,3.5
-"North Dakota",10,3.4
-"North Dakota",11,1.9
-"North Dakota",12,1.5
-"North Dakota",13,1.9
-"North Dakota",14,1.4
-"North Dakota",15,1.2
-"North Dakota",16,0.6
-"North Dakota",17,0.4
-"North Dakota",18,1.4
-"North Dakota",19,0.7
-"North Dakota",20,0.2
-"North Dakota",21,0.2
-"North Dakota",22,0.4
-"North Dakota",23,0
-"North Dakota",24,1.1
-"North Dakota",25,0
-"North Dakota",26,0
-"North Dakota",27,0
-"North Dakota",28,0
-"North Dakota",29,0
-"North Dakota",30,0
-"Ohio",40,0.6
-"Ohio",41,0.6
-"Ohio",42,0.6
-"Ohio",43,0.7
-"Ohio",44,0.8
-"Ohio",45,0.8
-"Ohio",46,0.7
-"Ohio",47,0.8
-"Ohio",48,1
-"Ohio",49,1
-"Ohio",50,1.3
-"Ohio",51,1.3
-"Ohio",52,1.6
-"Ohio",1,1.4
-"Ohio",2,1.3
-"Ohio",3,1.7
-"Ohio",4,1.9
-"Ohio",5,1.7
-"Ohio",6,3
-"Ohio",7,3.1
-"Ohio",8,3.6
-"Ohio",9,2.5
-"Ohio",10,2.1
-"Ohio",11,2
-"Ohio",12,2.2
-"Ohio",13,1.7
-"Ohio",14,1.2
-"Ohio",15,1.1
-"Ohio",16,0.9
-"Ohio",17,0.8
-"Ohio",18,0.6
-"Ohio",19,0.7
-"Ohio",20,0.6
-"Ohio",21,0.7
-"Ohio",22,0.7
-"Ohio",23,0.8
-"Ohio",24,0.7
-"Ohio",25,0.6
-"Ohio",26,0.5
-"Ohio",27,0.4
-"Ohio",28,0.6
-"Ohio",29,0.5
-"Ohio",30,0.5
-"Oklahoma",40,0.7
-"Oklahoma",41,2.3
-"Oklahoma",42,1.2
-"Oklahoma",43,3
-"Oklahoma",44,2.5
-"Oklahoma",45,2.4
-"Oklahoma",46,3.4
-"Oklahoma",47,3
-"Oklahoma",48,3.2
-"Oklahoma",49,3.4
-"Oklahoma",50,5.1
-"Oklahoma",51,4.4
-"Oklahoma",52,6.1
-"Oklahoma",1,6.3
-"Oklahoma",2,8.1
-"Oklahoma",3,8.8
-"Oklahoma",4,11.5
-"Oklahoma",5,15.5
-"Oklahoma",6,14.9
-"Oklahoma",7,11.7
-"Oklahoma",8,10.4
-"Oklahoma",9,9.1
-"Oklahoma",10,6.9
-"Oklahoma",11,6.3
-"Oklahoma",12,6.5
-"Oklahoma",13,4.2
-"Oklahoma",14,4.3
-"Oklahoma",15,2.5
-"Oklahoma",16,2
-"Oklahoma",17,2
-"Oklahoma",18,1.3
-"Oklahoma",19,1.6
-"Oklahoma",20,1.4
-"Oklahoma",21,0.6
-"Oklahoma",22,0.6
-"Oklahoma",23,0.5
-"Oklahoma",24,0.4
-"Oklahoma",25,0.5
-"Oklahoma",26,0.2
-"Oklahoma",27,0.5
-"Oklahoma",28,0.3
-"Oklahoma",29,0.4
-"Oklahoma",30,0.5
-"Oregon",40,0.6
-"Oregon",41,0.4
-"Oregon",42,0.7
-"Oregon",43,0.6
-"Oregon",44,1.1
-"Oregon",45,1.4
-"Oregon",46,0.8
-"Oregon",47,1
-"Oregon",48,1
-"Oregon",49,1.1
-"Oregon",50,2.2
-"Oregon",51,2.3
-"Oregon",52,5.8
-"Oregon",1,5.2
-"Oregon",2,2
-"Oregon",3,2.6
-"Oregon",4,3
-"Oregon",5,3.2
-"Oregon",6,3.3
-"Oregon",7,2.9
-"Oregon",8,2.5
-"Oregon",9,2.6
-"Oregon",10,1.6
-"Oregon",11,2.3
-"Oregon",12,1.6
-"Oregon",13,0.9
-"Oregon",14,1.1
-"Oregon",15,0.8
-"Oregon",16,0.9
-"Oregon",17,0.5
-"Oregon",18,1.1
-"Oregon",19,0.8
-"Oregon",20,0.7
-"Oregon",21,0.3
-"Oregon",22,0.4
-"Oregon",23,0.5
-"Oregon",24,0.3
-"Oregon",25,0.5
-"Oregon",26,0.5
-"Oregon",27,0.1
-"Oregon",28,0.1
-"Oregon",29,0.2
-"Oregon",30,0.1
-"Pennsylvania",40,0.9
-"Pennsylvania",41,0.7
-"Pennsylvania",42,0.9
-"Pennsylvania",43,0.9
-"Pennsylvania",44,1.1
-"Pennsylvania",45,1.2
-"Pennsylvania",46,1.2
-"Pennsylvania",47,1.4
-"Pennsylvania",48,1.1
-"Pennsylvania",49,1.5
-"Pennsylvania",50,1.8
-"Pennsylvania",51,1.9
-"Pennsylvania",52,3.1
-"Pennsylvania",1,2.9
-"Pennsylvania",2,2.7
-"Pennsylvania",3,3.4
-"Pennsylvania",4,4
-"Pennsylvania",5,4.2
-"Pennsylvania",6,5.8
-"Pennsylvania",7,4.7
-"Pennsylvania",8,4
-"Pennsylvania",9,2.6
-"Pennsylvania",10,2.6
-"Pennsylvania",11,2.9
-"Pennsylvania",12,2.4
-"Pennsylvania",13,2.6
-"Pennsylvania",14,1.9
-"Pennsylvania",15,1.7
-"Pennsylvania",16,1.5
-"Pennsylvania",17,1.2
-"Pennsylvania",18,1.1
-"Pennsylvania",19,0.8
-"Pennsylvania",20,1
-"Pennsylvania",21,0.7
-"Pennsylvania",22,0.9
-"Pennsylvania",23,0.7
-"Pennsylvania",24,0.7
-"Pennsylvania",25,0.6
-"Pennsylvania",26,0.5
-"Pennsylvania",27,0.6
-"Pennsylvania",28,0.4
-"Pennsylvania",29,0.6
-"Pennsylvania",30,0.6
-"Puerto Rico",40,4.1
-"Puerto Rico",41,4.4
-"Puerto Rico",42,3.8
-"Puerto Rico",43,5.2
-"Puerto Rico",44,6
-"Puerto Rico",45,7.1
-"Puerto Rico",46,7.6
-"Puerto Rico",47,10
-"Puerto Rico",48,10.8
-"Puerto Rico",49,11.2
-"Puerto Rico",50,10
-"Puerto Rico",51,12.1
-"Puerto Rico",52,12.1
-"Puerto Rico",1,9.9
-"Puerto Rico",2,5.7
-"Puerto Rico",3,5.4
-"Puerto Rico",4,6
-"Puerto Rico",5,5.7
-"Puerto Rico",6,5.7
-"Puerto Rico",7,4.8
-"Puerto Rico",8,4.4
-"Puerto Rico",9,3.8
-"Puerto Rico",10,3.6
-"Puerto Rico",11,3.8
-"Puerto Rico",12,3.5
-"Puerto Rico",13,3.4
-"Puerto Rico",14,3.9
-"Puerto Rico",15,4.8
-"Puerto Rico",16,4.8
-"Puerto Rico",17,6.1
-"Puerto Rico",18,3.8
-"Puerto Rico",19,4.6
-"Puerto Rico",20,4.8
-"Puerto Rico",21,3.6
-"Puerto Rico",22,3.9
-"Puerto Rico",23,3.2
-"Puerto Rico",24,2.9
-"Puerto Rico",25,4.7
-"Puerto Rico",26,3.5
-"Puerto Rico",27,3.6
-"Puerto Rico",28,3.5
-"Puerto Rico",29,3.7
-"Puerto Rico",30,4.2
-"Rhode Island",40,0.4
-"Rhode Island",41,0.4
-"Rhode Island",42,0.7
-"Rhode Island",43,0.4
-"Rhode Island",44,0.5
-"Rhode Island",45,0.5
-"Rhode Island",46,0.3
-"Rhode Island",47,0.3
-"Rhode Island",48,0.3
-"Rhode Island",49,0.3
-"Rhode Island",50,0.5
-"Rhode Island",51,0.5
-"Rhode Island",52,0.8
-"Rhode Island",1,1.3
-"Rhode Island",2,0.9
-"Rhode Island",3,0.8
-"Rhode Island",4,1.8
-"Rhode Island",5,2.5
-"Rhode Island",6,4.1
-"Rhode Island",7,4.1
-"Rhode Island",8,4.3
-"Rhode Island",9,2.8
-"Rhode Island",10,2.6
-"Rhode Island",11,1.9
-"Rhode Island",12,2.7
-"Rhode Island",13,2.9
-"Rhode Island",14,2.5
-"Rhode Island",15,2.1
-"Rhode Island",16,1.1
-"Rhode Island",17,0.5
-"Rhode Island",18,0.5
-"Rhode Island",19,0.4
-"Rhode Island",20,0.1
-"Rhode Island",21,0
-"Rhode Island",22,0.1
-"Rhode Island",23,0
-"Rhode Island",24,0.1
-"Rhode Island",25,0
-"Rhode Island",26,0.1
-"Rhode Island",27,0
-"Rhode Island",28,0
-"Rhode Island",29,0
-"Rhode Island",30,0
-"South Carolina",40,1.8
-"South Carolina",41,1.4
-"South Carolina",42,1.9
-"South Carolina",43,1.9
-"South Carolina",44,2.1
-"South Carolina",45,1.6
-"South Carolina",46,1.8
-"South Carolina",47,2.4
-"South Carolina",48,2.5
-"South Carolina",49,1.9
-"South Carolina",50,2.7
-"South Carolina",51,2.1
-"South Carolina",52,4.3
-"South Carolina",1,4.5
-"South Carolina",2,3.7
-"South Carolina",3,5.7
-"South Carolina",4,6.3
-"South Carolina",5,7.1
-"South Carolina",6,6.8
-"South Carolina",7,6.7
-"South Carolina",8,7.6
-"South Carolina",9,5.5
-"South Carolina",10,5.4
-"South Carolina",11,6.4
-"South Carolina",12,7.7
-"South Carolina",13,5.6
-"South Carolina",14,4.5
-"South Carolina",15,3.5
-"South Carolina",16,2.1
-"South Carolina",17,2.6
-"South Carolina",18,1.7
-"South Carolina",19,1.7
-"South Carolina",20,0.9
-"South Carolina",21,0.8
-"South Carolina",22,0.7
-"South Carolina",23,0.5
-"South Carolina",24,0.6
-"South Carolina",25,0.4
-"South Carolina",26,0.5
-"South Carolina",27,0.2
-"South Carolina",28,0.3
-"South Carolina",29,0.4
-"South Carolina",30,0.3
-"South Dakota",40,0.9
-"South Dakota",41,1
-"South Dakota",42,0.8
-"South Dakota",43,1.1
-"South Dakota",44,1
-"South Dakota",45,1.1
-"South Dakota",46,1.4
-"South Dakota",47,1.3
-"South Dakota",48,1.3
-"South Dakota",49,1
-"South Dakota",50,1.1
-"South Dakota",51,1.4
-"South Dakota",52,1.4
-"South Dakota",1,1.7
-"South Dakota",2,1.9
-"South Dakota",3,2.6
-"South Dakota",4,3.3
-"South Dakota",5,4.1
-"South Dakota",6,4.9
-"South Dakota",7,4.5
-"South Dakota",8,3.4
-"South Dakota",9,2.6
-"South Dakota",10,2.5
-"South Dakota",11,2.7
-"South Dakota",12,1.9
-"South Dakota",13,1.8
-"South Dakota",14,1.7
-"South Dakota",15,1.5
-"South Dakota",16,1
-"South Dakota",17,1.3
-"South Dakota",18,0.9
-"South Dakota",19,1
-"South Dakota",20,0.6
-"South Dakota",21,0.9
-"South Dakota",22,0.4
-"South Dakota",23,0.4
-"South Dakota",24,0.3
-"South Dakota",25,0.4
-"South Dakota",26,0.4
-"South Dakota",27,0.7
-"South Dakota",28,0.7
-"South Dakota",29,0.6
-"South Dakota",30,0.5
-"Tennessee",40,1.7
-"Tennessee",41,1.5
-"Tennessee",42,1.5
-"Tennessee",43,1.5
-"Tennessee",44,2
-"Tennessee",45,1.8
-"Tennessee",46,2.2
-"Tennessee",47,3.2
-"Tennessee",48,2.3
-"Tennessee",49,2.4
-"Tennessee",50,2.3
-"Tennessee",51,2.9
-"Tennessee",52,3.5
-"Tennessee",1,3.8
-"Tennessee",2,4.1
-"Tennessee",3,4.1
-"Tennessee",4,4.2
-"Tennessee",5,4.9
-"Tennessee",6,7.4
-"Tennessee",7,7.1
-"Tennessee",8,5.2
-"Tennessee",9,5.6
-"Tennessee",10,6.4
-"Tennessee",11,3.8
-"Tennessee",12,5.9
-"Tennessee",13,4.8
-"Tennessee",14,3.7
-"Tennessee",15,2.5
-"Tennessee",16,3.2
-"Tennessee",17,2.2
-"Tennessee",18,1.7
-"Tennessee",19,2.4
-"Tennessee",20,2.4
-"Tennessee",21,1.9
-"Tennessee",22,1.1
-"Tennessee",23,1.1
-"Tennessee",24,0.7
-"Tennessee",25,0.3
-"Tennessee",26,0.3
-"Tennessee",27,0.3
-"Tennessee",28,0.3
-"Tennessee",29,0.3
-"Tennessee",30,0
-"Texas",40,2.1
-"Texas",41,2
-"Texas",42,1.8
-"Texas",43,2.1
-"Texas",44,2
-"Texas",45,2.1
-"Texas",46,2.2
-"Texas",47,2.6
-"Texas",48,2.5
-"Texas",49,3.1
-"Texas",50,3.4
-"Texas",51,4.1
-"Texas",52,4.3
-"Texas",1,4.2
-"Texas",2,5.1
-"Texas",3,5.5
-"Texas",4,6.2
-"Texas",5,8.1
-"Texas",6,10.3
-"Texas",7,9.3
-"Texas",8,9
-"Texas",9,7.5
-"Texas",10,7.3
-"Texas",11,5.9
-"Texas",12,4.5
-"Texas",13,4
-"Texas",14,3.5
-"Texas",15,3.4
-"Texas",16,3.4
-"Texas",17,2.8
-"Texas",18,2.6
-"Texas",19,1.7
-"Texas",20,2.3
-"Texas",21,2.1
-"Texas",22,1.8
-"Texas",23,1.8
-"Texas",24,1.6
-"Texas",25,1.5
-"Texas",26,1.5
-"Texas",27,1.4
-"Texas",28,1.2
-"Texas",29,1.4
-"Texas",30,1.3
-"Utah",40,1.1
-"Utah",41,0.8
-"Utah",42,1
-"Utah",43,0.8
-"Utah",44,0.8
-"Utah",45,1
-"Utah",46,1
-"Utah",47,1.2
-"Utah",48,1.3
-"Utah",49,1.4
-"Utah",50,1.8
-"Utah",51,3.3
-"Utah",52,3.9
-"Utah",1,3.4
-"Utah",2,2.9
-"Utah",3,2.9
-"Utah",4,2
-"Utah",5,1.6
-"Utah",6,1.6
-"Utah",7,1.3
-"Utah",8,1.6
-"Utah",9,0.5
-"Utah",10,0.6
-"Utah",11,0.6
-"Utah",12,0.6
-"Utah",13,0.5
-"Utah",14,0.5
-"Utah",15,0.5
-"Utah",16,0.6
-"Utah",17,0.6
-"Utah",18,0.7
-"Utah",19,0.5
-"Utah",20,0.6
-"Utah",21,0.5
-"Utah",22,0.6
-"Utah",23,0.4
-"Utah",24,0.3
-"Utah",25,0.3
-"Utah",26,0.3
-"Utah",27,0.3
-"Utah",28,0.3
-"Utah",29,0.3
-"Utah",30,0.3
-"Vermont",40,0.8
-"Vermont",41,0.8
-"Vermont",42,0.6
-"Vermont",43,0.4
-"Vermont",44,0.2
-"Vermont",45,0.2
-"Vermont",46,0.3
-"Vermont",47,0.5
-"Vermont",48,0.6
-"Vermont",49,0.4
-"Vermont",50,0.6
-"Vermont",51,1
-"Vermont",52,1
-"Vermont",1,1
-"Vermont",2,1.2
-"Vermont",3,1.2
-"Vermont",4,1.4
-"Vermont",5,1.9
-"Vermont",6,1.3
-"Vermont",7,1.1
-"Vermont",8,1.8
-"Vermont",9,1.8
-"Vermont",10,2
-"Vermont",11,1.6
-"Vermont",12,1.5
-"Vermont",13,1.4
-"Vermont",14,1.4
-"Vermont",15,1.5
-"Vermont",16,1.2
-"Vermont",17,0.8
-"Vermont",18,1.4
-"Vermont",19,0.6
-"Vermont",20,1.1
-"Vermont",21,0.5
-"Vermont",22,1.6
-"Vermont",23,1.2
-"Vermont",24,0.6
-"Vermont",25,0.7
-"Vermont",26,0.8
-"Vermont",27,0.9
-"Vermont",28,0.9
-"Vermont",29,0.8
-"Vermont",30,0.7
-"Virgin Islands",40,0.6
-"Virgin Islands",41,1.9
-"Virgin Islands",42,1.4
-"Virgin Islands",43,1.4
-"Virgin Islands",44,2
-"Virgin Islands",45,3.7
-"Virgin Islands",46,4.7
-"Virgin Islands",47,7.6
-"Virgin Islands",48,3.3
-"Virgin Islands",49,2
-"Virgin Islands",50,2.6
-"Virgin Islands",51,1
-"Virgin Islands",52,1.4
-"Virgin Islands",1,0.7
-"Virgin Islands",2,1.1
-"Virgin Islands",3,0.9
-"Virgin Islands",4,0.6
-"Virgin Islands",5,0.7
-"Virgin Islands",6,1.8
-"Virgin Islands",7,0.1
-"Virgin Islands",8,0.4
-"Virgin Islands",9,1.2
-"Virgin Islands",10,1.1
-"Virgin Islands",11,0.8
-"Virgin Islands",12,0.8
-"Virgin Islands",13,0.1
-"Virgin Islands",14,0.3
-"Virgin Islands",15,1.9
-"Virgin Islands",16,1
-"Virgin Islands",17,0.3
-"Virgin Islands",18,0.6
-"Virgin Islands",19,0.3
-"Virgin Islands",20,0.7
-"Virgin Islands",21,0.5
-"Virgin Islands",22,0.6
-"Virgin Islands",23,0.1
-"Virgin Islands",24,0.5
-"Virgin Islands",25,0.5
-"Virgin Islands",26,0.3
-"Virgin Islands",27,0.1
-"Virgin Islands",28,0.6
-"Virgin Islands",29,0.3
-"Virgin Islands",30,0
-"Virginia",40,1.5
-"Virginia",41,1.6
-"Virginia",42,1.6
-"Virginia",43,1.9
-"Virginia",44,2
-"Virginia",45,2
-"Virginia",46,2.1
-"Virginia",47,2.3
-"Virginia",48,2.2
-"Virginia",49,2.2
-"Virginia",50,2.3
-"Virginia",51,2.9
-"Virginia",52,3.4
-"Virginia",1,3.2
-"Virginia",2,3.4
-"Virginia",3,3.2
-"Virginia",4,3.3
-"Virginia",5,3.7
-"Virginia",6,5.2
-"Virginia",7,5.9
-"Virginia",8,6.7
-"Virginia",9,4
-"Virginia",10,3.6
-"Virginia",11,3.6
-"Virginia",12,3.9
-"Virginia",13,3.8
-"Virginia",14,2.7
-"Virginia",15,1.9
-"Virginia",16,1.4
-"Virginia",17,1.2
-"Virginia",18,1.1
-"Virginia",19,1
-"Virginia",20,1
-"Virginia",21,1
-"Virginia",22,1.1
-"Virginia",23,0.9
-"Virginia",24,0.8
-"Virginia",25,0.8
-"Virginia",26,0.8
-"Virginia",27,0.7
-"Virginia",28,0.6
-"Virginia",29,0.6
-"Virginia",30,0.6
-"Washington",40,0.3
-"Washington",41,0.4
-"Washington",42,0.3
-"Washington",43,0.4
-"Washington",44,0.3
-"Washington",45,0.4
-"Washington",46,0.5
-"Washington",47,0.6
-"Washington",48,0.6
-"Washington",49,0.5
-"Washington",50,1.2
-"Washington",51,2.2
-"Washington",52,2.9
-"Washington",1,2.3
-"Washington",2,2.1
-"Washington",3,3.8
-"Washington",4,2.5
-"Washington",5,1.9
-"Washington",6,1.2
-"Washington",7,0.8
-"Washington",8,0.7
-"Washington",9,0.7
-"Washington",10,0.4
-"Washington",11,0.6
-"Washington",12,0.5
-"Washington",13,0.7
-"Washington",14,0.4
-"Washington",15,0.3
-"Washington",16,0.3
-"Washington",17,0.3
-"Washington",18,0.3
-"Washington",19,0.3
-"Washington",20,0.4
-"Washington",21,0.2
-"Washington",22,0.4
-"Washington",23,0.1
-"Washington",24,0.3
-"Washington",25,0.4
-"Washington",26,0.2
-"Washington",27,0.2
-"Washington",28,0.1
-"Washington",29,0.2
-"Washington",30,0.1
-"West Virginia",40,1.2
-"West Virginia",41,1.2
-"West Virginia",42,0.5
-"West Virginia",43,0.6
-"West Virginia",44,0.7
-"West Virginia",45,0.7
-"West Virginia",46,1
-"West Virginia",47,1.1
-"West Virginia",48,1
-"West Virginia",49,1.2
-"West Virginia",50,1.3
-"West Virginia",51,1.5
-"West Virginia",52,2.4
-"West Virginia",1,1.8
-"West Virginia",2,1.8
-"West Virginia",3,2.6
-"West Virginia",4,2.6
-"West Virginia",5,2.9
-"West Virginia",6,2.9
-"West Virginia",7,3.6
-"West Virginia",8,3.5
-"West Virginia",9,3.4
-"West Virginia",10,3.1
-"West Virginia",11,3.3
-"West Virginia",12,3
-"West Virginia",13,2.7
-"West Virginia",14,1.4
-"West Virginia",15,1
-"West Virginia",16,0.7
-"West Virginia",17,0.4
-"West Virginia",18,0.4
-"West Virginia",19,0.3
-"West Virginia",20,0.2
-"West Virginia",21,0.3
-"West Virginia",22,0.4
-"West Virginia",23,0.2
-"West Virginia",24,0.2
-"West Virginia",25,0.2
-"West Virginia",26,0.2
-"West Virginia",27,0.1
-"West Virginia",28,0.2
-"West Virginia",29,0.1
-"West Virginia",30,0
-"Wisconsin",40,1.1
-"Wisconsin",41,0.9
-"Wisconsin",42,1.1
-"Wisconsin",43,1
-"Wisconsin",44,1.4
-"Wisconsin",45,1.3
-"Wisconsin",46,1
-"Wisconsin",47,0.9
-"Wisconsin",48,1.1
-"Wisconsin",49,1.5
-"Wisconsin",50,0.9
-"Wisconsin",51,1.6
-"Wisconsin",52,1.3
-"Wisconsin",1,1.3
-"Wisconsin",2,1.9
-"Wisconsin",3,2.6
-"Wisconsin",4,2.7
-"Wisconsin",5,3.4
-"Wisconsin",6,3.7
-"Wisconsin",7,3.1
-"Wisconsin",8,3.4
-"Wisconsin",9,2.5
-"Wisconsin",10,2.6
-"Wisconsin",11,2.5
-"Wisconsin",12,2.1
-"Wisconsin",13,1.4
-"Wisconsin",14,1.8
-"Wisconsin",15,1.9
-"Wisconsin",16,1.3
-"Wisconsin",17,1.4
-"Wisconsin",18,1.3
-"Wisconsin",19,1
-"Wisconsin",20,0.4
-"Wisconsin",21,0.4
-"Wisconsin",22,0.3
-"Wisconsin",23,0.3
-"Wisconsin",24,0.4
-"Wisconsin",25,0.3
-"Wisconsin",26,0.4
-"Wisconsin",27,0.2
-"Wisconsin",28,0.2
-"Wisconsin",29,0.1
-"Wisconsin",30,0.1
-"Wyoming",40,0.4
-"Wyoming",41,0.6
-"Wyoming",42,0.6
-"Wyoming",43,0.5
-"Wyoming",44,0.7
-"Wyoming",45,0.8
-"Wyoming",46,0.5
-"Wyoming",47,0.7
-"Wyoming",48,0.4
-"Wyoming",49,0.8
-"Wyoming",50,1.3
-"Wyoming",51,1.7
-"Wyoming",52,1.3
-"Wyoming",1,1.7
-"Wyoming",2,3.5
-"Wyoming",3,2.6
-"Wyoming",4,3
-"Wyoming",5,4.3
-"Wyoming",6,3.8
-"Wyoming",7,3
-"Wyoming",8,2.1
-"Wyoming",9,1.8
-"Wyoming",10,2.5
-"Wyoming",11,1.6
-"Wyoming",12,1.8
-"Wyoming",13,1.5
-"Wyoming",14,1.1
-"Wyoming",15,1.1
-"Wyoming",16,1.1
-"Wyoming",17,0.8
-"Wyoming",18,1.2
-"Wyoming",19,0.8
-"Wyoming",20,0.4
-"Wyoming",21,0.7
-"Wyoming",22,0.7
-"Wyoming",23,0.7
-"Wyoming",24,0.6
-"Wyoming",25,1
-"Wyoming",26,0.4
-"Wyoming",27,0.1
-"Wyoming",28,0.4
-"Wyoming",29,0.2
-"Wyoming",30,0.1
+location,week,ILI
+Alabama,40,2.2
+Alaska,40,0.9
+Arizona,40,1.2
+Arkansas,40,0.9
+California,40,1.3
+Colorado,40,0.8
+Connecticut,40,1.2
+Delaware,40,0.1
+District of Columbia,40,5.5
+Georgia,40,1.3
+Hawaii,40,1.9
+Idaho,40,0.4
+Illinois,40,1.3
+Indiana,40,1
+Iowa,40,0.1
+Kansas,40,0.8
+Kentucky,40,0.5
+Maine,40,0.8
+Maryland,40,0.6
+Massachusetts,40,0.6
+Michigan,40,0.9
+Minnesota,40,1.4
+Mississippi,40,1.9
+Missouri,40,0.8
+Montana,40,0
+Nebraska,40,0.3
+Nevada,40,0.4
+New Hampshire,40,0.2
+New Jersey,40,2.4
+New Mexico,40,1.1
+New York,40,0.7
+North Carolina,40,0.8
+North Dakota,40,0.5
+Ohio,40,0.6
+Oklahoma,40,0.7
+Oregon,40,0.6
+Pennsylvania,40,0.9
+Rhode Island,40,0.4
+South Carolina,40,1.8
+South Dakota,40,0.9
+Tennessee,40,1.7
+Texas,40,2.1
+Utah,40,1.1
+Vermont,40,0.8
+Virginia,40,1.5
+Washington,40,0.3
+West Virginia,40,1.2
+Wisconsin,40,1.1
+Wyoming,40,0.4
+Puerto Rico,40,4.1
+Virgin Islands,40,0.6
+New York City,40,1.5
+Alabama,41,1.7
+Alaska,41,1.2
+Arizona,41,0.9
+Arkansas,41,0.8
+California,41,1.4
+Colorado,41,1.2
+Connecticut,41,1.1
+Delaware,41,0.1
+District of Columbia,41,5
+Georgia,41,2
+Hawaii,41,1.5
+Idaho,41,0.3
+Illinois,41,1.2
+Indiana,41,1
+Iowa,41,0.2
+Kansas,41,0.8
+Kentucky,41,0.4
+Maine,41,0.7
+Maryland,41,0.7
+Massachusetts,41,0.5
+Michigan,41,0.9
+Minnesota,41,1.4
+Mississippi,41,2
+Missouri,41,1.1
+Montana,41,0.3
+Nebraska,41,0.3
+Nevada,41,0.5
+New Hampshire,41,0.2
+New Jersey,41,2.5
+New Mexico,41,1
+New York,41,0.9
+North Carolina,41,0.9
+North Dakota,41,0.2
+Ohio,41,0.6
+Oklahoma,41,2.3
+Oregon,41,0.4
+Pennsylvania,41,0.7
+Rhode Island,41,0.4
+South Carolina,41,1.4
+South Dakota,41,1
+Tennessee,41,1.5
+Texas,41,2
+Utah,41,0.8
+Vermont,41,0.8
+Virginia,41,1.6
+Washington,41,0.4
+West Virginia,41,1.2
+Wisconsin,41,0.9
+Wyoming,41,0.6
+Puerto Rico,41,4.4
+Virgin Islands,41,1.9
+New York City,41,1.5
+Alabama,42,2
+Alaska,42,0.5
+Arizona,42,1
+Arkansas,42,1
+California,42,1.5
+Colorado,42,1.1
+Connecticut,42,1
+Delaware,42,0.2
+District of Columbia,42,5.3
+Georgia,42,2
+Hawaii,42,1.5
+Idaho,42,0.6
+Illinois,42,1.5
+Indiana,42,0.6
+Iowa,42,0.1
+Kansas,42,1.3
+Kentucky,42,0.6
+Maine,42,0.8
+Maryland,42,1
+Massachusetts,42,0.7
+Michigan,42,1.3
+Minnesota,42,1.1
+Mississippi,42,2.3
+Missouri,42,1
+Montana,42,0.2
+Nebraska,42,0.3
+Nevada,42,0.5
+New Hampshire,42,0.2
+New Jersey,42,2.5
+New Mexico,42,0.9
+New York,42,1.1
+North Carolina,42,1
+North Dakota,42,0.7
+Ohio,42,0.6
+Oklahoma,42,1.2
+Oregon,42,0.7
+Pennsylvania,42,0.9
+Rhode Island,42,0.7
+South Carolina,42,1.9
+South Dakota,42,0.8
+Tennessee,42,1.5
+Texas,42,1.8
+Utah,42,1
+Vermont,42,0.6
+Virginia,42,1.6
+Washington,42,0.3
+West Virginia,42,0.5
+Wisconsin,42,1.1
+Wyoming,42,0.6
+Puerto Rico,42,3.8
+Virgin Islands,42,1.4
+New York City,42,1.6
+Alabama,43,2.4
+Alaska,43,0.8
+Arizona,43,1.2
+Arkansas,43,1.2
+California,43,1.5
+Colorado,43,0.9
+Connecticut,43,1.1
+Delaware,43,0.3
+District of Columbia,43,5.6
+Georgia,43,2
+Hawaii,43,2.2
+Idaho,43,0.8
+Illinois,43,1.5
+Indiana,43,0.5
+Iowa,43,0.2
+Kansas,43,0.7
+Kentucky,43,1
+Maine,43,0.9
+Maryland,43,0.8
+Massachusetts,43,0.6
+Michigan,43,1.3
+Minnesota,43,1.5
+Mississippi,43,2.6
+Missouri,43,1.1
+Montana,43,0.1
+Nebraska,43,0.2
+Nevada,43,0.6
+New Hampshire,43,0.3
+New Jersey,43,2.7
+New Mexico,43,1.1
+New York,43,0.9
+North Carolina,43,1.1
+North Dakota,43,1
+Ohio,43,0.7
+Oklahoma,43,3
+Oregon,43,0.6
+Pennsylvania,43,0.9
+Rhode Island,43,0.4
+South Carolina,43,1.9
+South Dakota,43,1.1
+Tennessee,43,1.5
+Texas,43,2.1
+Utah,43,0.8
+Vermont,43,0.4
+Virginia,43,1.9
+Washington,43,0.4
+West Virginia,43,0.6
+Wisconsin,43,1
+Wyoming,43,0.5
+Puerto Rico,43,5.2
+Virgin Islands,43,1.4
+New York City,43,1.7
+Alabama,44,2.7
+Alaska,44,0.5
+Arizona,44,1.3
+Arkansas,44,1.3
+California,44,1.6
+Colorado,44,0.4
+Connecticut,44,1.7
+Delaware,44,0.4
+District of Columbia,44,4.8
+Georgia,44,2.4
+Hawaii,44,2.3
+Idaho,44,0.4
+Illinois,44,1.7
+Indiana,44,1.1
+Iowa,44,0.1
+Kansas,44,0.8
+Kentucky,44,0.7
+Maine,44,0.9
+Maryland,44,1
+Massachusetts,44,0.8
+Michigan,44,1.6
+Minnesota,44,0.8
+Mississippi,44,2.9
+Missouri,44,1.4
+Montana,44,0.1
+Nebraska,44,0.4
+Nevada,44,0.9
+New Hampshire,44,0.5
+New Jersey,44,2.8
+New Mexico,44,1.5
+New York,44,0.9
+North Carolina,44,0.9
+North Dakota,44,0.2
+Ohio,44,0.8
+Oklahoma,44,2.5
+Oregon,44,1.1
+Pennsylvania,44,1.1
+Rhode Island,44,0.5
+South Carolina,44,2.1
+South Dakota,44,1
+Tennessee,44,2
+Texas,44,2
+Utah,44,0.8
+Vermont,44,0.2
+Virginia,44,2
+Washington,44,0.3
+West Virginia,44,0.7
+Wisconsin,44,1.4
+Wyoming,44,0.7
+Puerto Rico,44,6
+Virgin Islands,44,2
+New York City,44,1.9
+Alabama,45,2.5
+Alaska,45,0.8
+Arizona,45,1
+Arkansas,45,1.6
+California,45,1.7
+Colorado,45,0.7
+Connecticut,45,1.7
+Delaware,45,0
+District of Columbia,45,5.1
+Georgia,45,2.6
+Hawaii,45,2
+Idaho,45,0.7
+Illinois,45,1.8
+Indiana,45,0.9
+Iowa,45,0.4
+Kansas,45,1
+Kentucky,45,0.7
+Maine,45,0.6
+Maryland,45,1.2
+Massachusetts,45,0.7
+Michigan,45,1.6
+Minnesota,45,0.7
+Mississippi,45,3
+Missouri,45,1.3
+Montana,45,0.2
+Nebraska,45,0.6
+Nevada,45,1.1
+New Hampshire,45,0.5
+New Jersey,45,2.6
+New Mexico,45,1.4
+New York,45,1.2
+North Carolina,45,1.4
+North Dakota,45,0.2
+Ohio,45,0.8
+Oklahoma,45,2.4
+Oregon,45,1.4
+Pennsylvania,45,1.2
+Rhode Island,45,0.5
+South Carolina,45,1.6
+South Dakota,45,1.1
+Tennessee,45,1.8
+Texas,45,2.1
+Utah,45,1
+Vermont,45,0.2
+Virginia,45,2
+Washington,45,0.4
+West Virginia,45,0.7
+Wisconsin,45,1.3
+Wyoming,45,0.8
+Puerto Rico,45,7.1
+Virgin Islands,45,3.7
+New York City,45,2.1
+Alabama,46,2.8
+Alaska,46,1.1
+Arizona,46,1.4
+Arkansas,46,1.8
+California,46,1.8
+Colorado,46,1
+Connecticut,46,1.6
+Delaware,46,0.1
+District of Columbia,46,5.5
+Georgia,46,2.6
+Hawaii,46,1.7
+Idaho,46,0.7
+Illinois,46,1.9
+Indiana,46,0.6
+Iowa,46,0.4
+Kansas,46,1
+Kentucky,46,1.2
+Maine,46,0.8
+Maryland,46,0.9
+Massachusetts,46,0.8
+Michigan,46,1.7
+Minnesota,46,1
+Mississippi,46,2.7
+Missouri,46,1.4
+Montana,46,0.1
+Nebraska,46,0.4
+Nevada,46,0.9
+New Hampshire,46,0.4
+New Jersey,46,2.7
+New Mexico,46,1.3
+New York,46,1.1
+North Carolina,46,1.6
+North Dakota,46,0.4
+Ohio,46,0.7
+Oklahoma,46,3.4
+Oregon,46,0.8
+Pennsylvania,46,1.2
+Rhode Island,46,0.3
+South Carolina,46,1.8
+South Dakota,46,1.4
+Tennessee,46,2.2
+Texas,46,2.2
+Utah,46,1
+Vermont,46,0.3
+Virginia,46,2.1
+Washington,46,0.5
+West Virginia,46,1
+Wisconsin,46,1
+Wyoming,46,0.5
+Puerto Rico,46,7.6
+Virgin Islands,46,4.7
+New York City,46,2.1
+Alabama,47,2.6
+Alaska,47,1
+Arizona,47,1.3
+Arkansas,47,1.6
+California,47,2.1
+Colorado,47,0.7
+Connecticut,47,1.8
+Delaware,47,0
+District of Columbia,47,6.5
+Georgia,47,3.1
+Hawaii,47,2.3
+Idaho,47,0.8
+Illinois,47,1.9
+Indiana,47,0.9
+Iowa,47,0.7
+Kansas,47,2
+Kentucky,47,0.9
+Maine,47,0.7
+Maryland,47,1.7
+Massachusetts,47,0.8
+Michigan,47,1.5
+Minnesota,47,1.1
+Mississippi,47,3.6
+Missouri,47,1.8
+Montana,47,0.2
+Nebraska,47,0.6
+Nevada,47,1.2
+New Hampshire,47,0.4
+New Jersey,47,3.3
+New Mexico,47,1.4
+New York,47,1.7
+North Carolina,47,2
+North Dakota,47,0.5
+Ohio,47,0.8
+Oklahoma,47,3
+Oregon,47,1
+Pennsylvania,47,1.4
+Rhode Island,47,0.3
+South Carolina,47,2.4
+South Dakota,47,1.3
+Tennessee,47,3.2
+Texas,47,2.6
+Utah,47,1.2
+Vermont,47,0.5
+Virginia,47,2.3
+Washington,47,0.6
+West Virginia,47,1.1
+Wisconsin,47,0.9
+Wyoming,47,0.7
+Puerto Rico,47,10
+Virgin Islands,47,7.6
+New York City,47,2.4
+Alabama,48,2.7
+Alaska,48,1.1
+Arizona,48,1.4
+Arkansas,48,1.3
+California,48,2
+Colorado,48,1.7
+Connecticut,48,1.7
+Delaware,48,0
+District of Columbia,48,6.7
+Georgia,48,2.7
+Hawaii,48,2.1
+Idaho,48,1
+Illinois,48,1.8
+Indiana,48,0.9
+Iowa,48,0.6
+Kansas,48,1.6
+Kentucky,48,1.4
+Maine,48,0.8
+Maryland,48,1.1
+Massachusetts,48,0.7
+Michigan,48,1.1
+Minnesota,48,1.5
+Mississippi,48,3.1
+Missouri,48,1.9
+Montana,48,0
+Nebraska,48,0.8
+Nevada,48,1.3
+New Hampshire,48,0.3
+New Jersey,48,3
+New Mexico,48,1.4
+New York,48,1.6
+North Carolina,48,1.6
+North Dakota,48,0.7
+Ohio,48,1
+Oklahoma,48,3.2
+Oregon,48,1
+Pennsylvania,48,1.1
+Rhode Island,48,0.3
+South Carolina,48,2.5
+South Dakota,48,1.3
+Tennessee,48,2.3
+Texas,48,2.5
+Utah,48,1.3
+Vermont,48,0.6
+Virginia,48,2.2
+Washington,48,0.6
+West Virginia,48,1
+Wisconsin,48,1.1
+Wyoming,48,0.4
+Puerto Rico,48,10.8
+Virgin Islands,48,3.3
+New York City,48,2.4
+Alabama,49,2.7
+Alaska,49,0.7
+Arizona,49,1.7
+Arkansas,49,1.3
+California,49,2.1
+Colorado,49,1.3
+Connecticut,49,1.6
+Delaware,49,0.2
+District of Columbia,49,5.2
+Georgia,49,2.8
+Hawaii,49,2.9
+Idaho,49,0.7
+Illinois,49,1.9
+Indiana,49,1.3
+Iowa,49,0.7
+Kansas,49,1.5
+Kentucky,49,0.7
+Maine,49,0.8
+Maryland,49,1.1
+Massachusetts,49,0.9
+Michigan,49,1.9
+Minnesota,49,1.1
+Mississippi,49,2.8
+Missouri,49,1.7
+Montana,49,0.1
+Nebraska,49,0.5
+Nevada,49,1.9
+New Hampshire,49,0.3
+New Jersey,49,3
+New Mexico,49,1.5
+New York,49,1.5
+North Carolina,49,1.5
+North Dakota,49,1.3
+Ohio,49,1
+Oklahoma,49,3.4
+Oregon,49,1.1
+Pennsylvania,49,1.5
+Rhode Island,49,0.3
+South Carolina,49,1.9
+South Dakota,49,1
+Tennessee,49,2.4
+Texas,49,3.1
+Utah,49,1.4
+Vermont,49,0.4
+Virginia,49,2.2
+Washington,49,0.5
+West Virginia,49,1.2
+Wisconsin,49,1.5
+Wyoming,49,0.8
+Puerto Rico,49,11.2
+Virgin Islands,49,2
+New York City,49,2.7
+Alabama,50,3.8
+Alaska,50,0.7
+Arizona,50,2
+Arkansas,50,2
+California,50,2.4
+Colorado,50,1.4
+Connecticut,50,1.7
+Delaware,50,0.1
+District of Columbia,50,7.8
+Georgia,50,3.2
+Hawaii,50,3.7
+Idaho,50,1.4
+Illinois,50,2.1
+Indiana,50,1.6
+Iowa,50,0.4
+Kansas,50,1.5
+Kentucky,50,1
+Maine,50,0.6
+Maryland,50,1.4
+Massachusetts,50,1
+Michigan,50,1.7
+Minnesota,50,1.2
+Mississippi,50,3.6
+Missouri,50,1.9
+Montana,50,0.2
+Nebraska,50,0.5
+Nevada,50,1.5
+New Hampshire,50,0.5
+New Jersey,50,3.7
+New Mexico,50,1.6
+New York,50,1.5
+North Carolina,50,2.2
+North Dakota,50,0
+Ohio,50,1.3
+Oklahoma,50,5.1
+Oregon,50,2.2
+Pennsylvania,50,1.8
+Rhode Island,50,0.5
+South Carolina,50,2.7
+South Dakota,50,1.1
+Tennessee,50,2.3
+Texas,50,3.4
+Utah,50,1.8
+Vermont,50,0.6
+Virginia,50,2.3
+Washington,50,1.2
+West Virginia,50,1.3
+Wisconsin,50,0.9
+Wyoming,50,1.3
+Puerto Rico,50,10
+Virgin Islands,50,2.6
+New York City,50,3
+Alabama,51,5
+Alaska,51,1.3
+Arizona,51,2.5
+Arkansas,51,1.6
+California,51,2.9
+Colorado,51,1.7
+Connecticut,51,1.8
+Delaware,51,0.1
+District of Columbia,51,8.4
+Georgia,51,4.2
+Hawaii,51,2.9
+Idaho,51,1.2
+Illinois,51,2.3
+Indiana,51,1.5
+Iowa,51,0.6
+Kansas,51,2.4
+Kentucky,51,3.8
+Maine,51,0.7
+Maryland,51,1.8
+Massachusetts,51,1.2
+Michigan,51,2.1
+Minnesota,51,2.2
+Mississippi,51,4.8
+Missouri,51,2.3
+Montana,51,0.6
+Nebraska,51,0.9
+Nevada,51,1.7
+New Hampshire,51,0.6
+New Jersey,51,4.2
+New Mexico,51,2.1
+New York,51,3.1
+North Carolina,51,3
+North Dakota,51,2.9
+Ohio,51,1.3
+Oklahoma,51,4.4
+Oregon,51,2.3
+Pennsylvania,51,1.9
+Rhode Island,51,0.5
+South Carolina,51,2.1
+South Dakota,51,1.4
+Tennessee,51,2.9
+Texas,51,4.1
+Utah,51,3.3
+Vermont,51,1
+Virginia,51,2.9
+Washington,51,2.2
+West Virginia,51,1.5
+Wisconsin,51,1.6
+Wyoming,51,1.7
+Puerto Rico,51,12.1
+Virgin Islands,51,1
+New York City,51,3.7
+Alabama,52,5.5
+Alaska,52,1.6
+Arizona,52,2.5
+Arkansas,52,2.3
+California,52,3.5
+Colorado,52,0.5
+Connecticut,52,2
+Delaware,52,0.1
+District of Columbia,52,8.3
+Georgia,52,4.5
+Hawaii,52,3.3
+Idaho,52,2.7
+Illinois,52,3.1
+Indiana,52,3.4
+Iowa,52,1.4
+Kansas,52,2.3
+Kentucky,52,4.3
+Maine,52,1
+Maryland,52,2.4
+Massachusetts,52,1.6
+Michigan,52,2.4
+Minnesota,52,2.3
+Mississippi,52,4.1
+Missouri,52,4.1
+Montana,52,0.2
+Nebraska,52,1
+Nevada,52,2.1
+New Hampshire,52,0.2
+New Jersey,52,5.8
+New Mexico,52,2
+New York,52,5.4
+North Carolina,52,3.4
+North Dakota,52,0.4
+Ohio,52,1.6
+Oklahoma,52,6.1
+Oregon,52,5.8
+Pennsylvania,52,3.1
+Rhode Island,52,0.8
+South Carolina,52,4.3
+South Dakota,52,1.4
+Tennessee,52,3.5
+Texas,52,4.3
+Utah,52,3.9
+Vermont,52,1
+Virginia,52,3.4
+Washington,52,2.9
+West Virginia,52,2.4
+Wisconsin,52,1.3
+Wyoming,52,1.3
+Puerto Rico,52,12.1
+Virgin Islands,52,1.4
+New York City,52,4.8
+Alabama,1,4.4
+Alaska,1,0.9
+Arizona,1,2.4
+Arkansas,1,1.9
+California,1,3.3
+Colorado,1,1.9
+Connecticut,1,2.9
+Delaware,1,0.2
+District of Columbia,1,7.8
+Georgia,1,3.7
+Hawaii,1,3.5
+Idaho,1,1.8
+Illinois,1,2.8
+Indiana,1,2.3
+Iowa,1,0.8
+Kansas,1,2.9
+Kentucky,1,2.6
+Maine,1,0.9
+Maryland,1,1.7
+Massachusetts,1,1.3
+Michigan,1,2.2
+Minnesota,1,2.3
+Mississippi,1,3.5
+Missouri,1,4.4
+Montana,1,0.2
+Nebraska,1,1.5
+Nevada,1,1.9
+New Hampshire,1,0.5
+New Jersey,1,5.5
+New Mexico,1,2.2
+New York,1,5.2
+North Carolina,1,2.6
+North Dakota,1,4.3
+Ohio,1,1.4
+Oklahoma,1,6.3
+Oregon,1,5.2
+Pennsylvania,1,2.9
+Rhode Island,1,1.3
+South Carolina,1,4.5
+South Dakota,1,1.7
+Tennessee,1,3.8
+Texas,1,4.2
+Utah,1,3.4
+Vermont,1,1
+Virginia,1,3.2
+Washington,1,2.3
+West Virginia,1,1.8
+Wisconsin,1,1.3
+Wyoming,1,1.7
+Puerto Rico,1,9.9
+Virgin Islands,1,0.7
+New York City,1,3.6
+Alabama,2,4.1
+Alaska,2,3
+Arizona,2,2.1
+Arkansas,2,2.4
+California,2,3
+Colorado,2,1.6
+Connecticut,2,2.8
+Delaware,2,0.6
+District of Columbia,2,8.5
+Georgia,2,3.4
+Hawaii,2,4.4
+Idaho,2,2.3
+Illinois,2,2.9
+Indiana,2,2
+Iowa,2,1
+Kansas,2,3.4
+Kentucky,2,3.6
+Maine,2,0.6
+Maryland,2,2.2
+Massachusetts,2,1.3
+Michigan,2,2.2
+Minnesota,2,2.3
+Mississippi,2,3.4
+Missouri,2,3.6
+Montana,2,0.4
+Nebraska,2,1.9
+Nevada,2,1.7
+New Hampshire,2,0.6
+New Jersey,2,5.1
+New Mexico,2,2.1
+New York,2,5.9
+North Carolina,2,2.2
+North Dakota,2,0.9
+Ohio,2,1.3
+Oklahoma,2,8.1
+Oregon,2,2
+Pennsylvania,2,2.7
+Rhode Island,2,0.9
+South Carolina,2,3.7
+South Dakota,2,1.9
+Tennessee,2,4.1
+Texas,2,5.1
+Utah,2,2.9
+Vermont,2,1.2
+Virginia,2,3.4
+Washington,2,2.1
+West Virginia,2,1.8
+Wisconsin,2,1.9
+Wyoming,2,3.5
+Puerto Rico,2,5.7
+Virgin Islands,2,1.1
+New York City,2,3.6
+Alabama,3,6.1
+Alaska,3,2
+Arizona,3,2.4
+Arkansas,3,3.1
+California,3,2.8
+Colorado,3,2.2
+Connecticut,3,3.3
+Delaware,3,0.4
+District of Columbia,3,5
+Georgia,3,4.2
+Hawaii,3,3.6
+Idaho,3,2.8
+Illinois,3,3
+Indiana,3,2.1
+Iowa,3,1.8
+Kansas,3,5.1
+Kentucky,3,4.4
+Maine,3,0.9
+Maryland,3,2.7
+Massachusetts,3,1.5
+Michigan,3,2.1
+Minnesota,3,3.4
+Mississippi,3,4.2
+Missouri,3,3.7
+Montana,3,0.5
+Nebraska,3,2.9
+Nevada,3,1.6
+New Hampshire,3,0.5
+New Jersey,3,6
+New Mexico,3,2.7
+New York,3,6.8
+North Carolina,3,2.7
+North Dakota,3,1.9
+Ohio,3,1.7
+Oklahoma,3,8.8
+Oregon,3,2.6
+Pennsylvania,3,3.4
+Rhode Island,3,0.8
+South Carolina,3,5.7
+South Dakota,3,2.6
+Tennessee,3,4.1
+Texas,3,5.5
+Utah,3,2.9
+Vermont,3,1.2
+Virginia,3,3.2
+Washington,3,3.8
+West Virginia,3,2.6
+Wisconsin,3,2.6
+Wyoming,3,2.6
+Puerto Rico,3,5.4
+Virgin Islands,3,0.9
+New York City,3,4.1
+Alabama,4,5.3
+Alaska,4,1.9
+Arizona,4,2.2
+Arkansas,4,4
+California,4,3.1
+Colorado,4,1.9
+Connecticut,4,3.7
+Delaware,4,0.4
+District of Columbia,4,7.4
+Georgia,4,4.2
+Hawaii,4,5.1
+Idaho,4,1.7
+Illinois,4,3.2
+Indiana,4,3.4
+Iowa,4,2.6
+Kansas,4,5.6
+Kentucky,4,4.9
+Maine,4,0.8
+Maryland,4,2.9
+Massachusetts,4,1.8
+Michigan,4,2.4
+Minnesota,4,3.4
+Mississippi,4,3.6
+Missouri,4,5.7
+Montana,4,0.3
+Nebraska,4,2.6
+Nevada,4,1.5
+New Hampshire,4,0.7
+New Jersey,4,6.2
+New Mexico,4,2.9
+New York,4,7.5
+North Carolina,4,2.8
+North Dakota,4,3.9
+Ohio,4,1.9
+Oklahoma,4,11.5
+Oregon,4,3
+Pennsylvania,4,4
+Rhode Island,4,1.8
+South Carolina,4,6.3
+South Dakota,4,3.3
+Tennessee,4,4.2
+Texas,4,6.2
+Utah,4,2
+Vermont,4,1.4
+Virginia,4,3.3
+Washington,4,2.5
+West Virginia,4,2.6
+Wisconsin,4,2.7
+Wyoming,4,3
+Puerto Rico,4,6
+Virgin Islands,4,0.6
+New York City,4,3.9
+Alabama,5,6.5
+Alaska,5,2.3
+Arizona,5,2.4
+Arkansas,5,6.7
+California,5,3.2
+Colorado,5,2.3
+Connecticut,5,4.4
+Delaware,5,0.7
+District of Columbia,5,8.9
+Georgia,5,4.7
+Hawaii,5,4.3
+Idaho,5,1.7
+Illinois,5,3.6
+Indiana,5,4.6
+Iowa,5,2.3
+Kansas,5,8.5
+Kentucky,5,4.5
+Maine,5,0.9
+Maryland,5,2.9
+Massachusetts,5,2.2
+Michigan,5,3.2
+Minnesota,5,3.4
+Mississippi,5,5.5
+Missouri,5,6.5
+Montana,5,0.5
+Nebraska,5,3.2
+Nevada,5,1.8
+New Hampshire,5,0.6
+New Jersey,5,6.8
+New Mexico,5,4.1
+New York,5,8.7
+North Carolina,5,5.2
+North Dakota,5,3.8
+Ohio,5,1.7
+Oklahoma,5,15.5
+Oregon,5,3.2
+Pennsylvania,5,4.2
+Rhode Island,5,2.5
+South Carolina,5,7.1
+South Dakota,5,4.1
+Tennessee,5,4.9
+Texas,5,8.1
+Utah,5,1.6
+Vermont,5,1.9
+Virginia,5,3.7
+Washington,5,1.9
+West Virginia,5,2.9
+Wisconsin,5,3.4
+Wyoming,5,4.3
+Puerto Rico,5,5.7
+Virgin Islands,5,0.7
+New York City,5,3.8
+Alabama,6,7.8
+Alaska,6,3.7
+Arizona,6,2.5
+Arkansas,6,9.8
+California,6,2.7
+Colorado,6,2
+Connecticut,6,5.5
+Delaware,6,0.6
+District of Columbia,6,9.4
+Georgia,6,5.1
+Hawaii,6,3.8
+Idaho,6,1.8
+Illinois,6,4.4
+Indiana,6,4.7
+Iowa,6,3.2
+Kansas,6,10.4
+Kentucky,6,6.5
+Maine,6,1.6
+Maryland,6,4.6
+Massachusetts,6,2.7
+Michigan,6,3.7
+Minnesota,6,4.4
+Mississippi,6,6.4
+Missouri,6,6.7
+Montana,6,0.5
+Nebraska,6,4.2
+Nevada,6,1.8
+New Hampshire,6,1.2
+New Jersey,6,6.9
+New Mexico,6,4.9
+New York,6,9.8
+North Carolina,6,5.6
+North Dakota,6,5.2
+Ohio,6,3
+Oklahoma,6,14.9
+Oregon,6,3.3
+Pennsylvania,6,5.8
+Rhode Island,6,4.1
+South Carolina,6,6.8
+South Dakota,6,4.9
+Tennessee,6,7.4
+Texas,6,10.3
+Utah,6,1.6
+Vermont,6,1.3
+Virginia,6,5.2
+Washington,6,1.2
+West Virginia,6,2.9
+Wisconsin,6,3.7
+Wyoming,6,3.8
+Puerto Rico,6,5.7
+Virgin Islands,6,1.8
+New York City,6,3.7
+Alabama,7,7.6
+Alaska,7,4.3
+Arizona,7,2.3
+Arkansas,7,9.2
+California,7,2.5
+Colorado,7,3.5
+Connecticut,7,5.3
+Delaware,7,1.3
+District of Columbia,7,8.5
+Georgia,7,6.2
+Hawaii,7,3.7
+Idaho,7,2
+Illinois,7,4.8
+Indiana,7,6
+Iowa,7,2.8
+Kansas,7,8.7
+Kentucky,7,9.2
+Maine,7,1.2
+Maryland,7,6.1
+Massachusetts,7,2.4
+Michigan,7,4.6
+Minnesota,7,4.5
+Mississippi,7,6.3
+Missouri,7,5
+Montana,7,0.1
+Nebraska,7,2.3
+Nevada,7,1.3
+New Hampshire,7,1.7
+New Jersey,7,5.6
+New Mexico,7,4.8
+New York,7,8.3
+North Carolina,7,6.7
+North Dakota,7,3.8
+Ohio,7,3.1
+Oklahoma,7,11.7
+Oregon,7,2.9
+Pennsylvania,7,4.7
+Rhode Island,7,4.1
+South Carolina,7,6.7
+South Dakota,7,4.5
+Tennessee,7,7.1
+Texas,7,9.3
+Utah,7,1.3
+Vermont,7,1.1
+Virginia,7,5.9
+Washington,7,0.8
+West Virginia,7,3.6
+Wisconsin,7,3.1
+Wyoming,7,3
+Puerto Rico,7,4.8
+Virgin Islands,7,0.1
+New York City,7,3
+Alabama,8,7.4
+Alaska,8,3.8
+Arizona,8,2.5
+Arkansas,8,7.9
+California,8,2.4
+Colorado,8,1.3
+Connecticut,8,5
+Delaware,8,1.1
+District of Columbia,8,7.2
+Georgia,8,6
+Hawaii,8,4.2
+Idaho,8,1.5
+Illinois,8,4.6
+Indiana,8,5.3
+Iowa,8,2
+Kansas,8,6.9
+Kentucky,8,8.2
+Maine,8,1.2
+Maryland,8,5.8
+Massachusetts,8,2.5
+Michigan,8,4.3
+Minnesota,8,4.6
+Mississippi,8,6.8
+Missouri,8,4.4
+Montana,8,0.2
+Nebraska,8,1.9
+Nevada,8,1.3
+New Hampshire,8,1.7
+New Jersey,8,4.9
+New Mexico,8,4.6
+New York,8,6.3
+North Carolina,8,7.6
+North Dakota,8,3.5
+Ohio,8,3.6
+Oklahoma,8,10.4
+Oregon,8,2.5
+Pennsylvania,8,4
+Rhode Island,8,4.3
+South Carolina,8,7.6
+South Dakota,8,3.4
+Tennessee,8,5.2
+Texas,8,9
+Utah,8,1.6
+Vermont,8,1.8
+Virginia,8,6.7
+Washington,8,0.7
+West Virginia,8,3.5
+Wisconsin,8,3.4
+Wyoming,8,2.1
+Puerto Rico,8,4.4
+Virgin Islands,8,0.4
+New York City,8,2.7
+Alabama,9,6.3
+Alaska,9,3.5
+Arizona,9,2.8
+Arkansas,9,4.5
+California,9,2.1
+Colorado,9,1.7
+Connecticut,9,4
+Delaware,9,0.6
+District of Columbia,9,7.4
+Georgia,9,4.6
+Hawaii,9,3.4
+Idaho,9,1.1
+Illinois,9,3.5
+Indiana,9,3.3
+Iowa,9,1.1
+Kansas,9,5.1
+Kentucky,9,6.1
+Maine,9,1.4
+Maryland,9,3.4
+Massachusetts,9,1.6
+Michigan,9,3.3
+Minnesota,9,3
+Mississippi,9,5.8
+Missouri,9,3.1
+Montana,9,0.2
+Nebraska,9,1.2
+Nevada,9,1.3
+New Hampshire,9,1.2
+New Jersey,9,4.1
+New Mexico,9,3.9
+New York,9,3
+North Carolina,9,6
+North Dakota,9,3.5
+Ohio,9,2.5
+Oklahoma,9,9.1
+Oregon,9,2.6
+Pennsylvania,9,2.6
+Rhode Island,9,2.8
+South Carolina,9,5.5
+South Dakota,9,2.6
+Tennessee,9,5.6
+Texas,9,7.5
+Utah,9,0.5
+Vermont,9,1.8
+Virginia,9,4
+Washington,9,0.7
+West Virginia,9,3.4
+Wisconsin,9,2.5
+Wyoming,9,1.8
+Puerto Rico,9,3.8
+Virgin Islands,9,1.2
+New York City,9,2.2
+Alabama,10,6.6
+Alaska,10,1.7
+Arizona,10,2.5
+Arkansas,10,4.6
+California,10,2.2
+Colorado,10,1.6
+Connecticut,10,3.4
+Delaware,10,0.8
+District of Columbia,10,8.2
+Georgia,10,4.5
+Hawaii,10,4.6
+Idaho,10,1.5
+Illinois,10,3.6
+Indiana,10,5.1
+Iowa,10,1.3
+Kansas,10,4.4
+Kentucky,10,6.7
+Maine,10,1.6
+Maryland,10,3.5
+Massachusetts,10,1.7
+Michigan,10,3.5
+Minnesota,10,3.6
+Mississippi,10,5.4
+Missouri,10,3.1
+Montana,10,0.2
+Nebraska,10,1.5
+Nevada,10,1.1
+New Hampshire,10,1.1
+New Jersey,10,3.8
+New Mexico,10,3.3
+New York,10,3.2
+North Carolina,10,5.2
+North Dakota,10,3.4
+Ohio,10,2.1
+Oklahoma,10,6.9
+Oregon,10,1.6
+Pennsylvania,10,2.6
+Rhode Island,10,2.6
+South Carolina,10,5.4
+South Dakota,10,2.5
+Tennessee,10,6.4
+Texas,10,7.3
+Utah,10,0.6
+Vermont,10,2
+Virginia,10,3.6
+Washington,10,0.4
+West Virginia,10,3.1
+Wisconsin,10,2.6
+Wyoming,10,2.5
+Puerto Rico,10,3.6
+Virgin Islands,10,1.1
+New York City,10,1.9
+Alabama,11,6
+Alaska,11,2.4
+Arizona,11,2.2
+Arkansas,11,3.6
+California,11,2.3
+Colorado,11,1.2
+Connecticut,11,3.4
+Delaware,11,0.5
+District of Columbia,11,9.1
+Georgia,11,4.7
+Hawaii,11,2.8
+Idaho,11,1.1
+Illinois,11,3.2
+Indiana,11,4.5
+Iowa,11,0.6
+Kansas,11,4.3
+Kentucky,11,7.5
+Maine,11,1.8
+Maryland,11,3.9
+Massachusetts,11,1.8
+Michigan,11,3.3
+Minnesota,11,2.8
+Mississippi,11,4.8
+Missouri,11,2.5
+Montana,11,0.3
+Nebraska,11,2
+Nevada,11,1.2
+New Hampshire,11,1.2
+New Jersey,11,3.4
+New Mexico,11,3.3
+New York,11,3.9
+North Carolina,11,3.3
+North Dakota,11,1.9
+Ohio,11,2
+Oklahoma,11,6.3
+Oregon,11,2.3
+Pennsylvania,11,2.9
+Rhode Island,11,1.9
+South Carolina,11,6.4
+South Dakota,11,2.7
+Tennessee,11,3.8
+Texas,11,5.9
+Utah,11,0.6
+Vermont,11,1.6
+Virginia,11,3.6
+Washington,11,0.6
+West Virginia,11,3.3
+Wisconsin,11,2.5
+Wyoming,11,1.6
+Puerto Rico,11,3.8
+Virgin Islands,11,0.8
+New York City,11,2.1
+Alabama,12,6.8
+Alaska,12,2.5
+Arizona,12,2.2
+Arkansas,12,4
+California,12,2
+Colorado,12,1.8
+Connecticut,12,2.2
+Delaware,12,0.3
+District of Columbia,12,7.8
+Georgia,12,5.2
+Hawaii,12,3.3
+Idaho,12,0.6
+Illinois,12,3.1
+Indiana,12,3.2
+Iowa,12,0.6
+Kansas,12,4
+Kentucky,12,8.2
+Maine,12,2.2
+Maryland,12,3.3
+Massachusetts,12,1.8
+Michigan,12,3.2
+Minnesota,12,3
+Mississippi,12,3.7
+Missouri,12,2
+Montana,12,0
+Nebraska,12,1.4
+Nevada,12,1
+New Hampshire,12,1.1
+New Jersey,12,3.3
+New Mexico,12,2.4
+New York,12,3.6
+North Carolina,12,5.5
+North Dakota,12,1.5
+Ohio,12,2.2
+Oklahoma,12,6.5
+Oregon,12,1.6
+Pennsylvania,12,2.4
+Rhode Island,12,2.7
+South Carolina,12,7.7
+South Dakota,12,1.9
+Tennessee,12,5.9
+Texas,12,4.5
+Utah,12,0.6
+Vermont,12,1.5
+Virginia,12,3.9
+Washington,12,0.5
+West Virginia,12,3
+Wisconsin,12,2.1
+Wyoming,12,1.8
+Puerto Rico,12,3.5
+Virgin Islands,12,0.8
+New York City,12,2.1
+Alabama,13,5.2
+Alaska,13,4.3
+Arizona,13,2.4
+Arkansas,13,2.7
+California,13,2
+Colorado,13,1.4
+Connecticut,13,2.3
+Delaware,13,0.6
+District of Columbia,13,7.1
+Georgia,13,4.2
+Hawaii,13,2.8
+Idaho,13,0.6
+Illinois,13,2.7
+Indiana,13,2.7
+Iowa,13,0.3
+Kansas,13,2.6
+Kentucky,13,5.5
+Maine,13,1.7
+Maryland,13,3.6
+Massachusetts,13,2
+Michigan,13,2.7
+Minnesota,13,3.2
+Mississippi,13,3.4
+Missouri,13,2.2
+Montana,13,0.2
+Nebraska,13,0.9
+Nevada,13,0.9
+New Hampshire,13,0.9
+New Jersey,13,4
+New Mexico,13,2
+New York,13,4.6
+North Carolina,13,4.1
+North Dakota,13,1.9
+Ohio,13,1.7
+Oklahoma,13,4.2
+Oregon,13,0.9
+Pennsylvania,13,2.6
+Rhode Island,13,2.9
+South Carolina,13,5.6
+South Dakota,13,1.8
+Tennessee,13,4.8
+Texas,13,4
+Utah,13,0.5
+Vermont,13,1.4
+Virginia,13,3.8
+Washington,13,0.7
+West Virginia,13,2.7
+Wisconsin,13,1.4
+Wyoming,13,1.5
+Puerto Rico,13,3.4
+Virgin Islands,13,0.1
+New York City,13,2.5
+Alabama,14,3.3
+Alaska,14,3.9
+Arizona,14,2.4
+Arkansas,14,2.2
+California,14,1.7
+Colorado,14,1.5
+Connecticut,14,2.8
+Delaware,14,0.5
+District of Columbia,14,6.7
+Georgia,14,2.9
+Hawaii,14,2.9
+Idaho,14,0.6
+Illinois,14,2.4
+Indiana,14,2.6
+Iowa,14,0.4
+Kansas,14,2.3
+Kentucky,14,3.9
+Maine,14,1.9
+Maryland,14,2.4
+Massachusetts,14,2.1
+Michigan,14,1.9
+Minnesota,14,3.3
+Mississippi,14,2.9
+Missouri,14,1.6
+Montana,14,0.2
+Nebraska,14,0.9
+Nevada,14,0.9
+New Hampshire,14,1.8
+New Jersey,14,3.5
+New Mexico,14,1.7
+New York,14,4.9
+North Carolina,14,3
+North Dakota,14,1.4
+Ohio,14,1.2
+Oklahoma,14,4.3
+Oregon,14,1.1
+Pennsylvania,14,1.9
+Rhode Island,14,2.5
+South Carolina,14,4.5
+South Dakota,14,1.7
+Tennessee,14,3.7
+Texas,14,3.5
+Utah,14,0.5
+Vermont,14,1.4
+Virginia,14,2.7
+Washington,14,0.4
+West Virginia,14,1.4
+Wisconsin,14,1.8
+Wyoming,14,1.1
+Puerto Rico,14,3.9
+Virgin Islands,14,0.3
+New York City,14,2.4
+Alabama,15,2.9
+Alaska,15,3.2
+Arizona,15,2
+Arkansas,15,2
+California,15,1.6
+Colorado,15,1
+Connecticut,15,2.2
+Delaware,15,0.5
+District of Columbia,15,0.2
+Georgia,15,2.3
+Hawaii,15,2.2
+Idaho,15,0.7
+Illinois,15,1.6
+Indiana,15,1.3
+Iowa,15,0.2
+Kansas,15,1.4
+Kentucky,15,1.9
+Maine,15,2.1
+Maryland,15,1.8
+Massachusetts,15,1.7
+Michigan,15,1.5
+Minnesota,15,2.8
+Mississippi,15,3.1
+Missouri,15,1.3
+Montana,15,0.1
+Nebraska,15,0.6
+Nevada,15,0.8
+New Hampshire,15,0.7
+New Jersey,15,3.1
+New Mexico,15,2
+New York,15,3.3
+North Carolina,15,2.5
+North Dakota,15,1.2
+Ohio,15,1.1
+Oklahoma,15,2.5
+Oregon,15,0.8
+Pennsylvania,15,1.7
+Rhode Island,15,2.1
+South Carolina,15,3.5
+South Dakota,15,1.5
+Tennessee,15,2.5
+Texas,15,3.4
+Utah,15,0.5
+Vermont,15,1.5
+Virginia,15,1.9
+Washington,15,0.3
+West Virginia,15,1
+Wisconsin,15,1.9
+Wyoming,15,1.1
+Puerto Rico,15,4.8
+Virgin Islands,15,1.9
+New York City,15,2.2
+Alabama,16,2.8
+Alaska,16,2.4
+Arizona,16,2.1
+Arkansas,16,1.6
+California,16,1.6
+Colorado,16,1.1
+Connecticut,16,2.5
+Delaware,16,0.2
+District of Columbia,16,4.5
+Georgia,16,2
+Hawaii,16,2.7
+Idaho,16,0.3
+Illinois,16,1.4
+Indiana,16,1.4
+Iowa,16,0.3
+Kansas,16,1.2
+Kentucky,16,1.3
+Maine,16,1.2
+Maryland,16,1.3
+Massachusetts,16,1.3
+Michigan,16,1.4
+Minnesota,16,2.9
+Mississippi,16,2.8
+Missouri,16,1.2
+Montana,16,0.1
+Nebraska,16,0.3
+Nevada,16,0.8
+New Hampshire,16,1.2
+New Jersey,16,2.3
+New Mexico,16,1.6
+New York,16,2
+North Carolina,16,1.4
+North Dakota,16,0.6
+Ohio,16,0.9
+Oklahoma,16,2
+Oregon,16,0.9
+Pennsylvania,16,1.5
+Rhode Island,16,1.1
+South Carolina,16,2.1
+South Dakota,16,1
+Tennessee,16,3.2
+Texas,16,3.4
+Utah,16,0.6
+Vermont,16,1.2
+Virginia,16,1.4
+Washington,16,0.3
+West Virginia,16,0.7
+Wisconsin,16,1.3
+Wyoming,16,1.1
+Puerto Rico,16,4.8
+Virgin Islands,16,1
+New York City,16,1.8
+Alabama,17,2.1
+Alaska,17,1.7
+Arizona,17,2.8
+Arkansas,17,1.4
+California,17,1.7
+Colorado,17,1.4
+Connecticut,17,2
+Delaware,17,0
+District of Columbia,17,0
+Georgia,17,1.7
+Hawaii,17,2.2
+Idaho,17,0.6
+Illinois,17,1.4
+Indiana,17,1.1
+Iowa,17,0.2
+Kansas,17,1.1
+Kentucky,17,0.9
+Maine,17,1
+Maryland,17,1.2
+Massachusetts,17,0.9
+Michigan,17,1.2
+Minnesota,17,2.4
+Mississippi,17,2.3
+Missouri,17,1
+Montana,17,0
+Nebraska,17,0.3
+Nevada,17,0.7
+New Hampshire,17,0.5
+New Jersey,17,2.2
+New Mexico,17,1.4
+New York,17,2
+North Carolina,17,1
+North Dakota,17,0.4
+Ohio,17,0.8
+Oklahoma,17,2
+Oregon,17,0.5
+Pennsylvania,17,1.2
+Rhode Island,17,0.5
+South Carolina,17,2.6
+South Dakota,17,1.3
+Tennessee,17,2.2
+Texas,17,2.8
+Utah,17,0.6
+Vermont,17,0.8
+Virginia,17,1.2
+Washington,17,0.3
+West Virginia,17,0.4
+Wisconsin,17,1.4
+Wyoming,17,0.8
+Puerto Rico,17,6.1
+Virgin Islands,17,0.3
+New York City,17,1.6
+Alabama,18,2.3
+Alaska,18,2.8
+Arizona,18,2.3
+Arkansas,18,1.9
+California,18,1.5
+Colorado,18,1.3
+Connecticut,18,1.6
+Delaware,18,0.1
+District of Columbia,18,4.7
+Georgia,18,1.7
+Hawaii,18,2.5
+Idaho,18,0.8
+Illinois,18,1.3
+Indiana,18,1
+Iowa,18,0.2
+Kansas,18,0.9
+Kentucky,18,0.7
+Maine,18,0.9
+Maryland,18,0.9
+Massachusetts,18,0.7
+Michigan,18,0.9
+Minnesota,18,2.1
+Mississippi,18,2.1
+Missouri,18,1.1
+Montana,18,0
+Nebraska,18,0.3
+Nevada,18,0.9
+New Hampshire,18,0.4
+New Jersey,18,2
+New Mexico,18,1.7
+New York,18,2
+North Carolina,18,0.9
+North Dakota,18,1.4
+Ohio,18,0.6
+Oklahoma,18,1.3
+Oregon,18,1.1
+Pennsylvania,18,1.1
+Rhode Island,18,0.5
+South Carolina,18,1.7
+South Dakota,18,0.9
+Tennessee,18,1.7
+Texas,18,2.6
+Utah,18,0.7
+Vermont,18,1.4
+Virginia,18,1.1
+Washington,18,0.3
+West Virginia,18,0.4
+Wisconsin,18,1.3
+Wyoming,18,1.2
+Puerto Rico,18,3.8
+Virgin Islands,18,0.6
+New York City,18,1.5
+Alabama,19,2.3
+Alaska,19,1.4
+Arizona,19,2.1
+Arkansas,19,1
+California,19,1.4
+Colorado,19,0.6
+Connecticut,19,0.8
+Delaware,19,0
+District of Columbia,19,3.6
+Georgia,19,1.7
+Hawaii,19,1.2
+Idaho,19,0.5
+Illinois,19,1.5
+Indiana,19,0.5
+Iowa,19,0.3
+Kansas,19,0.7
+Kentucky,19,0.5
+Maine,19,0.7
+Maryland,19,0.9
+Massachusetts,19,0.8
+Michigan,19,1
+Minnesota,19,2.2
+Mississippi,19,2.2
+Missouri,19,0.4
+Montana,19,0
+Nebraska,19,0.3
+Nevada,19,0.8
+New Hampshire,19,0.7
+New Jersey,19,2.1
+New Mexico,19,1.4
+New York,19,1.5
+North Carolina,19,1.1
+North Dakota,19,0.7
+Ohio,19,0.7
+Oklahoma,19,1.6
+Oregon,19,0.8
+Pennsylvania,19,0.8
+Rhode Island,19,0.4
+South Carolina,19,1.7
+South Dakota,19,1
+Tennessee,19,2.4
+Texas,19,1.7
+Utah,19,0.5
+Vermont,19,0.6
+Virginia,19,1
+Washington,19,0.3
+West Virginia,19,0.3
+Wisconsin,19,1
+Wyoming,19,0.8
+Puerto Rico,19,4.6
+Virgin Islands,19,0.3
+New York City,19,1.7
+Alabama,20,2.5
+Alaska,20,1.2
+Arizona,20,2.2
+Arkansas,20,1.4
+California,20,1.4
+Colorado,20,1.1
+Connecticut,20,0.7
+Delaware,20,0.1
+District of Columbia,20,0
+Georgia,20,1.6
+Hawaii,20,1.8
+Idaho,20,0.9
+Illinois,20,1.3
+Indiana,20,0.5
+Iowa,20,0.1
+Kansas,20,0.3
+Kentucky,20,0.4
+Maine,20,0.4
+Maryland,20,1.4
+Massachusetts,20,0.8
+Michigan,20,1
+Minnesota,20,1.9
+Mississippi,20,2.3
+Missouri,20,0.3
+Montana,20,0
+Nebraska,20,0.4
+Nevada,20,0.3
+New Hampshire,20,0.4
+New Jersey,20,2
+New Mexico,20,1.3
+New York,20,1.5
+North Carolina,20,1
+North Dakota,20,0.2
+Ohio,20,0.6
+Oklahoma,20,1.4
+Oregon,20,0.7
+Pennsylvania,20,1
+Rhode Island,20,0.1
+South Carolina,20,0.9
+South Dakota,20,0.6
+Tennessee,20,2.4
+Texas,20,2.3
+Utah,20,0.6
+Vermont,20,1.1
+Virginia,20,1
+Washington,20,0.4
+West Virginia,20,0.2
+Wisconsin,20,0.4
+Wyoming,20,0.4
+Puerto Rico,20,4.8
+Virgin Islands,20,0.7
+New York City,20,1.7
+Alabama,21,2
+Alaska,21,0.8
+Arizona,21,2.1
+Arkansas,21,1.2
+California,21,1.4
+Colorado,21,1.4
+Connecticut,21,0.6
+Delaware,21,0.1
+District of Columbia,21,5.8
+Georgia,21,1.6
+Hawaii,21,1.1
+Idaho,21,0.1
+Illinois,21,1.2
+Indiana,21,0.4
+Iowa,21,0
+Kansas,21,0.3
+Kentucky,21,0.4
+Maine,21,0.5
+Maryland,21,0.8
+Massachusetts,21,0.7
+Michigan,21,0.8
+Minnesota,21,1.3
+Mississippi,21,2.3
+Missouri,21,0.2
+Montana,21,0
+Nebraska,21,0.1
+Nevada,21,0.7
+New Hampshire,21,0.4
+New Jersey,21,1.7
+New Mexico,21,0.9
+New York,21,1.6
+North Carolina,21,1.4
+North Dakota,21,0.2
+Ohio,21,0.7
+Oklahoma,21,0.6
+Oregon,21,0.3
+Pennsylvania,21,0.7
+Rhode Island,21,0
+South Carolina,21,0.8
+South Dakota,21,0.9
+Tennessee,21,1.9
+Texas,21,2.1
+Utah,21,0.5
+Vermont,21,0.5
+Virginia,21,1
+Washington,21,0.2
+West Virginia,21,0.3
+Wisconsin,21,0.4
+Wyoming,21,0.7
+Puerto Rico,21,3.6
+Virgin Islands,21,0.5
+New York City,21,1.5
+Alabama,22,1.3
+Alaska,22,0.8
+Arizona,22,1.9
+Arkansas,22,0.8
+California,22,1.4
+Colorado,22,0.7
+Connecticut,22,0.5
+Delaware,22,0.2
+District of Columbia,22,4.5
+Georgia,22,1.2
+Hawaii,22,1.3
+Idaho,22,0
+Illinois,22,1.1
+Indiana,22,0.4
+Iowa,22,0.3
+Kansas,22,0.4
+Kentucky,22,0.3
+Maine,22,0.9
+Maryland,22,1.3
+Massachusetts,22,0.8
+Michigan,22,0.8
+Minnesota,22,1
+Mississippi,22,1.8
+Missouri,22,0.1
+Montana,22,0
+Nebraska,22,0.2
+Nevada,22,0.8
+New Hampshire,22,0.5
+New Jersey,22,1.9
+New Mexico,22,1.5
+New York,22,1.7
+North Carolina,22,0.9
+North Dakota,22,0.4
+Ohio,22,0.7
+Oklahoma,22,0.6
+Oregon,22,0.4
+Pennsylvania,22,0.9
+Rhode Island,22,0.1
+South Carolina,22,0.7
+South Dakota,22,0.4
+Tennessee,22,1.1
+Texas,22,1.8
+Utah,22,0.6
+Vermont,22,1.6
+Virginia,22,1.1
+Washington,22,0.4
+West Virginia,22,0.4
+Wisconsin,22,0.3
+Wyoming,22,0.7
+Puerto Rico,22,3.9
+Virgin Islands,22,0.6
+New York City,22,1.6
+Alabama,23,1.1
+Alaska,23,1
+Arizona,23,1.7
+Arkansas,23,0.5
+California,23,1.6
+Colorado,23,0.5
+Connecticut,23,0.6
+Delaware,23,0
+District of Columbia,23,5.1
+Georgia,23,1.1
+Hawaii,23,1.1
+Idaho,23,0
+Illinois,23,1
+Indiana,23,0.3
+Iowa,23,0.1
+Kansas,23,0.3
+Kentucky,23,0.2
+Maine,23,0.7
+Maryland,23,1
+Massachusetts,23,0.7
+Michigan,23,0.6
+Minnesota,23,0.8
+Mississippi,23,1.8
+Missouri,23,0.1
+Montana,23,0
+Nebraska,23,0.4
+Nevada,23,0.6
+New Hampshire,23,0.2
+New Jersey,23,2
+New Mexico,23,0.9
+New York,23,1.4
+North Carolina,23,1.3
+North Dakota,23,0
+Ohio,23,0.8
+Oklahoma,23,0.5
+Oregon,23,0.5
+Pennsylvania,23,0.8
+Rhode Island,23,0
+South Carolina,23,0.5
+South Dakota,23,0.4
+Tennessee,23,1.1
+Texas,23,1.8
+Utah,23,0.4
+Vermont,23,1.2
+Virginia,23,0.9
+Washington,23,0.1
+West Virginia,23,0.2
+Wisconsin,23,0.3
+Wyoming,23,0.7
+Puerto Rico,23,3.2
+Virgin Islands,23,0.1
+New York City,23,1.7
+Alabama,24,0.8
+Alaska,24,0.5
+Arizona,24,1.4
+Arkansas,24,0.5
+California,24,1.3
+Colorado,24,0
+Connecticut,24,0.3
+Delaware,24,0.6
+District of Columbia,24,0
+Georgia,24,1.1
+Hawaii,24,0.9
+Idaho,24,0
+Illinois,24,0.9
+Indiana,24,0.2
+Iowa,24,0.1
+Kansas,24,0.3
+Kentucky,24,0.1
+Maine,24,0.6
+Maryland,24,1.2
+Massachusetts,24,0.7
+Michigan,24,0.6
+Minnesota,24,0.7
+Mississippi,24,1.8
+Missouri,24,0.2
+Montana,24,0
+Nebraska,24,0.4
+Nevada,24,0.7
+New Hampshire,24,0.2
+New Jersey,24,1.9
+New Mexico,24,1.2
+New York,24,1.4
+North Carolina,24,0.7
+North Dakota,24,1.1
+Ohio,24,0.7
+Oklahoma,24,0.4
+Oregon,24,0.3
+Pennsylvania,24,0.7
+Rhode Island,24,0.1
+South Carolina,24,0.6
+South Dakota,24,0.3
+Tennessee,24,0.7
+Texas,24,1.6
+Utah,24,0.3
+Vermont,24,0.6
+Virginia,24,0.8
+Washington,24,0.3
+West Virginia,24,0.2
+Wisconsin,24,0.4
+Wyoming,24,0.6
+Puerto Rico,24,2.9
+Virgin Islands,24,0.5
+New York City,24,1.4
+Alabama,25,1.1
+Alaska,25,1.8
+Arizona,25,1
+Arkansas,25,0.6
+California,25,1.3
+Colorado,25,0.7
+Connecticut,25,0.3
+Delaware,25,0
+District of Columbia,25,6
+Georgia,25,0.9
+Hawaii,25,1.1
+Idaho,25,0
+Illinois,25,0.9
+Indiana,25,0.1
+Iowa,25,0
+Kansas,25,0.2
+Kentucky,25,0.2
+Maine,25,0.5
+Maryland,25,1.1
+Massachusetts,25,0.6
+Michigan,25,0.6
+Minnesota,25,1.3
+Mississippi,25,1.4
+Missouri,25,0
+Montana,25,0
+Nebraska,25,0.2
+Nevada,25,0.5
+New Hampshire,25,0.4
+New Jersey,25,1.8
+New Mexico,25,1.3
+New York,25,1.4
+North Carolina,25,0.7
+North Dakota,25,0
+Ohio,25,0.6
+Oklahoma,25,0.5
+Oregon,25,0.5
+Pennsylvania,25,0.6
+Rhode Island,25,0
+South Carolina,25,0.4
+South Dakota,25,0.4
+Tennessee,25,0.3
+Texas,25,1.5
+Utah,25,0.3
+Vermont,25,0.7
+Virginia,25,0.8
+Washington,25,0.4
+West Virginia,25,0.2
+Wisconsin,25,0.3
+Wyoming,25,1
+Puerto Rico,25,4.7
+Virgin Islands,25,0.5
+New York City,25,1.3
+Alabama,26,0.9
+Alaska,26,0.4
+Arizona,26,1.2
+Arkansas,26,0.7
+California,26,1.4
+Colorado,26,0.5
+Connecticut,26,0.5
+Delaware,26,0
+District of Columbia,26,4.1
+Georgia,26,0.9
+Hawaii,26,1.2
+Idaho,26,0
+Illinois,26,0.8
+Indiana,26,0.1
+Iowa,26,0.3
+Kansas,26,0.3
+Kentucky,26,0.2
+Maine,26,0.8
+Maryland,26,1.3
+Massachusetts,26,0.4
+Michigan,26,0.6
+Minnesota,26,0.7
+Mississippi,26,1.4
+Missouri,26,0.2
+Montana,26,0
+Nebraska,26,0.4
+Nevada,26,0.4
+New Hampshire,26,0.1
+New Jersey,26,1.6
+New Mexico,26,0.9
+New York,26,1.2
+North Carolina,26,0.6
+North Dakota,26,0
+Ohio,26,0.5
+Oklahoma,26,0.2
+Oregon,26,0.5
+Pennsylvania,26,0.5
+Rhode Island,26,0.1
+South Carolina,26,0.5
+South Dakota,26,0.4
+Tennessee,26,0.3
+Texas,26,1.5
+Utah,26,0.3
+Vermont,26,0.8
+Virginia,26,0.8
+Washington,26,0.2
+West Virginia,26,0.2
+Wisconsin,26,0.4
+Wyoming,26,0.4
+Puerto Rico,26,3.5
+Virgin Islands,26,0.3
+New York City,26,1.3
+Alabama,27,0.9
+Alaska,27,0.5
+Arizona,27,1.1
+Arkansas,27,0.3
+California,27,1.3
+Colorado,27,0.4
+Connecticut,27,0.3
+Delaware,27,0
+District of Columbia,27,3.9
+Georgia,27,1
+Hawaii,27,1.1
+Idaho,27,0
+Illinois,27,0.7
+Indiana,27,0.1
+Iowa,27,0.2
+Kansas,27,0.4
+Kentucky,27,0.2
+Maine,27,0.5
+Maryland,27,1.4
+Massachusetts,27,0.6
+Michigan,27,0.7
+Minnesota,27,0.6
+Mississippi,27,1.5
+Missouri,27,0.1
+Montana,27,0
+Nebraska,27,0.2
+Nevada,27,0.5
+New Hampshire,27,0.4
+New Jersey,27,1.4
+New Mexico,27,0.9
+New York,27,1.1
+North Carolina,27,0.2
+North Dakota,27,0
+Ohio,27,0.4
+Oklahoma,27,0.5
+Oregon,27,0.1
+Pennsylvania,27,0.6
+Rhode Island,27,0
+South Carolina,27,0.2
+South Dakota,27,0.7
+Tennessee,27,0.3
+Texas,27,1.4
+Utah,27,0.3
+Vermont,27,0.9
+Virginia,27,0.7
+Washington,27,0.2
+West Virginia,27,0.1
+Wisconsin,27,0.2
+Wyoming,27,0.1
+Puerto Rico,27,3.6
+Virgin Islands,27,0.1
+New York City,27,1.4
+Alabama,28,1
+Alaska,28,0.7
+Arizona,28,1.1
+Arkansas,28,0.5
+California,28,1.1
+Colorado,28,0.4
+Connecticut,28,0
+Delaware,28,0
+District of Columbia,28,3.3
+Georgia,28,0.8
+Hawaii,28,0.7
+Idaho,28,0
+Illinois,28,0.8
+Indiana,28,0.2
+Iowa,28,0.1
+Kansas,28,0
+Kentucky,28,0.2
+Maine,28,0.4
+Maryland,28,1.6
+Massachusetts,28,0.5
+Michigan,28,0.5
+Minnesota,28,0.8
+Mississippi,28,1.2
+Missouri,28,0
+Montana,28,0
+Nebraska,28,0.2
+Nevada,28,0.3
+New Hampshire,28,0.7
+New Jersey,28,1.3
+New Mexico,28,1
+New York,28,1
+North Carolina,28,0.6
+North Dakota,28,0
+Ohio,28,0.6
+Oklahoma,28,0.3
+Oregon,28,0.1
+Pennsylvania,28,0.4
+Rhode Island,28,0
+South Carolina,28,0.3
+South Dakota,28,0.7
+Tennessee,28,0.3
+Texas,28,1.2
+Utah,28,0.3
+Vermont,28,0.9
+Virginia,28,0.6
+Washington,28,0.1
+West Virginia,28,0.2
+Wisconsin,28,0.2
+Wyoming,28,0.4
+Puerto Rico,28,3.5
+Virgin Islands,28,0.6
+New York City,28,1.1
+Alabama,29,0.7
+Alaska,29,0
+Arizona,29,1.2
+Arkansas,29,0.6
+California,29,1.1
+Colorado,29,0.2
+Connecticut,29,0
+Delaware,29,0.1
+District of Columbia,29,3.2
+Georgia,29,0.8
+Hawaii,29,0.6
+Idaho,29,0
+Illinois,29,0.7
+Indiana,29,0.6
+Iowa,29,0
+Kansas,29,0.2
+Kentucky,29,0.1
+Maine,29,0.3
+Maryland,29,0.9
+Massachusetts,29,0.4
+Michigan,29,0.4
+Minnesota,29,1.1
+Mississippi,29,1.4
+Missouri,29,0
+Montana,29,0
+Nebraska,29,0.2
+Nevada,29,0.3
+New Hampshire,29,0.4
+New Jersey,29,1.4
+New Mexico,29,1
+New York,29,1.1
+North Carolina,29,0.3
+North Dakota,29,0
+Ohio,29,0.5
+Oklahoma,29,0.4
+Oregon,29,0.2
+Pennsylvania,29,0.6
+Rhode Island,29,0
+South Carolina,29,0.4
+South Dakota,29,0.6
+Tennessee,29,0.3
+Texas,29,1.4
+Utah,29,0.3
+Vermont,29,0.8
+Virginia,29,0.6
+Washington,29,0.2
+West Virginia,29,0.1
+Wisconsin,29,0.1
+Wyoming,29,0.2
+Puerto Rico,29,3.7
+Virgin Islands,29,0.3
+New York City,29,1.1
+Alabama,30,0.6
+Alaska,30,0
+Arizona,30,1.1
+Arkansas,30,0.3
+California,30,1
+Colorado,30,0.2
+Connecticut,30,0
+Delaware,30,0
+District of Columbia,30,4.2
+Georgia,30,0.8
+Hawaii,30,1.1
+Idaho,30,0
+Illinois,30,0.7
+Indiana,30,0.4
+Iowa,30,0
+Kansas,30,0.7
+Kentucky,30,0.1
+Maine,30,0.6
+Maryland,30,1
+Massachusetts,30,0.4
+Michigan,30,0.5
+Minnesota,30,1.2
+Mississippi,30,1
+Missouri,30,0.1
+Montana,30,0
+Nebraska,30,0
+Nevada,30,0.1
+New Hampshire,30,0.6
+New Jersey,30,1.4
+New Mexico,30,1.1
+New York,30,0.9
+North Carolina,30,0.5
+North Dakota,30,0
+Ohio,30,0.5
+Oklahoma,30,0.5
+Oregon,30,0.1
+Pennsylvania,30,0.6
+Rhode Island,30,0
+South Carolina,30,0.3
+South Dakota,30,0.5
+Tennessee,30,0
+Texas,30,1.3
+Utah,30,0.3
+Vermont,30,0.7
+Virginia,30,0.6
+Washington,30,0.1
+West Virginia,30,0
+Wisconsin,30,0.1
+Wyoming,30,0.1
+Puerto Rico,30,4.2
+Virgin Islands,30,0
+New York City,30,1.1
+Alabama,31,0.6
+Alaska,31,1
+Arizona,31,1.2
+Arkansas,31,0.5
+California,31,0.9
+Colorado,31,0.4
+Connecticut,31,0
+Delaware,31,0
+District of Columbia,31,4.6
+Georgia,31,0.9
+Hawaii,31,1.6
+Idaho,31,0
+Illinois,31,0.7
+Indiana,31,0.7
+Iowa,31,0
+Kansas,31,0.1
+Kentucky,31,0.1
+Maine,31,0.3
+Maryland,31,1.1
+Massachusetts,31,0.4
+Michigan,31,0.5
+Minnesota,31,0.9
+Mississippi,31,1.1
+Missouri,31,0.1
+Montana,31,0
+Nebraska,31,0.9
+Nevada,31,0.3
+New Hampshire,31,0.3
+New Jersey,31,1.3
+New Mexico,31,1.1
+New York,31,1
+North Carolina,31,0.3
+North Dakota,31,0.3
+Ohio,31,0.5
+Oklahoma,31,0.6
+Oregon,31,0.4
+Pennsylvania,31,0.8
+Rhode Island,31,0
+South Carolina,31,0.2
+South Dakota,31,0.4
+Tennessee,31,0.1
+Texas,31,1.3
+Utah,31,0.3
+Vermont,31,0.9
+Virginia,31,0.6
+Washington,31,0.4
+West Virginia,31,0
+Wisconsin,31,0.2
+Wyoming,31,0
+Puerto Rico,31,3.1
+Virgin Islands,31,0.3
+New York City,31,1.1
+Alabama,32,0.8
+Alaska,32,0.7
+Arizona,32,1
+Arkansas,32,0.4
+California,32,0.9
+Colorado,32,0.5
+Connecticut,32,0
+Delaware,32,0
+District of Columbia,32,3.4
+Georgia,32,1.1
+Hawaii,32,0.8
+Idaho,32,0
+Illinois,32,0.7
+Indiana,32,1.1
+Iowa,32,0
+Kansas,32,0.2
+Kentucky,32,0.1
+Maine,32,0.3
+Maryland,32,0.9
+Massachusetts,32,0.5
+Michigan,32,0.3
+Minnesota,32,0.9
+Mississippi,32,1.4
+Missouri,32,0
+Montana,32,0
+Nebraska,32,0.5
+Nevada,32,0.3
+New Hampshire,32,0.4
+New Jersey,32,1.2
+New Mexico,32,0.9
+New York,32,0.9
+North Carolina,32,0.2
+North Dakota,32,0
+Ohio,32,0.5
+Oklahoma,32,0.5
+Oregon,32,0.4
+Pennsylvania,32,0.4
+Rhode Island,32,0
+South Carolina,32,0.1
+South Dakota,32,0.3
+Tennessee,32,0.1
+Texas,32,1
+Utah,32,0.3
+Vermont,32,0.3
+Virginia,32,0.6
+Washington,32,0.2
+West Virginia,32,0.1
+Wisconsin,32,0.1
+Wyoming,32,0.2
+Puerto Rico,32,3.7
+Virgin Islands,32,0.3
+New York City,32,1.1
+Alabama,33,1.3
+Alaska,33,0.5
+Arizona,33,1.4
+Arkansas,33,0
+California,33,1
+Colorado,33,0.4
+Connecticut,33,0
+Delaware,33,0.1
+District of Columbia,33,3.2
+Georgia,33,1.4
+Hawaii,33,0.4
+Idaho,33,0
+Illinois,33,0.7
+Indiana,33,0.8
+Iowa,33,0
+Kansas,33,0.2
+Kentucky,33,0.2
+Maine,33,0.4
+Maryland,33,0.9
+Massachusetts,33,0.5
+Michigan,33,0.4
+Minnesota,33,1.1
+Mississippi,33,1.5
+Missouri,33,0.1
+Montana,33,0
+Nebraska,33,0.2
+Nevada,33,0.3
+New Hampshire,33,0.6
+New Jersey,33,1.2
+New Mexico,33,1.2
+New York,33,0.9
+North Carolina,33,0.3
+North Dakota,33,0
+Ohio,33,0.4
+Oklahoma,33,0.6
+Oregon,33,0.1
+Pennsylvania,33,0.5
+Rhode Island,33,0
+South Carolina,33,0.2
+South Dakota,33,0.6
+Tennessee,33,0.1
+Texas,33,1.1
+Utah,33,0.3
+Vermont,33,0.7
+Virginia,33,0.6
+Washington,33,0.1
+West Virginia,33,0.1
+Wisconsin,33,0.5
+Wyoming,33,0.1
+Puerto Rico,33,2.3
+Virgin Islands,33,0.2
+New York City,33,1
+Alabama,34,1.7
+Alaska,34,0.8
+Arizona,34,2.4
+Arkansas,34,1
+California,34,1.1
+Colorado,34,0.6
+Connecticut,34,0
+Delaware,34,0.1
+District of Columbia,34,4
+Georgia,34,1.5
+Hawaii,34,1.4
+Idaho,34,0
+Illinois,34,0.7
+Indiana,34,1
+Iowa,34,0
+Kansas,34,0.3
+Kentucky,34,0.1
+Maine,34,0.5
+Maryland,34,1
+Massachusetts,34,0.4
+Michigan,34,0.5
+Minnesota,34,0.7
+Mississippi,34,2.9
+Missouri,34,0.1
+Montana,34,0
+Nebraska,34,1
+Nevada,34,0.3
+New Hampshire,34,0.4
+New Jersey,34,1.4
+New Mexico,34,1.4
+New York,34,0.9
+North Carolina,34,0.1
+North Dakota,34,0
+Ohio,34,0.5
+Oklahoma,34,0.5
+Oregon,34,0.3
+Pennsylvania,34,0.4
+Rhode Island,34,0
+South Carolina,34,0.1
+South Dakota,34,0.5
+Tennessee,34,0.1
+Texas,34,1.9
+Utah,34,0.3
+Vermont,34,0.9
+Virginia,34,0.6
+Washington,34,0.2
+West Virginia,34,0.1
+Wisconsin,34,0.4
+Wyoming,34,0.3
+Puerto Rico,34,4
+Virgin Islands,34,0.3
+New York City,34,1.1
+Alabama,35,1.5
+Alaska,35,1
+Arizona,35,2
+Arkansas,35,1.5
+California,35,1.2
+Colorado,35,1
+Connecticut,35,0.2
+Delaware,35,0
+District of Columbia,35,5.7
+Georgia,35,1.6
+Hawaii,35,1.9
+Idaho,35,0
+Illinois,35,0.8
+Indiana,35,1
+Iowa,35,0
+Kansas,35,0
+Kentucky,35,0.3
+Maine,35,0.5
+Maryland,35,1.2
+Massachusetts,35,0.4
+Michigan,35,0.7
+Minnesota,35,0.6
+Mississippi,35,3.4
+Missouri,35,0.1
+Montana,35,0
+Nebraska,35,0.7
+Nevada,35,0.5
+New Hampshire,35,0.3
+New Jersey,35,1.1
+New Mexico,35,2
+New York,35,0.8
+North Carolina,35,0.5
+North Dakota,35,0.8
+Ohio,35,0.7
+Oklahoma,35,0.4
+Oregon,35,0.5
+Pennsylvania,35,0.6
+Rhode Island,35,0.1
+South Carolina,35,0.4
+South Dakota,35,0.9
+Tennessee,35,0.1
+Texas,35,1.9
+Utah,35,0.3
+Vermont,35,1
+Virginia,35,0.6
+Washington,35,0.2
+West Virginia,35,0.2
+Wisconsin,35,0.3
+Wyoming,35,0.4
+Puerto Rico,35,4.3
+Virgin Islands,35,0.5
+New York City,35,1.1
+Alabama,36,1.7
+Alaska,36,1.6
+Arizona,36,1.5
+Arkansas,36,0.8
+California,36,1.3
+Colorado,36,1.2
+Connecticut,36,0
+Delaware,36,0.1
+District of Columbia,36,6.1
+Georgia,36,1.6
+Hawaii,36,2.6
+Idaho,36,0
+Illinois,36,1
+Indiana,36,1.3
+Iowa,36,0.1
+Kansas,36,0.2
+Kentucky,36,0.2
+Maine,36,0.4
+Maryland,36,1.5
+Massachusetts,36,0.4
+Michigan,36,0.9
+Minnesota,36,0.6
+Mississippi,36,2.2
+Missouri,36,0.4
+Montana,36,0
+Nebraska,36,1.3
+Nevada,36,0.5
+New Hampshire,36,0.3
+New Jersey,36,1.2
+New Mexico,36,1.4
+New York,36,0.9
+North Carolina,36,0.8
+North Dakota,36,0.9
+Ohio,36,0.8
+Oklahoma,36,0.7
+Oregon,36,0.1
+Pennsylvania,36,0.5
+Rhode Island,36,0
+South Carolina,36,0.9
+South Dakota,36,0.7
+Tennessee,36,0.3
+Texas,36,2
+Utah,36,0.3
+Vermont,36,1
+Virginia,36,0.7
+Washington,36,0.2
+West Virginia,36,0.4
+Wisconsin,36,0.4
+Wyoming,36,0.8
+Puerto Rico,36,4.8
+Virgin Islands,36,0.2
+New York City,36,1
+Alabama,37,2
+Alaska,37,1.9
+Arizona,37,2.1
+Arkansas,37,0.9
+California,37,1.5
+Colorado,37,0.3
+Connecticut,37,0.3
+Delaware,37,0
+District of Columbia,37,5.1
+Georgia,37,1.7
+Hawaii,37,1.8
+Idaho,37,0
+Illinois,37,1.2
+Indiana,37,1.3
+Iowa,37,0
+Kansas,37,0
+Kentucky,37,0.3
+Maine,37,0.5
+Maryland,37,1
+Massachusetts,37,0.6
+Michigan,37,0.9
+Minnesota,37,1
+Mississippi,37,1.9
+Missouri,37,0.5
+Montana,37,0
+Nebraska,37,0.4
+Nevada,37,0.5
+New Hampshire,37,0.7
+New Jersey,37,1.6
+New Mexico,37,1.6
+New York,37,0.9
+North Carolina,37,0.7
+North Dakota,37,0
+Ohio,37,0.8
+Oklahoma,37,0.9
+Oregon,37,0.8
+Pennsylvania,37,0.6
+Rhode Island,37,0.1
+South Carolina,37,1.2
+South Dakota,37,0.9
+Tennessee,37,0.4
+Texas,37,1.9
+Utah,37,0.3
+Vermont,37,0.8
+Virginia,37,0.7
+Washington,37,0.2
+West Virginia,37,0.4
+Wisconsin,37,1.3
+Wyoming,37,0.4
+Puerto Rico,37,3.2
+Virgin Islands,37,0.1
+New York City,37,1.2
+Alabama,38,1.6
+Alaska,38,2
+Arizona,38,1.7
+Arkansas,38,0.6
+California,38,1.5
+Colorado,38,0.4
+Connecticut,38,0.1
+Delaware,38,0
+District of Columbia,38,5.1
+Georgia,38,1.6
+Hawaii,38,1.6
+Idaho,38,0
+Illinois,38,1.2
+Indiana,38,1.2
+Iowa,38,0
+Kansas,38,0.7
+Kentucky,38,0.4
+Maine,38,0.7
+Maryland,38,1.2
+Massachusetts,38,0.6
+Michigan,38,1.1
+Minnesota,38,0.7
+Mississippi,38,2
+Missouri,38,0.6
+Montana,38,0
+Nebraska,38,0.9
+Nevada,38,0.4
+New Hampshire,38,0.4
+New Jersey,38,1.8
+New Mexico,38,1.3
+New York,38,0.9
+North Carolina,38,0.5
+North Dakota,38,1.9
+Ohio,38,0.9
+Oklahoma,38,0.8
+Oregon,38,0.5
+Pennsylvania,38,0.6
+Rhode Island,38,0.3
+South Carolina,38,1.2
+South Dakota,38,0.7
+Tennessee,38,0.5
+Texas,38,1.8
+Utah,38,0.1
+Vermont,38,0.9
+Virginia,38,0.8
+Washington,38,0.3
+West Virginia,38,0.5
+Wisconsin,38,1.6
+Wyoming,38,0.3
+Puerto Rico,38,2.9
+Virgin Islands,38,0.2
+New York City,38,1.4
+Alabama,39,1.7
+Alaska,39,1.8
+Arizona,39,1.3
+Arkansas,39,1.1
+California,39,1.6
+Colorado,39,0.4
+Connecticut,39,0.3
+Delaware,39,0.1
+District of Columbia,39,5.9
+Georgia,39,1.8
+Hawaii,39,1.4
+Idaho,39,0
+Illinois,39,1.2
+Indiana,39,1.7
+Iowa,39,0
+Kansas,39,0.5
+Kentucky,39,0.3
+Maine,39,0.5
+Maryland,39,1.1
+Massachusetts,39,0.5
+Michigan,39,1.2
+Minnesota,39,1.2
+Mississippi,39,2.3
+Missouri,39,0.8
+Montana,39,0
+Nebraska,39,0.7
+Nevada,39,0.5
+New Hampshire,39,0.6
+New Jersey,39,2
+New Mexico,39,1.1
+New York,39,1.2
+North Carolina,39,0.7
+North Dakota,39,2.5
+Ohio,39,1.1
+Oklahoma,39,1
+Oregon,39,0.4
+Pennsylvania,39,0.9
+Rhode Island,39,0.4
+South Carolina,39,1.4
+South Dakota,39,0.9
+Tennessee,39,0.6
+Texas,39,2
+Utah,39,0.1
+Vermont,39,0.6
+Virginia,39,0.9
+Washington,39,0.3
+West Virginia,39,0.5
+Wisconsin,39,1.6
+Wyoming,39,0.9
+Puerto Rico,39,1.9
+Virgin Islands,39,0.2
+New York City,39,1.4
+Louisiana,40,1.6
+Louisiana,41,1.7
+Louisiana,42,1.7
+Louisiana,43,1.7
+Louisiana,44,1.9
+Louisiana,45,2.2
+Louisiana,46,2.1
+Louisiana,47,2.2
+Louisiana,48,2.3
+Louisiana,49,2.4
+Louisiana,50,2.7
+Louisiana,51,3.3
+Louisiana,52,3.7
+Louisiana,1,3.4
+Louisiana,2,3.2
+Louisiana,3,3.6
+Louisiana,4,3.7
+Louisiana,5,4.7
+Louisiana,6,5.5
+Louisiana,7,5.2
+Louisiana,8,4.7
+Louisiana,9,4.4
+Louisiana,10,4
+Louisiana,11,3.7
+Louisiana,12,3.4
+Louisiana,13,2.8
+Louisiana,14,2.5
+Louisiana,15,2.3
+Louisiana,16,2.1
+Louisiana,17,2.1
+Louisiana,18,1.8
+Louisiana,19,1.9
+Louisiana,20,1.9
+Louisiana,21,1.9
+Louisiana,22,1.8
+Louisiana,23,1.5
+Louisiana,24,1.7
+Louisiana,25,1.5
+Louisiana,26,1.3
+Louisiana,27,1.4
+Louisiana,28,1.1
+Louisiana,29,1.3
+Louisiana,30,1.2
+Louisiana,31,1.3
+Louisiana,32,1.3
+Louisiana,33,1.5
+Louisiana,34,1.8
+Louisiana,35,2.1
+Louisiana,36,2.1
+Louisiana,37,2.1
+Louisiana,38,2
+Louisiana,39,2.2

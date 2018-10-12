@@ -10,37 +10,25 @@
 #' location, target, forecast_wk, and bin_start_incl. If multiple bins are 
 #' considered correct for a given target, all correct bins must be included
 #' here.
-#' @param challenge one of "ilinet", "hospital" or "state_ili", indicating
-#' which challenge the submission is for (default \code{"ilinet"}).
 #' @seealso \code{\link{expand_truth}} \code{\link{verify_entry}} \code{\link{remove_invalid}}
 #' @import dplyr
 #' @return A data.frame of scores for each target
 #' @export
 #' @examples 
 #' scores <- score_entry(full_entry_week, truth_1516)
-#' scores <- score_entry(full_entry_hosp_score, hosp_truth_1617, challenge = "hospital")
-#' scores <- score_entry(full_entry_state_score, state_truth_1617, challenge = "state_ili")
+#' scores <- score_entry(full_entry_hosp_score, hosp_truth_1617)
+#' scores <- score_entry(full_entry_state_score, state_truth_1617)
 #' 
-score_entry <- function(entry, truth, challenge = "ilinet") {
+score_entry <- function(entry, truth) {
 
   names(entry) <- tolower(names(entry))
   names(truth) <- tolower(names(truth))
-  
-  if (!(challenge %in% c("ilinet", "hospital", "state_ili"))) {
-    stop("challenge must be one of ilinet, hospital, or state_ili")
-  }
 
-  # Check for missing forecast week
+    # Check for missing forecast week
   if (!("forecast_week" %in% names(entry)))
     stop("Column forecast_week needed in entry - 
          use read_entry() with your submission CSV")
  
-  # Rename hospitalization entry for consistency with later code
-  if (challenge == "hospital") {
-    entry <- rename(entry, location = age_grp)
-    truth <- rename(truth, location = age_grp)
-  }
-  
   seasonal <- entry %>%
     filter(type == "Bin", target %in% c("Season onset", "Season peak week",
                                         "Season peak percentage",
@@ -70,11 +58,6 @@ score_entry <- function(entry, truth, challenge = "ilinet") {
               ungroup() %>%
       # If score < -10 or forecast is missing, set to -10
               mutate(score = ifelse(score < -10 | is.na(score), -10, score)) 
-    
-  
-  # Rename hospitalization entry for consistency with later code
-  if (challenge == "hospital") scores <- rename(scores, age_grp = location)
-  
   
   return(scores)
 }

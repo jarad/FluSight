@@ -5,7 +5,8 @@
 \title{Creates a range of bins to score}
 \usage{
 expand_truth(truth, week_expand = 1, percent_expand = 5, week53 = F,
-  challenge = "ilinet", expand_by_percent = F, percent_observed = 0.05)
+  challenge = "ilinet", expand_by_percent = F,
+  percent_observed = 0.1)
 }
 \arguments{
 \item{truth}{A data.frame including columns unit and bin_start_incl}
@@ -27,7 +28,7 @@ which challenge the submission is for (default \code{"ilinet"}).}
 whether to expand truth around percent or ratetargets by a percentage 
 of the observed value.}
 
-\item{percent_observed}{A scalar numeric between 0 and 1 (default 0.05),
+\item{percent_observed}{A scalar numeric between 0 and 1 (default 0.1),
 indicating the one-sided percentage of the observed percent or rate target
 that will be included. If \code{expand_by_percent = FALSE} then this
 value is ignored.}

@@ -4,7 +4,8 @@
 \alias{plot_weekahead}
 \title{Plots Week Ahead Forecasts}
 \usage{
-plot_weekahead(dat, region, wk = 1, ilimax, years = NA)
+plot_weekahead(dat, region, wk = 1, ilimax, years = NA,
+  plot_current = TRUE)
 }
 \arguments{
 \item{dat}{Expects a data csv in the form of a CDC fluview submission see \code{FluSight} package for a minimal submission}
@@ -14,6 +15,8 @@ plot_weekahead(dat, region, wk = 1, ilimax, years = NA)
 \item{wk}{Numeric. How many weeks ahead to plot. Defaults to 1.}
 
 \item{ilimax}{Numeric. Max level of ILI percentage to be plotted}
+
+\item{plot_current}{Logical. Whether or not to plot current ILI level.}
 }
 \description{
 This function allows you to plot Weak Ahead Predictions

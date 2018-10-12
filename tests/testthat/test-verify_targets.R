@@ -7,11 +7,6 @@ test_that("Correct entries are successful.",{
   expect_true(verify_targets(full_entry_state, challenge = "state_ili"))
 })
 
-test_that("Throws error with misspecified challenge.", {
-  expect_error(verify_targets(minimal_entry, challenge = "hosp"))
-  expect_error(verify_targets(minimal_entry, challenge = "hospital"))
-})
-
 test_that("Missing targets report errors.", {
   valid_targets <- unique(minimal_entry$target)
   

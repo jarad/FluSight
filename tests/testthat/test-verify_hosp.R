@@ -18,13 +18,13 @@ test_that("Extra columns throw warnings", {
 })
 
 test_that("Missing age groups throw warnings", {
-  rand_age <- sample(unique(valid_observe_hosp$age_grp), 1)
-  tmp_ILI <- valid_observe_hosp[valid_observe_hosp$age_grp != rand_age, ]
+  rand_age <- sample(unique(valid_observe_hosp$location), 1)
+  tmp_ILI <- valid_observe_hosp[valid_observe_hosp$location != rand_age, ]
   expect_warning(verify_hosp(tmp_ILI))
 })
 
 test_that("Extra age group throw errors", {
   tmp_ILI <- valid_observe_hosp
-  tmp_ILI$age_grp[1] <- "extra"
+  tmp_ILI$location[1] <- "extra"
   expect_error(verify_hosp(tmp_ILI))
 })

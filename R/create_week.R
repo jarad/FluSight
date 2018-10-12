@@ -21,8 +21,7 @@ create_week <- function(weekILI, start_wk, end_wk,
   }
   
   # Rename submitted file to have same column names to work with following code
-  if (challenge == "hospital") weekILI <- rename(weekILI, location = age_grp,
-                                                 ILI = weeklyrate)
+  if (challenge == "hospital") weekILI <- rename(weekILI, ILI = weeklyrate)
 
   # Save maximum MMWR week in season being analyzed
   maxMMWR <- max(weekILI$week)
@@ -75,11 +74,11 @@ create_week <- function(weekILI, start_wk, end_wk,
   } else {
     
     max_per <- FluSight::full_entry_hosp %>%
-      dplyr::filter(target == "Season peak rate", type == "Bin") %>%
-      dplyr::group_by(age_grp) %>%
+      dplyr::filter(target == "Season peak percentage", type == "Bin") %>%
+      dplyr::group_by(location) %>%
       dplyr::mutate(bin_start_incl = as.numeric(bin_start_incl)) %>%
       dplyr::filter(bin_start_incl == max(bin_start_incl, na.rm = TRUE)) %>%
-      dplyr::select(location = age_grp, max_per = bin_start_incl)
+      dplyr::select(location, max_per = bin_start_incl)
     
   }
   
@@ -94,9 +93,6 @@ create_week <- function(weekILI, start_wk, end_wk,
 
   week_target$bin_start_incl <- format(round(week_target$bin_start_incl, 1),
                                        trim = T, nsmall = 1)
-  
-  # Rename column for hospitalization targets
-  if (challenge == "hospital") week_target <- rename(week_target, age_grp = location)
   
   return(week_target)
 } 

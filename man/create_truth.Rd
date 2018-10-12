@@ -9,8 +9,7 @@ create_truth(fluview = TRUE, year = NULL, weekILI = NULL,
 }
 \arguments{
 \item{fluview}{A logical value (default \code{TRUE}) indicating whether to
-download ILINet from Fluview. Only applicable if
-\code{challenge = "ilinet"}.}
+download ILINet from Fluview.}
 
 \item{year}{Calendar year during which the flu season of interest begins. For
 the 2015/2016 flu season, \code{year = 2015}. Required whether downloading
@@ -38,11 +37,11 @@ Determines observed true values for each target
 truth <- create_truth(year = 2015)
 truth <- create_truth(fluview = TRUE, year = 2015, challenge = "ilinet")
 truth <- create_truth(fluview = FALSE, weekILI = valid_ILI)
+truth <- create_truth(fluview = TRUE, year = 2015, challenge = "hospital")
 
 \dontrun{
 truth <- create_truth(weekILI = valid_ILI)
 truth <- create_truth(fluview = FALSE)
-truth <- create_truth(fluview = TRUE, year = 2015, challenge = "hospital")
 }
 
 }

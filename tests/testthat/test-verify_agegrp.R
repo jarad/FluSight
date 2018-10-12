@@ -5,21 +5,21 @@ test_that("Correct entries are successful.",{
 })
 
 test_that("Missing Overall report errors.", {
-  tmp_entry <- full_entry_hosp[full_entry_hosp$age_grp != "Overall",]
+  tmp_entry <- full_entry_hosp[full_entry_hosp$location != "Overall",]
   expect_error(verify_agegrp(tmp_entry))
 })
 
 test_that("Extra age group reports error.", {
   tmp_entry <- full_entry_hosp
-  tmp_entry$age_grp[1] = "extra age"
+  tmp_entry$location[1] = "extra age"
   expect_error(verify_agegrp(tmp_entry))
 })
 
 test_that("Missing specific age groups reports message.", {
   tmp_entry <- full_entry_hosp
-  age_grps <- setdiff(unique(full_entry_hosp$age_grp), "Overall")
+  age_grps <- setdiff(unique(full_entry_hosp$location), "Overall")
   for (i in seq_along(age_grps)) {
-    tmp_entry <- full_entry_hosp[full_entry_hosp$age_grp != age_grps[i],]
+    tmp_entry <- full_entry_hosp[full_entry_hosp$location != age_grps[i],]
     expect_message(verify_agegrp(tmp_entry))
   }
 })

@@ -3,8 +3,11 @@
 #' Determines observed true values for onset week, seasonal peak, and seasonal
 #' peak percentage
 #'
-#' @param weekILI A data.frame of weighted ILI values (default NULL). Must contain columns
-#' location, week, and wILI. 
+#' @param weekILI A data.frame of weighted ILI values (default NULL). 
+#'   For \code{challege = "ilinet"} or \code{challenge = "state_ili"}, must
+#'   contain columns location, week, and wILI. For \code{challenge = "hospital"},
+#'   must contain columns age_grp, week, and weeklyrate.
+#'    
 #' @param location A character string specifying the target location or age group
 #' @param year Calendar year during which the flu season of interest begins. 
 #' For the 2015/2016 flu season, \code{year = 2015}
@@ -123,8 +126,7 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
   }
   
   # Rename submitted file to have same column names to work with following code
-  if (challenge == "hospital") weekILI <- rename(weekILI, location = age_grp,
-                                                 ILI = weeklyrate)
+  if (challenge == "hospital") weekILI <- rename(weekILI, ILI = weeklyrate)
   
   # Save maximum MMWR week in season being analyzed
   maxMMWR <- max(weekILI$week)
@@ -132,7 +134,7 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
   # Add 52/53 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
-  
+
   pkwk  <- weekILI$week[weekILI$location == location &
                           weekILI$ILI == max(weekILI$ILI[weekILI$location == 
                                                              location])]
@@ -154,9 +156,9 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
   } else {
     max_pkper <- max(as.numeric(
       FluSight::full_entry_hosp$bin_start_incl[
-        FluSight::full_entry_hosp$target == "Season peak rate" &
+        FluSight::full_entry_hosp$target == "Season peak percentage" &
           FluSight::full_entry_hosp$type == "Bin" &
-          FluSight::full_entry_hosp$age_grp == location]))
+          FluSight::full_entry_hosp$location == location]))
   }
  
   if (pkper > max_pkper) pkper <- max_pkper
@@ -203,13 +205,5 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
                                       peak_truth$bin_start_incl,
                                       format(round(peak_truth$bin_start_incl, 1), trim = T, nsmall = 1))
   
-  # Rename returned file to have correct column names for hospitalizations
-  if (challenge == "hospital") {
-    peak_truth <- peak_truth %>%
-      rename(age_grp = location) %>%
-      mutate(target = ifelse(target == "Season peak percentage", "Season peak rate", 
-                             target))
-  }
-
   return(peak_truth)
 }  

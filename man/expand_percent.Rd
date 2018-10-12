@@ -5,7 +5,7 @@
 \title{Expands truth for percents}
 \usage{
 expand_percent(truth, percent_expand, challenge = "ilinet",
-  expand_by_percent = F, percent_observed = 0.05)
+  expand_by_percent = F, percent_observed = 0.1)
 }
 \arguments{
 \item{truth}{A data.frame with a single row and, at minimum, columns unit

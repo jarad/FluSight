@@ -31,12 +31,12 @@ test_that("Peak creation works for states", {
 })
 
 test_that("Peak creation works for hospitalization", {
-  rand_age <- sample(valid_observe_hosp$age_grp, 1)
+  rand_age <- sample(valid_observe_hosp$location, 1)
 
   tmp_peak <- create_peak(valid_observe_hosp, rand_age, challenge = "hospital")
-  tmp_truth <- hosp_truth_1617[hosp_truth_1617$age_grp == rand_age &
+  tmp_truth <- hosp_truth_1617[hosp_truth_1617$location == rand_age &
                                  hosp_truth_1617$target %in%
-                            c("Season peak week", "Season peak rate"), ]
+                            c("Season peak week", "Season peak percentage"), ]
   expect_equivalent(tmp_peak, tmp_truth)
 
 })
