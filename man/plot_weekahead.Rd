@@ -4,7 +4,8 @@
 \alias{plot_weekahead}
 \title{Plots Week Ahead Forecasts}
 \usage{
-plot_weekahead(dat, region, wk = 1, ilimax, years = NA)
+plot_weekahead(dat, region, wk = 1, ilimax, years = NA,
+  plot_current = TRUE)
 }
 \arguments{
 \item{dat}{Expects a data csv in the form of a CDC fluview submission see \code{FluSight} package for a minimal submission}

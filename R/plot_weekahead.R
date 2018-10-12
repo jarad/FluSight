@@ -11,7 +11,7 @@
 #' @examples
 #' plotWeekAhead()
 
-plot_weekahead <- function(dat, region, wk=1, ilimax, years=NA){
+plot_weekahead <- function(dat, region, wk=1, ilimax, years=NA, plot_current=TRUE){
   require(ggplot2)
   require(cdcfluview)
   
