@@ -14,6 +14,8 @@ plot_weekahead(dat, region, wk = 1, ilimax, years = NA)
 \item{wk}{Numeric. How many weeks ahead to plot. Defaults to 1.}
 
 \item{ilimax}{Numeric. Max level of ILI percentage to be plotted}
+
+\item{plot_current}{Logical. Whether or not to plot current ILI level.}
 }
 \description{
 This function allows you to plot Weak Ahead Predictions

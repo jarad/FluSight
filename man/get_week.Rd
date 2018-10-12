@@ -2,7 +2,6 @@
 % Please edit documentation in R/visualize_forecast.R, R/write_entry.R
 \name{get_week}
 \alias{get_week}
-\alias{get_week}
 \title{Get the surveillance week}
 \usage{
 get_week(date)

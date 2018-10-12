@@ -5,7 +5,8 @@
 \title{Creates a range of bins to score}
 \usage{
 expand_truth(truth, week_expand = 1, percent_expand = 5, week53 = F,
-  challenge = "ilinet", expand_by_percent = F, percent_observed = 0.1)
+  challenge = "ilinet", expand_by_percent = F,
+  percent_observed = 0.1)
 }
 \arguments{
 \item{truth}{A data.frame including columns unit and bin_start_incl}
