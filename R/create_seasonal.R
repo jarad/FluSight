@@ -64,6 +64,9 @@ create_onset <- function(weekILI, region, year) {
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
   
+  # Ensure ILI rounded to 1 decimal place
+  weekILI$ILI <- round(weekILI$ILI, 1)
+  
   # Check to see if 3 weeks above baseline have passed
   j <- 0  # Counter for weeks above peak
   for (i in head(weekILI$week, n = 1):tail(weekILI$week, n = 1)) {
@@ -134,6 +137,9 @@ create_peak <- function(weekILI, location, challenge = "ilinet") {
   # Add 52/53 to weeks in new year to keep weeks in order
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
+  
+  # Ensure ILI rounded to 1 decimal place
+  weekILI$ILI <- round(weekILI$ILI, 1)
 
   pkwk  <- weekILI$week[weekILI$location == location &
                           weekILI$ILI == max(weekILI$ILI[weekILI$location == 

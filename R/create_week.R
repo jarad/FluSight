@@ -30,6 +30,9 @@ create_week <- function(weekILI, start_wk, end_wk,
   weekILI$week[weekILI$week < 40] <-
     as.integer(weekILI$week[weekILI$week < 40] + maxMMWR)
   
+  # Ensure ILI rounded to 1 decimal place
+  weekILI$ILI <- round(weekILI$ILI, 1)
+  
   end_wk <- end_wk + maxMMWR
   
   these_targets <- c("1 wk ahead", "2 wk ahead", "3 wk ahead", "4 wk ahead")
