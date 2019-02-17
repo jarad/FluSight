@@ -52,7 +52,7 @@ plot_weekahead <- function(dat, region, wk=1, ilimax, years=NA, plot_current=TRU
   }
   
   if(plot_current)
-      p <- p + geom_vline(aes(xintercept = CurrentILIPer))
+      p <- p + geom_vline(aes(xintercept = as.numeric(as.character(CurrentILIPer))))
   
   return(p)
 }
