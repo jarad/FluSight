@@ -16,6 +16,16 @@
 #'   data from fluview or providing observed data
 #' @param challenge one of "ilinet", "hospital" or "state_ili", indicating which
 #'   challenge the submission is for (default \code{"ilinet"})
+#' @param start_wk MMWR week that defines the start of the challenge. Default value 
+#'   provided for years greater than \code{2014} that aligns with start week of 
+#'   CDC challenge. Otherwise defaults to MMWR week 42 for
+#'   \code{challenge == "ilinet"} and \code{challenge == "state"},
+#'   or MMWR week 48 for \code{challenge == "hospital"}
+#' @param end_wk MMWR week that defines the end of the challenge. Default value 
+#'   provided for years greater than \code{2014} that aligns with end week of 
+#'   CDC challenge. Otherwise defaults to MMWR week 18 for
+#'   \code{challenge == "ilinet"} and \code{challenge == "state"},
+#'   or MMWR week 17 for \code{challenge == "hospital"}
 #' @import dplyr
 #' @import cdcfluview
 #' @export
@@ -33,7 +43,8 @@
 #' }
 #'
 create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
-                         challenge = "ilinet") {
+                         challenge = "ilinet", start_wk = NULL,
+                         end_wk = NULL) {
 
   # Return informative errors if invalid parameter combinations provided
   if (is.null(year)) {
@@ -56,6 +67,12 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
     stop("cdcfluview version 0.5.2 or greater needed")
   }
   
+  if (sum(is.null(start_wk) + is.null(end_wk)) == 1) {
+    stop("Must provide both start and end week if one is provided")
+  }
+  
+  if (year )
+  
   # Verify user-submitted ILI data
   if (!is.null(weekILI)) {
     if(challenge %in% c("ilinet", "state_ili")) {
@@ -66,7 +83,12 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
   }
 
   # Date first forecasts - varies depending on forecast year and challenge
-  if (challenge %in% c("ilinet", "state_ili")) {
+  if (challenge %in% c("ilinet", "state_ili") & is.null(start_wk) & 
+      is.null(end_wk)) {
+    if (!year %in% 2014:2018) {
+      start_wk <- 42
+      end_wk <- 18
+    }
     if (year <= 2014) {
       start_wk <- 41    #First week of ILINet data used for forecasts
       end_wk <- 19      #Last week of ILINet data used for forecasts
@@ -87,7 +109,13 @@ create_truth <- function(fluview = TRUE, year = NULL, weekILI = NULL,
       start_wk <- 42
       end_wk <- 18
     }
-  } else {
+  }
+  if (challenge == "hospital" & is.null(start_wk) & 
+        is.null(end_wk)) {
+    if (!year %in% 2016:2018) {
+      start_wk <- 48
+      end_wk <- 17
+    }
     if (year == 2016) {
       start_wk <- 45
       end_wk <- 17

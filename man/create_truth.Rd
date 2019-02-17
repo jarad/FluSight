@@ -5,7 +5,7 @@
 \title{Creates observed truth to score entry against}
 \usage{
 create_truth(fluview = TRUE, year = NULL, weekILI = NULL,
-  challenge = "ilinet")
+  challenge = "ilinet", start_wk = NULL, end_wk = NULL)
 }
 \arguments{
 \item{fluview}{A logical value (default \code{TRUE}) indicating whether to
@@ -25,6 +25,18 @@ data from fluview or providing observed data}
 
 \item{challenge}{one of "ilinet", "hospital" or "state_ili", indicating which
 challenge the submission is for (default \code{"ilinet"})}
+
+\item{start_wk}{MMWR week that defines the start of the challenge. Default value 
+provided for years greater than \code{2014} that aligns with start week of 
+CDC challenge. Otherwise defaults to MMWR week 42 for
+\code{challenge == "ilinet"} and \code{challenge == "state"},
+or MMWR week 48 for \code{challenge == "hospital"}}
+
+\item{end_wk}{MMWR week that defines the end of the challenge. Default value 
+provided for years greater than \code{2014} that aligns with end week of 
+CDC challenge. Otherwise defaults to MMWR week 18 for
+\code{challenge == "ilinet"} and \code{challenge == "state"},
+or MMWR week 17 for \code{challenge == "hospital"}}
 }
 \value{
 A data.frame with columns location, target, and bin_start_incl or
