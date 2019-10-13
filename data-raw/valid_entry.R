@@ -1,7 +1,7 @@
 library(magrittr)
 
 full_entry_score <- FluSight::read_entry("inst/extdata/EW44_ValidTest_2016-11-07.csv") %>%
-  normalize_probs# no idea why this isn't working
+  FluSight::normalize_probs()# no idea why this isn't working
 
 full_entry <- full_entry_score %>%
   dplyr::select(-forecast_week)
@@ -11,7 +11,7 @@ minimal_entry <- full_entry %>%
 
 valid_ILI <- read.csv("inst/extdata/valid_ILI.csv",
                       stringsAsFactors = FALSE) %>%
-  rename(ILI = wILI)
+  dplyr::rename(ILI = wILI)
 
 truth_1516 <- read.csv("inst/extdata/truth_1516.csv",
                        stringsAsFactors = FALSE) %>%
@@ -109,20 +109,20 @@ past_baselines <- read.csv("inst/extdata/wILI_Baseline.csv",
                            stringsAsFactors = F)
 
 
-devtools::use_data(full_entry, overwrite=TRUE)
-devtools::use_data(minimal_entry, overwrite=TRUE)
-devtools::use_data(full_entry_score, overwrite = TRUE)
-devtools::use_data(valid_ILI, overwrite = TRUE)
-devtools::use_data(truth_1516, overwrite = TRUE)
-devtools::use_data(valid_exp_truth, overwrite = TRUE)
-devtools::use_data(full_entry_hosp_score, overwrite = TRUE)
-devtools::use_data(full_entry_hosp, overwrite = TRUE)
-devtools::use_data(full_entry_state_score, overwrite = TRUE)
-devtools::use_data(full_entry_state, overwrite = TRUE)
-devtools::use_data(valid_observe_hosp, overwrite = TRUE)
-devtools::use_data(valid_ILI_state, overwrite = TRUE)
-devtools::use_data(state_truth_1617, overwrite = TRUE)
-devtools::use_data(hosp_truth_1617, overwrite = TRUE)
-devtools::use_data(valid_state_expand_1617, overwrite = TRUE)
-devtools::use_data(valid_hosp_expand_1617, overwrite = TRUE)
-devtools::use_data(past_baselines, overwrite = TRUE)
+usethis::use_data(full_entry, overwrite=TRUE)
+usethis::use_data(minimal_entry, overwrite=TRUE)
+usethis::use_data(full_entry_score, overwrite = TRUE)
+usethis::use_data(valid_ILI, overwrite = TRUE)
+usethis::use_data(truth_1516, overwrite = TRUE)
+usethis::use_data(valid_exp_truth, overwrite = TRUE)
+usethis::use_data(full_entry_hosp_score, overwrite = TRUE)
+usethis::use_data(full_entry_hosp, overwrite = TRUE)
+usethis::use_data(full_entry_state_score, overwrite = TRUE)
+usethis::use_data(full_entry_state, overwrite = TRUE)
+usethis::use_data(valid_observe_hosp, overwrite = TRUE)
+usethis::use_data(valid_ILI_state, overwrite = TRUE)
+usethis::use_data(state_truth_1617, overwrite = TRUE)
+usethis::use_data(hosp_truth_1617, overwrite = TRUE)
+usethis::use_data(valid_state_expand_1617, overwrite = TRUE)
+usethis::use_data(valid_hosp_expand_1617, overwrite = TRUE)
+usethis::use_data(past_baselines, overwrite = TRUE)
