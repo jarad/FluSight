@@ -1,6 +1,11 @@
 # FluSight
 
-An R package containing functions used in the CDC Flu Forecasting competition
+An R package containing functions used in the CDC Flu Forecasting competition. 
+
+The current development version of the package can be installed by running:
+```
+devtools::install_github("jarad/FluSight")
+```
 
 ## Style
 
